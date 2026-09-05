@@ -746,3 +746,124 @@ cualquier caja `flex`/`inline-flex`, aunque se vean en una sola línea)
 que afectaba solo al script de QA, no a la app. Corregido ambos, la
 suite completa (`qa-full-sweep-v6.mjs`, actualizada para abrir el
 `<details>` antes de tocar su enlace) pasó **159/159**.
+
+## Paso 21: más íconos por pantalla + PDAs de grado con la misma extensión que Ejercítate
+
+Dos pedidos del docente tras ver la página ya publicada en GitHub Pages:
+"en la página solo se ve el emoji en la primera pantalla... quiero que
+aparezcan en distintas pantallas cada que se avanza" y "la dinámica de
+[pasos de] Ejercítate está bien... quiero que suceda lo mismo en los PDA
+de primero, segundo y tercero ya que se obtiene la constancia en muy
+pocos pasos... no modifique la extensión del apartado Ejercítate, solo
+de los otros".
+
+### 1. Insignia grande por pantalla (`insigniaPaso_`)
+
+El Paso 20 agregó 13 íconos nuevos pero solo 2 quedaron realmente
+conectados a pantallas del recorrido (el panel flotante de
+retroalimentación y la insignia de "perfecto"); el resto del recorrido
+seguía mostrando siempre los mismos íconos pequeños del Paso 1
+(`foco`/`libro`/`trofeo`/`medalla`) dentro del overline, y la mascota
+en imagen solo aparece en la pantalla de registro — de ahí que el
+docente solo "viera el emoji" en la primera pantalla. Se agregó
+`insigniaPaso_(iconoNombre, color)` en `app.js`: un círculo grande
+(56px) con el color pastel del tema/fase actual y un ícono a mayor
+tamaño, mostrado al inicio de cada pantalla del recorrido de un PDA,
+con un ícono **distinto por tipo de pantalla**:
+
+- Problematización → `ideaPi`
+- Teoría de un subtema → `libro`
+- Actividad (rondas de reactivos) → `compas`
+- Mini-resultado de un subtema → `aplausos` (antes compartía `medalla`
+  con el resultado global — una duplicación real, ya corregida también
+  en el overline pequeño de esa pantalla)
+- Resultado global del PDA → `trofeo` (antes `medalla`, duplicado)
+- Práctica extra → `chispas`
+
+No se agregaron íconos nuevos (los 13 del Paso 20 ya alcanzaban) ni se
+tocó la imagen de mascota — sigue siendo, por ahora, solo la de
+registro; si el docente quiere más imágenes ilustradas de la mascota
+(no solo íconos de trazo), puede compartirlas para una siguiente
+iteración.
+
+### 2. Los PDAs de 1°, 2° y 3° vuelven a tener 4 subtemas + práctica extra (se fusionan las 119 tarjetas divididas del Paso 15)
+
+**El problema real:** el Paso 15 dividió cada PDA curricular de 7
+subtemas en 7 tarjetas de camino de 1 solo subtema, para alargar el
+*camino visual* de cada grado (49/42/28 nodos) sin inventar contenido.
+Pero eso significó que cada tarjeta, por sí sola, llega a su propia
+constancia en muy pocos pasos (problematización → teoría → 2 rondas de
+actividad → mini-resultado → resultado — 6 pantallas), muchos menos que
+un tema de Ejercítate (4 subtemas propios → problematización → 4 ×
+[teoría → actividad → mini-resultado] → resultado global — 14
+pantallas). Es justo la queja del docente.
+
+**La solución, sin inventar contenido nuevo (mismo espíritu que el Paso
+15) ni tocar Ejercítate:** se revirtió la división del Paso 15 —los 17
+PDAs curriculares (7 en 1°, 6 en 2°, 4 en 3°) volvieron a ser un solo
+archivo cada uno, con:
+
+- **4 subtemas núcleo** (`Nivel 1-4 de 4`: Introductorio/Intermedio/
+  Avanzado/Síntesis) como `subtemas[]` — el mismo contenido exacto de
+  las 4 primeras tarjetas de cada PDA de origen (`-S1` a `-S4`), sin
+  cambiar una palabra ni un reactivo.
+- **`practicaExtra`** con los reactivos de las 3 tarjetas de "Repaso"
+  (`-S5` a `-S7`, 10 reactivos cada una) más los 3-4 reactivos de
+  práctica extra que ya traía la última tarjeta (`-S7`) — en total 34
+  reactivos opcionales y no calificados por PDA. El repaso deja de ser
+  un tramo obligatorio del camino y pasa a ser refuerzo opcional para
+  quien quiera seguir practicando, exactamente la función que ya
+  cumplía `practicaExtra` en el esquema.
+- **`problematizacion`**: se conserva la de la tarjeta `-S1` (Nivel 1,
+  Introductorio) como gancho de apertura de todo el PDA; las
+  problematizaciones propias de `-S2` a `-S7` (escritas para
+  contextualizar un solo subtema, Paso 15) ya no se usan, porque un PDA
+  de varios subtemas solo muestra una problematización al principio
+  (igual que Ejercítate).
+- **`titulo`**: pasa a ser el `contenido` oficial de la NEM de ese PDA
+  (ya existía en cada tarjeta, idéntico en las 7), en vez del título
+  específico de la tarjeta `-S1` (que describía solo su subtema).
+- **`id`/`numero`**: el id vuelve a ser el del PDA de origen sin el
+  sufijo `-S<n>` (ej. `1S-B1-PDA01`); `numero` vuelve a ser la posición
+  del PDA dentro de su grado (1-7/1-6/1-4) en vez de la posición global
+  que tenía como tarjeta (1-49/1-42/1-28).
+- **`index.json`** de cada grado ahora lista 7/6/4 archivos en vez de
+  49/42/28.
+
+**Resultado:** el camino de cada grado volvió a tener 7/6/4 nodos (uno
+por PDA curricular, cada uno bastante más "grueso" ahora), y completar
+un PDA hasta la constancia toma **18 pasos** obligatorios
+(problematización + 4 × [teoría + 2 rondas de actividad + mini-
+resultado] + resultado global) más 34 reactivos opcionales de práctica
+extra — más cerca, e incluso un poco más completo, que los 14 pasos +
+4 opcionales de un tema de Ejercítate. Ejercítate no se tocó (no se
+modificó ni un archivo de `data/ejercitate/`).
+
+**Por qué fue posible sin tocar el motor ni el esquema:** desde el
+Paso 14 `vistaPDA` ya recorre `pda.subtemas` de forma genérica
+(`.forEach()`) y el esquema (`pda.schema.json`) ya documentaba esta
+forma de 4-7 subtemas + `practicaExtra` opcional como la forma
+"completa"/curricular de un PDA — la tarjeta de 1 solo subtema del
+Paso 15 era la alternativa "corta". Fusionar de vuelta es, en los
+hechos, volver a la forma que el esquema ya consideraba canónica;
+`nodoModulo_`/`leccionesModulo_` (Paso 20) ya iteran `pda.subtemas`
+genéricamente también, así que ahora muestran las 4 lecciones reales
+de cada módulo en vez de mostrar siempre "1 lección".
+
+**Validación:** las 17 fusiones se validaron cada una contra
+`data/schema/pda.schema.json` (con `jsonschema` en Python) al momento
+de generarse. Con un build local de Tailwind (misma técnica del Paso
+20, solo para pruebas) se corrió un recorrido completo de extremo a
+extremo de los 17 PDAs de grado (camino → problematización → 4
+subtemas con sus 2 rondas cada uno, con respuestas correctas reales →
+resultado global → constancia → los 34 reactivos de práctica extra,
+verificando que cada uno se marque correcto → celebración final) más
+una muestra de Ejercítate (camino agrupado + 3 temas) — **20/20
+pasaron, 0 fallidos, 0 errores de consola**. `qa-full-sweep-v6.mjs` no
+necesitó cambios de lógica (ya recorría `pda.subtemas`/`practicaExtra`
+de forma genérica y compara el número de nodos contra el manifiesto,
+sea cual sea su tamaño); solo se le agregó un paso para cerrar el panel
+flotante de retroalimentación entre reactivos de práctica extra, porque
+un banco de 34 (antes 3-4) hace mucho más probable que el siguiente
+botón "Verificar" quede momentáneamente bajo ese panel si no se cierra
+entre uno y otro.
