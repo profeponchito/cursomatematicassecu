@@ -32,30 +32,33 @@ del resultado global para quien quiera seguir practicando, y justo después
 de ella (o del resultado, si el PDA no tiene práctica extra) aparece la
 celebración final.
 
-Cada uno de los PDAs curriculares del Trimestre 1 tenía, además de sus 4
-subtemas núcleo (Introductorio/Intermedio/Avanzado/Síntesis, 20 reactivos),
-**3 subtemas de repaso adicionales** (`N.5`-`N.7`, 15 reactivos más) que no
-introducían contenido nuevo sino que reforzaban lo ya visto con ejercicios
-distintos — 7 subtemas y 35 reactivos calificados por PDA. Desde el Paso 15,
-esos 7 subtemas de cada uno de los 17 PDAs originales son **cada uno su
-propia tarjeta independiente del camino** (mismo contenido matemático de
-siempre, con una problematización propia y corta): el recorrido de cada
-grado ya no tiene 7/6/4 paradas, sino **49 en 1°, 42 en 2° y 28 en 3°** —
-un recorrido mucho más largo sin inventar temario nuevo, solo repartiendo
-el que ya existía. Cada tarjeta trae su propia etiqueta de nivel fija
-("Nivel N de 4 · Avanzado", "Repaso 2 de 3"…) para no perder de vista en
-qué punto de dificultad del PDA original está. Los temas de Ejercítate
-siguen con 4 subtemas (20 reactivos) cada uno, sin cambios. Desde el Paso
-16, el único subtema de cada una de esas 119 tarjetas creció de 5 a **10
-reactivos**, presentados como dos rondas consecutivas de 5 ("Ronda 1 de 2"
-/ "Ronda 2 de 2") que se califican juntas en un solo mini-resultado; los
-temas de Ejercítate no se tocaron y siguen en una sola ronda de 5. Desde
-el Paso 17, Ejercítate tiene **40 temas** (36 originales + 4 nuevos de
+Cada uno de los 17 PDAs curriculares del Trimestre 1 (7 en 1°, 6 en 2°, 4
+en 3°) tiene sus **4 subtemas núcleo** (Introductorio/Intermedio/Avanzado/
+Síntesis), cada uno con su propia mini-actividad calificada de **10
+reactivos** en dos rondas consecutivas ("Ronda 1 de 2"/"Ronda 2 de 2") que
+se califican juntas en un solo mini-resultado — 40 reactivos calificados
+por PDA en total. Además, cada PDA trae una sección de **práctica extra**
+con 34 reactivos opcionales y sin calificar (los 3 subtemas de repaso que
+antes reforzaban lo ya visto, más los 3-4 de práctica extra que ya traía
+el PDA), para quien quiera seguir practicando después de ver su resultado
+global. Los temas de Ejercítate siguen con sus propios 4 subtemas (20
+reactivos, una sola ronda de 5 cada uno) y su propia práctica extra más
+breve (3-4 reactivos): no se tocaron en ninguno de estos ajustes. Desde el
+Paso 17, Ejercítate tiene **40 temas** (36 originales + 4 nuevos de
 "completar dígitos del algoritmo" y números con signo, ver más abajo). Al
-terminar la constancia (y la práctica extra, si la tarjeta la tiene — ver más abajo),
+terminar la constancia y la práctica extra (si el PDA/tema la tiene),
 aparece una pantalla de **celebración estilo "nivel superado" de
 videojuego** — confeti animado, trofeo y un botón para elegir otro tema —
 como cierre festivo de cada recorrido.
+
+*(Entre el Paso 15 y el Paso 20 el camino de cada grado se probó también
+como 49/42/28 "tarjetas" de un solo subtema cada una, una por cada nivel y
+repaso de los 17 PDAs originales, para alargar visualmente el recorrido.
+El Paso 21 revirtió esa división: el docente pidió que cada PDA de grado
+tomara una cantidad de pasos similar a la de un tema de Ejercítate en vez
+de resolverse en muy pocos clics, así que las 119 tarjetas volvieron a
+fusionarse en los 17 PDAs completos descritos arriba — ver "Paso 21" en
+`data/README.md` para el detalle completo.)*
 
 "Ejercítate" (40 temas, agrupados en básicos/intermedios/avanzados/
 estadística y probabilidad) reutiliza el 100% del motor de PDAs: se trata

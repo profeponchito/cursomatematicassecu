@@ -804,6 +804,21 @@ function overline_(texto, iconoNombre, color) {
   `;
 }
 
+/** Insignia circular grande (Paso 21): un ícono distinto y bien visible al
+ * inicio de cada pantalla del recorrido de un PDA (problematización, teoría,
+ * actividad, mini-resultado, resultado, práctica extra), para que — al
+ * avanzar o dar clic — el alumno vea cambiar el "emoji" de la pantalla y no
+ * solo en la de registro. Reutiliza el mismo patrón visual del círculo del
+ * panel flotante de retroalimentación (mostrarFeedbackFlotante_), pero con
+ * los colores del propio PDA/tema en vez de verde/naranja fijos. */
+function insigniaPaso_(iconoNombre, color, clase = 'mn-flotar-in') {
+  return `
+    <span class="${clase} inline-flex w-14 h-14 rounded-full ${color.pastelFondo || 'bg-slate-100'} ${color.texto} items-center justify-center mb-3 shadow-sm">
+      ${icono_(iconoNombre, 'w-7 h-7')}
+    </span>
+  `;
+}
+
 function botonPrimario_(texto, dataAccion, color) {
   return `
     <button data-accion="${dataAccion}"
@@ -832,6 +847,7 @@ function numeroChip_(numero, etiqueta = 'Tema') {
 
 function panelProblematizacion_(pda, color) {
   return `
+    ${insigniaPaso_('ideaPi', color)}
     ${overline_('Problematización', 'foco', color)}
     <h3 class="font-heading text-xl sm:text-2xl font-bold text-slate-800 mb-3">${numeroChip_(pda.numero)}${escapeHTML_(pda.titulo)}</h3>
     <p class="text-slate-700 leading-relaxed mb-4">${escapeHTML_(pda.problematizacion.contexto)}</p>
@@ -861,6 +877,7 @@ function nivelChip_(subtema, indice, total) {
 
 function panelSubtema_(subtema, indice, total, color) {
   return `
+    ${insigniaPaso_('libro', color)}
     ${overline_(nivelChip_(subtema, indice, total), 'libro', color)}
     <h3 class="font-heading text-xl sm:text-2xl font-bold text-slate-800 mb-3">${numeroChip_(subtema.numero, '')}${escapeHTML_(subtema.titulo)}</h3>
     <p class="text-slate-700 leading-relaxed mb-3">${escapeHTML_(subtema.explicacion)}</p>
@@ -881,6 +898,7 @@ function panelSubtema_(subtema, indice, total, color) {
 function panelActividad_(subtema, indice, total, reactivos, color, parte = 0, totalPartes = 1) {
   const etiquetaRonda = totalPartes > 1 ? ` · Ronda ${parte + 1} de ${totalPartes}` : '';
   return `
+    ${insigniaPaso_('compas', color)}
     ${overline_(nivelChip_(subtema, indice, total) + etiquetaRonda, 'trofeo', color)}
     <h3 class="font-heading text-xl sm:text-2xl font-bold text-slate-800 mb-4">${numeroChip_(subtema.numero, '')}${escapeHTML_(subtema.titulo)}</h3>
     <div class="space-y-6">
@@ -902,7 +920,8 @@ function panelActividad_(subtema, indice, total, reactivos, color, parte = 0, to
 function panelMiniResultado_(subtema, resultado, esUltimo, color) {
   const perfecto = resultado.estrellas >= resultado.estrellasMax;
   return `
-    ${overline_('¡Actividad concluida!', 'medalla', color)}
+    ${insigniaPaso_('aplausos', color)}
+    ${overline_('¡Actividad concluida!', 'aplausos', color)}
     <h3 class="font-heading text-xl sm:text-2xl font-bold text-slate-800 mb-3">${numeroChip_(subtema.numero, '')}${escapeHTML_(subtema.titulo)}</h3>
     <p class="font-heading text-2xl font-bold text-slate-800 mb-2">${resultado.correctas} / ${resultado.total} correctas</p>
     <div class="relative inline-block mb-1">
@@ -930,7 +949,8 @@ function panelResultado_(pda, estado, color) {
   const perfecto = r.estrellas >= r.estrellasMax;
 
   return `
-    ${overline_('Resultado global del PDA', 'medalla', color)}
+    ${insigniaPaso_('trofeo', color)}
+    ${overline_('Resultado global del PDA', 'trofeo', color)}
     <p class="font-heading text-2xl sm:text-3xl font-bold text-slate-800 mb-2">${r.correctas} / ${r.total} correctas</p>
     <div class="relative inline-block mb-1">
       ${perfecto ? `<div class="mn-resplandor absolute inset-0 -m-3 rounded-full bg-amber-400/40 blur-xl"></div>` : ''}
@@ -966,6 +986,7 @@ function panelResultado_(pda, estado, color) {
 function panelPracticaExtra_(pda, color) {
   return `
     <div class="mn-panel mt-4 bg-gradient-to-br from-teal-50 to-emerald-50 border border-teal-200 rounded-3xl p-6 sm:p-7">
+      ${insigniaPaso_('chispas', color)}
       ${overline_('Práctica extra', 'chispas', color)}
       <h3 class="font-heading text-xl font-bold text-slate-800 mb-1">¿Quieres seguir practicando?</h3>
       <p class="text-slate-600 text-sm mb-5">Estos reactivos son opcionales y no cambian tu calificación ni tus estrellas: son solo para reforzar lo que aprendiste.</p>

@@ -359,6 +359,17 @@ async function probarPDA(page, grado, pda, consoleErrors) {
       if (!feedbackTxt.includes('¡Correcto!')) {
         throw new Error(`practicaExtra[${i}] no marcó correcto: "${feedbackTxt}"`);
       }
+      // Cada "Verificar" también dispara el panel flotante fijo al pie de
+      // pantalla (mostrarFeedbackFlotante_). Con un banco grande de práctica
+      // extra (Paso 21: hasta 34 reactivos por PDA, antes 3-4) el siguiente
+      // botón "Verificar" puede quedar bajo ese panel todavía visible si no
+      // se cierra entre reactivo y reactivo — se cierra aquí manipulando el
+      // DOM directo (sin click) para no depender de que el botón "Entendido"
+      // mismo sea clickeable.
+      await page.evaluate(() => {
+        const c = document.getElementById('mn-feedback-flotante');
+        if (c) { c.classList.add('hidden'); c.innerHTML = ''; }
+      });
     }
   }
 
@@ -444,10 +455,10 @@ async function probarPDA(page, grado, pda, consoleErrors) {
         // un nodo clickeable por PDA del grado y el trazo SVG de fondo, y hacer
         // clic en el primer nodo debe llevar a ese PDA (sin bloqueos: ningún
         // nodo debe estar deshabilitado o inaccesible). Se verifica una vez por
-        // grado (con el primer PDA de cada uno). Desde el Paso 15 un grado puede
-        // tener hasta 49 tarjetas (Promise.all de esos 49 fetch()) — un timeout
-        // fijo corto es frágil aquí, así que se espera activamente (igual que en
-        // el camino de Ejercítate) a que aparezca al menos un nodo o el error.
+        // grado (con el primer PDA de cada uno). Un grado puede tener varios
+        // PDAs (Promise.all de esos fetch()) — un timeout fijo corto es
+        // frágil aquí, así que se espera activamente (igual que en el camino
+        // de Ejercítate) a que aparezca al menos un nodo o el error.
         if (!caminoVerificado.has(grado)) {
           caminoVerificado.add(grado);
           await page.goto(`${BASE}/#/pda-lista/${encodeURIComponent(grado)}`, { waitUntil: 'load' });
