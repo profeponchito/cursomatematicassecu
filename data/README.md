@@ -867,3 +867,69 @@ flotante de retroalimentación entre reactivos de práctica extra, porque
 un banco de 34 (antes 3-4) hace mucho más probable que el siguiente
 botón "Verificar" quede momentáneamente bajo ese panel si no se cierra
 entre uno y otro.
+
+## Paso 22: fotos reales del "Profe Ponchito" en toda la página
+
+El profesor confirmó que el conteo de pasos del Paso 21 ya cumplía lo
+que pedía ("me parece bien") y mandó 14 imágenes nuevas del mascota
+"Profe Ponchito" (dos de ellas hojas con varios stickers cada una), con
+instrucciones abiertas: agregarlas "en todo la página web donde tú
+gustes y sea visualmente creativo". A diferencia del Paso 21
+(`insigniaPaso_`, un ícono SVG plano dentro de un círculo de color),
+estas son ilustraciones/fotos reales del mascota, con escenas y texto
+propio (pizarrones, certificados, quizzes, etc.).
+
+**Qué se hizo:**
+- Las 2 hojas de stickers (cuadrículas de 3×3 y 3×4) se recortaron con
+  ImageMagick en celdas individuales; de las ~33 imágenes resultantes
+  (14 originales + los recortes) se eligieron las **12 que mejor
+  encajan semánticamente** con una pantalla concreta de la app, evitando
+  duplicados casi idénticos entre sí. Cada una se redimensionó/optimizó
+  (ancho máximo 240-720px según el uso, PNG de 256 colores) y se guardó
+  en `assets/img/mascota/` (12 archivos, ~480 KB en total).
+- Nuevo helper `imagenMascota_(archivo, alt, clase)` en `app.js` (justo
+  después de `insigniaPaso_`), que simplemente inserta un `<img>` con
+  la ruta a `assets/img/mascota/`. No reemplaza `insigniaPaso_` en
+  ningún panel — se agrega arriba de él, como un acento adicional.
+- Mapeo final (screen → imagen, todas con `alt` descriptivo):
+  problematización → "¿Cómo resolvemos esto?" (laberinto); teoría de
+  subtema → "¡Exploremos nuevos temas con un libro!"; actividad → quiz
+  interactivo con estrellas; mini-resultado → "¡Tú puedes!" con
+  confeti; resultado global → "¡Meta lograda!" con confeti; práctica
+  extra → números/símbolos haciendo malabares; justo antes del botón
+  "Generar mi constancia" → "Certificado de Matemáticas A+" (se dejó
+  fuera del diploma exportable en sí, para no restarle formalidad al
+  PDF); selección de grado (`/grados`) → banner ancho con el pizarrón
+  "Profe Ponchito" y la lista de módulos; lista de PDAs de un grado →
+  "plantando un árbol junto a una pirámide" (metáfora de crecimiento,
+  a propósito en la pantalla de "tu camino"); Ejercítate → banner
+  "Curso Online de Matemáticas"; recursos → "¿Dudas?" junto al botón de
+  Soporte y "regla y compás" junto al de Calculadora; y una miniatura
+  circular de 20×20px del árbol, siempre visible junto a la etiqueta
+  "Tu camino" en el indicador de avance (`caminoPasos_`) de cada
+  pantalla del recorrido.
+- Las otras ~21 imágenes recortadas (variantes/duplicados de las
+  mismas poses: grupos trabajando en equipo, calculadora, gráficas
+  interactivas, fórmula de ecuación, etc.) se dejaron sin usar por
+  ahora — no se descartaron, pero integrar más habría significado
+  repetir la misma idea visual en más de una pantalla sin agregar
+  claridad. Si el profesor quiere más variedad, ya están recortadas y
+  lo único que falta es decidir dónde.
+
+**Validación:** con el mismo build local de Tailwind (el CDN sigue
+bloqueado en este entorno de pruebas) se corrió un recorrido de
+extremo a extremo — registro → selección de grado → lista de PDAs de
+1° → un PDA completo de 18 pasos (problematización, los 4 subtemas con
+sus 2 rondas y mini-resultado cada uno, resultado global, constancia,
+práctica extra) → Ejercítate → recursos — confirmando en cada pantalla
+que las imágenes nuevas cargan (`naturalWidth > 0`) y revisando
+capturas de pantalla del layout real. Se encontraron 0 errores de
+consola reales; el único hallazgo (dos imágenes reportadas como "no
+cargadas" justo al llegar a la pantalla de resultado global) resultó
+ser un falso positivo de la propia prueba, no un bug: esas imágenes
+usan `loading="lazy"` y todavía estaban fuera de la vista cuando se
+revisó, cargando normalmente al hacer scroll — se confirmó con una
+segunda pasada y con las capturas de pantalla. De paso, esta misma
+prueba reconfirmó que el PDA recorrido efectivamente muestra
+"Paso 1 de 18" … "Paso 18 de 18", el resultado ya entregado en el
+Paso 21.
