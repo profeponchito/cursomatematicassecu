@@ -457,8 +457,9 @@ function vistaSeleccionGrado() {
   return `
     ${encabezado_(sesion)}
     <div class="max-w-3xl mx-auto px-4 py-8">
-      <h2 class="font-heading text-2xl font-bold text-slate-800 mb-1">Hola, ${escapeHTML_(sesion.nombre.split(' ')[0])} 👋</h2>
-      <p class="text-slate-500 mb-6">Elige tu grado para ver los PDAs disponibles, o practica cualquier tema de matemáticas de secundaria sin importar tu grado.</p>
+      ${imagenMascota_('grados-hero.png', 'Profe Ponchito frente a un pizarrón de álgebra, señalando la lista de módulos', 'max-h-40 mx-auto mb-5')}
+      <h2 class="font-heading text-2xl font-bold text-slate-800 mb-1 text-center">Hola, ${escapeHTML_(sesion.nombre.split(' ')[0])} 👋</h2>
+      <p class="text-slate-500 mb-6 text-center">Elige tu grado para ver los PDAs disponibles, o practica cualquier tema de matemáticas de secundaria sin importar tu grado.</p>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         ${grados.map((grado, i) => {
           const tema = temaGrado_(grado);
@@ -537,8 +538,11 @@ async function vistaListaPDA({ grado }) {
       <a href="#/grados" class="inline-flex items-center gap-1 text-sm font-semibold ${tema.texto} hover:underline">
         ${icono_('flecha', 'w-4 h-4 rotate-180')} ${esEjercitate ? 'Volver' : 'Cambiar de grado'}
       </a>
-      <h2 class="font-heading text-2xl font-bold text-slate-800 mt-3 mb-1">${esEjercitate ? 'Ejercítate' : `PDAs de ${etiquetaGrado_(grado)}`}</h2>
-      ${esEjercitate ? `<p class="text-slate-500 mb-6">40 temas de matemáticas de secundaria, disponibles para cualquier grado.</p>` : `<div class="mb-6"></div>`}
+      ${esEjercitate
+        ? imagenMascota_('ejercitate-hero.png', 'Profe Ponchito frente a un pizarrón: Curso Online de Matemáticas', 'max-h-36 mx-auto mt-3 mb-1')
+        : imagenMascota_('camino-crecimiento.png', 'Profe Ponchito plantando un árbol junto a una pirámide: tu camino va creciendo', 'max-h-28 mx-auto mt-3 mb-1')}
+      <h2 class="font-heading text-2xl font-bold text-slate-800 mt-3 mb-1 text-center">${esEjercitate ? 'Ejercítate' : `PDAs de ${etiquetaGrado_(grado)}`}</h2>
+      ${esEjercitate ? `<p class="text-slate-500 mb-6 text-center">40 temas de matemáticas de secundaria, disponibles para cualquier grado.</p>` : `<div class="mb-6"></div>`}
       ${error ? `<p class="text-rose-600 bg-rose-50 border border-rose-200 rounded-xl px-4 py-3">No se pudieron cargar los PDAs: ${escapeHTML_(error)}</p>` : ''}
       ${(!error && pdas.length === 0) ? `<p class="text-slate-500">Todavía no hay PDAs cargados para este grado. Vuelve pronto.</p>` : ''}
       ${!error && pdas.length > 0 ? (esEjercitate ? caminoEjercitateAgrupado_(pdas, grado, tema) : caminoPDAs_(pdas, grado, tema)) : ''}
@@ -819,6 +823,19 @@ function insigniaPaso_(iconoNombre, color, clase = 'mn-flotar-in') {
   `;
 }
 
+/** Escena ilustrada real del "Profe Ponchito" (Paso 22 — a diferencia de
+ * insigniaPaso_, que es un ícono SVG plano, este es un dibujo/foto real
+ * del mascota que el profesor mandó para darle más vida visual a la
+ * página, "donde tú gustes y sea visualmente creativo"). Vive en
+ * `assets/img/mascota/` y se usa como acento decorativo — nunca sustituye
+ * información, solo la acompaña — arriba del overline de cada pantalla
+ * del recorrido y en vistas fuera del PDA (selección de grado, Ejercítate,
+ * recursos, constancia). `clase` controla tamaño/alineación según el
+ * contexto (banner ancho vs. ícono pequeño de acento). */
+function imagenMascota_(archivo, alt, clase = 'max-h-28 mx-auto mb-4') {
+  return `<img src="assets/img/mascota/${archivo}" alt="${escapeHTML_(alt)}" loading="lazy" draggable="false" class="${clase} rounded-2xl drop-shadow-sm select-none">`;
+}
+
 function botonPrimario_(texto, dataAccion, color) {
   return `
     <button data-accion="${dataAccion}"
@@ -847,6 +864,7 @@ function numeroChip_(numero, etiqueta = 'Tema') {
 
 function panelProblematizacion_(pda, color) {
   return `
+    ${imagenMascota_('problematizacion-reto.png', 'Profe Ponchito pensando frente a un laberinto: ¿cómo resolvemos esto?')}
     ${insigniaPaso_('ideaPi', color)}
     ${overline_('Problematización', 'foco', color)}
     <h3 class="font-heading text-xl sm:text-2xl font-bold text-slate-800 mb-3">${numeroChip_(pda.numero)}${escapeHTML_(pda.titulo)}</h3>
@@ -877,6 +895,7 @@ function nivelChip_(subtema, indice, total) {
 
 function panelSubtema_(subtema, indice, total, color) {
   return `
+    ${imagenMascota_('subtema-libro.png', 'Profe Ponchito sosteniendo un libro de Álgebra: ¡exploremos nuevos temas!')}
     ${insigniaPaso_('libro', color)}
     ${overline_(nivelChip_(subtema, indice, total), 'libro', color)}
     <h3 class="font-heading text-xl sm:text-2xl font-bold text-slate-800 mb-3">${numeroChip_(subtema.numero, '')}${escapeHTML_(subtema.titulo)}</h3>
@@ -898,6 +917,7 @@ function panelSubtema_(subtema, indice, total, color) {
 function panelActividad_(subtema, indice, total, reactivos, color, parte = 0, totalPartes = 1) {
   const etiquetaRonda = totalPartes > 1 ? ` · Ronda ${parte + 1} de ${totalPartes}` : '';
   return `
+    ${imagenMascota_('actividad-quiz.png', 'Profe Ponchito señalando una pantalla de quiz interactivo con estrellas')}
     ${insigniaPaso_('compas', color)}
     ${overline_(nivelChip_(subtema, indice, total) + etiquetaRonda, 'trofeo', color)}
     <h3 class="font-heading text-xl sm:text-2xl font-bold text-slate-800 mb-4">${numeroChip_(subtema.numero, '')}${escapeHTML_(subtema.titulo)}</h3>
@@ -920,6 +940,7 @@ function panelActividad_(subtema, indice, total, reactivos, color, parte = 0, to
 function panelMiniResultado_(subtema, resultado, esUltimo, color) {
   const perfecto = resultado.estrellas >= resultado.estrellasMax;
   return `
+    ${imagenMascota_('miniresultado-tupuedes.png', 'Profe Ponchito felicitando con confeti: ¡tú puedes!')}
     ${insigniaPaso_('aplausos', color)}
     ${overline_('¡Actividad concluida!', 'aplausos', color)}
     <h3 class="font-heading text-xl sm:text-2xl font-bold text-slate-800 mb-3">${numeroChip_(subtema.numero, '')}${escapeHTML_(subtema.titulo)}</h3>
@@ -949,6 +970,7 @@ function panelResultado_(pda, estado, color) {
   const perfecto = r.estrellas >= r.estrellasMax;
 
   return `
+    ${imagenMascota_('resultado-metalograda.png', 'Profe Ponchito celebrando con confeti: ¡meta lograda!')}
     ${insigniaPaso_('trofeo', color)}
     ${overline_('Resultado global del PDA', 'trofeo', color)}
     <p class="font-heading text-2xl sm:text-3xl font-bold text-slate-800 mb-2">${r.correctas} / ${r.total} correctas</p>
@@ -972,6 +994,7 @@ function panelResultado_(pda, estado, color) {
     </div>
 
     ${!estado.codigoVerificacion ? '<p class="text-slate-400 text-sm">Guardando tu avance…</p>' : `
+      ${imagenMascota_('constancia-certificado.png', 'Profe Ponchito mostrando un Certificado de Matemáticas A+', 'max-h-24 mx-auto mb-3')}
       ${botonPrimario_('Generar mi constancia', 'ver-constancia', color)}
       <div id="contenedor-constancia" class="mt-6"></div>
       <div data-accion-contenedor="descargar-pdf" class="hidden mt-4">
@@ -986,6 +1009,7 @@ function panelResultado_(pda, estado, color) {
 function panelPracticaExtra_(pda, color) {
   return `
     <div class="mn-panel mt-4 bg-gradient-to-br from-teal-50 to-emerald-50 border border-teal-200 rounded-3xl p-6 sm:p-7">
+      ${imagenMascota_('practicaextra-numeros.png', 'Profe Ponchito haciendo malabares con números y símbolos matemáticos', 'max-h-24 mx-auto mb-4')}
       ${insigniaPaso_('chispas', color)}
       ${overline_('Práctica extra', 'chispas', color)}
       <h3 class="font-heading text-xl font-bold text-slate-800 mb-1">¿Quieres seguir practicando?</h3>
@@ -1231,8 +1255,12 @@ function caminoPasos_(pasoIndex, totalPasos, tema) {
   const porcentaje = Math.round(((pasoIndex + 1) / totalPasos) * 100);
   return `
     <div class="mt-3">
-      <div class="flex justify-between text-xs text-slate-500 mb-1.5 font-medium">
-        <span>Tu camino</span><span>Paso ${pasoIndex + 1} de ${totalPasos}</span>
+      <div class="flex justify-between items-center text-xs text-slate-500 mb-1.5 font-medium">
+        <span class="inline-flex items-center gap-1.5">
+          <img src="assets/img/mascota/camino-crecimiento.png" alt="" aria-hidden="true" loading="lazy" class="w-5 h-5 rounded-full object-cover">
+          Tu camino
+        </span>
+        <span>Paso ${pasoIndex + 1} de ${totalPasos}</span>
       </div>
       <div class="mn-progreso-pill mb-2"><span style="width:${porcentaje}%; background:${tema.pista};"></span></div>
       <div class="flex items-center gap-2 flex-wrap">${puntos}</div>
@@ -1265,12 +1293,14 @@ function vistaRecursos() {
         <button data-accion="abrir-calculadora" class="mn-tarjeta mn-elevar mn-boton-3d text-left bg-blue-100 border border-blue-200 rounded-3xl p-5" style="--mn-3d-borde:#172554">
           <span class="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-white/70 text-blue-800 mb-2">${icono_('calculadora', 'w-6 h-6')}</span>
           <p class="font-heading font-bold text-slate-800">Calculadora</p>
-          <p class="text-slate-600 text-sm">Para tus operaciones rápidas.</p>
+          <p class="text-slate-600 text-sm mb-2">Para tus operaciones rápidas.</p>
+          ${imagenMascota_('recursos-herramientas.png', 'Profe Ponchito sosteniendo una regla y un compás', 'max-h-16 ml-auto mb-0')}
         </button>
         <button data-accion="abrir-soporte" ${retraso_(1, 90)} class="mn-tarjeta mn-elevar mn-boton-3d text-left bg-teal-100 border border-teal-200 rounded-3xl p-5" style="--mn-3d-borde:#022c22">
           <span class="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-white/70 text-teal-800 mb-2">${icono_('soporte', 'w-6 h-6')}</span>
           <p class="font-heading font-bold text-slate-800">Soporte</p>
-          <p class="text-slate-600 text-sm">Escríbele a tu profesor(a) tu duda.</p>
+          <p class="text-slate-600 text-sm mb-2">Escríbele a tu profesor(a) tu duda.</p>
+          ${imagenMascota_('recursos-dudas.png', 'Profe Ponchito pensativo con un signo de interrogación: ¿Dudas?', 'max-h-16 ml-auto mb-0')}
         </button>
         <div ${retraso_(2, 90)} class="mn-tarjeta bg-amber-100 border border-amber-200 rounded-3xl p-5 sm:col-span-2">
           <span class="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-white/70 text-amber-800 mb-2">${icono_('descarga', 'w-6 h-6')}</span>
