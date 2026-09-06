@@ -1287,7 +1287,6 @@ function vistaRecursos() {
 
   setTimeout(() => {
     document.querySelector('[data-accion="abrir-calculadora"]')?.addEventListener('click', abrirModalCalculadora_);
-    document.querySelector('[data-accion="abrir-soporte"]')?.addEventListener('click', abrirModalSoporte_);
   }, 0);
 
   return `
@@ -1297,8 +1296,8 @@ function vistaRecursos() {
       <a href="#/grados" class="relative inline-flex items-center gap-1 text-sm font-semibold ${COLOR_EJERCITATE.texto} hover:underline">
         ${icono_('flecha', 'w-4 h-4 rotate-180')} Volver
       </a>
-      <h2 class="relative font-heading text-2xl font-bold text-slate-800 mt-3 mb-1">Recursos y soporte</h2>
-      <p class="relative text-slate-500 mb-6">Herramientas de apoyo y ayuda directa con tu profesor(a).</p>
+      <h2 class="relative font-heading text-2xl font-bold text-slate-800 mt-3 mb-1">Recursos</h2>
+      <p class="relative text-slate-500 mb-6">Herramientas de apoyo para tus actividades.</p>
       <div class="relative grid grid-cols-1 sm:grid-cols-2 gap-4">
         <button data-accion="abrir-calculadora" class="mn-tarjeta mn-elevar mn-boton-3d text-left bg-blue-100 border border-blue-200 rounded-3xl p-5" style="--mn-3d-borde:#172554">
           <span class="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-white/70 text-blue-800 mb-2">${icono_('calculadora', 'w-6 h-6')}</span>
@@ -1306,13 +1305,7 @@ function vistaRecursos() {
           <p class="text-slate-600 text-sm mb-2">Para tus operaciones rápidas.</p>
           ${imagenMascota_('recursos-herramientas.png', 'Profe Ponchito sosteniendo una regla y un compás', 'max-h-16 ml-auto mb-0')}
         </button>
-        <button data-accion="abrir-soporte" ${retraso_(1, 90)} class="mn-tarjeta mn-elevar mn-boton-3d text-left bg-teal-100 border border-teal-200 rounded-3xl p-5" style="--mn-3d-borde:#022c22">
-          <span class="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-white/70 text-teal-800 mb-2">${icono_('soporte', 'w-6 h-6')}</span>
-          <p class="font-heading font-bold text-slate-800">Soporte</p>
-          <p class="text-slate-600 text-sm mb-2">Escríbele a tu profesor(a) tu duda.</p>
-          ${imagenMascota_('recursos-dudas.png', 'Profe Ponchito pensativo con un signo de interrogación: ¿Dudas?', 'max-h-16 ml-auto mb-0')}
-        </button>
-        <div ${retraso_(2, 90)} class="mn-tarjeta bg-amber-100 border border-amber-200 rounded-3xl p-5 sm:col-span-2">
+        <div ${retraso_(1, 90)} class="mn-tarjeta bg-amber-100 border border-amber-200 rounded-3xl p-5">
           <span class="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-white/70 text-amber-800 mb-2">${icono_('descarga', 'w-6 h-6')}</span>
           <p class="font-heading font-bold text-slate-800">Materiales descargables</p>
           <p class="text-slate-600 text-sm">Próximamente: guías y hojas de trabajo para imprimir.</p>
@@ -1395,40 +1388,6 @@ function cerrarModal_(idContenedor) {
   if (contenedor) { contenedor.classList.add('hidden'); contenedor.innerHTML = ''; }
 }
 
-/** Modal de soporte: un formulario breve arma un correo (mailto:) dirigido
- * al docente — nada se envía automáticamente ni se guarda en ningún
- * servidor nuevo; es el propio cliente de correo del alumno el que se abre,
- * igual que al tocar un enlace "mailto:" en cualquier página web. */
-function abrirModalSoporte_() {
-  const sesion = obtenerSesion();
-  abrirModal_('mn-modal-soporte', `
-    ${overline_('Soporte', 'soporte', COLOR_EJERCITATE)}
-    <h3 class="font-heading text-xl font-bold text-slate-800 mb-1">¿Necesitas ayuda?</h3>
-    <p class="text-slate-500 text-sm mb-4">Escribe tu duda y se abrirá tu correo para enviarla a tu profesor(a).</p>
-    <form id="form-soporte" class="space-y-3">
-      <div>
-        <label class="block text-sm font-semibold text-slate-700 mb-1">Tu duda o comentario</label>
-        <textarea name="mensaje" required rows="4"
-                  class="w-full border border-slate-300 rounded-xl px-3 py-2.5 focus:ring-2 focus:ring-teal-500 focus:border-teal-500 focus:outline-none transition"
-                  placeholder="Ej. No entendí el paso 2 del tema de fracciones..."></textarea>
-      </div>
-      <button type="submit" class="mn-boton-3d w-full bg-gradient-to-r ${COLOR_EJERCITATE.grad} text-white font-heading font-bold py-2.5 rounded-xl" style="--mn-3d-borde:${COLOR_EJERCITATE.presionado}">
-        Abrir mi correo →
-      </button>
-    </form>
-  `);
-  document.getElementById('form-soporte')?.addEventListener('submit', (evento) => {
-    evento.preventDefault();
-    const mensaje = (new FormData(evento.target).get('mensaje') || '').toString();
-    const asunto = encodeURIComponent(`Duda de MATE-NEM — ${sesion ? sesion.nombre : 'alumno'}`);
-    const cuerpo = encodeURIComponent(
-      `Alumno: ${sesion ? sesion.nombre : '(sin sesión)'}\nGrado/Grupo: ${sesion ? `${sesion.grado} ${sesion.grupo}` : '-'}\n\nMensaje:\n${mensaje}`
-    );
-    window.location.href = `mailto:docentealfonsomatematicas@gmail.com?subject=${asunto}&body=${cuerpo}`;
-    cerrarModal_('mn-modal-soporte');
-  });
-}
-
 /** Calculadora básica de la biblioteca de recursos: solo botones (sin campo
  * de texto libre), para que la expresión evaluada esté siempre compuesta
  * únicamente por los dígitos y operadores que la propia UI permite. */
@@ -1476,24 +1435,20 @@ function abrirModalCalculadora_() {
 }
 
 /** Agrega, una sola vez, los contenedores fijos de la capa flotante global
- * (retroalimentación, modales de soporte/calculadora y el botón flotante de
- * soporte) al final de <body>, y conecta el cierre por clic-afuera de las
- * tarjetas de módulo abiertas y por tecla Escape — todo puramente de UI,
- * sin tocar el router ni los datos. */
+ * (retroalimentación y modal de la calculadora) al final de <body>, y
+ * conecta el cierre por clic-afuera de las tarjetas de módulo abiertas y
+ * por tecla Escape — todo puramente de UI, sin tocar el router ni los
+ * datos. (Paso 24: se retiró el botón/modal de "Soporte" — el `mailto:`
+ * hacia el docente — para que la app no ofrezca un canal directo por el
+ * que un alumno pudiera adjuntar contenido inapropiado a su correo; ver
+ * `data/README.md`.) */
 function capaGlobal_() {
   const capa = document.createElement('div');
   capa.innerHTML = `
     <div id="mn-feedback-flotante" class="hidden"></div>
-    <div id="mn-modal-soporte" class="hidden"></div>
     <div id="mn-modal-calculadora" class="hidden"></div>
-    <button id="mn-boton-soporte-flotante" title="¿Necesitas ayuda?" aria-label="Soporte"
-            class="mn-boton-3d mn-elevar no-imprimir fixed bottom-5 right-5 z-40 w-14 h-14 rounded-full bg-gradient-to-br from-teal-600 to-emerald-800 text-white shadow-xl flex items-center justify-center"
-            style="--mn-3d-borde:#022c22">
-      ${icono_('soporte', 'w-6 h-6')}
-    </button>
   `;
   document.body.append(...capa.childNodes);
-  document.getElementById('mn-boton-soporte-flotante')?.addEventListener('click', abrirModalSoporte_);
 
   document.addEventListener('click', (evento) => {
     document.querySelectorAll('details.mn-nodo[open]').forEach((detalle) => {
@@ -1503,7 +1458,6 @@ function capaGlobal_() {
   document.addEventListener('keydown', (evento) => {
     if (evento.key === 'Escape') {
       ocultarFeedbackFlotante_();
-      cerrarModal_('mn-modal-soporte');
       cerrarModal_('mn-modal-calculadora');
     }
   });
@@ -1542,8 +1496,8 @@ function encabezado_(sesion) {
         <span class="hidden xs:inline">MATE-NEM</span>
       </a>
       <div class="text-sm text-white/90 flex items-center gap-2 sm:gap-3">
-        <a href="#/recursos" title="Recursos y soporte"
-           class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/15 hover:bg-white/25 transition" aria-label="Recursos y soporte">
+        <a href="#/recursos" title="Recursos"
+           class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/15 hover:bg-white/25 transition" aria-label="Recursos">
           ${icono_('soporte', 'w-4 h-4')}
         </a>
         <span class="hidden sm:inline">${escapeHTML_(sesion.nombre)} · ${escapeHTML_(sesion.grado)} ${escapeHTML_(sesion.grupo)}</span>
