@@ -452,6 +452,7 @@ function vistaSeleccionGrado() {
   if (!sesion) { navegar('/'); return ''; }
 
   const grados = ['1°', '2°', '3°'];
+  const trimestres = ['1', '2', '3'];
   const ej = COLOR_EJERCITATE;
 
   return `
@@ -459,35 +460,39 @@ function vistaSeleccionGrado() {
     <div class="max-w-3xl mx-auto px-4 py-8">
       ${imagenMascota_('grados-hero.png', 'Profe Ponchito frente a un pizarrón de álgebra, señalando la lista de módulos', 'max-h-40 mx-auto mb-5')}
       <h2 class="font-heading text-2xl font-bold text-slate-800 mb-1 text-center">Hola, ${escapeHTML_(sesion.nombre.split(' ')[0])} 👋</h2>
-      <p class="text-slate-500 mb-6 text-center">Elige tu grado para ver los PDAs disponibles, o practica cualquier tema de matemáticas de secundaria sin importar tu grado.</p>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        ${grados.map((grado, i) => {
-          const tema = temaGrado_(grado);
-          return `
-          <a href="#/pda-lista/${encodeURIComponent(grado)}" ${retraso_(i, 90)}
-             class="mn-tarjeta mn-elevar group block rounded-3xl p-[2px] bg-gradient-to-br ${tema.grad} shadow-lg">
-            <div class="bg-white rounded-[calc(1.5rem-2px)] px-6 py-8 text-center h-full">
-              <span class="font-heading text-4xl font-extrabold bg-gradient-to-br ${tema.grad} bg-clip-text text-transparent">${grado}</span>
-              <p class="text-slate-500 mt-1 font-medium">Secundaria</p>
-              <p class="mt-3 inline-flex items-center gap-1 text-sm font-semibold ${tema.texto}">
-                Ver PDAs ${icono_('flecha', 'w-4 h-4 group-hover:translate-x-1 transition-transform')}
-              </p>
-            </div>
-          </a>
-        `;
-        }).join('')}
-        <a href="#/pda-lista/ejercitate" ${retraso_(3, 90)}
-           class="mn-tarjeta mn-elevar group block rounded-3xl p-[2px] bg-gradient-to-br ${ej.grad} shadow-lg">
-          <div class="bg-white rounded-[calc(1.5rem-2px)] px-6 py-8 text-center h-full flex flex-col items-center justify-center">
-            <span class="inline-flex items-center justify-center w-12 h-12 rounded-2xl ${ej.chip} mb-2">${icono_('operaciones', 'w-6 h-6')}</span>
-            <span class="font-heading text-xl font-extrabold bg-gradient-to-br ${ej.grad} bg-clip-text text-transparent">Ejercítate</span>
-            <p class="text-slate-500 mt-1 font-medium text-sm">40 temas, todos los grados</p>
-            <p class="mt-3 inline-flex items-center gap-1 text-sm font-semibold ${ej.texto}">
-              Practicar ${icono_('flecha', 'w-4 h-4 group-hover:translate-x-1 transition-transform')}
-            </p>
+      <p class="text-slate-500 mb-6 text-center">Elige tu grado y trimestre para ver los PDAs disponibles, o practica cualquier tema de matemáticas de secundaria sin importar tu grado.</p>
+      ${grados.map((grado) => {
+        const tema = temaGrado_(grado);
+        return `
+        <div class="mb-8">
+          <h3 class="font-heading text-lg font-bold ${tema.texto} mb-3">${grado} de secundaria</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            ${trimestres.map((trimestre, i) => `
+              <a href="#/pda-lista/${encodeURIComponent(grado)}/${trimestre}" ${retraso_(i, 90)}
+                 class="mn-tarjeta mn-elevar group block rounded-3xl p-[2px] bg-gradient-to-br ${tema.grad} shadow-lg">
+                <div class="bg-white rounded-[calc(1.5rem-2px)] px-6 py-6 text-center h-full">
+                  <span class="font-heading text-2xl font-extrabold bg-gradient-to-br ${tema.grad} bg-clip-text text-transparent">${grado}</span>
+                  <p class="text-slate-500 mt-1 font-medium text-sm">Trimestre ${trimestre}</p>
+                  <p class="mt-2 inline-flex items-center gap-1 text-xs font-semibold ${tema.texto}">
+                    Ver PDAs ${icono_('flecha', 'w-3.5 h-3.5 group-hover:translate-x-1 transition-transform')}
+                  </p>
+                </div>
+              </a>
+            `).join('')}
           </div>
-        </a>
-      </div>
+        </div>
+        `;
+      }).join('')}
+      <a href="#/pda-lista/ejercitate" class="mn-tarjeta mn-elevar group block rounded-3xl p-[2px] bg-gradient-to-br ${ej.grad} shadow-lg max-w-sm mx-auto">
+        <div class="bg-white rounded-[calc(1.5rem-2px)] px-6 py-8 text-center h-full flex flex-col items-center justify-center">
+          <span class="inline-flex items-center justify-center w-12 h-12 rounded-2xl ${ej.chip} mb-2">${icono_('operaciones', 'w-6 h-6')}</span>
+          <span class="font-heading text-xl font-extrabold bg-gradient-to-br ${ej.grad} bg-clip-text text-transparent">Ejercítate</span>
+          <p class="text-slate-500 mt-1 font-medium text-sm">40 temas, todos los grados</p>
+          <p class="mt-3 inline-flex items-center gap-1 text-sm font-semibold ${ej.texto}">
+            Practicar ${icono_('flecha', 'w-4 h-4 group-hover:translate-x-1 transition-transform')}
+          </p>
+        </div>
+      </a>
     </div>
   `;
 }
@@ -518,7 +523,7 @@ function caminoEjercitateAgrupado_(pdas, grado, tema) {
   }).join('');
 }
 
-async function vistaListaPDA({ grado }) {
+async function vistaListaPDA({ grado, trimestre }) {
   const sesion = obtenerSesion();
   if (!sesion) { navegar('/'); return ''; }
 
@@ -528,23 +533,28 @@ async function vistaListaPDA({ grado }) {
   let error = null;
   try {
     pdas = await cargarListaPDAs(grado);
+    if (!esEjercitate && trimestre) {
+      pdas = pdas.filter((p) => p.trimestre === trimestre);
+    }
   } catch (e) {
     error = e.message;
   }
+
+  const etiquetaTrimestre = !esEjercitate && trimestre ? ` · Trimestre ${trimestre}` : '';
 
   return `
     ${encabezado_(sesion)}
     <div class="max-w-2xl mx-auto px-4 py-8">
       <a href="#/grados" class="inline-flex items-center gap-1 text-sm font-semibold ${tema.texto} hover:underline">
-        ${icono_('flecha', 'w-4 h-4 rotate-180')} ${esEjercitate ? 'Volver' : 'Cambiar de grado'}
+        ${icono_('flecha', 'w-4 h-4 rotate-180')} ${esEjercitate ? 'Volver' : 'Cambiar de grado o trimestre'}
       </a>
       ${esEjercitate
         ? imagenMascota_('ejercitate-hero.png', 'Profe Ponchito frente a un pizarrón: Curso Online de Matemáticas', 'max-h-36 mx-auto mt-3 mb-1')
         : imagenMascota_('camino-crecimiento.png', 'Profe Ponchito plantando un árbol junto a una pirámide: tu camino va creciendo', 'max-h-28 mx-auto mt-3 mb-1')}
-      <h2 class="font-heading text-2xl font-bold text-slate-800 mt-3 mb-1 text-center">${esEjercitate ? 'Ejercítate' : `PDAs de ${etiquetaGrado_(grado)}`}</h2>
+      <h2 class="font-heading text-2xl font-bold text-slate-800 mt-3 mb-1 text-center">${esEjercitate ? 'Ejercítate' : `PDAs de ${etiquetaGrado_(grado)}${etiquetaTrimestre}`}</h2>
       ${esEjercitate ? `<p class="text-slate-500 mb-6 text-center">40 temas de matemáticas de secundaria, disponibles para cualquier grado.</p>` : `<div class="mb-6"></div>`}
       ${error ? `<p class="text-rose-600 bg-rose-50 border border-rose-200 rounded-xl px-4 py-3">No se pudieron cargar los PDAs: ${escapeHTML_(error)}</p>` : ''}
-      ${(!error && pdas.length === 0) ? `<p class="text-slate-500">Todavía no hay PDAs cargados para este grado. Vuelve pronto.</p>` : ''}
+      ${(!error && pdas.length === 0) ? `<p class="text-slate-500">Todavía no hay PDAs cargados para ${esEjercitate ? 'esta categoría' : 'este trimestre'}. Vuelve pronto.</p>` : ''}
       ${!error && pdas.length > 0 ? (esEjercitate ? caminoEjercitateAgrupado_(pdas, grado, tema) : caminoPDAs_(pdas, grado, tema)) : ''}
     </div>
   `;
@@ -569,7 +579,7 @@ async function vistaPDA({ grado, id }) {
       ${encabezado_(sesion)}
       <div class="max-w-2xl mx-auto px-4 py-8">
         <p class="text-rose-600 bg-rose-50 border border-rose-200 rounded-xl px-4 py-3">No se pudo cargar el PDA: ${escapeHTML_(e.message)}</p>
-        <a href="#/pda-lista/${encodeURIComponent(grado)}" class="${tema.texto} font-semibold hover:underline">← Volver</a>
+        <a href="#/grados" class="${tema.texto} font-semibold hover:underline">← Volver</a>
       </div>
     `;
     return contenedorError;
@@ -626,7 +636,7 @@ async function vistaPDA({ grado, id }) {
     raiz.innerHTML = `
       ${encabezado_(sesion)}
       <div class="max-w-2xl mx-auto px-4 py-8">
-        <a href="#/pda-lista/${encodeURIComponent(grado)}" class="inline-flex items-center gap-1 text-sm font-semibold ${tema.texto} hover:underline">
+        <a href="${grado === 'ejercitate' ? '#/pda-lista/ejercitate' : `#/pda-lista/${encodeURIComponent(grado)}/${encodeURIComponent(pda.trimestre || '1')}`}" class="inline-flex items-center gap-1 text-sm font-semibold ${tema.texto} hover:underline">
           ${icono_('flecha', 'w-4 h-4 rotate-180')} ${escapeHTML_(etiquetaGrado_(grado))}
         </a>
         ${caminoPasos_(estado.pasoIndex, pasos.length, tema)}
@@ -1061,7 +1071,7 @@ function panelCelebracion_(pda, resultado, grado, color) {
         </div>
         <p class="font-heading text-2xl sm:text-3xl font-extrabold text-white mb-1">${perfecto ? '¡Puntaje perfecto!' : '¡Nivel superado!'}</p>
         <p class="text-white/90 font-medium mb-6">Completaste «${escapeHTML_(pda.titulo)}» con ${resultado.puntaje} de ${resultado.puntajeMax} pts.</p>
-        <a href="#/pda-lista/${encodeURIComponent(grado)}" class="mn-elevar inline-flex items-center gap-2 bg-white/95 hover:bg-white text-slate-800 font-heading font-bold px-6 py-3 rounded-xl transition shadow-lg">
+        <a href="${grado === 'ejercitate' ? '#/pda-lista/ejercitate' : `#/pda-lista/${encodeURIComponent(grado)}/${encodeURIComponent(pda.trimestre || '1')}`}" class="mn-elevar inline-flex items-center gap-2 bg-white/95 hover:bg-white text-slate-800 font-heading font-bold px-6 py-3 rounded-xl transition shadow-lg">
           Elegir otro tema ${icono_('flecha', 'w-4 h-4')}
         </a>
       </div>
@@ -1559,6 +1569,7 @@ function escapeHTML_(texto = '') {
 ruta('/', vistaRegistro);
 ruta('/grados', vistaSeleccionGrado);
 ruta('/pda-lista/:grado', vistaListaPDA);
+ruta('/pda-lista/:grado/:trimestre', vistaListaPDA);
 ruta('/pda/:grado/:id', vistaPDA);
 ruta('/recursos', vistaRecursos);
 rutaPorDefecto(vista404);
