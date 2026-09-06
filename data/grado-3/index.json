@@ -1,10 +1,17 @@
 {
   "grado": "3°",
-  "descripcion": "Manifiesto de PDAs disponibles para 3° de secundaria. Trimestre 1 completo (eje: Sentido numérico y pensamiento algebraico): 4 PDAs curriculares, cada uno con sus 4 subtemas núcleo (Introductorio/Intermedio/Avanzado/Síntesis) y una sección de práctica extra opcional con los 3 subtemas de repaso (Paso 21: se fusionaron de vuelta las 28 tarjetas divididas del Paso 15, para que la extensión de pasos hasta la constancia sea similar a la de Ejercítate — ver data/README.md).",
+  "descripcion": "Manifiesto de PDAs disponibles para 3° de secundaria. Trimestre 1 completo (eje: Sentido numérico y pensamiento algebraico): 4 PDAs curriculares, cada uno con sus 4 subtemas núcleo (Introductorio/Intermedio/Avanzado/Síntesis) y una sección de práctica extra opcional con los 3 subtemas de repaso (Paso 21: se fusionaron de vuelta las 28 tarjetas divididas del Paso 15, para que la extensión de pasos hasta la constancia sea similar a la de Ejercítate — ver data/README.md). Trimestre 2 (eje: Forma, espacio y medida, Paso 23): PDA05 Teorema de Pitágoras y Trigonometría, PDA06 Áreas y Volúmenes de Cuerpos Geométricos. Trimestre 3 (Paso 23): PDA07 Área y Volumen de la Esfera, PDA08 Densidad, Rapidez y Costos (eje Forma, espacio y medida); PDA09 Muestras y Análisis Crítico de Gráficas, PDA10 Estadística con Datos Agrupados, PDA11 Probabilidad de la Unión de Eventos (eje Análisis de datos y probabilidad). Grado 3° completo: 11 PDAs.",
   "archivos": [
     "3S-B1-PDA01.json",
     "3S-B1-PDA02.json",
     "3S-B1-PDA03.json",
-    "3S-B1-PDA04.json"
+    "3S-B1-PDA04.json",
+    "3S-B1-PDA05.json",
+    "3S-B1-PDA06.json",
+    "3S-B1-PDA07.json",
+    "3S-B1-PDA08.json",
+    "3S-B1-PDA09.json",
+    "3S-B1-PDA10.json",
+    "3S-B1-PDA11.json"
   ]
 }
