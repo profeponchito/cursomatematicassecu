@@ -1097,3 +1097,46 @@ las 40 de Ejercítate; un recorrido completo (problematización → 4 subtemas
 × 2 rondas → resultado global → constancia) de un PDA de Trimestre 2 y uno
 de Trimestre 3 en cada grado, confirmando que el back-link siempre apunta
 al trimestre correcto — 0 errores.
+
+## Paso 24: se retiró el canal de "Soporte" (mailto al docente)
+
+El docente preguntó si existía forma de evitar que le llegara contenido
+ofensivo — archivos adjuntos de índole sexual o grotesca — a su correo
+real a través de las asesorías. Investigando las opciones de Gmail/Google
+Workspace se confirmó que **no hay manera de filtrar el contenido de una
+imagen adjunta**: los filtros de Gmail (personales o de Workspace,
+`support.google.com/a/answer/1346934`) solo pueden actuar sobre el tipo
+de archivo o palabras del asunto/cuerpo, nunca sobre lo que muestra una
+imagen — eso requeriría una integración externa (p. ej. Cloud Vision
+SafeSearch) fuera del alcance de lo que se había construido. En vez de
+prometer un filtro que no existe, el docente eligió la opción más simple
+y segura: **quitar por completo el botón que abría ese canal**, ya que la
+app nunca necesitó un canal de correo directo para funcionar (el webhook
+de Google Apps Script hacia la hoja de cálculo es, y sigue siendo, la
+única vía real de datos del alumno hacia el docente, y no admite
+adjuntos).
+
+Se eliminó de `assets/js/app.js`:
+
+- El botón flotante circular "¿Necesitas ayuda?" (`#mn-boton-soporte-flotante`)
+  que aparecía sobre cualquier pantalla (agregado en el Paso 20).
+- La tarjeta "Soporte" de la pantalla `/recursos` (`data-accion="abrir-soporte"`).
+- La función `abrirModalSoporte_` completa (el formulario que armaba un
+  enlace `mailto:docentealfonsomatematicas@gmail.com` con el mensaje del
+  alumno) y su contenedor de modal `#mn-modal-soporte`.
+- La referencia a cerrar ese modal con la tecla Escape en `capaGlobal_`.
+
+La pantalla `/recursos` se renombró a **"Recursos"** (antes "Recursos y
+soporte", tanto en el `<h2>` como en el `title`/`aria-label` del ícono del
+encabezado que enlaza a ella) y ahora solo muestra dos tarjetas:
+Calculadora y "Materiales descargables" (sin cambios en ninguna de las
+dos). Ningún dato, PDA, ruta de navegación o mecánica de gamificación se
+tocó — es puramente la eliminación de una capa de interfaz, igual de
+quirúrgica que su adición en el Paso 20.
+
+**Prueba de punta a punta** (Playwright + build local de Tailwind):
+confirma que `#mn-boton-soporte-flotante` y `#mn-modal-soporte` ya no
+existen en el DOM en ninguna pantalla, que el título "Recursos y soporte"
+no aparece en ningún lado, que la Calculadora sigue funcionando (prueba de
+una operación real) y que la navegación general (`/grados` con las 9
+tarjetas grado×trimestre + Ejercítate) no se vio afectada — 0 errores.
