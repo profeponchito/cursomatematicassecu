@@ -76,15 +76,19 @@ repaso, su número sigue desde `.5` (`3.5`, `3.6`, `3.7`) como antes.
 
 ## Fuente curricular
 
-Los 17 PDAs incluidos (Trimestre 1, eje "Sentido numérico y pensamiento
-algebraico") se transcribieron a partir de fuentes derivadas del **Programa
-Sintético de la Fase 6** (SEP, 2022 — la Fase 6 cubre toda la secundaria).
-Un hallazgo importante de la investigación: la SEP define los Contenidos y
-PDA a nivel de toda la Fase 6, **no separados oficialmente por grado**; cada
-escuela distribuye esos contenidos entre 1°, 2° y 3° en su propio Programa
-Analítico. La distribución usada aquí (qué PDA va en qué grado y en qué
-trimestre) sigue una dosificación común encontrada en materiales de varias
-escuelas NEM — no es la única posible.
+Los 38 PDAs incluidos (los 3 trimestres, en los 3 grados) se transcribieron
+o redactaron a partir de fuentes derivadas del **Programa Sintético de la
+Fase 6** (SEP, 2022 — la Fase 6 cubre toda la secundaria). Un hallazgo
+importante de la investigación: la SEP define los Contenidos y PDA a nivel
+de toda la Fase 6, **no separados oficialmente por grado** — y son solo
+**14 Contenidos en total** para los 3 años (7 de "Sentido numérico y
+pensamiento algebraico", 4 de "Forma, espacio y medida", 3 de "Análisis de
+datos y probabilidad"). Cada escuela distribuye esos 14 Contenidos entre
+1°, 2° y 3°, y entre trimestres, en su propio Programa Analítico — la
+distribución usada aquí (qué PDA va en qué grado y en qué trimestre) sigue
+una dosificación trimestral real y bien documentada encontrada para 1° de
+secundaria (ver "Paso 23" más abajo), extrapolada de forma consistente a
+2° y 3°; no es la única distribución posible.
 
 **Si tu escuela ya tiene su Programa Analítico** con una distribución
 distinta por grado/trimestre, avísame para ajustar los archivos y que
@@ -94,6 +98,7 @@ Fuentes consultadas:
 - [Programa Sintético de la Fase 6 (SEP)](https://educacionbasica.sep.gob.mx/wp-content/uploads/2024/06/Programa_Sintetico_Fase_6.pdf)
 - [Avance del Programa Sintético Fase 6 — Matemáticas (SEP)](https://educacionbasica.sep.gob.mx/wp-content/uploads/2022/12/Avance-Programa-Sintetico-Fase-6.pdf)
 - Dosificaciones derivadas (Studocu): 1er grado, y el documento combinado "Matemáticas 1er, 2do y 3er Grado"; 3er grado ("Álgebra y Geometría")
+- Dosificación trimestral real "Dosificación Matemáticas 1° Sec. 6ta Fase - Programa Sintético 2023 - NEM" (Studocu — Paso 23), usada para decidir qué PDAs de Trimestre 1 pasan a Trimestre 2 en 1° de secundaria, y extrapolada con la misma lógica a 2° y 3°.
 
 ## Cómo agregar un PDA nuevo
 
@@ -933,3 +938,162 @@ segunda pasada y con las capturas de pantalla. De paso, esta misma
 prueba reconfirmó que el PDA recorrido efectivamente muestra
 "Paso 1 de 18" … "Paso 18 de 18", el resultado ya entregado en el
 Paso 21.
+
+## Paso 23: Trimestres 2 y 3 completos, navegación por periodo y reetiquetado curricular real
+
+El docente reportó (con capturas de pantalla) que en su grupo el camino de
+cada grado se veía reducido a "6 o 7 temas" y pidió llegar a 20 por grado,
+además de que el contenido nuevo apareciera en **tarjetas separadas de
+"2do periodo"** en vez de mezclarse en el camino del Trimestre 1. Esto
+llevó a dos decisiones de diseño explícitas, ambas confirmadas con el
+docente antes de escribir contenido nuevo (ver el hilo de preguntas en la
+conversación):
+
+### 1. De dónde salió el contenido nuevo (y por qué no son 20 por grado)
+
+Investigar el **Programa Sintético de la Fase 6** (SEP) mostró que toda la
+Fase 6 —los 3 años de secundaria juntos, no cada grado por separado— tiene
+solo **14 Contenidos**: los 7 de "Sentido numérico y pensamiento
+algebraico" ya usados en el Trimestre 1 de esta app, 4 de "Forma, espacio y
+medida" (Rectas y ángulos; Construcción y propiedades de las figuras
+planas y cuerpos; Circunferencia, círculo y esfera; Medición y cálculo en
+diferentes contextos) y 3 de "Análisis de datos y probabilidad" (Obtención
+y representación de información; Interpretación de la información a
+través de medidas de tendencia central y de dispersión; Azar e
+incertidumbre en la ocurrencia de eventos cotidianos) que la app todavía
+no usaba. Eso se le explicó honestamente al docente: no hay 20 Contenidos
+oficiales por grado para llegar a 20 sin inventar temario fuera del
+currículo. Se le presentaron 3 opciones (cubrir Trimestres 2 y 3 completos,
+solo Trimestre 2, o un mix) y, tras encontrar además una dosificación
+trimestral real y bien documentada para 1° de secundaria que reparte los 7
+PDAs de álgebra entre Trimestre 1 (3 PDAs) y Trimestre 2 (4 PDAs, junto con
+2 temas nuevos de geometría) —distinto a como estaba organizada la app
+hasta el Paso 22, con los 7 PDAs completos en el Trimestre 1—, se le
+presentó esa fuente y eligió explícitamente "usar esta fuente real,
+reacomodando" en vez de forzar un conteo redondo. Resultado acordado:
+**14 PDAs en 1°, 13 en 2°, 11 en 3°** (38 en total), no 20/20/20.
+
+### 2. Reetiquetado del contenido existente (sin reescribir nada)
+
+El esquema (`pda.schema.json`) ya tenía un campo `trimestre` (`"1"|"2"|"3"`)
+que los 17 PDAs originales traían fijo en `"1"` pero que `app.js` nunca
+usaba para nada — se reutilizó ese campo en vez de inventar uno nuevo
+(`periodo` u otro nombre). Aplicando la misma lógica de la dosificación de
+1° a 2° y 3° (con el subconjunto de PDAs de álgebra que cada uno ya tenía),
+quedó:
+
+| Grado | Trimestre 1 (sin cambio de contenido) | Trimestre 2 (reetiquetados) |
+|---|---|---|
+| 1° | PDA01-03 | PDA04-07 |
+| 2° | PDA01-03 | PDA04-06 |
+| 3° | PDA01 | PDA02-04 |
+
+Ningún archivo cambió de contenido, título, ejemplos ni reactivos — solo el
+valor del campo `trimestre` (de `"1"` a `"2"` en los que correspondía).
+
+### 3. Los 21 PDAs nuevos
+
+Se escribieron 6 PDAs para Trimestre 2 (2 por grado, mismo eje "Forma,
+espacio y medida" que faltaba) y 15 para Trimestre 3 (5 por grado, entre
+"Forma, espacio y medida" y "Análisis de datos y probabilidad"), cada uno
+con la estructura ya establecida desde el Paso 14 (problematización + 4
+subtemas de dificultad creciente, 10 reactivos cada uno en 2 rondas de 5, +
+práctica extra de 20-24 reactivos). El **alcance de cada tema crece por
+grado** (currículo en espiral): por ejemplo "Rectas y ángulos" va de
+clasificar ángulos y ángulos entre paralelas en 1°, a congruencia de
+triángulos y rectas notables en 2°, a Teorema de Pitágoras y razones
+trigonométricas en 3°.
+
+**Trimestre 2 — eje "Forma, espacio y medida" (2 PDAs × 3 grados = 6):**
+- **Rectas y ángulos:** 1° "Ángulos y Rectas" (clasificación de ángulos,
+  complementarios/suplementarios, ángulos entre paralelas cortadas por una
+  transversal) → 2° "Ángulos y Congruencia de Triángulos" (suma de ángulos
+  internos de un polígono, rectas notables, criterios LLL/LAL/ALA) → 3°
+  "Teorema de Pitágoras y Trigonometría" (Pitágoras con ternas limpias,
+  seno/coseno/tangente, ángulos notables 30°/45°/60°, ángulos de
+  elevación/depresión).
+- **Construcción y propiedades de las figuras planas y cuerpos:** 1°
+  "Figuras Planas: Triángulos y Cuadriláteros" (clasificación por lados y
+  ángulos, suma de ángulos internos, perímetro) → 2° "Semejanza y Cuerpos
+  Geométricos" (semejanza AA, Teorema de Thales, áreas de figuras
+  compuestas, prismas/pirámides y relación de Euler) → 3° "Áreas y
+  Volúmenes de Cuerpos Geométricos" (desarrollo plano, área total de
+  prismas, volumen de prismas/pirámides/cilindros, vistas frontal/lateral/
+  superior).
+
+**Trimestre 3 — 5 PDAs × 3 grados = 15:**
+- **Circunferencia, círculo y esfera** (eje Forma, espacio y medida): 1°
+  "El Círculo y sus Elementos" (elementos, perímetro, área) → 2° "Arcos y
+  Sectores Circulares" (ángulo central, longitud de arco, área de sector)
+  → 3° "Área y Volumen de la Esfera".
+- **Medición y cálculo en diferentes contextos** (eje Forma, espacio y
+  medida): 1° "Conversión de Unidades de Medida" (longitud, capacidad,
+  masa) → 2° "Escalas y Razones de Cambio" (escala en planos/mapas,
+  velocidad) → 3° "Densidad, Rapidez y Costos" (densidad, rapidez media en
+  varios tramos, costo por unidad).
+- **Obtención y representación de información** (eje Análisis de datos y
+  probabilidad): 1° "Recolección y Gráficas de Datos" (variables,
+  frecuencia absoluta, gráfica de barras/circular) → 2° "Tablas y Gráficas
+  Estadísticas" (frecuencia relativa/porcentual, histogramas, gráficas de
+  línea) → 3° "Muestras y Análisis Crítico de Gráficas" (población/muestra,
+  diseño de encuestas, gráficas engañosas).
+- **Medidas de tendencia central y de dispersión** (eje Análisis de datos y
+  probabilidad): 1° "Media, Mediana y Moda" → 2° "Rango y Comparación de
+  Datos" (rango, datos atípicos) → 3° "Estadística con Datos Agrupados"
+  (marca de clase, media ponderada, clase modal/mediana, desviación media).
+- **Azar e incertidumbre en la ocurrencia de eventos cotidianos** (eje
+  Análisis de datos y probabilidad): 1° "Probabilidad de Eventos Simples"
+  (espacio muestral, probabilidad clásica, fracción/decimal/porcentaje) →
+  2° "Eventos Compuestos y Diagramas de Árbol" (regla del producto,
+  eventos independientes) → 3° "Probabilidad de la Unión de Eventos"
+  (eventos mutuamente excluyentes vs. no excluyentes, regla de la suma).
+
+### 4. Navegación por periodo en `app.js`
+
+La pantalla `/grados` pasó de 3 tarjetas (una por grado, llevando a un solo
+camino largo) a **9 tarjetas agrupadas por grado** — cada grado muestra un
+encabezado ("1° de secundaria") y 3 tarjetas debajo, una por trimestre—,
+más la tarjeta de Ejercítate sin cambios. Cada tarjeta enlaza a una nueva
+ruta `ruta('/pda-lista/:grado/:trimestre', vistaListaPDA)` (registrada
+junto a la ya existente `ruta('/pda-lista/:grado', vistaListaPDA)`, que
+sigue usándose tal cual para Ejercítate, que no tiene trimestre).
+`vistaListaPDA` ahora filtra los PDAs ya cargados por `p.trimestre ===
+trimestre` — el mismo patrón que `caminoEjercitateAgrupado_` ya usaba para
+agrupar por `categoria` — y muestra el trimestre actual en su encabezado
+("PDAs de 1° · Trimestre 2"); un trimestre sin contenido todavía (caso que
+no ocurre ya en la versión final, pero se probó explícitamente) muestra el
+mismo mensaje de estado vacío que ya existía, sin romperse. Los 3
+enlaces internos que antes solo llevaban `#/pda-lista/:grado` (el botón
+"← Volver" dentro de un PDA, el enlace superior "Cambiar de grado" del
+recorrido, y "Elegir otro tema" en la pantalla de celebración) ahora
+incluyen el `trimestre` del PDA actual (`pda.trimestre`), leído del propio
+PDA ya cargado — así "volver" siempre regresa al trimestre correcto, no al
+Trimestre 1 por defecto.
+
+### 5. Generación y validación del contenido
+
+Los 21 PDAs nuevos se generaron con agentes en paralelo (uno por PDA), cada
+uno con instrucciones explícitas del alcance pedagógico exacto de sus 4
+subtemas (para no traslaparse con el grado anterior/siguiente ni con otro
+PDA del mismo trimestre) y la instrucción de verificar su propia
+aritmética/geometría/probabilidad con Python antes de reportar terminado.
+Al recibir los 21 archivos se hizo una segunda ronda de validación
+independiente: `jsonschema.Draft7Validator` contra `schema/pda.schema.json`
+sobre los 38 archivos del repositorio (0 errores), una revisión estructural
+genérica de cada reactivo (rango de índices en `opcion_multiple`, tipo
+booleano en `verdadero_falso`, hueco `___` en `llenar_frase`, e índices
+válidos en `relacionar_columnas` — sin asumir que `columnaA` y `columnaB`
+deben tener el mismo tamaño: varios reactivos clasifican más elementos que
+categorías hay, algo que la interfaz sí soporta porque cada fila es un
+`<select>` independiente con las mismas opciones), y un muestreo manual
+recalculando a mano decenas de reactivos de los temas más sensibles a
+error de redondeo (Pitágoras/trigonometría, áreas/volúmenes con π,
+densidad/rapidez, medias ponderadas) — 0 discrepancias reales.
+
+**Prueba de punta a punta** (Playwright + build local de Tailwind, igual
+que en pasos anteriores): conteo exacto de tarjetas por cada una de las 9
+combinaciones grado×trimestre (3/6/5 en 1°, 3/5/5 en 2°, 1/5/5 en 3°) más
+las 40 de Ejercítate; un recorrido completo (problematización → 4 subtemas
+× 2 rondas → resultado global → constancia) de un PDA de Trimestre 2 y uno
+de Trimestre 3 en cada grado, confirmando que el back-link siempre apunta
+al trimestre correcto — 0 errores.

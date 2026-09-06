@@ -1,6 +1,6 @@
 {
   "grado": "1°",
-  "descripcion": "Manifiesto de PDAs disponibles para 1° de secundaria. Trimestre 1 completo (eje: Sentido numérico y pensamiento algebraico): 7 PDAs curriculares, cada uno con sus 4 subtemas núcleo (Introductorio/Intermedio/Avanzado/Síntesis) y una sección de práctica extra opcional con los 3 subtemas de repaso (Paso 21: se fusionaron de vuelta las 49 tarjetas divididas del Paso 15, para que la extensión de pasos hasta la constancia sea similar a la de Ejercítate — ver data/README.md).",
+  "descripcion": "Manifiesto de PDAs disponibles para 1° de secundaria. Trimestre 1 completo (eje: Sentido numérico y pensamiento algebraico): 7 PDAs curriculares, cada uno con sus 4 subtemas núcleo (Introductorio/Intermedio/Avanzado/Síntesis) y una sección de práctica extra opcional con los 3 subtemas de repaso (Paso 21: se fusionaron de vuelta las 49 tarjetas divididas del Paso 15, para que la extensión de pasos hasta la constancia sea similar a la de Ejercítate — ver data/README.md). Trimestre 2 (eje: Forma, espacio y medida, Paso 23): PDA08 Ángulos y Rectas, PDA09 Figuras Planas: Triángulos y Cuadriláteros. Trimestre 3 (Paso 23): PDA10 El Círculo y sus Elementos, PDA11 Conversión de Unidades de Medida (eje Forma, espacio y medida); PDA12 Recolección y Gráficas de Datos, PDA13 Media, Mediana y Moda, PDA14 Probabilidad de Eventos Simples (eje Análisis de datos y probabilidad). Grado 1° completo: 14 PDAs.",
   "archivos": [
     "1S-B1-PDA01.json",
     "1S-B1-PDA02.json",
@@ -8,6 +8,13 @@
     "1S-B1-PDA04.json",
     "1S-B1-PDA05.json",
     "1S-B1-PDA06.json",
-    "1S-B1-PDA07.json"
+    "1S-B1-PDA07.json",
+    "1S-B1-PDA08.json",
+    "1S-B1-PDA09.json",
+    "1S-B1-PDA10.json",
+    "1S-B1-PDA11.json",
+    "1S-B1-PDA12.json",
+    "1S-B1-PDA13.json",
+    "1S-B1-PDA14.json"
   ]
 }
