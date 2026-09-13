@@ -1279,7 +1279,8 @@ function caminoPasos_(pasoIndex, totalPasos, tema) {
 }
 
 // ============================================================
-// Vista: Recursos y soporte (Paso 20 — nueva, no toca datos existentes)
+// Vista: Recursos (Paso 20 — nueva, no toca datos existentes; Paso 24 — se
+// quitó la tarjeta/canal de "Soporte" hacia el correo del docente)
 // ============================================================
 function vistaRecursos() {
   const sesion = obtenerSesion();
