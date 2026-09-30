@@ -32,6 +32,22 @@ por cada `POST` con estas columnas exactas:
 La fila 1 (encabezados) se crea automáticamente la primera vez que se
 recibe un registro, así que la hoja puede empezar completamente vacía.
 
+## Contador de visitas (página de inicio)
+
+Además de guardar registros, `Code.gs` mantiene un contador de visitas
+persistente que se muestra en la página de inicio (bajo "¡Hola! Soy el Profe
+Ponchito..."). No usa la hoja de cálculo, sino las **Propiedades del
+script** de Apps Script (`PropertiesService`) — un almacén clave-valor
+propio del proyecto, independiente del navegador de cada visitante, así que
+el número nunca se reinicia solo (ni al borrar caché, ni al entrar desde
+otro dispositivo).
+
+Cada vez que alguien abre la página de inicio, el frontend hace
+`GET .../exec?accion=visita`, `Code.gs` suma 1 al contador y regresa el
+total, que se pinta en pantalla. Si ese `GET` falla (sin internet, backend
+caído, etc.) la página simplemente no muestra el número — nunca bloquea el
+registro del alumno.
+
 ## Despliegue rápido
 
 1. Crea una hoja de cálculo nueva en Google Drive (ej. "MATE-NEM Registros").
@@ -41,7 +57,18 @@ recibe un registro, así que la hoja puede empezar completamente vacía.
    - Acceso: **Cualquier usuario** (el frontend es público y no autentica).
 4. Copia la URL `.../exec` resultante en `assets/js/webhook.js` → `WEBHOOK_URL`.
 5. Verifica visitando esa URL en el navegador: debe responder un JSON con
-   `"status": "ok"` (esto ejecuta `doGet`, no crea filas).
+   `"status": "ok"` (esto ejecuta `doGet`, no crea filas ni cuenta visita —
+   solo cuenta cuando el frontend llama con `?accion=visita`).
+
+### Si ya tenías el backend desplegado antes de que existiera el contador
+
+El contador se agregó a `Code.gs` en una actualización posterior. Si ya
+habías desplegado el backend, tienes que volver a pegar el `Code.gs` nuevo
+y publicar una **nueva implementación** (no basta con guardar el archivo):
+`Implementar > Gestionar implementaciones > ✏️ (editar) > Versión: Nueva
+versión > Implementar`. Así conservas la misma URL `.../exec` (no hace
+falta tocar `webhook.js` de nuevo) y no se pierde nada de lo ya guardado en
+la hoja "Registros".
 
 ## Notas de seguridad
 

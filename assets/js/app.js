@@ -20,7 +20,7 @@ import { ruta, rutaPorDefecto, navegar, init } from './router.js';
 import { guardarSesion, obtenerSesion, haySesion } from './session.js';
 import { cargarListaPDAs, cargarPDAporId } from './pda-loader.js';
 import { calcularResultado, combinarResultados, esRespuestaCorrecta } from './gamification.js';
-import { enviarRegistroPDA, reintentarPendientes } from './webhook.js';
+import { enviarRegistroPDA, reintentarPendientes, registrarVisita } from './webhook.js';
 import { generarConstancia, descargarComoPDF } from './constancia.js';
 
 // ============================================================
@@ -443,6 +443,17 @@ function vistaRegistro() {
     });
   }, 0);
 
+  // Contador de visitas: decorativo, nunca bloquea el registro. Si el
+  // backend no responde (o WEBHOOK_URL no está configurado todavía) el
+  // elemento simplemente se queda vacío/oculto.
+  setTimeout(async () => {
+    const contador = document.getElementById('contador-visitas');
+    if (!contador) return;
+    const total = await registrarVisita();
+    if (total == null) return;
+    contador.textContent = `👀 ${total.toLocaleString('es-MX')} visitas`;
+  }, 0);
+
   return `
     <div class="relative min-h-screen flex items-center justify-center px-4 py-10 overflow-hidden">
       <div class="mn-blob mn-blob-animado bg-blue-100" aria-hidden="true" style="width:220px;height:220px;left:-60px;top:-40px;"></div>
@@ -456,6 +467,7 @@ function vistaRegistro() {
           </h1>
           <p class="text-slate-500 mt-1">Matemáticas · Nueva Escuela Mexicana</p>
           <p class="text-slate-400 text-sm mt-0.5">¡Hola! Soy el Profe Ponchito y te voy a acompañar 👋</p>
+          <p id="contador-visitas" class="text-slate-300 text-xs mt-2 h-4" aria-live="polite"></p>
         </div>
         <form id="form-registro" class="mn-panel bg-white/90 backdrop-blur rounded-3xl shadow-xl shadow-indigo-200/40 border border-white p-6 sm:p-7 space-y-4">
           <div>

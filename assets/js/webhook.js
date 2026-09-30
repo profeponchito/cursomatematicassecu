@@ -45,6 +45,26 @@ export async function enviarRegistroPDA(registro) {
   }
 }
 
+/**
+ * Registra una visita a la página de inicio y devuelve el total acumulado
+ * (contador persistente guardado en el backend, nunca se reinicia solo).
+ * Si falla (sin internet, WEBHOOK_URL sin configurar, backend caído),
+ * devuelve null en vez de lanzar error — el contador es decorativo y no
+ * debe bloquear ni ensuciar el registro del alumno.
+ * @returns {Promise<number|null>}
+ */
+export async function registrarVisita() {
+  try {
+    const respuesta = await fetch(`${WEBHOOK_URL}?accion=visita`);
+    const data = await respuesta.json();
+    if (data.status !== 'ok' || typeof data.totalVisitas !== 'number') return null;
+    return data.totalVisitas;
+  } catch (error) {
+    console.warn('[webhook] No se pudo obtener el contador de visitas:', error);
+    return null;
+  }
+}
+
 /** Reintenta enviar todos los registros que quedaron pendientes por fallas de red. */
 export async function reintentarPendientes() {
   const pendientes = JSON.parse(localStorage.getItem('mateNemPendientes') || '[]');

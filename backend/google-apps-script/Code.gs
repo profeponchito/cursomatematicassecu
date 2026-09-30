@@ -78,12 +78,43 @@ function doPost(e) {
   }
 }
 
-// Permite una prueba rápida abriendo la URL de la Web App directamente en el navegador
+// Permite una prueba rápida abriendo la URL de la Web App directamente en el
+// navegador. Si se llama con ?accion=visita (así lo hace la página de
+// inicio en cada carga) suma 1 al contador persistente y regresa el total.
 function doGet(e) {
+  const accion = e && e.parameter && e.parameter.accion;
+
+  if (accion === 'visita') {
+    return jsonResponse_({
+      status: 'ok',
+      totalVisitas: registrarVisita_()
+    });
+  }
+
   return jsonResponse_({
     status: 'ok',
     message: 'MATE-NEM Web Endpoint activo. Usa POST para enviar registros.'
   });
+}
+
+// Contador de visitas persistente (no vive en la hoja de cálculo, sino en
+// las Propiedades del script de Apps Script — por eso nunca se reinicia
+// solo, ni si se borra caché o se entra desde otro dispositivo). Usa un
+// candado (LockService) para que dos visitas al mismo tiempo no se pisen.
+const CONTADOR_KEY = 'totalVisitas';
+
+function registrarVisita_() {
+  const candado = LockService.getScriptLock();
+  candado.waitLock(5000);
+  try {
+    const propiedades = PropertiesService.getScriptProperties();
+    const actual = Number(propiedades.getProperty(CONTADOR_KEY)) || 0;
+    const nuevoTotal = actual + 1;
+    propiedades.setProperty(CONTADOR_KEY, String(nuevoTotal));
+    return nuevoTotal;
+  } finally {
+    candado.releaseLock();
+  }
 }
 
 function getOrCreateSheet_() {
