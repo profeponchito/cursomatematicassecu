@@ -1,0 +1,153 @@
+{
+  "id": "OB-28-02",
+  "grado": "Operaciones Básicas",
+  "numero": 110,
+  "categoria": "mult_div",
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Encuentra el error: multiplicación y división — Módulo 2/4",
+  "contenido": "Identificación del paso exacto donde una multiplicación o división ya resuelta contiene un error, como forma de reforzar el algoritmo desde la revisión.",
+  "pda": "Identifica errores en algoritmos de multiplicación y división ya resueltos, explicando en qué paso ocurre el error.",
+  "problematizacion": {
+    "contexto": "Don Refugio maneja una camioneta de reparto y necesita acomodar cajas de refresco en partes iguales entre varias camionetas para no sobrecargar ninguna. Su ayudante hizo las divisiones en una hoja, pero Don Refugio siempre las comprueba multiplicando antes de cargar el camión.\n\nEn una taquería familiar, Mariana reparte los tacos que se cocinaron entre los platos que va a servir, tratando de dejar la misma cantidad en cada plato; lo que sobra se guarda aparte para otra orden. Al final del turno, revisa sus cuentas de reparto para asegurarse de que nadie se quedó con más o con menos.",
+    "pregunta": "¿Por qué multiplicar el cociente por el divisor le sirve a Don Refugio para saber si una división está bien resuelta, sin tener que repetirla? Además: si a Mariana le sobran más tacos de los que caben en un plato completo, ¿qué le indica eso sobre su división?"
+  },
+  "subtemas": [
+    {
+      "numero": "28.2",
+      "nivelEtiqueta": "Nivel 2 de 4 · Intermedio",
+      "titulo": "Revisar una división exacta con la multiplicación inversa y Divisiones con residuo: cuando el cociente o el resto no cuadran",
+      "explicacion": "La forma más confiable de revisar una división ya resuelta es 'deshacerla': multiplicar el cociente por el divisor y comprobar que el resultado sea igual al dividendo. Si no coincide, el cociente tiene un error. En este momento vas a practicar divisiones exactas (sin residuo) de un número de dos o tres cifras entre una cifra, usando siempre esta comprobación por multiplicación para decidir si el cociente dado es correcto.\n\nCuando una división no es exacta, hay dos lugares donde puede esconderse el error: el cociente o el residuo. Una regla de oro para detectar un error rápido es que el residuo SIEMPRE debe ser menor que el divisor; si el residuo dado es igual o mayor, algo salió mal. Además, la comprobación completa es cociente × divisor + residuo = dividendo. En este momento vas a usar ambas pistas para encontrar el error en divisiones con residuo.",
+      "formula": "cociente × divisor = dividendo (en una división exacta, sin residuo); cociente × divisor + residuo = dividendo, y siempre residuo < divisor",
+      "ejemplos": [
+        "162 ÷ 9: se propone el cociente 18. Comprobación: 18 × 9 = 162. Coincide, así que 18 es correcto.",
+        "162 ÷ 9 = 17 (propuesto). Comprobación: 17 × 9 = 153, que no es igual a 162, así que 17 es un cociente incorrecto.",
+        "50 ÷ 6: se propone cociente 8, residuo 2. Comprobación: 8 × 6 = 48, y 48 + 2 = 50. Además 2 < 6, así que está bien resuelta.",
+        "50 ÷ 6 = 7 residuo 8 (propuesto). Como el residuo 8 es mayor que el divisor 6, hay un error: el cociente correcto es 8 y el residuo 2."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Ya resuelto: 216 ÷ 6 = 34. ¿Cuál es el cociente correcto?",
+          "opciones": [
+            "32",
+            "34",
+            "36",
+            "38"
+          ],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "Comprobación: 36 × 6 = 216. El cociente correcto es 36; 34 × 6 = 204, que no coincide."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "245 ÷ 7 = 36 está resuelto correctamente.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Es falso: 36 × 7 = 252, no 245. El cociente correcto es 35, porque 35 × 7 = 245."
+        },
+        {
+          "tipo": "algoritmo_columnas",
+          "operacion": "multiplicacion",
+          "filas": [
+            {
+              "valor": "23"
+            },
+            {
+              "valor": "8",
+              "signo": "×"
+            },
+            {
+              "valor": "184",
+              "esResultado": true
+            }
+          ],
+          "ocultos": [
+            [],
+            [],
+            [
+              0,
+              1
+            ]
+          ],
+          "retroalimentacion": "23 × 8 = 184, esto verifica que 184 ÷ 8 = 23. Las cifras que faltaban en el resultado son 1 (centenas) y 8 (decenas)."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "La división 312 ÷ 8 = 41 tiene un error; el cociente correcto es ___.",
+          "respuestaCorrecta": "39",
+          "retroalimentacion": "Comprobación: 39 × 8 = 312. El cociente correcto es 39; 41 × 8 = 328, que no coincide."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Ya resuelto: 189 ÷ 9 = 22. ¿Cuál es el cociente correcto?",
+          "opciones": [
+            "19",
+            "20",
+            "21",
+            "22"
+          ],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "Comprobación: 21 × 9 = 189. El cociente correcto es 21; 22 × 9 = 198, que no coincide."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Ya resuelto: 53 ÷ 6 = 8 residuo 3. ¿Cuál es el residuo correcto?",
+          "opciones": [
+            "2",
+            "3",
+            "5",
+            "6"
+          ],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "8 × 6 = 48, y 53 − 48 = 5. El residuo correcto es 5, no 3."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En 61 ÷ 7, el resultado 'cociente 9, residuo 2' es correcto.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Es falso: 9 × 7 = 63, que ya es mayor que 61, así que el cociente 9 es demasiado grande. El cociente correcto es 8, con residuo 5 (8 × 7 = 56, y 61 − 56 = 5)."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada división con su cociente y residuo correctos.",
+          "columnaA": [
+            "47 ÷ 5",
+            "84 ÷ 9",
+            "70 ÷ 8"
+          ],
+          "columnaB": [
+            "8 residuo 6",
+            "9 residuo 2",
+            "9 residuo 3",
+            "7 residuo 4"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "47 ÷ 5 = 9 residuo 2; 84 ÷ 9 = 9 residuo 3; 70 ÷ 8 = 8 residuo 6. En los tres casos el residuo es menor que el divisor."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "La división 39 ÷ 4 se resolvió como 8 residuo 7, pero tiene un error porque el residuo no puede ser mayor o igual que el divisor. El cociente correcto es ___.",
+          "respuestaCorrecta": "9",
+          "retroalimentacion": "9 × 4 = 36, y 39 − 36 = 3. El cociente correcto es 9, con residuo 3 (que sí es menor que 4)."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Ya resuelto: 58 ÷ 7 = 8 residuo 9. ¿Cuál es el residuo correcto?",
+          "opciones": [
+            "9",
+            "7",
+            "2",
+            "5"
+          ],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "8 × 7 = 56, y 58 − 56 = 2. El residuo correcto es 2; además, 9 no podía ser residuo porque es mayor que el divisor 7."
+        }
+      ]
+    }
+  ]
+}
