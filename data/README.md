@@ -3,8 +3,9 @@
 Cada Proceso de Desarrollo de Aprendizaje (PDA) vive en su propio archivo
 JSON, agrupado por grado escolar. El Trimestre 1 completo (eje "Sentido
 numérico y pensamiento algebraico") ya está construido para los 3 grados, y
-además hay un apartado independiente de práctica libre ("Ejercítate") con
-40 temas — ver la sección dedicada más abajo:
+además hay dos apartados independientes de práctica libre — "Ejercítate"
+(40 temas) y "Operaciones Básicas" (44 temas × 8 momentos, Paso 28) — ver
+las secciones dedicadas más abajo:
 
 ```
 data/
@@ -19,9 +20,12 @@ data/
 ├── grado-3/
 │   ├── index.json
 │   └── 3S-B1-PDA01-S1.json … 3S-B1-PDA04-S7.json   (28 tarjetas)
-└── ejercitate/
+├── ejercitate/
+│   ├── index.json
+│   └── EJ-01.json … EJ-40.json               (40 temas)
+└── operaciones-basicas/
     ├── index.json
-    └── EJ-01.json … EJ-40.json               (40 temas)
+    └── OB-01-01.json … OB-44-08.json         (44 temas × 8 momentos = 352 series)
 ```
 
 Desde el Paso 15, cada carpeta `grado-N/` no contiene ya los 7/6/4 PDAs
@@ -1492,3 +1496,350 @@ coordenadas puede caer sobre el encabezado fijo si el botón real queda
 tapado; ambos problemas eran del script de prueba, no de la aplicación,
 y se corrigieron antes de dar por buena la suite.) Ejercítate (40 temas,
 sin dividir) se verificó sin cambios — 0 errores en toda la suite.
+
+## Paso 28: apartado nuevo "Operaciones Básicas" (44 temas × 8 momentos, sin tocar nada existente)
+
+El docente pidió, a partir del proyecto ya entregado y **sin modificarlo**,
+agregar "un nuevo apartado como el de Ejercítate, pero únicamente de
+operaciones básicas" — suma y resta, multiplicación y división, potencias
+y raíces — con la carga cognitiva del *chunking* (aprendizaje progresivo,
+un peldaño de dificultad a la vez), distintas formas de resolver y
+proponer ejercicios (incluyendo llenar el valor faltante, relación de
+columnas y opción múltiple), de 5 a 10 momentos por tema como en los PDA,
+y al menos 40 temas en total, con el repaso desde distintas formas como
+idea central.
+
+### 1. Decisiones de diseño aclaradas antes de construir
+
+Como agregar un apartado *verdaderamente independiente* (la opción que
+mejor cumplía "no lo modifiques, pero sí que agregues") no era posible
+sin tocar el motor en absoluto —aunque sí de forma puramente **aditiva**,
+nunca alterando el comportamiento de lo ya construido—, se aclararon 4
+decisiones con el docente antes de escribir una sola línea:
+
+1. **Navegación:** apartado propio, con su propia tarjeta/ruta/color en
+   la selección de grado — no una categoría más dentro de Ejercítate.
+2. **Estructura interna:** cada momento es su propia serie, con su propio
+   resultado y su propia constancia — el mismo diseño que las 380 series
+   de grado desde el Paso 27, no el diseño antiguo de Ejercítate (4
+   subtemas en un solo archivo).
+3. **Temario:** una lista de 44 temas propuesta por el asistente, para
+   revisión y aprobación del docente.
+4. **Momentos por tema:** un número fijo para todos, 8.
+
+El docente aprobó la propuesta de 44 temas tal cual ("SI ESTA BIEN TU
+PROPUESTA").
+
+### 2. Los 44 temas, agrupados en 4 bloques
+
+**Suma y resta (12, OB-01…OB-12):** sin llevar · con acarreo · resta con
+préstamo (incluido a través de ceros) · naturales grandes por posición ·
+decimales alineando el punto · decimales con acarreo/préstamo · fracciones
+mismo denominador · fracciones distinto denominador · números con signo
+(mismo signo) · números con signo (signos distintos) · estimación y
+redondeo · en la vida cotidiana.
+
+**Multiplicación y división (16, OB-13…OB-28):** multiplicación de un
+dígito · multiplicación en columna (varios dígitos) · multiplicación por
+potencias de 10 · multiplicación de decimales · multiplicación de
+fracciones · multiplicación con signo · división exacta · división con
+residuo · división entre potencias de 10 · división de decimales ·
+división de fracciones · división con signo · estimación antes de
+multiplicar/dividir · múltiplos y factores · en la vida cotidiana ·
+"Encuentra el error".
+
+**Potencias y raíces (12, OB-29…OB-40):** significado de la potencia ·
+cuadrados y cubos de naturales · potencias de base decimal · potencias de
+base fraccionaria · potencias con signo (exponente par/impar) · producto y
+cociente de potencias de igual base · raíz cuadrada exacta · raíz cuadrada
+aproximada · raíz cúbica exacta · relación potencia-raíz · en la vida
+cotidiana · "Encuentra el error".
+
+**Integración (4, OB-41…OB-44):** jerarquía de operaciones · operaciones
+combinadas con naturales · operaciones combinadas con números con signo ·
+repaso integrador final.
+
+"Encuentra el error" (dos temas) es un formato de reactivo nuevo dentro de
+lo ya existente, no un tipo de dato nuevo: son reactivos `opcion_multiple`/
+`verdadero_falso` que muestran un procedimiento ya resuelto y piden
+identificar en qué paso está el error — pensado explícitamente para el
+repaso "desde distintas formas" que pidió el docente.
+
+### 3. Arquitectura: un segundo pseudo-grado agrupado, generalizando lo que antes era exclusivo de Ejercítate
+
+"Operaciones Básicas" reutiliza el 100% del motor de PDAs, igual que
+Ejercítate (mismas rutas, misma carga de datos, misma gamificación,
+mismo webhook, misma constancia) — pero antes de este paso, varias partes
+de `app.js` asumían implícitamente que solo existía **un** pseudo-grado
+agrupado (Ejercítate), con nombres de función y constantes específicos de
+él. Se generalizaron, sin cambiar su comportamiento con Ejercítate:
+
+- **`pda-loader.js`:** `PSEUDOGRADOS = ['ejercitate', 'operaciones-basicas']`
+  reemplaza la comprobación `grado === 'ejercitate'` de `carpetaDeGrado_`
+  — ambos pseudo-grados resuelven a su propia carpeta plana en vez de
+  `grado-N/`.
+- **`app.js`:** nueva paleta `COLOR_OPERACIONES` (tono vino/rosa, distinto
+  de los 6 colores "Aula NEM" ya usados); `PSEUDOGRADOS_AGRUPADOS` sustituye
+  la comprobación específica de Ejercítate en `temaGrado_`/`etiquetaGrado_`;
+  `CATEGORIAS_EJERCITATE` (ya existente) se acompaña de `CATEGORIAS_OPERACIONES`
+  (los 4 bloques de arriba) y un nuevo helper `categoriasDe_(grado)` decide
+  cuál usar; `caminoEjercitateAgrupado_` se generalizó a
+  `caminoAgrupado_(pdas, grado, tema, categorias)` (recibe las categorías
+  como parámetro en vez de asumir las de Ejercítate); un nuevo helper
+  `enlaceListaPDA_(grado, pda)` reemplaza dos ternarias duplicadas
+  (breadcrumb de `vistaPDA` y el enlace "Elegir otro tema" de
+  `panelCelebracion_`); `vistaSeleccionGrado()` agrega la tarjeta de
+  Operaciones Básicas junto a la de Ejercítate, dentro de una rejilla de 2
+  columnas; `vistaListaPDA` usa `categoriasDe_`/`esAgrupado` de forma
+  genérica en vez de un booleano `esEjercitate` fijo.
+- **`pda.schema.json`:** `grado` admite ahora `"Operaciones Básicas"`;
+  `categoria` admite además `suma_resta`/`mult_div`/`potencias_raices`/
+  `integracion`; las descripciones de `numero` y `nivelEtiqueta` se
+  actualizaron para cubrir ambos pseudo-grados.
+
+Verificado con `node --check` en los 2 archivos JS modificados y por
+revisión de que no quedó ninguna referencia a los nombres específicos de
+Ejercítate que se generalizaron (`caminoEjercitateAgrupado_`, `esEjercitate`).
+Ningún archivo de `data/grado-N/` ni de `data/ejercitate/` se tocó.
+
+### 4. Generación de contenido: 352 momentos, verificados uno por uno
+
+Cada uno de los 44 temas se generó con un agente dedicado (en 8 lotes de
+5-6 en paralelo, para no saturar el límite de tasa de la API), a partir de
+una plantilla de instrucciones compartida que fijaba: el formato JSON
+exacto de los 8 momentos, la escala fija de niveles ("Nivel N de 8 ·
+Introductorio/Básico/Guiado/Intermedio/Aplicación/Avanzado/Reto/
+Integración"), la obligación de variar el tipo de reactivo dentro de cada
+momento (mínimo 2 de los 5 tipos, nunca los 5 reactivos iguales), la regla
+de `algoritmo_columnas` (máximo una casilla oculta por columna — la misma
+del Paso 19 — y prohibición explícita de usarlo en fracciones, potencias
+o raíces, donde no representa nada real), y la exigencia de verificar toda
+la aritmética con Python (`decimal.Decimal` para decimales, nunca `float`;
+`fractions.Fraction` para fracciones) antes de fijar cualquier valor,
+opción correcta o casilla oculta. Cada agente entregó exactamente 8
+momentos × 5 reactivos calificados (40 por tema) + 3 de `practicaExtra`
+en el último momento (352 momentos, 1,760 reactivos calificados + 132 de
+práctica extra = 1,892 reactivos en total).
+
+### 5. Fusión, validación y corrección de errores encontrados
+
+Cada tema se fusionó de sus 8 momentos sueltos a 8 archivos PDA
+independientes (`OB-<tema>-<momento>.json`, numeración global `numero`
+1-352, `subtemas` de 1 solo elemento — mismo diseño que las series de
+grado del Paso 27) con un script centralizado, y se regeneró
+`data/operaciones-basicas/index.json` con los 352 archivos. La validación
+posterior, independiente del autocheque de cada agente, encontró y
+corrigió 4 problemas reales antes de darla por buena:
+
+- Un momento (`OB-08`, momento 8) sin el campo `ejemplos` (requerido por
+  el esquema) — se completó con 2 ejemplos resueltos coherentes con su
+  explicación, verificando de nuevo la aritmética con `Fraction` antes de
+  agregarlos.
+- Un `signo` de multiplicación escrito como `"x"` en vez de `"×"`
+  (`OB-15`, momento 4) — el esquema solo admite `+`/`-`/`×`.
+- **3 columnas con dos casillas ocultas** en reactivos `algoritmo_columnas`
+  de multiplicación (`OB-24` momentos 3 y 8, `OB-27` momento 7) — el mismo
+  tipo de problema que el Paso 19 corrigió para Ejercítate, esta vez
+  detectado con un script de análisis por columnas (posición contada de
+  derecha a izquierda, ignorando el punto decimal) sobre los 352 archivos.
+  Se corrigió revelando una de las dos casillas en conflicto en cada caso,
+  sin tocar los números ni la retroalimentación.
+
+Validación final sobre los 352 archivos reales: `jsonschema.
+Draft7Validator` (**0 errores**), revisión estructural genérica (índices
+de `opcion_multiple`/`relacionar_columnas` dentro de rango, booleano en
+`verdadero_falso`, un solo hueco `___` en `llenar_frase`, largos
+coincidentes en `relacionar_columnas`) — **0 errores**, y **0 columnas con
+más de una casilla oculta** en los reactivos `algoritmo_columnas` de los
+352 archivos. Conteo por bloque exacto: 96 momentos de suma y resta (12×8),
+128 de multiplicación y división (16×8), 96 de potencias y raíces (12×8),
+32 de integración (4×8) — 352 en total, sin huecos ni duplicados en
+`numero` ni en `id`.
+
+### 6. Prueba de punta a punta
+
+Probado con Playwright contra un servidor estático local: la tarjeta de
+"Operaciones Básicas" aparece junto a la de Ejercítate en la selección de
+grado (ninguna reemplaza a la otra); la lista agrupada muestra los 4
+bloques con encabezado propio y exactamente 352 enlaces a PDA individuales;
+un recorrido completo de un momento (`OB-01-01`, "Suma y resta de naturales
+sin llevar — Momento 1/8") — problematización → teoría → los 5 reactivos
+calificados (mezcla real de `verdadero_falso`, `algoritmo_columnas`,
+`opcion_multiple`, `relacionar_columnas` y `llenar_frase` en una sola
+pantalla de actividad) → mini-resultado propio → resultado global del PDA
+→ constancia generada con el nombre del alumno — confirma que el motor
+genérico funciona sin adaptaciones especiales para el nuevo pseudo-grado;
+y una verificación de que los grados 1°/2°/3° y Ejercítate siguen
+cargando sin errores, sin ninguna afectación por el apartado nuevo.
+
+## Paso 29: "Operaciones Básicas" de 8 momentos a 4 módulos (176 en total) + apartado nuevo "Acarreos y Llevadas" (50 temas, solo `algoritmo_columnas`)
+
+El docente probó "Operaciones Básicas" (Paso 28) y le pareció bien
+construido pero muy corto: cada momento solo tenía 5 reactivos y pidió al
+menos 10 pasos reales por módulo, con más bloques de 5 preguntas antes de
+llegar a la constancia — y de paso, para no multiplicar el número de
+módulos, pidió reducir los 352 a la mitad juntando temas. En el mismo
+mensaje pidió un apartado enteramente nuevo, "Acarreos" o "Llevadas":
+práctica exclusiva de acarreo/préstamo, únicamente con reactivos de tipo
+"completa las casillas" (`algoritmo_columnas`), separado por cada una de
+las 6 operaciones básicas (suma, resta, multiplicación, división,
+potencias, raíz), con la misma progresión de menor a mayor dificultad, 10
+pasos por tema y aproximadamente 50 temas en total — explícitamente **solo**
+ese tipo de reactivo, repitiendo la instrucción para que no quedara duda.
+
+### 1. Decisiones de diseño aclaradas antes de construir
+
+1. **Fusión de Operaciones Básicas:** juntar los 8 momentos de cada tema en
+   pares (1+2, 3+4, 5+6, 7+8) para llegar exactamente a 176 módulos (mitad
+   exacta de 352) — confirmado en vez de otras formas de agrupar.
+2. **Tipo de reactivo en el módulo nuevo:** únicamente `algoritmo_columnas`
+   ("completa las casillas") en los 50 temas de Acarreos y Llevadas — sin
+   mezclar con `opcion_multiple`, `verdadero_falso`, `llenar_frase` ni
+   `relacionar_columnas` como en Operaciones Básicas.
+3. **Categorías del módulo nuevo:** 6 categorías separadas, una por
+   operación (suma, resta, multiplicación, división, potencias, raíces),
+   en vez de 3 categorías pareadas como en Operaciones Básicas.
+4. **División, potencias y raíces sin "algoritmo_columnas" propio:**
+   representarlas mediante su verificación/construcción multiplicativa,
+   reutilizando `"operacion": "multiplicacion"` — cociente × divisor =
+   dividendo; base × base = base² (y encadenado para potencias mayores);
+   raíz × raíz = radicando (raíz² × raíz para cúbica) — en vez de inventar
+   nuevos valores de `operacion` en el esquema.
+
+### 2. Operaciones Básicas: de 352 momentos a 176 módulos, sin regenerar contenido
+
+Se confirmó primero, leyendo el motor (`vistaPDA` en `app.js`), que **no
+hacía falta ningún cambio de código**: un subtema con 10 reactivos ya se
+renderiza como 2 rondas consecutivas de 5 desde el Paso 16
+(`Math.ceil(reactivos.length / 5)` rondas), tal como ya ocurre en producción
+en las 140 lecciones de `data/grado-1/`. La solución fue puramente de
+datos: para cada uno de los 44 temas, se fusionaron mecánicamente sus 8
+momentos en pares (1+2, 3+4, 5+6, 7+8) con un script (`merge_ob_v2.py`),
+sin inventar contenido nuevo ni volver a correr el pipeline de generación
+original:
+
+- `explicacion` y `problematizacion.contexto`: concatenación de párrafos
+  (A + salto de línea + B, o solo A si eran idénticos).
+- `titulo` y `problematizacion.pregunta`: unión en una sola oración/frase
+  ("A y B" / "A. Además: b...").
+- `ejemplos` y `reactivos`: concatenación de listas (5 + 5 = 10 reactivos
+  por módulo, verificado con un `assert` en el script).
+- `puntosPorReactivo` y `estrellasMax`: el máximo entre A y B.
+- `nivelEtiqueta`: reescalado a una escala fija de **4 niveles**
+  ("Nivel K de 4 · Introductorio/Intermedio/Avanzado/Integración"), en vez
+  de la escala de 8 momentos original.
+- `practicaExtra`: se conserva solo en el 4.º módulo de cada tema (el que
+  fusiona los momentos 7+8), tomado del momento 8 original — no se
+  duplica en los otros 3.
+- `id`: `OB-<tema>-<k>` (k = 01-04); `numero` global recalculado 1-176.
+
+Resultado verificado: **176 archivos** (`OB-01-01`…`OB-44-04`), cada uno
+con exactamente 10 reactivos, `data/operaciones-basicas/index.json`
+regenerado con la nueva descripción. Validación posterior: `jsonschema.
+Draft7Validator` (**0 errores**), **0 columnas con más de una casilla
+oculta**, `practicaExtra` presente en exactamente 44 archivos (todos los
+`-04`), conteo por bloque exacto: 48 suma y resta, 64 multiplicación y
+división, 48 potencias y raíces, 16 integración — 176 en total.
+
+### 3. Acarreos y Llevadas: 50 temas nuevos, 6 categorías, solo `algoritmo_columnas`
+
+Se diseñó un temario nuevo de 50 temas repartidos en 6 categorías —8 suma,
+8 resta, 9 multiplicación, 9 división, 8 potencias, 8 raíces— cada uno con
+una `guia_numeros` propia (rango de cifras y tipo de acarreo/préstamo que
+debe forzar) para garantizar progresión real de menor a mayor dificultad y
+que cada uno de los 10 reactivos de cada tema fuerce al menos un
+acarreo/préstamo genuino, nunca un reactivo "de relleno". Cada tema se
+generó con un agente dedicado (en lotes de 4-5 en paralelo, reducidos de
+6 tras un límite de tasa de la API a mitad de lote — se verificó en disco
+cuáles archivos realmente faltaban y solo esos se relanzaron) a partir de
+una plantilla de instrucciones compartida (`prompt_template_ac.txt`) que
+exigía: únicamente reactivos `algoritmo_columnas` (10 por tema, sin
+excepción), el convenio de representación multiplicativa para división,
+potencias y raíces según el modo del tema, la regla crítica de columna
+única (cada columna, posición de derecha a izquierda entre todas las
+filas ignorando el punto decimal, admite como máximo una casilla oculta),
+y la verificación de toda la aritmética con Python (`decimal.Decimal`,
+nunca `float`) antes de fijar cualquier valor u casilla oculta.
+
+Cada tema se fusionó en un archivo PDA independiente (`AC-<01-50>.json`,
+`grado: "Acarreos y Llevadas"`, un solo subtema de 10 reactivos, sin
+`practicaExtra` — no se pidió para este apartado) con un script
+centralizado (`merge_ac.py`), y se generó `data/acarreos-llevadas/
+index.json` con los 50 archivos.
+
+### 4. Validación independiente y errores reales encontrados
+
+Se corrió, sobre los 50 archivos ya fusionados, un pipeline de
+verificación independiente de las autocheques de cada agente —el mismo
+tipo de precaución que ya había pagado dividendos desde el Paso 19—: (1)
+`jsonschema.Draft7Validator` completo; (2) revisión de que el 100% de los
+reactivos son `algoritmo_columnas` (ningún otro tipo se coló); (3) el
+comprobador de columna única (posición de derecha a izquierda, ignorando
+el punto decimal, máximo 1 oculto por columna) más un rango de 1 a 3
+casillas ocultas por reactivo; (4) reverificación aritmética independiente
+para multiplicación (comparando el producto real, sin puntos decimales,
+contra la suma de los productos parciales tal como quedaron escritos) y
+para suma/resta (con `Decimal`). Se encontraron y corrigieron 5 problemas
+reales:
+
+- **`signo: "x"` en vez de `"×"`** en `AC-26` y `AC-34` (ambos de la
+  categoría división) — 10 ocurrencias en cada archivo, mismo tipo de
+  error ya visto en `OB-15` durante el Paso 28.
+- **Índice de casilla oculta fuera de rango** en `AC-11` (reactivo 2,
+  `ocultos[1] = [3]` sobre un valor de solo 3 cifras) — corregido a la
+  posición libre real, `[1]`, verificando que la aritmética (600 - 347 =
+  253) seguía siendo correcta.
+- **2 colisiones de columna** en `AC-31` (reactivos 7 y 10): en ambos
+  casos, la fila del divisor de una cifra y la fila del resultado decimal
+  ocultaban un dígito en la misma columna (posición 0) — corregido
+  moviendo una de las dos casillas a una columna libre.
+- **Error sistémico de productos parciales sin corrimiento** en `AC-42`
+  (tema de integración de potencias): los 10 reactivos escribían el
+  segundo producto parcial de la multiplicación en columnas sin su cero de
+  corrimiento posicional (ej. "102" en vez de "1020" para 34×3 desplazado
+  una posición), de modo que la suma de los parciales tal como estaban
+  escritos no coincidía con el resultado aunque el producto directo sí —
+  detectado por el comprobador aritmético en los 10 reactivos del archivo,
+  no solo en uno. Se reconstruyeron las 10 filas con los productos
+  parciales correctos (multiplicando × dígito × 10^posición) y se
+  volvieron a derivar casillas ocultas válidas (búsqueda combinatoria
+  verificada contra el comprobador de columna única), confirmando que las
+  sumas ahora coinciden con los resultados esperados en los 10 casos.
+
+Se revisó también, sin encontrar problema real, si mantener el punto
+decimal en las filas de operandos (`AC-31`, `AC-47`) en vez de solo en la
+fila de resultado (como en `AC-41`) era una inconsistencia: al leer el
+renderizador (`renderizarAlgoritmoColumnas_` en `app.js`), que alinea por
+simple relleno a la derecha según el largo de cada `valor`, ambas
+convenciones son válidas mientras las casillas ocultas elegidas respeten
+la regla de columna única — que, tras las correcciones anteriores, ya
+cumplen.
+
+Validación final sobre los 50 archivos reales: `jsonschema.
+Draft7Validator` (**0 errores**), **100% de reactivos `algoritmo_columnas`**
+(0 de otro tipo), **0 columnas con más de una casilla oculta**, **0
+errores aritméticos** en la reverificación independiente. Conteo por
+categoría exacto: 8 suma, 8 resta, 9 multiplicación, 9 división, 8
+potencias, 8 raíces — 50 en total.
+
+### 5. Cambios en el motor (aditivos) y prueba de punta a punta
+
+El motor solo necesitó extender el patrón ya usado desde el Paso 28:
+`PSEUDOGRADOS` (`pda-loader.js`) y `PSEUDOGRADOS_AGRUPADOS` (`app.js`)
+ahora incluyen un tercer valor, `'acarreos-llevadas'`, con su propio color
+de acento (cian) y su propia lista de 6 categorías (`CATEGORIAS_ACARREOS`)
+devuelta por `categoriasDe_`; la pantalla de selección de grado pasó de 2
+a 3 tarjetas. Ningún archivo de `data/grado-N/`, `data/ejercitate/` ni el
+comportamiento de Ejercítate se tocó.
+
+Probado con Playwright de punta a punta: las 3 tarjetas de pseudo-grado
+(Ejercítate, Operaciones Básicas, Acarreos y Llevadas) conviven en la
+selección de grado; la lista de Operaciones Básicas muestra sus 4 bloques
+y exactamente **176** enlaces; la lista de Acarreos y Llevadas muestra sus
+6 bloques y exactamente **50** enlaces; un recorrido completo de un módulo
+de Operaciones Básicas (`OB-01-01`, ahora 10 reactivos en 2 rondas) llega a
+su resultado; un recorrido completo de un tema de Acarreos y Llevadas
+(`AC-01`, 10 reactivos `algoritmo_columnas` en 2 rondas) llega a su
+resultado y genera constancia con el nombre del alumno; y los grados
+1°/2°/3° y Ejercítate siguen cargando sin errores, confirmando que ninguno
+de los dos se movió ni se modificó.
