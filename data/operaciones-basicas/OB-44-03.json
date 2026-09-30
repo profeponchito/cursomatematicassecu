@@ -1,0 +1,136 @@
+{
+  "id": "OB-44-03",
+  "grado": "Operaciones Básicas",
+  "numero": 175,
+  "categoria": "integracion",
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Repaso integrador de operaciones básicas — Módulo 3/4",
+  "contenido": "Repaso final que mezcla suma, resta, multiplicación, división, potencias y raíces en distintos tipos de número (naturales, decimales, fracciones, con signo), como cierre del apartado.",
+  "pda": "Resuelve problemas variados que integran suma, resta, multiplicación, división, potencias y raíces como repaso final del apartado.",
+  "problematizacion": {
+    "contexto": "Un entrenador de futbol organiza un torneo relámpago entre equipos de la colonia y usa una tabla de puntos donde algunos retos otorgan puntuaciones elevadas al cuadrado o al cubo, según el nivel de dificultad del reto.\n\nDon Ramiro es agricultor y tiene un terreno cuadrado donde siembra maíz. Antes de comprar la semilla necesita saber cuánto mide cada lado de su terreno a partir del área total que aparece en la escritura del predio.",
+    "pregunta": "Si un equipo supera un reto de nivel avanzado que otorga 4 elevado al cuadrado puntos, ¿cuántos puntos obtiene ese equipo por ese reto? Además: si el área del terreno cuadrado de don Ramiro es de 196 m², ¿cuántos metros mide aproximadamente cada uno de sus lados?"
+  },
+  "subtemas": [
+    {
+      "numero": "44.3",
+      "nivelEtiqueta": "Nivel 3 de 4 · Avanzado",
+      "titulo": "Potencias con distintos tipos de número y Raíces cuadradas y cúbicas exactas",
+      "explicacion": "En este momento repasamos potencias con números naturales, decimales y con signo. Una potencia indica cuántas veces se multiplica la base por sí misma según el exponente. Con base negativa, si el exponente es par el resultado es positivo, y si el exponente es impar el resultado conserva el signo negativo.\n\nAhora repasamos raíces cuadradas y cúbicas exactas en distintos tipos de número. La raíz cuadrada de un número busca qué valor multiplicado por sí mismo da ese número, y la raíz cúbica busca qué valor multiplicado tres veces por sí mismo da el número original. También podemos sacar raíces de decimales y de fracciones cuando el resultado es exacto.",
+      "formula": "a^n = a × a × ... × a (n veces); √(a²) = a · ∛(a³) = a",
+      "ejemplos": [
+        "5^3 = 5 × 5 × 5 = 125",
+        "(-2)^4 = 16, porque el exponente es par",
+        "√81 = 9, porque 9 × 9 = 81",
+        "∛125 = 5, porque 5 × 5 × 5 = 125"
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuánto es 6^2?",
+          "opciones": [
+            "12",
+            "36",
+            "64",
+            "18"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "6^2 = 6 × 6 = 36."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "(-3)^3 = -27",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: el exponente 3 es impar, así que el resultado conserva el signo negativo: (-3)×(-3)×(-3)=-27."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "(0.5)^2 = ___",
+          "respuestaCorrecta": "0.25",
+          "retroalimentacion": "0.5 × 0.5 = 0.25."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "(-2)^4 = ___",
+          "respuestaCorrecta": "16",
+          "retroalimentacion": "El exponente 4 es par, así que el resultado es positivo: (-2)×(-2)×(-2)×(-2)=16."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada potencia con su valor.",
+          "columnaA": [
+            "2^5",
+            "10^2",
+            "4^3"
+          ],
+          "columnaB": [
+            "64",
+            "100",
+            "32",
+            "81"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
+          "retroalimentacion": "2^5=32; 10^2=100; 4^3=64."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuánto es √144?",
+          "opciones": [
+            "14",
+            "12",
+            "72",
+            "24"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "√144 = 12, porque 12 × 12 = 144."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "∛27 = 3",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: 3 × 3 × 3 = 27."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "√0.36 = ___",
+          "respuestaCorrecta": "0.6",
+          "retroalimentacion": "0.6 × 0.6 = 0.36, así que √0.36 = 0.6."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "√(4/25) = ___",
+          "respuestaCorrecta": "2/5",
+          "retroalimentacion": "Se saca la raíz del numerador y del denominador por separado: √4=2 y √25=5, entonces √(4/25)=2/5."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada raíz con su resultado.",
+          "columnaA": [
+            "√169",
+            "∛64",
+            "√225"
+          ],
+          "columnaB": [
+            "15",
+            "4",
+            "13",
+            "20"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
+          "retroalimentacion": "√169=13; ∛64=4; √225=15."
+        }
+      ]
+    }
+  ]
+}
