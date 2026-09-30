@@ -22,6 +22,7 @@ import { cargarListaPDAs, cargarPDAporId } from './pda-loader.js';
 import { calcularResultado, combinarResultados, esRespuestaCorrecta } from './gamification.js';
 import { enviarRegistroPDA, reintentarPendientes, registrarVisita } from './webhook.js';
 import { generarConstancia, descargarComoPDF } from './constancia.js';
+import { montarZonaDescanso, burbujasDecorativasCamino_ } from './descanso.js';
 
 // ============================================================
 // Sistema visual: acento por grado (navegación) + acento por fase (PDA)
@@ -408,9 +409,10 @@ function caminoPDAs_(pdas, grado, tema) {
     <div class="relative mx-auto" style="max-width:${ANCHO}px; aspect-ratio:${ANCHO}/${alturaTotal};">
       <div class="mn-blob mn-blob-animado ${tema.pastelFondo || 'bg-slate-100'}" aria-hidden="true" style="width:150px;height:150px;left:-40px;top:10%;"></div>
       <div class="mn-blob ${tema.pastelFondo || 'bg-slate-100'}" aria-hidden="true" style="width:120px;height:120px;right:-30px;bottom:5%;opacity:0.35;"></div>
-      <svg viewBox="0 0 ${ANCHO} ${alturaTotal}" class="absolute inset-0 w-full h-full" aria-hidden="true">
+      <svg viewBox="0 0 ${ANCHO} ${alturaTotal}" class="absolute inset-0 w-full h-full" style="pointer-events:none;" aria-hidden="true">
         <path d="${trazo}" fill="none" stroke="${tema.pista}" stroke-width="6" stroke-linecap="round" stroke-dasharray="2 16" opacity="0.35"/>
       </svg>
+      ${burbujasDecorativasCamino_()}
       ${nodos}
     </div>
   `;
@@ -1579,6 +1581,11 @@ function capaGlobal_() {
     <div id="mn-modal-calculadora" class="hidden"></div>
   `;
   document.body.append(...capa.childNodes);
+
+  // Zona de descanso (Paso 32): botón flotante + panel de 15 actividades +
+  // capas ambientales, 100% aparte del contenido/puntaje/constancias — ver
+  // assets/js/descanso.js.
+  montarZonaDescanso();
 
   document.addEventListener('click', (evento) => {
     document.querySelectorAll('details.mn-nodo[open]').forEach((detalle) => {

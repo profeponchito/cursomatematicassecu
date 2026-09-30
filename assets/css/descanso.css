@@ -1,0 +1,115 @@
+/* MATE-NEM · Zona de descanso (Paso 32) — estilos complementarios a
+ * styles.css para las actividades de distracción/relajación: el botón
+ * flotante, el panel de actividades, las burbujas decorativas del camino
+ * de PDAs y los dos efectos ambientales opcionales (estrellitas de fondo y
+ * Ponchito acompañante).
+ * ----------------------------------------------------------------------
+ * Prefijo "dm-" (distinto de "mn-") para dejar clara la frontera: nada de
+ * lo que hay aquí toca el contenido de matemáticas, el puntaje ni las
+ * constancias — es una capa 100% aparte y opcional, pensada para una
+ * pausa corta. Ver assets/js/descanso.js para la lógica.
+ */
+
+/* Burbujas para tronar (juego "Burbujas" y burbujas decorativas del camino) */
+.dm-burbuja {
+  border-radius: 9999px; cursor: pointer; border: none;
+  box-shadow: inset -4px -4px 10px rgba(0,0,0,0.08), inset 4px 4px 10px rgba(255,255,255,0.5), 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.15s ease;
+}
+.dm-burbuja:hover { transform: scale(1.06); }
+@keyframes dm-tronar {
+  0%   { transform: scale(1);   opacity: 1; }
+  60%  { transform: scale(1.5); opacity: 0.5; }
+  100% { transform: scale(2.1); opacity: 0; }
+}
+.dm-burbuja.dm-tronando { animation: dm-tronar 0.35s ease-out forwards; pointer-events: none; }
+
+/* Muñeco saltarín / Estírate conmigo (rebote de la mascota) */
+@keyframes dm-saltar {
+  0%   { transform: translateY(0) scale(1,1); }
+  25%  { transform: translateY(-26px) scale(0.94,1.08); }
+  50%  { transform: translateY(0) scale(1.1,0.9); }
+  70%  { transform: translateY(-8px) scale(0.98,1.03); }
+  100% { transform: translateY(0) scale(1,1); }
+}
+.dm-saltando { animation: dm-saltar 0.55s cubic-bezier(.34,1.56,.64,1); }
+
+/* Círculo de respiración */
+@keyframes dm-respirar {
+  0%   { transform: scale(0.7); }
+  50%  { transform: scale(1.15); }
+  100% { transform: scale(0.7); }
+}
+.dm-respirando { animation: dm-respirar 8s ease-in-out infinite; }
+
+/* Confeti (contador anti-estrés y estampita sorpresa) */
+.dm-confeti-pieza {
+  position: absolute; top: -12px; width: 8px; height: 8px; border-radius: 2px;
+  pointer-events: none; animation: dm-caer 1.1s ease-in forwards;
+}
+@keyframes dm-caer {
+  to { transform: translateY(160px) rotate(300deg); opacity: 0; }
+}
+
+/* Estrellitas de fondo (ambiental, flota sobre toda la app) */
+.dm-estrellitas-capa {
+  position: fixed; inset: 0; pointer-events: none; overflow: hidden; z-index: 75;
+}
+.dm-estrella {
+  position: absolute; pointer-events: none; font-size: 16px;
+  animation: dm-flotar-estrella 3.2s linear forwards;
+}
+@keyframes dm-flotar-estrella {
+  0%   { transform: translateY(0) rotate(0deg);   opacity: 0; }
+  10%  { opacity: 0.9; }
+  100% { transform: translateY(-90px) rotate(50deg); opacity: 0; }
+}
+
+/* Ruleta de retos */
+.dm-ruleta-rueda { transition: transform 3.2s cubic-bezier(.17,.67,.2,1); }
+
+/* Panel de descanso (overlay), abierto desde el botón flotante o desde una
+ * burbuja del camino */
+#dm-overlay {
+  position: fixed; inset: 0; background: rgba(15,23,42,0.55); backdrop-filter: blur(2px);
+  display: none; align-items: flex-end; justify-content: center; z-index: 80;
+}
+#dm-overlay.dm-abierto { display: flex; }
+@keyframes dm-subir { from { transform: translateY(30px); opacity:0; } to { transform: translateY(0); opacity:1; } }
+#dm-panel {
+  background: #fffdf9; width: 100%; max-width: 560px; max-height: 88vh; overflow-y: auto;
+  border-radius: 28px 28px 0 0; padding: 20px; animation: dm-subir 0.3s ease-out both;
+}
+@media (min-width: 640px) {
+  #dm-overlay { align-items: center; }
+  #dm-panel { border-radius: 28px; margin-bottom: 0; }
+}
+
+.dm-tarjeta-actividad {
+  border-radius: 22px; padding: 14px; text-align: center; border: 1px solid rgba(0,0,0,0.06);
+  background: #fff; transition: transform 0.15s ease, box-shadow 0.15s ease; cursor: pointer;
+}
+.dm-tarjeta-actividad:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.08); }
+
+/* Botón flotante, disponible en todas las pantallas (3 estilos posibles,
+ * elegido al azar en cada carga — ver dmRenderFAB_ en descanso.js) */
+.dm-fab {
+  position: fixed; right: 18px; bottom: 18px; z-index: 70;
+}
+
+/* Ponchito acompañante ambiental — esquina opuesta al botón flotante para
+ * que nunca se encimen */
+#dm-ponchito-ambiental {
+  position: fixed; left: 18px; bottom: 18px; z-index: 70; display: none;
+}
+.dm-globo {
+  position: absolute; bottom: 100%; left: 0; margin-bottom: 6px; white-space: nowrap;
+  max-width: 60vw; overflow: hidden; text-overflow: ellipsis;
+  background: white; border-radius: 14px; padding: 6px 10px; font-size: 11px; font-weight: 700;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12); opacity: 0; transition: opacity 0.3s ease;
+}
+.dm-globo.dm-visible { opacity: 1; }
+
+@media (prefers-reduced-motion: reduce) {
+  .dm-respirando, .dm-saltando, .dm-estrella, .dm-confeti-pieza { animation: none !important; }
+}
