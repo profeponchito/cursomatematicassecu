@@ -46,7 +46,11 @@
             "Sacar una carta negra y sacar un as"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Ninguna carta es reina y rey a la vez, así que sí son mutuamente excluyentes. Las otras tres opciones sí se traslapan (as rojo, rey de picas, as negro)."
+          "retroalimentacion": "Ninguna carta es reina y rey a la vez, así que sí son mutuamente excluyentes. Las otras tres opciones sí se traslapan (as rojo, rey de picas, as negro).",
+          "pistas": [
+            "Pregúntate si existe algún resultado que cumpla las dos condiciones a la vez, igual que verificamos con 'número par' y 'sacar un 5' en el juego de dados de Lupita.",
+            "Ninguna carta es reina y rey a la vez, así que sí son mutuamente excluyentes. Las otras tres opciones sí se traslapan (as rojo, rey de picas, as negro)."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -70,7 +74,11 @@
           "tipo": "llenar_frase",
           "frase": "Los eventos 'sacar un rey' y 'sacar una carta de picas' ___ mutuamente excluyentes, porque el rey de picas cumple ambos eventos.",
           "respuestaCorrecta": "no son",
-          "retroalimentacion": "El rey de picas es, a la vez, rey y carta de picas, así que los eventos se traslapan y no son mutuamente excluyentes."
+          "retroalimentacion": "El rey de picas es, a la vez, rey y carta de picas, así que los eventos se traslapan y no son mutuamente excluyentes.",
+          "pistas": [
+            "Busca si hay al menos un resultado que cumpla ambas condiciones; si lo hay, no son mutuamente excluyentes, el mismo criterio que usamos con el dado de la kermés.",
+            "El rey de picas es, a la vez, rey y carta de picas, así que los eventos se traslapan y no son mutuamente excluyentes."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -94,7 +102,11 @@
             "Porque las reinas son cartas de figura"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "El criterio para decidir si dos eventos son mutuamente excluyentes es si comparten o no algún resultado; aquí ninguna carta es jota y reina a la vez."
+          "retroalimentacion": "El criterio para decidir si dos eventos son mutuamente excluyentes es si comparten o no algún resultado; aquí ninguna carta es jota y reina a la vez.",
+          "pistas": [
+            "Verifica si existe un resultado que cumpla ambos eventos a la vez, igual que hicimos para decidir si 'par' y 'sacar un 5' son mutuamente excluyentes en el dado de la kermés.",
+            "El criterio para decidir si dos eventos son mutuamente excluyentes es si comparten o no algún resultado; aquí ninguna carta es jota y reina a la vez."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -116,7 +128,19 @@
           "retroalimentacion": "5 y 7: ninguna carta es ambas cosas → mutuamente excluyentes. Roja y as: el as de corazones/diamantes cumple ambos → no mutuamente excluyentes. Reina y rey: ninguna carta es ambas cosas → mutuamente excluyentes."
         }
       ],
-      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio"
+      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio",
+      "ejemploResuelto": {
+        "enunciado": "En otro juego de la misma kermés de Oaxaca, Lupita pregunta si 'sacar un número par' y 'sacar un 5' en una tirada de dado son eventos mutuamente excluyentes.",
+        "pasos": [
+          {
+            "texto": "Nos preguntamos si existe algún resultado del dado que cumpla ambas condiciones a la vez."
+          },
+          {
+            "texto": "El 5 no es un número par, y ningún número par es igual a 5, así que no hay traslape."
+          }
+        ],
+        "respuestaFinal": "Sí son mutuamente excluyentes: ningún resultado del dado es par y 5 al mismo tiempo."
+      }
     }
   ],
   "practicaExtra": [

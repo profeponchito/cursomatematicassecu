@@ -34,7 +34,11 @@
             "2/52"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Al ser mutuamente excluyentes, P(as ∪ rey) = 4/52 + 4/52 = 8/52 = 2/13."
+          "retroalimentacion": "Al ser mutuamente excluyentes, P(as ∪ rey) = 4/52 + 4/52 = 8/52 = 2/13.",
+          "pistas": [
+            "Primero decide si los eventos se traslapan, y después aplica la fórmula correspondiente, igual que hicimos con 'primo' y 'mayor que 10' en la ruleta de Lupita.",
+            "Al ser mutuamente excluyentes, P(as ∪ rey) = 4/52 + 4/52 = 8/52 = 2/13."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -46,7 +50,11 @@
             "4/52"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Al no ser mutuamente excluyentes, se resta la intersección: P(roja ∪ as) = 26/52 + 4/52 − 2/52 = 28/52 = 7/13."
+          "retroalimentacion": "Al no ser mutuamente excluyentes, se resta la intersección: P(roja ∪ as) = 26/52 + 4/52 − 2/52 = 28/52 = 7/13.",
+          "pistas": [
+            "Si existe un resultado que cumple ambos eventos, resta la intersección, el mismo paso que usamos al encontrar que el 11 cumplía ambas condiciones en la ruleta de Lupita.",
+            "Al no ser mutuamente excluyentes, se resta la intersección: P(roja ∪ as) = 26/52 + 4/52 − 2/52 = 28/52 = 7/13."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -76,7 +84,11 @@
             "12/52"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "P(figura ∪ roja) = 12/52 + 26/52 − 6/52 = 32/52 = 8/13 (6 figuras rojas: J, Q y K de corazones y de diamantes)."
+          "retroalimentacion": "P(figura ∪ roja) = 12/52 + 26/52 − 6/52 = 32/52 = 8/13 (6 figuras rojas: J, Q y K de corazones y de diamantes).",
+          "pistas": [
+            "Verifica primero si hay traslape entre los dos eventos antes de elegir la fórmula, igual que decidimos con 'primo' y 'mayor que 10' en la ruleta de Lupita.",
+            "P(figura ∪ roja) = 12/52 + 26/52 − 6/52 = 32/52 = 8/13 (6 figuras rojas: J, Q y K de corazones y de diamantes)."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -123,7 +135,24 @@
           "retroalimentacion": "mult3∪negra (no ME): 12/52+26/52-6/52=32/52. as∪rey (ME): 4/52+4/52=8/52. roja∪as (no ME): 26/52+4/52-2/52=28/52."
         }
       ],
-      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis"
+      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis",
+      "ejemploResuelto": {
+        "enunciado": "En otra ruleta numerada del 1 al 12, Lupita quiere saber si 'número primo' y 'número mayor que 10' son mutuamente excluyentes, y cuál es la probabilidad de ganar con cualquiera de los dos.",
+        "pasos": [
+          {
+            "texto": "Verificamos si hay traslape: el 11 es primo y también mayor que 10."
+          },
+          {
+            "texto": "Como sí hay traslape, no son mutuamente excluyentes: contamos cada conjunto y su intersección.",
+            "operacion": "primos={2,3,5,7,11}=5; mayores que 10={11,12}=2; intersección={11}=1"
+          },
+          {
+            "texto": "Aplicamos la fórmula para eventos no excluyentes.",
+            "operacion": "5+2-1=6; P=6/12=1/2"
+          }
+        ],
+        "respuestaFinal": "Los eventos no son mutuamente excluyentes (el 11 los cumple ambos), y la probabilidad de ganar es 6/12 = 1/2."
+      }
     }
   ],
   "practicaExtra": [

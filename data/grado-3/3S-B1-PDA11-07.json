@@ -35,7 +35,11 @@
             "8"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "P(A∩B) en número de piezas = 72 + 50 − 100 = 22 piezas."
+          "retroalimentacion": "P(A∩B) en número de piezas = 72 + 50 − 100 = 22 piezas.",
+          "pistas": [
+            "Suma los dos totales y resta la unión para despejar la intersección, igual que calculamos los 15 pares con ambos defectos en el lote de León.",
+            "P(A∩B) en número de piezas = 72 + 50 − 100 = 22 piezas."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -53,7 +57,11 @@
             "6"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "84 + 60 − 132 = 12 estudiantes reprobaron ambas materias."
+          "retroalimentacion": "84 + 60 − 132 = 12 estudiantes reprobaron ambas materias.",
+          "pistas": [
+            "Aplica P(A∩B)=P(A)+P(B)−P(A∪B), el mismo procedimiento que usamos con el lote de zapatos de León.",
+            "84 + 60 − 132 = 12 estudiantes reprobaron ambas materias."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -95,7 +103,11 @@
             "20"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "150 + 100 − 215 = 35 pruebas fallaron por ambos errores."
+          "retroalimentacion": "150 + 100 − 215 = 35 pruebas fallaron por ambos errores.",
+          "pistas": [
+            "Suma los dos totales conocidos y resta la unión para encontrar la intersección, igual que hicimos con el lote de zapatos de León.",
+            "150 + 100 − 215 = 35 pruebas fallaron por ambos errores."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -130,7 +142,20 @@
           "retroalimentacion": "Como A∪B incluye a todos los que compraron A, la unión no puede ser menor que 80 (el tamaño de A); un reporte de 20 es matemáticamente imposible."
         }
       ],
-      "nivelEtiqueta": "Nivel 7 de 10 · Reto"
+      "nivelEtiqueta": "Nivel 7 de 10 · Reto",
+      "ejemploResuelto": {
+        "enunciado": "En otro lote de 300 pares de zapatos de la fábrica de León, 50 tenían defecto de costura, 40 tenían defecto de suela, y 75 pares tenían al menos uno de los dos defectos.",
+        "pasos": [
+          {
+            "texto": "Identificamos los tres datos conocidos: 50 con defecto de costura, 40 con defecto de suela, y 75 con al menos uno de los dos."
+          },
+          {
+            "texto": "Aplicamos la fórmula despejada de la intersección.",
+            "operacion": "P(A∩B)=50+40-75=15"
+          }
+        ],
+        "respuestaFinal": "15 de los 300 pares de zapatos tenían ambos defectos (costura y suela) a la vez."
+      }
     }
   ],
   "practicaExtra": [

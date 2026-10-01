@@ -35,7 +35,11 @@
             "4/52"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "P(roja ∪ as) = 26/52 + 4/52 − 2/52 = 28/52 = 7/13."
+          "retroalimentacion": "P(roja ∪ as) = 26/52 + 4/52 − 2/52 = 28/52 = 7/13.",
+          "pistas": [
+            "Suma las dos probabilidades y resta la intersección, igual que calculamos la probabilidad de ganar en la rifa de boletos de Beto (18/50=9/25).",
+            "P(roja ∪ as) = 26/52 + 4/52 − 2/52 = 28/52 = 7/13."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -59,7 +63,11 @@
             "26/52"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "P(negra ∪ jota) = 26/52 + 4/52 − 2/52 = 28/52 = 7/13."
+          "retroalimentacion": "P(negra ∪ jota) = 26/52 + 4/52 − 2/52 = 28/52 = 7/13.",
+          "pistas": [
+            "Aplica P(A∪B)=P(A)+P(B)−P(A∩B), el mismo procedimiento que usamos con la rifa de boletos múltiplos de 5 o menores que 10.",
+            "P(negra ∪ jota) = 26/52 + 4/52 − 2/52 = 28/52 = 7/13."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -83,7 +91,11 @@
             "20/52"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "P(par ∪ negra) = 20/52 + 26/52 − 10/52 = 36/52 = 9/13."
+          "retroalimentacion": "P(par ∪ negra) = 20/52 + 26/52 − 10/52 = 36/52 = 9/13.",
+          "pistas": [
+            "Cuenta cada conjunto por separado, cuenta la intersección y aplica la fórmula de la unión, igual que hicimos con la rifa de boletos de Beto.",
+            "P(par ∪ negra) = 20/52 + 26/52 − 10/52 = 36/52 = 9/13."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -118,7 +130,25 @@
           "retroalimentacion": "diamantes∪reina: 13/52+4/52-1/52=16/52. figura∪roja: 12/52+26/52-6/52=32/52. par∪negra: 20/52+26/52-10/52=36/52."
         }
       ],
-      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado"
+      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado",
+      "ejemploResuelto": {
+        "enunciado": "Beto organiza otra rifa con boletos del 1 al 50: ganan los números que son múltiplos de 5 O menores que 10.",
+        "pasos": [
+          {
+            "texto": "Contamos los boletos múltiplos de 5 y los boletos menores que 10.",
+            "operacion": "múltiplos de 5=10; menores que 10=9"
+          },
+          {
+            "texto": "Contamos la intersección: boletos que son múltiplo de 5 Y menores que 10 (solo el 5).",
+            "operacion": "intersección=1"
+          },
+          {
+            "texto": "Aplicamos la fórmula de la unión.",
+            "operacion": "10+9-1=18; P=18/50=9/25"
+          }
+        ],
+        "respuestaFinal": "La probabilidad de ganar con un boleto múltiplo de 5 o menor que 10 es 18/50 = 9/25."
+      }
     }
   ],
   "practicaExtra": [

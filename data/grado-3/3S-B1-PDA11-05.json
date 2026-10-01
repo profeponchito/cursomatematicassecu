@@ -35,7 +35,11 @@
             "21"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Hay 6 resultados posibles para el primer dado y 6 para el segundo, así que en total hay 6×6 = 36 combinaciones ordenadas."
+          "retroalimentacion": "Hay 6 resultados posibles para el primer dado y 6 para el segundo, así que en total hay 6×6 = 36 combinaciones ordenadas.",
+          "pistas": [
+            "Cuenta cuántas de las 36 combinaciones ordenadas cumplen la condición, igual que contamos las sumas de 4 en la nueva ronda de Damián.",
+            "Hay 6 resultados posibles para el primer dado y 6 para el segundo, así que en total hay 6×6 = 36 combinaciones ordenadas."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -59,7 +63,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Los eventos 'la suma es 7' y 'la suma es 11' son mutuamente excluyentes.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: ningún resultado de los 36 posibles da suma 7 y 11 al mismo tiempo."
+          "retroalimentacion": "Correcto: ningún resultado de los 36 posibles da suma 7 y 11 al mismo tiempo.",
+          "pistas": [
+            "Verifica si algún resultado cumple ambas condiciones a la vez antes de sumar directamente, igual que hicimos con 'suma 4' y 'múltiplo de 5' en el juego de Damián.",
+            "Correcto: ningún resultado de los 36 posibles da suma 7 y 11 al mismo tiempo."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -95,7 +103,11 @@
             "2/36"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "P(A ∪ B) = 6/36 + 1/36 = 7/36, porque no hay traslape entre 'primer dado 6' y 'suma 2'."
+          "retroalimentacion": "P(A ∪ B) = 6/36 + 1/36 = 7/36, porque no hay traslape entre 'primer dado 6' y 'suma 2'.",
+          "pistas": [
+            "Si ningún resultado puede cumplir ambas condiciones a la vez, los eventos son mutuamente excluyentes y se suman directo, igual que con 'suma 4' y 'múltiplo de 5' en el juego de Damián.",
+            "P(A ∪ B) = 6/36 + 1/36 = 7/36, porque no hay traslape entre 'primer dado 6' y 'suma 2'."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -129,7 +141,24 @@
           "retroalimentacion": "La fórmula de la unión funciona igual sin importar cuál sea el espacio muestral; lo único que cambia es cuántos resultados totales hay y cuáles cumplen cada evento."
         }
       ],
-      "nivelEtiqueta": "Nivel 5 de 10 · Aplicación"
+      "nivelEtiqueta": "Nivel 5 de 10 · Aplicación",
+      "ejemploResuelto": {
+        "enunciado": "Damián juega otra ronda del mismo juego de mesa: gana si la suma de los dos dados es 4 O es un múltiplo de 5.",
+        "pasos": [
+          {
+            "texto": "Contamos los resultados donde la suma es 4.",
+            "operacion": "(1,3),(2,2),(3,1)=3 resultados"
+          },
+          {
+            "texto": "Usamos que la suma es múltiplo de 5 (5 o 10) en 7 de los 36 resultados."
+          },
+          {
+            "texto": "Como ningún resultado da suma 4 y múltiplo de 5 a la vez, son mutuamente excluyentes.",
+            "operacion": "P=3/36+7/36=10/36=5/18"
+          }
+        ],
+        "respuestaFinal": "La probabilidad de que la suma sea 4 o sea múltiplo de 5 es 10/36 = 5/18."
+      }
     }
   ],
   "practicaExtra": [

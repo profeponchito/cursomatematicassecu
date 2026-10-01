@@ -35,7 +35,11 @@
             "87%"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "P(futbol ∪ básquetbol) = 45% + 30% − 12% = 63%."
+          "retroalimentacion": "P(futbol ∪ básquetbol) = 45% + 30% − 12% = 63%.",
+          "pistas": [
+            "Suma los dos porcentajes y resta el porcentaje que hace ambas cosas, igual que calculamos el 63% de la encuesta de redes sociales y lectura en Puebla.",
+            "P(futbol ∪ básquetbol) = 45% + 30% − 12% = 63%."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -71,7 +75,11 @@
             "77%"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "P(fruta ∪ verduras) = 52% + 40% − 25% = 67%."
+          "retroalimentacion": "P(fruta ∪ verduras) = 52% + 40% − 25% = 67%.",
+          "pistas": [
+            "Aplica P(A∪B)=P(A)+P(B)−P(A∩B) con los porcentajes dados, el mismo procedimiento que usamos con la encuesta de redes sociales y lectura de Puebla.",
+            "P(fruta ∪ verduras) = 52% + 40% − 25% = 67%."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -95,7 +103,11 @@
             "55%"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "P(inglés ∪ francés) = 60% + 8% − 5% = 63%."
+          "retroalimentacion": "P(inglés ∪ francés) = 60% + 8% − 5% = 63%.",
+          "pistas": [
+            "Suma los porcentajes de cada actividad y resta el porcentaje que hace ambas, igual que hicimos con la encuesta de redes sociales y lectura en Puebla.",
+            "P(inglés ∪ francés) = 60% + 8% − 5% = 63%."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -130,7 +142,20 @@
           "retroalimentacion": "Fruta∪verduras: 52+40−25=67%. Camina∪bicicleta (ME): 22+15=37%. Inglés∪francés: 60+8−5=63%."
         }
       ],
-      "nivelEtiqueta": "Nivel 6 de 10 · Aplicación avanzada"
+      "nivelEtiqueta": "Nivel 6 de 10 · Aplicación avanzada",
+      "ejemploResuelto": {
+        "enunciado": "En la misma secundaria de Puebla, otra encuesta encuentra que 48% de los alumnos usa redes sociales a diario, 35% lee libros por su cuenta, y 20% hace ambas cosas.",
+        "pasos": [
+          {
+            "texto": "Identificamos que sí hay traslape: 20% hace ambas cosas."
+          },
+          {
+            "texto": "Aplicamos la fórmula con los porcentajes.",
+            "operacion": "48%+35%-20%=63%"
+          }
+        ],
+        "respuestaFinal": "El 63% de los alumnos usa redes sociales a diario o lee libros por su cuenta (o ambas cosas)."
+      }
     }
   ],
   "practicaExtra": [

@@ -47,7 +47,11 @@
             "24"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "120 ÷ 15 = 8, porque 15 es el mínimo común múltiplo de 3 y 5."
+          "retroalimentacion": "120 ÷ 15 = 8, porque 15 es el mínimo común múltiplo de 3 y 5.",
+          "pistas": [
+            "Divide el total de boletos entre el mínimo común múltiplo de los dos números para contar la intersección, igual que calculamos los múltiplos de 36 en la rifa de Zacatecas.",
+            "120 ÷ 15 = 8, porque 15 es el mínimo común múltiplo de 3 y 5."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -77,7 +81,11 @@
             "60"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "30 + 22 − 7 = 45 boletos."
+          "retroalimentacion": "30 + 22 − 7 = 45 boletos.",
+          "pistas": [
+            "Cuenta los múltiplos de cada número, cuenta la intersección con el mcm, y aplica la fórmula de la unión, el mismo procedimiento que usamos en la rifa de Zacatecas con múltiplos de 9 y 12.",
+            "30 + 22 − 7 = 45 boletos."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -95,7 +103,11 @@
             "58/200"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "40 + 28 − 5 = 63 boletos, entonces P = 63/200."
+          "retroalimentacion": "40 + 28 − 5 = 63 boletos, entonces P = 63/200.",
+          "pistas": [
+            "Cuenta los múltiplos de cada número hasta el límite, resta la intersección y calcula la probabilidad, igual que hicimos con la rifa de Zacatecas.",
+            "40 + 28 − 5 = 63 boletos, entonces P = 63/200."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -124,7 +136,25 @@
           "retroalimentacion": "3∨5 hasta 120: 40+24−8=56. 4∨6 hasta 120: 30+20−10=40. 3∨4 hasta 90: 30+22−7=45."
         }
       ],
-      "nivelEtiqueta": "Nivel 8 de 10 · Reto avanzado"
+      "nivelEtiqueta": "Nivel 8 de 10 · Reto avanzado",
+      "ejemploResuelto": {
+        "enunciado": "En otra rifa en Zacatecas con 180 boletos (del 1 al 180), ganan los múltiplos de 9 o de 12.",
+        "pasos": [
+          {
+            "texto": "Contamos los múltiplos de 9 y de 12 hasta 180.",
+            "operacion": "180÷9=20; 180÷12=15"
+          },
+          {
+            "texto": "Contamos los múltiplos del mcm(9,12)=36, que son la intersección.",
+            "operacion": "180÷36=5"
+          },
+          {
+            "texto": "Aplicamos la fórmula de la unión.",
+            "operacion": "20+15-5=30; P=30/180=1/6"
+          }
+        ],
+        "respuestaFinal": "Hay 30 boletos que son múltiplos de 9 o de 12, así que la probabilidad de ganar es 30/180 = 1/6."
+      }
     }
   ],
   "practicaExtra": [

@@ -35,7 +35,11 @@
             "2/52"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "P(as ∪ rey) = 4/52 + 4/52 = 8/52 = 2/13."
+          "retroalimentacion": "P(as ∪ rey) = 4/52 + 4/52 = 8/52 = 2/13.",
+          "pistas": [
+            "Como los eventos son mutuamente excluyentes, suma directamente las dos probabilidades, igual que calculamos P(2∪5)=1/3 en el juego de dados de Lupita.",
+            "P(as ∪ rey) = 4/52 + 4/52 = 8/52 = 2/13."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -59,7 +63,11 @@
             "1/4"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "P(picas ∪ diamantes) = 13/52 + 13/52 = 26/52 = 1/2."
+          "retroalimentacion": "P(picas ∪ diamantes) = 13/52 + 13/52 = 26/52 = 1/2.",
+          "pistas": [
+            "Suma las probabilidades de cada evento por separado, el mismo procedimiento que usamos para P(2∪5) en el juego de dados de la kermés.",
+            "P(picas ∪ diamantes) = 13/52 + 13/52 = 26/52 = 1/2."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -83,7 +91,11 @@
             "10/52"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "P(2 ∪ 10) = 4/52 + 4/52 = 8/52 = 2/13."
+          "retroalimentacion": "P(2 ∪ 10) = 4/52 + 4/52 = 8/52 = 2/13.",
+          "pistas": [
+            "Al ser mutuamente excluyentes, suma las dos probabilidades directamente, igual que hicimos con P(2∪5) en el juego de dados de Lupita.",
+            "P(2 ∪ 10) = 4/52 + 4/52 = 8/52 = 2/13."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -118,7 +130,20 @@
           "retroalimentacion": "as∪rey: 4/52+4/52=8/52. tréboles∪corazones: 13/52+13/52=26/52. roja∪negra: 26/52+26/52=52/52 (cubren toda la baraja)."
         }
       ],
-      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio"
+      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio",
+      "ejemploResuelto": {
+        "enunciado": "En el mismo juego de dados de la kermés, Lupita calcula ahora la probabilidad de ganar sacando un 2 o un 5: P(2)=1/6, P(5)=1/6.",
+        "pasos": [
+          {
+            "texto": "Confirmamos que son mutuamente excluyentes: ninguna tirada da 2 y 5 a la vez."
+          },
+          {
+            "texto": "Sumamos las probabilidades por separado.",
+            "operacion": "P(2∪5)=1/6+1/6=2/6=1/3"
+          }
+        ],
+        "respuestaFinal": "La probabilidad de sacar un 2 o un 5 en una tirada es 1/3."
+      }
     }
   ],
   "practicaExtra": [

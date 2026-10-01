@@ -35,7 +35,11 @@
             "210/420"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "P(A∪B) = 210+168−84 = 294, entonces P(ninguno) = 420−294 = 126, es decir 126/420 = 3/10."
+          "retroalimentacion": "P(A∪B) = 210+168−84 = 294, entonces P(ninguno) = 420−294 = 126, es decir 126/420 = 3/10.",
+          "pistas": [
+            "Despeja la intersección con P(A∩B)=P(A)+P(B)−P(A∪B), igual que calculamos los 60 clientes que compran por ambos medios en el reporte de Valeria.",
+            "P(A∪B) = 210+168−84 = 294, entonces P(ninguno) = 420−294 = 126, es decir 126/420 = 3/10."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -53,7 +57,11 @@
             "150/360"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "P(ninguno) = 360 − 221 = 139, es decir 139/360."
+          "retroalimentacion": "P(ninguno) = 360 − 221 = 139, es decir 139/360.",
+          "pistas": [
+            "Resta la unión del total para obtener cuántos no cumplen ninguna condición, el mismo procedimiento que usamos en el reporte de Valeria para la empresa de Guadalajara.",
+            "P(ninguno) = 360 − 221 = 139, es decir 139/360."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -107,7 +115,11 @@
             "94%"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "P(A∪B) = 0.18+0.11−0.06 = 0.23 = 23%. P(libre de defectos) = 100% − 23% = 77%."
+          "retroalimentacion": "P(A∪B) = 0.18+0.11−0.06 = 0.23 = 23%. P(libre de defectos) = 100% − 23% = 77%.",
+          "pistas": [
+            "Calcula la unión con la fórmula P(A)+P(B)−P(A∩B) y después resta de 100% para el complemento, igual que hicimos con el reporte de los 400 clientes de Valeria.",
+            "P(A∪B) = 0.18+0.11−0.06 = 0.23 = 23%. P(libre de defectos) = 100% − 23% = 77%."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -130,7 +142,21 @@
           "retroalimentacion": "Clientes: 420−(210+168−84)=126, o sea 126/420. Pacientes: 150+110−221=39. Taller: 96−(34+29)=33, o sea 33/96."
         }
       ],
-      "nivelEtiqueta": "Nivel 10 de 10 · Dominio"
+      "nivelEtiqueta": "Nivel 10 de 10 · Dominio",
+      "ejemploResuelto": {
+        "enunciado": "La misma empresa de Guadalajara le da a Valeria otro reporte de 400 clientes: 180 compran por internet, 150 compran en tienda física, y 270 compran por al menos una de las dos formas.",
+        "pasos": [
+          {
+            "texto": "Despejamos la intersección usando los tres datos conocidos.",
+            "operacion": "180+150-270=60"
+          },
+          {
+            "texto": "Calculamos la probabilidad de que un cliente no compre por ninguno de los dos medios.",
+            "operacion": "P(ninguno)=1-270/400=130/400=13/40"
+          }
+        ],
+        "respuestaFinal": "60 de los 400 clientes compran por ambos medios, y 130 de ellos (13/40) no compran por ninguno de los dos."
+      }
     }
   ],
   "practicaExtra": [
