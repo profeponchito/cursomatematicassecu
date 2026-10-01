@@ -35,7 +35,11 @@
             "900"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "300 mL × 3 = 900 mL = 0.9 L."
+          "retroalimentacion": "300 mL × 3 = 900 mL = 0.9 L.",
+          "pistas": [
+            "Multiplica la cantidad original por el factor de escala, y después convierte a litros.",
+            "300 mL × 3 = 900 mL = 0.9 L."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -59,7 +63,11 @@
             "0.225"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "El factor de escala es 15 ÷ 5 = 3, entonces 750 mL × 3 = 2250 mL = 2.25 L."
+          "retroalimentacion": "El factor de escala es 15 ÷ 5 = 3, entonces 750 mL × 3 = 2250 mL = 2.25 L.",
+          "pistas": [
+            "Calcula el factor de escala dividiendo las distancias, después multiplica y convierte.",
+            "El factor de escala es 15 ÷ 5 = 3, entonces 750 mL × 3 = 2250 mL = 2.25 L."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -83,7 +91,11 @@
             "900"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "1.5 kg × 3 = 4.5 kg = 4500 g."
+          "retroalimentacion": "1.5 kg × 3 = 4.5 kg = 4500 g.",
+          "pistas": [
+            "Multiplica la cantidad original por el factor de escala, y después convierte a gramos.",
+            "1.5 kg × 3 = 4.5 kg = 4500 g."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -118,7 +130,25 @@
           "retroalimentacion": "40 g × 6 = 240 g."
         }
       ],
-      "nivelEtiqueta": "Nivel 5 de 10 · Aplicación"
+      "nivelEtiqueta": "Nivel 5 de 10 · Aplicación",
+      "ejemploResuelto": {
+        "enunciado": "La misma cooperativa también prepara agua de limón: la receta original rinde 3 vasos con 150 mililitros de concentrado, y necesitan hacer 5 veces esa cantidad. ¿Cuántos litros de concentrado necesitarán?",
+        "pasos": [
+          {
+            "texto": "Calculamos el factor de escala.",
+            "operacion": "5"
+          },
+          {
+            "texto": "Multiplicamos la cantidad original.",
+            "operacion": "150 × 5 = 750 mL"
+          },
+          {
+            "texto": "Convertimos a litros.",
+            "operacion": "750 ÷ 1000 = 0.75 L"
+          }
+        ],
+        "respuestaFinal": "Necesitarán 0.75 litros de concentrado."
+      }
     }
   ],
   "practicaExtra": [

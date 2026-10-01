@@ -30,7 +30,11 @@
           "tipo": "llenar_frase",
           "frase": "Un cuadrilátero irregular tiene un perímetro de 74 cm; tres de sus lados miden 15 cm, 22 cm y 19 cm. El cuarto lado mide ___ cm.",
           "respuestaCorrecta": "18",
-          "retroalimentacion": "74-15-22-19=18 cm."
+          "retroalimentacion": "74-15-22-19=18 cm.",
+          "pistas": [
+            "Suma los tres lados conocidos y resta el resultado del perímetro total.",
+            "74 - 15 - 22 - 19 = 18 cm."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -54,7 +58,11 @@
           "tipo": "llenar_frase",
           "frase": "Una cometa clásica (dos pares de lados iguales) tiene dos lados cortos de 26 cm cada uno y un perímetro total de 168 cm. Cada lado largo mide ___ cm.",
           "respuestaCorrecta": "58",
-          "retroalimentacion": "(168-26-26)÷2=58 cm."
+          "retroalimentacion": "(168-26-26)÷2=58 cm.",
+          "pistas": [
+            "Resta los dos lados cortos del perímetro, y divide lo que queda entre 2.",
+            "(168 - 26 - 26) ÷ 2 = 58 cm."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -78,7 +86,11 @@
           "tipo": "llenar_frase",
           "frase": "Un terreno con forma de cuadrilátero tiene un perímetro de 210 m; tres de sus lados miden 55 m, 48 m y 62 m. El cuarto lado mide ___ m.",
           "respuestaCorrecta": "45",
-          "retroalimentacion": "210-55-48-62=45 m."
+          "retroalimentacion": "210-55-48-62=45 m.",
+          "pistas": [
+            "Suma los tres lados conocidos y resta el resultado del perímetro total.",
+            "210 - 55 - 48 - 62 = 45 m."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -118,7 +130,25 @@
           "respuestaCorrecta": false,
           "retroalimentacion": "Falso: 33+29+31+27=120 cm, no 122 cm."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "En el mismo taller, el carpintero arma otro marco irregular; conoce tres de sus cuatro lados (32 cm, 47 cm y 29 cm) y el perímetro total debe ser 145 cm. ¿Cuánto debe medir el cuarto lado?",
+        "pasos": [
+          {
+            "texto": "Sumamos los tres lados conocidos.",
+            "operacion": "32 + 47 + 29 = 108"
+          },
+          {
+            "texto": "Restamos esa suma del perímetro total.",
+            "operacion": "145 - 108"
+          },
+          {
+            "texto": "Obtenemos el cuarto lado.",
+            "operacion": "37 cm"
+          }
+        ],
+        "respuestaFinal": "El cuarto lado debe medir 37 centímetros."
+      }
     }
   ],
   "practicaExtra": [

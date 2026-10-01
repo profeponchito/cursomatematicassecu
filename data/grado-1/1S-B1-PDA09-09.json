@@ -35,7 +35,11 @@
             "125°"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "(360-65-65)÷2=115° para cada uno de los otros dos ángulos."
+          "retroalimentacion": "(360-65-65)÷2=115° para cada uno de los otros dos ángulos.",
+          "pistas": [
+            "Resta los dos ángulos conocidos de 360° y divide el resultado entre 2.",
+            "(360-65-65)÷2=115° para cada uno de los otros dos ángulos."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -59,7 +63,11 @@
             "54 cm"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "24+24+15=63 cm."
+          "retroalimentacion": "24+24+15=63 cm.",
+          "pistas": [
+            "Suma los dos lados iguales más el lado desigual.",
+            "24+24+15=63 cm."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -83,7 +91,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "El rombo central del papalote tiene lado de 33 cm y perímetro de 132 cm, y sus ángulos son 72°, 108°, 72° y 108°.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: 33×4=132 cm y 72+108+72+108=360°, ambas propiedades se cumplen."
+          "retroalimentacion": "Correcto: 33×4=132 cm y 72+108+72+108=360°, ambas propiedades se cumplen.",
+          "pistas": [
+            "Multiplica el lado por 4 para el perímetro, y suma los 4 ángulos para confirmar que dan 360°.",
+            "33×4=132 cm; 72+108+72+108=360°."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -117,7 +129,25 @@
           "respuestaCorrecta": true,
           "retroalimentacion": "Correcto: 2×(26+34)=120 cm, y 75+105+75+105=360°."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "En el mismo festival, otro equipo diseña un papalote con forma de rombo de lado 38 cm, donde dos ángulos opuestos miden 72° cada uno. ¿Cuánto miden los otros dos ángulos opuestos, y cuál es el perímetro del rombo?",
+        "pasos": [
+          {
+            "texto": "Como los 4 ángulos de un cuadrilátero suman 360°, restamos los dos ángulos conocidos.",
+            "operacion": "360 - 72 - 72 = 216"
+          },
+          {
+            "texto": "Dividimos entre 2, ya que los otros dos ángulos opuestos son iguales entre sí.",
+            "operacion": "216 ÷ 2 = 108°"
+          },
+          {
+            "texto": "Calculamos el perímetro multiplicando el lado por 4.",
+            "operacion": "38 × 4 = 152 cm"
+          }
+        ],
+        "respuestaFinal": "Los otros dos ángulos miden 108° cada uno, y el perímetro del rombo es 152 cm."
+      }
     }
   ],
   "practicaExtra": [

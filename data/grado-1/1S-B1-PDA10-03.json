@@ -41,7 +41,11 @@
           "tipo": "llenar_frase",
           "frase": "El área de un círculo con radio de 10 m es ___ m².",
           "respuestaCorrecta": "314",
-          "retroalimentacion": "A = 3.14 × 10² = 3.14 × 100 = 314 m²."
+          "retroalimentacion": "A = 3.14 × 10² = 3.14 × 100 = 314 m².",
+          "pistas": [
+            "Usa la fórmula A = π × r², elevando el radio al cuadrado primero.",
+            "A = 3.14 × 10² = 3.14 × 100 = 314 m²."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -65,7 +69,11 @@
             "18.84 cm²"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "A = 3.14 × 6² = 3.14 × 36 = 113.04 cm²."
+          "retroalimentacion": "A = 3.14 × 6² = 3.14 × 36 = 113.04 cm².",
+          "pistas": [
+            "Eleva el radio al cuadrado y multiplica por π.",
+            "A = 3.14 × 6² = 3.14 × 36 = 113.04 cm²."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -89,7 +97,11 @@
           "tipo": "llenar_frase",
           "frase": "Un reloj circular de pared tiene un radio de 8 cm. Su área es ___ cm².",
           "respuestaCorrecta": "200.96",
-          "retroalimentacion": "A = 3.14 × 8² = 3.14 × 64 = 200.96 cm²."
+          "retroalimentacion": "A = 3.14 × 8² = 3.14 × 64 = 200.96 cm².",
+          "pistas": [
+            "Eleva el radio al cuadrado y multiplica por π.",
+            "A = 3.14 × 8² = 3.14 × 64 = 200.96 cm²."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -118,7 +130,25 @@
           "retroalimentacion": "r=1 cm: A=3.14×1²=3.14 cm². r=12 cm: A=3.14×12²=452.16 cm². r=15 cm: A=3.14×15²=706.5 cm²."
         }
       ],
-      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado"
+      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado",
+      "ejemploResuelto": {
+        "enunciado": "El mismo equipo de jardinería siembra pasto en otra jardinera circular, esta con 8 metros de radio. ¿Cuántos metros cuadrados de pasto necesitan?",
+        "pasos": [
+          {
+            "texto": "Usamos la fórmula del área del círculo.",
+            "operacion": "A = π × r²"
+          },
+          {
+            "texto": "Sustituimos los valores conocidos.",
+            "operacion": "3.14 × 8²"
+          },
+          {
+            "texto": "Calculamos el resultado.",
+            "operacion": "3.14 × 64 = 200.96 m²"
+          }
+        ],
+        "respuestaFinal": "Necesitan 200.96 metros cuadrados de pasto."
+      }
     }
   ],
   "practicaExtra": [

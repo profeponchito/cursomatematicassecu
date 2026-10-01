@@ -30,7 +30,11 @@
           "tipo": "llenar_frase",
           "frase": "Un rombo se divide por una diagonal en dos triángulos isósceles idénticos. En uno de ellos, dos ángulos miden 28° y 28°. El tercer ángulo mide ___°.",
           "respuestaCorrecta": "124",
-          "retroalimentacion": "180-28-28=124°."
+          "retroalimentacion": "180-28-28=124°.",
+          "pistas": [
+            "Suma los dos ángulos conocidos y resta de 180°.",
+            "180 - 28 - 28 = 124°."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -54,7 +58,11 @@
           "tipo": "llenar_frase",
           "frase": "Una cometa se divide en dos triángulos por su diagonal vertical. El triángulo de abajo tiene ángulos de 20° y 20° en su base. El ángulo de la punta inferior mide ___°.",
           "respuestaCorrecta": "140",
-          "retroalimentacion": "180-20-20=140°."
+          "retroalimentacion": "180-20-20=140°.",
+          "pistas": [
+            "Suma los dos ángulos y resta de 180°.",
+            "180 - 20 - 20 = 140°."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -78,7 +86,11 @@
           "tipo": "llenar_frase",
           "frase": "Un romboide se divide por una diagonal en dos triángulos congruentes. En uno de ellos, los ángulos miden 65°, 47° y ___°.",
           "respuestaCorrecta": "68",
-          "retroalimentacion": "180-65-47=68°."
+          "retroalimentacion": "180-65-47=68°.",
+          "pistas": [
+            "Suma los dos ángulos conocidos y resta de 180°.",
+            "180 - 65 - 47 = 68°."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -118,7 +130,24 @@
           "respuestaCorrecta": true,
           "retroalimentacion": "Correcto: 25+25+130=180°; tener dos ángulos iguales lo hace isósceles, y tener un ángulo mayor a 90° lo hace obtusángulo."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Sofía traza la diagonal de otro papalote con forma de cometa, y en uno de los triángulos formados ya conoce dos ángulos: 33° y 82°. ¿Cuánto mide el tercer ángulo de ese triángulo?",
+        "pasos": [
+          {
+            "texto": "Recordamos que cada triángulo formado por la diagonal también suma 180° en sus ángulos."
+          },
+          {
+            "texto": "Sumamos los dos ángulos conocidos.",
+            "operacion": "33 + 82 = 115"
+          },
+          {
+            "texto": "Restamos de 180°.",
+            "operacion": "180 - 115 = 65°"
+          }
+        ],
+        "respuestaFinal": "El tercer ángulo mide 65°."
+      }
     }
   ],
   "practicaExtra": [

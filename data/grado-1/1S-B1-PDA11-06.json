@@ -35,7 +35,11 @@
             "$500"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "250 g = 0.25 kg. 50 ÷ 0.25 = $200 por kg."
+          "retroalimentacion": "250 g = 0.25 kg. 50 ÷ 0.25 = $200 por kg.",
+          "pistas": [
+            "Convierte los gramos a kilogramos antes de dividir.",
+            "250 g = 0.25 kg. 50 ÷ 0.25 = $200 por kg."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -47,7 +51,11 @@
           "tipo": "llenar_frase",
           "frase": "Una garrafa de 4 L de agua cuesta $32. El precio por litro es $___.",
           "respuestaCorrecta": "8",
-          "retroalimentacion": "32 ÷ 4 = $8 por litro."
+          "retroalimentacion": "32 ÷ 4 = $8 por litro.",
+          "pistas": [
+            "Divide el precio total entre los litros.",
+            "32 ÷ 4 = $8 por litro."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -71,7 +79,11 @@
           "tipo": "llenar_frase",
           "frase": "Un listón de 350 cm cuesta $70. El precio por metro es $___.",
           "respuestaCorrecta": "20",
-          "retroalimentacion": "350 cm = 3.5 m. 70 ÷ 3.5 = $20 por metro."
+          "retroalimentacion": "350 cm = 3.5 m. 70 ÷ 3.5 = $20 por metro.",
+          "pistas": [
+            "Convierte los centímetros a metros antes de dividir.",
+            "350 cm = 3.5 m. 70 ÷ 3.5 = $20 por metro."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -118,7 +130,25 @@
           "retroalimentacion": "600 ÷ 1200 = $0.5 por litro."
         }
       ],
-      "nivelEtiqueta": "Nivel 6 de 10 · Aplicación avanzada"
+      "nivelEtiqueta": "Nivel 6 de 10 · Aplicación avanzada",
+      "ejemploResuelto": {
+        "enunciado": "En el mismo mercado, otra señora vende jamaica: una bolsa de 400 gramos cuesta $36, y otra bolsa de 1.2 kilogramos cuesta $96. ¿Cuál de las dos bolsas conviene más comprar según su precio por kilogramo?",
+        "pasos": [
+          {
+            "texto": "Convertimos 400 g a kilogramos.",
+            "operacion": "400 g = 0.4 kg"
+          },
+          {
+            "texto": "Calculamos el precio por kg de la primera.",
+            "operacion": "36 ÷ 0.4 = $90 por kg"
+          },
+          {
+            "texto": "Calculamos el precio por kg de la segunda y comparamos.",
+            "operacion": "96 ÷ 1.2 = $80 por kg"
+          }
+        ],
+        "respuestaFinal": "Conviene más la bolsa de 1.2 kg, que cuesta $80 por kilogramo contra $90 de la otra."
+      }
     }
   ],
   "practicaExtra": [

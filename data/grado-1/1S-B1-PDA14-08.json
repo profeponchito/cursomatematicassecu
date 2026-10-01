@@ -35,7 +35,11 @@
             "1/12"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "P frecuencial = 12/60 = 1/5."
+          "retroalimentacion": "P frecuencial = 12/60 = 1/5.",
+          "pistas": [
+            "Divide el número de veces que ocurrió entre el total de repeticiones.",
+            "P frecuencial = 12/60 = 1/5."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -59,7 +63,11 @@
             "15%"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "P frecuencial = 15/500 = 0.03 = 3%."
+          "retroalimentacion": "P frecuencial = 15/500 = 0.03 = 3%.",
+          "pistas": [
+            "Divide los defectuosos entre el total y multiplica por 100.",
+            "P frecuencial = 15/500 = 0.03 = 3%."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -83,7 +91,11 @@
             "64%"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "P frecuencial = 90/250 = 0.36 = 36%."
+          "retroalimentacion": "P frecuencial = 90/250 = 0.36 = 36%.",
+          "pistas": [
+            "Divide los que compraron entre el total de clientes.",
+            "P frecuencial = 90/250 = 0.36 = 36%."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -118,7 +130,24 @@
           "retroalimentacion": "Correcto: como la tachuela no tiene resultados igualmente posibles, solo la probabilidad frecuencial (basada en datos reales) permite estimarla."
         }
       ],
-      "nivelEtiqueta": "Nivel 8 de 10 · Reto avanzado"
+      "nivelEtiqueta": "Nivel 8 de 10 · Reto avanzado",
+      "ejemploResuelto": {
+        "enunciado": "Otro grupo de alumnos lanzó un dado 40 veces para investigar si estaba cargado, y el número 6 salió 12 veces. ¿Cuál es la probabilidad frecuencial de que ese dado caiga en 6?",
+        "pasos": [
+          {
+            "texto": "Usamos la fórmula de probabilidad frecuencial."
+          },
+          {
+            "texto": "Sustituimos los valores.",
+            "operacion": "12÷40"
+          },
+          {
+            "texto": "Calculamos el resultado.",
+            "operacion": "0.3, es decir 30%"
+          }
+        ],
+        "respuestaFinal": "La probabilidad frecuencial es 0.3, equivalente al 30%."
+      }
     }
   ],
   "practicaExtra": [

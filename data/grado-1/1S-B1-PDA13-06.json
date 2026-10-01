@@ -36,7 +36,11 @@
             "10"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "Suma necesaria = 8×4 = 32. Suma conocida = 6+8+9 = 23. Dato faltante = 32−23 = 9."
+          "retroalimentacion": "Suma necesaria = 8×4 = 32. Suma conocida = 6+8+9 = 23. Dato faltante = 32−23 = 9.",
+          "pistas": [
+            "Multiplica la media deseada por el número de exámenes, y resta la suma de los datos conocidos.",
+            "Suma necesaria = 8×4 = 32. Suma conocida = 6+8+9 = 23. Dato faltante = 32−23 = 9."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -60,7 +64,11 @@
             "$1,050"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "Suma necesaria = 900×5 = 4500. Suma conocida = 800+950+700+1050 = 3500. Dato faltante = 4500−3500 = $1,000."
+          "retroalimentacion": "Suma necesaria = 900×5 = 4500. Suma conocida = 800+950+700+1050 = 3500. Dato faltante = 4500−3500 = $1,000.",
+          "pistas": [
+            "Multiplica la media deseada por el número de días, y resta la suma conocida.",
+            "Suma necesaria = 900×5 = 4500. Suma conocida = 800+950+700+1050 = 3500. Dato faltante = 4500−3500 = $1,000."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -84,7 +92,11 @@
             "10.5"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "Suma necesaria = 8.4×5 = 42. Suma conocida = 8+7+9+8 = 32. Dato faltante = 42−32 = 10."
+          "retroalimentacion": "Suma necesaria = 8.4×5 = 42. Suma conocida = 8+7+9+8 = 32. Dato faltante = 42−32 = 10.",
+          "pistas": [
+            "Multiplica la media deseada por el número de exámenes, y resta la suma conocida.",
+            "Suma necesaria = 8.4×5 = 42. Suma conocida = 8+7+9+8 = 32. Dato faltante = 42−32 = 10."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -118,7 +130,25 @@
           ],
           "retroalimentacion": "Exámenes: 7.5×4−(6+7+8)=30−21=9. Partidos: 12×3−(10+12)=36−22=14. Ventas: 550×3−(500+600)=1650−1100=$550."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Santiago también quiere que el promedio de sus 4 exámenes sea 7.5 en vez de 8. Con sus calificaciones de 7, 8 y 6 en los primeros tres, ¿qué calificación necesita en el cuarto examen?",
+        "pasos": [
+          {
+            "texto": "Calculamos la suma necesaria.",
+            "operacion": "7.5 × 4 = 30"
+          },
+          {
+            "texto": "Calculamos la suma de los datos conocidos.",
+            "operacion": "7+8+6 = 21"
+          },
+          {
+            "texto": "Restamos para obtener el dato faltante.",
+            "operacion": "30 − 21 = 9"
+          }
+        ],
+        "respuestaFinal": "Necesita sacar 9 en su cuarto examen."
+      }
     }
   ],
   "practicaExtra": [

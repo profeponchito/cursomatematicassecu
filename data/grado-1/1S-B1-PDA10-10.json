@@ -42,7 +42,11 @@
           "tipo": "llenar_frase",
           "frase": "La fuente circular de radio 21 m llevará una cinta de seguridad en todo su borde, que cuesta $25 por metro. ¿Cuánto costará la cinta? $___",
           "respuestaCorrecta": "3297",
-          "retroalimentacion": "P = 2×3.14×21 = 131.88 m; Costo = 131.88×25 = $3,297."
+          "retroalimentacion": "P = 2×3.14×21 = 131.88 m; Costo = 131.88×25 = $3,297.",
+          "pistas": [
+            "Calcula el perímetro de la fuente y multiplícalo por el precio por metro.",
+            "P = 2×3.14×21 = 131.88 m; Costo = 131.88×25 = $3,297."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -66,7 +70,11 @@
           "tipo": "llenar_frase",
           "frase": "El costo total del proyecto del parque es la suma del adoquín ($188,400), la cinta de seguridad ($3,297) y el pasto ($13,217.28). ¿Cuál es el costo total? $___",
           "respuestaCorrecta": "204914.28",
-          "retroalimentacion": "188400 + 3297 + 13217.28 = $204,914.28."
+          "retroalimentacion": "188400 + 3297 + 13217.28 = $204,914.28.",
+          "pistas": [
+            "Suma los tres costos ya calculados.",
+            "188400 + 3297 + 13217.28 = $204,914.28."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -102,7 +110,11 @@
             "175.36 m"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Perímetro del camino = 2×3.14×29 = 182.12 m; total = 182.12+175.36 = 357.48 m."
+          "retroalimentacion": "Perímetro del camino = 2×3.14×29 = 182.12 m; total = 182.12+175.36 = 357.48 m.",
+          "pistas": [
+            "Calcula el perímetro del círculo del camino, y súmalo al perímetro de la jardinera tipo pista.",
+            "Perímetro del camino = 2×3.14×29 = 182.12 m; total = 182.12+175.36 = 357.48 m."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -124,7 +136,29 @@
           ],
           "retroalimentacion": "Adoquín: $188,400. Cinta: $3,297. Pasto: $13,217.28."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El mismo ayuntamiento también planea una fuente más pequeña, de 4 metros de radio, con un camino en forma de anillo alrededor que llega hasta 7 metros de radio. Si el adoquín para el camino cuesta $120 por m², ¿cuánto costará cubrir todo el camino?",
+        "pasos": [
+          {
+            "texto": "Calculamos el área del círculo grande.",
+            "operacion": "3.14 × 7² = 153.86 m²"
+          },
+          {
+            "texto": "Calculamos el área del círculo chico (la fuente).",
+            "operacion": "3.14 × 4² = 50.24 m²"
+          },
+          {
+            "texto": "Restamos para obtener el área del anillo.",
+            "operacion": "153.86 − 50.24 = 103.62 m²"
+          },
+          {
+            "texto": "Multiplicamos por el precio del adoquín.",
+            "operacion": "103.62 × 120 = $12,434.40"
+          }
+        ],
+        "respuestaFinal": "Cubrir todo el camino costará $12,434.40."
+      }
     }
   ],
   "practicaExtra": [

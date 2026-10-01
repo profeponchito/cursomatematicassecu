@@ -35,7 +35,11 @@
             "1/6"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Los números pares del dado son {2,4,6}: 3 casos favorables de 6 totales, P = 3/6."
+          "retroalimentacion": "Los números pares del dado son {2,4,6}: 3 casos favorables de 6 totales, P = 3/6.",
+          "pistas": [
+            "Cuenta los números pares del dado y divídelos entre el total de caras.",
+            "Los números pares del dado son {2,4,6}: 3 casos favorables de 6 totales, P = 3/6."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -59,7 +63,11 @@
             "6/8"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Los números mayores que 6 son {7,8}: 2 casos favorables de 8 totales, P = 2/8."
+          "retroalimentacion": "Los números mayores que 6 son {7,8}: 2 casos favorables de 8 totales, P = 2/8.",
+          "pistas": [
+            "Cuenta las secciones que cumplen la condición y divide entre el total.",
+            "Los números mayores que 6 son {7,8}: 2 casos favorables de 8 totales, P = 2/8."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -83,7 +91,11 @@
             "40/4"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Hay 4 ases de 40 cartas en total, así que P(as) = 4/40."
+          "retroalimentacion": "Hay 4 ases de 40 cartas en total, así que P(as) = 4/40.",
+          "pistas": [
+            "Divide el número de ases entre el total de cartas.",
+            "Hay 4 ases de 40 cartas en total, así que P(as) = 4/40."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -118,7 +130,24 @@
           "retroalimentacion": "Canica roja: 4/10. Obtener un 5 en el dado: 1 caso favorable de 6, P = 1/6. Moneda-sol: 1 de 2, P = 1/2."
         }
       ],
-      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio"
+      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio",
+      "ejemploResuelto": {
+        "enunciado": "En otra rifa, hay 12 boletos numerados del 1 al 12 dentro de una caja, y solo el boleto número 9 gana el premio mayor. ¿Cuál es la probabilidad clásica de sacar el boleto ganador?",
+        "pasos": [
+          {
+            "texto": "Identificamos el caso favorable: solo 1 boleto gana."
+          },
+          {
+            "texto": "Identificamos el total de casos.",
+            "operacion": "12 boletos"
+          },
+          {
+            "texto": "Calculamos la probabilidad.",
+            "operacion": "P = 1/12"
+          }
+        ],
+        "respuestaFinal": "La probabilidad es 1/12."
+      }
     }
   ],
   "practicaExtra": [

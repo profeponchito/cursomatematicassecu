@@ -35,7 +35,11 @@
             "4/5"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Casos favorables: 12 + 8 = 20 de 30 en total. P = 20/30, que simplificada es 2/3."
+          "retroalimentacion": "Casos favorables: 12 + 8 = 20 de 30 en total. P = 20/30, que simplificada es 2/3.",
+          "pistas": [
+            "Suma los casos favorables de ambas categorías y divide entre el total; simplifica.",
+            "Casos favorables: 12 + 8 = 20 de 30 en total. P = 20/30, que simplificada es 2/3."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -59,7 +63,11 @@
             "1/2"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Casos favorables: 20 + 15 = 35 de 50, P = 35/50, que simplificada es 7/10."
+          "retroalimentacion": "Casos favorables: 20 + 15 = 35 de 50, P = 35/50, que simplificada es 7/10.",
+          "pistas": [
+            "Suma los casos favorables de ambas categorías y divide entre el total.",
+            "Casos favorables: 20 + 15 = 35 de 50, P = 35/50, que simplificada es 7/10."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -83,7 +91,11 @@
             "4/5"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Casos favorables: 15 + 20 = 35 de 45. P = 35/45, que simplificada es 7/9."
+          "retroalimentacion": "Casos favorables: 15 + 20 = 35 de 45. P = 35/45, que simplificada es 7/9.",
+          "pistas": [
+            "Suma los casos favorables de ambas categorías y divide entre el total; simplifica.",
+            "Casos favorables: 15 + 20 = 35 de 45. P = 35/45, que simplificada es 7/9."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -124,7 +136,25 @@
           "retroalimentacion": "Casos favorables: 14 + 7 = 21 de 35. P = 21/35, que simplificada es 3/5."
         }
       ],
-      "nivelEtiqueta": "Nivel 6 de 10 · Aplicación avanzada"
+      "nivelEtiqueta": "Nivel 6 de 10 · Aplicación avanzada",
+      "ejemploResuelto": {
+        "enunciado": "En la misma caja de dulces (30 dulces: 12 limón, 10 tamarindo, 5 fresa, 3 menta), ¿cuál es la probabilidad de sacar un dulce que sea de fresa o de menta?",
+        "pasos": [
+          {
+            "texto": "Sumamos los casos favorables de ambas categorías.",
+            "operacion": "5+3=8"
+          },
+          {
+            "texto": "Dividimos entre el total.",
+            "operacion": "8÷30"
+          },
+          {
+            "texto": "Simplificamos la fracción.",
+            "operacion": "8/30=4/15"
+          }
+        ],
+        "respuestaFinal": "La probabilidad es 4/15."
+      }
     }
   ],
   "practicaExtra": [

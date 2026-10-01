@@ -35,7 +35,11 @@
             "28"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "16+8=24 niños tienen perro o gato."
+          "retroalimentacion": "16+8=24 niños tienen perro o gato.",
+          "pistas": [
+            "Suma los valores de niños en ambas categorías.",
+            "16+8=24 niños tienen perro o gato."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -59,7 +63,11 @@
             "7"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "27-21=6 alumnos aprobados más en el bimestre 2."
+          "retroalimentacion": "27-21=6 alumnos aprobados más en el bimestre 2.",
+          "pistas": [
+            "Resta el valor anterior del valor nuevo.",
+            "27-21=6 alumnos aprobados más en el bimestre 2."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -115,7 +123,11 @@
             "88"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "(12+15)+(20+18)+(8+13) = 27+38+21 = 86 productos."
+          "retroalimentacion": "(12+15)+(20+18)+(8+13) = 27+38+21 = 86 productos.",
+          "pistas": [
+            "Suma cada producto por separado (enero+febrero), y después suma los tres productos.",
+            "(12+15)+(20+18)+(8+13) = 27+38+21 = 86 productos."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -123,7 +135,24 @@
           "respuestaCorrecta": true,
           "retroalimentacion": "Correcto: fruta es el único producto que bajó sus ventas, de 20 a 18 (una caída de 2)."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El mismo club de ajedrez también compara cuántas partidas ganó cada equipo en un quinto torneo: niños ganaron 12 partidas y niñas ganaron 9 partidas. ¿Cuántas partidas ganaron entre los dos equipos en ese torneo?",
+        "pasos": [
+          {
+            "texto": "Sumamos las partidas ganadas por cada equipo."
+          },
+          {
+            "texto": "Sustituimos los valores.",
+            "operacion": "12 + 9"
+          },
+          {
+            "texto": "Calculamos el total.",
+            "operacion": "21 partidas"
+          }
+        ],
+        "respuestaFinal": "Entre los dos equipos ganaron 21 partidas en ese torneo."
+      }
     }
   ],
   "practicaExtra": [

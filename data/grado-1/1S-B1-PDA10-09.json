@@ -42,7 +42,11 @@
           "tipo": "llenar_frase",
           "frase": "Una pista de atletismo tiene tramos rectos de 60 m y ancho de 40 m. ¿Cuál es su perímetro total? ___ m",
           "respuestaCorrecta": "245.6",
-          "retroalimentacion": "P = 2×60 + 3.14×40 = 120+125.6 = 245.6 m."
+          "retroalimentacion": "P = 2×60 + 3.14×40 = 120+125.6 = 245.6 m.",
+          "pistas": [
+            "Suma los dos lados rectos y súmale la circunferencia completa (π por el ancho).",
+            "P = 2×60 + 3.14×40 = 120+125.6 = 245.6 m."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -60,7 +64,11 @@
             "94.2 m"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "P = 2×80 + 3.14×30 = 160+94.2 = 254.2 m."
+          "retroalimentacion": "P = 2×80 + 3.14×30 = 160+94.2 = 254.2 m.",
+          "pistas": [
+            "Suma los dos lados rectos y súmale la circunferencia completa.",
+            "P = 2×80 + 3.14×30 = 160+94.2 = 254.2 m."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -90,7 +98,11 @@
           "tipo": "llenar_frase",
           "frase": "Una pista tiene tramos rectos de 100 m y un ancho de 46 m. ¿Cuál es su perímetro? ___ m",
           "respuestaCorrecta": "344.44",
-          "retroalimentacion": "P = 2×100 + 3.14×46 = 200+144.44 = 344.44 m."
+          "retroalimentacion": "P = 2×100 + 3.14×46 = 200+144.44 = 344.44 m.",
+          "pistas": [
+            "Suma los dos lados rectos y súmale la circunferencia completa.",
+            "P = 2×100 + 3.14×46 = 200+144.44 = 344.44 m."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -124,7 +136,25 @@
           ],
           "retroalimentacion": "(60,40): P=245.6 m. (80,30): P=254.2 m. (100,46): P=344.44 m."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "En Torreón también van a construir una cancha tipo estadio con un tramo recto de 50 metros de largo y un ancho (diámetro de los extremos) de 20 metros. ¿Cuál es el perímetro total de la cancha?",
+        "pasos": [
+          {
+            "texto": "Sumamos los dos lados rectos.",
+            "operacion": "2 × 50 = 100 m"
+          },
+          {
+            "texto": "Calculamos la circunferencia completa formada por los dos semicírculos.",
+            "operacion": "3.14 × 20 = 62.8 m"
+          },
+          {
+            "texto": "Sumamos ambas partes.",
+            "operacion": "100 + 62.8 = 162.8 m"
+          }
+        ],
+        "respuestaFinal": "El perímetro total de la cancha es 162.8 metros."
+      }
     }
   ],
   "practicaExtra": [

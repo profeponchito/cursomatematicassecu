@@ -41,7 +41,11 @@
           "tipo": "llenar_frase",
           "frase": "El perímetro de una circunferencia con radio de 10 cm es ___ cm.",
           "respuestaCorrecta": "62.8",
-          "retroalimentacion": "P = 2 × 3.14 × 10 = 62.8 cm."
+          "retroalimentacion": "P = 2 × 3.14 × 10 = 62.8 cm.",
+          "pistas": [
+            "Usa la fórmula P = 2 × π × r con π≈3.14.",
+            "P = 2 × 3.14 × 10 = 62.8 cm."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -53,7 +57,11 @@
           "tipo": "llenar_frase",
           "frase": "Una alberca circular tiene un diámetro de 16 m. Su perímetro es ___ m (usa P = π × d).",
           "respuestaCorrecta": "50.24",
-          "retroalimentacion": "P = 3.14 × 16 = 50.24 m."
+          "retroalimentacion": "P = 3.14 × 16 = 50.24 m.",
+          "pistas": [
+            "Usa la fórmula P = π × d.",
+            "P = 3.14 × 16 = 50.24 m."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -89,7 +97,11 @@
           "tipo": "llenar_frase",
           "frase": "El reloj circular de un salón tiene un radio de 6 cm. Su perímetro es ___ cm.",
           "respuestaCorrecta": "37.68",
-          "retroalimentacion": "P = 2 × 3.14 × 6 = 37.68 cm."
+          "retroalimentacion": "P = 2 × 3.14 × 6 = 37.68 cm.",
+          "pistas": [
+            "Usa la fórmula P = 2 × π × r.",
+            "P = 2 × 3.14 × 6 = 37.68 cm."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -118,7 +130,25 @@
           "retroalimentacion": "r=4 cm: P=2×3.14×4=25.12 cm. r=7 cm: P=2×3.14×7=43.96 cm. r=9 cm: P=2×3.14×9=56.52 cm."
         }
       ],
-      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio"
+      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio",
+      "ejemploResuelto": {
+        "enunciado": "Ana también quiere poner listón alrededor de un plato circular de 14 cm de radio. ¿Cuántos centímetros de listón necesita?",
+        "pasos": [
+          {
+            "texto": "Usamos la fórmula del perímetro de la circunferencia.",
+            "operacion": "P = 2 × π × r"
+          },
+          {
+            "texto": "Sustituimos los valores conocidos.",
+            "operacion": "2 × 3.14 × 14"
+          },
+          {
+            "texto": "Calculamos el resultado.",
+            "operacion": "87.92 cm"
+          }
+        ],
+        "respuestaFinal": "Necesita 87.92 centímetros de listón."
+      }
     }
   ],
   "practicaExtra": [

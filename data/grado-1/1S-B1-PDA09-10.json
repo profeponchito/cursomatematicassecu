@@ -36,7 +36,11 @@
             "21 m"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Rectángulo sin el lado compartido: 8+5+8=21 m. Triángulo sin el lado compartido: 5+5=10 m. Total: 21+10=31 m."
+          "retroalimentacion": "Rectángulo sin el lado compartido: 8+5+8=21 m. Triángulo sin el lado compartido: 5+5=10 m. Total: 21+10=31 m.",
+          "pistas": [
+            "Suma los lados del rectángulo que no se comparten, y por separado los del triángulo que no se comparten; después suma ambos resultados.",
+            "Rectángulo: 8+5+8=21 m. Triángulo: 5+5=10 m. Total: 21+10=31 m."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -66,7 +70,11 @@
           "tipo": "llenar_frase",
           "frase": "Una cancha combina un rectángulo de 12 m×7 m con un triángulo equilátero de lado 7 m, unido por el lado de 7 m. El perímetro del contorno exterior es ___ m.",
           "respuestaCorrecta": "45",
-          "retroalimentacion": "Rectángulo sin el lado compartido: 12+7+12=31 m. Triángulo sin el lado compartido: 7+7=14 m. Total: 31+14=45 m."
+          "retroalimentacion": "Rectángulo sin el lado compartido: 12+7+12=31 m. Triángulo sin el lado compartido: 7+7=14 m. Total: 31+14=45 m.",
+          "pistas": [
+            "Suma los lados exteriores del rectángulo, y por separado los del triángulo; después suma ambos.",
+            "Rectángulo: 12+7+12=31 m. Triángulo: 7+7=14 m. Total: 31+14=45 m."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -90,7 +98,11 @@
           "tipo": "llenar_frase",
           "frase": "Una jardinera combina un cuadrado de lado 4 m con un triángulo equilátero de lado 4 m adosado en uno de sus lados. Si además se necesita 1 m extra de manguera de riego como margen de seguridad alrededor de todo el contorno, ¿cuántos metros de manguera se necesitan en total? ___ m.",
           "respuestaCorrecta": "21",
-          "retroalimentacion": "Cuadrado sin el lado compartido: 4+4+4=12 m. Triángulo sin el lado compartido: 4+4=8 m. Contorno: 12+8=20 m, más 1 m de margen = 21 m."
+          "retroalimentacion": "Cuadrado sin el lado compartido: 4+4+4=12 m. Triángulo sin el lado compartido: 4+4=8 m. Contorno: 12+8=20 m, más 1 m de margen = 21 m.",
+          "pistas": [
+            "Primero calcula el contorno exterior (cuadrado más triángulo, sin el lado compartido), y después suma el metro extra de margen.",
+            "Cuadrado: 4+4+4=12 m. Triángulo: 4+4=8 m. Contorno: 20 m, más 1 m = 21 m."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -124,7 +136,25 @@
           "respuestaCorrecta": 0,
           "retroalimentacion": "Contorno: (11.5+6+11.5)+(6.5+6.5)=29+13=42 m. Costo: 42×28.5=$1,197.00."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "La escuela también va a cercar un jardín con forma de rectángulo de 10 por 6 metros, al que se le añade una parte triangular equilátera de lado 6 metros, unida al rectángulo por el lado de 6 metros. ¿Cuántos metros de cerca se necesitan para todo el contorno exterior?",
+        "pasos": [
+          {
+            "texto": "Calculamos los lados del rectángulo que sí quedan al exterior (sin el lado compartido).",
+            "operacion": "10 + 6 + 10 = 26"
+          },
+          {
+            "texto": "Calculamos los lados del triángulo que sí quedan al exterior.",
+            "operacion": "6 + 6 = 12"
+          },
+          {
+            "texto": "Sumamos ambas partes.",
+            "operacion": "26 + 12 = 38"
+          }
+        ],
+        "respuestaFinal": "Se necesitan 38 metros de cerca para todo el contorno exterior."
+      }
     }
   ],
   "practicaExtra": [

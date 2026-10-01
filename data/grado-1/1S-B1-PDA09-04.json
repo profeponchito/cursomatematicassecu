@@ -29,7 +29,11 @@
           "tipo": "llenar_frase",
           "frase": "Un triángulo equilátero tiene lados de 9 cm. Su perímetro es ___ cm.",
           "respuestaCorrecta": "27",
-          "retroalimentacion": "9+9+9=27 cm."
+          "retroalimentacion": "9+9+9=27 cm.",
+          "pistas": [
+            "Como los tres lados son iguales, multiplica el lado por 3.",
+            "9 + 9 + 9 = 27 cm."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -53,7 +57,11 @@
           "tipo": "llenar_frase",
           "frase": "Un jardín cuadrado tiene lados de 6 m. Su perímetro es ___ m.",
           "respuestaCorrecta": "24",
-          "retroalimentacion": "6+6+6+6=24 m."
+          "retroalimentacion": "6+6+6+6=24 m.",
+          "pistas": [
+            "Como los 4 lados son iguales, multiplica el lado por 4.",
+            "6 + 6 + 6 + 6 = 24 m."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -77,7 +85,11 @@
           "tipo": "llenar_frase",
           "frase": "Un triángulo isósceles tiene dos lados de 8 cm y uno de 5 cm. Su perímetro es ___ cm.",
           "respuestaCorrecta": "21",
-          "retroalimentacion": "8+8+5=21 cm."
+          "retroalimentacion": "8+8+5=21 cm.",
+          "pistas": [
+            "Suma los dos lados iguales más el lado desigual.",
+            "8 + 8 + 5 = 21 cm."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -118,7 +130,24 @@
           "retroalimentacion": "Correcto: 4+5+6+7=22 cm."
         }
       ],
-      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis"
+      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis",
+      "ejemploResuelto": {
+        "enunciado": "Camila también mide una cancha de voleibol más pequeña para pintar su franja: dos lados de 18 metros y dos lados de 9 metros. ¿Cuántos metros de pintura necesita para todo el perímetro?",
+        "pasos": [
+          {
+            "texto": "Sumamos los cuatro lados."
+          },
+          {
+            "texto": "Agrupamos los lados iguales.",
+            "operacion": "2 × (18 + 9)"
+          },
+          {
+            "texto": "Calculamos el resultado.",
+            "operacion": "2 × 27 = 54"
+          }
+        ],
+        "respuestaFinal": "Necesita 54 metros de pintura para todo el perímetro."
+      }
     }
   ],
   "practicaExtra": [

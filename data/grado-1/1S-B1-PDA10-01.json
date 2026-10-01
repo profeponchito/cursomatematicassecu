@@ -46,13 +46,21 @@
           "tipo": "llenar_frase",
           "frase": "Si el radio de una rueda de bicicleta mide 15 cm, su diámetro mide ___ cm.",
           "respuestaCorrecta": "30",
-          "retroalimentacion": "d = 2 × r = 2 × 15 = 30 cm."
+          "retroalimentacion": "d = 2 × r = 2 × 15 = 30 cm.",
+          "pistas": [
+            "El diámetro es el doble del radio.",
+            "d = 2 × r = 2 × 15 = 30 cm."
+          ]
         },
         {
           "tipo": "llenar_frase",
           "frase": "Si el diámetro de una pizza mide 32 cm, su radio mide ___ cm.",
           "respuestaCorrecta": "16",
-          "retroalimentacion": "r = d ÷ 2 = 32 ÷ 2 = 16 cm."
+          "retroalimentacion": "r = d ÷ 2 = 32 ÷ 2 = 16 cm.",
+          "pistas": [
+            "El radio es la mitad del diámetro.",
+            "r = d ÷ 2 = 32 ÷ 2 = 16 cm."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -94,7 +102,11 @@
           "tipo": "llenar_frase",
           "frase": "Si el radio de un reloj circular de pared mide 9 cm, su diámetro mide ___ cm.",
           "respuestaCorrecta": "18",
-          "retroalimentacion": "d = 2 × r = 2 × 9 = 18 cm."
+          "retroalimentacion": "d = 2 × r = 2 × 9 = 18 cm.",
+          "pistas": [
+            "El diámetro es el doble del radio.",
+            "d = 2 × r = 2 × 9 = 18 cm."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -117,7 +129,24 @@
           "retroalimentacion": "r=6 cm: d=2×6=12 cm. r=11 cm: d=2×11=22 cm. r=20 cm: d=2×20=40 cm."
         }
       ],
-      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio"
+      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio",
+      "ejemploResuelto": {
+        "enunciado": "Don Efrén también mide la rueda trasera de una motoneta y encuentra que su diámetro es de 46 cm. ¿Cuánto mide su radio?",
+        "pasos": [
+          {
+            "texto": "Usamos que el radio es la mitad del diámetro."
+          },
+          {
+            "texto": "Sustituimos el valor conocido.",
+            "operacion": "46 ÷ 2"
+          },
+          {
+            "texto": "Calculamos el resultado.",
+            "operacion": "23 cm"
+          }
+        ],
+        "respuestaFinal": "El radio mide 23 centímetros."
+      }
     }
   ],
   "practicaExtra": [

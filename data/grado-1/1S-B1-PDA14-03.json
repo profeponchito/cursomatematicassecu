@@ -40,7 +40,11 @@
           "tipo": "llenar_frase",
           "frase": "La probabilidad 3/4 en decimal es ___.",
           "respuestaCorrecta": "0.75",
-          "retroalimentacion": "3 ÷ 4 = 0.75."
+          "retroalimentacion": "3 ÷ 4 = 0.75.",
+          "pistas": [
+            "Divide el numerador entre el denominador.",
+            "3 ÷ 4 = 0.75."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -64,7 +68,11 @@
           "tipo": "llenar_frase",
           "frase": "La probabilidad 0.6 expresada como porcentaje es ___.",
           "respuestaCorrecta": "60%",
-          "retroalimentacion": "0.6 × 100 = 60%."
+          "retroalimentacion": "0.6 × 100 = 60%.",
+          "pistas": [
+            "Multiplica el decimal por 100.",
+            "0.6 × 100 = 60%."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -88,7 +96,11 @@
           "tipo": "llenar_frase",
           "frase": "La probabilidad 5/8 en decimal es ___.",
           "respuestaCorrecta": "0.625",
-          "retroalimentacion": "5 ÷ 8 = 0.625."
+          "retroalimentacion": "5 ÷ 8 = 0.625.",
+          "pistas": [
+            "Divide el numerador entre el denominador.",
+            "5 ÷ 8 = 0.625."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -117,7 +129,25 @@
           "retroalimentacion": "1/5 = 0.2 = 20%. 3/5 = 0.6 = 60%. 7/10 = 0.7 = 70%."
         }
       ],
-      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado"
+      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado",
+      "ejemploResuelto": {
+        "enunciado": "En el mismo juego de Bruno, otra ruleta está dividida en 5 partes iguales, y una sola parte es plateada. ¿Cómo expresarías la probabilidad de caer en la parte plateada como fracción, decimal y porcentaje?",
+        "pasos": [
+          {
+            "texto": "Escribimos la probabilidad como fracción.",
+            "operacion": "1/5"
+          },
+          {
+            "texto": "Convertimos a decimal dividiendo.",
+            "operacion": "1÷5=0.2"
+          },
+          {
+            "texto": "Convertimos a porcentaje multiplicando por 100.",
+            "operacion": "20%"
+          }
+        ],
+        "respuestaFinal": "La probabilidad es 1/5, que equivale a 0.2 o 20%."
+      }
     }
   ],
   "practicaExtra": [

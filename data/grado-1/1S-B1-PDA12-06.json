@@ -36,7 +36,11 @@
             "14"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "4+9=13 alumnos sacaron 8 o menos."
+          "retroalimentacion": "4+9=13 alumnos sacaron 8 o menos.",
+          "pistas": [
+            "Suma las frecuencias de los valores hasta el que te piden.",
+            "4+9=13 alumnos sacaron 8 o menos."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -60,7 +64,11 @@
             "21"
           ],
           "respuestaCorrecta": 3,
-          "retroalimentacion": "3+8+10=21 alumnos leyeron 2 libros o menos."
+          "retroalimentacion": "3+8+10=21 alumnos leyeron 2 libros o menos.",
+          "pistas": [
+            "Suma las frecuencias de 0, 1 y 2 libros.",
+            "3+8+10=21 alumnos leyeron 2 libros o menos."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -84,7 +92,11 @@
             "14"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "2+5+6=13 asistentes tienen 14 años o menos."
+          "retroalimentacion": "2+5+6=13 asistentes tienen 14 años o menos.",
+          "pistas": [
+            "Suma las frecuencias de 12, 13 y 14 años.",
+            "2+5+6=13 asistentes tienen 14 años o menos."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -127,7 +139,24 @@
           "respuestaCorrecta": 3,
           "retroalimentacion": "Frecuencia acumulada hasta 7: 5+10=15. Porcentaje: 15÷40=0.375, es decir 37.5%."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "En el mismo examen de Tepatitlán, otro grupo de 18 alumnos sacó estas calificaciones: 6=3, 7=6, 8=5, 9=4. ¿Cuántos alumnos sacaron 7 o menos?",
+        "pasos": [
+          {
+            "texto": "Sumamos la frecuencia de 6 y la de 7."
+          },
+          {
+            "texto": "Sustituimos los valores.",
+            "operacion": "3 + 6"
+          },
+          {
+            "texto": "Calculamos el resultado.",
+            "operacion": "9 alumnos"
+          }
+        ],
+        "respuestaFinal": "9 alumnos sacaron 7 o menos."
+      }
     }
   ],
   "practicaExtra": [

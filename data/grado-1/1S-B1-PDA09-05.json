@@ -36,7 +36,11 @@
             "92.5 cm"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "El rombo tiene sus 4 lados iguales: 18.5×4=74 cm."
+          "retroalimentacion": "El rombo tiene sus 4 lados iguales: 18.5×4=74 cm.",
+          "pistas": [
+            "El rombo tiene sus 4 lados iguales; multiplica el lado por 4.",
+            "18.5 × 4 = 74 cm."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -60,7 +64,11 @@
             "20.67 cm"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Como sus 4 lados son iguales, cada lado mide 62÷4=15.5 cm."
+          "retroalimentacion": "Como sus 4 lados son iguales, cada lado mide 62÷4=15.5 cm.",
+          "pistas": [
+            "Como los 4 lados son iguales, divide el perímetro entre 4.",
+            "62 ÷ 4 = 15.5 cm."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -72,7 +80,11 @@
           "tipo": "llenar_frase",
           "frase": "Un rombo tiene un perímetro de 96 cm. Cada lado mide ___ cm.",
           "respuestaCorrecta": "24",
-          "retroalimentacion": "96÷4=24 cm, porque el rombo tiene sus 4 lados iguales."
+          "retroalimentacion": "96÷4=24 cm, porque el rombo tiene sus 4 lados iguales.",
+          "pistas": [
+            "Divide el perímetro entre 4.",
+            "96 ÷ 4 = 24 cm."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -124,7 +136,24 @@
           "respuestaCorrecta": 0,
           "retroalimentacion": "8.4×4=33.6 cm."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Mateo arma otro papalote con forma de cuadrado y sabe que uno de sus lados mide 24 centímetros. ¿Cuál es el perímetro total de ese cuadrado?",
+        "pasos": [
+          {
+            "texto": "Recordamos que un cuadrado tiene sus 4 lados iguales."
+          },
+          {
+            "texto": "Multiplicamos el lado por 4.",
+            "operacion": "24 × 4"
+          },
+          {
+            "texto": "Calculamos el resultado.",
+            "operacion": "96 cm"
+          }
+        ],
+        "respuestaFinal": "El perímetro total es 96 centímetros."
+      }
     }
   ],
   "practicaExtra": [

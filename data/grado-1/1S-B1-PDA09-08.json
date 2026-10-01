@@ -36,7 +36,11 @@
             "$40.50"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "2.7×18=$48.60."
+          "retroalimentacion": "2.7×18=$48.60.",
+          "pistas": [
+            "Primero calcula el perímetro con 2×(largo+ancho), después multiplícalo por el precio por metro.",
+            "Perímetro: 2×(80+55)=270 cm=2.7 m; costo: 2.7×18=$48.60."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -60,7 +64,11 @@
             "$56"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Como no venden fracciones de rollo, hay que comprar 5 rollos completos (redondeando hacia arriba): 5×14=$70."
+          "retroalimentacion": "Como no venden fracciones de rollo, hay que comprar 5 rollos completos (redondeando hacia arriba): 5×14=$70.",
+          "pistas": [
+            "Como no venden fracciones de rollo, redondea hacia arriba al siguiente rollo completo.",
+            "Se necesitan 5 rollos completos (redondeando 4.6 hacia arriba): 5×14=$70."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -90,7 +98,11 @@
           "tipo": "llenar_frase",
           "frase": "Un rombo tiene un perímetro de 2.2 m. Si el metro de cinta cuesta $19, el costo total es $___.",
           "respuestaCorrecta": "41.8",
-          "retroalimentacion": "2.2×19=$41.8."
+          "retroalimentacion": "2.2×19=$41.8.",
+          "pistas": [
+            "Multiplica el perímetro (ya en metros) por el precio por metro.",
+            "2.2×19=$41.80."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -124,7 +136,25 @@
           "respuestaCorrecta": 0,
           "retroalimentacion": "2.5×15=$37.50, más $10 de envío = $47.50."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Para decorar el marco de un cartel rectangular de 2.4 metros por 1.1 metros, Emilio necesita listón que se vende en rollos de 3 metros a $22 cada rollo. ¿Cuántos rollos completos debe comprar, y cuánto listón le sobrará?",
+        "pasos": [
+          {
+            "texto": "Calculamos el perímetro del cartel.",
+            "operacion": "2 × (2.4 + 1.1) = 7 m"
+          },
+          {
+            "texto": "Dividimos entre los metros por rollo y redondeamos hacia arriba.",
+            "operacion": "7 ÷ 3 = 2.33 → 3 rollos"
+          },
+          {
+            "texto": "Calculamos el sobrante.",
+            "operacion": "3 × 3 - 7 = 2 m"
+          }
+        ],
+        "respuestaFinal": "Debe comprar 3 rollos completos, y le sobrarán 2 metros de listón."
+      }
     }
   ],
   "practicaExtra": [

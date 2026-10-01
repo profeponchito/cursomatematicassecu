@@ -46,7 +46,11 @@
           "tipo": "llenar_frase",
           "frase": "Una bolsa tiene 4 canicas rojas, 3 azules y 2 verdes. El espacio muestral de sacar una canica tiene ___ resultados posibles.",
           "respuestaCorrecta": "9",
-          "retroalimentacion": "Se suman todas las canicas: 4+3+2 = 9 resultados posibles."
+          "retroalimentacion": "Se suman todas las canicas: 4+3+2 = 9 resultados posibles.",
+          "pistas": [
+            "Suma todas las canicas de la bolsa.",
+            "Se suman todas las canicas: 4+3+2 = 9 resultados posibles."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -64,7 +68,11 @@
             "9"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "Las secciones numeradas del 1 al 8 dan 8 resultados posibles: {1,2,3,4,5,6,7,8}."
+          "retroalimentacion": "Las secciones numeradas del 1 al 8 dan 8 resultados posibles: {1,2,3,4,5,6,7,8}.",
+          "pistas": [
+            "Cuenta cuántas secciones tiene la ruleta.",
+            "Las secciones numeradas del 1 al 8 dan 8 resultados posibles: {1,2,3,4,5,6,7,8}."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -88,7 +96,11 @@
             "12"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "Se suman todas las canicas: 6+2+2 = 10 resultados posibles."
+          "retroalimentacion": "Se suman todas las canicas: 6+2+2 = 10 resultados posibles.",
+          "pistas": [
+            "Suma todas las canicas de la bolsa.",
+            "Se suman todas las canicas: 6+2+2 = 10 resultados posibles."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -117,7 +129,24 @@
           "retroalimentacion": "Se suman todas las secciones: 4+3+3 = 10 resultados posibles."
         }
       ],
-      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio"
+      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio",
+      "ejemploResuelto": {
+        "enunciado": "En la misma feria, hay otra urna con 3 pelotas rojas, 5 azules y 4 verdes. ¿Cuántos resultados tiene el espacio muestral de sacar una pelota de esa urna?",
+        "pasos": [
+          {
+            "texto": "Sumamos todas las pelotas de la urna."
+          },
+          {
+            "texto": "Sustituimos los valores.",
+            "operacion": "3+5+4"
+          },
+          {
+            "texto": "Calculamos el resultado.",
+            "operacion": "12 resultados posibles"
+          }
+        ],
+        "respuestaFinal": "El espacio muestral tiene 12 resultados posibles."
+      }
     }
   ],
   "practicaExtra": [

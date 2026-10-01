@@ -35,7 +35,11 @@
             "25"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "210 ÷ 6 = 35 km por litro."
+          "retroalimentacion": "210 ÷ 6 = 35 km por litro.",
+          "pistas": [
+            "Divide la distancia recorrida entre los litros usados.",
+            "210 ÷ 6 = 35 km por litro."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -47,7 +51,11 @@
           "tipo": "llenar_frase",
           "frase": "Un autobús recorre 372 km usando 31 L de diésel. Su rendimiento es ___ km por litro.",
           "respuestaCorrecta": "12",
-          "retroalimentacion": "372 ÷ 31 = 12 km por litro."
+          "retroalimentacion": "372 ÷ 31 = 12 km por litro.",
+          "pistas": [
+            "Divide la distancia entre los litros usados.",
+            "372 ÷ 31 = 12 km por litro."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -71,7 +79,11 @@
           "tipo": "llenar_frase",
           "frase": "Un carro más eficiente rinde 18 km por litro. Para recorrer 630 km, ese carro usará ___ L.",
           "respuestaCorrecta": "35",
-          "retroalimentacion": "630 ÷ 18 = 35 L."
+          "retroalimentacion": "630 ÷ 18 = 35 L.",
+          "pistas": [
+            "Divide la distancia total entre el rendimiento.",
+            "630 ÷ 18 = 35 L."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -118,7 +130,25 @@
           "retroalimentacion": "900 ÷ 15 = 60 L."
         }
       ],
-      "nivelEtiqueta": "Nivel 8 de 10 · Reto avanzado"
+      "nivelEtiqueta": "Nivel 8 de 10 · Reto avanzado",
+      "ejemploResuelto": {
+        "enunciado": "El mismo papá de Ximena, en otro viaje, recorrió 275 kilómetros y gastó 25 litros de gasolina. ¿Cuál fue el rendimiento de la camioneta en ese viaje?",
+        "pasos": [
+          {
+            "texto": "Usamos la fórmula del rendimiento.",
+            "operacion": "distancia ÷ litros usados"
+          },
+          {
+            "texto": "Sustituimos los valores.",
+            "operacion": "275 ÷ 25"
+          },
+          {
+            "texto": "Calculamos el resultado.",
+            "operacion": "11 km por litro"
+          }
+        ],
+        "respuestaFinal": "El rendimiento fue de 11 kilómetros por litro."
+      }
     }
   ],
   "practicaExtra": [

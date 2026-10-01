@@ -34,7 +34,11 @@
             "5/9"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Los múltiplos de 9 hasta 45 son 9, 18, 27, 36 y 45: 5 boletos de 45. P = 5/45 = 1/9."
+          "retroalimentacion": "Los múltiplos de 9 hasta 45 son 9, 18, 27, 36 y 45: 5 boletos de 45. P = 5/45 = 1/9.",
+          "pistas": [
+            "Cuenta los múltiplos de 9 hasta 45 y divide entre el total de boletos.",
+            "Los múltiplos de 9 hasta 45 son 9, 18, 27, 36 y 45: 5 boletos de 45. P = 5/45 = 1/9."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -58,7 +62,11 @@
             "40%"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "P = 8/50 = 0.16 = 16%."
+          "retroalimentacion": "P = 8/50 = 0.16 = 16%.",
+          "pistas": [
+            "Cuenta los números primos menores que 20 y divide entre el total, multiplicando por 100.",
+            "P = 8/50 = 0.16 = 16%."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -82,7 +90,11 @@
             "2/3"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Múltiplos de 3: {3,6,9,12}. Múltiplos de 4: {4,8,12}. Sin repetir el 12, la unión es {3,4,6,8,9,12}: 6 números de 12, P = 6/12 = 1/2."
+          "retroalimentacion": "Múltiplos de 3: {3,6,9,12}. Múltiplos de 4: {4,8,12}. Sin repetir el 12, la unión es {3,4,6,8,9,12}: 6 números de 12, P = 6/12 = 1/2.",
+          "pistas": [
+            "Lista los múltiplos de 3 y de 4 sin repetir el que aparece en ambos, y divide entre el total.",
+            "Múltiplos de 3: {3,6,9,12}. Múltiplos de 4: {4,8,12}. Sin repetir el 12, la unión es {3,4,6,8,9,12}: 6 números de 12, P = 6/12 = 1/2."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -117,7 +129,24 @@
           "retroalimentacion": "Correcto: 96/150 = 0.64 = 64%, un valor bastante mayor que el 50% esperado en una moneda justa."
         }
       ],
-      "nivelEtiqueta": "Nivel 9 de 10 · Integración"
+      "nivelEtiqueta": "Nivel 9 de 10 · Integración",
+      "ejemploResuelto": {
+        "enunciado": "En la misma feria, otro juego usa una bolsa con 50 fichas: 18 rojas, 14 azules, 10 verdes y 8 amarillas. ¿Cuál tiene mayor probabilidad: sacar una ficha roja, o sacar cualquier ficha que no sea azul?",
+        "pasos": [
+          {
+            "texto": "Calculamos P(roja).",
+            "operacion": "18÷50=0.36"
+          },
+          {
+            "texto": "Calculamos P(no azul) usando el evento contrario.",
+            "operacion": "1 − 14/50 = 36/50=0.72"
+          },
+          {
+            "texto": "Comparamos ambas probabilidades."
+          }
+        ],
+        "respuestaFinal": "Sacar cualquier ficha que no sea azul tiene mayor probabilidad (0.72 contra 0.36 de sacar roja)."
+      }
     }
   ],
   "practicaExtra": [

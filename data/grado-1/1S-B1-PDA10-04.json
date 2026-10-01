@@ -28,7 +28,11 @@
           "tipo": "llenar_frase",
           "frase": "Un tanque de agua circular tiene un diámetro de 6 m. Su radio mide ___ m.",
           "respuestaCorrecta": "3",
-          "retroalimentacion": "r = d ÷ 2 = 6 ÷ 2 = 3 m."
+          "retroalimentacion": "r = d ÷ 2 = 6 ÷ 2 = 3 m.",
+          "pistas": [
+            "Divide el diámetro entre 2.",
+            "r = d ÷ 2 = 6 ÷ 2 = 3 m."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -64,7 +68,11 @@
             "12.56 cm"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "P = 3.14 × 8 = 25.12 cm."
+          "retroalimentacion": "P = 3.14 × 8 = 25.12 cm.",
+          "pistas": [
+            "Usa la fórmula P = π × d directamente con el diámetro.",
+            "P = 3.14 × 8 = 25.12 cm."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -94,7 +102,11 @@
           "tipo": "llenar_frase",
           "frase": "Esa rueda de camión (diámetro 40 cm) tiene un perímetro de ___ cm (usa P = π × d).",
           "respuestaCorrecta": "125.6",
-          "retroalimentacion": "P = 3.14 × 40 = 125.6 cm."
+          "retroalimentacion": "P = 3.14 × 40 = 125.6 cm.",
+          "pistas": [
+            "Usa la fórmula P = π × d.",
+            "P = 3.14 × 40 = 125.6 cm."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -117,7 +129,25 @@
           "retroalimentacion": "d=10 m: A=3.14×5²=78.5 m². d=12 m: A=3.14×6²=113.04 m². d=18 m: A=3.14×9²=254.34 m²."
         }
       ],
-      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis"
+      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis",
+      "ejemploResuelto": {
+        "enunciado": "En el mismo taller, el artesano fabrica otro comal circular con diámetro de 24 cm. ¿Cuál es su radio, su perímetro y su área?",
+        "pasos": [
+          {
+            "texto": "Calculamos el radio dividiendo el diámetro entre 2.",
+            "operacion": "r = 24 ÷ 2 = 12 cm"
+          },
+          {
+            "texto": "Calculamos el perímetro.",
+            "operacion": "P = 3.14 × 24 = 75.36 cm"
+          },
+          {
+            "texto": "Calculamos el área.",
+            "operacion": "A = 3.14 × 12² = 452.16 cm²"
+          }
+        ],
+        "respuestaFinal": "El radio es 12 cm, el perímetro es 75.36 cm y el área es 452.16 cm²."
+      }
     }
   ],
   "practicaExtra": [

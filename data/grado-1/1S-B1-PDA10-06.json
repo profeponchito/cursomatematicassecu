@@ -36,7 +36,11 @@
             "6"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "El área depende de r², así que si r se multiplica por 2, el área se multiplica por 2² = 4."
+          "retroalimentacion": "El área depende de r², así que si r se multiplica por 2, el área se multiplica por 2² = 4.",
+          "pistas": [
+            "El área depende de r², así que eleva el factor de cambio al cuadrado.",
+            "Si r se multiplica por 2, el área se multiplica por 2²=4."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -60,7 +64,11 @@
             "131.88 cm"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Como el radio se triplicó (k=3), el perímetro se multiplica por 3: 131.88×3 = 395.64 cm."
+          "retroalimentacion": "Como el radio se triplicó (k=3), el perímetro se multiplica por 3: 131.88×3 = 395.64 cm.",
+          "pistas": [
+            "El perímetro cambia en la misma proporción que el radio.",
+            "Como el radio se triplicó (k=3), el perímetro se multiplica por 3: 131.88×3=395.64 cm."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -84,7 +92,11 @@
             "6"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Si el área se multiplica por k², y k²=9, entonces k=3: el radio se multiplicó por 3."
+          "retroalimentacion": "Si el área se multiplica por k², y k²=9, entonces k=3: el radio se multiplicó por 3.",
+          "pistas": [
+            "Si el área se multiplica por k², busca qué número elevado al cuadrado da ese resultado.",
+            "k²=9, entonces k=3: el radio se multiplicó por 3."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -124,7 +136,23 @@
           ],
           "retroalimentacion": "Radio ×2 → Área ×2²=4. Radio ×3 → Área ×3²=9. Radio ×5 → Área ×5²=25."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El mismo panadero hace una pizza mediana con 15 cm de radio y decide hacer una pizza extra grande con el triple de radio, 45 cm. Si el área de la mediana es 706.5 cm², ¿cuál es el área de la pizza extra grande?",
+        "pasos": [
+          {
+            "texto": "Identificamos que el radio se multiplicó por 3 (k=3)."
+          },
+          {
+            "texto": "Recordamos que el área se multiplica por k²."
+          },
+          {
+            "texto": "Calculamos el resultado.",
+            "operacion": "706.5 × 3² = 706.5 × 9 = 6358.5 cm²"
+          }
+        ],
+        "respuestaFinal": "El área de la pizza extra grande es 6358.5 cm²."
+      }
     }
   ],
   "practicaExtra": [

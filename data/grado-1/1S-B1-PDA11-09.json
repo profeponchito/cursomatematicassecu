@@ -35,7 +35,11 @@
             "760"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Ya tienes 180 × 3 = 540 cm. Necesitas 12.5 m = 1250 cm. Faltan 1250 − 540 = 710 cm."
+          "retroalimentacion": "Ya tienes 180 × 3 = 540 cm. Necesitas 12.5 m = 1250 cm. Faltan 1250 − 540 = 710 cm.",
+          "pistas": [
+            "Convierte lo que ya tienes y lo que necesitas a la misma unidad antes de restar.",
+            "Ya tienes 180 × 3 = 540 cm. Necesitas 12.5 m = 1250 cm. Faltan 1250 − 540 = 710 cm."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -47,7 +51,11 @@
           "tipo": "llenar_frase",
           "frase": "Un proyecto de repostería necesita 3.2 kg de harina en total. Ya se usaron 1450 g en un pastel y 680 g en un segundo pastel. Faltan ___ g de harina para completar el proyecto.",
           "respuestaCorrecta": "1070",
-          "retroalimentacion": "3.2 kg = 3200 g. Usado: 1450 + 680 = 2130 g. Faltan 3200 − 2130 = 1070 g."
+          "retroalimentacion": "3.2 kg = 3200 g. Usado: 1450 + 680 = 2130 g. Faltan 3200 − 2130 = 1070 g.",
+          "pistas": [
+            "Convierte el total necesario a gramos y suma lo ya usado antes de restar.",
+            "3.2 kg = 3200 g. Usado: 1450 + 680 = 2130 g. Faltan 3200 − 2130 = 1070 g."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -71,7 +79,11 @@
           "tipo": "llenar_frase",
           "frase": "Para el torneo deportivo se requieren 3 botellas de 1.5 L y 2 botellas de 600 mL de agua por equipo. Cada equipo necesita ___ mL de agua en total.",
           "respuestaCorrecta": "5700",
-          "retroalimentacion": "1500 × 3 = 4500 mL. 600 × 2 = 1200 mL. 4500 + 1200 = 5700 mL."
+          "retroalimentacion": "1500 × 3 = 4500 mL. 600 × 2 = 1200 mL. 4500 + 1200 = 5700 mL.",
+          "pistas": [
+            "Convierte cada tipo de botella a mililitros, multiplica por la cantidad, y suma.",
+            "1500 × 3 = 4500 mL. 600 × 2 = 1200 mL. 4500 + 1200 = 5700 mL."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -118,7 +130,25 @@
           "retroalimentacion": "45 × 8 = 360 g."
         }
       ],
-      "nivelEtiqueta": "Nivel 9 de 10 · Integración"
+      "nivelEtiqueta": "Nivel 9 de 10 · Integración",
+      "ejemploResuelto": {
+        "enunciado": "Para la misma feria, otro comité necesita 9 metros de cordón, 10 litros de atole y 6 kilogramos de dulces, pero las tiendas venden el cordón por centímetro, el atole por mililitro y los dulces por gramo. ¿A cuántos centímetros, mililitros y gramos equivalen, respectivamente?",
+        "pasos": [
+          {
+            "texto": "Convertimos los metros de cordón a centímetros.",
+            "operacion": "9 × 100 = 900 cm"
+          },
+          {
+            "texto": "Convertimos los litros de atole a mililitros.",
+            "operacion": "10 × 1000 = 10000 mL"
+          },
+          {
+            "texto": "Convertimos los kilogramos de dulces a gramos.",
+            "operacion": "6 × 1000 = 6000 g"
+          }
+        ],
+        "respuestaFinal": "Necesitan 900 cm de cordón, 10000 mL de atole y 6000 g de dulces."
+      }
     }
   ],
   "practicaExtra": [

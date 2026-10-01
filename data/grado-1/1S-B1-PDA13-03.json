@@ -35,7 +35,11 @@
             "10"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "El 8 se repite 3 veces, más que cualquier otro dato. La moda es 8."
+          "retroalimentacion": "El 8 se repite 3 veces, más que cualquier otro dato. La moda es 8.",
+          "pistas": [
+            "Cuenta cuántas veces se repite cada valor y busca el más frecuente.",
+            "El 8 se repite 3 veces, más que cualquier otro dato. La moda es 8."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -47,7 +51,11 @@
           "tipo": "llenar_frase",
           "frase": "Un equipo anotó estos goles en 6 partidos: 2, 3, 2, 4, 2 y 5. La moda de estos datos es ___.",
           "respuestaCorrecta": "2",
-          "retroalimentacion": "El 2 se repite 3 veces, más que los demás valores. La moda es 2."
+          "retroalimentacion": "El 2 se repite 3 veces, más que los demás valores. La moda es 2.",
+          "pistas": [
+            "Cuenta cuántas veces se repite cada valor.",
+            "El 2 se repite 3 veces, más que los demás valores. La moda es 2."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -77,7 +85,11 @@
             "No tiene moda"
           ],
           "respuestaCorrecta": 3,
-          "retroalimentacion": "Como ningún valor se repite, este conjunto de datos no tiene moda."
+          "retroalimentacion": "Como ningún valor se repite, este conjunto de datos no tiene moda.",
+          "pistas": [
+            "Revisa si algún valor se repite.",
+            "Como ningún valor se repite, este conjunto de datos no tiene moda."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -124,7 +136,24 @@
           "retroalimentacion": "Calificaciones (5,6,5,7,8): el 5 se repite 2 veces → Una sola moda (5). Edades (10,11,12,13): todas diferentes → No tiene moda. Goles (4,5,4,6,5,7): el 4 y el 5 se repiten 2 veces cada uno → Bimodal (4 y 5)."
         }
       ],
-      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado"
+      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado",
+      "ejemploResuelto": {
+        "enunciado": "En la misma papelería, se registraron los colores de cuadernos que compraron 8 clientes: verde, azul, verde, rosa, verde, azul, negro y verde. ¿Cuál es la moda de los colores de cuaderno vendidos?",
+        "pasos": [
+          {
+            "texto": "Contamos cuántas veces se repite cada color.",
+            "operacion": "verde=4, azul=2, rosa=1, negro=1"
+          },
+          {
+            "texto": "Comparamos las frecuencias."
+          },
+          {
+            "texto": "Identificamos el color con mayor frecuencia.",
+            "operacion": "verde"
+          }
+        ],
+        "respuestaFinal": "La moda es el color verde, que se repite 4 veces."
+      }
     }
   ],
   "practicaExtra": [

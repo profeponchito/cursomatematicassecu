@@ -42,7 +42,11 @@
           "tipo": "llenar_frase",
           "frase": "Una fuente circular de radio 21 m está rodeada por un camino que llega hasta radio 29 m. ¿Cuántos m² tiene el camino (el anillo)? ___ m²",
           "respuestaCorrecta": "1256",
-          "retroalimentacion": "Área grande = 3.14×29²=2640.74 m²; área chica = 3.14×21²=1384.74 m²; anillo = 2640.74−1384.74 = 1256 m²."
+          "retroalimentacion": "Área grande = 3.14×29²=2640.74 m²; área chica = 3.14×21²=1384.74 m²; anillo = 2640.74−1384.74 = 1256 m².",
+          "pistas": [
+            "Calcula el área grande y el área chica por separado, y después resta.",
+            "Área grande = 3.14×29²=2640.74 m²; área chica = 3.14×21²=1384.74 m²; anillo = 2640.74−1384.74 = 1256 m²."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -60,7 +64,11 @@
             "304.58 cm²"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "A externa=3.14×9²=254.34 cm²; A interna=3.14×4²=50.24 cm²; anillo=254.34−50.24=204.1 cm²."
+          "retroalimentacion": "A externa=3.14×9²=254.34 cm²; A interna=3.14×4²=50.24 cm²; anillo=254.34−50.24=204.1 cm².",
+          "pistas": [
+            "Calcula el área externa e interna por separado, y después resta.",
+            "A externa=3.14×9²=254.34 cm²; A interna=3.14×4²=50.24 cm²; anillo=254.34−50.24=204.1 cm²."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -84,7 +92,11 @@
           "tipo": "llenar_frase",
           "frase": "El área del círculo externo de un anillo es de 2640.74 m² (radio 29 m) y el área del anillo mismo es de 1256 m². ¿Cuál es el área del círculo interno? ___ m²",
           "respuestaCorrecta": "1384.74",
-          "retroalimentacion": "Área interna = área externa − área del anillo = 2640.74 − 1256 = 1384.74 m²."
+          "retroalimentacion": "Área interna = área externa − área del anillo = 2640.74 − 1256 = 1384.74 m².",
+          "pistas": [
+            "Resta el área del anillo al área externa para obtener el área interna.",
+            "Área interna = área externa − área del anillo = 2640.74 − 1256 = 1384.74 m²."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -118,7 +130,25 @@
           ],
           "retroalimentacion": "(29,21): 2640.74−1384.74=1256 m². (31,19): 3017.54−1133.54=1884 m². (41,35): 5278.34−3846.5=1431.84 m²."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El mismo joyero fabrica otra arandela con círculo exterior de 6 cm de radio y hueco central de 3 cm de radio. ¿Cuál es el área del anillo de metal?",
+        "pasos": [
+          {
+            "texto": "Calculamos el área del círculo exterior.",
+            "operacion": "3.14 × 6² = 113.04 cm²"
+          },
+          {
+            "texto": "Calculamos el área del hueco.",
+            "operacion": "3.14 × 3² = 28.26 cm²"
+          },
+          {
+            "texto": "Restamos para obtener el área del anillo.",
+            "operacion": "113.04 − 28.26 = 84.78 cm²"
+          }
+        ],
+        "respuestaFinal": "El área del anillo de metal es 84.78 cm²."
+      }
     }
   ],
   "practicaExtra": [

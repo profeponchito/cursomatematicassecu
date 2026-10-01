@@ -35,7 +35,11 @@
             "No se puede saber"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Media A = 95÷5 = 19. Media B = 100÷5 = 20. La Ruta B tiene la media más alta."
+          "retroalimentacion": "Media A = 95÷5 = 19. Media B = 100÷5 = 20. La Ruta B tiene la media más alta.",
+          "pistas": [
+            "Calcula la media de cada ruta sumando y dividiendo entre 5.",
+            "Media A = 95÷5 = 19. Media B = 100÷5 = 20. La Ruta B tiene la media más alta."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -59,7 +63,11 @@
             "Ambas rutas tardan exactamente lo mismo"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "La mediana de B (15) es menor que la de A (19), lo que muestra que B suele ser más rápida; el día de 40 minutos es el que distorsiona su media."
+          "retroalimentacion": "La mediana de B (15) es menor que la de A (19), lo que muestra que B suele ser más rápida; el día de 40 minutos es el que distorsiona su media.",
+          "pistas": [
+            "Compara las medianas de ambas rutas para ver cuál es realmente más rápida normalmente.",
+            "La mediana de B (15) es menor que la de A (19), lo que muestra que B suele ser más rápida; el día de 40 minutos es el que distorsiona su media."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -83,7 +91,11 @@
             "11.83"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Ordenados: 7, 8, 8, 9, 9, 30. Con 6 datos (par), la mediana es (8+9)÷2 = 8.5."
+          "retroalimentacion": "Ordenados: 7, 8, 8, 9, 9, 30. Con 6 datos (par), la mediana es (8+9)÷2 = 8.5.",
+          "pistas": [
+            "Ordena los datos y, como son 6 (par), promedia los dos centrales.",
+            "Ordenados: 7, 8, 8, 9, 9, 30. Con 6 datos (par), la mediana es (8+9)÷2 = 8.5."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -117,7 +129,24 @@
           ],
           "retroalimentacion": "Ruta B: usar la mediana (15 min). Vendedor Y: usar la mediana (8.5 unidades). Ruta A: sin datos atípicos, media y mediana coinciden en 19 min."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Dos rutas de camión hacia otra secundaria: la Ruta C tardó, en 5 días, 20, 22, 21, 23 y 19 minutos, y la Ruta D tardó 14, 38, 16, 15 y 13 minutos (un día con tráfico atípico). ¿Cuál de las dos rutas tiene la media de tiempo más alta?",
+        "pasos": [
+          {
+            "texto": "Calculamos la media de la Ruta C.",
+            "operacion": "suma=105, media=105÷5=21"
+          },
+          {
+            "texto": "Calculamos la media de la Ruta D.",
+            "operacion": "suma=96, media=96÷5=19.2"
+          },
+          {
+            "texto": "Comparamos ambas medias."
+          }
+        ],
+        "respuestaFinal": "La Ruta C tiene la media más alta (21 minutos) contra 19.2 minutos de la Ruta D."
+      }
     }
   ],
   "practicaExtra": [

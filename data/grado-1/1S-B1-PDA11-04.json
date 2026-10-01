@@ -40,7 +40,11 @@
             "No se puede saber"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "3 km = 3000 m, y 3000 m > 2800 m, así que 3 km es mayor."
+          "retroalimentacion": "3 km = 3000 m, y 3000 m > 2800 m, así que 3 km es mayor.",
+          "pistas": [
+            "Convierte los kilómetros a metros antes de comparar.",
+            "3 km = 3000 m, y 3000 m > 2800 m, así que 3 km es mayor."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -64,7 +68,11 @@
             "750"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "2 L = 2000 mL. 2000 mL − 750 mL = 1250 mL."
+          "retroalimentacion": "2 L = 2000 mL. 2000 mL − 750 mL = 1250 mL.",
+          "pistas": [
+            "Convierte los litros a mililitros antes de restar.",
+            "2 L = 2000 mL. 2000 mL − 750 mL = 1250 mL."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -94,7 +102,11 @@
           "tipo": "llenar_frase",
           "frase": "Tenías 2 kg de azúcar y usaste 350 g para un pastel. Te quedan ___ g.",
           "respuestaCorrecta": "1650",
-          "retroalimentacion": "2 kg = 2000 g. 2000 g − 350 g = 1650 g."
+          "retroalimentacion": "2 kg = 2000 g. 2000 g − 350 g = 1650 g.",
+          "pistas": [
+            "Convierte los kilogramos a gramos antes de restar.",
+            "2 kg = 2000 g. 2000 g − 350 g = 1650 g."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -117,7 +129,25 @@
           "retroalimentacion": "3 m = 300 cm > 280 cm. 1.5 L = 1500 mL, son iguales. 900 g < 1000 g = 1 kg, así que 1 kg es mayor."
         }
       ],
-      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis"
+      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis",
+      "ejemploResuelto": {
+        "enunciado": "Para el mismo desfile, Camila compró un listón de 1.5 metros y otro de 220 centímetros. ¿Cuántos centímetros de listón tiene Camila en total?",
+        "pasos": [
+          {
+            "texto": "Convertimos 1.5 m a centímetros.",
+            "operacion": "1.5 × 100 = 150 cm"
+          },
+          {
+            "texto": "Sumamos con el otro pedazo.",
+            "operacion": "150 + 220"
+          },
+          {
+            "texto": "Calculamos el total.",
+            "operacion": "370 cm"
+          }
+        ],
+        "respuestaFinal": "Camila tiene 370 centímetros de listón en total."
+      }
     }
   ],
   "practicaExtra": [

@@ -35,7 +35,11 @@
             "$35,000"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Suma = 8500+8800+9000+8700 = 35,000. Media = 35,000÷4 = $8,750."
+          "retroalimentacion": "Suma = 8500+8800+9000+8700 = 35,000. Media = 35,000÷4 = $8,750.",
+          "pistas": [
+            "Suma los sueldos y divide entre 4.",
+            "Suma = 8500+8800+9000+8700 = 35,000. Media = 35,000÷4 = $8,750."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -59,7 +63,11 @@
             "Ninguna sirve"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "La media está inflada por el sueldo atípico del dueño; la mediana ($8,800) queda mucho más cerca de los 4 sueldos de empleados."
+          "retroalimentacion": "La media está inflada por el sueldo atípico del dueño; la mediana ($8,800) queda mucho más cerca de los 4 sueldos de empleados.",
+          "pistas": [
+            "Piensa en cuál medida no se ve afectada por el sueldo mucho más alto del dueño.",
+            "La media está inflada por el sueldo atípico del dueño; la mediana ($8,800) queda mucho más cerca de los 4 sueldos de empleados."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -83,7 +91,11 @@
             "Porque la moda afecta a la media"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Un valor atípico afecta mucho a la media (porque entra en la suma total), pero afecta poco o nada a la mediana (que solo depende del orden de los datos)."
+          "retroalimentacion": "Un valor atípico afecta mucho a la media (porque entra en la suma total), pero afecta poco o nada a la mediana (que solo depende del orden de los datos).",
+          "pistas": [
+            "Piensa en cómo entra cada medida en el cálculo: una usa la suma total, la otra solo el orden.",
+            "Un valor atípico afecta mucho a la media (porque entra en la suma total), pero afecta poco o nada a la mediana (que solo depende del orden de los datos)."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -117,7 +129,24 @@
           ],
           "retroalimentacion": "Sueldos: mediana = $8,800. Tiempos: mediana = 23 minutos. Casas: mediana = 1.275 millones."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "En otra fábrica de la misma ciudad, los sueldos semanales de 5 trabajadores son $2100, $2050, $2200, $2150 y $11000 (este último del dueño). ¿Cuál es la mediana de esos 5 sueldos, y por qué representa mejor lo típico que la media?",
+        "pasos": [
+          {
+            "texto": "Ordenamos los sueldos de menor a mayor.",
+            "operacion": "2050, 2100, 2150, 2200, 11000"
+          },
+          {
+            "texto": "Identificamos el valor central.",
+            "operacion": "2150"
+          },
+          {
+            "texto": "Comparamos con la media (muy alta por el sueldo del dueño) y concluimos."
+          }
+        ],
+        "respuestaFinal": "La mediana es $2150, y representa mejor el sueldo típico porque no se ve afectada por el sueldo mucho más alto del dueño."
+      }
     }
   ],
   "practicaExtra": [

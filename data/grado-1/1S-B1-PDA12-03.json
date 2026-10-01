@@ -34,7 +34,11 @@
             "16"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "12+8=20 alumnos prefieren fútbol o básquetbol."
+          "retroalimentacion": "12+8=20 alumnos prefieren fútbol o básquetbol.",
+          "pistas": [
+            "Suma los valores de ambas barras.",
+            "12+8=20 alumnos prefieren fútbol o básquetbol."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -58,7 +62,11 @@
           "tipo": "llenar_frase",
           "frase": "En la gráfica de colores anterior (azul=10, rojo=7, verde=4, amarillo=3), el total de alumnos encuestados es ___.",
           "respuestaCorrecta": "24",
-          "retroalimentacion": "10+7+4+3=24 alumnos en total."
+          "retroalimentacion": "10+7+4+3=24 alumnos en total.",
+          "pistas": [
+            "Suma los valores de las cuatro barras.",
+            "10+7+4+3=24 alumnos en total."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -94,7 +102,11 @@
             "32"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "14+9+7=30 alumnos en total."
+          "retroalimentacion": "14+9+7=30 alumnos en total.",
+          "pistas": [
+            "Suma los valores de las tres barras.",
+            "14+9+7=30 alumnos en total."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -123,7 +135,25 @@
           "retroalimentacion": "11-5=6, la diferencia entre manzana (la más preferida) y naranja (la menos preferida)."
         }
       ],
-      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado"
+      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado",
+      "ejemploResuelto": {
+        "enunciado": "En la misma gráfica de Tomás, la barra de 'camión' llega hasta 12 alumnos. ¿Cuántos alumnos más caminan a la escuela que los que van en camión?",
+        "pasos": [
+          {
+            "texto": "Leemos el valor de cada barra.",
+            "operacion": "caminando=18, camión=12"
+          },
+          {
+            "texto": "Restamos para encontrar la diferencia.",
+            "operacion": "18 - 12"
+          },
+          {
+            "texto": "Calculamos el resultado.",
+            "operacion": "6 alumnos más"
+          }
+        ],
+        "respuestaFinal": "6 alumnos más caminan a la escuela que los que van en camión."
+      }
     }
   ],
   "practicaExtra": [

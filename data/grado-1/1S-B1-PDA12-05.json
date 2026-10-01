@@ -36,7 +36,11 @@
             "0.5"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "18÷40=0.45. Verifica: 0.45+ (12÷40=0.3) + (10÷40=0.25) = 1.0."
+          "retroalimentacion": "18÷40=0.45. Verifica: 0.45+ (12÷40=0.3) + (10÷40=0.25) = 1.0.",
+          "pistas": [
+            "Divide la frecuencia entre el total.",
+            "18÷40=0.45."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -60,7 +64,11 @@
             "45%"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "20÷50=0.4, es decir 40%."
+          "retroalimentacion": "20÷50=0.4, es decir 40%.",
+          "pistas": [
+            "Divide la frecuencia entre el total y multiplica por 100.",
+            "20÷50=0.4, es decir 40%."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -84,7 +92,11 @@
             "0.55"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "16÷32=0.5, es decir la mitad de los alumnos."
+          "retroalimentacion": "16÷32=0.5, es decir la mitad de los alumnos.",
+          "pistas": [
+            "Divide la frecuencia entre el total.",
+            "16÷32=0.5, es decir la mitad de los alumnos."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -124,7 +136,25 @@
           "respuestaCorrecta": 0,
           "retroalimentacion": "Escuela A: 9÷20=45%. Escuela B: 20÷50=40%. Aunque B tiene más alumnos que prefieren fútbol, A tiene mayor porcentaje."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "En el mismo club de lectura, 5 de los 20 alumnos prefieren novelas de ciencia ficción. ¿Cuál es la frecuencia relativa y el porcentaje de alumnos que prefieren ciencia ficción?",
+        "pasos": [
+          {
+            "texto": "Usamos la fórmula.",
+            "operacion": "frecuencia relativa = frecuencia ÷ total"
+          },
+          {
+            "texto": "Sustituimos los valores.",
+            "operacion": "5 ÷ 20"
+          },
+          {
+            "texto": "Calculamos el resultado.",
+            "operacion": "0.25, es decir 25%"
+          }
+        ],
+        "respuestaFinal": "La frecuencia relativa es 0.25, equivalente al 25%."
+      }
     }
   ],
   "practicaExtra": [

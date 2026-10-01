@@ -35,7 +35,11 @@
             "34"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Suma = 8+9+7+10 = 34. Media = 34 ÷ 4 = 8.5."
+          "retroalimentacion": "Suma = 8+9+7+10 = 34. Media = 34 ÷ 4 = 8.5.",
+          "pistas": [
+            "Suma todos los datos y divide entre cuántos son.",
+            "Suma = 8+9+7+10 = 34. Media = 34 ÷ 4 = 8.5."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -59,7 +63,11 @@
             "30"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Suma = 6+7+8+9 = 30. Media = 30 ÷ 4 = 7.5."
+          "retroalimentacion": "Suma = 6+7+8+9 = 30. Media = 30 ÷ 4 = 7.5.",
+          "pistas": [
+            "Suma los datos y divide entre 4.",
+            "Suma = 6+7+8+9 = 30. Media = 30 ÷ 4 = 7.5."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -83,7 +91,11 @@
             "40"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Suma = 7+8+6+9+10 = 40. Media = 40 ÷ 5 = 8."
+          "retroalimentacion": "Suma = 7+8+6+9+10 = 40. Media = 40 ÷ 5 = 8.",
+          "pistas": [
+            "Suma los datos y divide entre 5.",
+            "Suma = 7+8+6+9+10 = 40. Media = 40 ÷ 5 = 8."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -124,7 +136,25 @@
           "retroalimentacion": "Calificaciones (8,10,9,9): media = 36÷4 = 9. Edades (5,7,6,8,9): media = 35÷5 = 7. Goles (4,4,5,3): media = 16÷4 = 4."
         }
       ],
-      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio"
+      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio",
+      "ejemploResuelto": {
+        "enunciado": "En sus siguientes 5 partidos, Regina anotó 14, 11, 16, 10 y 9 puntos. ¿Cuál es la media de puntos en esos 5 partidos?",
+        "pasos": [
+          {
+            "texto": "Sumamos todos los datos.",
+            "operacion": "14+11+16+10+9=60"
+          },
+          {
+            "texto": "Dividimos entre el número de datos.",
+            "operacion": "60 ÷ 5"
+          },
+          {
+            "texto": "Calculamos la media.",
+            "operacion": "12"
+          }
+        ],
+        "respuestaFinal": "La media es 12 puntos por partido."
+      }
     }
   ],
   "practicaExtra": [

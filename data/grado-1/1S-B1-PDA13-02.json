@@ -34,7 +34,11 @@
             "10"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Ordenados: 6, 7, 8, 9, 10. Como son 5 datos (impar), la mediana es el valor central: 8."
+          "retroalimentacion": "Ordenados: 6, 7, 8, 9, 10. Como son 5 datos (impar), la mediana es el valor central: 8.",
+          "pistas": [
+            "Ordena los datos de menor a mayor y busca el valor central.",
+            "Ordenados: 6, 7, 8, 9, 10. Como son 5 datos (impar), la mediana es el valor central: 8."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -58,7 +62,11 @@
             "9.5"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Ordenadas: 6, 7, 8, 9, 9, 10. Con 6 datos (par), la mediana es (8+9)÷2 = 8.5."
+          "retroalimentacion": "Ordenadas: 6, 7, 8, 9, 9, 10. Con 6 datos (par), la mediana es (8+9)÷2 = 8.5.",
+          "pistas": [
+            "Ordena los datos y, como son 6 (par), promedia los dos centrales.",
+            "Ordenadas: 6, 7, 8, 9, 9, 10. Con 6 datos (par), la mediana es (8+9)÷2 = 8.5."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -82,7 +90,11 @@
             "8.5"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "Ordenadas: 6, 7, 7, 8, 8, 9, 10. Con 7 datos (impar), la mediana es el valor central (4.º dato): 8."
+          "retroalimentacion": "Ordenadas: 6, 7, 7, 8, 8, 9, 10. Con 7 datos (impar), la mediana es el valor central (4.º dato): 8.",
+          "pistas": [
+            "Ordena los datos y busca el valor central (7 datos es impar).",
+            "Ordenadas: 6, 7, 7, 8, 8, 9, 10. Con 7 datos (impar), la mediana es el valor central (4.º dato): 8."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -123,7 +135,24 @@
           "retroalimentacion": "Calificaciones ordenadas 6,7,8,9,10: mediana = 8. Edades ordenadas 11,12,14,15: mediana = 13. Goles ordenados 2,3,4,4,5,6: mediana = 4."
         }
       ],
-      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio"
+      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio",
+      "ejemploResuelto": {
+        "enunciado": "En otra vuelta, esos mismos 5 ciclistas tardaron: 16, 12, 20, 14 y 18 minutos. ¿Cuál es la mediana de esos tiempos?",
+        "pasos": [
+          {
+            "texto": "Ordenamos los datos de menor a mayor.",
+            "operacion": "12, 14, 16, 18, 20"
+          },
+          {
+            "texto": "Como son 5 datos (impar), buscamos el valor central."
+          },
+          {
+            "texto": "Identificamos la mediana.",
+            "operacion": "16"
+          }
+        ],
+        "respuestaFinal": "La mediana es 16 minutos."
+      }
     }
   ],
   "practicaExtra": [

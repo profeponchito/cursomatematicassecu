@@ -34,7 +34,11 @@
             "36"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "Suma = 6+9+7+6+8 = 36. Media = 36 ÷ 5 = 7.2."
+          "retroalimentacion": "Suma = 6+9+7+6+8 = 36. Media = 36 ÷ 5 = 7.2.",
+          "pistas": [
+            "Suma todos los datos y divide entre cuántos son.",
+            "Suma = 6+9+7+6+8 = 36. Media = 36 ÷ 5 = 7.2."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -58,7 +62,11 @@
             "75"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "Suma = 11+15+11+14+11+13 = 75. Media = 75 ÷ 6 = 12.5 años."
+          "retroalimentacion": "Suma = 11+15+11+14+11+13 = 75. Media = 75 ÷ 6 = 12.5 años.",
+          "pistas": [
+            "Suma todos los datos y divide entre 6.",
+            "Suma = 11+15+11+14+11+13 = 75. Media = 75 ÷ 6 = 12.5 años."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -82,7 +90,11 @@
             "Las tres son igual de representativas"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Media = 3.5, mediana = 2.5, moda = 2. El dato atípico (8 goles) sube la media más de lo que sube la mediana o la moda, así que la media queda menos representativa de lo que el equipo anota normalmente."
+          "retroalimentacion": "Media = 3.5, mediana = 2.5, moda = 2. El dato atípico (8 goles) sube la media más de lo que sube la mediana o la moda, así que la media queda menos representativa de lo que el equipo anota normalmente.",
+          "pistas": [
+            "Compara cuánto cambia cada medida cuando hay un dato muy alejado de los demás.",
+            "Media = 3.5, mediana = 2.5, moda = 2. El dato atípico (8 goles) sube la media más de lo que sube la mediana o la moda."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -117,7 +129,25 @@
           "retroalimentacion": "Media = 7.2, mediana = 7, moda = 6."
         }
       ],
-      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis"
+      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis",
+      "ejemploResuelto": {
+        "enunciado": "En otro torneo, Gael anotó estos puntajes en 6 tiros: 16, 16, 14, 18, 16 y 50 (el último también fue un tiro excepcional). ¿Cuáles son la media, la mediana y la moda de esos 6 puntajes?",
+        "pasos": [
+          {
+            "texto": "Calculamos la media.",
+            "operacion": "suma=130, media=130÷6≈21.67"
+          },
+          {
+            "texto": "Ordenamos y calculamos la mediana.",
+            "operacion": "14,16,16,16,18,50 → mediana=(16+16)÷2=16"
+          },
+          {
+            "texto": "Identificamos la moda.",
+            "operacion": "el 16 se repite 3 veces, moda=16"
+          }
+        ],
+        "respuestaFinal": "La media es aproximadamente 21.67, la mediana es 16 y la moda es 16; la mediana y la moda representan mejor lo típico, porque el tiro de 50 puntos 'jala' la media hacia arriba."
+      }
     }
   ],
   "practicaExtra": [

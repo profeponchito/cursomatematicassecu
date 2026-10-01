@@ -36,7 +36,11 @@
             "11"
           ],
           "respuestaCorrecta": 3,
-          "retroalimentacion": "El intervalo [50-59] tiene frecuencia 11. Verifica: 6+11+7=24."
+          "retroalimentacion": "El intervalo [50-59] tiene frecuencia 11. Verifica: 6+11+7=24.",
+          "pistas": [
+            "Busca directamente la frecuencia del intervalo que te piden.",
+            "El intervalo [50-59] tiene frecuencia 11. Verifica: 6+11+7=24."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -66,7 +70,11 @@
           "tipo": "llenar_frase",
           "frase": "Calificaciones de 35 alumnos agrupadas en intervalos de 2 puntos: [5-6]=4, [7-8]=13, [9-10]=18. La suma de las tres frecuencias es ___.",
           "respuestaCorrecta": "35",
-          "retroalimentacion": "4+13+18=35, igual al total de alumnos."
+          "retroalimentacion": "4+13+18=35, igual al total de alumnos.",
+          "pistas": [
+            "Suma las frecuencias de los tres intervalos.",
+            "4+13+18=35, igual al total de alumnos."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -96,7 +104,11 @@
             "14"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "8+3=11 alumnos tardan 10 minutos o más. Verifica: 5+12+8+3=28."
+          "retroalimentacion": "8+3=11 alumnos tardan 10 minutos o más. Verifica: 5+12+8+3=28.",
+          "pistas": [
+            "Suma las frecuencias de los intervalos que representan 10 minutos o más.",
+            "8+3=11 alumnos tardan 10 minutos o más. Verifica: 5+12+8+3=28."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -133,7 +145,24 @@
           "respuestaCorrecta": 2,
           "retroalimentacion": "22+8=30 alumnos sacaron 8 o más. 30÷40=0.75, es decir 75%."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "La misma entrenadora agrupa las estaturas de 26 corredores en intervalos de 10 cm: [150-159]=7, [160-169]=14, [170-179]=5. ¿Cuántos corredores miden entre 160 y 169 cm?",
+        "pasos": [
+          {
+            "texto": "Identificamos el intervalo que nos piden.",
+            "operacion": "[160-169]"
+          },
+          {
+            "texto": "Leemos su frecuencia directamente de la tabla."
+          },
+          {
+            "texto": "Verificamos que la suma de todos los intervalos coincida con el total.",
+            "operacion": "7+14+5=26"
+          }
+        ],
+        "respuestaFinal": "14 corredores miden entre 160 y 169 cm."
+      }
     }
   ],
   "practicaExtra": [
