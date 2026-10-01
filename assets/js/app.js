@@ -23,6 +23,7 @@ import { calcularResultado, combinarResultados, esRespuestaCorrecta } from './ga
 import { enviarRegistroPDA, reintentarPendientes, registrarVisita } from './webhook.js';
 import { generarConstancia, descargarComoPDF } from './constancia.js';
 import { montarZonaDescanso, burbujasDecorativasCamino_ } from './descanso.js';
+import { registrarIntento, tarjetasParaHoy, totalPendientesHoy, totalEnMazo } from './repaso.js';
 
 // ============================================================
 // Sistema visual: acento por grado (navegación) + acento por fase (PDA)
@@ -113,6 +114,31 @@ const COLOR_ACARREOS = {
   pastelFondo: 'bg-cyan-100',
   pastelBorde: 'border-cyan-300',
   presionado: '#083344'
+};
+
+/** Acento propio de "Repaso espaciado" (Paso 33) — fucsia, el único tono de
+ * la paleta "Aula NEM" que no se usa todavía como acento de sección (no se
+ * confunde con ningún grado, con Ejercítate/Operaciones/Acarreos ni con las
+ * fases del recorrido de PASO_COLOR). Combina en un solo objeto los campos
+ * que usan las tarjetas de navegación (grad/texto/chip/…, como
+ * TEMAS_GRADO/COLOR_EJERCITATE) y los que usa renderizarPregunta_ (suave/
+ * accent/hover/…, como PASO_COLOR), porque la pantalla de Repaso necesita
+ * ambos. */
+const COLOR_REPASO = {
+  grad: 'from-fuchsia-700 to-purple-900',
+  texto: 'text-fuchsia-700',
+  chip: 'bg-fuchsia-50 text-fuchsia-800',
+  borde: 'border-fuchsia-300',
+  pista: '#a21caf',
+  pastelFondo: 'bg-fuchsia-100',
+  pastelBorde: 'border-fuchsia-300',
+  presionado: '#4a044e',
+  suave: 'bg-fuchsia-50 border-fuchsia-200',
+  accent: 'accent-fuchsia-700',
+  hover: 'hover:bg-fuchsia-50',
+  inputBorder: 'border-fuchsia-600',
+  inputFocus: 'focus:border-purple-800 bg-fuchsia-50/50',
+  ring: 'focus:ring-fuchsia-600'
 };
 
 /** "ejercitate", "operaciones-basicas" y "acarreos-llevadas" son
@@ -244,9 +270,16 @@ function variarOpciones_(reactivo) {
 
 /** Prepara los 5 reactivos de la mini-actividad de un subtema para un
  * intento: orden de las preguntas y de sus opciones mezclado, así rehacer
- * un subtema no se ve idéntico la segunda vez. */
+ * un subtema no se ve idéntico la segunda vez.
+ *
+ * Antes de barajar, marca cada reactivo con `_idxOriginal` (su posición fija
+ * dentro de `subtema.reactivos`, sin barajar) — así el motor de repaso
+ * espaciado (Paso 33, repaso.js) puede identificar siempre el MISMO
+ * reactivo aunque su orden y el de sus opciones cambien entre intentos. Es
+ * un campo interno: no se muestra ni se envía al webhook. */
 function variarReactivos_(reactivos) {
-  return barajar_(reactivos).map(variarOpciones_);
+  const etiquetados = reactivos.map((reactivo, i) => ({ ...reactivo, _idxOriginal: i }));
+  return barajar_(etiquetados).map(variarOpciones_);
 }
 
 /** Íconos SVG originales (trazo, sin relleno) para cada tipo de paso.
@@ -546,7 +579,8 @@ function vistaSeleccionGrado() {
         </div>
         `;
       }).join('')}
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
+        ${tarjetaRepaso_()}
         <a href="#/pda-lista/ejercitate" class="mn-tarjeta mn-elevar group block rounded-3xl p-[2px] bg-gradient-to-br ${ej.grad} shadow-lg">
           <div class="bg-white rounded-[calc(1.5rem-2px)] px-6 py-8 text-center h-full flex flex-col items-center justify-center">
             <span class="inline-flex items-center justify-center w-12 h-12 rounded-2xl ${ej.chip} mb-2">${icono_('operaciones', 'w-6 h-6')}</span>
@@ -726,6 +760,13 @@ async function vistaPDA({ grado, id }) {
   const pasos = [{ tipo: 'problematizacion' }];
   pda.subtemas.forEach((subtema, si) => {
     pasos.push({ tipo: 'subtema', subtemaIndex: si });
+    // Ejemplo resuelto (Paso 34): paso intermedio opcional entre la teoría y
+    // la actividad calificada — solo aparece si el subtema trae
+    // `ejemploResuelto` en su JSON (compatible hacia atrás: los subtemas que
+    // no lo traen se comportan exactamente igual que antes).
+    if (subtema.ejemploResuelto) {
+      pasos.push({ tipo: 'ejemploResuelto', subtemaIndex: si });
+    }
     const totalPartes = Math.ceil(subtema.reactivos.length / 5);
     for (let parte = 0; parte < totalPartes; parte++) {
       pasos.push({ tipo: 'actividad', subtemaIndex: si, parte, totalPartes });
@@ -741,7 +782,9 @@ async function vistaPDA({ grado, id }) {
     resultado: null, // resultado global, se calcula al terminar el último subtema
     codigoVerificacion: null,
     reactivosVariados: {}, // { [subtemaIndex]: TODOS los reactivos de ese subtema, ya barajados para este intento }
-    respuestasParciales: {} // { [subtemaIndex]: respuestas acumuladas de las rondas ya enviadas, mientras faltan más rondas }
+    respuestasParciales: {}, // { [subtemaIndex]: respuestas acumuladas de las rondas ya enviadas, mientras faltan más rondas }
+    pistasMostradas: {}, // (Paso 34) { "<subtemaIndex>|<parte>|<i>": cuántas pistas de ese reactivo ya pidió }
+    respuestasEnCurso: null // (Paso 34) respuestas ya tecleadas en la ronda actual, para no perderlas al pedir una pista (repinta la misma ronda)
   };
 
   /** Reactivos (orden + opciones mezclados) de TODAS las rondas de un
@@ -774,7 +817,8 @@ async function vistaPDA({ grado, id }) {
         <div class="mn-panel bg-white rounded-3xl shadow-lg shadow-slate-200/60 border border-slate-100 p-6 sm:p-7 mt-4">
           ${paso.tipo === 'problematizacion' ? panelProblematizacion_(pda, PASO_COLOR.problematizacion) : ''}
           ${paso.tipo === 'subtema' ? panelSubtema_(pda.subtemas[paso.subtemaIndex], paso.subtemaIndex, pda.subtemas.length, PASO_COLOR.subtema) : ''}
-          ${paso.tipo === 'actividad' ? panelActividad_(pda.subtemas[paso.subtemaIndex], paso.subtemaIndex, pda.subtemas.length, reactivosDeParte_(paso.subtemaIndex, paso.parte), PASO_COLOR.reto, paso.parte, paso.totalPartes) : ''}
+          ${paso.tipo === 'ejemploResuelto' ? panelEjemploResuelto_(pda.subtemas[paso.subtemaIndex], paso.subtemaIndex, pda.subtemas.length, PASO_COLOR.subtema) : ''}
+          ${paso.tipo === 'actividad' ? panelActividad_(pda.subtemas[paso.subtemaIndex], paso.subtemaIndex, pda.subtemas.length, reactivosDeParte_(paso.subtemaIndex, paso.parte), PASO_COLOR.reto, paso.parte, paso.totalPartes, estado.pistasMostradas, estado.respuestasEnCurso) : ''}
           ${paso.tipo === 'miniResultado' ? panelMiniResultado_(pda.subtemas[paso.subtemaIndex], estado.resultadosSubtemas[paso.subtemaIndex], paso.subtemaIndex === pda.subtemas.length - 1, PASO_COLOR.reto) : ''}
           ${esResultado ? panelResultado_(pda, estado, PASO_COLOR.resultado) : ''}
         </div>
@@ -796,6 +840,7 @@ async function vistaPDA({ grado, id }) {
 
       if (paso.tipo === 'miniResultado' && esUltimoSubtema) {
         estado.resultado = combinarResultados(estado.resultadosSubtemas);
+        estado.respuestasEnCurso = null;
         estado.pasoIndex++; // avanza al paso 'resultado' (global)
         repintar();
 
@@ -822,8 +867,26 @@ async function vistaPDA({ grado, id }) {
         return;
       }
 
+      estado.respuestasEnCurso = null;
       estado.pasoIndex++;
       repintar();
+    });
+
+    // Pide la siguiente pista de un reactivo (Paso 34): guarda las respuestas
+    // que el alumno ya había tecleado en esta MISMA ronda antes de repintar
+    // (mostrar una pista no debe borrar sus otras respuestas), suma 1 a la
+    // cuenta de pistas mostradas de ese reactivo y vuelve a pintar la misma
+    // ronda — no avanza de paso, no califica nada.
+    raiz.querySelectorAll('[data-accion="pedir-pista"]').forEach((boton) => {
+      boton.addEventListener('click', () => {
+        const paso = pasos[estado.pasoIndex];
+        const reactivosRonda = reactivosDeParte_(paso.subtemaIndex, paso.parte);
+        estado.respuestasEnCurso = reactivosRonda.map((reactivo, i) => leerRespuesta_(raiz, `act-${paso.subtemaIndex}-${i}`, reactivo.tipo));
+
+        const clave = `${boton.dataset.subtema}|${boton.dataset.parte}|${boton.dataset.reactivo}`;
+        estado.pistasMostradas[clave] = (estado.pistasMostradas[clave] || 0) + 1;
+        repintar();
+      });
     });
 
     // Envía las 5 respuestas de la ronda actual de un subtema. Si quedan más
@@ -849,6 +912,7 @@ async function vistaPDA({ grado, id }) {
 
       if (paso.parte < paso.totalPartes - 1) {
         estado.respuestasParciales[paso.subtemaIndex] = acumuladas;
+        estado.respuestasEnCurso = null;
         estado.pasoIndex++; // avanza a la siguiente ronda de este mismo subtema
         repintar();
         return;
@@ -861,6 +925,20 @@ async function vistaPDA({ grado, id }) {
         acumuladas
       );
       estado.resultadosSubtemas[paso.subtemaIndex] = resultado;
+
+      // Repaso espaciado (Paso 33): registra cada reactivo de esta ronda en
+      // repaso.js — los que falló entran (o vuelven) al mazo para
+      // repasarse más adelante; los que acertó, si ya estaban en el mazo
+      // por un fallo anterior, avanzan de caja. 100% local, no toca Sheets.
+      const contextoRepaso = {
+        grado, pdaId: pda.id, pdaTitulo: pda.titulo, eje: pda.eje,
+        subtemaNumero: subtema.numero, subtemaTitulo: subtema.titulo
+      };
+      reactivosCompletos.forEach((reactivo, i) => {
+        registrarIntento({ reactivo, esCorrecta: resultado.detalle[i].esCorrecta, contexto: contextoRepaso });
+      });
+
+      estado.respuestasEnCurso = null;
       estado.pasoIndex++; // avanza a 'miniResultado'
       repintar();
       // Panel flotante de retroalimentación (Paso 20): resume el resultado
@@ -1049,13 +1127,78 @@ function panelSubtema_(subtema, indice, total, color) {
   `;
 }
 
+/** Ejemplo resuelto (Paso 34): paso opcional entre la teoría (panelSubtema_)
+ * y la actividad calificada — un problema representativo del subtema, YA
+ * resuelto paso a paso, para que el alumno vea el procedimiento completo
+ * antes de tener que aplicarlo solo (reduce la carga cognitiva del salto
+ * directo de "leer la teoría" a "responder calificado"). Solo se llama
+ * cuando `subtema.ejemploResuelto` existe (ver construcción de `pasos` en
+ * vistaPDA) — un subtema sin este campo simplemente no tiene este paso. */
+function panelEjemploResuelto_(subtema, indice, total, color) {
+  const ej = subtema.ejemploResuelto;
+  return `
+    ${imagenMascota_('actividad-quiz.png', 'Profe Ponchito señalando una pizarra con un problema resuelto paso a paso')}
+    ${insigniaPaso_('lupa', color)}
+    ${overline_(nivelChip_(subtema, indice, total) + ' · Ejemplo resuelto', 'lupa', color)}
+    <h3 class="font-heading text-xl sm:text-2xl font-bold text-slate-800 mb-3">${numeroChip_(subtema.numero, '')}${escapeHTML_(subtema.titulo)}</h3>
+    <p class="text-slate-700 leading-relaxed mb-4">${escapeHTML_(ej.enunciado)}</p>
+    <div class="space-y-3 mb-4">
+      ${ej.pasos.map((paso, i) => `
+        <div class="flex items-start gap-3">
+          <span class="shrink-0 w-7 h-7 rounded-full ${color.pastelFondo || 'bg-slate-100'} ${color.texto} font-bold text-sm flex items-center justify-center">${i + 1}</span>
+          <div class="flex-1 pt-0.5">
+            <p class="text-slate-700">${escapeHTML_(paso.texto)}</p>
+            ${paso.operacion ? `<p class="inline-block font-mono text-slate-800 ${color.suave} border rounded-lg px-3 py-1.5 mt-1.5">${escapeHTML_(paso.operacion)}</p>` : ''}
+          </div>
+        </div>
+      `).join('')}
+    </div>
+    ${ej.respuestaFinal ? `<p class="font-heading font-bold ${color.texto} ${color.pastelFondo || 'bg-slate-100'} rounded-xl px-4 py-3 mb-6">✓ Respuesta: ${escapeHTML_(ej.respuestaFinal)}</p>` : ''}
+    ${botonPrimario_('Ahora yo solo →', 'continuar', color)}
+  `;
+}
+
+/** Pistas progresivas (Paso 34) de un reactivo: 0, 1, 2 o 3 pistas ya
+ * reveladas (según cuántas haya pedido el alumno), de la más general a la
+ * más específica, y un botón para pedir la siguiente si quedan más — no
+ * afecta la calificación, es solo apoyo. No se muestra nada si el reactivo
+ * no trae `pistas` en su JSON (compatible hacia atrás). */
+function panelPistas_(reactivo, subtemaIndex, parte, reactivoIndex, pistasMostradas, color) {
+  if (!Array.isArray(reactivo.pistas) || reactivo.pistas.length === 0) return '';
+  const clave = `${subtemaIndex}|${parte}|${reactivoIndex}`;
+  const mostradas = (pistasMostradas && pistasMostradas[clave]) || 0;
+  const quedanMas = mostradas < reactivo.pistas.length;
+  return `
+    <div class="mt-2">
+      ${mostradas > 0 ? `
+        <div class="space-y-1.5 mb-2">
+          ${reactivo.pistas.slice(0, mostradas).map((pista) => `
+            <p class="text-xs ${color.texto} ${color.suave} border rounded-lg px-3 py-1.5">💡 ${escapeHTML_(pista)}</p>
+          `).join('')}
+        </div>
+      ` : ''}
+      ${quedanMas ? `
+        <button type="button" data-accion="pedir-pista" data-subtema="${subtemaIndex}" data-parte="${parte}" data-reactivo="${reactivoIndex}"
+                class="text-xs font-semibold ${color.texto} hover:underline">
+          💡 ${mostradas === 0 ? 'Necesito una pista' : 'Otra pista'}
+        </button>
+      ` : ''}
+    </div>
+  `;
+}
+
 /** Mini-actividad calificada de un subtema: una ronda de 5 reactivos (ya
  * barajados para este intento). Un subtema con más de 5 reactivos en total
  * se recorre en varias rondas consecutivas (Paso 16: `parte`/`totalPartes`,
  * ej. "Ronda 1 de 2" y "Ronda 2 de 2" — misma pantalla, mismo estilo, solo
  * el siguiente bloque de 5); todas las rondas de un subtema se califican
- * juntas al enviar la última (ver conectarEventos_). */
-function panelActividad_(subtema, indice, total, reactivos, color, parte = 0, totalPartes = 1) {
+ * juntas al enviar la última (ver conectarEventos_).
+ *
+ * `pistasMostradas` (Paso 34) es el objeto compartido de vistaPDA con
+ * cuántas pistas ya pidió el alumno por reactivo; `valoresPrevios` (Paso
+ * 34), si viene, son las respuestas que ya había tecleado en ESTA ronda
+ * antes de pedir una pista (para no perderlas al repintar). */
+function panelActividad_(subtema, indice, total, reactivos, color, parte = 0, totalPartes = 1, pistasMostradas = {}, valoresPrevios = null) {
   const etiquetaRonda = totalPartes > 1 ? ` · Ronda ${parte + 1} de ${totalPartes}` : '';
   return `
     ${imagenMascota_('actividad-quiz.png', 'Profe Ponchito señalando una pantalla de quiz interactivo con estrellas')}
@@ -1066,7 +1209,8 @@ function panelActividad_(subtema, indice, total, reactivos, color, parte = 0, to
       ${reactivos.map((reactivo, i) => `
         <div class="border-t border-slate-100 pt-4 first:border-t-0 first:pt-0">
           <p class="text-slate-400 text-xs font-bold mb-1">REACTIVO ${i + 1} DE ${reactivos.length}</p>
-          ${renderizarPregunta_(reactivo, `act-${indice}-${i}`, color)}
+          ${renderizarPregunta_(reactivo, `act-${indice}-${i}`, color, valoresPrevios ? valoresPrevios[i] : undefined)}
+          ${panelPistas_(reactivo, indice, parte, i, pistasMostradas, color)}
         </div>
       `).join('')}
     </div>
@@ -1227,7 +1371,7 @@ function renderizarPregunta_(pregunta, prefijo, color, valorPrevio) {
         <div class="space-y-1.5">
           ${pregunta.opciones.map((opcion, j) => `
             <label class="flex items-center gap-2 text-slate-700 cursor-pointer rounded-lg px-2 py-1.5 ${c.hover} transition">
-              <input type="radio" name="preg-${prefijo}" value="${j}" data-preg="${prefijo}" class="${c.accent} w-4 h-4" ${Number(valorPrevio) === j ? 'checked' : ''}>
+              <input type="radio" name="preg-${prefijo}" value="${j}" data-preg="${prefijo}" class="${c.accent} w-4 h-4" ${valorPrevio != null && Number(valorPrevio) === j ? 'checked' : ''}>
               ${escapeHTML_(opcion)}
             </label>
           `).join('')}
@@ -1448,6 +1592,216 @@ function vistaRecursos() {
 }
 
 // ============================================================
+// Vista: Repaso espaciado (Paso 33)
+// ------------------------------------------------------------
+// Reúne, en una sola sesión, los reactivos que el alumno falló en
+// cualquier actividad calificada (PDA de grado, Ejercítate, Operaciones
+// Básicas o Acarreos) cuya fecha de repaso ya llegó (ver repaso.js). Como
+// vienen de temas y PDAs distintos, la sesión los mezcla entre sí en vez de
+// agruparlos por tema (interleaving); y antes de revelar si acertó,
+// pregunta qué tan seguro estaba, para que aprenda a calibrar su propia
+// confianza. Una tarjeta a la vez, con su propio botón "Verificar" — igual
+// que la práctica extra (panelPracticaExtra_), pero con un paso de
+// confianza en medio y conectada al motor de repaso.js.
+// ============================================================
+
+/** Tarjeta de acceso a Repaso para la pantalla de selección de grado — el
+ * mismo patrón visual que las de Ejercítate/Operaciones/Acarreos, pero con
+ * un texto que cambia según haya o no pendientes hoy (ver repaso.js). */
+function tarjetaRepaso_() {
+  const color = COLOR_REPASO;
+  const pendientes = totalPendientesHoy();
+  const enMazo = totalEnMazo();
+  const subtitulo = pendientes > 0
+    ? `${pendientes} pendiente${pendientes === 1 ? '' : 's'} hoy`
+    : (enMazo > 0 ? 'Vas al corriente 🎉' : 'Aparece cuando repases');
+  return `
+    <a href="#/repaso" class="mn-tarjeta mn-elevar group block rounded-3xl p-[2px] bg-gradient-to-br ${color.grad} shadow-lg relative">
+      ${pendientes > 0 ? `<span class="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-rose-600 text-white text-xs font-bold flex items-center justify-center shadow-md">${pendientes}</span>` : ''}
+      <div class="bg-white rounded-[calc(1.5rem-2px)] px-6 py-8 text-center h-full flex flex-col items-center justify-center">
+        <span class="inline-flex items-center justify-center w-12 h-12 rounded-2xl ${color.chip} mb-2">${icono_('tiempoX', 'w-6 h-6')}</span>
+        <span class="font-heading text-xl font-extrabold bg-gradient-to-br ${color.grad} bg-clip-text text-transparent">Repaso Personalizado</span>
+        <p class="text-slate-500 mt-1 font-medium text-sm">${subtitulo}</p>
+        <p class="mt-3 inline-flex items-center gap-1 text-sm font-semibold ${color.texto}">
+          Repasar ${icono_('flecha', 'w-4 h-4 group-hover:translate-x-1 transition-transform')}
+        </p>
+      </div>
+    </a>
+  `;
+}
+
+/** Mensaje de calibración de confianza (Paso 33): compara lo que el alumno
+ * dijo que tan seguro estaba (0 = nada, 1 = más o menos, 2 = muy seguro)
+ * contra si de verdad acertó, y responde con un tono formativo — sin
+ * regañar ni sobre-felicitar, solo ayudando a que note el patrón. */
+function mensajeCalibracion_(confianza, correcta) {
+  if (confianza === 2 && correcta) return 'Dijiste que estabas muy seguro y acertaste: tu confianza está bien calibrada. 👍';
+  if (confianza === 2 && !correcta) return 'Dijiste que estabas muy seguro, pero no era así — vale la pena repasar este tema con calma antes de la próxima vez.';
+  if (confianza === 0 && correcta) return '¡Dijiste que no estabas seguro y aun así acertaste! Sabes más de lo que crees. 🌟';
+  if (confianza === 0 && !correcta) return 'Tenías razón en dudar — por eso este tema te volverá a aparecer pronto para repasarlo otra vez.';
+  return correcta ? 'Bien calibrado: tenías algo de seguridad y acertaste.' : 'Se vale no estar del todo seguro. Por eso este tema volverá a aparecer más adelante.';
+}
+
+function vistaRepaso() {
+  const sesion = obtenerSesion();
+  if (!sesion) { navegar('/'); return ''; }
+
+  const color = COLOR_REPASO;
+  const raiz = document.createElement('div');
+  const estado = {
+    tarjetas: tarjetasParaHoy(8),
+    indice: 0,
+    fase: 'pregunta', // 'pregunta' | 'confianza' | 'revelado' | 'vacio' | 'resumen'
+    respuestaActual: null,
+    confianzaElegida: null,
+    correctaActual: false,
+    aciertos: 0
+  };
+  if (estado.tarjetas.length === 0) estado.fase = 'vacio';
+
+  function repintar() {
+    raiz.innerHTML = `
+      ${encabezado_(sesion)}
+      <div class="max-w-2xl mx-auto px-4 py-8">
+        <a href="#/grados" class="inline-flex items-center gap-1 text-sm font-semibold ${color.texto} hover:underline">
+          ${icono_('flecha', 'w-4 h-4 rotate-180')} Volver
+        </a>
+        <h2 class="font-heading text-xl sm:text-2xl font-bold text-slate-800 mt-3 mb-1 text-center">Repaso Personalizado</h2>
+        <p class="text-slate-500 text-sm mb-4 text-center">Aquí vas a encontrar las preguntas en las que más te has equivocado antes — repasarlas en el momento justo ayuda a que se te queden mejor.</p>
+        <div class="mn-panel bg-white rounded-3xl shadow-lg shadow-slate-200/60 border border-slate-100 p-6 sm:p-7">
+          ${estado.fase === 'vacio' ? panelRepasoVacio_(color) : ''}
+          ${estado.fase === 'pregunta' || estado.fase === 'confianza' || estado.fase === 'revelado' ? panelRepasoTarjeta_(estado, color) : ''}
+          ${estado.fase === 'resumen' ? panelRepasoResumen_(estado, color) : ''}
+        </div>
+      </div>
+    `;
+    conectarEventosRepaso_();
+  }
+
+  function conectarEventosRepaso_() {
+    raiz.querySelector('[data-accion="repaso-verificar"]')?.addEventListener('click', () => {
+      const tarjeta = estado.tarjetas[estado.indice];
+      const respuesta = leerRespuesta_(raiz, 'repaso-actual', tarjeta.reactivo.tipo);
+      if (respuesta === null) {
+        alert('Responde antes de continuar.');
+        return;
+      }
+      estado.respuestaActual = respuesta;
+      estado.fase = 'confianza';
+      repintar();
+    });
+
+    raiz.querySelectorAll('[data-accion="repaso-confianza"]').forEach((boton) => {
+      boton.addEventListener('click', () => {
+        const tarjeta = estado.tarjetas[estado.indice];
+        estado.confianzaElegida = Number(boton.dataset.nivel);
+        estado.correctaActual = esRespuestaCorrecta(tarjeta.reactivo, estado.respuestaActual);
+        if (estado.correctaActual) estado.aciertos++;
+
+        // Actualiza el mazo de repaso.js: acierto → sube de caja (o se
+        // gradúa y sale); fallo → vuelve a la caja 0.
+        registrarIntento({ reactivo: tarjeta.reactivo, esCorrecta: estado.correctaActual, contexto: tarjeta.contexto });
+
+        estado.fase = 'revelado';
+        repintar();
+      });
+    });
+
+    raiz.querySelector('[data-accion="repaso-siguiente"]')?.addEventListener('click', () => {
+      estado.indice++;
+      estado.respuestaActual = null;
+      estado.confianzaElegida = null;
+      estado.fase = estado.indice < estado.tarjetas.length ? 'pregunta' : 'resumen';
+      repintar();
+    });
+  }
+
+  repintar();
+  return raiz;
+}
+
+function panelRepasoVacio_(color) {
+  const hayEnMazo = totalEnMazo() > 0;
+  return `
+    ${imagenMascota_('camino-crecimiento.png', 'Profe Ponchito plantando un árbol junto a una pirámide: tu camino va creciendo', 'max-h-28 mx-auto mb-4')}
+    ${insigniaPaso_('tiempoX', color)}
+    ${overline_('Repaso Personalizado', 'tiempoX', color)}
+    <h3 class="font-heading text-xl sm:text-2xl font-bold text-slate-800 mb-3">${hayEnMazo ? '¡Vas al corriente! 🎉' : 'Todavía no hay nada que repasar'}</h3>
+    <p class="text-slate-600 leading-relaxed mb-6">${hayEnMazo
+      ? 'No tienes temas pendientes de repaso por ahora. Vuelve en unos días: aquí te avisaremos cuando sea buen momento para repasar lo que ya viste.'
+      : 'Aquí irán apareciendo, poco a poco, los reactivos que se te dificulten en tus actividades, para que los vuelvas a intentar más adelante y se te queden mejor. Por ahora, sigue practicando tus PDAs, Ejercítate, Operaciones Básicas o Acarreos.'}</p>
+    <a href="#/grados" class="mn-elevar mn-boton-3d inline-flex items-center gap-2 bg-gradient-to-r ${color.grad} text-white font-heading font-bold px-6 py-2.5 rounded-xl shadow-md transition" style="--mn-3d-borde:${color.presionado}">
+      Ir a practicar ${icono_('flecha', 'w-4 h-4')}
+    </a>
+  `;
+}
+
+function panelRepasoTarjeta_(estado, color) {
+  const tarjeta = estado.tarjetas[estado.indice];
+  const total = estado.tarjetas.length;
+  const contexto = tarjeta.contexto;
+
+  const encabezadoTarjeta = `
+    ${imagenMascota_('practicaextra-numeros.png', 'Profe Ponchito haciendo malabares con números y símbolos matemáticos', 'max-h-24 mx-auto mb-4')}
+    ${insigniaPaso_('tiempoX', color)}
+    ${overline_(`Repaso Personalizado · ${estado.indice + 1} de ${total}`, 'tiempoX', color)}
+    <p class="text-slate-400 text-xs font-bold mb-3 uppercase tracking-wide">${escapeHTML_(contexto.pdaTitulo || '')}${contexto.subtemaTitulo ? ` · ${escapeHTML_(contexto.subtemaTitulo)}` : ''}</p>
+  `;
+
+  if (estado.fase === 'pregunta') {
+    return `
+      ${encabezadoTarjeta}
+      ${renderizarPregunta_(tarjeta.reactivo, 'repaso-actual', color)}
+      <div class="mt-6">${botonPrimario_('Verificar', 'repaso-verificar', color)}</div>
+    `;
+  }
+
+  if (estado.fase === 'confianza') {
+    return `
+      ${encabezadoTarjeta}
+      ${renderizarPregunta_(tarjeta.reactivo, 'repaso-actual', color, estado.respuestaActual)}
+      <div class="mt-6 bg-slate-50 border border-slate-200 rounded-2xl px-4 py-4 text-center">
+        <p class="font-heading font-bold text-slate-800 mb-3">¿Qué tan seguro estás de tu respuesta?</p>
+        <div class="flex flex-col sm:flex-row gap-2 justify-center">
+          <button data-accion="repaso-confianza" data-nivel="0" class="mn-elevar bg-white border-2 border-slate-300 hover:bg-slate-100 font-semibold px-4 py-2 rounded-xl transition">🤔 Nada seguro</button>
+          <button data-accion="repaso-confianza" data-nivel="1" class="mn-elevar bg-white border-2 border-slate-300 hover:bg-slate-100 font-semibold px-4 py-2 rounded-xl transition">🙂 Más o menos</button>
+          <button data-accion="repaso-confianza" data-nivel="2" class="mn-elevar bg-white border-2 border-slate-300 hover:bg-slate-100 font-semibold px-4 py-2 rounded-xl transition">💪 Muy seguro</button>
+        </div>
+      </div>
+    `;
+  }
+
+  // fase === 'revelado'
+  const correcta = estado.correctaActual;
+  return `
+    ${encabezadoTarjeta}
+    ${renderizarPregunta_(tarjeta.reactivo, 'repaso-actual', color, estado.respuestaActual)}
+    <div class="mt-4 text-sm px-4 py-3 rounded-xl border ${correcta ? 'bg-emerald-50 text-emerald-800 border-emerald-200' : 'bg-rose-50 text-rose-800 border-rose-200'}">
+      <span class="font-bold">${correcta ? '✓ ¡Correcto!' : '✗ No era correcto.'}</span> ${escapeHTML_(tarjeta.reactivo.retroalimentacion || '')}
+    </div>
+    <p class="text-slate-500 text-sm mt-3">${escapeHTML_(mensajeCalibracion_(estado.confianzaElegida, correcta))}</p>
+    <div class="mt-6">${botonPrimario_(estado.indice + 1 < total ? 'Siguiente →' : 'Ver resumen →', 'repaso-siguiente', color)}</div>
+  `;
+}
+
+function panelRepasoResumen_(estado, color) {
+  const total = estado.tarjetas.length;
+  const perfecto = estado.aciertos === total;
+  return `
+    ${imagenMascota_('miniresultado-tupuedes.png', 'Profe Ponchito felicitando con confeti: ¡tú puedes!')}
+    ${insigniaPaso_('aplausos', color)}
+    ${overline_('¡Repaso concluido!', 'aplausos', color)}
+    <h3 class="font-heading text-xl sm:text-2xl font-bold text-slate-800 mb-2">${estado.aciertos} / ${total} correctas</h3>
+    <p class="text-slate-600 mb-6">${perfecto
+      ? 'Dominaste todo lo que repasaste hoy. Si algo de esto vuelve a aparecer aquí más adelante, es solo para reforzarlo una vez más.'
+      : 'Lo que no acertaste hoy va a volver a aparecer pronto para que lo repases de nuevo — así, poco a poco, se te va quedando.'}</p>
+    <a href="#/grados" class="mn-elevar mn-boton-3d inline-flex items-center gap-2 bg-gradient-to-r ${color.grad} text-white font-heading font-bold px-6 py-2.5 rounded-xl shadow-md transition" style="--mn-3d-borde:${color.presionado}">
+      Volver ${icono_('flecha', 'w-4 h-4')}
+    </a>
+  `;
+}
+
+// ============================================================
 // Capa flotante global (Paso 20): panel de retroalimentación, botón y
 // modal de soporte, y modal de la calculadora. Se agregan UNA sola vez al
 // <body> (ver capaGlobal_, llamada desde DOMContentLoaded) — no dependen
@@ -1663,6 +2017,7 @@ ruta('/pda-lista/:grado', vistaListaPDA);
 ruta('/pda-lista/:grado/:trimestre', vistaListaPDA);
 ruta('/pda/:grado/:id', vistaPDA);
 ruta('/recursos', vistaRecursos);
+ruta('/repaso', vistaRepaso);
 rutaPorDefecto(vista404);
 
 document.addEventListener('DOMContentLoaded', () => {
