@@ -49,7 +49,11 @@
               0
             ]
           ],
-          "retroalimentacion": "47 × 3: primero 3×7=21, escribes 1 y llevas 2; luego 3×4=12, más el 2 que llevabas = 14. Resultado: 141."
+          "retroalimentacion": "47 × 3: primero 3×7=21, escribes 1 y llevas 2; luego 3×4=12, más el 2 que llevabas = 14. Resultado: 141.",
+          "pistas": [
+            "Multiplica las unidades; si llega a 10 o más, escribe el dígito y lleva el resto, igual que calculamos 58×3=174 para las plumas de Valeria.",
+            "47 × 3: primero 3×7=21, escribes 1 y llevas 2; luego 3×4=12, más el 2 que llevabas = 14. Resultado: 141."
+          ]
         },
         {
           "tipo": "algoritmo_columnas",
@@ -76,7 +80,11 @@
               0
             ]
           ],
-          "retroalimentacion": "62 × 4: primero 4×2=8 (sin acarreo); luego 4×6=24, escribes 4 y llevas 2 a las centenas. Resultado: 248."
+          "retroalimentacion": "62 × 4: primero 4×2=8 (sin acarreo); luego 4×6=24, escribes 4 y llevas 2 a las centenas. Resultado: 248.",
+          "pistas": [
+            "Multiplica cada columna y suma el acarreo de la anterior antes de escribir el dígito, el mismo procedimiento que usamos con 58×3 para las plumas de Valeria.",
+            "62 × 4: primero 4×2=8 (sin acarreo); luego 4×6=24, escribes 4 y llevas 2 a las centenas. Resultado: 248."
+          ]
         },
         {
           "tipo": "algoritmo_columnas",
@@ -157,9 +165,27 @@
               0
             ]
           ],
-          "retroalimentacion": "19 × 5: primero 5×9=45, escribes 5 y llevas 4; luego 5×1=5, más el 4 que llevabas = 9. Resultado: 95."
+          "retroalimentacion": "19 × 5: primero 5×9=45, escribes 5 y llevas 4; luego 5×1=5, más el 4 que llevabas = 9. Resultado: 95.",
+          "pistas": [
+            "Multiplica las unidades primero, lleva el acarreo a las decenas y suma, igual que calculamos 58×3=174 para las plumas de Valeria.",
+            "19 × 5: primero 5×9=45, escribes 5 y llevas 4; luego 5×1=5, más el 4 que llevabas = 9. Resultado: 95."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Valeria también calcula 58 × 3 para saber cuántas plumas hay en total.",
+        "pasos": [
+          {
+            "texto": "Multiplicamos las unidades y determinamos si hay acarreo.",
+            "operacion": "3×8=24→escribe 4, lleva 2"
+          },
+          {
+            "texto": "Multiplicamos las decenas y sumamos el acarreo.",
+            "operacion": "3×5=15+2=17"
+          }
+        ],
+        "respuestaFinal": "58 × 3 = 174."
+      }
     },
     {
       "numero": "13.2",
@@ -198,7 +224,11 @@
               1
             ]
           ],
-          "retroalimentacion": "246 × 3: 3×6=18, escribes 8 y llevas 1; 3×4=12+1=13, escribes 3 y llevas 1; 3×2=6+1=7. Resultado: 738."
+          "retroalimentacion": "246 × 3: 3×6=18, escribes 8 y llevas 1; 3×4=12+1=13, escribes 3 y llevas 1; 3×2=6+1=7. Resultado: 738.",
+          "pistas": [
+            "Cada acarreo se suma al siguiente producto parcial antes de escribir el dígito, igual que calculamos 537×4=2,148 para el pedido de cuadernos de Valeria.",
+            "246 × 3: 3×6=18, escribes 8 y llevas 1; 3×4=12+1=13, escribes 3 y llevas 1; 3×2=6+1=7. Resultado: 738."
+          ]
         },
         {
           "tipo": "algoritmo_columnas",
@@ -226,7 +256,11 @@
               0
             ]
           ],
-          "retroalimentacion": "158 × 6: 6×8=48, escribes 8 y llevas 4; 6×5=30+4=34, escribes 4 y llevas 3; 6×1=6+3=9. Resultado: 948."
+          "retroalimentacion": "158 × 6: 6×8=48, escribes 8 y llevas 4; 6×5=30+4=34, escribes 4 y llevas 3; 6×1=6+3=9. Resultado: 948.",
+          "pistas": [
+            "Multiplica columna por columna, sumando el acarreo de la anterior, el mismo procedimiento que usamos con 537×4 para el pedido de Valeria.",
+            "158 × 6: 6×8=48, escribes 8 y llevas 4; 6×5=30+4=34, escribes 4 y llevas 3; 6×1=6+3=9. Resultado: 948."
+          ]
         },
         {
           "tipo": "algoritmo_columnas",
@@ -282,7 +316,11 @@
               0
             ]
           ],
-          "retroalimentacion": "Esto verifica que 372 ÷ 3 = 124, porque 124 × 3 = 372: 3×4=12, escribes 2 y llevas 1; 3×2=6+1=7; 3×1=3."
+          "retroalimentacion": "Esto verifica que 372 ÷ 3 = 124, porque 124 × 3 = 372: 3×4=12, escribes 2 y llevas 1; 3×2=6+1=7; 3×1=3.",
+          "pistas": [
+            "Para verificar una división, multiplica el cociente por el divisor y revisa que dé el dividendo, igual que calculamos 537×4 para el pedido de cuadernos de Valeria.",
+            "Esto verifica que 372 ÷ 3 = 124, porque 124 × 3 = 372: 3×4=12, escribes 2 y llevas 1; 3×2=6+1=7; 3×1=3."
+          ]
         },
         {
           "tipo": "algoritmo_columnas",
@@ -311,7 +349,25 @@
           ],
           "retroalimentacion": "Esto verifica que 435 ÷ 5 = 87, porque 87 × 5 = 435: 5×7=35, escribes 5 y llevas 3; 5×8=40+3=43."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Valeria calcula 537 × 4 para otro pedido de cuadernos.",
+        "pasos": [
+          {
+            "texto": "Multiplicamos las unidades.",
+            "operacion": "4×7=28→escribe 8, lleva 2"
+          },
+          {
+            "texto": "Multiplicamos las decenas y sumamos el acarreo.",
+            "operacion": "4×3=12+2=14→escribe 4, lleva 1"
+          },
+          {
+            "texto": "Multiplicamos las centenas y sumamos el acarreo.",
+            "operacion": "4×5=20+1=21"
+          }
+        ],
+        "respuestaFinal": "537 × 4 = 2,148."
+      }
     },
     {
       "numero": "13.3",
@@ -362,7 +418,11 @@
               3
             ]
           ],
-          "retroalimentacion": "43 × 26 = 43×6 + 43×2×10 = 258 + 860 = 1,118."
+          "retroalimentacion": "43 × 26 = 43×6 + 43×2×10 = 258 + 860 = 1,118.",
+          "pistas": [
+            "Calcula un producto parcial por cada cifra del multiplicador y súmalos, igual que calculamos 36×24=864 para los lápices de Valeria.",
+            "43 × 26 = 43×6 + 43×2×10 = 258 + 860 = 1,118."
+          ]
         },
         {
           "tipo": "algoritmo_columnas",
@@ -402,7 +462,11 @@
               1
             ]
           ],
-          "retroalimentacion": "34 × 23 = 34×3 + 34×2×10 = 102 + 680 = 782."
+          "retroalimentacion": "34 × 23 = 34×3 + 34×2×10 = 102 + 680 = 782.",
+          "pistas": [
+            "Multiplica por las unidades y por las decenas (recorrida un lugar) del multiplicador, y suma, el mismo procedimiento que usamos con 36×24 para los lápices de Valeria.",
+            "34 × 23 = 34×3 + 34×2×10 = 102 + 680 = 782."
+          ]
         },
         {
           "tipo": "algoritmo_columnas",
@@ -522,9 +586,31 @@
               3
             ]
           ],
-          "retroalimentacion": "52 × 34 = 52×4 + 52×3×10 = 208 + 1,560 = 1,768."
+          "retroalimentacion": "52 × 34 = 52×4 + 52×3×10 = 208 + 1,560 = 1,768.",
+          "pistas": [
+            "Suma los dos productos parciales (unidades y decenas del multiplicador) para obtener el resultado final, igual que calculamos 36×24=864 para los lápices de Valeria.",
+            "52 × 34 = 52×4 + 52×3×10 = 208 + 1,560 = 1,768."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Valeria calcula 36 × 24 para saber cuántos lápices hay en total.",
+        "pasos": [
+          {
+            "texto": "Calculamos el primer producto parcial (unidades del multiplicador).",
+            "operacion": "36×4=144"
+          },
+          {
+            "texto": "Calculamos el segundo producto parcial (decenas del multiplicador, recorrido).",
+            "operacion": "36×2×10=720"
+          },
+          {
+            "texto": "Sumamos ambos productos parciales.",
+            "operacion": "144+720=864"
+          }
+        ],
+        "respuestaFinal": "36 × 24 = 864."
+      }
     },
     {
       "numero": "13.4",
@@ -564,7 +650,11 @@
               3
             ]
           ],
-          "retroalimentacion": "356 × 4: 4×6=24, escribes 4 y llevas 2; 4×5=20+2=22, escribes 2 y llevas 2; 4×3=12+2=14. Resultado: 1,424."
+          "retroalimentacion": "356 × 4: 4×6=24, escribes 4 y llevas 2; 4×5=20+2=22, escribes 2 y llevas 2; 4×3=12+2=14. Resultado: 1,424.",
+          "pistas": [
+            "Multiplica columna por columna, sumando el acarreo de la anterior antes de escribir el dígito, igual que calculamos 418×5=2,090 para el pedido final de Valeria.",
+            "356 × 4: 4×6=24, escribes 4 y llevas 2; 4×5=20+2=22, escribes 2 y llevas 2; 4×3=12+2=14. Resultado: 1,424."
+          ]
         },
         {
           "tipo": "algoritmo_columnas",
@@ -632,7 +722,11 @@
               2
             ]
           ],
-          "retroalimentacion": "67 × 48 = 67×8 + 67×4×10 = 536 + 2,680 = 3,216."
+          "retroalimentacion": "67 × 48 = 67×8 + 67×4×10 = 536 + 2,680 = 3,216.",
+          "pistas": [
+            "Con multiplicador de dos cifras, suma los dos productos parciales (unidades y decenas recorrida), el mismo procedimiento que usamos con 418×5 para el pedido de Valeria.",
+            "67 × 48 = 67×8 + 67×4×10 = 536 + 2,680 = 3,216."
+          ]
         },
         {
           "tipo": "algoritmo_columnas",
@@ -703,9 +797,31 @@
               1
             ]
           ],
-          "retroalimentacion": "289 × 6: 6×9=54, escribes 4 y llevas 5; 6×8=48+5=53, escribes 3 y llevas 5; 6×2=12+5=17. Resultado: 1,734."
+          "retroalimentacion": "289 × 6: 6×9=54, escribes 4 y llevas 5; 6×8=48+5=53, escribes 3 y llevas 5; 6×2=12+5=17. Resultado: 1,734.",
+          "pistas": [
+            "Multiplica columna por columna llevando el acarreo a la siguiente, igual que calculamos 418×5=2,090 para el pedido final de cuadernos de Valeria.",
+            "289 × 6: 6×9=54, escribes 4 y llevas 5; 6×8=48+5=53, escribes 3 y llevas 5; 6×2=12+5=17. Resultado: 1,734."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Valeria calcula 418 × 5 para el pedido final de cuadernos.",
+        "pasos": [
+          {
+            "texto": "Multiplicamos las unidades.",
+            "operacion": "5×8=40→escribe 0, lleva 4"
+          },
+          {
+            "texto": "Multiplicamos las decenas y sumamos el acarreo.",
+            "operacion": "5×1=5+4=9"
+          },
+          {
+            "texto": "Multiplicamos las centenas.",
+            "operacion": "5×4=20"
+          }
+        ],
+        "respuestaFinal": "418 × 5 = 2,090."
+      }
     }
   ],
   "practicaExtra": [

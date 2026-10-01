@@ -35,7 +35,11 @@
             "50"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "42 es múltiplo de 7 porque 7×6=42."
+          "retroalimentacion": "42 es múltiplo de 7 porque 7×6=42.",
+          "pistas": [
+            "Un múltiplo de un número se obtiene multiplicándolo por un entero; verifica si la división es exacta, igual que comprobamos que 54 es múltiplo de 6 en la kermés.",
+            "42 es múltiplo de 7 porque 7×6=42."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -47,7 +51,11 @@
           "tipo": "llenar_frase",
           "frase": "El quinto múltiplo de 8 es ___.",
           "respuestaCorrecta": "40",
-          "retroalimentacion": "Los múltiplos de 8 son 8, 16, 24, 32, 40... el quinto es 40 (8×5=40)."
+          "retroalimentacion": "Los múltiplos de 8 son 8, 16, 24, 32, 40... el quinto es 40 (8×5=40).",
+          "pistas": [
+            "Multiplica el número por 1, 2, 3... hasta llegar a la posición pedida, el mismo procedimiento que usamos para verificar múltiplos en la kermés de doña Rosa.",
+            "Los múltiplos de 8 son 8, 16, 24, 32, 40... el quinto es 40 (8×5=40)."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -79,9 +87,27 @@
             1,
             0
           ],
-          "retroalimentacion": "45=9×5, 56=8×7, 63=7×9, por eso 45 es múltiplo de 9, 56 de 8 y 63 de 7."
+          "retroalimentacion": "45=9×5, 56=8×7, 63=7×9, por eso 45 es múltiplo de 9, 56 de 8 y 63 de 7.",
+          "pistas": [
+            "Divide cada número entre el candidato y revisa si el resultado es exacto, igual que comprobamos que 54 es múltiplo de 6 en la kermés.",
+            "45=9×5, 56=8×7, 63=7×9, por eso 45 es múltiplo de 9, 56 de 8 y 63 de 7."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "En la misma kermés, doña Rosa también vende boletos de rifa en paquetes de 6. ¿El número 54 es un múltiplo de 6?",
+        "pasos": [
+          {
+            "texto": "Dividimos 54 entre 6 para verificar si el resultado es exacto.",
+            "operacion": "54÷6=9"
+          },
+          {
+            "texto": "Como la división es exacta, 54 sí es múltiplo de 6.",
+            "operacion": "6×9=54"
+          }
+        ],
+        "respuestaFinal": "Sí, 54 es múltiplo de 6, porque 6×9=54."
+      }
     },
     {
       "numero": "4.2",
@@ -111,13 +137,21 @@
           "tipo": "verdadero_falso",
           "enunciado": "147 es divisible entre 3 porque 1+4+7=12 es múltiplo de 3.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: la suma de los dígitos de 147 es 12, que es múltiplo de 3, así que 147 es divisible entre 3."
+          "retroalimentacion": "Correcto: la suma de los dígitos de 147 es 12, que es múltiplo de 3, así que 147 es divisible entre 3.",
+          "pistas": [
+            "Suma los dígitos del número y verifica si esa suma es múltiplo de 3, igual que comprobamos que 45 es divisible entre 3 en la kermés de doña Rosa.",
+            "Correcto: la suma de los dígitos de 147 es 12, que es múltiplo de 3, así que 147 es divisible entre 3."
+          ]
         },
         {
           "tipo": "llenar_frase",
           "frase": "Un número es divisible entre 5 si termina en 0 o en ___.",
           "respuestaCorrecta": "5",
-          "retroalimentacion": "El criterio de divisibilidad entre 5 dice que el número debe terminar en 0 o en 5."
+          "retroalimentacion": "El criterio de divisibilidad entre 5 dice que el número debe terminar en 0 o en 5.",
+          "pistas": [
+            "Revisa la última cifra del número para aplicar el criterio de divisibilidad entre 5, el mismo tipo de criterio que usamos con los dulces de doña Rosa.",
+            "El criterio de divisibilidad entre 5 dice que el número debe terminar en 0 o en 5."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -129,7 +163,11 @@
             "162"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "148 ÷ 4 = 37 exactamente, por lo que 148 sí es divisible entre 4."
+          "retroalimentacion": "148 ÷ 4 = 37 exactamente, por lo que 148 sí es divisible entre 4.",
+          "pistas": [
+            "Divide el número entre 4 y revisa si el resultado es exacto, igual que comprobamos la divisibilidad entre 3 de los dulces de doña Rosa.",
+            "148 ÷ 4 = 37 exactamente, por lo que 148 sí es divisible entre 4."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -151,7 +189,21 @@
           ],
           "retroalimentacion": "90 termina en 0 y su suma de dígitos es 9, así que cumple los cuatro; 72 es par y su suma es 9, pero no termina en 0 ni 5; 135 es impar, termina en 5 y su suma de dígitos es 9."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Doña Rosa tiene 45 dulces y quiere saber si puede repartirlos exactamente entre 3 bolsas, usando el criterio de divisibilidad entre 3.",
+        "pasos": [
+          {
+            "texto": "Sumamos los dígitos de 45.",
+            "operacion": "4+5=9"
+          },
+          {
+            "texto": "Verificamos si esa suma es múltiplo de 3.",
+            "operacion": "9 es múltiplo de 3"
+          }
+        ],
+        "respuestaFinal": "Sí, 45 es divisible entre 3, porque la suma de sus dígitos (9) es múltiplo de 3."
+      }
     },
     {
       "numero": "4.3",
@@ -174,7 +226,11 @@
             "20"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "15 es múltiplo de 3 (3×5=15) y de 5 (5×3=15), así que es un múltiplo común de ambos."
+          "retroalimentacion": "15 es múltiplo de 3 (3×5=15) y de 5 (5×3=15), así que es un múltiplo común de ambos.",
+          "pistas": [
+            "Verifica que el número sea múltiplo de ambos a la vez, igual que comprobamos que 20 es múltiplo común de 4 y 5 en el ejemplo de doña Rosa.",
+            "15 es múltiplo de 3 (3×5=15) y de 5 (5×3=15), así que es un múltiplo común de ambos."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -186,7 +242,11 @@
           "tipo": "llenar_frase",
           "frase": "Los divisores comunes de 8 y 12 son 1, 2 y ___.",
           "respuestaCorrecta": "4",
-          "retroalimentacion": "Divisores de 8: 1,2,4,8. Divisores de 12: 1,2,3,4,6,12. Los comunes son 1, 2 y 4."
+          "retroalimentacion": "Divisores de 8: 1,2,4,8. Divisores de 12: 1,2,3,4,6,12. Los comunes son 1, 2 y 4.",
+          "pistas": [
+            "Lista los divisores de cada número y busca los que se repiten, el mismo procedimiento que usamos para verificar múltiplos comunes con los paquetes de doña Rosa.",
+            "Divisores de 8: 1,2,4,8. Divisores de 12: 1,2,3,4,6,12. Los comunes son 1, 2 y 4."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -218,9 +278,27 @@
             1,
             0
           ],
-          "retroalimentacion": "6 es múltiplo común de 2 y 3; 20 es múltiplo común de 4 y 5; 18 es múltiplo común de 6 y 9."
+          "retroalimentacion": "6 es múltiplo común de 2 y 3; 20 es múltiplo común de 4 y 5; 18 es múltiplo común de 6 y 9.",
+          "pistas": [
+            "Verifica que el número sea múltiplo de los dos números del par, igual que comprobamos que 20 es múltiplo común de 4 y 5.",
+            "6 es múltiplo común de 2 y 3; 20 es múltiplo común de 4 y 5; 18 es múltiplo común de 6 y 9."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Doña Rosa también quiere saber si 20 es un múltiplo común de 4 y 5.",
+        "pasos": [
+          {
+            "texto": "Verificamos que 20 sea múltiplo de 4.",
+            "operacion": "4×5=20"
+          },
+          {
+            "texto": "Verificamos que 20 sea múltiplo de 5.",
+            "operacion": "5×4=20"
+          }
+        ],
+        "respuestaFinal": "Sí, 20 es múltiplo común de 4 y 5, porque aparece en ambas listas de múltiplos."
+      }
     },
     {
       "numero": "4.4",
@@ -242,7 +320,11 @@
             "9"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "5 no es divisor de 36 (36÷5 no es exacto), así que no se pueden formar 5 equipos iguales sin que sobren libros."
+          "retroalimentacion": "5 no es divisor de 36 (36÷5 no es exacto), así que no se pueden formar 5 equipos iguales sin que sobren libros.",
+          "pistas": [
+            "Verifica si el número de equipos es un divisor exacto del total, igual que comprobamos que 8 no es divisor de las 54 paletas de doña Rosa.",
+            "5 no es divisor de 36 (36÷5 no es exacto), así que no se pueden formar 5 equipos iguales sin que sobren libros."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -254,7 +336,11 @@
           "tipo": "llenar_frase",
           "frase": "Si una bolsa debe tener 8 canicas, el número de bolsas que se pueden formar con 40 canicas es ___.",
           "respuestaCorrecta": "5",
-          "retroalimentacion": "40÷8=5, porque 8 es divisor de 40; se forman exactamente 5 bolsas sin que sobren canicas."
+          "retroalimentacion": "40÷8=5, porque 8 es divisor de 40; se forman exactamente 5 bolsas sin que sobren canicas.",
+          "pistas": [
+            "Divide el total entre el tamaño del grupo para ver cuántos grupos se forman, igual que verificamos la división de las 54 paletas de doña Rosa.",
+            "40÷8=5, porque 8 es divisor de 40; se forman exactamente 5 bolsas sin que sobren canicas."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -266,7 +352,11 @@
             "6"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "5 no es divisor común de 24 y 30 (24÷5 no es exacto); los divisores comunes de 24 y 30 son 1, 2, 3 y 6."
+          "retroalimentacion": "5 no es divisor común de 24 y 30 (24÷5 no es exacto); los divisores comunes de 24 y 30 son 1, 2, 3 y 6.",
+          "pistas": [
+            "Verifica si el número propuesto divide exactamente a ambas cantidades a la vez, el mismo procedimiento que usamos con las 54 paletas de doña Rosa.",
+            "5 no es divisor común de 24 y 30 (24÷5 no es exacto); los divisores comunes de 24 y 30 son 1, 2, 3 y 6."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -288,7 +378,20 @@
           ],
           "retroalimentacion": "Repartir en bolsas iguales usa los divisores de 60; el reencuentro periódico de los autobuses usa el mínimo común múltiplo; formar el mayor número de equipos iguales entre dos grupos usa el máximo común divisor."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Doña Rosa tiene 54 paletas y quiere acomodarlas en bolsas con la misma cantidad cada una, sin que sobre ninguna. ¿Puede usar bolsas de 8 paletas cada una?",
+        "pasos": [
+          {
+            "texto": "Dividimos 54 entre 8 para ver si es exacto.",
+            "operacion": "54÷8=6 residuo 6"
+          },
+          {
+            "texto": "Como no es exacto, 8 no es divisor de 54."
+          }
+        ],
+        "respuestaFinal": "No, doña Rosa no puede usar bolsas de 8 paletas cada una, porque 54 no es divisible entre 8 (sobrarían 6 paletas)."
+      }
     }
   ],
   "practicaExtra": [

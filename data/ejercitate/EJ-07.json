@@ -35,7 +35,11 @@
             "4/2"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Se tomaron 4 partes de las 6 partes iguales en que se dividió el jardín, por eso la fracción es 4/6."
+          "retroalimentacion": "Se tomaron 4 partes de las 6 partes iguales en que se dividió el jardín, por eso la fracción es 4/6.",
+          "pistas": [
+            "El denominador es el total de partes iguales y el numerador las que se toman, igual que identificamos 4/10 con el pastel que comió Daniela.",
+            "Se tomaron 4 partes de las 6 partes iguales en que se dividió el jardín, por eso la fracción es 4/6."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -47,7 +51,11 @@
           "tipo": "llenar_frase",
           "frase": "En la fracción 5/12, el denominador es ___.",
           "respuestaCorrecta": "12",
-          "retroalimentacion": "El denominador es el número de abajo; indica en cuántas partes iguales se dividió el entero: 12."
+          "retroalimentacion": "El denominador es el número de abajo; indica en cuántas partes iguales se dividió el entero: 12.",
+          "pistas": [
+            "El denominador es el número de abajo e indica en cuántas partes iguales se dividió el entero, igual que identificamos el denominador 10 del pastel de Daniela.",
+            "El denominador es el número de abajo; indica en cuántas partes iguales se dividió el entero: 12."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -59,7 +67,11 @@
             "10/7"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Si se sirvieron 7 de 10, quedan 10-7=3 rebanadas, es decir 3/10 del pastel."
+          "retroalimentacion": "Si se sirvieron 7 de 10, quedan 10-7=3 rebanadas, es decir 3/10 del pastel.",
+          "pistas": [
+            "Resta las partes tomadas del total para saber cuántas quedan, y exprésalo como fracción, igual que calculamos la fracción del pastel que comió Daniela.",
+            "Si se sirvieron 7 de 10, quedan 10-7=3 rebanadas, es decir 3/10 del pastel."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -81,7 +93,21 @@
           ],
           "retroalimentacion": "El numerador (arriba) indica las partes tomadas; el denominador (abajo) las partes totales iguales; la línea de fracción significa 'entre' y separa ambos."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "En la misma fiesta, un pastel se dividió en 10 rebanadas iguales y Daniela comió 4. ¿Qué fracción del pastel comió?",
+        "pasos": [
+          {
+            "texto": "Identificamos el denominador: el total de partes iguales.",
+            "operacion": "denominador=10"
+          },
+          {
+            "texto": "Identificamos el numerador: las partes que se tomaron.",
+            "operacion": "numerador=4"
+          }
+        ],
+        "respuestaFinal": "Daniela comió 4/10 del pastel."
+      }
     },
     {
       "numero": "7.2",
@@ -104,7 +130,11 @@
             "2/9"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "11/6 es impropia porque el numerador (11) es mayor que el denominador (6); representa más de un entero."
+          "retroalimentacion": "11/6 es impropia porque el numerador (11) es mayor que el denominador (6); representa más de un entero.",
+          "pistas": [
+            "Una fracción es impropia cuando el numerador es mayor que el denominador, igual que 11/4 (11>4) en la pizza que sobró.",
+            "11/6 es impropia porque el numerador (11) es mayor que el denominador (6); representa más de un entero."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -116,7 +146,11 @@
           "tipo": "llenar_frase",
           "frase": "La fracción mixta equivalente a 13/4 es 3 ___/4.",
           "respuestaCorrecta": "1",
-          "retroalimentacion": "13 entre 4 da 3 enteros con residuo 1, entonces 13/4 = 3 1/4."
+          "retroalimentacion": "13 entre 4 da 3 enteros con residuo 1, entonces 13/4 = 3 1/4.",
+          "pistas": [
+            "Divide el numerador entre el denominador: el cociente es la parte entera y el residuo la nueva fracción, igual que convertimos 11/4 a 2 3/4.",
+            "13 entre 4 da 3 enteros con residuo 1, entonces 13/4 = 3 1/4."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -128,7 +162,11 @@
             "17 5/1 bultos"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "17 entre 5 = 3 con residuo 2, entonces 17/5 = 3 2/5 bultos."
+          "retroalimentacion": "17 entre 5 = 3 con residuo 2, entonces 17/5 = 3 2/5 bultos.",
+          "pistas": [
+            "Divide el numerador entre el denominador para obtener el número mixto, el mismo procedimiento que usamos con 11/4 de pizza.",
+            "17 entre 5 = 3 con residuo 2, entonces 17/5 = 3 2/5 bultos."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -150,7 +188,21 @@
           ],
           "retroalimentacion": "7/9 es propia (7<9); 10/3 es impropia y mayor que un entero (10>3); 6/6 es impropia pero igual a exactamente 1 entero (numerador = denominador)."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Si sobraron 11/4 de pizza (en fracción impropia), ¿cuál es su número mixto equivalente?",
+        "pasos": [
+          {
+            "texto": "Dividimos el numerador entre el denominador.",
+            "operacion": "11÷4=2 residuo 3"
+          },
+          {
+            "texto": "Escribimos el resultado como número mixto.",
+            "operacion": "11/4=2 3/4"
+          }
+        ],
+        "respuestaFinal": "11/4 equivale al número mixto 2 3/4."
+      }
     },
     {
       "numero": "7.3",
@@ -173,7 +225,11 @@
             "1"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "El denominador (6) indica en cuántas partes iguales se divide el segmento entre 0 y 1; luego se cuentan 5 de esas partes."
+          "retroalimentacion": "El denominador (6) indica en cuántas partes iguales se divide el segmento entre 0 y 1; luego se cuentan 5 de esas partes.",
+          "pistas": [
+            "El denominador indica en cuántas partes dividir el segmento entre 0 y 1, igual que dividimos en 8 partes para ubicar 7/8.",
+            "El denominador (6) indica en cuántas partes iguales se divide el segmento entre 0 y 1; luego se cuentan 5 de esas partes."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -185,7 +241,11 @@
           "tipo": "llenar_frase",
           "frase": "Si divides el segmento entre 0 y 1 en 8 partes iguales y cuentas 5, ubicaste la fracción ___.",
           "respuestaCorrecta": "5/8",
-          "retroalimentacion": "8 partes iguales indica el denominador, y contar 5 indica el numerador: la fracción es 5/8."
+          "retroalimentacion": "8 partes iguales indica el denominador, y contar 5 indica el numerador: la fracción es 5/8.",
+          "pistas": [
+            "El número de partes en que divides el segmento es el denominador, y las que cuentas es el numerador, igual que ubicamos 7/8 dividiendo en 8 partes.",
+            "8 partes iguales indica el denominador, y contar 5 indica el numerador: la fracción es 5/8."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -197,7 +257,11 @@
             "4/5"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Se sombrearon 4 de los 9 cuadros iguales, por lo que la fracción es 4/9."
+          "retroalimentacion": "Se sombrearon 4 de los 9 cuadros iguales, por lo que la fracción es 4/9.",
+          "pistas": [
+            "El denominador es el total de partes de la figura y el numerador las que se sombrean, el mismo procedimiento que usamos para ubicar 7/8 en la recta numérica.",
+            "Se sombrearon 4 de los 9 cuadros iguales, por lo que la fracción es 4/9."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -219,7 +283,21 @@
           ],
           "retroalimentacion": "1/4 está cerca del inicio; 1/2 está justo a la mitad; 3/4 está cerca del final del segmento entre 0 y 1."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Para ubicar 7/8 en la recta numérica entre 0 y 1, ¿en cuántas partes debes dividir el segmento, y cuántas debes contar?",
+        "pasos": [
+          {
+            "texto": "El denominador indica en cuántas partes iguales se divide el segmento entre 0 y 1.",
+            "operacion": "denominador=8"
+          },
+          {
+            "texto": "El numerador indica cuántas partes se cuentan desde el 0.",
+            "operacion": "numerador=7"
+          }
+        ],
+        "respuestaFinal": "Debes dividir el segmento en 8 partes iguales y contar 7 de ellas para ubicar 7/8."
+      }
     },
     {
       "numero": "7.4",
@@ -242,19 +320,31 @@
             "8 5/2"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Hay 2 enteros completos más 5/8 de otra pizza, entonces la fracción mixta es 2 5/8."
+          "retroalimentacion": "Hay 2 enteros completos más 5/8 de otra pizza, entonces la fracción mixta es 2 5/8.",
+          "pistas": [
+            "Los enteros completos más la fracción restante forman la fracción mixta, igual que calculamos 3 2/8 para la pizza sobrante.",
+            "Hay 2 enteros completos más 5/8 de otra pizza, entonces la fracción mixta es 2 5/8."
+          ]
         },
         {
           "tipo": "llenar_frase",
           "frase": "La fracción mixta 2 5/8 escrita como fracción impropia es ___/8.",
           "respuestaCorrecta": "21",
-          "retroalimentacion": "2 enteros equivalen a 16/8 (2×8); sumando 5/8 da 21/8."
+          "retroalimentacion": "2 enteros equivalen a 16/8 (2×8); sumando 5/8 da 21/8.",
+          "pistas": [
+            "Multiplica los enteros por el denominador y suma el numerador para obtener la fracción impropia, igual que convertimos 3 2/8 a 26/8.",
+            "2 enteros equivalen a 16/8 (2×8); sumando 5/8 da 21/8."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "La fracción 21/8 se ubica en la recta numérica entre los enteros 2 y 3.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "21/8 equivale a 2.625, que está entre 2 y 3 en la recta numérica."
+          "retroalimentacion": "21/8 equivale a 2.625, que está entre 2 y 3 en la recta numérica.",
+          "pistas": [
+            "Convierte la fracción impropia a número decimal o mixto para ubicarla entre dos enteros, el mismo procedimiento que usamos con 26/8 de pizza sobrante.",
+            "21/8 equivale a 2.625, que está entre 2 y 3 en la recta numérica."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -288,7 +378,21 @@
           ],
           "retroalimentacion": "3/10 es propia (menor que un entero); 17/10 es impropia y mayor que un entero; 10/10 es impropia pero igual exactamente a 1 entero."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Sobraron 3 pizzas completas más 2 rebanadas de una pizza cortada en 8. ¿Cuál es la fracción mixta y la fracción impropia equivalente que representan el total sobrante?",
+        "pasos": [
+          {
+            "texto": "Identificamos la fracción mixta: enteros completos más la fracción restante.",
+            "operacion": "3 entero(s) y 2/8"
+          },
+          {
+            "texto": "Convertimos a fracción impropia multiplicando los enteros por el denominador y sumando el numerador.",
+            "operacion": "3×8=24; 24+2=26; 26/8"
+          }
+        ],
+        "respuestaFinal": "El total sobrante es la fracción mixta 3 2/8, equivalente a la fracción impropia 26/8."
+      }
     }
   ],
   "practicaExtra": [

@@ -35,7 +35,11 @@
             "9"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "La suma es 4+6+8+10+12 = 40, y 40÷5 = 8."
+          "retroalimentacion": "La suma es 4+6+8+10+12 = 40, y 40÷5 = 8.",
+          "pistas": [
+            "Suma todos los valores y divide entre la cantidad de datos, igual que calculamos 12.5 como media de puntos del otro jugador del entrenador.",
+            "4+6+8+10+12=40; 40÷5=8."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -47,7 +51,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "La media de un conjunto de datos siempre tiene que ser uno de los datos originales.",
           "respuestaCorrecta": false,
-          "retroalimentacion": "Falso: por ejemplo, la media de 2, 3 y 4 es 3, pero la media de 2 y 3 es 2.5, un valor que no estaba en los datos."
+          "retroalimentacion": "Falso: por ejemplo, la media de 2, 3 y 4 es 3, pero la media de 2 y 3 es 2.5, un valor que no estaba en los datos.",
+          "pistas": [
+            "La media es un promedio calculado, no necesariamente un valor que aparezca en los datos originales, el mismo caso que vimos con la media de 12.5 del jugador (que no es ninguno de los 4 valores).",
+            "Falso: la media es un cálculo (suma entre cantidad de datos) y casi nunca coincide exactamente con alguno de los datos originales."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -59,7 +67,11 @@
             "$35"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "La suma es 20+35+15+30 = 100, y 100÷4 = 25."
+          "retroalimentacion": "La suma es 20+35+15+30 = 100, y 100÷4 = 25.",
+          "pistas": [
+            "Suma todos los valores y divide entre el número de datos, el mismo procedimiento que usamos para calcular la media de 12.5 puntos del jugador.",
+            "20+35+15+30=100; 100÷4=25 pesos de propina promedio."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -81,7 +93,21 @@
           ],
           "retroalimentacion": "2,4,6 suma 12÷3=4; 10,20,30 suma 60÷3=20; 5,5,5,5 suma 20÷4=5."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El entrenador también calcula la media de puntos de otro jugador en 4 partidos: 12, 15, 10, 13.",
+        "pasos": [
+          {
+            "texto": "Sumamos todos los valores.",
+            "operacion": "12+15+10+13=50"
+          },
+          {
+            "texto": "Dividimos entre el número de datos.",
+            "operacion": "50÷4=12.5"
+          }
+        ],
+        "respuestaFinal": "La media de puntos del jugador es 12.5."
+      }
     },
     {
       "numero": "38.2",
@@ -104,7 +130,11 @@
             "9"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Ordenados: 1, 3, 5, 7, 9. El valor central es 5."
+          "retroalimentacion": "Ordenados: 1, 3, 5, 7, 9. El valor central es 5.",
+          "pistas": [
+            "Ordena los datos de menor a mayor y encuentra el valor de en medio, igual que calculamos la mediana=10 para el otro conjunto de puntos del entrenador.",
+            "Ordenando 3,7,5,9,1 → 1,3,5,7,9; el valor de en medio es 5."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -116,7 +146,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Para encontrar la mediana, primero hay que ordenar los datos de menor a mayor (o de mayor a menor).",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: la mediana solo tiene sentido si los datos están ordenados, porque es el valor 'de en medio'."
+          "retroalimentacion": "Correcto: la mediana solo tiene sentido si los datos están ordenados, porque es el valor 'de en medio'.",
+          "pistas": [
+            "Antes de encontrar la mediana, siempre hay que ordenar los datos de menor a mayor (o al revés), el mismo paso que seguimos para encontrar la mediana=10 en el otro conjunto del entrenador.",
+            "Verdadero: ordenar los datos es el primer paso indispensable para encontrar la mediana correctamente."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -128,7 +162,11 @@
             "El promedio de todos"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Con 7 datos (impar), la mediana está en la posición (7+1)÷2 = 4, dejando 3 datos antes y 3 después."
+          "retroalimentacion": "Con 7 datos (impar), la mediana está en la posición (7+1)÷2 = 4, dejando 3 datos antes y 3 después.",
+          "pistas": [
+            "Con un número impar de datos ordenados, la mediana es el valor justo en el centro, el mismo tipo de análisis que usamos para encontrar la mediana=10 con 5 datos del entrenador.",
+            "En una lista de 7 datos ordenados, la mediana ocupa la posición 4 (la de en medio: 3 datos antes y 3 después)."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -150,7 +188,21 @@
           ],
           "retroalimentacion": "1,2,3,4,5 tiene mediana 3; 10,20,30,40 tiene mediana (20+30)÷2=25; 6,6,6,6,6 tiene mediana 6."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El entrenador también busca la mediana de otro conjunto de puntos: 8, 14, 6, 20, 10.",
+        "pasos": [
+          {
+            "texto": "Ordenamos los datos de menor a mayor.",
+            "operacion": "6, 8, 10, 14, 20"
+          },
+          {
+            "texto": "Identificamos el valor de en medio.",
+            "operacion": "mediana=10"
+          }
+        ],
+        "respuestaFinal": "La mediana de ese conjunto de datos es 10."
+      }
     },
     {
       "numero": "38.3",
@@ -173,7 +225,11 @@
             "9"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "El 5 aparece 3 veces, más que cualquier otro valor, así que es la moda."
+          "retroalimentacion": "El 5 aparece 3 veces, más que cualquier otro valor, así que es la moda.",
+          "pistas": [
+            "Cuenta cuántas veces se repite cada valor y elige el que más se repite, igual que calculamos moda=6 para el otro conjunto de puntos del entrenador.",
+            "En 5,7,5,9,5,3, el valor 5 aparece 3 veces, más que cualquier otro, así que la moda es 5."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -185,7 +241,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Un conjunto de datos puede no tener moda si todos los valores son diferentes.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: si ningún dato se repite, no hay un valor que sea 'el más frecuente', así que no hay moda."
+          "retroalimentacion": "Correcto: si ningún dato se repite, no hay un valor que sea 'el más frecuente', así que no hay moda.",
+          "pistas": [
+            "La moda es el valor que MÁS se repite; si ningún valor se repite, no hay moda, el mismo concepto que usamos al identificar que 6 es la moda (porque se repite 3 veces) en el conjunto del entrenador.",
+            "Verdadero: si todos los valores de un conjunto son diferentes, no hay moda, porque ninguno se repite más que otro."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -197,7 +257,11 @@
             "No hay moda"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Fútbol aparece 3 veces, más que básquetbol (2 veces) y voleibol (1 vez)."
+          "retroalimentacion": "Fútbol aparece 3 veces, más que básquetbol (2 veces) y voleibol (1 vez).",
+          "pistas": [
+            "Cuenta cuántas veces aparece cada categoría y elige la más frecuente, el mismo procedimiento que usamos para encontrar que 6 es la moda del conjunto del entrenador.",
+            "Fútbol aparece 3 veces, más que básquetbol (2) o voleibol (1), así que la moda es fútbol."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -219,7 +283,21 @@
           ],
           "retroalimentacion": "3,3,3,7,9 tiene una sola moda (3); 2,2,5,5,8 tiene dos modas (2 y 5); 1,2,3,4,5 no tiene moda."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El entrenador también busca la moda de otro conjunto de puntos: 6, 9, 6, 6, 3, 9.",
+        "pasos": [
+          {
+            "texto": "Contamos cuántas veces se repite cada valor.",
+            "operacion": "6 aparece 3 veces; 9 aparece 2 veces; 3 aparece 1 vez"
+          },
+          {
+            "texto": "Identificamos el valor que más se repite.",
+            "operacion": "moda=6"
+          }
+        ],
+        "respuestaFinal": "La moda de ese conjunto de datos es 6, porque es el valor que más se repite."
+      }
     },
     {
       "numero": "38.4",
@@ -241,7 +319,11 @@
             "20"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "La suma es 2+2+2+4+20 = 30, y 30÷5 = 6."
+          "retroalimentacion": "La suma es 2+2+2+4+20 = 30, y 30÷5 = 6.",
+          "pistas": [
+            "Suma todos los valores y divide entre el número de datos, igual que calculamos 8.8 como media de ventas de la otra tienda.",
+            "2+2+2+4+20=30; 30÷5=6."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -253,7 +335,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "En este caso, la mediana representa mejor el comportamiento típico de las ventas que la media, porque el día de 20 fue un valor atípico.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: la media (6) está 'jalada' hacia arriba por el día excepcional; la mediana (2) refleja mejor la mayoría de los días."
+          "retroalimentacion": "Correcto: la media (6) está 'jalada' hacia arriba por el día excepcional; la mediana (2) refleja mejor la mayoría de los días.",
+          "pistas": [
+            "Cuando hay un valor muy alejado del resto (atípico), la mediana representa mejor el comportamiento típico que la media, el mismo caso que identificamos con las ventas de 3,3,3,5,30 (media=8.8, distorsionada por el 30).",
+            "Verdadero: el valor de 20 es muy alto comparado con el resto, así que distorsiona la media; la mediana (2) representa mejor el comportamiento típico."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -265,7 +351,11 @@
             "Cualquiera, da lo mismo"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "Con datos categóricos (no numéricos) no se puede sumar ni ordenar de forma matemática, así que solo la moda tiene sentido."
+          "retroalimentacion": "Con datos categóricos (no numéricos) no se puede sumar ni ordenar de forma matemática, así que solo la moda tiene sentido.",
+          "pistas": [
+            "Cuando los datos son categorías (no números), solo tiene sentido usar la moda, el mismo tipo de análisis que distinguimos al comparar media, mediana y moda en las ventas de la tienda.",
+            "Para datos categóricos (como colores o preferencias), conviene usar la moda, porque no se pueden sumar ni ordenar numéricamente."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -287,7 +377,21 @@
           ],
           "retroalimentacion": "Sueldos con un valor extremo: conviene la mediana. Tallas más vendidas: conviene la moda. Calificaciones parejas: conviene la media."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Las ventas diarias (en cientos de pesos) de otra tienda en 5 días fueron: 3, 3, 3, 5, 30. ¿Cuál es la media?",
+        "pasos": [
+          {
+            "texto": "Sumamos todos los valores.",
+            "operacion": "3+3+3+5+30=44"
+          },
+          {
+            "texto": "Dividimos entre el número de datos.",
+            "operacion": "44÷5=8.8"
+          }
+        ],
+        "respuestaFinal": "La media de las ventas es 8.8 (cientos de pesos)."
+      }
     }
   ],
   "practicaExtra": [

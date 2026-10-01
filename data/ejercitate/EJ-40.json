@@ -34,13 +34,21 @@
             "Girar una ruleta"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "El agua siempre hierve a 100°C al nivel del mar; ese resultado se puede predecir con certeza, así que es determinista."
+          "retroalimentacion": "El agua siempre hierve a 100°C al nivel del mar; ese resultado se puede predecir con certeza, así que es determinista.",
+          "pistas": [
+            "Un experimento determinista es aquel cuyo resultado se puede predecir con total certeza, igual que identificamos que soltar una pelota (y que caiga) es determinista para Sofía.",
+            "Por ejemplo, 'calentar hielo a temperatura ambiente y ver si se derrite' es un experimento determinista, porque el resultado siempre es el mismo."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "Si repites un experimento aleatorio varias veces en las mismas condiciones, siempre obtendrás el mismo resultado.",
           "respuestaCorrecta": false,
-          "retroalimentacion": "Falso: esa es justo la diferencia con un experimento determinista. En uno aleatorio, el resultado puede variar cada vez."
+          "retroalimentacion": "Falso: esa es justo la diferencia con un experimento determinista. En uno aleatorio, el resultado puede variar cada vez.",
+          "pistas": [
+            "En un experimento aleatorio, el resultado puede variar aunque se repita en las mismas condiciones, a diferencia de un experimento determinista como soltar una pelota (que siempre cae) para Sofía.",
+            "Falso: en un experimento aleatorio, el resultado puede ser diferente cada vez, aunque las condiciones sean las mismas (como lanzar un dado)."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -58,7 +66,11 @@
             "La hora exacta en que el calendario marca el inicio de la primavera"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Lanzar dos dados tiene varios resultados posibles y no se puede predecir cuál ocurrirá; las otras opciones son datos fijos y predecibles."
+          "retroalimentacion": "Lanzar dos dados tiene varios resultados posibles y no se puede predecir cuál ocurrirá; las otras opciones son datos fijos y predecibles.",
+          "pistas": [
+            "Un experimento aleatorio es aquel cuyo resultado no se puede predecir con certeza antes de realizarlo, lo opuesto a soltar una pelota (determinista) que analizamos para Sofía.",
+            "Por ejemplo, 'lanzar una moneda y ver si cae águila o sol' es un experimento aleatorio, porque no se puede predecir el resultado con certeza."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -80,7 +92,21 @@
           ],
           "retroalimentacion": "Moneda: aleatorio (águila o sol). Agua hirviendo: determinista. Canica sin ver: aleatorio."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Sofía también piensa en otra situación: 'si suelto una pelota, ¿caerá al piso?' ¿Es un experimento determinista o aleatorio?",
+        "pasos": [
+          {
+            "texto": "Analizamos si el resultado se puede predecir con certeza (por la gravedad).",
+            "operacion": "la pelota siempre cae (gravedad)"
+          },
+          {
+            "texto": "Como el resultado es siempre el mismo y predecible, es un experimento determinista.",
+            "operacion": "determinista"
+          }
+        ],
+        "respuestaFinal": "Es un experimento determinista, porque el resultado (que la pelota caiga) siempre se puede predecir con certeza."
+      }
     },
     {
       "numero": "40.2",
@@ -103,7 +129,11 @@
             "{6}"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Los números del dado mayores que 4 son 5 y 6."
+          "retroalimentacion": "Los números del dado mayores que 4 son 5 y 6.",
+          "pistas": [
+            "Identifica todos los resultados del espacio muestral y selecciona los que cumplen la condición del evento, igual que encontramos {2,4,6} para el evento 'número par' de Sofía.",
+            "El evento 'sacar un número mayor que 4' está formado por los resultados {5, 6}."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -115,7 +145,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Un evento puede estar formado por un solo resultado del espacio muestral.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: por ejemplo, el evento 'sacar exactamente un 5' en un dado está formado por un solo resultado, {5}."
+          "retroalimentacion": "Correcto: por ejemplo, el evento 'sacar exactamente un 5' en un dado está formado por un solo resultado, {5}.",
+          "pistas": [
+            "Un evento puede estar formado por uno o varios resultados del espacio muestral, igual que el evento 'número par' de Sofía está formado por tres resultados {2,4,6}.",
+            "Verdadero: un evento puede tener un solo resultado, como 'sacar exactamente el número 5' al lanzar un dado."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -127,7 +161,11 @@
             "{AA, AS, SA}"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Hay 4 combinaciones posibles al lanzar dos monedas: águila-águila, águila-sol, sol-águila y sol-sol."
+          "retroalimentacion": "Hay 4 combinaciones posibles al lanzar dos monedas: águila-águila, águila-sol, sol-águila y sol-sol.",
+          "pistas": [
+            "Lista todas las combinaciones posibles para encontrar el espacio muestral completo, igual que listamos {1,2,3,4,5,6} para el dado del evento de Sofía.",
+            "El espacio muestral de lanzar una moneda dos veces es {águila-águila, águila-sol, sol-águila, sol-sol}."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -149,7 +187,21 @@
           ],
           "retroalimentacion": "Par: {2,4,6}. Menor que 3: {1,2}. El número 6: {6}."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Sofía también analiza, al lanzar un dado, el evento 'sacar un número par'. ¿Qué resultados lo forman?",
+        "pasos": [
+          {
+            "texto": "Identificamos todos los resultados posibles del dado.",
+            "operacion": "espacio muestral: 1,2,3,4,5,6"
+          },
+          {
+            "texto": "Seleccionamos solo los resultados pares.",
+            "operacion": "2, 4, 6"
+          }
+        ],
+        "respuestaFinal": "El evento 'sacar un número par' está formado por los resultados {2, 4, 6}."
+      }
     },
     {
       "numero": "40.3",
@@ -172,13 +224,21 @@
             "No se puede clasificar"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Todos los números del dado (1 al 6) son menores que 10, así que el evento siempre ocurre: es seguro."
+          "retroalimentacion": "Todos los números del dado (1 al 6) son menores que 10, así que el evento siempre ocurre: es seguro.",
+          "pistas": [
+            "Si el evento incluye TODOS los resultados posibles del espacio muestral, es un evento seguro, igual que identificamos con 'sacar un número entre 1 y 6' del dado de Sofía.",
+            "Es un evento seguro: todos los números del dado (1 al 6) son menores que 10, así que siempre ocurre."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "El evento 'sacar una carta roja de una baraja completa de 52 cartas (26 rojas)' es un evento seguro.",
           "respuestaCorrecta": false,
-          "retroalimentacion": "Falso: es un evento probable, con probabilidad 26/52 = 1/2. No siempre ocurre, porque también hay 26 cartas negras."
+          "retroalimentacion": "Falso: es un evento probable, con probabilidad 26/52 = 1/2. No siempre ocurre, porque también hay 26 cartas negras.",
+          "pistas": [
+            "Un evento seguro es aquel que SIEMPRE ocurre (probabilidad 1); si hay otra posibilidad (como sacar una carta negra), no es seguro, el mismo criterio que usamos con 'sacar un número entre 1 y 6' del dado de Sofía.",
+            "Falso: sacar una carta roja NO es un evento seguro, porque también podría salir una carta negra (hay 26 de cada color)."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -196,7 +256,11 @@
             "No se puede saber"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "La ruleta solo tiene esos 4 colores, así que caer en un color distinto nunca puede pasar: es imposible."
+          "retroalimentacion": "La ruleta solo tiene esos 4 colores, así que caer en un color distinto nunca puede pasar: es imposible.",
+          "pistas": [
+            "Si el evento no puede ocurrir con ninguno de los resultados del espacio muestral, es un evento imposible, lo opuesto al evento seguro que identificamos con el dado de Sofía.",
+            "Es un evento imposible, porque la ruleta solo tiene esos 4 colores; no existe ningún resultado que cumpla la condición."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -218,7 +282,21 @@
           ],
           "retroalimentacion": "Bola blanca en bolsa de negras: imposible. Número del 1 al 6 en un dado: seguro. Sacar un as: probable (4/52)."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Sofía también analiza, al lanzar un dado de 6 caras, el evento 'sacar un número entre 1 y 6'. ¿Qué tipo de evento es?",
+        "pasos": [
+          {
+            "texto": "Comparamos el evento con todo el espacio muestral del dado (1 a 6).",
+            "operacion": "evento = todo el espacio muestral"
+          },
+          {
+            "texto": "Como el evento incluye TODOS los resultados posibles, siempre ocurre.",
+            "operacion": "siempre ocurre → evento seguro"
+          }
+        ],
+        "respuestaFinal": "Es un evento seguro, porque incluye todos los resultados posibles del dado; siempre va a ocurrir."
+      }
     },
     {
       "numero": "40.4",
@@ -240,7 +318,11 @@
             "Aleatorio pero incierto"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Como todas las canicas son azules, siempre se sacará una azul: es un evento seguro."
+          "retroalimentacion": "Como todas las canicas son azules, siempre se sacará una azul: es un evento seguro.",
+          "pistas": [
+            "Si TODOS los elementos cumplen la condición del evento, es un evento seguro, igual que identificamos con las 12 pelotas rojas de la caja.",
+            "Es un evento seguro, porque todas las canicas de la bolsa son azules; siempre se va a cumplir."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -252,7 +334,11 @@
             "No tiene espacio muestral"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Un experimento aleatorio se caracteriza porque tiene resultados posibles conocidos, pero no se puede predecir cuál va a ocurrir."
+          "retroalimentacion": "Un experimento aleatorio se caracteriza porque tiene resultados posibles conocidos, pero no se puede predecir cuál va a ocurrir.",
+          "pistas": [
+            "Un experimento aleatorio es aquel cuyo resultado no se puede predecir con certeza antes de realizarlo, el mismo concepto que usamos para distinguir eventos seguros como el de las pelotas rojas de la caja.",
+            "La mejor descripción es: un experimento cuyo resultado no se puede predecir con certeza, aunque se conozcan todos los resultados posibles."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -264,7 +350,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Todo experimento aleatorio tiene un espacio muestral con más de un resultado posible.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: si solo hubiera un resultado posible, el resultado se podría predecir con certeza y el experimento sería determinista, no aleatorio."
+          "retroalimentacion": "Correcto: si solo hubiera un resultado posible, el resultado se podría predecir con certeza y el experimento sería determinista, no aleatorio.",
+          "pistas": [
+            "Un experimento aleatorio necesita que el resultado sea incierto, lo cual requiere al menos dos resultados posibles en su espacio muestral, el mismo tipo de razonamiento que usamos para identificar que las pelotas rojas de la caja forman un evento seguro.",
+            "Verdadero: si un experimento tuviera un espacio muestral de un solo resultado, ese resultado sería siempre el mismo y el experimento sería determinista, no aleatorio."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -286,7 +376,21 @@
           ],
           "retroalimentacion": "Del 1 al 6: seguro. Sacar un 9: imposible (el dado no lo tiene). Número par: probable, P=3/6=1/2."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Una caja tiene 12 pelotas rojas y ninguna de otro color. ¿Qué tipo de evento es 'sacar una pelota roja'?",
+        "pasos": [
+          {
+            "texto": "Comparamos el evento con el contenido total de la caja.",
+            "operacion": "todas las pelotas son rojas"
+          },
+          {
+            "texto": "Como TODOS los resultados posibles cumplen la condición, el evento siempre ocurre.",
+            "operacion": "evento seguro"
+          }
+        ],
+        "respuestaFinal": "Es un evento seguro, porque todas las pelotas de la caja son rojas; siempre se cumplirá."
+      }
     }
   ],
   "practicaExtra": [

@@ -34,13 +34,21 @@
             "(7, 2)"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Con x = 6, y = 3: 6 + 3 = 9 ✓ y 6 - 3 = 3 ✓. Cumple ambas ecuaciones al mismo tiempo."
+          "retroalimentacion": "Con x = 6, y = 3: 6 + 3 = 9 ✓ y 6 - 3 = 3 ✓. Cumple ambas ecuaciones al mismo tiempo.",
+          "pistas": [
+            "Un par ordenado es solución del sistema si cumple AMBAS ecuaciones al sustituirlo, igual que comprobamos (5,4) en x+y=9, x-y=1 para la cooperativa.",
+            "Para x+y=9, x-y=3: sumando ambas ecuaciones, 2x=12, x=6; y=9-6=3. El par es (6,3)."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "El par ordenado (4, 5) es solución del sistema x + y = 9, x - y = -1.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "4 + 5 = 9 ✓ y 4 - 5 = -1 ✓. Como cumple las dos ecuaciones, sí es la solución del sistema."
+          "retroalimentacion": "4 + 5 = 9 ✓ y 4 - 5 = -1 ✓. Como cumple las dos ecuaciones, sí es la solución del sistema.",
+          "pistas": [
+            "Sustituye ambos valores en las dos ecuaciones y verifica que se cumplan, el mismo procedimiento que usamos con (5,4) en el sistema de la cooperativa.",
+            "Verdadero: 4+5=9 ✓ y 4-5=-1 ✓, así que (4,5) sí es solución."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -58,7 +66,11 @@
             "Cuatro"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "El '2×2' indica dos ecuaciones y dos incógnitas (generalmente llamadas x y y)."
+          "retroalimentacion": "El '2×2' indica dos ecuaciones y dos incógnitas (generalmente llamadas x y y).",
+          "pistas": [
+            "Un sistema 2×2 tiene dos ecuaciones y dos incógnitas que se resuelven en conjunto, igual que hicimos para comprobar (5,4) en el sistema de la cooperativa.",
+            "Un sistema de ecuaciones 2×2 tiene exactamente 2 incógnitas (normalmente llamadas x e y)."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -80,7 +92,21 @@
           ],
           "retroalimentacion": "x + y = 5, x - y = 1 da (3,2); x + y = 12, x - y = 2 da (7,5); x + y = 8, x - y = 0 da (4,4)."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "En la cooperativa, otro compañero comprueba si el par (5, 4) es solución del sistema x + y = 9, x - y = 1.",
+        "pasos": [
+          {
+            "texto": "Sustituimos x=5, y=4 en la primera ecuación.",
+            "operacion": "5+4=9 ✓"
+          },
+          {
+            "texto": "Sustituimos en la segunda ecuación.",
+            "operacion": "5-4=1 ✓"
+          }
+        ],
+        "respuestaFinal": "Como ambas ecuaciones se cumplen, (5, 4) sí es solución del sistema."
+      }
     },
     {
       "numero": "26.2",
@@ -104,7 +130,11 @@
             "6"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Sustituyendo: x + (x + 2) = 10 → 2x = 8 → x = 4."
+          "retroalimentacion": "Sustituyendo: x + (x + 2) = 10 → 2x = 8 → x = 4.",
+          "pistas": [
+            "Sustituye la expresión de una variable en la otra ecuación y despeja, igual que resolvimos y=2x-1, x+y=14 (x=5) para la cooperativa.",
+            "y=x+2, x+y=10 → x+(x+2)=10 → 2x+2=10 → 2x=8 → x=4."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -116,7 +146,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "En el sistema y = 3x - 1, 2x + y = 9, al sustituir se obtiene 2x + 3x - 1 = 9, es decir 5x = 10, por lo que x = 2.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "2x + (3x - 1) = 9 → 5x - 1 = 9 → 5x = 10 → x = 2. El procedimiento y el resultado son correctos."
+          "retroalimentacion": "2x + (3x - 1) = 9 → 5x - 1 = 9 → 5x = 10 → x = 2. El procedimiento y el resultado son correctos.",
+          "pistas": [
+            "Sustituye la expresión de y en la otra ecuación y despeja x, el mismo procedimiento que usamos con y=2x-1, x+y=14 para la cooperativa.",
+            "Verdadero: 2x+(3x-1)=9 → 5x-1=9 → 5x=10 → x=2."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -140,9 +174,27 @@
             "3"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Sustituyendo: 2y + (y + 3) = 18 → 3y = 15 → y = 5."
+          "retroalimentacion": "Sustituyendo: 2y + (y + 3) = 18 → 3y = 15 → y = 5.",
+          "pistas": [
+            "Sustituye la expresión de x en la otra ecuación y despeja y, igual que hicimos con y=2x-1, x+y=14 (x=5) para la cooperativa.",
+            "x=y+3, 2y+x=18 → 2y+(y+3)=18 → 3y+3=18 → 3y=15 → y=5."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "En la cooperativa, otro problema se resuelve con: y = 2x - 1, x + y = 14.",
+        "pasos": [
+          {
+            "texto": "Sustituimos y=2x-1 en la segunda ecuación.",
+            "operacion": "x+(2x-1)=14"
+          },
+          {
+            "texto": "Resolvemos para x.",
+            "operacion": "3x-1=14 → 3x=15 → x=5"
+          }
+        ],
+        "respuestaFinal": "El valor de x es 5 (y y = 2(5)-1 = 9)."
+      }
     },
     {
       "numero": "26.3",
@@ -165,7 +217,11 @@
             "12"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Sumando las ecuaciones, la y se elimina: 2x = 20 → x = 10."
+          "retroalimentacion": "Sumando las ecuaciones, la y se elimina: 2x = 20 → x = 10.",
+          "pistas": [
+            "Suma las dos ecuaciones para eliminar la variable con signos opuestos, igual que resolvimos x+y=20, x-y=8 (x=14) para la cooperativa.",
+            "x+y=15, x-y=5 → sumando: 2x=20 → x=10."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -177,7 +233,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Para eliminar la variable y en el sistema x + 2y = 10, x - 2y = 2, basta con sumar ambas ecuaciones.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Como los coeficientes de y son opuestos (2y y -2y), al sumar las ecuaciones se cancelan y queda solo la x."
+          "retroalimentacion": "Como los coeficientes de y son opuestos (2y y -2y), al sumar las ecuaciones se cancelan y queda solo la x.",
+          "pistas": [
+            "Si una variable tiene signos opuestos en las dos ecuaciones, súmalas para eliminarla directamente, el mismo procedimiento que usamos con x+y=20, x-y=8 para la cooperativa.",
+            "Verdadero: sumando x+2y=10 y x-2y=2 se elimina la y: 2x=12."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -201,9 +261,27 @@
             "5"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Restando: (4x - x) + (y - y) = 19 - 7 → 3x = 12 → x = 4, y entonces y = 7 - 4 = 3."
+          "retroalimentacion": "Restando: (4x - x) + (y - y) = 19 - 7 → 3x = 12 → x = 4, y entonces y = 7 - 4 = 3.",
+          "pistas": [
+            "Resta las dos ecuaciones para eliminar la variable que se repite con el mismo signo, igual que usamos la suma para eliminar y en x+y=20, x-y=8 de la cooperativa.",
+            "4x+y=19, x+y=7 → restando: 3x=12 → x=4; sustituyendo: 4+y=7 → y=3."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "En la cooperativa, otro problema se resuelve por eliminación: x + y = 20, x - y = 8.",
+        "pasos": [
+          {
+            "texto": "Sumamos ambas ecuaciones para eliminar y.",
+            "operacion": "(x+y)+(x-y)=20+8 → 2x=28"
+          },
+          {
+            "texto": "Despejamos x.",
+            "operacion": "x=28÷2=14"
+          }
+        ],
+        "respuestaFinal": "El valor de x es 14."
+      }
     },
     {
       "numero": "26.4",
@@ -225,13 +303,21 @@
             "$4"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Restando las ecuaciones (3p + 2l) - (1p + 2l) = 28 - 16 → 2p = 12 → p = 6."
+          "retroalimentacion": "Restando las ecuaciones (3p + 2l) - (1p + 2l) = 28 - 16 → 2p = 12 → p = 6.",
+          "pistas": [
+            "Resta las dos ecuaciones para eliminar los lápices y encontrar el precio de la pluma, igual que resolvimos el sistema de plumas y lápices (pluma=$6).",
+            "Restando (3p+2l=28) - (p+2l=16): 2p=12 → p=6."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "La suma de dos números es 20 y su diferencia es 4. Los números son 12 y 8.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "12 + 8 = 20 ✓ y 12 - 8 = 4 ✓. El sistema x + y = 20, x - y = 4 tiene como solución x = 12, y = 8."
+          "retroalimentacion": "12 + 8 = 20 ✓ y 12 - 8 = 4 ✓. El sistema x + y = 20, x - y = 4 tiene como solución x = 12, y = 8.",
+          "pistas": [
+            "Plantea un sistema: suma de los números = 20, diferencia = 4; súmalas y resta para encontrar cada número, igual que resolvimos el sistema de plumas y lápices.",
+            "Verdadero: si x+y=20 y x-y=4, sumando: 2x=24, x=12; y=20-12=8."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -249,7 +335,11 @@
             "$35"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Despejando x = 90 - 2y de la primera y sustituyendo en la segunda: y + 3(90 - 2y) = 80 → -5y = -190 → y = 38."
+          "retroalimentacion": "Despejando x = 90 - 2y de la primera y sustituyendo en la segunda: y + 3(90 - 2y) = 80 → -5y = -190 → y = 38.",
+          "pistas": [
+            "Despeja una variable de una ecuación y sustitúyela en la otra, el mismo método que usamos para resolver el precio de la pluma ($6).",
+            "De 2a+n=90, n=90-2a; sustituyendo en a+3n=80: a+3(90-2a)=80 → a+270-6a=80 → -5a=-190 → a=38."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -271,7 +361,21 @@
           ],
           "retroalimentacion": "Cuando y ya está despejada conviene sustitución; cuando una variable tiene el mismo coeficiente en ambas ecuaciones conviene eliminación (restando si el signo es igual, sumando si es opuesto)."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "En otra compra, 2 plumas y 1 lápiz cuestan $17; 1 pluma y 3 lápices cuestan $21. ¿Cuánto cuesta una pluma?",
+        "pasos": [
+          {
+            "texto": "Despejamos una variable de la primera ecuación.",
+            "operacion": "l=17-2p"
+          },
+          {
+            "texto": "Sustituimos en la segunda ecuación y resolvemos.",
+            "operacion": "p+3(17-2p)=21 → -5p=-30 → p=6"
+          }
+        ],
+        "respuestaFinal": "Una pluma cuesta $6."
+      }
     }
   ],
   "practicaExtra": [

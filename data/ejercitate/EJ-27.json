@@ -34,13 +34,21 @@
             "IV"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Con x negativa y y positiva, el punto está en el cuadrante II."
+          "retroalimentacion": "Con x negativa y y positiva, el punto está en el cuadrante II.",
+          "pistas": [
+            "Observa el signo de cada coordenada para identificar el cuadrante, igual que ubicamos al enemigo en (-4,-6) en el cuadrante III.",
+            "(-3, 5): x negativo, y positivo → cuadrante II."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "El punto (0, 4) se encuentra sobre el eje Y.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Cuando la coordenada x es 0, el punto siempre está sobre el eje Y."
+          "retroalimentacion": "Cuando la coordenada x es 0, el punto siempre está sobre el eje Y.",
+          "pistas": [
+            "Un punto está sobre el eje Y cuando su coordenada x es 0, el mismo tipo de análisis que usamos para ubicar al enemigo en (-4,-6).",
+            "Verdadero: en (0, 4), la coordenada x es 0, así que el punto está sobre el eje Y."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -58,7 +66,11 @@
             "(+, -)"
           ],
           "respuestaCorrecta": 3,
-          "retroalimentacion": "En el cuadrante IV, la x es positiva y la y es negativa: (+, -)."
+          "retroalimentacion": "En el cuadrante IV, la x es positiva y la y es negativa: (+, -).",
+          "pistas": [
+            "Cada cuadrante tiene una combinación distinta de signos para x e y, igual que identificamos que (-4,-6) está en el cuadrante III (ambas negativas).",
+            "En el cuadrante IV, x es positivo y y es negativo."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -80,7 +92,21 @@
           ],
           "retroalimentacion": "(5,2) tiene ambas positivas: cuadrante I. (-1,6) tiene x negativa y y positiva: cuadrante II. (-3,-7) tiene ambas negativas: cuadrante III."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "En el mismo videojuego, un enemigo aparece en la posición (-4, -6). ¿En qué cuadrante se ubica?",
+        "pasos": [
+          {
+            "texto": "Observamos el signo de cada coordenada.",
+            "operacion": "x=-4 (negativo), y=-6 (negativo)"
+          },
+          {
+            "texto": "Identificamos el cuadrante donde ambas coordenadas son negativas.",
+            "operacion": "cuadrante III"
+          }
+        ],
+        "respuestaFinal": "El enemigo se ubica en el cuadrante III, porque ambas coordenadas son negativas."
+      }
     },
     {
       "numero": "27.2",
@@ -103,13 +129,21 @@
             "5 a la izquierda, 3 hacia abajo"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Como x = -5, te mueves 5 a la izquierda; como y = 3, te mueves 3 hacia arriba."
+          "retroalimentacion": "Como x = -5, te mueves 5 a la izquierda; como y = 3, te mueves 3 hacia arriba.",
+          "pistas": [
+            "La coordenada x mueve horizontalmente y la coordenada y mueve verticalmente desde el origen, igual que ubicamos (-2,-7) para el objeto del videojuego.",
+            "(-5, 3): 5 unidades a la izquierda (x negativa) y 3 unidades hacia arriba (y positiva)."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "Para ubicar el punto (6, -4), te mueves 6 unidades a la derecha y 4 hacia abajo.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "x = 6 (positivo) es 6 a la derecha, y y = -4 (negativo) es 4 hacia abajo."
+          "retroalimentacion": "x = 6 (positivo) es 6 a la derecha, y y = -4 (negativo) es 4 hacia abajo.",
+          "pistas": [
+            "La coordenada x positiva mueve a la derecha y la coordenada y negativa mueve hacia abajo, el mismo principio que usamos para ubicar (-2,-7) en el videojuego.",
+            "Verdadero: para (6, -4), te mueves 6 unidades a la derecha y 4 unidades hacia abajo."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -127,7 +161,11 @@
             "(-2, -8)"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "2 a la izquierda es x = -2, y 8 hacia arriba es y = 8, así que el par es (-2, 8)."
+          "retroalimentacion": "2 a la izquierda es x = -2, y 8 hacia arriba es y = 8, así que el par es (-2, 8).",
+          "pistas": [
+            "Izquierda es x negativa y arriba es y positiva, igual que analizamos los movimientos para ubicar (-2,-7) en el videojuego.",
+            "Moverse 2 a la izquierda y 8 hacia arriba corresponde al par ordenado (-2, 8)."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -135,7 +173,21 @@
           "respuestaCorrecta": "Y",
           "retroalimentacion": "El segundo número de un par ordenado siempre corresponde al movimiento vertical, sobre el eje Y."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "En el videojuego, otro objeto está en la posición (-2, -7). ¿Qué movimientos se hacen desde el origen para ubicarlo?",
+        "pasos": [
+          {
+            "texto": "La coordenada x indica el movimiento horizontal.",
+            "operacion": "-2 → 2 unidades a la izquierda"
+          },
+          {
+            "texto": "La coordenada y indica el movimiento vertical.",
+            "operacion": "-7 → 7 unidades hacia abajo"
+          }
+        ],
+        "respuestaFinal": "Para ubicar (-2, -7), te mueves 2 unidades a la izquierda y 7 hacia abajo desde el origen."
+      }
     },
     {
       "numero": "27.3",
@@ -158,13 +210,21 @@
             "(-4, -6)"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "4 a la derecha es x = 4, y 6 hacia abajo es y = -6, así que el punto es (4, -6)."
+          "retroalimentacion": "4 a la derecha es x = 4, y 6 hacia abajo es y = -6, así que el punto es (4, -6).",
+          "pistas": [
+            "Derecha es x positiva y abajo es y negativa, igual que ubicamos el ítem en (-5,-2) del videojuego.",
+            "4 unidades a la derecha y 6 hacia abajo: coordenadas (4, -6)."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "Un punto ubicado 5 a la izquierda y 5 hacia arriba del origen tiene coordenadas (5, 5).",
           "respuestaCorrecta": false,
-          "retroalimentacion": "Como el movimiento es hacia la izquierda, x debe ser negativo: las coordenadas correctas son (-5, 5), no (5, 5)."
+          "retroalimentacion": "Como el movimiento es hacia la izquierda, x debe ser negativo: las coordenadas correctas son (-5, 5), no (5, 5).",
+          "pistas": [
+            "Izquierda es x negativa y arriba es y positiva, el mismo criterio que usamos para ubicar el ítem en (-5,-2) del videojuego.",
+            "Falso: 5 a la izquierda y 5 hacia arriba corresponde a (-5, 5), no a (5, 5)."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -182,7 +242,11 @@
             "(3, -7)"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "3 a la derecha es x = 3, y 7 hacia arriba es y = 7, así que el punto es (3, 7)."
+          "retroalimentacion": "3 a la derecha es x = 3, y 7 hacia arriba es y = 7, así que el punto es (3, 7).",
+          "pistas": [
+            "Derecha es x positiva y arriba es y positiva, igual que analizamos para ubicar el ítem en (-5,-2) del videojuego.",
+            "3 unidades a la derecha y 7 hacia arriba: coordenadas (3, 7)."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -204,7 +268,21 @@
           ],
           "retroalimentacion": "2 a la derecha y 9 abajo es (2,-9); 6 a la izquierda y 1 abajo es (-6,-1); sin movimiento horizontal y 5 arriba es (0,5)."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "En el videojuego, un ítem está ubicado 5 unidades a la izquierda y 2 hacia abajo del origen. ¿Cuáles son sus coordenadas?",
+        "pasos": [
+          {
+            "texto": "La distancia a la izquierda se escribe como x negativa.",
+            "operacion": "5 a la izquierda → x=-5"
+          },
+          {
+            "texto": "La distancia hacia abajo se escribe como y negativa.",
+            "operacion": "2 hacia abajo → y=-2"
+          }
+        ],
+        "respuestaFinal": "Las coordenadas del ítem son (-5, -2)."
+      }
     },
     {
       "numero": "27.4",
@@ -227,7 +305,11 @@
             "9"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Como ambos comparten x = 3, la distancia es |9 - 2| = 7 unidades."
+          "retroalimentacion": "Como ambos comparten x = 3, la distancia es |9 - 2| = 7 unidades.",
+          "pistas": [
+            "Cuando dos puntos comparten la misma coordenada x, la distancia es la diferencia de sus coordenadas y, igual que calculamos 7 unidades para el aliado del videojuego.",
+            "(3,2) y (3,9) comparten x=3; la distancia es 9-2=7 unidades."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -239,7 +321,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Los puntos (-2, 5) y (6, 5) están a una distancia de 8 unidades porque comparten la misma coordenada y.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Como comparten y = 5, la distancia es |6 - (-2)| = 8 unidades."
+          "retroalimentacion": "Como comparten y = 5, la distancia es |6 - (-2)| = 8 unidades.",
+          "pistas": [
+            "Cuando dos puntos comparten la misma coordenada y, la distancia es la diferencia de sus coordenadas x, el mismo principio que usamos para el aliado del videojuego (7 unidades).",
+            "Verdadero: comparten y=5; la distancia es 6-(-2)=8 unidades."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -251,7 +337,11 @@
             "6"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Entre (1,1) y (1,5), que comparten x = 1, la distancia es |5 - 1| = 4 unidades: ese es el lado del cuadrado."
+          "retroalimentacion": "Entre (1,1) y (1,5), que comparten x = 1, la distancia es |5 - 1| = 4 unidades: ese es el lado del cuadrado.",
+          "pistas": [
+            "Resta las coordenadas de dos vértices que comparten x o y para encontrar la longitud de un lado, igual que calculamos la distancia del aliado del videojuego (7 unidades).",
+            "De (1,1) a (1,5): comparten x=1; el lado mide 5-1=4 unidades."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -273,7 +363,21 @@
           ],
           "retroalimentacion": "(2,3)-(2,10) comparten x: distancia 7. (-5,4)-(3,4) comparten y: distancia 8. (0,-6)-(0,6) comparten x: distancia 12."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "En el videojuego, un aliado está en (-1, 2) y debe llegar a un punto de control en (-1, 9). ¿Qué distancia debe recorrer?",
+        "pasos": [
+          {
+            "texto": "Observamos que ambos puntos comparten la misma coordenada x, así que el movimiento es vertical.",
+            "operacion": "misma x=-1"
+          },
+          {
+            "texto": "Restamos las coordenadas y para encontrar la distancia.",
+            "operacion": "9-2=7"
+          }
+        ],
+        "respuestaFinal": "El aliado debe recorrer 7 unidades para llegar al punto de control."
+      }
     }
   ],
   "practicaExtra": [

@@ -35,7 +35,11 @@
             "-8"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "12 es un número natural porque se usa para contar y no tiene signo negativo ni parte decimal."
+          "retroalimentacion": "12 es un número natural porque se usa para contar y no tiene signo negativo ni parte decimal.",
+          "pistas": [
+            "Un número natural se usa para contar y no tiene signo negativo ni parte decimal, igual que los 24 y 31 excursionistas que contamos en la montaña.",
+            "12 es un número natural porque se usa para contar y no tiene signo negativo ni parte decimal."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -47,7 +51,11 @@
           "tipo": "llenar_frase",
           "frase": "En la recta numérica, el número que está más a la derecha entre 15 y 9 es ___.",
           "respuestaCorrecta": "15",
-          "retroalimentacion": "15 está más a la derecha que 9 en la recta numérica, por lo tanto 15 es mayor."
+          "retroalimentacion": "15 está más a la derecha que 9 en la recta numérica, por lo tanto 15 es mayor.",
+          "pistas": [
+            "El número más a la derecha en la recta numérica es siempre el mayor, igual que comparamos 31 y 24 excursionistas.",
+            "15 está más a la derecha que 9 en la recta numérica, por lo tanto 15 es mayor."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -79,9 +87,26 @@
             0,
             2
           ],
-          "retroalimentacion": "50 es el mayor de los tres; 1 es el menor; 18 está entre 10 y 20."
+          "retroalimentacion": "50 es el mayor de los tres; 1 es el menor; 18 está entre 10 y 20.",
+          "pistas": [
+            "Ubica cada número en la recta numérica para saber cuál es mayor, menor o está entre otros dos, igual que comparamos los excursionistas de la mañana y la tarde.",
+            "50 es el mayor de los tres; 1 es el menor; 18 está entre 10 y 20."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El guía de montaña cuenta 24 excursionistas en la mañana y 31 en la tarde. ¿Cuál de los dos números está más a la derecha en la recta numérica?",
+        "pasos": [
+          {
+            "texto": "Identificamos que ambos son números naturales, usados para contar personas."
+          },
+          {
+            "texto": "Comparamos su posición en la recta numérica: el mayor está más a la derecha.",
+            "operacion": "31>24"
+          }
+        ],
+        "respuestaFinal": "31 está más a la derecha que 24 en la recta numérica, porque 31 es mayor."
+      }
     },
     {
       "numero": "1.2",
@@ -94,12 +119,30 @@
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
+      "ejemploResuelto": {
+        "enunciado": "Un buzo desciende hasta -18 metros (18 metros bajo el nivel del mar) para explorar un arrecife. ¿Cuál es el valor absoluto de su posición, y cuál sería la posición opuesta a la suya?",
+        "pasos": [
+          {
+            "texto": "El valor absoluto es la distancia al cero, sin importar el signo — basta con quitar el signo negativo.",
+            "operacion": "|-18| = 18"
+          },
+          {
+            "texto": "El opuesto es el mismo número pero con el signo cambiado: si estaba abajo del cero, su opuesto está arriba.",
+            "operacion": "opuesto de -18 = 18"
+          }
+        ],
+        "respuestaFinal": "Valor absoluto: 18 (18 metros de distancia al nivel del mar). Opuesto: +18 (18 metros sobre el nivel del mar)."
+      },
       "reactivos": [
         {
           "tipo": "llenar_frase",
           "frase": "El valor absoluto de -15 es ___.",
           "respuestaCorrecta": "15",
-          "retroalimentacion": "El valor absoluto siempre es positivo: |-15| = 15, la distancia de -15 al cero."
+          "retroalimentacion": "El valor absoluto siempre es positivo: |-15| = 15, la distancia de -15 al cero.",
+          "pistas": [
+            "El valor absoluto es la distancia al cero: siempre resulta positivo.",
+            "Quita el signo negativo de -15 y ese es tu valor absoluto."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -117,13 +160,21 @@
             "10"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "El valor absoluto de 20 es 20, porque ya es positivo y está a 20 unidades del cero."
+          "retroalimentacion": "El valor absoluto de 20 es 20, porque ya es positivo y está a 20 unidades del cero.",
+          "pistas": [
+            "El valor absoluto de un número positivo es el mismo número, sin cambios.",
+            "20 ya es positivo, así que su valor absoluto es 20 — búscalo entre las opciones."
+          ]
         },
         {
           "tipo": "llenar_frase",
           "frase": "El opuesto de 7 es ___.",
           "respuestaCorrecta": "-7",
-          "retroalimentacion": "El opuesto de 7 es -7: ambos están a 7 unidades del cero, pero en direcciones distintas."
+          "retroalimentacion": "El opuesto de 7 es -7: ambos están a 7 unidades del cero, pero en direcciones distintas.",
+          "pistas": [
+            "El opuesto de un número está a la misma distancia del cero, pero del otro lado.",
+            "Si 7 es positivo, su opuesto debe ser el mismo número pero negativo."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -168,7 +219,11 @@
             "0, -6, -9, 2"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "De menor a mayor: -9 < -6 < 0 < 2."
+          "retroalimentacion": "De menor a mayor: -9 < -6 < 0 < 2.",
+          "pistas": [
+            "Ubica los números en la recta numérica: el más a la izquierda es el menor, igual que ordenamos las temperaturas -15°C, -4°C y 2°C.",
+            "De menor a mayor: -9 < -6 < 0 < 2."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -186,7 +241,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "-30 es menor que -12.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "-30 está más a la izquierda que -12 en la recta numérica, así que -30 < -12."
+          "retroalimentacion": "-30 está más a la izquierda que -12 en la recta numérica, así que -30 < -12.",
+          "pistas": [
+            "Entre dos negativos, el que está más a la izquierda (más lejos del cero en magnitud) es el menor, igual que comparamos -15°C y -4°C.",
+            "-30 está más a la izquierda que -12 en la recta numérica, así que -30 < -12."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -204,9 +263,26 @@
             "-6, -14, -19, 22"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "De mayor a menor: 22 > -6 > -14 > -19."
+          "retroalimentacion": "De mayor a menor: 22 > -6 > -14 > -19.",
+          "pistas": [
+            "Ordena los números ubicándolos en la recta numérica, de derecha (mayor) a izquierda (menor), igual que ordenamos las temperaturas de la ciudad de montaña.",
+            "De mayor a menor: 22 > -6 > -14 > -19."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "En la misma ciudad de montaña, se registran las temperaturas de tres días: -15°C, -4°C y 2°C. El meteorólogo quiere ordenarlas de menor a mayor.",
+        "pasos": [
+          {
+            "texto": "Ubicamos los tres valores en la recta numérica."
+          },
+          {
+            "texto": "Ordenamos de menor a mayor: el más a la izquierda es el menor.",
+            "operacion": "-15<-4<2"
+          }
+        ],
+        "respuestaFinal": "De menor a mayor: -15°C, -4°C, 2°C."
+      }
     },
     {
       "numero": "1.4",
@@ -229,7 +305,11 @@
             "No se puede saber sin más datos"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "El submarino está a 85 m de distancia del 0 y el dron a 60 m; como 85 > 60, el submarino está más lejos."
+          "retroalimentacion": "El submarino está a 85 m de distancia del 0 y el dron a 60 m; como 85 > 60, el submarino está más lejos.",
+          "pistas": [
+            "Calcula la distancia de cada posición al 0 con valor absoluto y compáralas, igual que hicimos con el alpinista y el globo aerostático (40 m vs 75 m).",
+            "El submarino está a 85 m de distancia del 0 y el dron a 60 m; como 85 > 60, el submarino está más lejos."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -255,7 +335,11 @@
           "tipo": "llenar_frase",
           "frase": "Si la temperatura en la mañana es -6°C y baja 4°C más, la nueva temperatura es ___°C.",
           "respuestaCorrecta": "-10",
-          "retroalimentacion": "-6 menos 4 grados más es -10°C: la temperatura sigue bajando por debajo de cero."
+          "retroalimentacion": "-6 menos 4 grados más es -10°C: la temperatura sigue bajando por debajo de cero.",
+          "pistas": [
+            "Cuando la temperatura baja, se resta; cuando sube, se suma, igual que calculamos posiciones usando el 0 como referencia en la ciudad de montaña.",
+            "-6 menos 4 grados más es -10°C: la temperatura sigue bajando por debajo de cero."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -273,9 +357,27 @@
             "0, 200, -30, -120"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "De mayor a menor: 200 > 0 > -30 > -120."
+          "retroalimentacion": "De mayor a menor: 200 > 0 > -30 > -120.",
+          "pistas": [
+            "Ordena los valores en la recta numérica de derecha (mayor) a izquierda (menor), igual que comparamos al alpinista y al globo aerostático con el nivel 0.",
+            "De mayor a menor: 200 > 0 > -30 > -120."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Un alpinista está en una cueva a -40 m bajo el nivel del valle (0), y un globo aerostático vuela a 75 m sobre el mismo valle. ¿Cuál de los dos está más lejos del nivel 0?",
+        "pasos": [
+          {
+            "texto": "Calculamos la distancia de cada uno al nivel 0 usando el valor absoluto.",
+            "operacion": "|-40|=40; |75|=75"
+          },
+          {
+            "texto": "Comparamos ambas distancias.",
+            "operacion": "75>40"
+          }
+        ],
+        "respuestaFinal": "El globo aerostático está más lejos del nivel 0 (75 m), comparado con el alpinista en la cueva (40 m)."
+      }
     }
   ],
   "practicaExtra": [

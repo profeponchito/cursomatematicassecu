@@ -50,7 +50,11 @@
             ],
             []
           ],
-          "retroalimentacion": "28 + 45 = 73: en las unidades 8+5=13, escribes 3 y llevas 1; en las decenas 2+4+1=7."
+          "retroalimentacion": "28 + 45 = 73: en las unidades 8+5=13, escribes 3 y llevas 1; en las decenas 2+4+1=7.",
+          "pistas": [
+            "Suma las unidades primero; si llega a 10 o más, escribe el dígito y lleva 1 a las decenas, igual que calculamos 34+29=63 en la papelería de doña Rosa.",
+            "28 + 45 = 73: en las unidades 8+5=13, escribes 3 y llevas 1; en las decenas 2+4+1=7."
+          ]
         },
         {
           "tipo": "algoritmo_columnas",
@@ -77,7 +81,11 @@
               1
             ]
           ],
-          "retroalimentacion": "61 - 38 = 23: en las unidades no alcanza (1-8), pides prestada 1 decena: 11-8=3; en las decenas, 5 (porque el 6 prestó 1) - 3 = 2."
+          "retroalimentacion": "61 - 38 = 23: en las unidades no alcanza (1-8), pides prestada 1 decena: 11-8=3; en las decenas, 5 (porque el 6 prestó 1) - 3 = 2.",
+          "pistas": [
+            "Si el dígito de arriba es menor, pide prestada 1 decena antes de restar, el mismo procedimiento que usarías para verificar un cambio en la papelería de doña Rosa.",
+            "61 - 38 = 23: en las unidades no alcanza (1-8), pides prestada 1 decena: 11-8=3; en las decenas, 5 (porque el 6 prestó 1) - 3 = 2."
+          ]
         },
         {
           "tipo": "algoritmo_columnas",
@@ -131,7 +139,11 @@
             ],
             []
           ],
-          "retroalimentacion": "52 - 27 = 25: en las unidades no alcanza (2-7), pides prestada 1 decena: 12-7=5; en las decenas, 4 (porque el 5 prestó 1) - 2 = 2."
+          "retroalimentacion": "52 - 27 = 25: en las unidades no alcanza (2-7), pides prestada 1 decena: 12-7=5; en las decenas, 4 (porque el 5 prestó 1) - 2 = 2.",
+          "pistas": [
+            "Pide prestada 1 decena cuando el dígito de arriba es menor, igual que haríamos para verificar las cuentas de la papelería de doña Rosa.",
+            "52 - 27 = 25: en las unidades no alcanza (2-7), pides prestada 1 decena: 12-7=5; en las decenas, 4 (porque el 5 prestó 1) - 2 = 2."
+          ]
         },
         {
           "tipo": "algoritmo_columnas",
@@ -160,7 +172,21 @@
           ],
           "retroalimentacion": "47 + 38 = 85: en las unidades 7+8=15, escribes 5 y llevas 1; en las decenas 4+3+1=8."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "En la papelería de doña Rosa, un empleado suma 34 + 29 para el corte de caja.",
+        "pasos": [
+          {
+            "texto": "Sumamos las unidades; como el resultado es 10 o más, escribimos el dígito y llevamos 1.",
+            "operacion": "4+9=13→escribe 3, lleva 1"
+          },
+          {
+            "texto": "Sumamos las decenas más el acarreo.",
+            "operacion": "3+2+1=6"
+          }
+        ],
+        "respuestaFinal": "34 + 29 = 63."
+      }
     },
     {
       "numero": "11.2",
@@ -201,7 +227,11 @@
               1
             ]
           ],
-          "retroalimentacion": "348 + 276 = 624: en las unidades 8+6=14, escribes 4 y llevas 1; en las decenas 4+7+1=12, escribes 2 y llevas 1; en las centenas 3+2+1=6."
+          "retroalimentacion": "348 + 276 = 624: en las unidades 8+6=14, escribes 4 y llevas 1; en las decenas 4+7+1=12, escribes 2 y llevas 1; en las centenas 3+2+1=6.",
+          "pistas": [
+            "El acarreo de una columna se suma como dígito extra en la siguiente, igual que calculamos 386+257=643 en la papelería de doña Rosa.",
+            "348 + 276 = 624: en las unidades 8+6=14, escribes 4 y llevas 1; en las decenas 4+7+1=12, escribes 2 y llevas 1; en las centenas 3+2+1=6."
+          ]
         },
         {
           "tipo": "algoritmo_columnas",
@@ -230,7 +260,11 @@
               0
             ]
           ],
-          "retroalimentacion": "523 - 267 = 256: en las unidades no alcanza (3-7), pides prestada 1 decena: 13-7=6; en las decenas, 1 (porque prestaron) - 6 tampoco alcanza, se pide prestado a las centenas: 11-6=5; en las centenas, 4 (porque prestaron) - 2 = 2."
+          "retroalimentacion": "523 - 267 = 256: en las unidades no alcanza (3-7), pides prestada 1 decena: 13-7=6; en las decenas, 1 (porque prestaron) - 6 tampoco alcanza, se pide prestado a las centenas: 11-6=5; en las centenas, 4 (porque prestaron) - 2 = 2.",
+          "pistas": [
+            "Si una columna también necesita pedir prestado después de prestar, el préstamo se encadena a la siguiente, el mismo procedimiento que usaríamos para verificar cuentas de tres cifras en la papelería.",
+            "523 - 267 = 256: en las unidades no alcanza (3-7), pides prestada 1 decena: 13-7=6; en las decenas, 1 (porque prestaron) - 6 tampoco alcanza, se pide prestado a las centenas: 11-6=5; en las centenas, 4 (porque prestaron) - 2 = 2."
+          ]
         },
         {
           "tipo": "algoritmo_columnas",
@@ -287,7 +321,11 @@
             ],
             []
           ],
-          "retroalimentacion": "604 - 178 = 426: en las unidades no alcanza (4-8), pides prestada 1 decena; como las decenas son 0, el préstamo viaja a las centenas: las decenas quedan en 9 y las centenas bajan de 6 a 5. Unidades: 14-8=6; decenas: 9-7=2; centenas: 5-1=4."
+          "retroalimentacion": "604 - 178 = 426: en las unidades no alcanza (4-8), pides prestada 1 decena; como las decenas son 0, el préstamo viaja a las centenas: las decenas quedan en 9 y las centenas bajan de 6 a 5. Unidades: 14-8=6; decenas: 9-7=2; centenas: 5-1=4.",
+          "pistas": [
+            "Cuando una columna es 0 y necesita prestar, el préstamo viaja a la siguiente columna, igual que podría pasar al verificar las cuentas de la papelería de doña Rosa.",
+            "604 - 178 = 426: en las unidades no alcanza (4-8), pides prestada 1 decena; como las decenas son 0, el préstamo viaja a las centenas: las decenas quedan en 9 y las centenas bajan de 6 a 5. Unidades: 14-8=6; decenas: 9-7=2; centenas: 5-1=4."
+          ]
         },
         {
           "tipo": "algoritmo_columnas",
@@ -318,7 +356,25 @@
           ],
           "retroalimentacion": "275 + 168 = 443: en las unidades 5+8=13, escribes 3 y llevas 1; en las decenas 7+6+1=14, escribes 4 y llevas 1; en las centenas 2+1+1=4."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Otro empleado de la papelería calcula 386 + 257 para el corte de caja de tres días.",
+        "pasos": [
+          {
+            "texto": "Sumamos las unidades y determinamos si hay acarreo.",
+            "operacion": "6+7=13→escribe 3, lleva 1"
+          },
+          {
+            "texto": "Sumamos las decenas con el acarreo anterior.",
+            "operacion": "8+5+1=14→escribe 4, lleva 1"
+          },
+          {
+            "texto": "Sumamos las centenas con el acarreo.",
+            "operacion": "3+2+1=6"
+          }
+        ],
+        "respuestaFinal": "386 + 257 = 643."
+      }
     },
     {
       "numero": "11.3",
@@ -359,7 +415,11 @@
               2
             ]
           ],
-          "retroalimentacion": "5002 - 1847 = 3155: en las unidades no alcanza (2-7); como las decenas y centenas son 0, el préstamo viaja hasta los millares: el 5 baja a 4 y las decenas y centenas se vuelven 9. Unidades: 12-7=5; decenas: 9-4=5; centenas: 9-8=1; millares: 4-1=3."
+          "retroalimentacion": "5002 - 1847 = 3155: en las unidades no alcanza (2-7); como las decenas y centenas son 0, el préstamo viaja hasta los millares: el 5 baja a 4 y las decenas y centenas se vuelven 9. Unidades: 12-7=5; decenas: 9-4=5; centenas: 9-8=1; millares: 4-1=3.",
+          "pistas": [
+            "Cuando el préstamo pasa por un cero, ese cero se convierte en 9, y sigue viajando hasta encontrar una cifra distinta de cero, igual que calculamos 6003-2748=3255 para el corte de caja mensual.",
+            "5002 - 1847 = 3155: en las unidades no alcanza (2-7); como las decenas y centenas son 0, el préstamo viaja hasta los millares: el 5 baja a 4 y las decenas y centenas se vuelven 9. Unidades: 12-7=5; decenas: 9-4=5; centenas: 9-8=1; millares: 4-1=3."
+          ]
         },
         {
           "tipo": "algoritmo_columnas",
@@ -388,7 +448,11 @@
               2
             ]
           ],
-          "retroalimentacion": "8004 - 3586 = 4418: en las unidades no alcanza (4-6); como las decenas y centenas son 0, el préstamo viaja hasta los millares: el 8 baja a 7 y las decenas y centenas se vuelven 9. Unidades: 14-6=8; decenas: 9-8=1; centenas: 9-5=4; millares: 7-3=4."
+          "retroalimentacion": "8004 - 3586 = 4418: en las unidades no alcanza (4-6); como las decenas y centenas son 0, el préstamo viaja hasta los millares: el 8 baja a 7 y las decenas y centenas se vuelven 9. Unidades: 14-6=8; decenas: 9-8=1; centenas: 9-5=4; millares: 7-3=4.",
+          "pistas": [
+            "El préstamo convierte cada cero en 9 hasta llegar a una cifra distinta de cero, el mismo procedimiento que usamos con 6003-2748 para el corte de caja mensual.",
+            "8004 - 3586 = 4418: en las unidades no alcanza (4-6); como las decenas y centenas son 0, el préstamo viaja hasta los millares: el 8 baja a 7 y las decenas y centenas se vuelven 9. Unidades: 14-6=8; decenas: 9-8=1; centenas: 9-5=4; millares: 7-3=4."
+          ]
         },
         {
           "tipo": "algoritmo_columnas",
@@ -416,7 +480,11 @@
             ],
             []
           ],
-          "retroalimentacion": "3899 + 2106 = 6005: en las unidades 9+6=15, escribes 5 y llevas 1; en las decenas 9+0+1=10, escribes 0 y llevas 1; en las centenas 8+1+1=10, escribes 0 y llevas 1; en los millares 3+2+1=6."
+          "retroalimentacion": "3899 + 2106 = 6005: en las unidades 9+6=15, escribes 5 y llevas 1; en las decenas 9+0+1=10, escribes 0 y llevas 1; en las centenas 8+1+1=10, escribes 0 y llevas 1; en los millares 3+2+1=6.",
+          "pistas": [
+            "Un acarreo también puede encadenarse por varias columnas seguidas, igual que el préstamo encadenado que vimos en 6003-2748 para el corte de caja mensual.",
+            "3899 + 2106 = 6005: en las unidades 9+6=15, escribes 5 y llevas 1; en las decenas 9+0+1=10, escribes 0 y llevas 1; en las centenas 8+1+1=10, escribes 0 y llevas 1; en los millares 3+2+1=6."
+          ]
         },
         {
           "tipo": "algoritmo_columnas",
@@ -480,7 +548,21 @@
           ],
           "retroalimentacion": "48376 + 29548 = 77924: en las unidades 6+8=14, escribes 4 y llevas 1; en las decenas 7+4+1=12, escribes 2 y llevas 1; en las centenas 3+5+1=9; en los millares 8+9=17, escribes 7 y llevas 1; en las decenas de millar 4+2+1=7."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Doña Rosa necesita calcular 6003 - 2748 para el corte de caja del mes, con ceros en medio.",
+        "pasos": [
+          {
+            "texto": "En las unidades no alcanza, así que el préstamo viaja a través de los ceros hasta encontrar una cifra distinta de cero.",
+            "operacion": "decenas y centenas eran 0, se convierten en 9; millares baja de 6 a 5"
+          },
+          {
+            "texto": "Restamos columna por columna de derecha a izquierda.",
+            "operacion": "unidades:13-8=5; decenas:9-4=5; centenas:9-7=2; millares:5-2=3"
+          }
+        ],
+        "respuestaFinal": "6003 - 2748 = 3255."
+      }
     },
     {
       "numero": "11.4",
@@ -523,7 +605,11 @@
               3
             ]
           ],
-          "retroalimentacion": "700005 - 268347 = 431658: en las unidades no alcanza (5-7); como las decenas, centenas, millares y decenas de millar son 0, el préstamo viaja a través de los cuatro ceros hasta las centenas de millar: el 7 baja a 6 y esos cuatro ceros se vuelven 9. Unidades: 15-7=8; decenas: 9-4=5; centenas: 9-3=6; millares: 9-8=1; decenas de millar: 9-6=3; centenas de millar: 6-2=4."
+          "retroalimentacion": "700005 - 268347 = 431658: en las unidades no alcanza (5-7); como las decenas, centenas, millares y decenas de millar son 0, el préstamo viaja a través de los cuatro ceros hasta las centenas de millar: el 7 baja a 6 y esos cuatro ceros se vuelven 9. Unidades: 15-7=8; decenas: 9-4=5; centenas: 9-3=6; millares: 9-8=1; decenas de millar: 9-6=3; centenas de millar: 6-2=4.",
+          "pistas": [
+            "Identifica dónde el préstamo necesita atravesar varios ceros antes de llegar a una cifra distinta de cero, igual que calculamos 603004-275849=327155 para el cierre de trimestre.",
+            "700005 - 268347 = 431658: en las unidades no alcanza (5-7); como las decenas, centenas, millares y decenas de millar son 0, el préstamo viaja a través de los cuatro ceros hasta las centenas de millar: el 7 baja a 6 y esos cuatro ceros se vuelven 9."
+          ]
         },
         {
           "tipo": "algoritmo_columnas",
@@ -554,7 +640,11 @@
               0
             ]
           ],
-          "retroalimentacion": "384756 + 219268 = 604024: en las unidades 6+8=14, escribes 4 y llevas 1; en las decenas 5+6+1=12, escribes 2 y llevas 1; en las centenas 7+2+1=10, escribes 0 y llevas 1; en los millares 4+9+1=14, escribes 4 y llevas 1; en las decenas de millar 8+1+1=10, escribes 0 y llevas 1; en las centenas de millar 3+2+1=6."
+          "retroalimentacion": "384756 + 219268 = 604024: en las unidades 6+8=14, escribes 4 y llevas 1; en las decenas 5+6+1=12, escribes 2 y llevas 1; en las centenas 7+2+1=10, escribes 0 y llevas 1; en los millares 4+9+1=14, escribes 4 y llevas 1; en las decenas de millar 8+1+1=10, escribes 0 y llevas 1; en las centenas de millar 3+2+1=6.",
+          "pistas": [
+            "Suma o resta columna por columna de derecha a izquierda, llevando o pidiendo prestado según haga falta, el mismo procedimiento que usamos con 603004-275849 para el cierre de trimestre.",
+            "384756 + 219268 = 604024: unidades 6+8=14 (escribe 4, lleva 1); decenas 5+6+1=12 (escribe 2, lleva 1); centenas 7+2+1=10 (escribe 0, lleva 1); millares 4+9+1=14 (escribe 4, lleva 1); decenas de millar 8+1+1=10 (escribe 0, lleva 1); centenas de millar 3+2+1=6."
+          ]
         },
         {
           "tipo": "algoritmo_columnas",
@@ -617,7 +707,11 @@
               4
             ]
           ],
-          "retroalimentacion": "456789 + 128965 = 585754: en las unidades 9+5=14, escribes 4 y llevas 1; en las decenas 8+6+1=15, escribes 5 y llevas 1; en las centenas 7+9+1=17, escribes 7 y llevas 1; en los millares 6+8+1=15, escribes 5 y llevas 1; en las decenas de millar 5+2+1=8; en las centenas de millar 4+1=5."
+          "retroalimentacion": "456789 + 128965 = 585754: en las unidades 9+5=14, escribes 4 y llevas 1; en las decenas 8+6+1=15, escribes 5 y llevas 1; en las centenas 7+9+1=17, escribes 7 y llevas 1; en los millares 6+8+1=15, escribes 5 y llevas 1; en las decenas de millar 5+2+1=8; en las centenas de millar 4+1=5.",
+          "pistas": [
+            "Con números grandes, el procedimiento es el mismo de siempre, columna por columna, igual que calculamos 603004-275849 para el cierre de trimestre de doña Rosa.",
+            "456789 + 128965 = 585754: en las unidades 9+5=14, escribes 4 y llevas 1; en las decenas 8+6+1=15, escribes 5 y llevas 1; en las centenas 7+9+1=17, escribes 7 y llevas 1; en los millares 6+8+1=15, escribes 5 y llevas 1; en las decenas de millar 5+2+1=8; en las centenas de millar 4+1=5."
+          ]
         },
         {
           "tipo": "algoritmo_columnas",
@@ -651,7 +745,20 @@
           ],
           "retroalimentacion": "900000 - 345678 = 554322: en las unidades no alcanza (0-8); como las cinco columnas siguientes son 0, el préstamo viaja a través de todos esos ceros hasta el 9, que baja a 8, y cada cero se vuelve 9. Unidades: 10-8=2; decenas: 9-7=2; centenas: 9-6=3; millares: 9-5=4; decenas de millar: 9-4=5; centenas de millar: 8-3=5."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Para el cierre del trimestre, doña Rosa calcula 603004 - 275849 en la papelería.",
+        "pasos": [
+          {
+            "texto": "Identificamos dónde el préstamo necesita viajar a través de ceros."
+          },
+          {
+            "texto": "Restamos columna por columna de derecha a izquierda, aplicando acarreos y préstamos según haga falta.",
+            "operacion": "603004-275849=327155"
+          }
+        ],
+        "respuestaFinal": "603004 - 275849 = 327155."
+      }
     }
   ],
   "practicaExtra": [

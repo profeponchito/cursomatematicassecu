@@ -29,7 +29,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "El Teorema de Tales establece que rectas paralelas cortadas por dos transversales determinan segmentos proporcionales.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: esa es exactamente la idea central del Teorema de Tales."
+          "retroalimentacion": "Correcto: esa es exactamente la idea central del Teorema de Tales.",
+          "pistas": [
+            "El Teorema de Tales dice que rectas paralelas cortadas por transversales determinan segmentos proporcionales, igual que comprobamos que la razón 4:6 se mantiene en los cables del electricista.",
+            "Verdadero: esa es exactamente la definición del Teorema de Tales."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -41,13 +45,21 @@
             "Tener únicamente ángulos de 90°"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "El Teorema de Tales necesita rectas paralelas cruzadas por transversales; no requiere ángulos rectos ni círculos."
+          "retroalimentacion": "El Teorema de Tales necesita rectas paralelas cruzadas por transversales; no requiere ángulos rectos ni círculos.",
+          "pistas": [
+            "La condición indispensable del Teorema de Tales es que las rectas cortadas sean paralelas entre sí, el mismo requisito que usamos para los cables de luz del electricista.",
+            "La condición indispensable es que las rectas cortadas por las transversales sean paralelas entre sí."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "Las dos transversales que cruzan las rectas paralelas deben medir exactamente lo mismo.",
           "respuestaCorrecta": false,
-          "retroalimentacion": "Falso: las transversales pueden tener longitudes distintas; lo que importa es que los segmentos que forman sean proporcionales, no que midan igual."
+          "retroalimentacion": "Falso: las transversales pueden tener longitudes distintas; lo que importa es que los segmentos que forman sean proporcionales, no que midan igual.",
+          "pistas": [
+            "Las transversales NO necesitan medir lo mismo; lo que debe cumplirse es que los segmentos sean proporcionales, el mismo concepto que usamos con los cables paralelos del electricista.",
+            "Falso: las transversales pueden tener longitudes diferentes; lo importante es que los segmentos que forman sean proporcionales."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -75,7 +87,21 @@
           ],
           "retroalimentacion": "Las paralelas mantienen su separación relativa, las transversales las cruzan formando segmentos, y esos segmentos correspondientes son proporcionales."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El electricista también analiza otro cruce de cables paralelos con dos banquetas: una banqueta queda dividida en segmentos de 4 m y 6 m, y quiere saber qué relación tendrán los segmentos de la otra banqueta.",
+        "pasos": [
+          {
+            "texto": "Según el Teorema de Tales, los segmentos de ambas transversales deben ser proporcionales.",
+            "operacion": "4/6 = segmento1/segmento2 (misma razón)"
+          },
+          {
+            "texto": "Esto significa que la razón 4:6 (o 2:3) se repetirá en la otra banqueta, sin importar la distancia entre las paralelas.",
+            "operacion": "razón 2:3 se mantiene"
+          }
+        ],
+        "respuestaFinal": "Los segmentos de la otra banqueta deben mantener la misma razón 2:3 (equivalente a 4:6), sin importar la distancia entre los cables paralelos."
+      }
     },
     {
       "numero": "32.2",
@@ -105,19 +131,31 @@
             "10"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "XP/PY = XQ/QZ → 5/10 = 8/QZ → QZ = (8×10)/5 = 16."
+          "retroalimentacion": "XP/PY = XQ/QZ → 5/10 = 8/QZ → QZ = (8×10)/5 = 16.",
+          "pistas": [
+            "Plantea la proporción de Tales con los segmentos conocidos y despeja el desconocido, igual que calculamos HF=18 para el triángulo DEF del electricista.",
+            "XP/PY = XQ/QZ → 5/10 = 8/QZ → QZ=(10×8)÷5=16."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "Si una recta es paralela a un lado de un triángulo y corta a los otros dos lados, los divide en segmentos proporcionales.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: es el caso particular del Teorema de Tales aplicado a triángulos."
+          "retroalimentacion": "Correcto: es el caso particular del Teorema de Tales aplicado a triángulos.",
+          "pistas": [
+            "Si una recta es paralela a un lado de un triángulo y corta los otros dos, los divide en segmentos proporcionales, el mismo principio que usamos para calcular HF=18 en el triángulo DEF.",
+            "Verdadero: esa es la aplicación del Teorema de Tales dentro de un triángulo."
+          ]
         },
         {
           "tipo": "llenar_frase",
           "frase": "En un triángulo con DE ‖ BC, AD=2, DB=5 y AE=6. Entonces EC = ___.",
           "respuestaCorrecta": "15",
-          "retroalimentacion": "AD/DB = AE/EC → 2/5 = 6/EC → EC = (6×5)/2 = 15."
+          "retroalimentacion": "AD/DB = AE/EC → 2/5 = 6/EC → EC = (6×5)/2 = 15.",
+          "pistas": [
+            "Plantea la proporción con los segmentos correspondientes y despeja el valor desconocido, igual que hicimos para encontrar HF=18 en el triángulo DEF del electricista.",
+            "Esta misma técnica de proporción se aplica a cualquier triángulo con una paralela a uno de sus lados."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -139,7 +177,21 @@
           ],
           "retroalimentacion": "AD-DB corresponden a AB, AE-EC corresponden a AC, y DE-BC son el lado paralelo comparado con el lado completo."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "En otro triángulo DEF, un segmento GH es paralelo a EF (G en DE, H en DF). Si DG=6, GE=9 y DH=12, ¿cuánto mide HF?",
+        "pasos": [
+          {
+            "texto": "Planteamos la proporción de Tales: DG/GE = DH/HF.",
+            "operacion": "6/9 = 12/HF"
+          },
+          {
+            "texto": "Despejamos HF multiplicando en cruz.",
+            "operacion": "HF=(9×12)÷6=18"
+          }
+        ],
+        "respuestaFinal": "HF mide 18."
+      }
     },
     {
       "numero": "32.3",
@@ -168,19 +220,31 @@
             "35 m"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "5/7 = 15/x → x = (7×15)/5 = 21 m."
+          "retroalimentacion": "5/7 = 15/x → x = (7×15)/5 = 21 m.",
+          "pistas": [
+            "Plantea la proporción de Tales entre los tramos correspondientes y despeja, igual que calculamos 15 m para el tramo del solar del electricista.",
+            "5/7 = 15/x → x=(7×15)÷5=21 m."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "En la proporción de Tales 3/5 = 9/x, el valor de x es 15.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "3/5 = 9/x → x = (5×9)/3 = 15. La afirmación es correcta."
+          "retroalimentacion": "3/5 = 9/x → x = (5×9)/3 = 15. La afirmación es correcta.",
+          "pistas": [
+            "Multiplica en cruz para verificar o despejar en una proporción de Tales, el mismo procedimiento que usamos para calcular 15 m en el solar del electricista.",
+            "Verdadero: 3/5=9/x → 3×x=5×9 → 3x=45 → x=15."
+          ]
         },
         {
           "tipo": "llenar_frase",
           "frase": "En un triángulo con DE ‖ BC, AD=6, DB=x, AE=9 y EC=12. El valor de x es ___.",
           "respuestaCorrecta": "8",
-          "retroalimentacion": "AD/DB = AE/EC → 6/x = 9/12 → x = (6×12)/9 = 8."
+          "retroalimentacion": "AD/DB = AE/EC → 6/x = 9/12 → x = (6×12)/9 = 8.",
+          "pistas": [
+            "Plantea la proporción con los tramos correspondientes entre las dos transversales, igual que hicimos para calcular 15 m en el solar del electricista.",
+            "Esta misma técnica se aplica sin importar cuántas rectas paralelas haya, mientras se comparen tramos correspondientes."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -202,7 +266,21 @@
           ],
           "retroalimentacion": "2/3=x/12 → x=8; 5/x=10/4 → x=2; x/7=6/14 → x=3."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "En otro solar, tres cercas paralelas son cruzadas por dos senderos. En el sendero A los tramos son 4 m y 6 m; en el sendero B, el tramo correspondiente al de 4 m mide 10 m. ¿Cuánto mide el tramo correspondiente al de 6 m?",
+        "pasos": [
+          {
+            "texto": "Planteamos la proporción de Tales entre los tramos correspondientes.",
+            "operacion": "4/6 = 10/x"
+          },
+          {
+            "texto": "Despejamos x multiplicando en cruz.",
+            "operacion": "x=(6×10)÷4=15"
+          }
+        ],
+        "respuestaFinal": "El tramo correspondiente al de 6 m mide 15 m."
+      }
     },
     {
       "numero": "32.4",
@@ -226,7 +304,11 @@
             "15 m"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "2/3 = x/18 → x = (2×18)/3 = 12 m."
+          "retroalimentacion": "2/3 = x/18 → x = (2×18)/3 = 12 m.",
+          "pistas": [
+            "Plantea la proporción entre altura y sombra, y despeja el valor desconocido, igual que calculamos 18 m para la torre del electricista.",
+            "2/3 = x/18 → x=(2×18)÷3=12 m."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -238,13 +320,21 @@
           "tipo": "verdadero_falso",
           "enunciado": "El método de las sombras para medir alturas funciona porque, en el mismo momento del día, los rayos del sol forman triángulos semejantes con cualquier objeto vertical y su sombra.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: como los rayos del sol llegan paralelos, los triángulos objeto-sombra son semejantes y sus lados son proporcionales (Teorema de Tales)."
+          "retroalimentacion": "Correcto: como los rayos del sol llegan paralelos, los triángulos objeto-sombra son semejantes y sus lados son proporcionales (Teorema de Tales).",
+          "pistas": [
+            "El método de las sombras funciona porque los rayos del sol forman triángulos semejantes con cualquier objeto vertical, el mismo principio que usamos para calcular la altura de la torre (18 m).",
+            "Verdadero: en el mismo momento del día, todos los objetos verticales y sus sombras forman triángulos semejantes entre sí."
+          ]
         },
         {
           "tipo": "llenar_frase",
           "frase": "Una escalera recargada en una pared forma un triángulo con el suelo. Si a 2 m de la base de la escalera hay una marca de 1.5 m de altura sobre la pared, y la escalera llega hasta 4 m de la base, la escalera alcanza una altura de ___ m en la pared (usa 2/1.5 = 4/x).",
           "respuestaCorrecta": "3",
-          "retroalimentacion": "2/1.5 = 4/x → x = (1.5×4)/2 = 3 m."
+          "retroalimentacion": "2/1.5 = 4/x → x = (1.5×4)/2 = 3 m.",
+          "pistas": [
+            "Plantea la proporción entre altura y sombra del objeto conocido y del desconocido, igual que hicimos para calcular 18 m de altura de la torre.",
+            "Esta misma técnica de la sombra se usa para medir árboles, edificios, torres o cualquier objeto vertical sin necesidad de subir a medirlo."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -266,7 +356,21 @@
           ],
           "retroalimentacion": "En cada caso se compara una razón de segmentos correspondientes formados por paralelas y transversales."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Un poste de 3 m de altura proyecta una sombra de 4 m. En el mismo momento, una torre proyecta una sombra de 24 m. ¿Cuál es la altura de la torre?",
+        "pasos": [
+          {
+            "texto": "Planteamos la proporción entre altura y sombra.",
+            "operacion": "3/4 = x/24"
+          },
+          {
+            "texto": "Despejamos x multiplicando en cruz.",
+            "operacion": "x=(3×24)÷4=18"
+          }
+        ],
+        "respuestaFinal": "La torre mide 18 metros de altura."
+      }
     }
   ],
   "practicaExtra": [

@@ -29,7 +29,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Si dos triángulos son congruentes, entonces tienen la misma forma y el mismo tamaño.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: la congruencia significa que coinciden exactamente en forma y tamaño."
+          "retroalimentacion": "Correcto: la congruencia significa que coinciden exactamente en forma y tamaño.",
+          "pistas": [
+            "Dos triángulos congruentes tienen exactamente la misma forma y tamaño, el mismo concepto que usamos para identificar que DE corresponde a PQ en las piezas del carpintero.",
+            "Verdadero: la congruencia significa que ambos triángulos son idénticos en forma y tamaño."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -41,7 +45,11 @@
             "No se puede saber"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "El orden de las letras indica la correspondencia: A↔X, B↔Y, C↔Z, así que AB corresponde a XY."
+          "retroalimentacion": "El orden de las letras indica la correspondencia: A↔X, B↔Y, C↔Z, así que AB corresponde a XY.",
+          "pistas": [
+            "Los vértices correspondientes siguen el mismo orden en la notación de congruencia, igual que identificamos que DE corresponde a PQ para las piezas del carpintero.",
+            "Si △ABC≅△XYZ, entonces A↔X, B↔Y, C↔Z, así que el lado AB corresponde al lado XY."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -53,7 +61,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Dos triángulos congruentes pueden tener ángulos diferentes, siempre y cuando sus lados midan lo mismo.",
           "respuestaCorrecta": false,
-          "retroalimentacion": "Falso: si los triángulos son congruentes, tanto los lados como los ángulos correspondientes deben ser iguales."
+          "retroalimentacion": "Falso: si los triángulos son congruentes, tanto los lados como los ángulos correspondientes deben ser iguales.",
+          "pistas": [
+            "Para que dos triángulos sean congruentes, deben coincidir TANTO en lados como en ángulos correspondientes, el mismo criterio que usamos para verificar las piezas del carpintero.",
+            "Falso: si los ángulos son diferentes, los triángulos no pueden ser congruentes, aunque los lados midan lo mismo."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -75,7 +87,21 @@
           ],
           "retroalimentacion": "Con la correspondencia M↔R, N↔S, P↔T: MN↔RS, ∠P↔∠T, NP↔ST."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El carpintero corta otras dos piezas: △DEF ≅ △PQR. ¿Qué lado del segundo triángulo corresponde al lado DE del primero?",
+        "pasos": [
+          {
+            "texto": "En triángulos congruentes, los vértices correspondientes siguen el mismo orden en la notación.",
+            "operacion": "D↔P, E↔Q, F↔R"
+          },
+          {
+            "texto": "Identificamos el lado correspondiente a DE.",
+            "operacion": "DE corresponde a PQ"
+          }
+        ],
+        "respuestaFinal": "El lado DE corresponde al lado PQ del segundo triángulo."
+      }
     },
     {
       "numero": "30.2",
@@ -98,13 +124,21 @@
             "No son congruentes"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Como los tres lados coinciden en ambos triángulos, se aplica el criterio LLL."
+          "retroalimentacion": "Como los tres lados coinciden en ambos triángulos, se aplica el criterio LLL.",
+          "pistas": [
+            "Cuando se conocen los tres lados de ambos triángulos y coinciden, se aplica el criterio LLL, igual que confirmamos la congruencia de las piezas de 5cm,7cm,9cm del carpintero.",
+            "Con lados 4cm,6cm,8cm en ambos triángulos, se confirma la congruencia por el criterio LLL."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "El criterio LAL requiere que el ángulo igual esté comprendido entre los dos lados iguales, no en cualquier posición.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: si el ángulo no está entre los dos lados, no se puede aplicar el criterio LAL."
+          "retroalimentacion": "Correcto: si el ángulo no está entre los dos lados, no se puede aplicar el criterio LAL.",
+          "pistas": [
+            "El criterio LAL requiere que el ángulo conocido esté exactamente entre los dos lados conocidos, el mismo tipo de análisis que usamos con el criterio LLL para las piezas del carpintero.",
+            "Verdadero: en el criterio LAL, el ángulo debe estar comprendido entre los dos lados iguales, no en cualquier posición."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -122,7 +156,11 @@
             "No, los ángulos deben ser diferentes"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Dos lados iguales y el ángulo comprendido entre ellos igual confirman congruencia por el criterio LAL."
+          "retroalimentacion": "Dos lados iguales y el ángulo comprendido entre ellos igual confirman congruencia por el criterio LAL.",
+          "pistas": [
+            "Si dos lados y el ángulo comprendido entre ellos son iguales en ambos triángulos, son congruentes por el criterio LAL, el mismo tipo de verificación que usamos con el criterio LLL para las piezas de madera.",
+            "Sí son congruentes: tienen dos lados iguales (10cm y 12cm) con el mismo ángulo comprendido (55°), cumpliendo el criterio LAL."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -144,7 +182,21 @@
           ],
           "retroalimentacion": "Tres lados iguales = LLL; dos lados y el ángulo entre ellos = LAL; un solo lado igual no basta para asegurar congruencia."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El carpintero mide dos piezas: una con lados 5cm, 7cm, 9cm, y otra también con lados 5cm, 7cm, 9cm. ¿Qué criterio confirma que son congruentes?",
+        "pasos": [
+          {
+            "texto": "Observamos que se conocen los tres lados de ambos triángulos.",
+            "operacion": "3 lados conocidos en ambos triángulos"
+          },
+          {
+            "texto": "Cuando los tres lados coinciden, se aplica el criterio LLL.",
+            "operacion": "criterio LLL"
+          }
+        ],
+        "respuestaFinal": "Como los tres lados son iguales en ambos triángulos, se confirma la congruencia por el criterio LLL (Lado-Lado-Lado)."
+      }
     },
     {
       "numero": "30.3",
@@ -168,13 +220,21 @@
             "Tres ángulos"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "ALA significa Ángulo-Lado-Ángulo: compara dos ángulos y el lado comprendido entre ellos."
+          "retroalimentacion": "ALA significa Ángulo-Lado-Ángulo: compara dos ángulos y el lado comprendido entre ellos.",
+          "pistas": [
+            "El criterio ALA compara dos ángulos y el lado comprendido entre ellos, igual que verificamos los ángulos de 40° y 70° con el lado de 8cm para las piezas del carpintero.",
+            "El criterio ALA compara: un ángulo, el lado comprendido entre ese ángulo y otro, y el segundo ángulo."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "En el criterio ALA, el lado debe estar comprendido entre los dos ángulos iguales.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: si el lado no está entre los dos ángulos, no se puede aplicar el criterio ALA."
+          "retroalimentacion": "Correcto: si el lado no está entre los dos ángulos, no se puede aplicar el criterio ALA.",
+          "pistas": [
+            "En el criterio ALA, el lado conocido debe estar exactamente entre los dos ángulos conocidos, el mismo requisito que verificamos con los ángulos de 40° y 70° de las piezas del carpintero.",
+            "Verdadero: en el criterio ALA, el lado debe estar comprendido entre los dos ángulos iguales."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -192,7 +252,11 @@
             "No se puede saber sin más datos"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Aunque los ángulos coincidan, el lado comprendido entre ellos mide diferente (6cm vs 9cm), así que no se cumple el criterio ALA."
+          "retroalimentacion": "Aunque los ángulos coincidan, el lado comprendido entre ellos mide diferente (6cm vs 9cm), así que no se cumple el criterio ALA.",
+          "pistas": [
+            "Para que apliquen el criterio ALA, los dos ángulos Y el lado comprendido deben coincidir exactamente, el mismo requisito que verificamos con las piezas de 40°,70°,8cm del carpintero.",
+            "No son congruentes: aunque los ángulos coinciden (30° y 80°), el lado comprendido es diferente (6cm contra 9cm)."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -214,7 +278,21 @@
           ],
           "retroalimentacion": "LLL necesita los tres lados; LAL necesita dos lados y el ángulo entre ellos; ALA necesita dos ángulos y el lado entre ellos."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El carpintero corta dos piezas con ángulos de 40° y 70°, y un lado de 8cm entre ellos, en ambas piezas. ¿Son congruentes por el criterio ALA?",
+        "pasos": [
+          {
+            "texto": "Verificamos que los dos ángulos y el lado comprendido entre ellos coinciden en ambos triángulos.",
+            "operacion": "40°, 70°, lado 8cm comprendido — coinciden en ambos"
+          },
+          {
+            "texto": "Como coinciden ángulo-lado-ángulo, se confirma la congruencia por ALA.",
+            "operacion": "criterio ALA confirmado"
+          }
+        ],
+        "respuestaFinal": "Sí, las dos piezas son congruentes por el criterio ALA (Ángulo-Lado-Ángulo)."
+      }
     },
     {
       "numero": "30.4",
@@ -237,13 +315,21 @@
             "No se puede determinar"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Tener los mismos ángulos solo garantiza la misma forma (semejanza), no el mismo tamaño; para congruencia también se necesita que los lados coincidan."
+          "retroalimentacion": "Tener los mismos ángulos solo garantiza la misma forma (semejanza), no el mismo tamaño; para congruencia también se necesita que los lados coincidan.",
+          "pistas": [
+            "Tener los mismos ángulos no basta para la congruencia; los lados también deben coincidir, igual que concluimos que las piezas de 45°,45°,90° con tamaños distintos no son congruentes.",
+            "No son congruentes: aunque los ángulos son iguales (60°,60°,60°), un triángulo es el doble de grande, así que los lados no coinciden."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "Dos triángulos congruentes siempre tienen la misma área.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: si tienen la misma forma y el mismo tamaño exacto, su área también es igual."
+          "retroalimentacion": "Correcto: si tienen la misma forma y el mismo tamaño exacto, su área también es igual.",
+          "pistas": [
+            "Si dos triángulos son congruentes, todas sus medidas coinciden, incluyendo el área, el mismo principio que usamos para distinguir congruencia de semejanza en las piezas de 45°,45°,90°.",
+            "Verdadero: dos triángulos congruentes tienen exactamente la misma forma y tamaño, por lo tanto la misma área."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -261,7 +347,11 @@
             "No se puede saber"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Aunque los lados coinciden, el ángulo comprendido entre ellos es diferente (40° vs 50°), así que no se cumple LAL y no son congruentes."
+          "retroalimentacion": "Aunque los lados coinciden, el ángulo comprendido entre ellos es diferente (40° vs 50°), así que no se cumple LAL y no son congruentes.",
+          "pistas": [
+            "Para el criterio LAL, el ángulo comprendido entre los lados iguales también debe ser igual, el mismo requisito que usamos para concluir que las piezas de ángulos iguales pero distinto tamaño no son congruentes.",
+            "No son congruentes por LAL: aunque los lados coinciden (5cm y 7cm), el ángulo comprendido es diferente (40° contra 50°)."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -283,7 +373,21 @@
           ],
           "retroalimentacion": "Tres lados iguales = congruentes por LLL; mismos ángulos y distinto tamaño = solo semejantes; dos ángulos y el lado entre ellos = congruentes por ALA."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El carpintero corta dos piezas triangulares con los mismos tres ángulos (45°, 45°, 90°), pero una es el triple de grande que la otra. ¿Son congruentes?",
+        "pasos": [
+          {
+            "texto": "Recordamos que la congruencia requiere lados Y ángulos iguales, no solo ángulos.",
+            "operacion": "ángulos iguales, pero lados distintos (triple de tamaño)"
+          },
+          {
+            "texto": "Como los lados no coinciden, los triángulos no son congruentes (son semejantes, pero no congruentes).",
+            "operacion": "no son congruentes"
+          }
+        ],
+        "respuestaFinal": "No, las piezas no son congruentes; tienen la misma forma (son semejantes) pero distinto tamaño."
+      }
     }
   ],
   "practicaExtra": [

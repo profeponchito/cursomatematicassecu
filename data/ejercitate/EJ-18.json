@@ -29,7 +29,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Si al doble de horas trabajadas corresponde el doble de pago, se trata de una proporcionalidad directa.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Cuando una cantidad se duplica y la otra también se duplica en la misma proporción, es proporcionalidad directa."
+          "retroalimentacion": "Cuando una cantidad se duplica y la otra también se duplica en la misma proporción, es proporcionalidad directa.",
+          "pistas": [
+            "En una proporcionalidad directa, si una cantidad se duplica, la otra también se duplica, igual que comprobamos que las naranjas a $14/kg mantienen el mismo cociente.",
+            "Verdadero: si se duplican las horas trabajadas y el pago también se duplica, la relación es directamente proporcional."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -41,7 +45,11 @@
             "La temperatura del día según la hora"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "El costo total aumenta en la misma proporción que el número de boletos comprados: es una relación directa."
+          "retroalimentacion": "El costo total aumenta en la misma proporción que el número de boletos comprados: es una relación directa.",
+          "pistas": [
+            "Una proporcionalidad directa es aquella donde el cociente entre las dos cantidades siempre es el mismo, el mismo principio que usamos para comprobar las naranjas a $14/kg.",
+            "Por ejemplo, el costo de boletos de autobús (a mismo precio cada uno) es proporcional al número de boletos comprados."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -65,9 +73,27 @@
             "45"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "15÷3=5 ladrillos por minuto."
+          "retroalimentacion": "15÷3=5 ladrillos por minuto.",
+          "pistas": [
+            "La constante de proporcionalidad es el cociente entre las dos cantidades relacionadas, igual que calculamos 42÷3=14 para el precio de las naranjas.",
+            "15 ladrillos ÷ 3 minutos = 5 ladrillos por minuto."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "En la misma tienda, las naranjas cuestan $14 por kilogramo. Si Marisol compra 3 kg, paga $42; el dueño quiere comprobar que esto es una proporcionalidad directa.",
+        "pasos": [
+          {
+            "texto": "Calculamos el cociente entre el pago y la cantidad comprada.",
+            "operacion": "42÷3=14"
+          },
+          {
+            "texto": "Comparamos con el precio por kilogramo: si el cociente coincide siempre, es proporcionalidad directa.",
+            "operacion": "14=14 ✓"
+          }
+        ],
+        "respuestaFinal": "Como el cociente siempre da 14 (el precio por kg), sí es una proporcionalidad directa."
+      }
     },
     {
       "numero": "18.2",
@@ -91,7 +117,11 @@
             "68"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "34÷2=17 y 68÷4=17: la constante es 17 pesos por litro."
+          "retroalimentacion": "34÷2=17 y 68÷4=17: la constante es 17 pesos por litro.",
+          "pistas": [
+            "Divide el valor entre la cantidad para encontrar la constante de proporcionalidad, igual que calculamos k=15 para el plátano de la tienda.",
+            "34÷2=17 y 68÷4=17, así que la constante de proporcionalidad es k=17."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -129,15 +159,37 @@
             "$50"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "90÷2=45 y 225÷5=45: el precio por boleto es $45."
+          "retroalimentacion": "90÷2=45 y 225÷5=45: el precio por boleto es $45.",
+          "pistas": [
+            "La constante de proporcionalidad es el precio de una sola unidad; divide el precio total entre la cantidad, el mismo procedimiento que usamos con el plátano de la tienda (k=15).",
+            "90÷2=45, así que cada boleto cuesta $45 (y 225÷5=45 confirma el resultado)."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "En una tabla de proporcionalidad directa con k=7, si x=9 entonces y=63.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "y=k×x=7×9=63."
+          "retroalimentacion": "y=k×x=7×9=63.",
+          "pistas": [
+            "En una proporcionalidad directa, y = k × x; multiplica la constante por el valor de x, igual que usamos k=15 para calcular precios de plátano en la tienda.",
+            "Verdadero: si k=7 y x=9, entonces y = 7×9 = 63."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "En la tienda, una tabla muestra que 3 kg de plátano cuestan $45 y 6 kg cuestan $90. El dueño quiere encontrar la constante de proporcionalidad.",
+        "pasos": [
+          {
+            "texto": "Dividimos el precio entre la cantidad en cada caso.",
+            "operacion": "45÷3=15; 90÷6=15"
+          },
+          {
+            "texto": "Como el cociente es el mismo en ambos casos, esa es la constante de proporcionalidad.",
+            "operacion": "k=15"
+          }
+        ],
+        "respuestaFinal": "La constante de proporcionalidad es k=15 (pesos por kilogramo)."
+      }
     },
     {
       "numero": "18.3",
@@ -161,7 +213,11 @@
             "$189"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Precio por pizza = 270÷3 = 90; 90×7 = 630 pesos."
+          "retroalimentacion": "Precio por pizza = 270÷3 = 90; 90×7 = 630 pesos.",
+          "pistas": [
+            "Plantea la regla de tres con las cantidades conocidas y despeja el valor desconocido multiplicando en cruz, igual que calculamos 9 kg de uvas = $225 en la tienda.",
+            "3 pizzas → $270, 7 pizzas → x. x = (7×270)÷3 = $630."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -179,13 +235,21 @@
             "1.8"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "3÷6=0.5 tazas por persona; 0.5×10=5 tazas."
+          "retroalimentacion": "3÷6=0.5 tazas por persona; 0.5×10=5 tazas.",
+          "pistas": [
+            "Usa la regla de tres: multiplica en cruz las cantidades conocidas y divide entre la restante, el mismo procedimiento que usamos para las uvas de la tienda (9 kg = $225).",
+            "6 personas → 3 tazas, 10 personas → x. x = (10×3)÷6 = 5 tazas."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "Si 2 litros de pintura cubren 16 m², entonces 5 litros cubrirán 40 m².",
           "respuestaCorrecta": true,
-          "retroalimentacion": "16÷2=8 m² por litro; 8×5=40 m²."
+          "retroalimentacion": "16÷2=8 m² por litro; 8×5=40 m².",
+          "pistas": [
+            "Verifica con la regla de tres: el cociente entre las dos cantidades debe mantenerse igual, igual que comprobamos con las uvas de la tienda (4 kg → $100, 9 kg → $225).",
+            "Verdadero: 16÷2=8 y 40÷5=8, el mismo rendimiento por litro."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -199,7 +263,21 @@
           "respuestaCorrecta": 0,
           "retroalimentacion": "Rendimiento = 240÷20 = 12 km por litro; 360÷12 = 30 litros."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "En la tienda, 4 kg de uvas cuestan $100. El dueño quiere saber cuánto costarán 9 kg al mismo precio por kilogramo.",
+        "pasos": [
+          {
+            "texto": "Planteamos la regla de tres: 4 kg → $100, 9 kg → x.",
+            "operacion": "4/100 = 9/x"
+          },
+          {
+            "texto": "Despejamos x multiplicando en cruz y dividiendo.",
+            "operacion": "x=(9×100)÷4=225"
+          }
+        ],
+        "respuestaFinal": "9 kg de uvas costarán $225."
+      }
     },
     {
       "numero": "18.4",
@@ -222,7 +300,11 @@
             "5"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "4÷8=0.5 tazas por vaso; 0.5×20=10 tazas."
+          "retroalimentacion": "4÷8=0.5 tazas por vaso; 0.5×20=10 tazas.",
+          "pistas": [
+            "Encuentra el valor unitario dividiendo, y luego multiplica por la nueva cantidad, igual que calculamos 12 bolsas de arroz = $420 en la tienda.",
+            "4 tazas ÷ 8 vasos = 0.5 tazas por vaso; 0.5 × 20 vasos = 10 tazas."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -234,7 +316,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Si una impresora imprime 24 hojas en 2 minutos a ritmo constante, en 7 minutos imprimirá 84 hojas.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "24÷2=12 hojas por minuto; 12×7=84 hojas."
+          "retroalimentacion": "24÷2=12 hojas por minuto; 12×7=84 hojas.",
+          "pistas": [
+            "Encuentra el valor por unidad de tiempo dividiendo, y multiplica por el nuevo tiempo, el mismo procedimiento que usamos con las bolsas de arroz de la tienda ($420 por 12 bolsas).",
+            "Verdadero: 24÷2=12 hojas por minuto; 12×7=84 hojas."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -266,9 +352,27 @@
             "240"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "60÷4=15 litros por minuto; 15×10=150 litros."
+          "retroalimentacion": "60÷4=15 litros por minuto; 15×10=150 litros.",
+          "pistas": [
+            "Calcula la cantidad por unidad de tiempo dividiendo, y multiplica por el nuevo tiempo, igual que hicimos con las bolsas de arroz de la tienda (12 bolsas = $420).",
+            "60÷4=15 litros por minuto; 15×10=150 litros."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El dueño de la tienda compra bolsas de arroz para su negocio: si 5 bolsas cuestan $175, ¿cuánto costarán 12 bolsas al mismo precio?",
+        "pasos": [
+          {
+            "texto": "Encontramos el precio de una bolsa dividiendo.",
+            "operacion": "175÷5=35"
+          },
+          {
+            "texto": "Multiplicamos el precio unitario por la nueva cantidad.",
+            "operacion": "35×12=420"
+          }
+        ],
+        "respuestaFinal": "12 bolsas de arroz costarán $420."
+      }
     }
   ],
   "practicaExtra": [

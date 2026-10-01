@@ -35,13 +35,21 @@
             "6 cm³"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "V = a³ = 3³ = 3×3×3 = 27 cm³."
+          "retroalimentacion": "V = a³ = 3³ = 3×3×3 = 27 cm³.",
+          "pistas": [
+            "El volumen de un cubo es arista al cubo (arista×arista×arista), igual que calculamos 216 cm³ para la caja de herramientas del papá.",
+            "3³=3×3×3=27 cm³."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "El volumen de un prisma rectangular de 4 cm × 2 cm × 5 cm es 40 cm³.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "V = l×w×h = 4×2×5 = 40 cm³. La afirmación es correcta."
+          "retroalimentacion": "V = l×w×h = 4×2×5 = 40 cm³. La afirmación es correcta.",
+          "pistas": [
+            "El volumen de un prisma rectangular es largo por ancho por alto, el mismo tipo de fórmula que usamos para la caja cúbica del papá (216 cm³).",
+            "Verdadero: 4×2×5=40 cm³."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -59,7 +67,11 @@
             "25 cm²"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "A = 6a² = 6 × 5² = 6 × 25 = 150 cm², porque el cubo tiene 6 caras cuadradas iguales."
+          "retroalimentacion": "A = 6a² = 6 × 5² = 6 × 25 = 150 cm², porque el cubo tiene 6 caras cuadradas iguales.",
+          "pistas": [
+            "El área total de un cubo es 6 veces el área de una cara (arista al cuadrado), igual que calculamos el volumen de la caja cúbica del papá.",
+            "El área de una cara es 5²=25 cm²; el área total es 6×25=150 cm²."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -81,7 +93,21 @@
           ],
           "retroalimentacion": "Cubo arista 2: 2³=8 cm³. Prisma 3×4×2 = 24 cm³. Cubo arista 4: 4³=64 cm³."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El papá también mide una caja de herramientas más pequeña, en forma de cubo, con arista de 6 cm.",
+        "pasos": [
+          {
+            "texto": "Aplicamos la fórmula del volumen de un cubo (arista al cubo).",
+            "operacion": "6³=6×6×6"
+          },
+          {
+            "texto": "Resolvemos la operación.",
+            "operacion": "216"
+          }
+        ],
+        "respuestaFinal": "El volumen de la caja cúbica es 216 cm³."
+      }
     },
     {
       "numero": "34.2",
@@ -105,13 +131,21 @@
             "28.26 cm³"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "V = πr²h = 3.14 × 2² × 7 = 3.14 × 4 × 7 = 87.92 cm³."
+          "retroalimentacion": "V = πr²h = 3.14 × 2² × 7 = 3.14 × 4 × 7 = 87.92 cm³.",
+          "pistas": [
+            "El volumen de un cilindro es π por el radio al cuadrado por la altura, igual que calculamos 282.6 cm³ para el tinaco pequeño del papá.",
+            "3.14×2²×7 = 3.14×4×7 = 87.92 cm³."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "Un cilindro con radio 5 cm y altura 4 cm tiene un volumen de 314 cm³ (usando π = 3.14).",
           "respuestaCorrecta": true,
-          "retroalimentacion": "V = πr²h = 3.14 × 5² × 4 = 3.14 × 25 × 4 = 314 cm³. La afirmación es correcta."
+          "retroalimentacion": "V = πr²h = 3.14 × 5² × 4 = 3.14 × 25 × 4 = 314 cm³. La afirmación es correcta.",
+          "pistas": [
+            "Aplica la fórmula del volumen del cilindro (π×r²×h), el mismo procedimiento que usamos con el tinaco pequeño del papá (282.6 cm³).",
+            "Verdadero: 3.14×5²×4 = 3.14×25×4 = 314 cm³."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -129,7 +163,11 @@
             "2πr²"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "El área lateral es el rectángulo que resulta de 'desenrollar' la superficie curva: su base mide 2πr (el perímetro del círculo) y su altura mide h, así que A = 2πrh."
+          "retroalimentacion": "El área lateral es el rectángulo que resulta de 'desenrollar' la superficie curva: su base mide 2πr (el perímetro del círculo) y su altura mide h, así que A = 2πrh.",
+          "pistas": [
+            "El área lateral de un cilindro usa el perímetro de la base (2πr) multiplicado por la altura, un concepto relacionado con el volumen que calculamos para el tinaco del papá.",
+            "La fórmula del área lateral de un cilindro es 2×π×radio×altura."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -151,7 +189,21 @@
           ],
           "retroalimentacion": "r=2,h=3: 3.14×4×3=37.68 cm³. r=1,h=4: 3.14×1×4=12.56 cm³. r=3,h=1: 3.14×9×1=28.26 cm³."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El papá también calcula el volumen de un tinaco más pequeño con radio 3 cm y altura 10 cm (usa π=3.14).",
+        "pasos": [
+          {
+            "texto": "Aplicamos la fórmula del volumen de un cilindro: π×radio²×altura.",
+            "operacion": "3.14×3²×10"
+          },
+          {
+            "texto": "Resolvemos la operación.",
+            "operacion": "3.14×9×10=282.6"
+          }
+        ],
+        "respuestaFinal": "El volumen del tinaco pequeño es 282.6 cm³."
+      }
     },
     {
       "numero": "34.3",
@@ -175,13 +227,21 @@
             "16 cm³"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Área de la base = 4×4 = 16 cm². V = (1/3) × 16 × 6 = (1/3) × 96 = 32 cm³."
+          "retroalimentacion": "Área de la base = 4×4 = 16 cm². V = (1/3) × 16 × 6 = (1/3) × 96 = 32 cm³.",
+          "pistas": [
+            "El volumen de una pirámide es (área de la base × altura) entre 3, igual que calculamos 108 cm³ para la pirámide del papá.",
+            "Área base=4²=16; volumen=(16×6)÷3=32 cm³."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "El volumen de un cono con radio 2 cm y altura 6 cm (usando π = 3.14) es 25.12 cm³.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "V = (1/3)πr²h = (1/3) × 3.14 × 4 × 6 = (1/3) × 75.36 = 25.12 cm³. La afirmación es correcta."
+          "retroalimentacion": "V = (1/3)πr²h = (1/3) × 3.14 × 4 × 6 = (1/3) × 75.36 = 25.12 cm³. La afirmación es correcta.",
+          "pistas": [
+            "El volumen de un cono es (π×radio²×altura)÷3, el mismo tipo de fórmula (entre 3) que usamos para la pirámide del papá (108 cm³).",
+            "Verdadero: (3.14×2²×6)÷3 = (3.14×4×6)÷3 = 75.36÷3 = 25.12 cm³."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -199,7 +259,11 @@
             "12 cm"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Por el teorema de Pitágoras, l = √(r²+h²) = √(6²+8²) = √(36+64) = √100 = 10 cm."
+          "retroalimentacion": "Por el teorema de Pitágoras, l = √(r²+h²) = √(6²+8²) = √(36+64) = √100 = 10 cm.",
+          "pistas": [
+            "La generatriz de un cono se calcula con el Teorema de Pitágoras, usando el radio y la altura como catetos, un concepto relacionado con el volumen que calculamos para la pirámide del papá.",
+            "l²=6²+8²=36+64=100; l=√100=10 cm."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -221,7 +285,21 @@
           ],
           "retroalimentacion": "Pirámide 3×3, h=4: (1/3)×9×4=12 cm³. Cono r=3,h=2: (1/3)×3.14×9×2=18.84 cm³. Pirámide 2×2, h=6: (1/3)×4×6=8 cm³."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El papá también calcula el volumen de una pirámide de base cuadrada de 6 cm de lado y 9 cm de altura.",
+        "pasos": [
+          {
+            "texto": "Calculamos el área de la base (lado al cuadrado).",
+            "operacion": "6²=36"
+          },
+          {
+            "texto": "Aplicamos la fórmula del volumen de la pirámide: (área base × altura) ÷ 3.",
+            "operacion": "(36×9)÷3=108"
+          }
+        ],
+        "respuestaFinal": "El volumen de la pirámide es 108 cm³."
+      }
     },
     {
       "numero": "34.4",
@@ -244,13 +322,21 @@
             "12 560 L"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "V = πr²h = 3.14 × 1² × 2 = 6.28 m³. Como 1 m³ = 1000 L, entonces 6.28 m³ = 6 280 litros."
+          "retroalimentacion": "V = πr²h = 3.14 × 1² × 2 = 6.28 m³. Como 1 m³ = 1000 L, entonces 6.28 m³ = 6 280 litros.",
+          "pistas": [
+            "Calcula el volumen del cilindro en metros cúbicos y multiplica por 1000 para convertir a litros, igual que calculamos 14,130 litros para el tinaco del papá.",
+            "3.14×1²×2 = 6.28 m³; en litros: 6.28×1000 = 6,280 litros."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "Una caja de regalo en forma de cubo con arista de 20 cm tiene un volumen de 8 000 cm³.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "V = a³ = 20³ = 20×20×20 = 8 000 cm³. La afirmación es correcta."
+          "retroalimentacion": "V = a³ = 20³ = 20×20×20 = 8 000 cm³. La afirmación es correcta.",
+          "pistas": [
+            "El volumen de un cubo es arista al cubo, el mismo tipo de cálculo que usamos para el tinaco del papá (14,130 litros).",
+            "Verdadero: 20³=20×20×20=8,000 cm³."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -268,7 +354,11 @@
             "No se puede saber sin más datos"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Caja: V = 2×3×4 = 24 m³. Cilindro: V = 3.14×2²×3 = 3.14×4×3 = 37.68 m³. El cilindro tiene mayor volumen."
+          "retroalimentacion": "Caja: V = 2×3×4 = 24 m³. Cilindro: V = 3.14×2²×3 = 3.14×4×3 = 37.68 m³. El cilindro tiene mayor volumen.",
+          "pistas": [
+            "Calcula el volumen de cada contenedor por separado y compáralos, igual que calculamos el volumen del tinaco del papá (14,130 litros).",
+            "Caja: 2×3×4=24 m³. Tanque: 3.14×2²×3=3.14×4×3=37.68 m³. El tanque cilíndrico tiene mayor volumen."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -290,7 +380,21 @@
           ],
           "retroalimentacion": "El tinaco (cilindro) usa V=πr²h; la caja (prisma) usa V=largo×ancho×alto; el silo (cono) usa V=(1/3)πr²h."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Otro tinaco cilíndrico tiene radio 1.5 m y altura 2 m. Usando π=3.14 y sabiendo que 1 m³ = 1000 litros, ¿cuántos litros de agua caben?",
+        "pasos": [
+          {
+            "texto": "Calculamos el volumen en metros cúbicos.",
+            "operacion": "3.14×1.5²×2=3.14×2.25×2=14.13"
+          },
+          {
+            "texto": "Convertimos a litros multiplicando por 1000.",
+            "operacion": "14.13×1000=14,130"
+          }
+        ],
+        "respuestaFinal": "Caben 14,130 litros de agua."
+      }
     }
   ],
   "practicaExtra": [

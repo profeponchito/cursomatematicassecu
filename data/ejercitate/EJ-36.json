@@ -35,7 +35,11 @@
             "25"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "La frecuencia absoluta de una categoría es simplemente el número de veces que aparece; verde recibió 9 votos, así que su frecuencia absoluta es 9."
+          "retroalimentacion": "La frecuencia absoluta de una categoría es simplemente el número de veces que aparece; verde recibió 9 votos, así que su frecuencia absoluta es 9.",
+          "pistas": [
+            "La frecuencia absoluta de una categoría es simplemente el número de veces que aparece, igual que encontramos que 4 alumnos pidieron tamarindo en la cooperativa.",
+            "La frecuencia absoluta de 'verde' es 9, porque así se indica directamente en los datos de la votación."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -47,7 +51,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "La suma de todas las frecuencias absolutas de una tabla siempre debe ser igual al número total de datos recolectados.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: cada dato se cuenta una sola vez en alguna categoría, así que al sumar todas las frecuencias absolutas se recupera el total de datos."
+          "retroalimentacion": "Correcto: cada dato se cuenta una sola vez en alguna categoría, así que al sumar todas las frecuencias absolutas se recupera el total de datos.",
+          "pistas": [
+            "La suma de todas las frecuencias absolutas siempre debe coincidir con el número total de datos recolectados, el mismo principio que usamos para encontrar que 4 alumnos pidieron tamarindo (14+10+7+4=35).",
+            "Verdadero: si sumas todas las frecuencias absolutas de una tabla, el resultado debe ser igual al total de datos."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -59,7 +67,11 @@
             "10"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "10 + 8 + 5 = 23 personas ya están contadas; como el total es 25, quedan 25 - 23 = 2 personas que dijeron tener 3 mascotas."
+          "retroalimentacion": "10 + 8 + 5 = 23 personas ya están contadas; como el total es 25, quedan 25 - 23 = 2 personas que dijeron tener 3 mascotas.",
+          "pistas": [
+            "Suma las frecuencias conocidas y resta del total para encontrar la frecuencia faltante, el mismo procedimiento que usamos para encontrar que 4 alumnos pidieron tamarindo en la cooperativa.",
+            "10+8+5=23; 25-23=2 personas dijeron tener 3 mascotas."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -67,7 +79,21 @@
           "respuestaCorrecta": "7",
           "retroalimentacion": "La frecuencia absoluta es el conteo directo de apariciones: el 6 salió 7 veces, así que su frecuencia absoluta es 7."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Al día siguiente, la cooperativa registró 35 alumnos: limón 14, jamaica 10, horchata 7 y tamarindo el resto. ¿Cuántos alumnos pidieron tamarindo?",
+        "pasos": [
+          {
+            "texto": "Sumamos las frecuencias conocidas.",
+            "operacion": "14+10+7=31"
+          },
+          {
+            "texto": "Restamos del total para encontrar la frecuencia faltante.",
+            "operacion": "35-31=4"
+          }
+        ],
+        "respuestaFinal": "4 alumnos pidieron tamarindo."
+      }
     },
     {
       "numero": "36.2",
@@ -91,7 +117,11 @@
             "0.05"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Frecuencia relativa = frecuencia absoluta ÷ total = 5 ÷ 20 = 0.25."
+          "retroalimentacion": "Frecuencia relativa = frecuencia absoluta ÷ total = 5 ÷ 20 = 0.25.",
+          "pistas": [
+            "Divide la frecuencia absoluta entre el total de datos para obtener la frecuencia relativa, igual que calculamos 0.29 para el sabor jamaica de la cooperativa.",
+            "5÷20 = 0.25, así que la frecuencia relativa de 'A' es 0.25."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -103,7 +133,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Si un valor tiene frecuencia relativa 0.5, eso significa que representa el 50% de los datos totales.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: para convertir la frecuencia relativa a porcentaje se multiplica por 100, y 0.5 × 100 = 50%."
+          "retroalimentacion": "Correcto: para convertir la frecuencia relativa a porcentaje se multiplica por 100, y 0.5 × 100 = 50%.",
+          "pistas": [
+            "La frecuencia relativa multiplicada por 100 da el porcentaje, el mismo cálculo que usamos para convertir 10/35 en 29% para el sabor jamaica.",
+            "Verdadero: una frecuencia relativa de 0.5 equivale al 50% de los datos totales."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -115,7 +149,11 @@
             "56%"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "24 ÷ 80 = 0.3, y 0.3 × 100 = 30%."
+          "retroalimentacion": "24 ÷ 80 = 0.3, y 0.3 × 100 = 30%.",
+          "pistas": [
+            "Divide la frecuencia absoluta entre el total y multiplica por 100 para obtener el porcentaje, igual que calculamos el 29% del sabor jamaica en la cooperativa.",
+            "24÷80=0.30; en porcentaje: 30%."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -123,7 +161,21 @@
           "respuestaCorrecta": "30",
           "retroalimentacion": "Frecuencia absoluta = frecuencia relativa × total = 0.15 × 200 = 30."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "De los 35 datos del día siguiente en la cooperativa, el sabor jamaica tiene frecuencia absoluta 10. ¿Cuál es su frecuencia relativa?",
+        "pasos": [
+          {
+            "texto": "Dividimos la frecuencia absoluta entre el total de datos.",
+            "operacion": "10÷35"
+          },
+          {
+            "texto": "Resolvemos la división (redondeando a 2 decimales).",
+            "operacion": "≈0.29"
+          }
+        ],
+        "respuestaFinal": "La frecuencia relativa de jamaica es aproximadamente 0.29 (29%)."
+      }
     },
     {
       "numero": "36.3",
@@ -146,7 +198,11 @@
             "18"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "12+18+7 = 37; como el total debe ser 40, la frecuencia faltante es 40 - 37 = 3."
+          "retroalimentacion": "12+18+7 = 37; como el total debe ser 40, la frecuencia faltante es 40 - 37 = 3.",
+          "pistas": [
+            "Suma las frecuencias conocidas y resta del total para encontrar la frecuencia faltante, igual que calculamos 5 para 'uva' en la tabla de refrescos de la cooperativa.",
+            "12+18+7=37; 40-37=3, así que la frecuencia absoluta de '3 hermanos' es 3."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -172,7 +228,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "En una tabla de frecuencias bien construida, la columna de porcentajes siempre debe sumar 100% (o muy cerca, por redondeo).",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: como cada dato pertenece a una sola categoría, los porcentajes de todas las categorías juntos representan el 100% del total."
+          "retroalimentacion": "Correcto: como cada dato pertenece a una sola categoría, los porcentajes de todas las categorías juntos representan el 100% del total.",
+          "pistas": [
+            "En una tabla de frecuencias bien construida, los porcentajes de todas las categorías deben sumar 100% (como las frecuencias absolutas suman el total), el mismo principio que usamos para la tabla de refrescos.",
+            "Verdadero: la columna de porcentajes de una tabla bien construida suma 100% (o muy cerca, por redondeo)."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -190,9 +250,27 @@
             "75"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Como los porcentajes suman 100% y la frecuencia absoluta de Lápiz (40) corresponde al 40%, el total es 40÷0.4 = 100 artículos, lo cual también se comprueba sumando 40+35+25=100."
+          "retroalimentacion": "Como los porcentajes suman 100% y la frecuencia absoluta de Lápiz (40) corresponde al 40%, el total es 40÷0.4 = 100 artículos, lo cual también se comprueba sumando 40+35+25=100.",
+          "pistas": [
+            "Si los porcentajes dados ya suman 100%, la suma de las frecuencias absolutas es el total de datos, igual que calculamos el total de refrescos vendidos en la cooperativa (50).",
+            "40+35+25 = 100 artículos vendidos en total esa semana."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Una tabla de frecuencias sobre refrescos pedidos por 50 alumnos muestra: cola (fi=20), naranja (fi=15), limón (fi=10), uva (fi=?). Si el total es 50, ¿cuál es la frecuencia absoluta de 'uva'?",
+        "pasos": [
+          {
+            "texto": "Sumamos las frecuencias conocidas.",
+            "operacion": "20+15+10=45"
+          },
+          {
+            "texto": "Restamos del total para encontrar la frecuencia faltante.",
+            "operacion": "50-45=5"
+          }
+        ],
+        "respuestaFinal": "La frecuencia absoluta de 'uva' es 5."
+      }
     },
     {
       "numero": "36.4",
@@ -214,7 +292,11 @@
             "10%"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Como los porcentajes deben sumar 100%, Estrategia = 100% - 40% - 30% = 30%, lo que coincide con fi=90-36-27=27 y 27÷90=0.3=30%."
+          "retroalimentacion": "Como los porcentajes deben sumar 100%, Estrategia = 100% - 40% - 30% = 30%, lo que coincide con fi=90-36-27=27 y 27÷90=0.3=30%.",
+          "pistas": [
+            "Suma los porcentajes conocidos y resta de 100% para encontrar el porcentaje faltante, igual que calculamos 30% para voleibol en la tabla de deportes.",
+            "40%+30%=70%; 100%-70%=30% corresponde a Estrategia."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -246,7 +328,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Si una tabla de frecuencias tiene un error de captura y una categoría quedó con un dato de más, la suma de frecuencias absolutas ya no coincidirá con el total real de datos recolectados.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: por eso comprobar que la suma de frecuencias absolutas coincida con el total es una forma útil de detectar errores en la tabla."
+          "retroalimentacion": "Correcto: por eso comprobar que la suma de frecuencias absolutas coincida con el total es una forma útil de detectar errores en la tabla.",
+          "pistas": [
+            "Si la suma de frecuencias absolutas no coincide con el total real de datos, hay un error en la tabla, el mismo principio de verificación que usamos para comprobar la tabla de deportes (24+18+18=60).",
+            "Verdadero: si una categoría tiene un dato de más por error, la suma de todas las frecuencias ya no coincidirá con el total real recolectado."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -258,9 +344,27 @@
             "1.0"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "30+18=48 días; 48÷60=0.8, es decir, el 80% de los días fueron soleados o nublados."
+          "retroalimentacion": "30+18=48 días; 48÷60=0.8, es decir, el 80% de los días fueron soleados o nublados.",
+          "pistas": [
+            "Suma las frecuencias absolutas de las categorías pedidas y divide entre el total para obtener la frecuencia relativa conjunta, igual que calculamos el porcentaje de voleibol en la tabla de deportes.",
+            "30+18=48 días; 48÷60=0.8, así que la frecuencia relativa de días soleados o nublados juntos es 0.8 (80%)."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Una tabla sobre 60 alumnos y su deporte favorito muestra: fútbol (fi=24), básquet (fi=18), voleibol (fi=?). Los porcentajes de fútbol y básquet son 40% y 30%. ¿Qué porcentaje corresponde a voleibol?",
+        "pasos": [
+          {
+            "texto": "Sumamos los porcentajes conocidos.",
+            "operacion": "40%+30%=70%"
+          },
+          {
+            "texto": "Restamos de 100% para encontrar el porcentaje faltante.",
+            "operacion": "100%-70%=30%"
+          }
+        ],
+        "respuestaFinal": "A voleibol le corresponde el 30%."
+      }
     }
   ],
   "practicaExtra": [

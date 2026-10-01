@@ -41,13 +41,21 @@
             "36"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "2^6 = 2×2×2×2×2×2 = 64."
+          "retroalimentacion": "2^6 = 2×2×2×2×2×2 = 64.",
+          "pistas": [
+            "Multiplica la base por sí misma tantas veces como indique el exponente, igual que calculamos 3³=27 para la caja del carpintero.",
+            "2^6 = 2×2×2×2×2×2 = 64."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "En la potencia 7^2, el número 2 es la base.",
           "respuestaCorrecta": false,
-          "retroalimentacion": "Falso: en 7^2, el 7 es la base (el número que se repite) y el 2 es el exponente (cuántas veces se repite)."
+          "retroalimentacion": "Falso: en 7^2, el 7 es la base (el número que se repite) y el 2 es el exponente (cuántas veces se repite).",
+          "pistas": [
+            "En una potencia, la base es el número que se repite y el exponente indica cuántas veces se repite, igual que en 3³=27 donde 3 es la base y 3 es el exponente.",
+            "Falso: en 7², el 7 es la base y el 2 es el exponente."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -65,9 +73,27 @@
             "4×6"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "El 6 se repite 4 veces como factor, así que la base es 6 y el exponente es 4: 6^4."
+          "retroalimentacion": "El 6 se repite 4 veces como factor, así que la base es 6 y el exponente es 4: 6^4.",
+          "pistas": [
+            "Cuenta cuántas veces se repite el factor para identificar el exponente, igual que escribimos 3×3×3 = 3³ para la caja del carpintero.",
+            "6×6×6×6 tiene el factor 6 repetido 4 veces, así que se escribe como 6⁴."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El carpintero arma otra caja con arista de 3 cm y multiplica 3 × 3 × 3 para saber cuánto espacio tiene.",
+        "pasos": [
+          {
+            "texto": "Contamos cuántas veces se repite el factor 3 en la multiplicación.",
+            "operacion": "3×3×3 → base 3, exponente 3"
+          },
+          {
+            "texto": "Escribimos la potencia y calculamos su valor.",
+            "operacion": "3³=27"
+          }
+        ],
+        "respuestaFinal": "3 × 3 × 3 = 3³ = 27 cm³."
+      }
     },
     {
       "numero": "16.2",
@@ -97,13 +123,21 @@
             "666"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "6³ = 6×6×6 = 216."
+          "retroalimentacion": "6³ = 6×6×6 = 216.",
+          "pistas": [
+            "El cubo de un número es multiplicarlo por sí mismo tres veces, igual que calculamos 5³=125 para la caja del carpintero.",
+            "6³ = 6×6×6 = 216."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "El cuadrado de 12 es 144.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: 12² = 12×12 = 144."
+          "retroalimentacion": "Correcto: 12² = 12×12 = 144.",
+          "pistas": [
+            "El cuadrado de un número es multiplicarlo por sí mismo dos veces; el cubo es multiplicarlo tres veces, como hicimos con 5³=125 para la caja del carpintero.",
+            "Verdadero: 12² = 12×12 = 144."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -131,7 +165,21 @@
           ],
           "retroalimentacion": "4² = 16, 2³ = 8 y 5² = 25."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El carpintero hace una caja cúbica con arista de 5 cm y calcula su cubo (5³) para saber el volumen.",
+        "pasos": [
+          {
+            "texto": "Identificamos que el cubo de un número es multiplicarlo por sí mismo tres veces.",
+            "operacion": "5³=5×5×5"
+          },
+          {
+            "texto": "Calculamos el resultado.",
+            "operacion": "5×5×5=125"
+          }
+        ],
+        "respuestaFinal": "5³ = 125 cm³."
+      }
     },
     {
       "numero": "16.3",
@@ -161,13 +209,21 @@
             "16"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "4×4×4 = 64, así que ∛64 = 4."
+          "retroalimentacion": "4×4×4 = 64, así que ∛64 = 4.",
+          "pistas": [
+            "La raíz cúbica busca el número que multiplicado tres veces por sí mismo da el resultado, igual que encontramos ∛512=8 para la caja del carpintero.",
+            "∛64: buscamos un número que al cubo dé 64. Como 4×4×4=64, ∛64=4."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "√49 = 7.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: 7×7 = 49."
+          "retroalimentacion": "Correcto: 7×7 = 49.",
+          "pistas": [
+            "La raíz cuadrada busca el número que multiplicado dos veces por sí mismo da el resultado, el mismo principio que usamos con la raíz cúbica para la caja de 512 cm³.",
+            "Verdadero: 7×7=49, así que √49=7."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -185,9 +241,27 @@
             "18"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "∛216 = 6, porque 6×6×6 = 216."
+          "retroalimentacion": "∛216 = 6, porque 6×6×6 = 216.",
+          "pistas": [
+            "Para encontrar la arista de un cubo a partir de su volumen, calcula la raíz cúbica del volumen, igual que hicimos con ∛512=8 para la caja del carpintero.",
+            "∛216: buscamos un número que al cubo dé 216. Como 6×6×6=216, la arista mide 6 cm."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El carpintero sabe que una caja cúbica tiene un volumen de 512 cm³ y quiere saber cuánto mide cada arista.",
+        "pasos": [
+          {
+            "texto": "Planteamos que buscamos un número que multiplicado tres veces por sí mismo dé 512: la raíz cúbica.",
+            "operacion": "∛512"
+          },
+          {
+            "texto": "Probamos: 8×8×8=512, así que la arista mide 8 cm.",
+            "operacion": "8×8×8=512"
+          }
+        ],
+        "respuestaFinal": "∛512 = 8, así que cada arista mide 8 cm."
+      }
     },
     {
       "numero": "16.4",
@@ -210,13 +284,21 @@
             "12"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "La raíz cuadrada deshace el cuadrado: si 11² = 121, entonces √121 = 11."
+          "retroalimentacion": "La raíz cuadrada deshace el cuadrado: si 11² = 121, entonces √121 = 11.",
+          "pistas": [
+            "Si conoces el cuadrado de un número, la raíz cuadrada del resultado regresa al número original, igual que comprobamos que 9³=729 y ∛729=9 para la caja del carpintero.",
+            "Como 11²=121, entonces √121=11."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "Elevar al cuadrado y sacar raíz cuadrada son operaciones inversas.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: una deshace lo que hace la otra, por eso al aplicarlas en secuencia regresas al número original."
+          "retroalimentacion": "Correcto: una deshace lo que hace la otra, por eso al aplicarlas en secuencia regresas al número original.",
+          "pistas": [
+            "Elevar a una potencia y sacar la raíz del mismo grado son operaciones inversas, el mismo principio que comprobamos con el cubo y la raíz cúbica en la caja de 9 cm del carpintero.",
+            "Verdadero: si elevas un número al cuadrado y luego sacas raíz cuadrada del resultado, regresas al número original."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -254,9 +336,27 @@
             "12 m"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "El lado es la raíz cuadrada del área: √169 = 13, porque 13×13 = 169."
+          "retroalimentacion": "El lado es la raíz cuadrada del área: √169 = 13, porque 13×13 = 169.",
+          "pistas": [
+            "Para encontrar el lado de un cuadrado a partir de su área, calcula la raíz cuadrada del área, el mismo principio que usamos para comprobar 9³=729 y ∛729=9.",
+            "√169: buscamos un número que al cuadrado dé 169. Como 13×13=169, el lado mide 13 m."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El carpintero construye su caja más grande con arista de 9 cm y quiere comprobar que el cubo y la raíz cúbica son operaciones inversas.",
+        "pasos": [
+          {
+            "texto": "Calculamos el cubo de 9.",
+            "operacion": "9³=9×9×9=729"
+          },
+          {
+            "texto": "Calculamos la raíz cúbica de 729 para comprobar que regresamos al número original.",
+            "operacion": "∛729=9"
+          }
+        ],
+        "respuestaFinal": "9³ = 729, y ∛729 = 9: el cubo y la raíz cúbica son operaciones inversas."
+      }
     }
   ],
   "practicaExtra": [

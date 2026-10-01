@@ -34,7 +34,11 @@
             "36"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Múltiplos de 3: 3,6,9,12... Múltiplos de 4: 4,8,12... El menor múltiplo común es 12."
+          "retroalimentacion": "Múltiplos de 3: 3,6,9,12... Múltiplos de 4: 4,8,12... El menor múltiplo común es 12.",
+          "pistas": [
+            "Lista los múltiplos de cada número y busca el primero que se repite en ambas listas, igual que calculamos MCM(10,15)=30 con los camiones de Querétaro y Morelia.",
+            "Múltiplos de 3: 3,6,9,12... Múltiplos de 4: 4,8,12... El menor múltiplo común es 12."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -46,7 +50,11 @@
           "tipo": "llenar_frase",
           "frase": "El MCM de 6 y 8 es ___.",
           "respuestaCorrecta": "24",
-          "retroalimentacion": "Múltiplos de 6: 6,12,18,24... Múltiplos de 8: 8,16,24... El menor común es 24."
+          "retroalimentacion": "Múltiplos de 6: 6,12,18,24... Múltiplos de 8: 8,16,24... El menor común es 24.",
+          "pistas": [
+            "Lista los múltiplos de ambos números y busca el primero que coincide, el mismo procedimiento que usamos con los camiones de Querétaro y Morelia.",
+            "Múltiplos de 6: 6,12,18,24... Múltiplos de 8: 8,16,24... El menor común es 24."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -58,7 +66,11 @@
             "90"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "5 y 9 no comparten factores, así que su MCM es el producto de ambos: 5×9=45."
+          "retroalimentacion": "5 y 9 no comparten factores, así que su MCM es el producto de ambos: 5×9=45.",
+          "pistas": [
+            "Si los dos números no comparten factores, su MCM es el producto de ambos, igual que podría pasar con los camiones de Querétaro y Morelia si no compartieran factores.",
+            "5 y 9 no comparten factores, así que su MCM es el producto de ambos: 5×9=45."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -80,7 +92,21 @@
           ],
           "retroalimentacion": "MCM(2,5)=10; MCM(4,10)=20; MCM(3,7)=21."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "En la misma central camionera, el camión a Querétaro sale cada 10 minutos y el camión a Morelia cada 15 minutos, y ambos salieron juntos a las 7:00. ¿Cuál es el MCM de 10 y 15?",
+        "pasos": [
+          {
+            "texto": "Listamos los múltiplos de cada número.",
+            "operacion": "múltiplos de 10: 10,20,30; múltiplos de 15: 15,30"
+          },
+          {
+            "texto": "Identificamos el menor múltiplo común.",
+            "operacion": "MCM(10,15)=30"
+          }
+        ],
+        "respuestaFinal": "El MCM de 10 y 15 es 30."
+      }
     },
     {
       "numero": "6.2",
@@ -104,7 +130,11 @@
             "49"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "Se toman todos los factores con su mayor exponente: 2¹, 3¹ y 7¹, entonces MCM=2×3×7=42."
+          "retroalimentacion": "Se toman todos los factores con su mayor exponente: 2¹, 3¹ y 7¹, entonces MCM=2×3×7=42.",
+          "pistas": [
+            "Toma todos los factores primos (comunes y no comunes) con su mayor exponente y multiplícalos, igual que calculamos MCM(10,15)=30 con los camiones de Querétaro y Pachuca.",
+            "Se toman todos los factores con su mayor exponente: 2¹, 3¹ y 7¹, entonces MCM=2×3×7=42."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -116,7 +146,11 @@
           "tipo": "llenar_frase",
           "frase": "Si 16=2⁴ y 24=2³×3, el MCM es 2⁴×3=___.",
           "respuestaCorrecta": "48",
-          "retroalimentacion": "El mayor exponente de 2 es 4 y aparece también el factor 3, así que MCM=16×3=48."
+          "retroalimentacion": "El mayor exponente de 2 es 4 y aparece también el factor 3, así que MCM=16×3=48.",
+          "pistas": [
+            "Toma el mayor exponente de cada factor primo que aparece, el mismo procedimiento que usamos con los camiones de Querétaro y Pachuca.",
+            "El mayor exponente de 2 es 4 y aparece también el factor 3, así que MCM=16×3=48."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -128,7 +162,11 @@
             "75"
           ],
           "respuestaCorrecta": 3,
-          "retroalimentacion": "Se toman 3¹ y 5², entonces MCM=3×25=75."
+          "retroalimentacion": "Se toman 3¹ y 5², entonces MCM=3×25=75.",
+          "pistas": [
+            "Descompón ambos números en factores primos y toma cada uno con su mayor exponente, igual que hicimos con los camiones de Querétaro (10) y Pachuca (15).",
+            "Se toman 3¹ y 5², entonces MCM=3×25=75."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -150,7 +188,21 @@
           ],
           "retroalimentacion": "MCM(6,10)=2×3×5=30; MCM(9,12)=2²×3²=36; MCM(8,20)=2³×5=40."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El camión a Querétaro (cada 10=2×5 minutos) y uno nuevo a Pachuca (cada 15=3×5 minutos). ¿Cuál es su MCM usando descomposición en factores primos?",
+        "pasos": [
+          {
+            "texto": "Tomamos todos los factores primos (comunes y no comunes) con su mayor exponente.",
+            "operacion": "2¹,3¹,5¹"
+          },
+          {
+            "texto": "Multiplicamos esos factores.",
+            "operacion": "MCM=2×3×5=30"
+          }
+        ],
+        "respuestaFinal": "El MCM de 10 y 15 es 30, confirmando el resultado del método de listas."
+      }
     },
     {
       "numero": "6.3",
@@ -173,7 +225,11 @@
             "80"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "El primer valor que aparece en ambas listas es 20, así que MCM(4,10)=20."
+          "retroalimentacion": "El primer valor que aparece en ambas listas es 20, así que MCM(4,10)=20.",
+          "pistas": [
+            "Lista los múltiplos de cada número hasta encontrar el primero en común, igual que calculamos MCM(8,12)=24 con los camiones de Puebla y Toluca.",
+            "El primer valor que aparece en ambas listas es 20, así que MCM(4,10)=20."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -185,7 +241,11 @@
           "tipo": "llenar_frase",
           "frase": "Listando los múltiplos de 2, 3 y 5, el menor múltiplo común de los tres es ___.",
           "respuestaCorrecta": "30",
-          "retroalimentacion": "El primer número que aparece en las listas de múltiplos de 2, 3 y 5 a la vez es 30."
+          "retroalimentacion": "El primer número que aparece en las listas de múltiplos de 2, 3 y 5 a la vez es 30.",
+          "pistas": [
+            "Escribe los múltiplos de cada número hasta encontrar el primero que se repite en las tres listas, el mismo método que usamos con los camiones de Puebla y Toluca.",
+            "El primer número que aparece en las listas de múltiplos de 2, 3 y 5 a la vez es 30."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -197,7 +257,11 @@
             "84"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "Múltiplos de 7: 7,14,21,28,35,42... Múltiplos de 6: 6,12,18,24,30,36,42... El primero en común es 42."
+          "retroalimentacion": "Múltiplos de 7: 7,14,21,28,35,42... Múltiplos de 6: 6,12,18,24,30,36,42... El primero en común es 42.",
+          "pistas": [
+            "Lista los múltiplos de ambos números hasta encontrar el primero en común, igual que hicimos con los camiones de Puebla (8 min) y Toluca (12 min).",
+            "Múltiplos de 7: 7,14,21,28,35,42... Múltiplos de 6: 6,12,18,24,30,36,42... El primero en común es 42."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -219,7 +283,21 @@
           ],
           "retroalimentacion": "MCM(2,3,4)=12; MCM(3,5)=15; MCM(5,6)=30."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Listando los múltiplos de 8 y 12 (como el camión a Puebla y el camión a Toluca del reto inicial), ¿cuál es su MCM?",
+        "pasos": [
+          {
+            "texto": "Listamos los múltiplos de 8 y de 12.",
+            "operacion": "múltiplos de 8: 8,16,24; múltiplos de 12: 12,24"
+          },
+          {
+            "texto": "Buscamos el primero que aparece en ambas listas.",
+            "operacion": "MCM(8,12)=24"
+          }
+        ],
+        "respuestaFinal": "El MCM de 8 y 12 es 24: los camiones de Puebla y Toluca volverán a salir juntos cada 24 minutos."
+      }
     },
     {
       "numero": "6.4",
@@ -242,7 +320,11 @@
             "300"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "MCM(15,20)=60, así que los autobuses vuelven a salir juntos cada 60 minutos."
+          "retroalimentacion": "MCM(15,20)=60, así que los autobuses vuelven a salir juntos cada 60 minutos.",
+          "pistas": [
+            "Calcula el MCM de los dos periodos para saber cada cuánto vuelven a coincidir, igual que calculamos los 72 minutos de los camiones a Puebla y Cuernavaca.",
+            "MCM(15,20)=60, así que los autobuses vuelven a salir juntos cada 60 minutos."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -254,7 +336,11 @@
           "tipo": "llenar_frase",
           "frase": "Una alarma suena cada 4 minutos y otra cada 10 minutos. Si sonaron juntas a las 8:00, volverán a sonar juntas después de ___ minutos.",
           "respuestaCorrecta": "20",
-          "retroalimentacion": "MCM(4,10)=20, así que las alarmas volverán a sonar juntas 20 minutos después."
+          "retroalimentacion": "MCM(4,10)=20, así que las alarmas volverán a sonar juntas 20 minutos después.",
+          "pistas": [
+            "El MCM de los periodos indica cada cuánto tiempo vuelven a coincidir dos eventos, el mismo procedimiento que usamos con los camiones a Puebla y Cuernavaca.",
+            "MCM(4,10)=20, así que las alarmas volverán a sonar juntas 20 minutos después."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -266,7 +352,11 @@
             "80"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "MCM(5,8)=40, así que las dos luces volverán a encender juntas en el segundo 40."
+          "retroalimentacion": "MCM(5,8)=40, así que las dos luces volverán a encender juntas en el segundo 40.",
+          "pistas": [
+            "Calcula el MCM de los dos periodos para saber en qué momento vuelven a coincidir, igual que hicimos con los camiones a Puebla (8 min) y Cuernavaca (18 min).",
+            "MCM(5,8)=40, así que las dos luces volverán a encender juntas en el segundo 40."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -288,7 +378,21 @@
           ],
           "retroalimentacion": "MCM(6,9)=18 días; MCM(10,15)=30 minutos; MCM(12,18)=36 segundos."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Un tercer camión, a Cuernavaca, sale cada 18 minutos. Si sale junto con el camión a Puebla (cada 8 minutos) a las 7:00, ¿cada cuántos minutos volverán a salir juntos ambos camiones?",
+        "pasos": [
+          {
+            "texto": "Descomponemos ambos números en factores primos.",
+            "operacion": "8=2³; 18=2×3²"
+          },
+          {
+            "texto": "Tomamos cada factor con su mayor exponente y multiplicamos.",
+            "operacion": "MCM=2³×3²=8×9=72"
+          }
+        ],
+        "respuestaFinal": "Los camiones a Puebla y a Cuernavaca volverán a salir juntos cada 72 minutos."
+      }
     }
   ],
   "practicaExtra": [

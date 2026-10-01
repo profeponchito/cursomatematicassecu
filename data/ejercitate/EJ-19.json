@@ -29,7 +29,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Si al doble de obreros trabajando corresponde la mitad del tiempo para terminar una obra, se trata de proporcionalidad inversa.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Cuando una cantidad se duplica y la otra se reduce a la mitad, es proporcionalidad inversa."
+          "retroalimentacion": "Cuando una cantidad se duplica y la otra se reduce a la mitad, es proporcionalidad inversa.",
+          "pistas": [
+            "En una proporcionalidad inversa, si una cantidad se duplica, la otra se reduce a la mitad, igual que comprobamos con los pintores de la barda (3→8h, 6→4h).",
+            "Verdadero: al doble de obreros, la obra se termina en la mitad del tiempo, porque es proporcionalidad inversa."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -53,7 +57,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "En una proporcionalidad inversa, al aumentar una cantidad, la otra también aumenta.",
           "respuestaCorrecta": false,
-          "retroalimentacion": "En la proporcionalidad inversa, cuando una cantidad aumenta, la otra disminuye, no aumenta."
+          "retroalimentacion": "En la proporcionalidad inversa, cuando una cantidad aumenta, la otra disminuye, no aumenta.",
+          "pistas": [
+            "En una proporcionalidad inversa, cuando una cantidad aumenta, la otra disminuye, el mismo comportamiento que vimos con los pintores de la barda (más pintores, menos horas).",
+            "Falso: en una proporcionalidad inversa, al aumentar una cantidad, la otra disminuye, no aumenta."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -65,9 +73,27 @@
             "Depende del color del tinaco"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "A más llaves abiertas (mismo caudal cada una), se necesita menos tiempo para llenar el tinaco: es proporcionalidad inversa."
+          "retroalimentacion": "A más llaves abiertas (mismo caudal cada una), se necesita menos tiempo para llenar el tinaco: es proporcionalidad inversa.",
+          "pistas": [
+            "Más llaves abiertas significa menos tiempo para llenar el tinaco, el mismo principio de proporcionalidad inversa que usamos con los pintores de la barda.",
+            "Al abrir más llaves, el tiempo de llenado disminuye, porque es una proporcionalidad inversa."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "En otro trabajo, 3 pintores tardan 8 horas en pintar una barda. Si se contratan 6 pintores (el doble), ¿qué pasa con el tiempo?",
+        "pasos": [
+          {
+            "texto": "Identificamos que al aumentar los pintores, el tiempo debe disminuir en la misma proporción.",
+            "operacion": "3 pintores → 8 horas; 6 pintores (doble) → ?"
+          },
+          {
+            "texto": "Como es proporcionalidad inversa, el tiempo se reduce a la mitad.",
+            "operacion": "8÷2=4"
+          }
+        ],
+        "respuestaFinal": "Con 6 pintores (el doble), la barda se pintará en 4 horas (la mitad del tiempo)."
+      }
     },
     {
       "numero": "19.2",
@@ -91,7 +117,11 @@
             "5"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "k=x×y=5×8=40."
+          "retroalimentacion": "k=x×y=5×8=40.",
+          "pistas": [
+            "Multiplica las dos cantidades relacionadas para encontrar la constante del producto, igual que calculamos k=24 para los pintores de la fachada.",
+            "5 obreros × 8 días = 40, así que la constante del producto es k=40."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -129,15 +159,37 @@
             "6"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "k=6×10=60."
+          "retroalimentacion": "k=6×10=60.",
+          "pistas": [
+            "En una proporcionalidad inversa, multiplica las dos cantidades para obtener la constante, el mismo procedimiento que usamos con los pintores de la fachada (k=24).",
+            "6 grifos × 10 horas = 60, así que la constante del producto es k=60."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "Si la constante de una proporcionalidad inversa es k=48 y x=8, entonces y=6.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "y=k/x=48/8=6."
+          "retroalimentacion": "y=k/x=48/8=6.",
+          "pistas": [
+            "En una proporcionalidad inversa, x × y = k; si conoces dos de los tres valores, puedes encontrar el tercero, igual que usamos k=24 para los pintores de la fachada.",
+            "Verdadero: si k=48 y x=8, entonces y = 48÷8 = 6."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "En otro trabajo, el equipo descubre que 4 pintores tardan 6 horas en pintar una fachada. Quieren encontrar la constante del producto.",
+        "pasos": [
+          {
+            "texto": "Multiplicamos el número de pintores por las horas.",
+            "operacion": "4×6=24"
+          },
+          {
+            "texto": "Esa multiplicación es la constante de proporcionalidad inversa (k).",
+            "operacion": "k=24"
+          }
+        ],
+        "respuestaFinal": "La constante del producto es k=24 (pintores × horas)."
+      }
     },
     {
       "numero": "19.3",
@@ -161,7 +213,11 @@
             "2.4"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "k=4×9=36; con 6 pintores: 36÷6=6 días."
+          "retroalimentacion": "k=4×9=36; con 6 pintores: 36÷6=6 días.",
+          "pistas": [
+            "Multiplica las cantidades conocidas para obtener la constante, y divide entre la nueva cantidad, igual que calculamos 6 días para 10 pintores del edificio.",
+            "4 pintores × 9 días = 36; con 6 pintores: 36÷6 = 6 días."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -179,7 +235,11 @@
             "7.5"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "k=12×15=180; 180÷9=20 obreros."
+          "retroalimentacion": "k=12×15=180; 180÷9=20 obreros.",
+          "pistas": [
+            "Multiplica las cantidades conocidas para obtener la constante, y divide entre el nuevo valor, el mismo procedimiento que usamos con los 10 pintores del edificio (6 días).",
+            "12 obreros × 15 días = 180; para 9 días: 180÷9 = 20 obreros."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -197,9 +257,27 @@
             "2"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "k=8×6=48; con 4 trabajadores: 48÷4=12 días."
+          "retroalimentacion": "k=8×6=48; con 4 trabajadores: 48÷4=12 días.",
+          "pistas": [
+            "En proporcionalidad inversa, multiplica para obtener la constante y divide entre la nueva cantidad, igual que hicimos con los 10 pintores del edificio (6 días).",
+            "8 trabajadores × 6 días = 48; con 4 trabajadores: 48÷4 = 12 días."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El equipo de pintores calcula: si 5 pintores terminan de pintar un edificio en 12 días, ¿en cuántos días lo terminarán 10 pintores al mismo ritmo?",
+        "pasos": [
+          {
+            "texto": "En proporcionalidad inversa, multiplicamos las cantidades conocidas para obtener la constante.",
+            "operacion": "5×12=60"
+          },
+          {
+            "texto": "Dividimos la constante entre la nueva cantidad de pintores.",
+            "operacion": "60÷10=6"
+          }
+        ],
+        "respuestaFinal": "Con 10 pintores, el edificio se pintará en 6 días."
+      }
     },
     {
       "numero": "19.4",
@@ -222,7 +300,11 @@
             "2"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "k=3×10=30; con 5 bombas: 30÷5=6 horas."
+          "retroalimentacion": "k=3×10=30; con 5 bombas: 30÷5=6 horas.",
+          "pistas": [
+            "Multiplica las cantidades conocidas para obtener la constante, y divide entre la nueva cantidad, igual que calculamos 6 horas para las 5 compresoras.",
+            "3 bombas × 10 horas = 30; con 5 bombas: 30÷5 = 6 horas."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -234,7 +316,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "En una proporcionalidad inversa entre número de obreros y días de trabajo, si los obreros se triplican, el tiempo se reduce a la tercera parte.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Al multiplicar una cantidad por 3, la otra queda dividida entre 3, para mantener constante el producto."
+          "retroalimentacion": "Al multiplicar una cantidad por 3, la otra queda dividida entre 3, para mantener constante el producto.",
+          "pistas": [
+            "En una proporcionalidad inversa, si una cantidad se multiplica por un número, la otra se divide entre ese mismo número, igual que vimos con las compresoras (2→15h, 5→6h).",
+            "Verdadero: si los obreros se triplican, el tiempo se reduce a la tercera parte, porque es proporcionalidad inversa."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -266,9 +352,27 @@
             "6"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "k=2×18=36; con 3 válvulas: 36÷3=12 horas."
+          "retroalimentacion": "k=2×18=36; con 3 válvulas: 36÷3=12 horas.",
+          "pistas": [
+            "Multiplica las cantidades conocidas para obtener la constante y divide entre la nueva cantidad, el mismo procedimiento que usamos con las compresoras (2→15h, 5→6h).",
+            "2 válvulas × 18 horas = 36; con 3 válvulas: 36÷3 = 12 horas."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El equipo usa compresoras de aire: 2 compresoras tardan 15 horas en secar una superficie grande. ¿Cuántas horas tardarán 5 compresoras, al mismo ritmo?",
+        "pasos": [
+          {
+            "texto": "Multiplicamos las cantidades conocidas para obtener la constante.",
+            "operacion": "2×15=30"
+          },
+          {
+            "texto": "Dividimos la constante entre la nueva cantidad de compresoras.",
+            "operacion": "30÷5=6"
+          }
+        ],
+        "respuestaFinal": "Con 5 compresoras, la superficie se secará en 6 horas."
+      }
     }
   ],
   "practicaExtra": [

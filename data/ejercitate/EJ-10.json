@@ -35,7 +35,11 @@
             "4 unidades"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "En 8.147: el 1 está en décimos, el 4 en centésimos y el 7 en milésimos. Por eso el 4 vale 4 centésimos (0.04)."
+          "retroalimentacion": "En 8.147: el 1 está en décimos, el 4 en centésimos y el 7 en milésimos. Por eso el 4 vale 4 centésimos (0.04).",
+          "pistas": [
+            "Cuenta las posiciones después del punto: décimos, centésimos, milésimos, igual que identificamos el 2 como centésimos en 67.428.",
+            "En 8.147: el 1 está en décimos, el 4 en centésimos y el 7 en milésimos. Por eso el 4 vale 4 centésimos (0.04)."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -47,7 +51,11 @@
           "tipo": "llenar_frase",
           "frase": "En el número 12.539, el dígito que ocupa el lugar de los centésimos es ___.",
           "respuestaCorrecta": "3",
-          "retroalimentacion": "En 12.539: el 5 es décimos, el 3 es centésimos y el 9 es milésimos."
+          "retroalimentacion": "En 12.539: el 5 es décimos, el 3 es centésimos y el 9 es milésimos.",
+          "pistas": [
+            "La segunda posición después del punto es la de los centésimos, igual que identificamos el centésimo en 67.428.",
+            "En 12.539: el 5 es décimos, el 3 es centésimos y el 9 es milésimos."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -59,7 +67,11 @@
             "8 unidades"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "En 5.083: el 0 es décimos, el 8 es centésimos y el 3 es milésimos. Por eso el 8 vale 8 centésimos (0.08)."
+          "retroalimentacion": "En 5.083: el 0 es décimos, el 8 es centésimos y el 3 es milésimos. Por eso el 8 vale 8 centésimos (0.08).",
+          "pistas": [
+            "Identifica la posición del dígito después del punto decimal, el mismo procedimiento que usamos con el 2 de 67.428.",
+            "En 5.083: el 0 es décimos, el 8 es centésimos y el 3 es milésimos. Por eso el 8 vale 8 centésimos (0.08)."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -81,7 +93,21 @@
           ],
           "retroalimentacion": "Décimos = 1/10, Centésimos = 1/100, Milésimos = 1/1000: cada posición vale diez veces menos que la anterior."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "En el precio $67.428, ¿qué valor tiene el dígito 2?",
+        "pasos": [
+          {
+            "texto": "Identificamos la posición de cada dígito después del punto decimal.",
+            "operacion": "4→décimos; 2→centésimos; 8→milésimos"
+          },
+          {
+            "texto": "El dígito 2 está en el lugar de los centésimos.",
+            "operacion": "2 centésimos=0.02"
+          }
+        ],
+        "respuestaFinal": "El dígito 2 en 67.428 vale 2 centésimos, es decir 0.02."
+      }
     },
     {
       "numero": "10.2",
@@ -99,7 +125,11 @@
           "tipo": "llenar_frase",
           "frase": "3/4 en decimal es ___.",
           "respuestaCorrecta": "0.75",
-          "retroalimentacion": "3 ÷ 4 = 0.75."
+          "retroalimentacion": "3 ÷ 4 = 0.75.",
+          "pistas": [
+            "Divide el numerador entre el denominador para convertir la fracción a decimal, igual que calculamos 5/6≈0.83 para la harina integral.",
+            "3 ÷ 4 = 0.75."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -117,7 +147,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "5/8 equivale a 0.625.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: 5 ÷ 8 = 0.625."
+          "retroalimentacion": "Correcto: 5 ÷ 8 = 0.625.",
+          "pistas": [
+            "Divide el numerador entre el denominador, el mismo procedimiento que usamos con 5/6 de taza de harina integral.",
+            "Correcto: 5 ÷ 8 = 0.625."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -135,9 +169,27 @@
             "0.2"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "2 ÷ 5 = 0.4, así que 2/5 de taza equivale a 0.4 de taza."
+          "retroalimentacion": "2 ÷ 5 = 0.4, así que 2/5 de taza equivale a 0.4 de taza.",
+          "pistas": [
+            "Convierte la fracción a decimal dividiendo numerador entre denominador, igual que hicimos con la harina integral de la receta de Ana.",
+            "2 ÷ 5 = 0.4, así que 2/5 de taza equivale a 0.4 de taza."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Otra receta de pan necesita 5/6 de taza de harina integral. ¿A qué decimal equivale?",
+        "pasos": [
+          {
+            "texto": "Dividimos el numerador entre el denominador.",
+            "operacion": "5÷6=0.8333..."
+          },
+          {
+            "texto": "Redondeamos a dos decimales.",
+            "operacion": "0.8333≈0.83"
+          }
+        ],
+        "respuestaFinal": "5/6 equivale aproximadamente a 0.83."
+      }
     },
     {
       "numero": "10.3",
@@ -155,7 +207,11 @@
           "tipo": "llenar_frase",
           "frase": "0.6 como fracción simplificada es ___.",
           "respuestaCorrecta": "3/5",
-          "retroalimentacion": "0.6 = 6/10, y simplificando entre 2 queda 3/5."
+          "retroalimentacion": "0.6 = 6/10, y simplificando entre 2 queda 3/5.",
+          "pistas": [
+            "Escribe el decimal como fracción con denominador 10, 100 o 1000, y simplifica, igual que convertimos 0.24 a 6/25 para el aceite.",
+            "0.6 = 6/10, y simplificando entre 2 queda 3/5."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -173,13 +229,21 @@
           "tipo": "verdadero_falso",
           "enunciado": "0.125 equivale a 1/8.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: 0.125 = 125/1000, y simplificando entre 125 queda 1/8."
+          "retroalimentacion": "Correcto: 0.125 = 125/1000, y simplificando entre 125 queda 1/8.",
+          "pistas": [
+            "Escribe los dígitos después del punto como numerador sobre la potencia de diez correspondiente, y simplifica, el mismo procedimiento que usamos con 0.24 litros de aceite.",
+            "Correcto: 0.125 = 125/1000, y simplificando entre 125 queda 1/8."
+          ]
         },
         {
           "tipo": "llenar_frase",
           "frase": "0.08 como fracción simplificada es ___.",
           "respuestaCorrecta": "2/25",
-          "retroalimentacion": "0.08 = 8/100, y simplificando entre 4 queda 2/25."
+          "retroalimentacion": "0.08 = 8/100, y simplificando entre 4 queda 2/25.",
+          "pistas": [
+            "Convierte el decimal a fracción y simplifica dividiendo entre el MCD, igual que hicimos con los 0.24 litros de aceite de la receta.",
+            "0.08 = 8/100, y simplificando entre 4 queda 2/25."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -201,7 +265,21 @@
           ],
           "retroalimentacion": "0.5 = 1/2, 0.2 = 1/5 y 0.75 = 3/4."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Otra receta usa 0.24 litros de aceite. ¿Cuál es su fracción simplificada?",
+        "pasos": [
+          {
+            "texto": "Escribimos el decimal como fracción con denominador 100 (dos cifras decimales).",
+            "operacion": "0.24=24/100"
+          },
+          {
+            "texto": "Simplificamos dividiendo entre el MCD.",
+            "operacion": "MCD(24,100)=4; 24÷4=6; 100÷4=25"
+          }
+        ],
+        "respuestaFinal": "0.24 como fracción simplificada es 6/25."
+      }
     },
     {
       "numero": "10.4",
@@ -224,7 +302,11 @@
             "No se puede comparar"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "3/4 = 0.75 y 0.8 > 0.75, así que el corredor B ha avanzado más."
+          "retroalimentacion": "3/4 = 0.75 y 0.8 > 0.75, así que el corredor B ha avanzado más.",
+          "pistas": [
+            "Convierte la fracción a decimal y compara, igual que comparamos 7/8 (0.875) contra 0.85 en las recetas de Ana.",
+            "3/4 = 0.75 y 0.8 > 0.75, así que el corredor B ha avanzado más."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -248,7 +330,11 @@
             "Falta información"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "5/8 = 0.625, y 0.625 > 0.6, así que la receta de 5/8 kg usa más harina."
+          "retroalimentacion": "5/8 = 0.625, y 0.625 > 0.6, así que la receta de 5/8 kg usa más harina.",
+          "pistas": [
+            "Convierte la fracción a decimal antes de comparar, el mismo procedimiento que usamos para comparar las dos recetas de leche de Ana.",
+            "5/8 = 0.625, y 0.625 > 0.6, así que la receta de 5/8 kg usa más harina."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -268,9 +354,27 @@
             0,
             1
           ],
-          "retroalimentacion": "3/5 = 0.6 y 7/10 = 0.7, así que el orden de menor a mayor es 0.45, 3/5 (0.6), 7/10 (0.7)."
+          "retroalimentacion": "3/5 = 0.6 y 7/10 = 0.7, así que el orden de menor a mayor es 0.45, 3/5 (0.6), 7/10 (0.7).",
+          "pistas": [
+            "Convierte cada fracción a decimal para poder ordenar todos los valores juntos, igual que comparamos las recetas de leche de Ana.",
+            "3/5 = 0.6 y 7/10 = 0.7, así que el orden de menor a mayor es 0.45, 3/5 (0.6), 7/10 (0.7)."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Ana compara otras dos recetas: una pide 7/8 de litro de leche y la otra 0.85 litros. ¿Cuál usa más leche?",
+        "pasos": [
+          {
+            "texto": "Convertimos la fracción a decimal.",
+            "operacion": "7÷8=0.875"
+          },
+          {
+            "texto": "Comparamos ambos decimales.",
+            "operacion": "0.875>0.85"
+          }
+        ],
+        "respuestaFinal": "La receta de 7/8 de litro usa más leche (0.875 L) que la de 0.85 litros."
+      }
     }
   ],
   "practicaExtra": [

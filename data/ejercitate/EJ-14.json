@@ -50,7 +50,11 @@
               3
             ]
           ],
-          "retroalimentacion": "3.2 × 4: multiplicas como enteros 32 × 4 = 128; como 3.2 tiene 1 cifra decimal, el resultado es 12.8."
+          "retroalimentacion": "3.2 × 4: multiplicas como enteros 32 × 4 = 128; como 3.2 tiene 1 cifra decimal, el resultado es 12.8.",
+          "pistas": [
+            "Multiplica como enteros y después coloca el punto contando las cifras decimales del factor decimal, igual que calculamos 6.4×5=32 para el jitomate de doña Rosa.",
+            "3.2 × 4: multiplicas como enteros 32 × 4 = 128; como 3.2 tiene 1 cifra decimal, el resultado es 12.8."
+          ]
         },
         {
           "tipo": "algoritmo_columnas",
@@ -105,7 +109,11 @@
               0
             ]
           ],
-          "retroalimentacion": "2.7 × 6: multiplicas como enteros 27 × 6 = 162; como 2.7 tiene 1 cifra decimal, el resultado es 16.2."
+          "retroalimentacion": "2.7 × 6: multiplicas como enteros 27 × 6 = 162; como 2.7 tiene 1 cifra decimal, el resultado es 16.2.",
+          "pistas": [
+            "Multiplica los dígitos como enteros y cuenta las cifras decimales del factor decimal para colocar el punto, el mismo procedimiento que usamos con 6.4×5 para el jitomate.",
+            "2.7 × 6: multiplicas como enteros 27 × 6 = 162; como 2.7 tiene 1 cifra decimal, el resultado es 16.2."
+          ]
         },
         {
           "tipo": "algoritmo_columnas",
@@ -159,9 +167,27 @@
               0
             ]
           ],
-          "retroalimentacion": "4.9 × 7: multiplicas como enteros 49 × 7 = 343; como 4.9 tiene 1 cifra decimal, el resultado es 34.3."
+          "retroalimentacion": "4.9 × 7: multiplicas como enteros 49 × 7 = 343; como 4.9 tiene 1 cifra decimal, el resultado es 34.3.",
+          "pistas": [
+            "Multiplica ignorando el punto y colócalo al final según las cifras decimales del factor decimal, igual que calculamos 6.4×5=32 para el jitomate de doña Rosa.",
+            "4.9 × 7: multiplicas como enteros 49 × 7 = 343; como 4.9 tiene 1 cifra decimal, el resultado es 34.3."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Doña Rosa compra 6.4 kg de jitomate; para otro cálculo de inventario necesita 6.4 × 5.",
+        "pasos": [
+          {
+            "texto": "Multiplicamos como si fueran números enteros, ignorando el punto.",
+            "operacion": "64×5=320"
+          },
+          {
+            "texto": "Contamos las cifras decimales del factor decimal (1) y colocamos el punto.",
+            "operacion": "32.0=32"
+          }
+        ],
+        "respuestaFinal": "6.4 × 5 = 32."
+      }
     },
     {
       "numero": "14.2",
@@ -200,7 +226,11 @@
               2
             ]
           ],
-          "retroalimentacion": "1.4 × 0.3: multiplicas como enteros 14 × 3 = 42; como hay 1+1=2 cifras decimales en total entre los factores, el resultado es 0.42."
+          "retroalimentacion": "1.4 × 0.3: multiplicas como enteros 14 × 3 = 42; como hay 1+1=2 cifras decimales en total entre los factores, el resultado es 0.42.",
+          "pistas": [
+            "Multiplica como enteros y suma las cifras decimales de los dos factores para colocar el punto, igual que calculamos 2.4×0.5=1.2 para doña Rosa.",
+            "1.4 × 0.3: multiplicas como enteros 14 × 3 = 42; como hay 1+1=2 cifras decimales en total entre los factores, el resultado es 0.42."
+          ]
         },
         {
           "tipo": "algoritmo_columnas",
@@ -226,7 +256,11 @@
             [],
             []
           ],
-          "retroalimentacion": "2.3 × 0.4: multiplicas como enteros 23 × 4 = 92; como hay 1+1=2 cifras decimales en total entre los factores, el resultado es 0.92."
+          "retroalimentacion": "2.3 × 0.4: multiplicas como enteros 23 × 4 = 92; como hay 1+1=2 cifras decimales en total entre los factores, el resultado es 0.92.",
+          "pistas": [
+            "Suma las cifras decimales de ambos factores para saber dónde va el punto en el resultado, el mismo procedimiento que usamos con 2.4×0.5 para doña Rosa.",
+            "2.3 × 0.4: multiplicas como enteros 23 × 4 = 92; como hay 1+1=2 cifras decimales en total entre los factores, el resultado es 0.92."
+          ]
         },
         {
           "tipo": "algoritmo_columnas",
@@ -279,7 +313,11 @@
               2
             ]
           ],
-          "retroalimentacion": "Esto verifica que 8.4 ÷ 4 = 2.1, porque 2.1 × 4 = 8.4."
+          "retroalimentacion": "Esto verifica que 8.4 ÷ 4 = 2.1, porque 2.1 × 4 = 8.4.",
+          "pistas": [
+            "Para verificar una división, multiplica el cociente por el divisor y revisa que dé el dividendo, igual que calculamos 2.4×0.5 para el reparto de doña Rosa.",
+            "Esto verifica que 8.4 ÷ 4 = 2.1, porque 2.1 × 4 = 8.4."
+          ]
         },
         {
           "tipo": "algoritmo_columnas",
@@ -308,7 +346,21 @@
           ],
           "retroalimentacion": "Esto verifica que 9.6 ÷ 3 = 3.2, porque 3.2 × 3 = 9.6."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Doña Rosa también calcula 2.4 × 0.5 para repartir el costo entre compradores.",
+        "pasos": [
+          {
+            "texto": "Multiplicamos como enteros.",
+            "operacion": "24×5=120"
+          },
+          {
+            "texto": "Sumamos las cifras decimales de ambos factores (1+1=2) y colocamos el punto.",
+            "operacion": "1.20=1.2"
+          }
+        ],
+        "respuestaFinal": "2.4 × 0.5 = 1.2."
+      }
     },
     {
       "numero": "14.3",
@@ -358,7 +410,11 @@
               3
             ]
           ],
-          "retroalimentacion": "2.3 × 1.6: multiplicas como enteros 23 × 16 (138 + 230) = 368; como hay 1+1=2 cifras decimales en total entre los factores, el resultado es 3.68."
+          "retroalimentacion": "2.3 × 1.6: multiplicas como enteros 23 × 16 (138 + 230) = 368; como hay 1+1=2 cifras decimales en total entre los factores, el resultado es 3.68.",
+          "pistas": [
+            "Calcula los dos productos parciales como enteros, súmalos, y después coloca el punto según las cifras decimales de ambos factores, igual que calculamos 3.2×1.4=4.48 para el pedido de queso.",
+            "2.3 × 1.6: multiplicas como enteros 23 × 16 (138 + 230) = 368; como hay 1+1=2 cifras decimales en total entre los factores, el resultado es 3.68."
+          ]
         },
         {
           "tipo": "algoritmo_columnas",
@@ -384,7 +440,11 @@
             [],
             []
           ],
-          "retroalimentacion": "Esto verifica que 6 ÷ 0.4 = 15, porque 15 × 0.4 = 6."
+          "retroalimentacion": "Esto verifica que 6 ÷ 0.4 = 15, porque 15 × 0.4 = 6.",
+          "pistas": [
+            "Para verificar una división con divisor decimal, multiplica el cociente por el divisor, el mismo procedimiento que usamos con 3.2×1.4 para el pedido de queso.",
+            "Esto verifica que 6 ÷ 0.4 = 15, porque 15 × 0.4 = 6."
+          ]
         },
         {
           "tipo": "algoritmo_columnas",
@@ -449,7 +509,11 @@
               3
             ]
           ],
-          "retroalimentacion": "1.2 × 2.4: multiplicas como enteros 12 × 24 (48 + 240) = 288; como hay 1+1=2 cifras decimales en total entre los factores, el resultado es 2.88."
+          "retroalimentacion": "1.2 × 2.4: multiplicas como enteros 12 × 24 (48 + 240) = 288; como hay 1+1=2 cifras decimales en total entre los factores, el resultado es 2.88.",
+          "pistas": [
+            "Calcula ambos productos parciales como enteros y súmalos antes de colocar el punto, igual que hicimos con 3.2×1.4=4.48 para el pedido de queso.",
+            "1.2 × 2.4: multiplicas como enteros 12 × 24 (48 + 240) = 288; como hay 1+1=2 cifras decimales en total entre los factores, el resultado es 2.88."
+          ]
         },
         {
           "tipo": "algoritmo_columnas",
@@ -477,7 +541,25 @@
           ],
           "retroalimentacion": "Esto verifica que 9 ÷ 0.75 = 12, porque 12 × 0.75 = 9."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Doña Rosa calcula 3.2 × 1.4 para el costo de otro pedido grande de queso.",
+        "pasos": [
+          {
+            "texto": "Calculamos los dos productos parciales como si fueran enteros.",
+            "operacion": "32×4=128; 32×1×10=320"
+          },
+          {
+            "texto": "Sumamos ambos productos.",
+            "operacion": "128+320=448"
+          },
+          {
+            "texto": "Colocamos el punto decimal sumando las cifras decimales de ambos factores (1+1=2).",
+            "operacion": "4.48"
+          }
+        ],
+        "respuestaFinal": "3.2 × 1.4 = 4.48."
+      }
     },
     {
       "numero": "14.4",
@@ -528,7 +610,11 @@
               4
             ]
           ],
-          "retroalimentacion": "3.15 × 12: multiplicas como enteros 315 × 12 (630 + 3150) = 3780; como 3.15 tiene 2 cifras decimales, el resultado es 37.80."
+          "retroalimentacion": "3.15 × 12: multiplicas como enteros 315 × 12 (630 + 3150) = 3780; como 3.15 tiene 2 cifras decimales, el resultado es 37.80.",
+          "pistas": [
+            "Calcula los productos parciales, súmalos y coloca el punto según las cifras decimales del factor decimal, igual que calculamos 4.25×12=51 para el costo final del pedido de queso.",
+            "3.15 × 12: multiplicas como enteros 315 × 12 (630 + 3150) = 3780; como 3.15 tiene 2 cifras decimales, el resultado es 37.80."
+          ]
         },
         {
           "tipo": "algoritmo_columnas",
@@ -582,7 +668,11 @@
               0
             ]
           ],
-          "retroalimentacion": "Esto verifica que 5.28 ÷ 0.24 = 22, porque 22 × 0.24 = 5.28."
+          "retroalimentacion": "Esto verifica que 5.28 ÷ 0.24 = 22, porque 22 × 0.24 = 5.28.",
+          "pistas": [
+            "Para verificar una división, multiplica el cociente por el divisor y revisa que dé el dividendo, el mismo procedimiento que usamos con 4.25×12 para el pedido de queso.",
+            "Esto verifica que 5.28 ÷ 0.24 = 22, porque 22 × 0.24 = 5.28."
+          ]
         },
         {
           "tipo": "algoritmo_columnas",
@@ -651,9 +741,31 @@
               4
             ]
           ],
-          "retroalimentacion": "4.5 × 23: multiplicas como enteros 45 × 23 (135 + 900) = 1035; como 4.5 tiene 1 cifra decimal, el resultado es 103.5."
+          "retroalimentacion": "4.5 × 23: multiplicas como enteros 45 × 23 (135 + 900) = 1035; como 4.5 tiene 1 cifra decimal, el resultado es 103.5.",
+          "pistas": [
+            "Calcula los dos productos parciales y súmalos antes de colocar el punto decimal, igual que hicimos con 4.25×12=51 para el pedido de queso de doña Rosa.",
+            "4.5 × 23: multiplicas como enteros 45 × 23 (135 + 900) = 1035; como 4.5 tiene 1 cifra decimal, el resultado es 103.5."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Doña Rosa calcula el costo final de otro pedido: 4.25 × 12.",
+        "pasos": [
+          {
+            "texto": "Calculamos los dos productos parciales como enteros.",
+            "operacion": "425×2=850; 425×1×10=4250"
+          },
+          {
+            "texto": "Sumamos ambos productos.",
+            "operacion": "850+4250=5100"
+          },
+          {
+            "texto": "Colocamos el punto decimal (2 cifras decimales en 4.25).",
+            "operacion": "51.00=51"
+          }
+        ],
+        "respuestaFinal": "4.25 × 12 = 51."
+      }
     }
   ],
   "practicaExtra": [

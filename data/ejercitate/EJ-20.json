@@ -35,13 +35,21 @@
             "5:3"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "15:10 se simplifica dividiendo ambos términos entre 5, lo que da 3:2."
+          "retroalimentacion": "15:10 se simplifica dividiendo ambos términos entre 5, lo que da 3:2.",
+          "pistas": [
+            "Escribe la razón con los dos valores y simplifica dividiendo entre su MCD, igual que calculamos 3:2 para las reglas y escuadras del equipo de dibujo.",
+            "15 niñas : 10 niños → MCD(15,10)=5 → 15÷5=3, 10÷5=2, así que la razón simplificada es 3:2."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "La razón de 4 a 8 es la misma que la razón de 1 a 2.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "4:8 simplificado (dividiendo entre 4) es 1:2, así que representan la misma comparación."
+          "retroalimentacion": "4:8 simplificado (dividiendo entre 4) es 1:2, así que representan la misma comparación.",
+          "pistas": [
+            "Una razón se simplifica dividiendo ambos términos entre su MCD, sin cambiar la relación, el mismo procedimiento que usamos con las reglas y escuadras (12:8=3:2).",
+            "Verdadero: 4:8 simplificado (÷4) es 1:2, la misma relación."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -79,9 +87,27 @@
             "8:3"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "La razón compara hermanos (3) a primos (5) en ese orden exacto: 3:5."
+          "retroalimentacion": "La razón compara hermanos (3) a primos (5) en ese orden exacto: 3:5.",
+          "pistas": [
+            "Escribe la razón en el orden que pide la pregunta y simplifica si es posible, igual que hicimos con 12:8=3:2 para las reglas y escuadras del equipo de dibujo.",
+            "La razón de hermanos a primos es 3:5 (no se puede simplificar más, porque su MCD es 1)."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El equipo de dibujo técnico tiene 12 reglas y 8 escuadras en su kit. Quieren expresar la razón simplificada de reglas a escuadras.",
+        "pasos": [
+          {
+            "texto": "Escribimos la razón con los dos valores.",
+            "operacion": "12:8"
+          },
+          {
+            "texto": "Simplificamos dividiendo entre su MCD.",
+            "operacion": "MCD(12,8)=4; 12÷4=3, 8÷4=2 → 3:2"
+          }
+        ],
+        "respuestaFinal": "La razón simplificada de reglas a escuadras es 3:2."
+      }
     },
     {
       "numero": "20.2",
@@ -99,13 +125,21 @@
           "tipo": "verdadero_falso",
           "enunciado": "La igualdad 3/5 = 9/15 es una proporción verdadera.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "3×15=45 y 5×9=45. Como los productos cruzados son iguales, sí es una proporción."
+          "retroalimentacion": "3×15=45 y 5×9=45. Como los productos cruzados son iguales, sí es una proporción.",
+          "pistas": [
+            "Multiplica en cruz los términos; si los productos son iguales, es una proporción verdadera, igual que comprobamos con 2/3=8/12 para el equipo de dibujo.",
+            "Verdadero: 3×15=45 y 5×9=45, los productos cruzados son iguales."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "La igualdad 4/6 = 10/12 es una proporción verdadera.",
           "respuestaCorrecta": false,
-          "retroalimentacion": "4×12=48 y 6×10=60. Como los productos cruzados son distintos, no es una proporción."
+          "retroalimentacion": "4×12=48 y 6×10=60. Como los productos cruzados son distintos, no es una proporción.",
+          "pistas": [
+            "Multiplica en cruz los términos; si los productos no son iguales, la igualdad no es una proporción verdadera, el mismo procedimiento que usamos con 2/3=8/12.",
+            "Falso: 4×12=48 y 6×10=60; como los productos cruzados no son iguales, no es una proporción verdadera."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -117,7 +151,11 @@
             "7/8 = 21/16"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "2/3 = 8/12 es verdadera porque 2×12=24 y 3×8=24; en las demás opciones los productos cruzados no coinciden."
+          "retroalimentacion": "2/3 = 8/12 es verdadera porque 2×12=24 y 3×8=24; en las demás opciones los productos cruzados no coinciden.",
+          "pistas": [
+            "Verifica cada igualdad multiplicando en cruz; si los productos coinciden, es una proporción verdadera, igual que comprobamos con 2/3=8/12 para el equipo de dibujo.",
+            "Por ejemplo, 5/10 = 3/6 es una proporción verdadera, porque 5×6=30 y 10×3=30."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -145,7 +183,21 @@
           ],
           "retroalimentacion": "Solo 4/5 y 12/15 tienen productos cruzados iguales (60=60), por eso son la única proporción verdadera del grupo."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El equipo de dibujo técnico quiere comprobar si 2/3 = 8/12 es una proporción verdadera.",
+        "pasos": [
+          {
+            "texto": "Multiplicamos en cruz los términos.",
+            "operacion": "2×12=24; 3×8=24"
+          },
+          {
+            "texto": "Como ambos productos son iguales, la igualdad es una proporción verdadera.",
+            "operacion": "24=24 ✓"
+          }
+        ],
+        "respuestaFinal": "2/3 = 8/12 es una proporción verdadera, porque los productos cruzados son iguales (24=24)."
+      }
     },
     {
       "numero": "20.3",
@@ -181,7 +233,11 @@
             "7"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "7×9 = 21×x → 63 = 21x → x = 3."
+          "retroalimentacion": "7×9 = 21×x → 63 = 21x → x = 3.",
+          "pistas": [
+            "Multiplica en cruz para plantear la ecuación y despeja x dividiendo, igual que calculamos x=5 en la proporción del equipo de dibujo.",
+            "7/x=21/9 → 7×9=21×x → 63=21x → x=63÷21=3."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -193,15 +249,37 @@
             "20"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "5×x = 8×15 → 5x = 120 → x = 24."
+          "retroalimentacion": "5×x = 8×15 → 5x = 120 → x = 24.",
+          "pistas": [
+            "Multiplica en cruz y despeja x dividiendo entre el coeficiente, el mismo procedimiento que usamos con 4/x=12/15 (x=5) para el equipo de dibujo.",
+            "5/8=15/x → 5×x=8×15 → 5x=120 → x=120÷5=24."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "En la proporción 4/9 = x/27, el valor de x es 12.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "4×27 = 9×x → 108 = 9x → x = 12, así que el enunciado es correcto."
+          "retroalimentacion": "4×27 = 9×x → 108 = 9x → x = 12, así que el enunciado es correcto.",
+          "pistas": [
+            "Multiplica en cruz para plantear la ecuación y despeja x, igual que hicimos con 4/x=12/15 (x=5) para el equipo de dibujo.",
+            "Verdadero: 4/9=x/27 → 4×27=9×x → 108=9x → x=108÷9=12."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El equipo de dibujo plantea la proporción 4/x = 12/15 y necesita encontrar el valor de x.",
+        "pasos": [
+          {
+            "texto": "Multiplicamos en cruz para plantear la ecuación.",
+            "operacion": "4×15=12×x → 60=12x"
+          },
+          {
+            "texto": "Despejamos x dividiendo.",
+            "operacion": "x=60÷12=5"
+          }
+        ],
+        "respuestaFinal": "El valor de x es 5."
+      }
     },
     {
       "numero": "20.4",
@@ -224,7 +302,11 @@
             "40 km"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "2/5 = 8/x → 2x = 40 → x = 20 km."
+          "retroalimentacion": "2/5 = 8/x → 2x = 40 → x = 20 km.",
+          "pistas": [
+            "Plantea la proporción entre el mapa y la realidad, multiplica en cruz y despeja, igual que calculamos 120 km para las ciudades del equipo de dibujo.",
+            "2 cm → 5 km, 8 cm → x. x = (8×5)÷2 = 20 km."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -236,7 +318,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "En una maqueta con escala 1:100, un objeto real de 250 cm se representa con 2.5 cm en la maqueta.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "250 cm entre 100 (la escala) da 2.5 cm en la maqueta, así que el enunciado es correcto."
+          "retroalimentacion": "250 cm entre 100 (la escala) da 2.5 cm en la maqueta, así que el enunciado es correcto.",
+          "pistas": [
+            "En una escala 1:100, divide la medida real entre 100 para obtener la medida en la maqueta, el mismo principio de proporción que usamos con el mapa de 3cm:40km.",
+            "Verdadero: 250 cm ÷ 100 = 2.5 cm en la maqueta."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -268,9 +354,27 @@
             "3 cm"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "1/30 = x/180 → 30x = 180 → x = 6 cm."
+          "retroalimentacion": "1/30 = x/180 → 30x = 180 → x = 6 cm.",
+          "pistas": [
+            "Plantea la proporción entre el mapa y la realidad, y despeja el valor desconocido, igual que hicimos con la escala 3cm:40km del equipo de dibujo.",
+            "1 cm → 30 km, x → 180 km. x = 180÷30 = 6 cm."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El equipo de dibujo usa un mapa con escala 3 cm : 40 km. Si dos ciudades están a 9 cm en el mapa, ¿cuál es la distancia real?",
+        "pasos": [
+          {
+            "texto": "Planteamos la proporción: 3 cm → 40 km, 9 cm → x.",
+            "operacion": "3/40 = 9/x"
+          },
+          {
+            "texto": "Multiplicamos en cruz y despejamos x.",
+            "operacion": "x=(9×40)÷3=120"
+          }
+        ],
+        "respuestaFinal": "La distancia real entre las dos ciudades es 120 km."
+      }
     }
   ],
   "practicaExtra": [

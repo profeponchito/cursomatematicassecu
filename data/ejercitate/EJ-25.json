@@ -40,13 +40,21 @@
           "tipo": "verdadero_falso",
           "enunciado": "x=4 es solución de la ecuación 2x+3=11.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Al sustituir: 2(4)+3=8+3=11, que es igual al otro lado. Sí es solución."
+          "retroalimentacion": "Al sustituir: 2(4)+3=8+3=11, que es igual al otro lado. Sí es solución.",
+          "pistas": [
+            "Sustituye el valor propuesto en la ecuación y verifica si ambos lados son iguales, igual que comprobamos que x=6 es solución de 5x-10=20 para Karla.",
+            "Verdadero: 2(4)+3 = 8+3 = 11, así que x=4 sí es solución."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "x=5 es solución de la ecuación 3x-2=10.",
           "respuestaCorrecta": false,
-          "retroalimentacion": "Al sustituir: 3(5)-2=15-2=13, que no es igual a 10. No es solución."
+          "retroalimentacion": "Al sustituir: 3(5)-2=15-2=13, que no es igual a 10. No es solución.",
+          "pistas": [
+            "Sustituye el valor propuesto y verifica si ambos lados de la ecuación son iguales, el mismo procedimiento que usamos para comprobar x=6 en 5x-10=20 de Karla.",
+            "Falso: 3(5)-2 = 15-2 = 13, no 10, así que x=5 no es solución."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -64,9 +72,27 @@
             "-10"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Al sustituir x=10: 10-8=2, que es correcto."
+          "retroalimentacion": "Al sustituir x=10: 10-8=2, que es correcto.",
+          "pistas": [
+            "Para encontrar la solución, prueba despejando la incógnita o sustituyendo valores, igual que comprobamos x=6 como solución de 5x-10=20 para Karla.",
+            "x-8=2 → x=2+8=10."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Karla también quiere comprobar si x=6 es solución de la ecuación 5x-10=20.",
+        "pasos": [
+          {
+            "texto": "Sustituimos x=6 en la ecuación.",
+            "operacion": "5(6)-10"
+          },
+          {
+            "texto": "Resolvemos y comparamos con el lado derecho.",
+            "operacion": "30-10=20 ✓"
+          }
+        ],
+        "respuestaFinal": "Como 5(6)-10=20, x=6 sí es solución de la ecuación."
+      }
     },
     {
       "numero": "25.2",
@@ -90,7 +116,11 @@
             "15"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Se resta 15 de ambos lados: x=32-15=17."
+          "retroalimentacion": "Se resta 15 de ambos lados: x=32-15=17.",
+          "pistas": [
+            "Para despejar x cuando se suma un número, resta ese número en ambos lados de la ecuación, igual que hicimos con x+22=50 (x=28) para Karla.",
+            "x+15=32 → x=32-15=17."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -108,13 +138,21 @@
             "-4"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Se suma 7 en ambos lados: x=-3+7=4."
+          "retroalimentacion": "Se suma 7 en ambos lados: x=-3+7=4.",
+          "pistas": [
+            "Para despejar x cuando se resta un número, suma ese número en ambos lados de la ecuación, el mismo principio que usamos con x+22=50 para Karla.",
+            "x-7=-3 → x=-3+7=4."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "La solución de x+18=25 es x=7.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Al sustituir: 7+18=25, correcto."
+          "retroalimentacion": "Al sustituir: 7+18=25, correcto.",
+          "pistas": [
+            "Resta el número conocido en ambos lados para despejar x, igual que hicimos con x+22=50 (x=28) para el ahorro de Karla.",
+            "Verdadero: x+18=25 → x=25-18=7."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -136,7 +174,21 @@
           ],
           "retroalimentacion": "x+12=30 → x=18. x-9=16 → x=25. x+5=5 → x=0."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Karla también plantea la ecuación x + 22 = 50 para otro ahorro.",
+        "pasos": [
+          {
+            "texto": "Restamos 22 en ambos lados para despejar x.",
+            "operacion": "x+22-22=50-22"
+          },
+          {
+            "texto": "Resolvemos la operación.",
+            "operacion": "x=28"
+          }
+        ],
+        "respuestaFinal": "La solución de x + 22 = 50 es x = 28."
+      }
     },
     {
       "numero": "25.3",
@@ -160,7 +212,11 @@
             "6"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Se divide entre 6 en ambos lados: x=54/6=9."
+          "retroalimentacion": "Se divide entre 6 en ambos lados: x=54/6=9.",
+          "pistas": [
+            "Para despejar x cuando está multiplicada por un número, divide ambos lados entre ese número, igual que hicimos con 7x=63 (x=9) para el ahorro de Karla.",
+            "6x=54 → x=54÷6=9."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -178,7 +234,11 @@
             "-54"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Se divide entre 9 en ambos lados: x=-45/9=-5."
+          "retroalimentacion": "Se divide entre 9 en ambos lados: x=-45/9=-5.",
+          "pistas": [
+            "Divide ambos lados entre el coeficiente de x para despejarla, el mismo procedimiento que usamos con 7x=63 para Karla.",
+            "9x=-45 → x=-45÷9=-5."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -196,9 +256,27 @@
             "24"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Se divide entre -3 en ambos lados: x=27/(-3)=-9."
+          "retroalimentacion": "Se divide entre -3 en ambos lados: x=27/(-3)=-9.",
+          "pistas": [
+            "Divide ambos lados entre el coeficiente (incluyendo el signo) para despejar x, igual que hicimos con 7x=63 (x=9) para el ahorro de Karla.",
+            "-3x=27 → x=27÷(-3)=-9."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Karla plantea la ecuación 7x = 63 para repartir su ahorro entre varias semanas.",
+        "pasos": [
+          {
+            "texto": "Dividimos ambos lados entre 7 para despejar x.",
+            "operacion": "7x÷7=63÷7"
+          },
+          {
+            "texto": "Resolvemos la operación.",
+            "operacion": "x=9"
+          }
+        ],
+        "respuestaFinal": "La solución de 7x = 63 es x = 9."
+      }
     },
     {
       "numero": "25.4",
@@ -221,7 +299,11 @@
             "7"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Primero 4x=31-7=24, luego x=24/4=6."
+          "retroalimentacion": "Primero 4x=31-7=24, luego x=24/4=6.",
+          "pistas": [
+            "Resta el término independiente en ambos lados, y luego divide entre el coeficiente de x, igual que resolvimos 6x+9=45 (x=6) para el ahorro de Karla.",
+            "4x+7=31 → 4x=31-7=24 → x=24÷4=6."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -233,7 +315,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "La solución de 2x+9=21 es x=6.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Al sustituir: 2(6)+9=12+9=21, correcto."
+          "retroalimentacion": "Al sustituir: 2(6)+9=12+9=21, correcto.",
+          "pistas": [
+            "Resta el término independiente y divide entre el coeficiente de x, el mismo procedimiento que usamos con 6x+9=45 para Karla.",
+            "Verdadero: 2x+9=21 → 2x=21-9=12 → x=12÷2=6."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -245,7 +331,11 @@
             "9"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "8x=71-15=56, entonces x=56/8=7 kilómetros."
+          "retroalimentacion": "8x=71-15=56, entonces x=56/8=7 kilómetros.",
+          "pistas": [
+            "Resta el término independiente en ambos lados y divide entre el coeficiente de x, igual que resolvimos 6x+9=45 (x=6) para el ahorro de Karla.",
+            "15+8x=71 → 8x=71-15=56 → x=56÷8=7 km."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -267,7 +357,21 @@
           ],
           "retroalimentacion": "5x+6=31 → x=5. 2x-3=9 → x=6. 7x+1=1 → x=0."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Karla plantea la ecuación 6x + 9 = 45 para calcular cuántas semanas necesita con otro plan de ahorro.",
+        "pasos": [
+          {
+            "texto": "Restamos 9 en ambos lados.",
+            "operacion": "6x=45-9=36"
+          },
+          {
+            "texto": "Dividimos entre 6 para despejar x.",
+            "operacion": "x=36÷6=6"
+          }
+        ],
+        "respuestaFinal": "La solución de 6x + 9 = 45 es x = 6."
+      }
     }
   ],
   "practicaExtra": [

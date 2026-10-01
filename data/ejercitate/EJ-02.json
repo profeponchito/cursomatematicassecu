@@ -34,7 +34,11 @@
             "70"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "48 + 27 = 75."
+          "retroalimentacion": "48 + 27 = 75.",
+          "pistas": [
+            "Suma las dos cantidades para obtener el total, igual que calculamos el dinero en caja chica del puesto de tacos (180-65+40=155).",
+            "48 + 27 = 75."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -58,15 +62,37 @@
             "88"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "120 - 38 = 82 puntos."
+          "retroalimentacion": "120 - 38 = 82 puntos.",
+          "pistas": [
+            "Resta lo que se pierde o se gasta del total inicial, el mismo procedimiento que usamos con el gasto en gas del puesto de tacos.",
+            "120 - 38 = 82 puntos."
+          ]
         },
         {
           "tipo": "llenar_frase",
           "frase": "Debes 150 pesos y pagas 60. Ahora debes ___ pesos.",
           "respuestaCorrecta": "90",
-          "retroalimentacion": "150 - 60 = 90 pesos: la deuda se reduce con cada pago."
+          "retroalimentacion": "150 - 60 = 90 pesos: la deuda se reduce con cada pago.",
+          "pistas": [
+            "Resta el pago del total de la deuda, igual que restamos el gasto en gas de la caja chica del puesto de tacos.",
+            "150 - 60 = 90 pesos: la deuda se reduce con cada pago."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El dueño del puesto tenía 180 pesos en caja chica. Gastó 65 pesos en gas y luego recibió 40 pesos extra de propina. ¿Cuánto dinero tiene ahora?",
+        "pasos": [
+          {
+            "texto": "Restamos lo que gastó en gas.",
+            "operacion": "180-65=115"
+          },
+          {
+            "texto": "Sumamos la propina que recibió.",
+            "operacion": "115+40=155"
+          }
+        ],
+        "respuestaFinal": "El dueño tiene 155 pesos en caja chica."
+      }
     },
     {
       "numero": "2.2",
@@ -89,7 +115,11 @@
             "81"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "12 × 7 = 84."
+          "retroalimentacion": "12 × 7 = 84.",
+          "pistas": [
+            "Multiplica la cantidad de paquetes por lo que contiene cada uno, igual que calculamos las 108 tortillas del puesto de tacos.",
+            "12 × 7 = 84."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -101,7 +131,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "(-5) × (-3) = 15.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: signos iguales (ambos negativos) dan un resultado positivo, 15."
+          "retroalimentacion": "Correcto: signos iguales (ambos negativos) dan un resultado positivo, 15.",
+          "pistas": [
+            "Cuando los dos signos son iguales, el resultado de la multiplicación es positivo, igual que verificamos con la deuda de los refrescos del puesto de tacos.",
+            "Correcto: signos iguales (ambos negativos) dan un resultado positivo, 15."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -113,7 +147,11 @@
             "280"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "8 × 45 = 360 pesos."
+          "retroalimentacion": "8 × 45 = 360 pesos.",
+          "pistas": [
+            "Multiplica la cantidad por el precio de cada unidad, el mismo procedimiento que usamos con las tortillas del puesto de tacos.",
+            "8 × 45 = 360 pesos."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -135,7 +173,21 @@
           ],
           "retroalimentacion": "(-6)×4 = -24; 7×(-2) = -14; (-3)×(-9) = 27."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El mismo puesto de tacos compra 9 paquetes de 12 tortillas cada uno para la semana, y además debe 3 cajas de refrescos a 7 pesos cada una (una deuda, representada como -7 por caja).",
+        "pasos": [
+          {
+            "texto": "Multiplicamos los paquetes de tortillas por la cantidad en cada uno.",
+            "operacion": "9×12=108"
+          },
+          {
+            "texto": "Calculamos la deuda total de los refrescos (signos distintos dan negativo).",
+            "operacion": "3×(-7)=-21"
+          }
+        ],
+        "respuestaFinal": "El puesto tiene 108 tortillas en total, y debe 21 pesos por los refrescos."
+      }
     },
     {
       "numero": "2.3",
@@ -158,7 +210,11 @@
             "Cociente 8, residuo 0"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "4 × 7 = 28, y 29 - 28 = 1, así que el cociente es 7 y el residuo es 1."
+          "retroalimentacion": "4 × 7 = 28, y 29 - 28 = 1, así que el cociente es 7 y el residuo es 1.",
+          "pistas": [
+            "Multiplica el divisor por un cociente hasta acercarte al total sin pasarte, y resta para encontrar el residuo, igual que repartimos los 59 tacos entre 7 familias (8 y residuo 3).",
+            "4 × 7 = 28, y 29 - 28 = 1, así que el cociente es 7 y el residuo es 1."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -170,7 +226,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Al dividir 50 entre 7, el residuo es 1.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "7 × 7 = 49, y 50 - 49 = 1, así que el residuo es 1."
+          "retroalimentacion": "7 × 7 = 49, y 50 - 49 = 1, así que el residuo es 1.",
+          "pistas": [
+            "Multiplica el divisor por el cociente y resta del total para encontrar el residuo, el mismo procedimiento que usamos para repartir los tacos entre las familias vecinas.",
+            "7 × 7 = 49, y 50 - 49 = 1, así que el residuo es 1."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -182,7 +242,11 @@
             "6"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "8 × 6 = 48, y 53 - 48 = 5, así que sobran 5 canicas."
+          "retroalimentacion": "8 × 6 = 48, y 53 - 48 = 5, así que sobran 5 canicas.",
+          "pistas": [
+            "Encuentra el cociente más grande posible y resta para obtener el residuo, igual que hicimos al repartir los 59 tacos entre las 7 familias.",
+            "8 × 6 = 48, y 53 - 48 = 5, así que sobran 5 canicas."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -190,7 +254,21 @@
           "respuestaCorrecta": "9",
           "retroalimentacion": "El residuo siempre debe ser menor que el divisor; si el divisor es 9, el residuo debe ser menor que 9."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El mismo puesto de tacos reparte 59 tacos sobrantes entre 7 familias vecinas, en partes iguales.",
+        "pasos": [
+          {
+            "texto": "Dividimos el total entre el número de familias.",
+            "operacion": "7×8=56"
+          },
+          {
+            "texto": "Calculamos el residuo restando.",
+            "operacion": "59-56=3"
+          }
+        ],
+        "respuestaFinal": "Cada familia recibe 8 tacos, y sobran 3 tacos."
+      }
     },
     {
       "numero": "2.4",
@@ -213,13 +291,21 @@
             "2,400"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "24 - 3 = 21 playeras vendidas; 21 × 120 = 2,520 pesos."
+          "retroalimentacion": "24 - 3 = 21 playeras vendidas; 21 × 120 = 2,520 pesos.",
+          "pistas": [
+            "Resta las devoluciones del total vendido y después multiplica por el precio, igual que calculamos las ventas del puesto de tacos en dos días.",
+            "24 - 3 = 21 playeras vendidas; 21 × 120 = 2,520 pesos."
+          ]
         },
         {
           "tipo": "llenar_frase",
           "frase": "Un grupo de 96 alumnos se divide en equipos de 8. ¿Cuántos equipos se forman? ___.",
           "respuestaCorrecta": "12",
-          "retroalimentacion": "96 ÷ 8 = 12 equipos."
+          "retroalimentacion": "96 ÷ 8 = 12 equipos.",
+          "pistas": [
+            "Divide el total entre el tamaño de cada grupo, el mismo procedimiento que usamos para repartir la ganancia del puesto de tacos entre los empleados.",
+            "96 ÷ 8 = 12 equipos."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -257,9 +343,31 @@
             "13,000"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "130 + 95 = 225 boletos; 225 × 60 = 13,500 pesos."
+          "retroalimentacion": "130 + 95 = 225 boletos; 225 × 60 = 13,500 pesos.",
+          "pistas": [
+            "Suma las cantidades de los dos días y multiplica por el precio, igual que calculamos la ganancia total del puesto de tacos antes de repartirla.",
+            "130 + 95 = 225 boletos; 225 × 60 = 13,500 pesos."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El mismo puesto de tacos vendió 52 tacos el lunes y 47 el martes. Si cada taco cuesta 16 pesos y la ganancia se reparte entre 5 empleados, ¿cuánto gana cada uno y cuánto sobra?",
+        "pasos": [
+          {
+            "texto": "Sumamos las ventas de los dos días.",
+            "operacion": "52+47=99"
+          },
+          {
+            "texto": "Multiplicamos por el precio de cada taco.",
+            "operacion": "99×16=1584"
+          },
+          {
+            "texto": "Dividimos entre los 5 empleados.",
+            "operacion": "1584÷5=316 residuo 4"
+          }
+        ],
+        "respuestaFinal": "Cada empleado recibe 316 pesos, y sobran 4 pesos."
+      }
     }
   ],
   "practicaExtra": [

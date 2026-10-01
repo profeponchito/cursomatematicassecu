@@ -34,13 +34,21 @@
             "Una encuesta rápida"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Si estudia a las 3,000 tortugas, es decir a todos los individuos del grupo de interés, está estudiando la población completa, no solo una parte."
+          "retroalimentacion": "Si estudia a las 3,000 tortugas, es decir a todos los individuos del grupo de interés, está estudiando la población completa, no solo una parte.",
+          "pistas": [
+            "Si se estudia a TODOS los individuos del grupo, se trata de la población completa (un censo), no de una muestra, igual que identificamos los 400 bebés como población y los 40 medidos como muestra.",
+            "El biólogo está estudiando la población completa (un censo), porque pesó a las 3,000 tortugas, es decir, a todas."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "La muestra siempre es más grande que la población de la que se toma.",
           "respuestaCorrecta": false,
-          "retroalimentacion": "Es al revés: la muestra es una PARTE de la población, así que siempre es igual o menor en tamaño, nunca mayor."
+          "retroalimentacion": "Es al revés: la muestra es una PARTE de la población, así que siempre es igual o menor en tamaño, nunca mayor.",
+          "pistas": [
+            "La muestra es siempre un subconjunto de la población, por lo tanto nunca puede ser más grande que ella, el mismo concepto que usamos para distinguir los 400 bebés (población) de los 40 medidos (muestra).",
+            "Falso: la muestra siempre es igual o más pequeña que la población, nunca más grande."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -58,7 +66,11 @@
             "Un error de medición"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Los 50 tornillos son una parte del total de 10,000, elegidos para representar al grupo completo: eso es una muestra."
+          "retroalimentacion": "Los 50 tornillos son una parte del total de 10,000, elegidos para representar al grupo completo: eso es una muestra.",
+          "pistas": [
+            "El subconjunto que se mide realmente (no el total) es la muestra, igual que identificamos a los 40 bebés medidos como la muestra del hospital.",
+            "Los 50 tornillos revisados representan la muestra, tomada de la población total de 10,000 tornillos producidos ese día."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -80,7 +92,21 @@
           ],
           "retroalimentacion": "El primer caso es población del salón; el segundo es población de toda la escuela; el tercero es una muestra porque son solo 30 de los 800."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "La maestra también analiza otro caso: un pediatra quiere conocer la talla promedio de los bebés nacidos en un hospital (400 en total) y mide solo a 40 de ellos, elegidos al azar.",
+        "pasos": [
+          {
+            "texto": "Identificamos el grupo completo que interesa estudiar (los 400 bebés): es la población.",
+            "operacion": "400 bebés = población"
+          },
+          {
+            "texto": "Identificamos el subconjunto que realmente se mide (los 40 elegidos): es la muestra.",
+            "operacion": "40 bebés = muestra"
+          }
+        ],
+        "respuestaFinal": "La población son los 400 bebés nacidos en el hospital, y la muestra son los 40 bebés medidos."
+      }
     },
     {
       "numero": "35.2",
@@ -103,7 +129,11 @@
             "Por conveniencia"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "Dividir a la población en grupos (estratos) y tomar una parte proporcional de cada uno es muestreo estratificado."
+          "retroalimentacion": "Dividir a la población en grupos (estratos) y tomar una parte proporcional de cada uno es muestreo estratificado.",
+          "pistas": [
+            "Dividir a la población en grupos y tomar una parte proporcional de cada uno es el muestreo estratificado, igual que identificamos con las secciones del concierto.",
+            "Es un muestreo estratificado, porque divide a la población por edad y toma una parte proporcional de cada grupo."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -115,13 +145,21 @@
             "Por conveniencia"
           ],
           "respuestaCorrecta": 3,
-          "retroalimentacion": "Elegir a quien es más fácil de alcanzar, sin ningún método de selección, es muestreo por conveniencia; puede no ser representativo."
+          "retroalimentacion": "Elegir a quien es más fácil de alcanzar, sin ningún método de selección, es muestreo por conveniencia; puede no ser representativo.",
+          "pistas": [
+            "Elegir a los individuos más fáciles o rápidos de alcanzar (sin aleatoriedad real) es un muestreo por conveniencia, un tipo distinto al muestreo estratificado que identificamos con las secciones del concierto.",
+            "Es un muestreo por conveniencia, porque elige a las personas más accesibles (las primeras que encuentra), no al azar de toda la población."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "En el muestreo sistemático se elige a los individuos siguiendo un intervalo fijo, por ejemplo cada quinta persona de una lista.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto, el muestreo sistemático usa un patrón regular (cada n-ésimo elemento) para elegir a los integrantes de la muestra."
+          "retroalimentacion": "Correcto, el muestreo sistemático usa un patrón regular (cada n-ésimo elemento) para elegir a los integrantes de la muestra.",
+          "pistas": [
+            "El muestreo sistemático usa un intervalo fijo para elegir a los individuos, un tipo diferente al estratificado que usamos con las secciones del concierto.",
+            "Verdadero: en el muestreo sistemático se elige siguiendo un intervalo fijo, como cada quinta persona de una lista."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -149,7 +187,21 @@
           ],
           "retroalimentacion": "La urna es aleatorio simple; dividir por grado y tomar proporciones es estratificado; entrevistar solo a los amigos cercanos es por conveniencia."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "La maestra también analiza: un organizador de un concierto divide a los asistentes por sección (VIP, general, palcos) y toma una parte proporcional de cada sección para una encuesta de satisfacción. ¿Qué tipo de muestreo es?",
+        "pasos": [
+          {
+            "texto": "Identificamos que la población se dividió en grupos (secciones) antes de tomar la muestra.",
+            "operacion": "división en grupos (estratos) = secciones"
+          },
+          {
+            "texto": "Tomar una parte proporcional de cada grupo es el muestreo estratificado.",
+            "operacion": "muestreo estratificado"
+          }
+        ],
+        "respuestaFinal": "Es un muestreo estratificado, porque se dividió a la población en grupos (secciones) y se tomó una parte proporcional de cada uno."
+      }
     },
     {
       "numero": "35.3",
@@ -172,13 +224,21 @@
             "El censo es más barato de hacer"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Si se probaran todos los focos, se destruirían todos; con una muestra se conserva la mayoría y aun así se obtiene información útil."
+          "retroalimentacion": "Si se probaran todos los focos, se destruirían todos; con una muestra se conserva la mayoría y aun así se obtiene información útil.",
+          "pistas": [
+            "Cuando la prueba destruye o consume el producto, usar una muestra evita perder todo el inventario, igual que concluimos con las pilas de la empresa.",
+            "La principal ventaja es que, al probar solo algunos focos (una muestra), no se destruyen todos los focos producidos."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "Un censo siempre es más rápido y barato de realizar que un muestreo.",
           "respuestaCorrecta": false,
-          "retroalimentacion": "Es al revés: el censo estudia a toda la población, así que suele ser más lento y costoso que estudiar solo una muestra."
+          "retroalimentacion": "Es al revés: el censo estudia a toda la población, así que suele ser más lento y costoso que estudiar solo una muestra.",
+          "pistas": [
+            "Un censo mide a TODOS los individuos, lo cual casi siempre toma más tiempo y dinero que una muestra, el mismo motivo por el que la empresa de pilas usa una muestra en vez de un censo.",
+            "Falso: un censo es generalmente más lento y costoso que una muestra, porque implica medir a toda la población."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -190,7 +250,11 @@
             "Preguntar solo a los estudiantes de un salón"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Un censo a 40,000 tomaría demasiado tiempo; una muestra representativa da resultados confiables en menos tiempo (a diferencia de preguntar solo a un salón, que no representa a toda la universidad)."
+          "retroalimentacion": "Un censo a 40,000 tomaría demasiado tiempo; una muestra representativa da resultados confiables en menos tiempo (a diferencia de preguntar solo a un salón, que no representa a toda la universidad).",
+          "pistas": [
+            "Cuando el tiempo es limitado y la población es muy grande, conviene usar una muestra en vez de un censo, el mismo razonamiento que usamos para las pilas de la empresa.",
+            "Conviene usar una muestra: con 40,000 estudiantes y solo una semana, sería casi imposible encuestar a todos (un censo) a tiempo."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -218,7 +282,21 @@
           ],
           "retroalimentacion": "Estudiar a los 100,000 es un censo; estudiar a 500 elegidos al azar es un muestreo; tardar meses con miles de encuestadores es típico de un censo por su gran tamaño."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "La maestra también analiza: una empresa de pilas quiere saber cuánto duran encendidas antes de agotarse, pero probarlas las destruye. ¿Por qué conviene usar una muestra en vez de un censo?",
+        "pasos": [
+          {
+            "texto": "Si probara TODAS las pilas producidas (censo), las destruiría todas y no tendría nada que vender.",
+            "operacion": "censo = destruir todas las pilas"
+          },
+          {
+            "texto": "Con una muestra, se prueban solo algunas y se conserva el resto del producto.",
+            "operacion": "muestra = conserva la mayoría del producto"
+          }
+        ],
+        "respuestaFinal": "Conviene usar una muestra porque probar TODAS las pilas (censo) las destruiría todas, dejando nada para vender."
+      }
     },
     {
       "numero": "35.4",
@@ -240,13 +318,21 @@
             "Ambos son la muestra"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "El grupo completo de interés (600 socios) es la población; los 60 elegidos por sorteo son la muestra."
+          "retroalimentacion": "El grupo completo de interés (600 socios) es la población; los 60 elegidos por sorteo son la muestra.",
+          "pistas": [
+            "El grupo completo de interés es la población, y el subconjunto elegido al azar es la muestra, igual que identificamos con los 300 socios y los 30 sorteados de la biblioteca.",
+            "La población son los 600 socios del club, y la muestra son los 60 elegidos con el sorteo digital."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "Elegir siempre a los compañeros más cercanos para una encuesta escolar es un buen ejemplo de muestreo aleatorio simple.",
           "respuestaCorrecta": false,
-          "retroalimentacion": "Elegir a los más cercanos, sin dar a todos la misma oportunidad de participar, es muestreo por conveniencia, no aleatorio simple."
+          "retroalimentacion": "Elegir a los más cercanos, sin dar a todos la misma oportunidad de participar, es muestreo por conveniencia, no aleatorio simple.",
+          "pistas": [
+            "El muestreo aleatorio simple requiere que CADA individuo tenga la misma probabilidad de ser elegido, no solo los más cercanos, el mismo criterio del sorteo digital que usamos con los socios de la biblioteca.",
+            "Falso: elegir siempre a los compañeros más cercanos es un muestreo por conveniencia, no aleatorio simple, porque no todos tienen la misma probabilidad de ser elegidos."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -264,7 +350,11 @@
             "Porque la población no cambia nunca"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Un censo requiere visitar a toda la población, lo cual es muy costoso y toma mucho tiempo, por eso no se repite cada año."
+          "retroalimentacion": "Un censo requiere visitar a toda la población, lo cual es muy costoso y toma mucho tiempo, por eso no se repite cada año.",
+          "pistas": [
+            "Un censo de un país entero es muy costoso y tardado, por eso se usan muestras la mayoría de los años, el mismo motivo por el que la biblioteca usó un sorteo de solo 30 socios en vez de preguntarle a los 300.",
+            "Un censo nacional es extremadamente costoso y lento de realizar, por eso la mayoría de los años se usan encuestas por muestreo, que son más rápidas y baratas."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -286,7 +376,21 @@
           ],
           "retroalimentacion": "Preguntar a los 50 del salón cuando solo interesa ese salón es censo de esa población; elegir 1 de cada 10 es sistemático; entrevistar solo a quien pasa cerca es por conveniencia."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Una biblioteca tiene 300 socios. Para saber su opinión sobre el nuevo horario, numera a los 300 socios y elige 30 con un sorteo digital. ¿Cuál es la población y cuál la muestra?",
+        "pasos": [
+          {
+            "texto": "Identificamos el grupo completo de interés: los 300 socios.",
+            "operacion": "300 socios = población"
+          },
+          {
+            "texto": "Identificamos el subconjunto elegido al azar: los 30 socios sorteados.",
+            "operacion": "30 socios = muestra"
+          }
+        ],
+        "respuestaFinal": "La población son los 300 socios de la biblioteca, y la muestra son los 30 socios elegidos por sorteo."
+      }
     }
   ],
   "practicaExtra": [

@@ -34,13 +34,21 @@
             "La temperatura del agua"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "El eje horizontal casi siempre representa la variable independiente, en este caso el tiempo; los litros de agua dependen del tiempo, así que van en el eje vertical."
+          "retroalimentacion": "El eje horizontal casi siempre representa la variable independiente, en este caso el tiempo; los litros de agua dependen del tiempo, así que van en el eje vertical.",
+          "pistas": [
+            "La variable independiente (de la que depende la otra) siempre va en el eje horizontal, igual que identificamos que los días van en el eje horizontal de las ventas de la tienda.",
+            "En la gráfica de la alberca, el tiempo (horas del día) va en el eje horizontal, porque los litros dependen del tiempo."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "En una gráfica, la distancia entre dos marcas consecutivas de un eje siempre representa la misma cantidad.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: eso es lo que significa que un eje tenga una escala uniforme; cada espacio entre marcas vale lo mismo."
+          "retroalimentacion": "Correcto: eso es lo que significa que un eje tenga una escala uniforme; cada espacio entre marcas vale lo mismo.",
+          "pistas": [
+            "Para que una gráfica sea precisa, la escala debe ser uniforme en cada eje, el mismo principio que usamos para identificar el eje horizontal de las ventas de la tienda.",
+            "Verdadero: en una gráfica bien construida, la distancia entre marcas consecutivas representa siempre la misma cantidad."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -58,7 +66,11 @@
             "El tamaño del salón"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "El tiempo transcurrido es la variable independiente: la temperatura (variable dependiente) se mide en función del tiempo."
+          "retroalimentacion": "El tiempo transcurrido es la variable independiente: la temperatura (variable dependiente) se mide en función del tiempo.",
+          "pistas": [
+            "La variable independiente es la que no depende de otra (como el tiempo), igual que identificamos los días como variable independiente en la gráfica de ventas.",
+            "En la gráfica del termómetro, el tiempo (horas) es la variable independiente, porque la temperatura depende del tiempo, no al revés."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -80,7 +92,21 @@
           ],
           "retroalimentacion": "El eje X suele ser la variable independiente, el eje Y la dependiente, y la escala indica el valor de cada marca."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "En una gráfica que muestra las ventas totales de una tienda a lo largo de los días del mes, ¿qué variable debería ir en el eje horizontal?",
+        "pasos": [
+          {
+            "texto": "Identificamos cuál variable depende de la otra: las ventas dependen del día, no al revés.",
+            "operacion": "días = variable independiente"
+          },
+          {
+            "texto": "La variable independiente siempre va en el eje horizontal.",
+            "operacion": "eje horizontal = días"
+          }
+        ],
+        "respuestaFinal": "Los días del mes (la variable independiente) deben ir en el eje horizontal."
+      }
     },
     {
       "numero": "29.2",
@@ -109,19 +135,31 @@
             "300 km"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "En la hora 5 la gráfica marca 240 km."
+          "retroalimentacion": "En la hora 5 la gráfica marca 240 km.",
+          "pistas": [
+            "Localiza la hora en el eje horizontal y lee el valor correspondiente en el eje vertical, igual que leímos 150 km a las 4 horas en la gráfica del tren.",
+            "Según la gráfica del camión, a las 5 horas había recorrido 240 km."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "Según la gráfica del camión, a las 2 horas ya había recorrido más de 100 km.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "A las 2 horas la gráfica marca 120 km, que es más de 100 km."
+          "retroalimentacion": "A las 2 horas la gráfica marca 120 km, que es más de 100 km.",
+          "pistas": [
+            "Localiza el punto en la gráfica y lee su valor en el eje vertical para comparar, el mismo procedimiento que usamos para leer 150 km a las 4 horas en la gráfica del tren.",
+            "Verdadero: a las 2 horas, el camión ya había recorrido 120 km, que es más de 100 km."
+          ]
         },
         {
           "tipo": "llenar_frase",
           "frase": "Según la gráfica del camión, la distancia recorrida a las 6 horas fue de ___ km.",
           "respuestaCorrecta": "240",
-          "retroalimentacion": "En la hora 6 la gráfica sigue marcando 240 km, igual que en la hora 5."
+          "retroalimentacion": "En la hora 6 la gráfica sigue marcando 240 km, igual que en la hora 5.",
+          "pistas": [
+            "Para leer un valor en una gráfica, ubica el punto en el eje horizontal y traza una línea hasta la curva, luego lee el eje vertical, igual que hicimos para leer 150 km a las 4 horas del tren.",
+            "Esta misma técnica sirve para leer cualquier valor en una gráfica de distancia-tiempo."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -143,7 +181,21 @@
           ],
           "retroalimentacion": "Hora 1 = 60 km, hora 3 = 120 km, hora 5 = 240 km, según los valores de la gráfica."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Una gráfica muestra el recorrido de un tren: hora 0=0km, hora 1=50km, hora 2=100km, hora 3=100km, hora 4=150km. ¿Cuántos kilómetros había recorrido a las 4 horas?",
+        "pasos": [
+          {
+            "texto": "Localizamos la hora 4 en el eje horizontal.",
+            "operacion": "hora=4"
+          },
+          {
+            "texto": "Leemos el valor correspondiente en el eje vertical.",
+            "operacion": "150 km"
+          }
+        ],
+        "respuestaFinal": "A las 4 horas, el tren había recorrido 150 km."
+      }
     },
     {
       "numero": "29.3",
@@ -166,13 +218,21 @@
             "Entre la hora 3 y la hora 4"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Entre la hora 1 y la hora 2 la temperatura se mantiene en 24°C, sin subir ni bajar: ese es el primer tramo constante."
+          "retroalimentacion": "Entre la hora 1 y la hora 2 la temperatura se mantiene en 24°C, sin subir ni bajar: ese es el primer tramo constante.",
+          "pistas": [
+            "Compara los valores entre horas consecutivas: si no cambian, es constante, igual que identificamos que las ventas de helados crecieron entre la hora 1 y 2.",
+            "La temperatura fue constante por primera vez entre la hora 1 y la hora 2 (24°C en ambas)."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "En la gráfica de la temperatura del salón, entre la hora 2 y la hora 3 la temperatura decreció.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "La temperatura bajó de 24°C (hora 2) a 18°C (hora 3), así que ese tramo es decreciente."
+          "retroalimentacion": "La temperatura bajó de 24°C (hora 2) a 18°C (hora 3), así que ese tramo es decreciente.",
+          "pistas": [
+            "Compara los valores entre horas consecutivas: si el valor baja, la tendencia es decreciente, el mismo análisis que usamos con las ventas de helados.",
+            "Verdadero: la temperatura bajó de 24°C a 18°C entre la hora 2 y la hora 3, así que decreció."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -190,7 +250,11 @@
             "Un punto aislado"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Un tramo decreciente es aquel donde la línea baja de izquierda a derecha, indicando que la variable disminuye."
+          "retroalimentacion": "Un tramo decreciente es aquel donde la línea baja de izquierda a derecha, indicando que la variable disminuye.",
+          "pistas": [
+            "Un tramo decreciente es aquel donde el valor disminuye conforme avanza el tiempo, igual que identificamos el crecimiento de las ventas de helados entre la hora 1 y 2.",
+            "Un tramo decreciente se describe, por ejemplo, como 'la cantidad disminuye a medida que pasa el tiempo'."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -212,7 +276,21 @@
           ],
           "retroalimentacion": "De 0 a 1 la temperatura sube (creciente); de 1 a 2 se mantiene (constante); de 2 a 3 baja (decreciente)."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "La gráfica de ventas de helados marca: hora 0 = 10, hora 1 = 10, hora 2 = 25, hora 3 = 40, hora 4 = 40. ¿En qué intervalo las ventas crecieron por primera vez?",
+        "pasos": [
+          {
+            "texto": "Comparamos los valores entre cada hora consecutiva.",
+            "operacion": "hora0→1: 10→10 (igual); hora1→2: 10→25 (sube)"
+          },
+          {
+            "texto": "Identificamos el primer intervalo donde el valor aumenta.",
+            "operacion": "entre la hora 1 y la hora 2"
+          }
+        ],
+        "respuestaFinal": "Las ventas crecieron por primera vez entre la hora 1 y la hora 2."
+      }
     },
     {
       "numero": "29.4",
@@ -235,7 +313,11 @@
             "No se puede saber"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "En la semana 0, Ana tiene 0 pesos y Luis ya tiene 200 pesos, así que Luis tiene más."
+          "retroalimentacion": "En la semana 0, Ana tiene 0 pesos y Luis ya tiene 200 pesos, así que Luis tiene más.",
+          "pistas": [
+            "En la semana 0, compara los montos iniciales de cada persona, igual que identificamos que Fernanda empieza con $160 y Diego con $0 en su comparación de ahorros.",
+            "En la semana 0, Luis ya tiene $200 ahorrados y Ana tiene $0, así que Luis tiene más dinero ahorrado."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -247,7 +329,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Con los datos anteriores, en la semana 5 Ana ya tendría más dinero ahorrado que Luis.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "En la semana 5, Ana tiene 100×5=500 pesos y Luis tiene 200+50×5=450 pesos; como Ana crece más rápido, en la semana 4 se igualan (400=400) y desde la 5 Ana ya tiene más."
+          "retroalimentacion": "En la semana 5, Ana tiene 100×5=500 pesos y Luis tiene 200+50×5=450 pesos; como Ana crece más rápido, en la semana 4 se igualan (400=400) y desde la 5 Ana ya tiene más.",
+          "pistas": [
+            "Calcula el ahorro de cada persona en la semana indicada y compara, el mismo procedimiento que usamos para encontrar cuándo Diego y Fernanda tienen el mismo ahorro (semana 4).",
+            "Verdadero: en la semana 5, Ana tiene 100×5=$500 y Luis tiene 200+50×5=$450, así que Ana tiene más."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -259,7 +345,11 @@
             "Nunca se igualan"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "En la semana 4: Ana tiene 100×4=400 pesos y Luis tiene 200+50×4=400 pesos. Ambos se igualan."
+          "retroalimentacion": "En la semana 4: Ana tiene 100×4=400 pesos y Luis tiene 200+50×4=400 pesos. Ambos se igualan.",
+          "pistas": [
+            "Plantea una ecuación igualando ambos ahorros y despeja la semana, igual que hicimos para encontrar que Diego y Fernanda se igualan en la semana 4.",
+            "100w=200+50w → 50w=200 → w=4. En la semana 4, Ana y Luis tienen la misma cantidad."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -281,7 +371,21 @@
           ],
           "retroalimentacion": "La gráfica de Ana es más inclinada (crece 100/semana), la de Luis empieza arriba pero crece más despacio (50/semana), y se cruzan en la semana 4."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Diego ahorra $80 cada semana empezando en $0; Fernanda ahorra $40 cada semana pero ya tenía $160 ahorrados desde la semana 0. ¿En qué semana tendrán exactamente la misma cantidad ahorrada?",
+        "pasos": [
+          {
+            "texto": "Planteamos una ecuación igualando ambos ahorros.",
+            "operacion": "80w=160+40w"
+          },
+          {
+            "texto": "Resolvemos para w.",
+            "operacion": "40w=160 → w=4"
+          }
+        ],
+        "respuestaFinal": "En la semana 4, Diego y Fernanda tendrán la misma cantidad ahorrada ($320 cada uno)."
+      }
     }
   ],
   "practicaExtra": [

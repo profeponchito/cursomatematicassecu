@@ -29,7 +29,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "En un triángulo rectángulo, la hipotenusa es siempre el lado más largo.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: la hipotenusa, al ser opuesta al ángulo de 90°, siempre es el lado de mayor longitud."
+          "retroalimentacion": "Correcto: la hipotenusa, al ser opuesta al ángulo de 90°, siempre es el lado de mayor longitud.",
+          "pistas": [
+            "La hipotenusa es siempre el lado opuesto al ángulo recto y el más largo del triángulo, igual que identificamos que el cable del electricista es la hipotenusa.",
+            "Verdadero: en un triángulo rectángulo, la hipotenusa siempre es el lado más largo."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -41,7 +45,11 @@
             "Diagonales"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Los dos lados que forman el ángulo de 90° se llaman catetos; el tercer lado es la hipotenusa."
+          "retroalimentacion": "Los dos lados que forman el ángulo de 90° se llaman catetos; el tercer lado es la hipotenusa.",
+          "pistas": [
+            "Los dos lados que forman el ángulo recto reciben un nombre especial, distinto al de la hipotenusa, igual que identificamos que la pared y el piso son los catetos del cable del electricista.",
+            "Los dos lados que forman el ángulo recto se llaman catetos."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -53,7 +61,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "El Teorema de Pitágoras se puede aplicar a cualquier triángulo, sin importar si tiene o no un ángulo recto.",
           "respuestaCorrecta": false,
-          "retroalimentacion": "Falso: el Teorema de Pitágoras solo es válido en triángulos rectángulos, es decir, con un ángulo de exactamente 90°."
+          "retroalimentacion": "Falso: el Teorema de Pitágoras solo es válido en triángulos rectángulos, es decir, con un ángulo de exactamente 90°.",
+          "pistas": [
+            "El Teorema de Pitágoras solo aplica a triángulos rectángulos (con un ángulo de 90°), el mismo requisito que cumple el triángulo que forma el cable del electricista.",
+            "Falso: el Teorema de Pitágoras solo se puede aplicar a triángulos rectángulos, no a cualquier triángulo."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -75,7 +87,21 @@
           ],
           "retroalimentacion": "El ángulo recto mide 90°, la hipotenusa es el lado opuesto a él, y los catetos son los lados que lo forman."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El electricista también identifica un triángulo rectángulo formado por otra pared (cateto), el piso (cateto) y un segundo cable (hipotenusa).",
+        "pasos": [
+          {
+            "texto": "Identificamos que la pared y el piso forman el ángulo recto: son los catetos.",
+            "operacion": "pared y piso = catetos"
+          },
+          {
+            "texto": "El cable, al ir de un extremo a otro sin pasar por el ángulo recto, es la hipotenusa.",
+            "operacion": "cable = hipotenusa"
+          }
+        ],
+        "respuestaFinal": "La pared y el piso son los catetos, y el cable es la hipotenusa, el lado opuesto al ángulo recto."
+      }
     },
     {
       "numero": "33.2",
@@ -104,19 +130,31 @@
             "20 cm"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "√(7²+24²) = √(49+576) = √625 = 25 cm."
+          "retroalimentacion": "√(7²+24²) = √(49+576) = √625 = 25 cm.",
+          "pistas": [
+            "Aplica el Teorema de Pitágoras: eleva al cuadrado los catetos, súmalos y saca raíz cuadrada, igual que calculamos 15 m para el cable del electricista.",
+            "7²+24²=49+576=625; √625=25 cm."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "Si los catetos de un triángulo rectángulo miden 8 cm y 15 cm, la hipotenusa mide 17 cm.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "√(8²+15²) = √(64+225) = √289 = 17 cm. La afirmación es correcta."
+          "retroalimentacion": "√(8²+15²) = √(64+225) = √289 = 17 cm. La afirmación es correcta.",
+          "pistas": [
+            "Eleva al cuadrado ambos catetos, suma, y saca raíz cuadrada para obtener la hipotenusa, el mismo procedimiento que usamos para calcular 15 m del cable del electricista.",
+            "Verdadero: 8²+15²=64+225=289; √289=17 cm."
+          ]
         },
         {
           "tipo": "llenar_frase",
           "frase": "Un rectángulo mide 20 m de largo y 15 m de ancho. Su diagonal mide ___ m.",
           "respuestaCorrecta": "25",
-          "retroalimentacion": "√(20²+15²) = √(400+225) = √625 = 25 m."
+          "retroalimentacion": "√(20²+15²) = √(400+225) = √625 = 25 m.",
+          "pistas": [
+            "El Teorema de Pitágoras relaciona los tres lados de un triángulo rectángulo mediante sus cuadrados, igual que usamos para calcular 15 m del cable del electricista.",
+            "Esta relación (a²+b²=c²) es válida para cualquier triángulo rectángulo, sin importar el tamaño."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -138,7 +176,21 @@
           ],
           "retroalimentacion": "√(6²+8²)=10; √(9²+40²)=√1681=41; √(10²+24²)=√676=26."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El electricista mide otra pared: la altura (cateto) es de 9 m y la distancia en el piso (cateto) es de 12 m. ¿Cuánto debe medir el cable (hipotenusa)?",
+        "pasos": [
+          {
+            "texto": "Aplicamos el Teorema de Pitágoras: hipotenusa² = cateto₁² + cateto₂².",
+            "operacion": "9²+12²=81+144=225"
+          },
+          {
+            "texto": "Sacamos la raíz cuadrada para obtener la hipotenusa.",
+            "operacion": "√225=15"
+          }
+        ],
+        "respuestaFinal": "El cable debe medir 15 metros."
+      }
     },
     {
       "numero": "33.3",
@@ -168,19 +220,31 @@
             "6 m"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "√(15²−9²) = √(225−81) = √144 = 12 m."
+          "retroalimentacion": "√(15²−9²) = √(225−81) = √144 = 12 m.",
+          "pistas": [
+            "Despeja el cateto desconocido restando los cuadrados y sacando raíz cuadrada, igual que calculamos 12 m de altura para el cable del electricista.",
+            "15²-9²=225-81=144; √144=12 m de altura."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "Si la hipotenusa mide 17 cm y un cateto mide 8 cm, el otro cateto mide 15 cm.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "√(17²−8²) = √(289−64) = √225 = 15 cm. La afirmación es correcta."
+          "retroalimentacion": "√(17²−8²) = √(289−64) = √225 = 15 cm. La afirmación es correcta.",
+          "pistas": [
+            "Resta los cuadrados (hipotenusa menos cateto conocido) y saca raíz cuadrada para encontrar el otro cateto, el mismo procedimiento que usamos para calcular 12 m de altura del cable.",
+            "Verdadero: 17²-8²=289-64=225; √225=15 cm."
+          ]
         },
         {
           "tipo": "llenar_frase",
           "frase": "Un triángulo rectángulo tiene hipotenusa de 20 cm y un cateto de 12 cm. El otro cateto mide ___ cm.",
           "respuestaCorrecta": "16",
-          "retroalimentacion": "√(20²−12²) = √(400−144) = √256 = 16 cm."
+          "retroalimentacion": "√(20²−12²) = √(400−144) = √256 = 16 cm.",
+          "pistas": [
+            "Para encontrar un cateto, resta su cuadrado del cuadrado de la hipotenusa y saca raíz cuadrada, igual que hicimos para calcular 12 m de altura del cable del electricista.",
+            "Esta técnica (despejar un cateto) es el mismo Teorema de Pitágoras, solo que despejando una variable distinta."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -202,7 +266,21 @@
           ],
           "retroalimentacion": "√(10²−6²)=8; √(26²−24²)=√100=10; √(41²−40²)=√81=9."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El electricista tiene un cable (hipotenusa) de 13 m, y la distancia en el piso (un cateto) es de 5 m. ¿Qué altura de pared alcanza el cable (el otro cateto)?",
+        "pasos": [
+          {
+            "texto": "Despejamos el cateto desconocido: cateto² = hipotenusa² - cateto conocido².",
+            "operacion": "13²-5²=169-25=144"
+          },
+          {
+            "texto": "Sacamos la raíz cuadrada.",
+            "operacion": "√144=12"
+          }
+        ],
+        "respuestaFinal": "El cable alcanza una altura de 12 metros en la pared."
+      }
     },
     {
       "numero": "33.4",
@@ -225,7 +303,11 @@
             "50 m"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "La diagonal mide √(30²+40²)=50 m; bordear los dos lados es 30+40=70 m; el ahorro es 70−50=20 m."
+          "retroalimentacion": "La diagonal mide √(30²+40²)=50 m; bordear los dos lados es 30+40=70 m; el ahorro es 70−50=20 m.",
+          "pistas": [
+            "Calcula la diagonal con el Teorema de Pitágoras, y resta esa distancia de la suma de los dos lados, igual que calculamos 12 m de ahorro para el parque del electricista.",
+            "30²+40²=900+1600=2500; √2500=50; ahorro=(30+40)-50=70-50=20 m."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -237,13 +319,21 @@
           "tipo": "verdadero_falso",
           "enunciado": "Para calcular la distancia más corta entre dos puntos que forman un ángulo recto con un tercer punto, se usa el Teorema de Pitágoras sobre los dos catetos.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: si los dos segmentos conocidos forman un ángulo de 90°, la distancia directa entre los otros dos extremos es la hipotenusa."
+          "retroalimentacion": "Correcto: si los dos segmentos conocidos forman un ángulo de 90°, la distancia directa entre los otros dos extremos es la hipotenusa.",
+          "pistas": [
+            "El Teorema de Pitágoras se usa precisamente para encontrar la distancia más corta (la diagonal) entre dos puntos que forman un ángulo recto con un tercero, el mismo principio que usamos para calcular el ahorro del parque (12 m).",
+            "Verdadero: la diagonal (hipotenusa) siempre es más corta que la suma de los dos catetos, por eso se usa Pitágoras para encontrar atajos."
+          ]
         },
         {
           "tipo": "llenar_frase",
           "frase": "Una escalera de 10 m debe alcanzar una ventana a 8 m de altura. La base de la escalera debe colocarse a ___ m de la pared.",
           "respuestaCorrecta": "6",
-          "retroalimentacion": "√(10²−8²) = √(100−64) = √36 = 6 m."
+          "retroalimentacion": "√(10²−8²) = √(100−64) = √36 = 6 m.",
+          "pistas": [
+            "Calcula la diagonal con el Teorema de Pitágoras y compárala con la ruta de los dos lados, igual que hicimos para calcular el ahorro de 12 m en el parque.",
+            "Esta aplicación del Teorema de Pitágoras es muy común para calcular atajos o distancias directas en terrenos rectangulares."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -265,7 +355,21 @@
           ],
           "retroalimentacion": "Cada situación corresponde a una forma distinta de usar la misma relación c²=a²+b²."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Otro parque rectangular mide 18 m de largo y 24 m de ancho. ¿Cuántos metros ahorra una persona al cruzar en diagonal en vez de bordear dos lados?",
+        "pasos": [
+          {
+            "texto": "Calculamos la diagonal con el Teorema de Pitágoras.",
+            "operacion": "18²+24²=324+576=900 → √900=30"
+          },
+          {
+            "texto": "Comparamos con la distancia de bordear dos lados y restamos.",
+            "operacion": "(18+24)-30=42-30=12"
+          }
+        ],
+        "respuestaFinal": "La persona ahorra 12 metros al cruzar en diagonal."
+      }
     }
   ],
   "practicaExtra": [

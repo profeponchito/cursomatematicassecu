@@ -40,13 +40,21 @@
             "15"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Primero se multiplica: 2 × 3 = 6, luego se suma: 5 + 6 = 11."
+          "retroalimentacion": "Primero se multiplica: 2 × 3 = 6, luego se suma: 5 + 6 = 11.",
+          "pistas": [
+            "Multiplica primero, y suma o resta al final, igual que calculamos el puntaje correcto del jugador con 5 cartas azules y 3 rojas (9 puntos).",
+            "Primero se multiplica: 2 × 3 = 6, luego se suma: 5 + 6 = 11."
+          ]
         },
         {
           "tipo": "llenar_frase",
           "frase": "El resultado correcto de 10 - 3 × 2 es ___.",
           "respuestaCorrecta": "4",
-          "retroalimentacion": "Primero se multiplica: 3 × 2 = 6, luego se resta: 10 - 6 = 4."
+          "retroalimentacion": "Primero se multiplica: 3 × 2 = 6, luego se resta: 10 - 6 = 4.",
+          "pistas": [
+            "Resuelve la multiplicación antes que la resta, el mismo orden que usamos para calcular el puntaje del jugador con 5 cartas azules y 3 rojas.",
+            "Primero se multiplica: 3 × 2 = 6, luego se resta: 10 - 6 = 4."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -64,9 +72,27 @@
             "Para usar siempre paréntesis"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "La jerarquía es una convención matemática que garantiza que cualquier persona obtenga el mismo resultado."
+          "retroalimentacion": "La jerarquía es una convención matemática que garantiza que cualquier persona obtenga el mismo resultado.",
+          "pistas": [
+            "La jerarquía de operaciones existe para que todos obtengan el mismo resultado, igual que mostramos al calcular correctamente el puntaje de 9 del jugador.",
+            "La jerarquía es una convención matemática que garantiza que cualquier persona obtenga el mismo resultado."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "En otra ronda del mismo juego, un jugador tiene 5 cartas azules y 3 rojas. Alguien calcula el puntaje como 3×5-2×3, y otro, por error, resuelve de izquierda a derecha.",
+        "pasos": [
+          {
+            "texto": "Aplicamos primero las multiplicaciones, en el orden en que aparecen.",
+            "operacion": "3×5=15; 2×3=6"
+          },
+          {
+            "texto": "Restamos al final.",
+            "operacion": "15-6=9"
+          }
+        ],
+        "respuestaFinal": "El puntaje correcto es 9 puntos; resolver de izquierda a derecha sin respetar la jerarquía da un resultado distinto e incorrecto."
+      }
     },
     {
       "numero": "3.2",
@@ -89,7 +115,11 @@
             "2"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Primero se multiplica: 3 × 5 = 15. Luego: 20 - 15 + 2 = 7."
+          "retroalimentacion": "Primero se multiplica: 3 × 5 = 15. Luego: 20 - 15 + 2 = 7.",
+          "pistas": [
+            "Resuelve primero la multiplicación, y después las sumas y restas de izquierda a derecha, igual que calculamos 25-4×3+6÷2=16.",
+            "Primero se multiplica: 3 × 5 = 15. Luego: 20 - 15 + 2 = 7."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -101,7 +131,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "El resultado de 6 × 2 - 4 ÷ 2 es 10.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "6 × 2 = 12 y 4 ÷ 2 = 2; luego 12 - 2 = 10."
+          "retroalimentacion": "6 × 2 = 12 y 4 ÷ 2 = 2; luego 12 - 2 = 10.",
+          "pistas": [
+            "Haz primero las multiplicaciones y divisiones, y al final las sumas y restas, el mismo orden que usamos en 25-4×3+6÷2.",
+            "6 × 2 = 12 y 4 ÷ 2 = 2; luego 12 - 2 = 10."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -113,7 +147,11 @@
             "12"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Primero la división: 9 ÷ 3 = 3. Luego: 8 + 3 - 1 = 10."
+          "retroalimentacion": "Primero la división: 9 ÷ 3 = 3. Luego: 8 + 3 - 1 = 10.",
+          "pistas": [
+            "Resuelve la división antes que la suma y la resta, igual que hicimos con 6÷2 en la expresión 25-4×3+6÷2.",
+            "Primero la división: 9 ÷ 3 = 3. Luego: 8 + 3 - 1 = 10."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -121,7 +159,21 @@
           "respuestaCorrecta": "25",
           "retroalimentacion": "6 × 5 = 30; luego 45 - 30 + 10 = 25."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "¿Cuál es el resultado correcto de 25 - 4 × 3 + 6 ÷ 2?",
+        "pasos": [
+          {
+            "texto": "Resolvemos las multiplicaciones y divisiones primero, en el orden en que aparecen.",
+            "operacion": "4×3=12; 6÷2=3"
+          },
+          {
+            "texto": "Resolvemos las sumas y restas de izquierda a derecha.",
+            "operacion": "25-12+3=16"
+          }
+        ],
+        "respuestaFinal": "El resultado correcto es 16."
+      }
     },
     {
       "numero": "3.3",
@@ -145,7 +197,11 @@
             "19"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Primero el paréntesis: 6 + 4 = 10. Luego: 10 × 3 = 30."
+          "retroalimentacion": "Primero el paréntesis: 6 + 4 = 10. Luego: 10 × 3 = 30.",
+          "pistas": [
+            "Resuelve primero lo que está dentro del paréntesis, y después multiplica, igual que calculamos [(9-2)+4]×3=33.",
+            "Primero el paréntesis: 6 + 4 = 10. Luego: 10 × 3 = 30."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -157,7 +213,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "En 2 × (7 - 3), el resultado es 8.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Primero el paréntesis: 7 - 3 = 4. Luego: 2 × 4 = 8."
+          "retroalimentacion": "Primero el paréntesis: 7 - 3 = 4. Luego: 2 × 4 = 8.",
+          "pistas": [
+            "Resuelve el paréntesis antes de multiplicar, el mismo orden que usamos en [(9-2)+4]×3.",
+            "Primero el paréntesis: 7 - 3 = 4. Luego: 2 × 4 = 8."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -175,9 +235,31 @@
           "tipo": "llenar_frase",
           "frase": "[(12 ÷ 4) + 5] × 2 = ___.",
           "respuestaCorrecta": "16",
-          "retroalimentacion": "12 ÷ 4 = 3; 3 + 5 = 8 (esto es el corchete); 8 × 2 = 16."
+          "retroalimentacion": "12 ÷ 4 = 3; 3 + 5 = 8 (esto es el corchete); 8 × 2 = 16.",
+          "pistas": [
+            "Resuelve de adentro hacia afuera: primero el paréntesis, después el corchete, igual que hicimos con [(9-2)+4]×3.",
+            "12 ÷ 4 = 3; 3 + 5 = 8 (esto es el corchete); 8 × 2 = 16."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "¿Cuánto es [ (9 - 2) + 4 ] × 3?",
+        "pasos": [
+          {
+            "texto": "Resolvemos primero el paréntesis.",
+            "operacion": "9-2=7"
+          },
+          {
+            "texto": "Resolvemos el corchete.",
+            "operacion": "7+4=11"
+          },
+          {
+            "texto": "Multiplicamos al final.",
+            "operacion": "11×3=33"
+          }
+        ],
+        "respuestaFinal": "El resultado es 33."
+      }
     },
     {
       "numero": "3.4",
@@ -200,19 +282,31 @@
             "5 + 3 × 3 - 2 = 12 puntos"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "5 × 3 = 15 y 3 × 2 = 6; luego 15 - 6 = 9 puntos."
+          "retroalimentacion": "5 × 3 = 15 y 3 × 2 = 6; luego 15 - 6 = 9 puntos.",
+          "pistas": [
+            "Multiplica primero dentro del paréntesis y resta, igual que calculamos el puntaje de 15 del jugador con 6 cartas azules y 4 rojas.",
+            "5 × 3 = 15 y 3 × 2 = 6; luego 15 - 6 = 9 puntos."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "El resultado de [ (9 - 5) × 3 ] + 2 es 14.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "9 - 5 = 4; 4 × 3 = 12 (esto es el corchete); 12 + 2 = 14."
+          "retroalimentacion": "9 - 5 = 4; 4 × 3 = 12 (esto es el corchete); 12 + 2 = 14.",
+          "pistas": [
+            "Resuelve de adentro hacia afuera: primero el paréntesis (el corchete), después lo que queda afuera, igual que hicimos con (3×6-2×4)+5.",
+            "9 - 5 = 4; 4 × 3 = 12 (esto es el corchete); 12 + 2 = 14."
+          ]
         },
         {
           "tipo": "llenar_frase",
           "frase": "El resultado de 6 × 3 - (8 ÷ 4) + 1 es ___.",
           "respuestaCorrecta": "17",
-          "retroalimentacion": "Primero el paréntesis: 8 ÷ 4 = 2. Luego: 6 × 3 = 18. Por último: 18 - 2 + 1 = 17."
+          "retroalimentacion": "Primero el paréntesis: 8 ÷ 4 = 2. Luego: 6 × 3 = 18. Por último: 18 - 2 + 1 = 17.",
+          "pistas": [
+            "Resuelve el paréntesis, después las multiplicaciones restantes, y al final suma o resta de izquierda a derecha, igual que calculamos el puntaje del jugador de 6 cartas azules y 4 rojas.",
+            "Primero el paréntesis: 8 ÷ 4 = 2. Luego: 6 × 3 = 18. Por último: 18 - 2 + 1 = 17."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -246,7 +340,25 @@
           "respuestaCorrecta": 0,
           "retroalimentacion": "10 - 4 = 6; 6 + 3 = 9 (esto es el corchete); 2 × 9 = 18."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Un jugador tiene 6 cartas azules (3 puntos cada una) y 4 cartas rojas (se restan 2 puntos por cada una), y además gana 5 puntos extra por una carta especial: (3×6 - 2×4) + 5.",
+        "pasos": [
+          {
+            "texto": "Resolvemos las multiplicaciones dentro del paréntesis.",
+            "operacion": "3×6=18; 2×4=8"
+          },
+          {
+            "texto": "Restamos dentro del paréntesis.",
+            "operacion": "18-8=10"
+          },
+          {
+            "texto": "Sumamos los puntos extra al final.",
+            "operacion": "10+5=15"
+          }
+        ],
+        "respuestaFinal": "El puntaje final del jugador es 15 puntos."
+      }
     }
   ],
   "practicaExtra": [

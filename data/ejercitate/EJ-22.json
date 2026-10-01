@@ -35,7 +35,11 @@
             "11"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "El coeficiente es el número que multiplica a la variable; en 7y, ese número es 7."
+          "retroalimentacion": "El coeficiente es el número que multiplica a la variable; en 7y, ese número es 7.",
+          "pistas": [
+            "El coeficiente es el número que multiplica a la variable, igual que identificamos que 5 es el coeficiente de x en la expresión 5x+10 de Ana.",
+            "En 7y+4, el coeficiente del término 7y es 7."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -47,7 +51,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "En la expresión 3m + 8, 'm' es una variable.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "'m' representa un valor que puede cambiar, por lo tanto es una variable."
+          "retroalimentacion": "'m' representa un valor que puede cambiar, por lo tanto es una variable.",
+          "pistas": [
+            "Una variable es la letra que representa un valor desconocido o que puede cambiar, igual que x representa el número de bolsas de dulces en la expresión de Ana.",
+            "Verdadero: en 3m+8, 'm' es la variable porque representa un valor que puede cambiar."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -73,9 +81,27 @@
             1,
             0
           ],
-          "retroalimentacion": "8x tiene coeficiente 8; -3y tiene coeficiente -3; z equivale a 1z, así que su coeficiente es 1."
+          "retroalimentacion": "8x tiene coeficiente 8; -3y tiene coeficiente -3; z equivale a 1z, así que su coeficiente es 1.",
+          "pistas": [
+            "Identifica el coeficiente (número), la variable (letra) y el término independiente (sin letra) en la expresión, igual que hicimos con 5x+10 de los dulces de Ana.",
+            "En la expresión 6a+3, el coeficiente es 6, la variable es a, y el término independiente es 3."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Ana también anota el gasto en dulces con la expresión 5x + 10, donde x es el número de bolsas que compra.",
+        "pasos": [
+          {
+            "texto": "Identificamos el término con variable y su coeficiente.",
+            "operacion": "5x → coeficiente 5, variable x"
+          },
+          {
+            "texto": "Identificamos el término independiente (sin variable).",
+            "operacion": "10 → término independiente"
+          }
+        ],
+        "respuestaFinal": "En 5x + 10, el coeficiente es 5, la variable es x, y 10 es el término independiente."
+      }
     },
     {
       "numero": "22.2",
@@ -98,7 +124,11 @@
             "7x + 3"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "'El triple de un número' es 3x, y 'aumentado en 7' significa sumarle 7: 3x + 7."
+          "retroalimentacion": "'El triple de un número' es 3x, y 'aumentado en 7' significa sumarle 7: 3x + 7.",
+          "pistas": [
+            "Traduce cada operación por partes: 'triple' es multiplicar por 3, 'aumentado' es sumar, igual que tradujimos 'el doble de un número disminuido en 5' como 2x−5.",
+            "'El triple de un número aumentado en 7' se traduce como 3x + 7."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -110,7 +140,11 @@
             "2x − 4"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "'La mitad de un número' es x/2, y 'disminuida en 4' significa restarle 4: x/2 − 4."
+          "retroalimentacion": "'La mitad de un número' es x/2, y 'disminuida en 4' significa restarle 4: x/2 − 4.",
+          "pistas": [
+            "Traduce cada operación por partes: 'mitad' es dividir entre 2, 'disminuida' es restar, el mismo procedimiento que usamos con 2x−5 de Ana.",
+            "'La mitad de un número disminuida en 4' se traduce como x/2 − 4."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -122,7 +156,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "'El cuádruple de un número menos 6' se traduce como 4x − 6.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "'El cuádruple de un número' es 4x, y 'menos 6' indica restar 6: 4x − 6."
+          "retroalimentacion": "'El cuádruple de un número' es 4x, y 'menos 6' indica restar 6: 4x − 6.",
+          "pistas": [
+            "Traduce cada palabra clave por su operación: 'cuádruple' es multiplicar por 4, 'menos' es restar, igual que hicimos con 2x−5 para la frase de Ana.",
+            "Verdadero: 'el cuádruple de un número menos 6' se traduce como 4x − 6."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -144,7 +182,21 @@
           ],
           "retroalimentacion": "'El doble más 3' es 2x+3; 'disminuido en 5' es x-5; 'el triple' es 3x."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Ana también quiere traducir la frase 'el doble de un número disminuido en 5' a una expresión algebraica.",
+        "pasos": [
+          {
+            "texto": "Identificamos la operación 'el doble de un número': multiplicar por 2.",
+            "operacion": "2x"
+          },
+          {
+            "texto": "Identificamos 'disminuido en 5': restar 5.",
+            "operacion": "2x-5"
+          }
+        ],
+        "respuestaFinal": "'El doble de un número disminuido en 5' se traduce como 2x − 5."
+      }
     },
     {
       "numero": "22.3",
@@ -180,7 +232,11 @@
             "7"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "2(3)² + 1 = 2(9) + 1 = 18 + 1 = 19."
+          "retroalimentacion": "2(3)² + 1 = 2(9) + 1 = 18 + 1 = 19.",
+          "pistas": [
+            "Sustituye el valor de x en la expresión y resuelve siguiendo el orden de operaciones, igual que calculamos 5(3)+10=25 para los dulces de Ana.",
+            "2x²+1 con x=3: 2(3)²+1 = 2(9)+1 = 18+1 = 19."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -192,15 +248,37 @@
             "$120"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "50 + 20(4) = 50 + 80 = $130."
+          "retroalimentacion": "50 + 20(4) = 50 + 80 = $130.",
+          "pistas": [
+            "Sustituye el valor de la variable y resuelve, el mismo procedimiento que usamos con 5x+10=25 para los dulces de Ana.",
+            "50+20(4) = 50+80 = 130."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "El valor de 3x − 4 cuando x = 2 es 2.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "3(2) − 4 = 6 − 4 = 2, así que el enunciado es correcto."
+          "retroalimentacion": "3(2) − 4 = 6 − 4 = 2, así que el enunciado es correcto.",
+          "pistas": [
+            "Sustituye el valor de x y resuelve la operación resultante, igual que hicimos con 5(3)+10=25 para los dulces de Ana.",
+            "Verdadero: 3(2)-4 = 6-4 = 2."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Ana evalúa su expresión de dulces 5x + 10 para x = 3 bolsas.",
+        "pasos": [
+          {
+            "texto": "Sustituimos x por 3 en la expresión.",
+            "operacion": "5(3)+10"
+          },
+          {
+            "texto": "Resolvemos la operación resultante.",
+            "operacion": "15+10=25"
+          }
+        ],
+        "respuestaFinal": "Para x = 3, la expresión 5x + 10 vale 25."
+      }
     },
     {
       "numero": "22.4",
@@ -223,7 +301,11 @@
             "10"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "La expresión es 3x − 2; evaluada en x=6: 3(6) − 2 = 18 − 2 = 16."
+          "retroalimentacion": "La expresión es 3x − 2; evaluada en x=6: 3(6) − 2 = 18 − 2 = 16.",
+          "pistas": [
+            "Primero traduce la frase a una expresión, y luego sustituye el valor de x, igual que hicimos con 2x+3=13 para la frase de Ana.",
+            "'El triple de un número disminuido en 2' es 3x-2; para x=6: 3(6)-2 = 18-2 = 16."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -235,7 +317,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "La expresión 4x − 1, evaluada en x = 3, da 11.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "4(3) − 1 = 12 − 1 = 11, así que el enunciado es correcto."
+          "retroalimentacion": "4(3) − 1 = 12 − 1 = 11, así que el enunciado es correcto.",
+          "pistas": [
+            "Sustituye el valor de x en la expresión y resuelve, el mismo procedimiento que usamos con 2(5)+3=13 para la expresión de Ana.",
+            "Verdadero: 4(3)-1 = 12-1 = 11."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -247,7 +333,11 @@
             "$63"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "La expresión es 15 + 8k; evaluada en k=5: 15 + 8(5) = 15 + 40 = $55."
+          "retroalimentacion": "La expresión es 15 + 8k; evaluada en k=5: 15 + 8(5) = 15 + 40 = $55.",
+          "pistas": [
+            "Sustituye el valor de la variable en la expresión y resuelve, igual que calculamos 2(5)+3=13 para la expresión de Ana.",
+            "15+8(5) = 15+40 = 55."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -269,7 +359,21 @@
           ],
           "retroalimentacion": "3(4)+1=13; 2(4)-5=3; 5(4)=20."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Ana traduce 'el doble de un número aumentado en 3' y lo evalúa para x = 5.",
+        "pasos": [
+          {
+            "texto": "Traducimos la frase a una expresión algebraica.",
+            "operacion": "2x+3"
+          },
+          {
+            "texto": "Sustituimos x=5 y resolvemos.",
+            "operacion": "2(5)+3=13"
+          }
+        ],
+        "respuestaFinal": "'El doble de un número aumentado en 3' es 2x+3, y para x=5 vale 13."
+      }
     }
   ],
   "practicaExtra": [

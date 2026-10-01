@@ -35,13 +35,21 @@
             "2"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "(-7) + (-5) = -12: mismo signo, se suman los valores absolutos (7 + 5 = 12) y se conserva el signo negativo."
+          "retroalimentacion": "(-7) + (-5) = -12: mismo signo, se suman los valores absolutos (7 + 5 = 12) y se conserva el signo negativo.",
+          "pistas": [
+            "Con el mismo signo, suma los valores absolutos y conserva el signo común, igual que calculamos (-5)+(-3)=-8 para el elevador.",
+            "(-7) + (-5) = -12: mismo signo, se suman los valores absolutos (7 + 5 = 12) y se conserva el signo negativo."
+          ]
         },
         {
           "tipo": "llenar_frase",
           "frase": "(-8) + 3 = ___.",
           "respuestaCorrecta": "-5",
-          "retroalimentacion": "Signos distintos: se restan los valores absolutos (8 - 3 = 5) y el resultado toma el signo del número con mayor valor absoluto, -8, así que queda -5."
+          "retroalimentacion": "Signos distintos: se restan los valores absolutos (8 - 3 = 5) y el resultado toma el signo del número con mayor valor absoluto, -8, así que queda -5.",
+          "pistas": [
+            "Con signos distintos, resta los valores absolutos y usa el signo del mayor, el mismo procedimiento que usamos con los desplazamientos del elevador.",
+            "Signos distintos: se restan los valores absolutos (8 - 3 = 5) y el resultado toma el signo del número con mayor valor absoluto, -8, así que queda -5."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -59,7 +67,11 @@
             "-6 m"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "(-6) + (-4) = -10: ambos desplazamientos son hacia abajo (negativos), se suman sus valores absolutos y el resultado es -10 m."
+          "retroalimentacion": "(-6) + (-4) = -10: ambos desplazamientos son hacia abajo (negativos), se suman sus valores absolutos y el resultado es -10 m.",
+          "pistas": [
+            "Cuando ambos desplazamientos son negativos, suma sus valores absolutos y conserva el signo negativo, igual que hicimos con el elevador que bajó 5 y luego 3 pisos más.",
+            "(-6) + (-4) = -10: ambos desplazamientos son hacia abajo (negativos), se suman sus valores absolutos y el resultado es -10 m."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -81,7 +93,21 @@
           ],
           "retroalimentacion": "(-3)+(-9) = -12; (-12)+7 = -5; 6+(-2) = 4."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El mismo elevador, en otro recorrido, baja 5 pisos y luego baja 3 pisos más. ¿En qué piso queda respecto al punto de partida?",
+        "pasos": [
+          {
+            "texto": "Ambos desplazamientos son negativos (mismo signo), así que sumamos sus valores absolutos.",
+            "operacion": "5+3=8"
+          },
+          {
+            "texto": "El resultado conserva el signo negativo.",
+            "operacion": "-8"
+          }
+        ],
+        "respuestaFinal": "El elevador queda 8 pisos por debajo del punto de partida: -8."
+      }
     },
     {
       "numero": "12.2",
@@ -105,13 +131,21 @@
             "21"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "8 - 13 = 8 + (-13) = -5."
+          "retroalimentacion": "8 - 13 = 8 + (-13) = -5.",
+          "pistas": [
+            "Convierte la resta en una suma del opuesto y después aplica la regla de los signos, igual que calculamos 4-(-6)=10 para el elevador.",
+            "8 - 13 = 8 + (-13) = -5."
+          ]
         },
         {
           "tipo": "llenar_frase",
           "frase": "(-6) - (-9) = ___.",
           "respuestaCorrecta": "3",
-          "retroalimentacion": "Restar -9 equivale a sumar 9: (-6) + 9 = 3."
+          "retroalimentacion": "Restar -9 equivale a sumar 9: (-6) + 9 = 3.",
+          "pistas": [
+            "Restar un número negativo equivale a sumar su opuesto positivo, el mismo procedimiento que usamos con 4-(-6) para el elevador.",
+            "Restar -9 equivale a sumar 9: (-6) + 9 = 3."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -129,7 +163,11 @@
             "8°C"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "-2 - 6 = -2 + (-6) = -8°C: bajar la temperatura es restar, y aquí ambos valores son negativos."
+          "retroalimentacion": "-2 - 6 = -2 + (-6) = -8°C: bajar la temperatura es restar, y aquí ambos valores son negativos.",
+          "pistas": [
+            "Convierte la resta en suma del opuesto antes de calcular, igual que hicimos con 4-(-6) para saber a qué piso llegaría el elevador.",
+            "-2 - 6 = -2 + (-6) = -8°C: bajar la temperatura es restar, y aquí ambos valores son negativos."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -151,7 +189,21 @@
           ],
           "retroalimentacion": "5-12 = -7; (-8)-(-3) = -8+3 = -5; (-6)-4 = -10."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El elevador está en el piso 4 y hay que calcular 4 - (-6) para saber a qué piso llegaría si se invierte un movimiento de bajar 6 pisos.",
+        "pasos": [
+          {
+            "texto": "Convertimos la resta en una suma del opuesto.",
+            "operacion": "4-(-6)=4+6"
+          },
+          {
+            "texto": "Sumamos los valores.",
+            "operacion": "4+6=10"
+          }
+        ],
+        "respuestaFinal": "4 - (-6) = 10: el elevador llegaría al piso 10."
+      }
     },
     {
       "numero": "12.3",
@@ -175,13 +227,21 @@
             "-15"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "-4+9=5, y 5-(-2)=5+2=7."
+          "retroalimentacion": "-4+9=5, y 5-(-2)=5+2=7.",
+          "pistas": [
+            "Resuelve de izquierda a derecha, convirtiendo cada resta en una suma del opuesto, igual que calculamos 0+6-9+4=1 para el elevador.",
+            "-4+9=5, y 5-(-2)=5+2=7."
+          ]
         },
         {
           "tipo": "llenar_frase",
           "frase": "8 - (-5) - 10 = ___.",
           "respuestaCorrecta": "3",
-          "retroalimentacion": "8-(-5)=8+5=13, y 13-10=3."
+          "retroalimentacion": "8-(-5)=8+5=13, y 13-10=3.",
+          "pistas": [
+            "Convierte cada doble signo antes de sumar en orden, el mismo procedimiento que usamos con los movimientos del elevador (0+6-9+4).",
+            "8-(-5)=8+5=13, y 13-10=3."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -199,7 +259,11 @@
             "7"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "0+15=15, 15-22=-7, -7+6=-1."
+          "retroalimentacion": "0+15=15, 15-22=-7, -7+6=-1.",
+          "pistas": [
+            "Resuelve de izquierda a derecha, sumando y restando en el orden en que aparecen, igual que calculamos los movimientos del elevador (0+6-9+4=1).",
+            "0+15=15, 15-22=-7, -7+6=-1."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -221,7 +285,25 @@
           ],
           "retroalimentacion": "-3+7-(-4) = 4+4 = 8; 12-20-(-5) = -8+5 = -3; -8-(-8)+(-8) = 0-8 = -8."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El elevador parte del piso 0, sube 6, baja 9 y sube 4: 0 + 6 - 9 + 4.",
+        "pasos": [
+          {
+            "texto": "Sumamos de izquierda a derecha, paso por paso.",
+            "operacion": "0+6=6"
+          },
+          {
+            "texto": "Restamos el siguiente valor.",
+            "operacion": "6-9=-3"
+          },
+          {
+            "texto": "Sumamos el último valor.",
+            "operacion": "-3+4=1"
+          }
+        ],
+        "respuestaFinal": "El elevador queda en el piso 1."
+      }
     },
     {
       "numero": "12.4",
@@ -244,19 +326,31 @@
             "-150"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "-350 + 500 = 150 pesos: el depósito es positivo y reduce la deuda hasta dejar saldo a favor."
+          "retroalimentacion": "-350 + 500 = 150 pesos: el depósito es positivo y reduce la deuda hasta dejar saldo a favor.",
+          "pistas": [
+            "Suma el desplazamiento (positivo o negativo) al valor inicial, igual que calculamos -4+11=7 para el segundo elevador.",
+            "-350 + 500 = 150 pesos: el depósito es positivo y reduce la deuda hasta dejar saldo a favor."
+          ]
         },
         {
           "tipo": "llenar_frase",
           "frase": "Un elevador está en el piso 6 y baja 9 pisos. Queda en el piso ___.",
           "respuestaCorrecta": "-3",
-          "retroalimentacion": "6 - 9 = -3: el elevador queda 3 pisos por debajo de la planta baja."
+          "retroalimentacion": "6 - 9 = -3: el elevador queda 3 pisos por debajo de la planta baja.",
+          "pistas": [
+            "Resta el número de pisos que baja, o suma si sube, el mismo procedimiento que usamos con el segundo elevador en el piso -4.",
+            "6 - 9 = -3: el elevador queda 3 pisos por debajo de la planta baja."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "Si un buzo está a -18 m y sube 5 m, queda a -13 m.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: -18 + 5 = -13 m, porque subir es sumar."
+          "retroalimentacion": "Correcto: -18 + 5 = -13 m, porque subir es sumar.",
+          "pistas": [
+            "Sumar un número positivo mueve el resultado hacia arriba en la recta numérica, igual que el segundo elevador subió de -4 a 7.",
+            "Correcto: -18 + 5 = -13 m, porque subir es sumar."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -290,7 +384,21 @@
           ],
           "retroalimentacion": "Una deuda se representa como -200; un ascenso sobre el nivel del mar como 350; descender bajo el nivel del mar como -40."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Un segundo elevador está en el piso -4 (sótano) y sube 11 pisos. ¿En qué piso queda?",
+        "pasos": [
+          {
+            "texto": "Identificamos el piso inicial y el desplazamiento como números con signo.",
+            "operacion": "piso inicial=-4; desplazamiento=+11"
+          },
+          {
+            "texto": "Sumamos ambos valores.",
+            "operacion": "-4+11=7"
+          }
+        ],
+        "respuestaFinal": "El elevador queda en el piso 7."
+      }
     }
   ],
   "practicaExtra": [

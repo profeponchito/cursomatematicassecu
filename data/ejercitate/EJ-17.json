@@ -35,13 +35,21 @@
             "9^7"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Se suman los exponentes de igual base: 2+5=7, entonces 3^2 × 3^5 = 3^7."
+          "retroalimentacion": "Se suman los exponentes de igual base: 2+5=7, entonces 3^2 × 3^5 = 3^7.",
+          "pistas": [
+            "Para multiplicar potencias de igual base, suma los exponentes y conserva la base, igual que calculamos 2⁴×2³=2⁷ para las memorias del técnico.",
+            "3²×3⁵ = 3^(2+5) = 3⁷."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "5^3 × 5^2 es igual a 5^5.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Al multiplicar potencias de igual base se suman los exponentes: 3+2=5, así 5^3 × 5^2 = 5^5."
+          "retroalimentacion": "Al multiplicar potencias de igual base se suman los exponentes: 3+2=5, así 5^3 × 5^2 = 5^5.",
+          "pistas": [
+            "Al multiplicar potencias de la misma base, los exponentes se suman, el mismo procedimiento que usamos con 2⁴×2³=2⁷ para las memorias.",
+            "Verdadero: 5³×5² = 5^(3+2) = 5⁵."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -59,7 +67,11 @@
             "2^2"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "3+5=8, así que 2^3 × 2^5 = 2^8."
+          "retroalimentacion": "3+5=8, así que 2^3 × 2^5 = 2^8.",
+          "pistas": [
+            "Suma los exponentes cuando la base es la misma, igual que hicimos con 2⁴×2³=2⁷ para combinar las memorias del técnico.",
+            "2³×2⁵ = 2^(3+5) = 2⁸."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -81,7 +93,21 @@
           ],
           "retroalimentacion": "7^2×7^3=7^5 (2+3=5); a^4×a^4=a^8 (4+4=8); 10^1×10^6=10^7 (1+6=7)."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El técnico combina una memoria de 2⁴ GB con otra de 2³ GB usando la misma base, para simplificar 2⁴ × 2³.",
+        "pasos": [
+          {
+            "texto": "Identificamos que es un producto de potencias con la misma base (2).",
+            "operacion": "2⁴ × 2³"
+          },
+          {
+            "texto": "Sumamos los exponentes y mantenemos la base.",
+            "operacion": "4+3=7 → 2⁷"
+          }
+        ],
+        "respuestaFinal": "2⁴ × 2³ = 2⁷ = 128."
+      }
     },
     {
       "numero": "17.2",
@@ -105,13 +131,21 @@
             "1^4"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Se restan los exponentes: 7-3=4, entonces 4^7 ÷ 4^3 = 4^4."
+          "retroalimentacion": "Se restan los exponentes: 7-3=4, entonces 4^7 ÷ 4^3 = 4^4.",
+          "pistas": [
+            "Para dividir potencias de igual base, resta los exponentes y conserva la base, igual que calculamos 2⁷÷2²=2⁵ para el reparto de memoria del técnico.",
+            "4⁷÷4³ = 4^(7-3) = 4⁴."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "8^5 ÷ 8^5 es igual a 8^0.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Al restar los exponentes: 5-5=0, así que 8^5 ÷ 8^5 = 8^0 (y su valor es 1)."
+          "retroalimentacion": "Al restar los exponentes: 5-5=0, así que 8^5 ÷ 8^5 = 8^0 (y su valor es 1).",
+          "pistas": [
+            "Al dividir potencias de la misma base, los exponentes se restan; si son iguales, el resultado es exponente 0, el mismo principio que usamos con 2⁷÷2²=2⁵.",
+            "Verdadero: 8⁵÷8⁵ = 8^(5-5) = 8⁰ = 1."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -129,7 +163,11 @@
             "36^4"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "9-5=4, entonces 6^9 ÷ 6^5 = 6^4."
+          "retroalimentacion": "9-5=4, entonces 6^9 ÷ 6^5 = 6^4.",
+          "pistas": [
+            "Resta los exponentes cuando la base es la misma, igual que hicimos con 2⁷÷2²=2⁵ para el reparto de memoria del técnico.",
+            "6⁹÷6⁵ = 6^(9-5) = 6⁴."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -151,7 +189,21 @@
           ],
           "retroalimentacion": "3^8÷3^3=3^5 (8-3=5); b^7÷b^2=b^5 (7-2=5); 10^5÷10^4=10^1 (5-4=1)."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El técnico necesita repartir una memoria de 2⁷ GB entre dispositivos que usan 2² GB cada uno, y simplifica 2⁷ ÷ 2².",
+        "pasos": [
+          {
+            "texto": "Identificamos que es un cociente de potencias con la misma base.",
+            "operacion": "2⁷ ÷ 2²"
+          },
+          {
+            "texto": "Restamos los exponentes y mantenemos la base.",
+            "operacion": "7-2=5 → 2⁵"
+          }
+        ],
+        "respuestaFinal": "2⁷ ÷ 2² = 2⁵ = 32."
+      }
     },
     {
       "numero": "17.3",
@@ -175,13 +227,21 @@
             "5^8"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Se multiplican los exponentes: 2×3=6, entonces (5^2)^3 = 5^6."
+          "retroalimentacion": "Se multiplican los exponentes: 2×3=6, entonces (5^2)^3 = 5^6.",
+          "pistas": [
+            "Para elevar una potencia a otra potencia, multiplica los exponentes y conserva la base, igual que calculamos (2³)²=2⁶ para las memorias agrupadas del técnico.",
+            "(5²)³ = 5^(2×3) = 5⁶."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "(x^4)^3 es igual a x^7.",
           "respuestaCorrecta": false,
-          "retroalimentacion": "En potencia de potencia los exponentes se multiplican, no se suman: 4×3=12, así que (x^4)^3 = x^12."
+          "retroalimentacion": "En potencia de potencia los exponentes se multiplican, no se suman: 4×3=12, así que (x^4)^3 = x^12.",
+          "pistas": [
+            "Al elevar una potencia a otra potencia, los exponentes se multiplican, no se suman, el mismo principio que usamos con (2³)²=2⁶ para las memorias.",
+            "Falso: (x⁴)³ = x^(4×3) = x¹², no x⁷."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -199,7 +259,11 @@
             "a^43"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "3×4=12, entonces (a^3)^4 = a^12."
+          "retroalimentacion": "3×4=12, entonces (a^3)^4 = a^12.",
+          "pistas": [
+            "Multiplica los exponentes cuando una potencia está elevada a otra potencia, igual que hicimos con (2³)²=2⁶ para las memorias agrupadas del técnico.",
+            "(a³)⁴ = a^(3×4) = a¹²."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -221,7 +285,21 @@
           ],
           "retroalimentacion": "(2^2)^3=2^6 (2×3=6); 9^0=1 (exponente cero); (m^5)^2=m^10 (5×2=10)."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El técnico organiza sus memorias en grupos y necesita calcular (2³)² para saber la capacidad total simplificada.",
+        "pasos": [
+          {
+            "texto": "Identificamos que es una potencia elevada a otra potencia.",
+            "operacion": "(2³)²"
+          },
+          {
+            "texto": "Multiplicamos los exponentes y mantenemos la base.",
+            "operacion": "3×2=6 → 2⁶"
+          }
+        ],
+        "respuestaFinal": "(2³)² = 2⁶ = 64."
+      }
     },
     {
       "numero": "17.4",
@@ -244,13 +322,21 @@
             "2^24"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Primero se suman los exponentes del producto (3+2=5), luego se resta el del cociente (5-4=1): el resultado es 2^1."
+          "retroalimentacion": "Primero se suman los exponentes del producto (3+2=5), luego se resta el del cociente (5-4=1): el resultado es 2^1.",
+          "pistas": [
+            "Resuelve primero las operaciones dentro del paréntesis sumando exponentes de igual base, y después aplica la ley del cociente, igual que simplificamos (2²×2³)÷2⁴=2¹ para la configuración del técnico.",
+            "(2³×2²)÷2⁴ = 2^(3+2)÷2⁴ = 2⁵÷2⁴ = 2¹ = 2."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "(x^2)^3 × x^1 es igual a x^7.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Se multiplican los exponentes de la potencia de potencia (2×3=6) y se suma el del producto (6+1=7)."
+          "retroalimentacion": "Se multiplican los exponentes de la potencia de potencia (2×3=6) y se suma el del producto (6+1=7).",
+          "pistas": [
+            "Combina las leyes: multiplica los exponentes en una potencia de potencia, y suma los exponentes al multiplicar potencias de igual base, el mismo procedimiento que usamos con (2²×2³)÷2⁴=2¹.",
+            "Verdadero: (x²)³×x¹ = x⁶×x¹ = x^(6+1) = x⁷."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -268,7 +354,11 @@
             "3^16"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Multiplicar por 3^2 significa sumar exponentes: 4+2=6, entonces hay 3^6 bacterias."
+          "retroalimentacion": "Multiplicar por 3^2 significa sumar exponentes: 4+2=6, entonces hay 3^6 bacterias.",
+          "pistas": [
+            "Al multiplicar potencias de igual base, suma los exponentes, igual que hicimos con (2²×2³)÷2⁴=2¹ para la configuración de memorias del técnico.",
+            "3⁴×3² = 3^(4+2) = 3⁶ bacterias."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -290,7 +380,21 @@
           ],
           "retroalimentacion": "(5^2)^2÷5^1=5^4÷5^1=5^3; 7^3×7^0=7^3 (7^0=1); (x^3×x^2)÷x^1=x^5÷x^1=x^4."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El técnico calcula (2² × 2³) ÷ 2⁴ para simplificar la capacidad final de su configuración de memorias.",
+        "pasos": [
+          {
+            "texto": "Resolvemos primero el producto dentro del paréntesis sumando exponentes.",
+            "operacion": "2²×2³=2^(2+3)=2⁵"
+          },
+          {
+            "texto": "Dividimos restando los exponentes.",
+            "operacion": "2⁵÷2⁴=2^(5-4)=2¹"
+          }
+        ],
+        "respuestaFinal": "(2² × 2³) ÷ 2⁴ = 2¹ = 2."
+      }
     }
   ],
   "practicaExtra": [

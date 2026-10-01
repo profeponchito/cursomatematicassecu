@@ -29,7 +29,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Todo número entero es también un número racional.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: cualquier entero n se puede escribir como la fracción n/1, así que siempre es racional."
+          "retroalimentacion": "Correcto: cualquier entero n se puede escribir como la fracción n/1, así que siempre es racional.",
+          "pistas": [
+            "Un número es racional si se puede escribir como fracción de dos enteros, igual que 0.875 se escribe como 7/8 en la fuente del jardinero.",
+            "Correcto: cualquier entero n se puede escribir como la fracción n/1, así que siempre es racional."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -47,7 +51,11 @@
           "tipo": "llenar_frase",
           "frase": "0.5 se puede escribir como la fracción ___ (en su forma más simple).",
           "respuestaCorrecta": "1/2",
-          "retroalimentacion": "0.5 = 5/10, y simplificando entre 5 queda 1/2."
+          "retroalimentacion": "0.5 = 5/10, y simplificando entre 5 queda 1/2.",
+          "pistas": [
+            "Escribe el decimal como fracción con denominador 10, 100 o 1000, y simplifica, el mismo procedimiento que usamos con 0.875 de la fuente del jardinero.",
+            "0.5 = 5/10, y simplificando entre 5 queda 1/2."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -79,9 +87,27 @@
             "0.38"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Juan comió 3 de las 8 partes iguales, es decir, la fracción (racional) 3/8."
+          "retroalimentacion": "Juan comió 3 de las 8 partes iguales, es decir, la fracción (racional) 3/8.",
+          "pistas": [
+            "Expresa la cantidad como fracción de partes tomadas sobre partes totales, igual que escribimos 0.875 como 7/8 para la fuente del jardinero.",
+            "Juan comió 3 de las 8 partes iguales, es decir, la fracción (racional) 3/8."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El mismo jardinero también mide 0.875 del área de otra fuente. ¿Es racional, y cuál es su fracción equivalente?",
+        "pasos": [
+          {
+            "texto": "Escribimos el decimal como fracción.",
+            "operacion": "0.875=875/1000"
+          },
+          {
+            "texto": "Simplificamos para encontrar la fracción equivalente.",
+            "operacion": "MCD(875,1000)=125; 875÷125=7; 1000÷125=8"
+          }
+        ],
+        "respuestaFinal": "0.875 es racional porque equivale a la fracción 7/8."
+      }
     },
     {
       "numero": "15.2",
@@ -98,7 +124,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "√9 es un número irracional.",
           "respuestaCorrecta": false,
-          "retroalimentacion": "Falso: 9 es un cuadrado perfecto (3×3=9), así que √9 = 3, que es un número racional (entero)."
+          "retroalimentacion": "Falso: 9 es un cuadrado perfecto (3×3=9), así que √9 = 3, que es un número racional (entero).",
+          "pistas": [
+            "Verifica si el número bajo la raíz es un cuadrado perfecto; si no lo es, la raíz es irracional, igual que comprobamos que √15 es irracional en la fuente del jardinero.",
+            "Falso: 9 es un cuadrado perfecto (3×3=9), así que √9 = 3, que es un número racional (entero)."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -110,7 +140,11 @@
             "√36"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "20 no es un cuadrado perfecto (no hay un entero que multiplicado por sí mismo dé 20), así que √20 es irracional."
+          "retroalimentacion": "20 no es un cuadrado perfecto (no hay un entero que multiplicado por sí mismo dé 20), así que √20 es irracional.",
+          "pistas": [
+            "Si el número bajo la raíz no es un cuadrado perfecto, la raíz es irracional, el mismo criterio que usamos para √15 en la fuente del jardinero.",
+            "20 no es un cuadrado perfecto (no hay un entero que multiplicado por sí mismo dé 20), así que √20 es irracional."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -122,7 +156,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "√50 es racional porque 50 es un número entero.",
           "respuestaCorrecta": false,
-          "retroalimentacion": "Falso: que 50 sea entero no significa que su raíz lo sea. 50 no es un cuadrado perfecto, así que √50 es irracional."
+          "retroalimentacion": "Falso: que 50 sea entero no significa que su raíz lo sea. 50 no es un cuadrado perfecto, así que √50 es irracional.",
+          "pistas": [
+            "Que un número sea entero no significa que su raíz también lo sea; verifica si es un cuadrado perfecto, igual que comprobamos con √15 para la fuente del jardinero.",
+            "Falso: que 50 sea entero no significa que su raíz lo sea. 50 no es un cuadrado perfecto, así que √50 es irracional."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -136,7 +174,20 @@
           "respuestaCorrecta": 0,
           "retroalimentacion": "√2 es irracional porque su decimal (1.41421356...) nunca termina ni se repite en un patrón; no existe una fracción exacta que lo represente."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El jardinero también calcula √15 para otra fuente. ¿Es racional o irracional?",
+        "pasos": [
+          {
+            "texto": "Verificamos si 15 es un cuadrado perfecto.",
+            "operacion": "3²=9; 4²=16; 15 no coincide con ningún cuadrado exacto"
+          },
+          {
+            "texto": "Como no es cuadrado perfecto, su raíz es irracional."
+          }
+        ],
+        "respuestaFinal": "√15 es irracional, porque 15 no es un cuadrado perfecto."
+      }
     },
     {
       "numero": "15.3",
@@ -153,7 +204,11 @@
           "tipo": "llenar_frase",
           "frase": "√10 está entre los enteros ___ y 4.",
           "respuestaCorrecta": "3",
-          "retroalimentacion": "3²=9 y 4²=16, y como 9<10<16, entonces √10 está entre 3 y 4."
+          "retroalimentacion": "3²=9 y 4²=16, y como 9<10<16, entonces √10 está entre 3 y 4.",
+          "pistas": [
+            "Compara el número con los cuadrados de enteros consecutivos para ubicarlo entre ellos, igual que ubicamos √15 entre 3 y 4 en la fuente del jardinero.",
+            "3²=9 y 4²=16, y como 9<10<16, entonces √10 está entre 3 y 4."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -165,13 +220,21 @@
             "2 y 3"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "4²=16 y 5²=25, y como 16<20<25, entonces √20 está entre 4 y 5."
+          "retroalimentacion": "4²=16 y 5²=25, y como 16<20<25, entonces √20 está entre 4 y 5.",
+          "pistas": [
+            "Busca los cuadrados de enteros consecutivos y compara, el mismo procedimiento que usamos para ubicar √15 entre 3 y 4.",
+            "4²=16 y 5²=25, y como 16<20<25, entonces √20 está entre 4 y 5."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "√30 está entre 5 y 6.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: 5²=25 y 6²=36, y como 25<30<36, √30 está entre 5 y 6."
+          "retroalimentacion": "Correcto: 5²=25 y 6²=36, y como 25<30<36, √30 está entre 5 y 6.",
+          "pistas": [
+            "Compara el número con los cuadrados de los enteros consecutivos para ubicarlo en la recta, igual que ubicamos √15 entre 3 y 4 para la fuente del jardinero.",
+            "Correcto: 5²=25 y 6²=36, y como 25<30<36, √30 está entre 5 y 6."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -191,7 +254,21 @@
           "respuestaCorrecta": 0,
           "retroalimentacion": "3.14 es la aproximación más usada de π y basta para ubicarlo con precisión razonable en la recta."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El jardinero quiere ubicar √15 en la recta numérica. ¿Entre qué enteros se encuentra?",
+        "pasos": [
+          {
+            "texto": "Buscamos los cuadrados de los enteros consecutivos.",
+            "operacion": "3²=9; 4²=16"
+          },
+          {
+            "texto": "Comparamos 15 con esos cuadrados.",
+            "operacion": "9<15<16"
+          }
+        ],
+        "respuestaFinal": "√15 está entre los enteros 3 y 4."
+      }
     },
     {
       "numero": "15.4",
@@ -233,7 +310,11 @@
             "0.4"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "11 no es un cuadrado perfecto, así que √11 es irracional. Las demás opciones sí son racionales (√49=7)."
+          "retroalimentacion": "11 no es un cuadrado perfecto, así que √11 es irracional. Las demás opciones sí son racionales (√49=7).",
+          "pistas": [
+            "Si el número bajo la raíz no es cuadrado perfecto, la raíz es irracional, igual que comprobamos que √49 sí es racional porque 49=7×7.",
+            "11 no es un cuadrado perfecto, así que √11 es irracional. Las demás opciones sí son racionales (√49=7)."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -245,7 +326,11 @@
           "tipo": "llenar_frase",
           "frase": "El número √36 es racional porque es igual a ___.",
           "respuestaCorrecta": "6",
-          "retroalimentacion": "36 es un cuadrado perfecto (6×6=36), así que √36 = 6, un número entero y por lo tanto racional."
+          "retroalimentacion": "36 es un cuadrado perfecto (6×6=36), así que √36 = 6, un número entero y por lo tanto racional.",
+          "pistas": [
+            "Verifica si el número es un cuadrado perfecto para saber si su raíz es racional, el mismo procedimiento que usamos con √49 del jardín cuadrado.",
+            "36 es un cuadrado perfecto (6×6=36), así que √36 = 6, un número entero y por lo tanto racional."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -257,9 +342,27 @@
             "No es un número real"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Como 2 no es un cuadrado perfecto, √2 tiene un decimal infinito no periódico: es irracional."
+          "retroalimentacion": "Como 2 no es un cuadrado perfecto, √2 tiene un decimal infinito no periódico: es irracional.",
+          "pistas": [
+            "Si el número bajo la raíz no es un cuadrado perfecto, el resultado es irracional, igual que comprobamos que √49 sí es racional por ser 49 un cuadrado perfecto.",
+            "Como 2 no es un cuadrado perfecto, √2 tiene un decimal infinito no periódico: es irracional."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El jardinero calcula √49 para el lado de un jardín cuadrado. ¿Es racional o irracional?",
+        "pasos": [
+          {
+            "texto": "Verificamos si 49 es un cuadrado perfecto.",
+            "operacion": "7×7=49"
+          },
+          {
+            "texto": "Como sí lo es, su raíz es un entero y por lo tanto racional.",
+            "operacion": "√49=7"
+          }
+        ],
+        "respuestaFinal": "√49 es racional, porque es igual a 7, un número entero."
+      }
     }
   ],
   "practicaExtra": [

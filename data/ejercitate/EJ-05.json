@@ -34,7 +34,11 @@
             "8"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Divisores de 8: 1,2,4,8. Divisores de 12: 1,2,3,4,6,12. El mayor divisor común es 4."
+          "retroalimentacion": "Divisores de 8: 1,2,4,8. Divisores de 12: 1,2,3,4,6,12. El mayor divisor común es 4.",
+          "pistas": [
+            "Lista los divisores de cada número y busca el mayor que se repite en ambas listas, igual que calculamos MCD(20,15)=5 con los conos y aros de la maestra.",
+            "Divisores de 8: 1,2,4,8. Divisores de 12: 1,2,3,4,6,12. El mayor divisor común es 4."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -46,7 +50,11 @@
           "tipo": "llenar_frase",
           "frase": "El MCD de 10 y 15 es ___.",
           "respuestaCorrecta": "5",
-          "retroalimentacion": "Divisores de 10: 1,2,5,10. Divisores de 15: 1,3,5,15. El mayor común es 5."
+          "retroalimentacion": "Divisores de 10: 1,2,5,10. Divisores de 15: 1,3,5,15. El mayor común es 5.",
+          "pistas": [
+            "Lista los divisores de ambos números y elige el mayor en común, el mismo procedimiento que usamos con los conos y aros de la maestra.",
+            "Divisores de 10: 1,2,5,10. Divisores de 15: 1,3,5,15. El mayor común es 5."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -58,7 +66,11 @@
             "9"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "9 y 28 no comparten ningún factor además del 1, así que su único divisor común es 1: MCD(9,28)=1."
+          "retroalimentacion": "9 y 28 no comparten ningún factor además del 1, así que su único divisor común es 1: MCD(9,28)=1.",
+          "pistas": [
+            "Si los dos números no comparten ningún factor además del 1, su MCD es 1, igual que podría pasar si los conos y aros de la maestra no compartieran factores.",
+            "9 y 28 no comparten ningún factor además del 1, así que su único divisor común es 1: MCD(9,28)=1."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -80,7 +92,21 @@
           ],
           "retroalimentacion": "MCD(16,24)=8, MCD(9,27)=9 y MCD(14,21)=7."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "La misma maestra también tiene 20 conos y 15 aros, y quiere saber el MCD para repartirlos en el mayor número de estaciones iguales.",
+        "pasos": [
+          {
+            "texto": "Listamos los divisores de cada número.",
+            "operacion": "divisores de 20: 1,2,4,5,10,20; divisores de 15: 1,3,5,15"
+          },
+          {
+            "texto": "Identificamos el mayor divisor común.",
+            "operacion": "MCD(20,15)=5"
+          }
+        ],
+        "respuestaFinal": "El MCD de 20 y 15 es 5."
+      }
     },
     {
       "numero": "5.2",
@@ -104,7 +130,11 @@
             "28"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Los factores comunes son 2¹ y 7¹, así que MCD=2×7=14."
+          "retroalimentacion": "Los factores comunes son 2¹ y 7¹, así que MCD=2×7=14.",
+          "pistas": [
+            "Toma los factores primos comunes con su menor exponente y multiplícalos, igual que calculamos MCD(40,60)=20 con las pelotas y conos de la maestra.",
+            "Los factores comunes son 2¹ y 7¹, así que MCD=2×7=14."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -116,7 +146,11 @@
           "tipo": "llenar_frase",
           "frase": "Si 45=3²×5 y 75=3×5², el MCD por descomposición en primos es 3×5=___.",
           "respuestaCorrecta": "15",
-          "retroalimentacion": "El factor 3 aparece con menor exponente 1 y el factor 5 con menor exponente 1, así que MCD=3×5=15."
+          "retroalimentacion": "El factor 3 aparece con menor exponente 1 y el factor 5 con menor exponente 1, así que MCD=3×5=15.",
+          "pistas": [
+            "Identifica el menor exponente de cada factor común y multiplica, el mismo procedimiento que usamos con las pelotas y conos de la maestra.",
+            "El factor 3 aparece con menor exponente 1 y el factor 5 con menor exponente 1, así que MCD=3×5=15."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -128,7 +162,11 @@
             "15"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "Los factores comunes son 2¹ y 5¹, así que MCD=2×5=10."
+          "retroalimentacion": "Los factores comunes son 2¹ y 5¹, así que MCD=2×5=10.",
+          "pistas": [
+            "Descompón ambos números en factores primos y toma los comunes al menor exponente, igual que hicimos con las pelotas (40) y conos (60) de la maestra.",
+            "Los factores comunes son 2¹ y 5¹, así que MCD=2×5=10."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -150,7 +188,21 @@
           ],
           "retroalimentacion": "MCD(24,36)=2²×3=12; MCD(20,50)=2×5=10; MCD(27,63)=3²=9."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Para otro evento, la maestra tiene 40 pelotas (40=2³×5) y 60 conos (60=2²×3×5). ¿Cuál es su MCD usando descomposición en factores primos?",
+        "pasos": [
+          {
+            "texto": "Identificamos los factores primos comunes con su menor exponente.",
+            "operacion": "2²(menor entre 2³ y 2²) y 5¹"
+          },
+          {
+            "texto": "Multiplicamos esos factores.",
+            "operacion": "MCD=4×5=20"
+          }
+        ],
+        "respuestaFinal": "El MCD de 40 y 60 es 20."
+      }
     },
     {
       "numero": "5.3",
@@ -174,7 +226,11 @@
             "28"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "El último divisor usado antes de llegar a residuo 0 fue 14, así que MCD(56,42)=14."
+          "retroalimentacion": "El último divisor usado antes de llegar a residuo 0 fue 14, así que MCD(56,42)=14.",
+          "pistas": [
+            "Divide el mayor entre el menor, y repite con el residuo, hasta llegar a residuo 0; el último divisor es el MCD, igual que calculamos MCD(72,48)=24.",
+            "El último divisor usado antes de llegar a residuo 0 fue 14, así que MCD(56,42)=14."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -186,7 +242,11 @@
           "tipo": "llenar_frase",
           "frase": "Al calcular MCD(81,63): 81÷63=1 residuo 18; 63÷18=3 residuo 9; 18÷9=2 residuo 0. El MCD es ___.",
           "respuestaCorrecta": "9",
-          "retroalimentacion": "El último divisor usado antes del residuo 0 fue 9, así que MCD(81,63)=9."
+          "retroalimentacion": "El último divisor usado antes del residuo 0 fue 9, así que MCD(81,63)=9.",
+          "pistas": [
+            "Repite las divisiones sucesivas hasta obtener residuo 0; el divisor de ese último paso es el MCD, el mismo procedimiento que usamos con 72 y 48.",
+            "El último divisor usado antes del residuo 0 fue 9, así que MCD(81,63)=9."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -198,7 +258,11 @@
             "Da un resultado aproximado"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "La ventaja del algoritmo de Euclides es que llega al MCD en pocos pasos, sin tener que listar todos los divisores de números grandes."
+          "retroalimentacion": "La ventaja del algoritmo de Euclides es que llega al MCD en pocos pasos, sin tener que listar todos los divisores de números grandes.",
+          "pistas": [
+            "El algoritmo de Euclides llega al MCD en pocos pasos sin listar todos los divisores, igual que calculamos MCD(72,48)=24 rápidamente.",
+            "La ventaja del algoritmo de Euclides es que llega al MCD en pocos pasos, sin tener que listar todos los divisores de números grandes."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -220,7 +284,21 @@
           ],
           "retroalimentacion": "MCD(35,14)=7 (35÷14=2 res7; 14÷7=2 res0); MCD(54,24)=6; MCD(64,48)=16."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "La maestra calcula el MCD de 72 y 48 con el método de divisiones sucesivas.",
+        "pasos": [
+          {
+            "texto": "Dividimos el mayor entre el menor.",
+            "operacion": "72÷48=1 residuo 24"
+          },
+          {
+            "texto": "Dividimos el divisor anterior entre el nuevo residuo.",
+            "operacion": "48÷24=2 residuo 0"
+          }
+        ],
+        "respuestaFinal": "El MCD de 72 y 48 es 24 (el último divisor usado antes del residuo 0)."
+      }
     },
     {
       "numero": "5.4",
@@ -242,7 +320,11 @@
             "20"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "MCD(45,60)=15, así que el club puede formar 15 cajas iguales como máximo."
+          "retroalimentacion": "MCD(45,60)=15, así que el club puede formar 15 cajas iguales como máximo.",
+          "pistas": [
+            "Calcula el MCD de las dos cantidades para saber el mayor número de grupos iguales, igual que calculamos los 16 equipos de la maestra con 48 y 32 pelotas.",
+            "MCD(45,60)=15, así que el club puede formar 15 cajas iguales como máximo."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -254,7 +336,11 @@
           "tipo": "llenar_frase",
           "frase": "Una florista tiene 28 rosas y 42 claveles y quiere hacer el mayor número de ramos iguales, sin mezclar flores de más. Podrá hacer ___ ramos.",
           "respuestaCorrecta": "14",
-          "retroalimentacion": "MCD(28,42)=14, así que la florista puede hacer 14 ramos iguales como máximo."
+          "retroalimentacion": "MCD(28,42)=14, así que la florista puede hacer 14 ramos iguales como máximo.",
+          "pistas": [
+            "El MCD indica el mayor número de grupos iguales sin que sobre material, el mismo procedimiento que usamos con las pelotas de futbol y básquetbol de la maestra.",
+            "MCD(28,42)=14, así que la florista puede hacer 14 ramos iguales como máximo."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -266,7 +352,11 @@
             "27"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "MCD(90,54)=18, así que se pueden formar 18 paquetes iguales como máximo."
+          "retroalimentacion": "MCD(90,54)=18, así que se pueden formar 18 paquetes iguales como máximo.",
+          "pistas": [
+            "Calcula el MCD de las dos cantidades para encontrar el número máximo de paquetes iguales, igual que hicimos con los 48 y 32 balones de la maestra.",
+            "MCD(90,54)=18, así que se pueden formar 18 paquetes iguales como máximo."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -288,7 +378,21 @@
           ],
           "retroalimentacion": "MCD(32,48)=16; MCD(20,35)=5; MCD(18,24)=6."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "La maestra tiene 48 pelotas de futbol y 32 de básquetbol y quiere formar el mayor número de equipos iguales. ¿Cuántos equipos puede formar como máximo?",
+        "pasos": [
+          {
+            "texto": "Descomponemos ambos números en factores primos.",
+            "operacion": "48=2⁴×3; 32=2⁵"
+          },
+          {
+            "texto": "El MCD es el producto de los factores comunes con su menor exponente.",
+            "operacion": "MCD(48,32)=2⁴=16"
+          }
+        ],
+        "respuestaFinal": "La maestra puede formar 16 equipos como máximo, cada uno con 3 pelotas de futbol y 2 de básquetbol."
+      }
     }
   ],
   "practicaExtra": [

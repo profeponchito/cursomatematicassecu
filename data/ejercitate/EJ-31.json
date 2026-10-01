@@ -35,13 +35,21 @@
             "uno de los dos es un triángulo rectángulo"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "La semejanza exige la misma forma: ángulos correspondientes iguales y lados correspondientes en la misma proporción (no necesariamente el mismo tamaño)."
+          "retroalimentacion": "La semejanza exige la misma forma: ángulos correspondientes iguales y lados correspondientes en la misma proporción (no necesariamente el mismo tamaño).",
+          "pistas": [
+            "Dos triángulos son semejantes cuando tienen la misma forma (ángulos iguales y lados proporcionales), igual que comprobamos con los triángulos decorativos de razón k=2.",
+            "Dos triángulos son semejantes cuando sus ángulos correspondientes son iguales y sus lados correspondientes son proporcionales."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "Dos triángulos semejantes siempre tienen el mismo tamaño.",
           "respuestaCorrecta": false,
-          "retroalimentacion": "Falso: la semejanza garantiza la misma forma, pero el tamaño puede ser distinto (por eso existe una razón de semejanza que puede ser diferente de 1)."
+          "retroalimentacion": "Falso: la semejanza garantiza la misma forma, pero el tamaño puede ser distinto (por eso existe una razón de semejanza que puede ser diferente de 1).",
+          "pistas": [
+            "La semejanza garantiza la misma forma, pero NO el mismo tamaño, el mismo concepto que usamos al comparar los triángulos decorativos de 5,8,10 y 10,16,20 cm.",
+            "Falso: los triángulos semejantes tienen la misma forma pero pueden tener tamaños diferentes (como el de la feria, 5 veces más grande)."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -53,7 +61,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Un triángulo con lados 2 cm, 3 cm y 4 cm, y otro con lados 4 cm, 6 cm y 8 cm son semejantes, porque cada lado del segundo es el doble del correspondiente en el primero.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Verdadero: 4/2 = 6/3 = 8/4 = 2. Como los tres lados guardan la misma razón, los triángulos son semejantes."
+          "retroalimentacion": "Verdadero: 4/2 = 6/3 = 8/4 = 2. Como los tres lados guardan la misma razón, los triángulos son semejantes.",
+          "pistas": [
+            "Para comprobar semejanza, verifica que la razón entre cada par de lados correspondientes sea la misma, igual que hicimos con los triángulos decorativos (razón k=2).",
+            "Verdadero: 4/2=2, 6/3=2, 8/4=2; las tres razones son iguales, así que son semejantes."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -75,7 +87,21 @@
           ],
           "retroalimentacion": "El primer par tiene mismos ángulos y lados en razón 2: semejantes. El segundo tiene mismos ángulos y mismos lados: congruentes. El tercero tiene ángulos distintos: no hay relación."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El comité también diseña un triángulo decorativo con lados 5 cm, 8 cm y 10 cm, y otro ampliado con lados 10 cm, 16 cm y 20 cm.",
+        "pasos": [
+          {
+            "texto": "Comparamos la razón entre cada par de lados correspondientes.",
+            "operacion": "10/5=2; 16/8=2; 20/10=2"
+          },
+          {
+            "texto": "Como las tres razones son iguales, los triángulos son semejantes.",
+            "operacion": "misma razón=2 → semejantes"
+          }
+        ],
+        "respuestaFinal": "Los dos triángulos son semejantes porque todos sus lados mantienen la misma razón (k=2)."
+      }
     },
     {
       "numero": "31.2",
@@ -99,7 +125,11 @@
             "4"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Basta con 2 ángulos iguales: como los tres ángulos internos suman 180°, el tercero queda determinado y coincide automáticamente."
+          "retroalimentacion": "Basta con 2 ángulos iguales: como los tres ángulos internos suman 180°, el tercero queda determinado y coincide automáticamente.",
+          "pistas": [
+            "El criterio AA requiere que coincidan al menos dos pares de ángulos correspondientes, igual que comprobamos con los triángulos de 40° y 75° del comité.",
+            "Para aplicar el criterio AA, basta con que coincidan 2 ángulos correspondientes (el tercero queda determinado automáticamente)."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -111,7 +141,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Si dos triángulos comparten dos ángulos iguales, su tercer ángulo también resulta igual automáticamente.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Verdadero: como los ángulos internos de cualquier triángulo suman 180°, si dos ya coinciden, el tercero se obtiene restando y también coincide."
+          "retroalimentacion": "Verdadero: como los ángulos internos de cualquier triángulo suman 180°, si dos ya coinciden, el tercero se obtiene restando y también coincide.",
+          "pistas": [
+            "Como la suma de los ángulos internos de un triángulo siempre es 180°, si dos ángulos coinciden, el tercero también coincide, el mismo principio que usamos para confirmar el criterio AA con los triángulos de 40° y 75°.",
+            "Verdadero: si dos ángulos son iguales, el tercero se calcula como 180° menos la suma de los otros dos, y también resulta igual."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -123,7 +157,11 @@
             "No se puede determinar sin conocer los lados"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "El tercer ángulo de A es 180-55-65=60°, y el de B es 180-55-70=55°. Como no comparten los mismos tres ángulos, no son semejantes por AA."
+          "retroalimentacion": "El tercer ángulo de A es 180-55-65=60°, y el de B es 180-55-70=55°. Como no comparten los mismos tres ángulos, no son semejantes por AA.",
+          "pistas": [
+            "Compara los ángulos conocidos de ambos triángulos; si no coinciden al menos dos pares, no son semejantes por AA, el mismo criterio que usamos con los triángulos de 40° y 75° del comité.",
+            "No son semejantes por AA: el triángulo A tiene ángulos 55°,65°,60° (180-55-65) y el B tiene 55°,70°,55°; no coinciden dos ángulos."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -145,7 +183,21 @@
           ],
           "retroalimentacion": "El primer par comparte dos ángulos: son semejantes. El segundo tiene distinto tercer ángulo (60° vs 40°): no son semejantes. El tercero solo da un ángulo por triángulo: no alcanza para aplicar AA."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El comité también compara dos triángulos: uno con ángulos de 40° y 75°, y otro también con ángulos de 40° y 75°. ¿Son semejantes por el criterio AA?",
+        "pasos": [
+          {
+            "texto": "Comparamos los dos ángulos conocidos de cada triángulo.",
+            "operacion": "40°=40°; 75°=75°"
+          },
+          {
+            "texto": "Como coinciden dos pares de ángulos, se cumple el criterio AA.",
+            "operacion": "criterio AA confirmado"
+          }
+        ],
+        "respuestaFinal": "Sí, los dos triángulos son semejantes por el criterio AA, porque comparten dos ángulos iguales."
+      }
     },
     {
       "numero": "31.3",
@@ -169,7 +221,11 @@
             "49 cm"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "7 × 2 = 14 cm: el lado del triángulo grande se obtiene multiplicando el del pequeño por la razón de semejanza."
+          "retroalimentacion": "7 × 2 = 14 cm: el lado del triángulo grande se obtiene multiplicando el del pequeño por la razón de semejanza.",
+          "pistas": [
+            "Multiplica el lado del triángulo pequeño por la razón de semejanza para obtener el lado correspondiente del grande, igual que calculamos k=5 para el triángulo de la feria del comité.",
+            "Con k=2 y un lado de 7 cm: 7×2 = 14 cm en el triángulo grande."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -181,7 +237,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Si la razón de semejanza entre dos triángulos es 1, entonces los triángulos son congruentes.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Verdadero: una razón k=1 significa que todos los lados correspondientes miden exactamente lo mismo, es decir, además de semejantes son congruentes."
+          "retroalimentacion": "Verdadero: una razón k=1 significa que todos los lados correspondientes miden exactamente lo mismo, es decir, además de semejantes son congruentes.",
+          "pistas": [
+            "Si la razón de semejanza es exactamente 1, los triángulos tienen el mismo tamaño además de la misma forma, el mismo concepto que usamos para calcular k=5 en el triángulo de la feria.",
+            "Verdadero: si k=1, los lados correspondientes son iguales, así que los triángulos son congruentes (semejantes y del mismo tamaño)."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -193,7 +253,11 @@
             "10 cm y 12 cm"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "La razón de semejanza es 9÷3=3. Entonces 5×3=15 cm y 6×3=18 cm."
+          "retroalimentacion": "La razón de semejanza es 9÷3=3. Entonces 5×3=15 cm y 6×3=18 cm.",
+          "pistas": [
+            "Encuentra la razón de semejanza con el par de lados conocido, y multiplica los demás lados por esa razón, igual que calculamos k=5 para el triángulo de la feria del comité.",
+            "k=9÷3=3; los otros lados miden 5×3=15 cm y 6×3=18 cm."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -215,7 +279,21 @@
           ],
           "retroalimentacion": "4×2.5=10 cm, 6×2.5=15 cm, 10×2.5=25 cm."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El comité calcula: un lado del triángulo pequeño mide 4 cm, y su correspondiente en el triángulo grande mide 20 cm. ¿Cuál es la razón de semejanza?",
+        "pasos": [
+          {
+            "texto": "Dividimos el lado grande entre el lado pequeño correspondiente.",
+            "operacion": "20÷4"
+          },
+          {
+            "texto": "Resolvemos la operación.",
+            "operacion": "k=5"
+          }
+        ],
+        "respuestaFinal": "La razón de semejanza es k=5 (coincide con el letrero de la feria, 5 veces más grande)."
+      }
     },
     {
       "numero": "31.4",
@@ -238,7 +316,11 @@
             "4 m"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "La razón persona/sombra es 1.6/2=0.8. Como los triángulos son semejantes (mismo ángulo del sol), la altura del asta es 7.5×0.8=6 m."
+          "retroalimentacion": "La razón persona/sombra es 1.6/2=0.8. Como los triángulos son semejantes (mismo ángulo del sol), la altura del asta es 7.5×0.8=6 m.",
+          "pistas": [
+            "Plantea la proporción entre la altura y la sombra de ambos objetos, y despeja el valor desconocido, igual que calculamos 7.5 m para el árbol del comité.",
+            "1.6/2 = x/7.5 → x=(1.6×7.5)÷2 = 6 m."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -250,7 +332,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Para calcular la altura real de un objeto usando su sombra y la de un objeto de referencia, basta con que ambos sean verticales y que las sombras se midan al mismo tiempo (mismo ángulo del sol).",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Verdadero: ambos objetos forman un ángulo de 90° con el suelo y comparten el mismo ángulo de elevación del sol, lo que garantiza la semejanza por AA entre los triángulos objeto-sombra."
+          "retroalimentacion": "Verdadero: ambos objetos forman un ángulo de 90° con el suelo y comparten el mismo ángulo de elevación del sol, lo que garantiza la semejanza por AA entre los triángulos objeto-sombra.",
+          "pistas": [
+            "Para que la proporción sea válida, ambos objetos deben ser verticales y sus sombras medirse al mismo tiempo, el mismo principio que usamos para calcular la altura del árbol (7.5 m).",
+            "Verdadero: si las sombras se miden al mismo tiempo, los triángulos que forman son semejantes y la proporción es válida."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -262,7 +348,11 @@
             "El perímetro total"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "La razón de semejanza es la proporción constante entre lados correspondientes; multiplicándola por un lado conocido se obtiene el lado real desconocido."
+          "retroalimentacion": "La razón de semejanza es la proporción constante entre lados correspondientes; multiplicándola por un lado conocido se obtiene el lado real desconocido.",
+          "pistas": [
+            "El concepto que permite pasar de medidas pequeñas (como una sombra) a medidas reales más grandes es la semejanza de triángulos, igual que usamos para calcular la altura del árbol (7.5 m).",
+            "Se usa la semejanza de triángulos: los triángulos que forman los objetos y sus sombras son semejantes, así que sus lados son proporcionales."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -284,7 +374,21 @@
           ],
           "retroalimentacion": "Sombras y postes de referencia se resuelven con razón de semejanza para alturas; los planos a escala usan razón de semejanza para medidas reales; y cuando solo hay dos ángulos iguales, se aplica el criterio AA para confirmar la semejanza."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Una persona de 1.5 m de estatura proyecta una sombra de 1.8 m. En ese mismo instante, un árbol proyecta una sombra de 9 m. ¿Cuál es la altura del árbol?",
+        "pasos": [
+          {
+            "texto": "Planteamos la proporción entre altura y sombra.",
+            "operacion": "1.5/1.8 = x/9"
+          },
+          {
+            "texto": "Despejamos x multiplicando en cruz.",
+            "operacion": "x=(1.5×9)÷1.8=7.5"
+          }
+        ],
+        "respuestaFinal": "El árbol mide 7.5 metros de altura."
+      }
     }
   ],
   "practicaExtra": [

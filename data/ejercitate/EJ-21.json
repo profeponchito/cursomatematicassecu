@@ -47,13 +47,21 @@
             "1/8"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "8% significa 8 de cada 100, es decir, 8/100."
+          "retroalimentacion": "8% significa 8 de cada 100, es decir, 8/100.",
+          "pistas": [
+            "Escribe el porcentaje como fracción sobre 100 y simplifica si es posible, igual que convertimos 20%=1/5 para la playera del cliente.",
+            "8% = 8/100, y simplificando entre 4 queda 2/25."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "125% es igual a 1.25 en decimal.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "125/100 = 1.25, porque un porcentaje mayor a 100 representa más de una unidad completa."
+          "retroalimentacion": "125/100 = 1.25, porque un porcentaje mayor a 100 representa más de una unidad completa.",
+          "pistas": [
+            "Para convertir un porcentaje a decimal, divide entre 100 (recorre el punto dos lugares a la izquierda), el mismo procedimiento que usamos con 20%=0.20 para la playera.",
+            "Verdadero: 125% = 125÷100 = 1.25."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -73,9 +81,27 @@
             1,
             0
           ],
-          "retroalimentacion": "15% = 0.15; 5% = 0.05; 150% = 1.5, dividiendo cada porcentaje entre 100."
+          "retroalimentacion": "15% = 0.15; 5% = 0.05; 150% = 1.5, dividiendo cada porcentaje entre 100.",
+          "pistas": [
+            "Un porcentaje se puede escribir como fracción sobre 100 o como decimal dividiendo entre 100, igual que hicimos con 20%=1/5=0.20 para la playera del cliente.",
+            "Por ejemplo, 50% equivale a la fracción 1/2 y al decimal 0.5."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Otro cliente ve una playera con una etiqueta de '20% de descuento' y quiere saber a qué fracción y decimal equivale ese porcentaje.",
+        "pasos": [
+          {
+            "texto": "Escribimos el porcentaje como fracción sobre 100.",
+            "operacion": "20%=20/100"
+          },
+          {
+            "texto": "Simplificamos la fracción y la convertimos a decimal.",
+            "operacion": "20/100=1/5=0.20"
+          }
+        ],
+        "respuestaFinal": "20% equivale a la fracción 1/5 y al decimal 0.20."
+      }
     },
     {
       "numero": "21.2",
@@ -111,7 +137,11 @@
             "30"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "90 × 0.40 = 36."
+          "retroalimentacion": "90 × 0.40 = 36.",
+          "pistas": [
+            "Convierte el porcentaje a decimal y multiplica por la cantidad, igual que calculamos el 25% de $160 = $40 para la comisión del vendedor.",
+            "40% de 90: 0.40×90 = 36."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -123,15 +153,37 @@
             "50"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "60 × 0.80 = 48 preguntas correctas."
+          "retroalimentacion": "60 × 0.80 = 48 preguntas correctas.",
+          "pistas": [
+            "Convierte el porcentaje a decimal y multiplica por el total, el mismo procedimiento que usamos con el 25% de $160 para la comisión del vendedor.",
+            "80% de 60 preguntas: 0.80×60 = 48 preguntas correctas."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "El 5% de 500 es 25.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "500 × 0.05 = 25, así que el enunciado es correcto."
+          "retroalimentacion": "500 × 0.05 = 25, así que el enunciado es correcto.",
+          "pistas": [
+            "Convierte el porcentaje a decimal (dividiendo entre 100) y multiplica por la cantidad, igual que hicimos con el 25% de $160=$40 para la comisión.",
+            "Verdadero: 5% de 500 = 0.05×500 = 25."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "La tienda también calcula el 25% de una venta de $160 en accesorios para saber la comisión del vendedor.",
+        "pasos": [
+          {
+            "texto": "Convertimos el porcentaje a decimal.",
+            "operacion": "25%=0.25"
+          },
+          {
+            "texto": "Multiplicamos el decimal por la cantidad.",
+            "operacion": "0.25×160=40"
+          }
+        ],
+        "respuestaFinal": "El 25% de $160 es $40."
+      }
     },
     {
       "numero": "21.3",
@@ -167,7 +219,11 @@
             "$235"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "200 × (1 + 0.15) = 200 × 1.15 = $230."
+          "retroalimentacion": "200 × (1 + 0.15) = 200 × 1.15 = $230.",
+          "pistas": [
+            "Calcula el porcentaje del aumento y súmalo al precio original, igual que calculamos $308 para el producto de $280 con 10% de aumento.",
+            "15% de $200 = 0.15×200=30; nuevo precio = 200+30 = $230."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -179,15 +235,37 @@
             "$175"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "350 × (1 − 0.40) = 350 × 0.60 = $210."
+          "retroalimentacion": "350 × (1 − 0.40) = 350 × 0.60 = $210.",
+          "pistas": [
+            "Calcula el porcentaje del descuento y réstalo del precio original, el mismo procedimiento (en sentido contrario) que usamos con el aumento del producto de $280.",
+            "40% de $350 = 0.40×350=140; precio final = 350-140 = $210."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "Si un salario de $8,000 aumenta 12%, el nuevo salario es $8,960.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "8000 × 1.12 = 8960, así que el enunciado es correcto."
+          "retroalimentacion": "8000 × 1.12 = 8960, así que el enunciado es correcto.",
+          "pistas": [
+            "Calcula el porcentaje del aumento y súmalo a la cantidad original, igual que hicimos con el producto de $280 que subió a $308.",
+            "Verdadero: 12% de $8,000 = 0.12×8000=960; nuevo salario = 8000+960 = $8,960."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Otro producto de la tienda cuesta $280 y sube de precio un 10%. ¿Cuál es el nuevo precio?",
+        "pasos": [
+          {
+            "texto": "Calculamos el 10% de $280.",
+            "operacion": "0.10×280=28"
+          },
+          {
+            "texto": "Sumamos el aumento al precio original.",
+            "operacion": "280+28=308"
+          }
+        ],
+        "respuestaFinal": "El nuevo precio es $308."
+      }
     },
     {
       "numero": "21.4",
@@ -210,7 +288,11 @@
             "$364"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "300 × 1.16 = $348."
+          "retroalimentacion": "300 × 1.16 = $348.",
+          "pistas": [
+            "Calcula el porcentaje del IVA y súmalo al precio original, igual que calculamos $580 para el artículo de $500 con IVA del 16%.",
+            "16% de $300 = 0.16×300=48; total con IVA = 300+48 = $348."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -222,7 +304,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Si un libro cuesta $180 con IVA incluido del 16%, el precio sin IVA es menor a $160.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "180 ÷ 1.16 ≈ $155.17, que sí es menor a $160."
+          "retroalimentacion": "180 ÷ 1.16 ≈ $155.17, que sí es menor a $160.",
+          "pistas": [
+            "Para quitar el IVA de un precio final, divide entre 1.16 (ya que el precio final es 116% del original), el mismo principio que usamos para calcular el precio con IVA del artículo de $500 ($580).",
+            "Verdadero: 180÷1.16 ≈ 155.17, que es menor a $160."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -234,7 +320,11 @@
             "$90"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "El ahorro es el 30% de 900: 900 × 0.30 = $270 (no el precio final, sino lo que se descuenta)."
+          "retroalimentacion": "El ahorro es el 30% de 900: 900 × 0.30 = $270 (no el precio final, sino lo que se descuenta).",
+          "pistas": [
+            "Para saber cuánto se ahorra, calcula el porcentaje de descuento sobre el precio original, igual que calculamos el IVA de $80 sobre el artículo de $500.",
+            "30% de $900 = 0.30×900 = $270 de ahorro."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -256,7 +346,21 @@
           ],
           "retroalimentacion": "400×0.75=$300 (descuento); 400×1.16=$464 (IVA); 400×1.10=$440 (aumento)."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Otro artículo de la tienda cuesta $500 sin IVA. Con el IVA del 16%, ¿cuánto se paga en total?",
+        "pasos": [
+          {
+            "texto": "Calculamos el 16% de $500.",
+            "operacion": "0.16×500=80"
+          },
+          {
+            "texto": "Sumamos el IVA al precio original.",
+            "operacion": "500+80=580"
+          }
+        ],
+        "respuestaFinal": "Con IVA incluido, se pagan $580."
+      }
     }
   ],
   "practicaExtra": [

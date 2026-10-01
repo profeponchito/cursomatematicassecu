@@ -35,13 +35,21 @@
             "8"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "El coeficiente es el número que multiplica a la parte literal; en -8x³ es -8."
+          "retroalimentacion": "El coeficiente es el número que multiplica a la parte literal; en -8x³ es -8.",
+          "pistas": [
+            "El coeficiente es el número que acompaña a la variable (con su signo), igual que identificamos que -6 es el coeficiente de -6y² en la devolución de don Mario.",
+            "En -8x³, el coeficiente es -8."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "El grado del monomio 5x⁴ es 4.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "El grado es el exponente de la parte literal; en 5x⁴ el exponente es 4."
+          "retroalimentacion": "El grado es el exponente de la parte literal; en 5x⁴ el exponente es 4.",
+          "pistas": [
+            "El grado de un monomio es el exponente de la variable, el mismo criterio que usamos con -6y² (grado 2) en la devolución de don Mario.",
+            "Verdadero: el grado de 5x⁴ es 4, porque ese es el exponente de x."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -59,7 +67,11 @@
             "ab²"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "La parte literal son las letras con sus exponentes, sin el número que las multiplica: a²b."
+          "retroalimentacion": "La parte literal son las letras con sus exponentes, sin el número que las multiplica: a²b.",
+          "pistas": [
+            "La parte literal es la variable (o variables) con su exponente, sin el coeficiente, igual que identificamos y² como parte literal en -6y² de don Mario.",
+            "En 9a²b, la parte literal es a²b."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -81,7 +93,21 @@
           ],
           "retroalimentacion": "7x³ tiene grado 3; -2xy tiene grado 2 (1+1); 5 es un número solo, sin letras, así que su grado es 0."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Don Mario también anota una devolución con el monomio -6y², donde y representa el precio de una caja de verdura.",
+        "pasos": [
+          {
+            "texto": "Identificamos el coeficiente (el número).",
+            "operacion": "-6"
+          },
+          {
+            "texto": "Identificamos el grado (el exponente de la variable).",
+            "operacion": "y² → grado 2"
+          }
+        ],
+        "respuestaFinal": "En el monomio -6y², el coeficiente es -6 y el grado es 2."
+      }
     },
     {
       "numero": "23.2",
@@ -98,13 +124,21 @@
           "tipo": "verdadero_falso",
           "enunciado": "3x² y 3x son términos semejantes.",
           "respuestaCorrecta": false,
-          "retroalimentacion": "No son semejantes: aunque tienen el mismo coeficiente, sus exponentes son distintos (2 y 1), así que la parte literal no es igual."
+          "retroalimentacion": "No son semejantes: aunque tienen el mismo coeficiente, sus exponentes son distintos (2 y 1), así que la parte literal no es igual.",
+          "pistas": [
+            "Dos términos son semejantes solo si tienen exactamente la misma parte literal (misma variable y mismo exponente), igual que comprobamos que 4x y 4x² no lo son por tener distinto exponente.",
+            "Falso: 3x² tiene exponente 2 y 3x tiene exponente 1, así que no son términos semejantes."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "5xy y -2xy son términos semejantes.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Sí: ambos tienen la misma parte literal, xy, aunque sus coeficientes sean diferentes."
+          "retroalimentacion": "Sí: ambos tienen la misma parte literal, xy, aunque sus coeficientes sean diferentes.",
+          "pistas": [
+            "Dos términos son semejantes si tienen la misma parte literal, sin importar el coeficiente, el mismo criterio que usamos con 4x y 4x² de don Mario.",
+            "Verdadero: 5xy y -2xy tienen la misma parte literal (xy), así que sí son términos semejantes."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -116,7 +150,11 @@
             "5"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "El polinomio tiene 4 términos: 4x³, -2x², x y -7."
+          "retroalimentacion": "El polinomio tiene 4 términos: 4x³, -2x², x y -7.",
+          "pistas": [
+            "Cuenta cada parte separada por un signo + o - como un término distinto, igual que analizamos los términos de la lista de compras de don Mario.",
+            "4x³-2x²+x-7 tiene 4 términos: 4x³, -2x², x, y -7."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -136,7 +174,21 @@
           "respuestaCorrecta": 1,
           "retroalimentacion": "Un binomio tiene exactamente dos términos; 3x + 2y cumple con eso."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Don Mario también anota 4x y 4x² en su lista de compras y quiere saber si son términos semejantes.",
+        "pasos": [
+          {
+            "texto": "Comparamos la parte literal (variable y exponente) de ambos términos.",
+            "operacion": "4x → x¹; 4x² → x²"
+          },
+          {
+            "texto": "Como los exponentes son distintos, no son términos semejantes.",
+            "operacion": "x¹≠x²"
+          }
+        ],
+        "respuestaFinal": "4x y 4x² no son términos semejantes, porque tienen distinto exponente."
+      }
     },
     {
       "numero": "23.3",
@@ -166,7 +218,11 @@
             "5x² + 2x"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "7x²+2x²=9x² y -3x+5x=2x, entonces el resultado es 9x²+2x."
+          "retroalimentacion": "7x²+2x²=9x² y -3x+5x=2x, entonces el resultado es 9x²+2x.",
+          "pistas": [
+            "Agrupa los términos semejantes y suma sus coeficientes, igual que calculamos (4x+3y)+(2x+6y)=6x+9y para las compras de don Mario.",
+            "(7x²-3x)+(2x²+5x) = (7x²+2x²)+(-3x+5x) = 9x²+2x."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -178,13 +234,21 @@
             "2x + 2"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Se cambia el signo al segundo polinomio: 5x-2-3x-4=2x-6."
+          "retroalimentacion": "Se cambia el signo al segundo polinomio: 5x-2-3x-4=2x-6.",
+          "pistas": [
+            "Al restar polinomios, cambia el signo de cada término del segundo antes de sumar, el mismo procedimiento que usamos para sumar las compras de don Mario.",
+            "(5x-2)-(3x+4) = 5x-2-3x-4 = 2x-6."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "Al restar polinomios, se debe cambiar el signo de cada término del segundo polinomio antes de sumar.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: restar un polinomio equivale a sumar su opuesto, por eso se invierten los signos de todos sus términos."
+          "retroalimentacion": "Correcto: restar un polinomio equivale a sumar su opuesto, por eso se invierten los signos de todos sus términos.",
+          "pistas": [
+            "Para restar un polinomio, se invierte el signo de cada uno de sus términos y luego se suma, igual que haríamos antes de combinar las compras de don Mario.",
+            "Verdadero: restar un polinomio equivale a sumar su opuesto, cambiando el signo de cada término."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -206,7 +270,21 @@
           ],
           "retroalimentacion": "(3x+4)+(2x+1)=5x+5; (6x-2)-(2x+3)=4x-5; (x²+3x)+(2x²-x)=3x²+2x."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Don Mario quiere sumar sus compras de dos semanas más: (4x + 3y) + (2x + 6y).",
+        "pasos": [
+          {
+            "texto": "Agrupamos los términos semejantes.",
+            "operacion": "(4x+2x)+(3y+6y)"
+          },
+          {
+            "texto": "Sumamos los coeficientes de cada grupo.",
+            "operacion": "6x+9y"
+          }
+        ],
+        "respuestaFinal": "(4x + 3y) + (2x + 6y) = 6x + 9y."
+      }
     },
     {
       "numero": "23.4",
@@ -229,7 +307,11 @@
             "x + 170"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Se suman los términos semejantes: 2x+x=3x y 50+120=170, entonces el costo total es 3x+170."
+          "retroalimentacion": "Se suman los términos semejantes: 2x+x=3x y 50+120=170, entonces el costo total es 3x+170.",
+          "pistas": [
+            "Suma los dos polinomios agrupando términos semejantes, igual que calculamos (3x+45) para el costo total de don Mario.",
+            "(2x+50)+(x+120) = (2x+x)+(50+120) = 3x+170."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -241,7 +323,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "El grado del polinomio resultante de sumar 3x²+2x y 5x-1 es 2.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "3x²+2x+5x-1=3x²+7x-1; el término de mayor grado es 3x², así que el polinomio es de grado 2."
+          "retroalimentacion": "3x²+2x+5x-1=3x²+7x-1; el término de mayor grado es 3x², así que el polinomio es de grado 2.",
+          "pistas": [
+            "El grado del polinomio resultante es el exponente más alto después de sumar los términos semejantes, el mismo criterio que usamos al calcular 3x+45 para el costo total de don Mario.",
+            "Verdadero: 3x²+2x+5x-1 = 3x²+7x-1, y el término de mayor grado es 3x² (grado 2)."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -253,7 +339,11 @@
             "x² + 5x + 2"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "x²+3x+2x+5 = x²+5x+5, sumando los términos semejantes 3x y 2x."
+          "retroalimentacion": "x²+3x+2x+5 = x²+5x+5, sumando los términos semejantes 3x y 2x.",
+          "pistas": [
+            "Suma los polinomios agrupando términos semejantes, igual que hicimos con (3x+45) para el costo total de don Mario.",
+            "(x²+3x)+(2x+5) = x²+(3x+2x)+5 = x²+5x+5."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -275,7 +365,21 @@
           ],
           "retroalimentacion": "(2x+3)+(5x+1)=7x+4; (8x-2)-(3x+4)=5x-6; (x²+2x)+(3x²-x)=4x²+x."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Don Mario expresa el costo de fruta como (2x + 15) pesos y el de verdura como (x + 30) pesos, donde x representa una cantidad variable de kilos. ¿Cuál es el costo total?",
+        "pasos": [
+          {
+            "texto": "Sumamos los dos polinomios agrupando términos semejantes.",
+            "operacion": "(2x+x)+(15+30)"
+          },
+          {
+            "texto": "Resolvemos cada grupo.",
+            "operacion": "3x+45"
+          }
+        ],
+        "respuestaFinal": "El costo total es (3x + 45) pesos."
+      }
     }
   ],
   "practicaExtra": [

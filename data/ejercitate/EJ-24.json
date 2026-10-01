@@ -35,7 +35,11 @@
             "36 m"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "El perímetro de un rectángulo es 2×(largo+ancho): 2×(12+7)=38 m."
+          "retroalimentacion": "El perímetro de un rectángulo es 2×(largo+ancho): 2×(12+7)=38 m.",
+          "pistas": [
+            "Suma los cuatro lados del rectángulo (2 veces el largo más 2 veces el ancho), igual que calculamos 26 m para el cantero de la familia Ramírez.",
+            "2(12)+2(7) = 24+14 = 38 m."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -47,7 +51,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "El perímetro de un pentágono regular de lado 6 cm es 30 cm.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Un pentágono regular tiene 5 lados iguales: 5×6=30 cm."
+          "retroalimentacion": "Un pentágono regular tiene 5 lados iguales: 5×6=30 cm.",
+          "pistas": [
+            "El perímetro de un polígono regular es el número de lados multiplicado por la medida de un lado, el mismo principio que usamos al sumar los lados del cantero (26 m).",
+            "Verdadero: un pentágono tiene 5 lados, así que 5×6 = 30 cm."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -59,7 +67,11 @@
             "16 cm"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Se suman los tres lados: 5+7+9=21 cm."
+          "retroalimentacion": "Se suman los tres lados: 5+7+9=21 cm.",
+          "pistas": [
+            "Suma las medidas de los tres lados del triángulo, igual que sumamos los cuatro lados del cantero de la familia Ramírez (26 m).",
+            "5+7+9 = 21 cm."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -81,7 +93,21 @@
           ],
           "retroalimentacion": "Cuadrado lado 5: 4×5=20 cm. Rectángulo 10x3: 2×(10+3)=26 cm. Hexágono lado 2: 6×2=12 cm."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "La familia Ramírez también quiere cercar un cantero rectangular de 9 m de largo y 4 m de ancho dentro del jardín.",
+        "pasos": [
+          {
+            "texto": "Sumamos los cuatro lados del rectángulo (2 largos + 2 anchos).",
+            "operacion": "2(9)+2(4)"
+          },
+          {
+            "texto": "Resolvemos la operación.",
+            "operacion": "18+8=26"
+          }
+        ],
+        "respuestaFinal": "El perímetro del cantero es 26 metros."
+      }
     },
     {
       "numero": "24.2",
@@ -105,7 +131,11 @@
             "44 cm²"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Área = (base×altura)/2 = (14×8)/2=56 cm²."
+          "retroalimentacion": "Área = (base×altura)/2 = (14×8)/2=56 cm².",
+          "pistas": [
+            "El área de un triángulo es base por altura entre 2, igual que calculamos 30 m² para el cantero triangular de la familia Ramírez.",
+            "(14×8)÷2 = 112÷2 = 56 cm²."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -129,7 +159,11 @@
             "16 cm²"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Área = ((base mayor+base menor)×altura)/2 = ((10+6)×4)/2=32 cm²."
+          "retroalimentacion": "Área = ((base mayor+base menor)×altura)/2 = ((10+6)×4)/2=32 cm².",
+          "pistas": [
+            "El área de un trapecio es la suma de las bases por la altura, entre 2, el mismo tipo de fórmula que usamos para el triángulo del cantero (30 m²).",
+            "((10+6)×4)÷2 = (16×4)÷2 = 64÷2 = 32 cm²."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -141,9 +175,27 @@
             "30 cm²"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Área = base×altura = 12×5=60 cm²."
+          "retroalimentacion": "Área = base×altura = 12×5=60 cm².",
+          "pistas": [
+            "El área de un paralelogramo es base por altura, igual que usamos base por altura entre 2 para el triángulo del cantero (30 m²).",
+            "12×5 = 60 cm²."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "La familia Ramírez también diseña un cantero triangular con base de 10 m y altura de 6 m.",
+        "pasos": [
+          {
+            "texto": "Aplicamos la fórmula del área de un triángulo (base por altura entre 2).",
+            "operacion": "(10×6)÷2"
+          },
+          {
+            "texto": "Resolvemos la operación.",
+            "operacion": "60÷2=30"
+          }
+        ],
+        "respuestaFinal": "El área del cantero triangular es 30 m²."
+      }
     },
     {
       "numero": "24.3",
@@ -166,7 +218,11 @@
             "36 m²"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Se suman las dos áreas: (6×4)+(3×2)=24+6=30 m²."
+          "retroalimentacion": "Se suman las dos áreas: (6×4)+(3×2)=24+6=30 m².",
+          "pistas": [
+            "Divide la figura en rectángulos simples, calcula cada área por separado y suma, igual que calculamos 41 m² para el patio en forma de L de la familia Ramírez.",
+            "6×4=24 y 3×2=6; el área total es 24+6 = 30 m²."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -178,7 +234,11 @@
             "126 m²"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Área del rectángulo: 15×8=120 m². Área del triángulo recortado: (4×3)/2=6 m². Área útil: 120-6=114 m²."
+          "retroalimentacion": "Área del rectángulo: 15×8=120 m². Área del triángulo recortado: (4×3)/2=6 m². Área útil: 120-6=114 m².",
+          "pistas": [
+            "Calcula el área de la figura completa y resta el área de la parte recortada, el mismo principio de dividir en figuras simples que usamos con el patio en L (41 m²).",
+            "15×8=120 m² (terreno completo); el triángulo recortado es (4×3)÷2=6 m²; área útil = 120-6 = 114 m²."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -190,7 +250,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Para hallar el área de una figura compuesta, se puede dividir en figuras simples y sumar (o restar) sus áreas.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: se identifican las figuras simples que la forman y se suman si están unidas o se restan si fueron recortadas."
+          "retroalimentacion": "Correcto: se identifican las figuras simples que la forman y se suman si están unidas o se restan si fueron recortadas.",
+          "pistas": [
+            "Para una figura compuesta, divídela en rectángulos, triángulos u otras figuras simples y suma o resta sus áreas, igual que hicimos con el patio en forma de L de la familia Ramírez.",
+            "Verdadero: dividir una figura compuesta en partes simples y sumar (o restar) sus áreas es el método estándar para calcular su área total."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -212,7 +276,21 @@
           ],
           "retroalimentacion": "8x5+((4×3)/2)=40+6=46. 10x6-((4×3)/2)=60-6=54. 6x6+2x3=36+6=42."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El patio de la familia Ramírez tiene forma de L: un rectángulo de 7 m x 5 m unido a otro de 2 m x 3 m.",
+        "pasos": [
+          {
+            "texto": "Calculamos el área de cada rectángulo por separado.",
+            "operacion": "7×5=35; 2×3=6"
+          },
+          {
+            "texto": "Sumamos ambas áreas.",
+            "operacion": "35+6=41"
+          }
+        ],
+        "respuestaFinal": "El área total del patio es 41 m²."
+      }
     },
     {
       "numero": "24.4",
@@ -235,7 +313,11 @@
             "90 m"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Perímetro = 2×(largo+ancho) = 2×(18+10)=56 m."
+          "retroalimentacion": "Perímetro = 2×(largo+ancho) = 2×(18+10)=56 m.",
+          "pistas": [
+            "El perímetro se calcula sumando los cuatro lados (2 veces el largo más 2 veces el ancho), igual que calculamos 52 m de malla para el segundo terreno de la familia Ramírez.",
+            "2(18)+2(10) = 36+20 = 56 m de malla."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -253,13 +335,21 @@
             "182 m²"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Área del jardín: 14×14=196 m². Área del camino: 14×2=28 m². Área con pasto: 196-28=168 m²."
+          "retroalimentacion": "Área del jardín: 14×14=196 m². Área del camino: 14×2=28 m². Área con pasto: 196-28=168 m².",
+          "pistas": [
+            "Calcula el área total y réstale el área que no lleva pasto, el mismo principio que usamos para calcular el área del segundo terreno (120 m²) de la familia Ramírez.",
+            "14×14=196 m² (jardín completo); el camino mide 14×2=28 m²; pasto = 196-28 = 168 m²."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "El perímetro se usa para saber cuánto material se necesita para bordear una figura, y el área para saber cuánto se necesita para cubrir su superficie.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: el perímetro mide el contorno (por ejemplo, una cerca) y el área mide la superficie (por ejemplo, pasto o piso)."
+          "retroalimentacion": "Correcto: el perímetro mide el contorno (por ejemplo, una cerca) y el área mide la superficie (por ejemplo, pasto o piso).",
+          "pistas": [
+            "El perímetro sirve para bordear (como la malla) y el área para cubrir una superficie (como el pasto), igual que calculamos 52 m de malla y 120 m² de pasto para el terreno de la familia Ramírez.",
+            "Verdadero: el perímetro mide el contorno de una figura, mientras que el área mide la superficie que cubre."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -281,7 +371,21 @@
           ],
           "retroalimentacion": "Cercar 9x6: 2×(9+6)=30 m. Cubrir 9x6: 9×6=54 m². Cercar cuadrado de 10: 4×10=40 m."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "La familia Ramírez calcula cuánta malla necesita para cercar un segundo terreno de 20 m de largo y 6 m de ancho, y cuánto pasto para cubrirlo todo.",
+        "pasos": [
+          {
+            "texto": "Calculamos el perímetro (malla) sumando los cuatro lados.",
+            "operacion": "2(20)+2(6)=52"
+          },
+          {
+            "texto": "Calculamos el área (pasto) multiplicando largo por ancho.",
+            "operacion": "20×6=120"
+          }
+        ],
+        "respuestaFinal": "Necesitan 52 metros de malla para cercarlo y 120 m² de pasto para cubrirlo."
+      }
     }
   ],
   "practicaExtra": [
