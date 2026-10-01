@@ -42,7 +42,11 @@
           "tipo": "llenar_frase",
           "frase": "Un ingeniero mide que el cable tensor de una torre de transmisión forma un ángulo de 65° con el suelo y mide 0.052 km de largo. Usando sen(65°)≈0.91, la altura a la que el cable llega a la torre es ___ m (1 decimal).",
           "respuestaCorrecta": "47.3",
-          "retroalimentacion": "0.052 km=52 m; altura=sen(65°)×52=0.91×52≈47.3 m."
+          "retroalimentacion": "0.052 km=52 m; altura=sen(65°)×52=0.91×52≈47.3 m.",
+          "pistas": [
+            "Convierte primero los kilómetros a metros, y después multiplica por el seno del ángulo, igual que hicimos con el segundo piloto de Hermosillo (3.6 km=3600 m → 3,132 m).",
+            "0.052 km=52 m; altura=sen(65°)×52=0.91×52≈47.3 m."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -66,7 +70,11 @@
           "tipo": "llenar_frase",
           "frase": "Una rampa de acceso cumple que, por cada 12 m de longitud en línea recta (hipotenusa), gana exactamente 6 m de altura, es decir sen(θ)=6/12=0.50. Usando la tabla de ángulos notables, el ángulo de inclinación de la rampa es de ___ °.",
           "respuestaCorrecta": "30",
-          "retroalimentacion": "sen(θ)=0.50 corresponde a sen(30°)≈0.50, así que θ=30°."
+          "retroalimentacion": "sen(θ)=0.50 corresponde a sen(30°)≈0.50, así que θ=30°.",
+          "pistas": [
+            "Compara el valor de la razón trigonométrica con los valores conocidos de la tabla de ángulos notables para identificar el ángulo, el mismo razonamiento inverso que usamos con el segundo piloto.",
+            "sen(θ)=0.50 corresponde a sen(30°)≈0.50, así que θ=30°."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -96,7 +104,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Una torre de comunicaciones tiene un cable tensor que llega al suelo a 0.084 km de la base; si el cable mide 0.085 km, entonces la altura de la torre es de 0.013 km (13 m).",
           "respuestaCorrecta": true,
-          "retroalimentacion": "En metros: base=84 m, cable=85 m; altura=√(85²-84²)=√(7225-7056)=√169=13 m=0.013 km."
+          "retroalimentacion": "En metros: base=84 m, cable=85 m; altura=√(85²-84²)=√(7225-7056)=√169=13 m=0.013 km.",
+          "pistas": [
+            "Convierte las unidades a una sola (metros) antes de aplicar el Teorema de Pitágoras, igual que hicimos al convertir los 3.6 km del segundo piloto a 3,600 m.",
+            "En metros: base=84 m, cable=85 m; altura=√(85²-84²)=√(7225-7056)=√169=13 m=0.013 km."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -118,7 +130,25 @@
           ],
           "retroalimentacion": "Rampa: θ=30°. Excursionista: ≈39.8 m. Tirolesa: 28.9+79.9=108.8 m."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Otro piloto despega de la misma pista de Hermosillo y recorre 3.6 km en línea recta; calcula que la razón entre la altura que ganó y la distancia recorrida (la hipotenusa) es exactamente 0.87, uno de los valores que ya conoce de la tabla de ángulos notables.",
+        "pasos": [
+          {
+            "texto": "Identificamos a qué ángulo notable corresponde la razón 0.87 como seno.",
+            "operacion": "sen(60°)≈0.87 → θ=60°"
+          },
+          {
+            "texto": "Convertimos la distancia recorrida a metros.",
+            "operacion": "3.6 km=3600 m"
+          },
+          {
+            "texto": "Calculamos la altura ganada.",
+            "operacion": "altura=sen(60°)×3600=0.87×3600=3132"
+          }
+        ],
+        "respuestaFinal": "El piloto despegó a un ángulo de 60°, y ganó 3,132 metros de altura (3.132 km)."
+      }
     }
   ],
   "practicaExtra": [

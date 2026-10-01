@@ -45,7 +45,11 @@
             "45"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Suma de edades=9. (3/9)×90 = 30 dulces."
+          "retroalimentacion": "Suma de edades=9. (3/9)×90 = 30 dulces.",
+          "pistas": [
+            "Suma todos los valores de referencia y reparte la cantidad total en esa misma proporción, igual que hicimos con la segunda cosecha de los hermanos de Michoacán (suma=60 horas).",
+            "Suma de edades=9. (3/9)×90 = 30 dulces."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -69,7 +73,11 @@
             "$140"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "Suma=13. (5/13)×390 = $150."
+          "retroalimentacion": "Suma=13. (5/13)×390 = $150.",
+          "pistas": [
+            "El mismo método funciona sin importar cuántas partes haya: suma las partes de referencia y reparte proporcionalmente, como en la segunda cosecha de los hermanos de Michoacán.",
+            "Suma=13. (5/13)×390 = $150."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -105,7 +113,11 @@
             "$90"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Suma=9. (3/9)×180 = $60."
+          "retroalimentacion": "Suma=9. (3/9)×180 = $60.",
+          "pistas": [
+            "Suma las tres partes de la razón y reparte en esa proporción, el mismo procedimiento que usamos para repartir la segunda cosecha entre los hermanos de Michoacán.",
+            "Suma=9. (3/9)×180 = $60."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -134,7 +146,21 @@
           "retroalimentacion": "90 dulces (edades 1,2,3): suma=6, (3/6)×90=45; 150 dulces (edades 2,3,5): suma=10, (5/10)×150=75; 80 dulces (edades 1,3,4): suma=8, (4/8)×80=40."
         }
       ],
-      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado"
+      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado",
+      "ejemploResuelto": {
+        "enunciado": "Los mismos hermanos del rancho en Michoacán reparten otra cosecha de 600 kg de maíz según las horas trabajadas esa semana: 12, 18, 24 y 6 horas.",
+        "pasos": [
+          {
+            "texto": "Sumamos las horas trabajadas.",
+            "operacion": "12+18+24+6=60"
+          },
+          {
+            "texto": "Calculamos la parte de cada hermano.",
+            "operacion": "12h: (12/60)×600=120; 18h: (18/60)×600=180; 24h: (24/60)×600=240; 6h: (6/60)×600=60"
+          }
+        ],
+        "respuestaFinal": "Les corresponden 120 kg, 180 kg, 240 kg y 60 kg respectivamente."
+      }
     }
   ],
   "practicaExtra": [

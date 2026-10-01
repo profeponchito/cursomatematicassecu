@@ -46,7 +46,11 @@
           "tipo": "llenar_frase",
           "frase": "Un lingote de plata tiene masa de 210 g y volumen de 20 cm³. Su densidad es de ___ g/cm³ (usa un decimal).",
           "respuestaCorrecta": "10.5",
-          "retroalimentacion": "d = 210/20 = 10.5 g/cm³."
+          "retroalimentacion": "d = 210/20 = 10.5 g/cm³.",
+          "pistas": [
+            "Divide la masa entre el volumen para obtener la densidad, igual que calculamos la densidad de la carga de Yolanda (60÷40=1.5 kg/L).",
+            "d = 210/20 = 10.5 g/cm³."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -70,7 +74,11 @@
           "tipo": "llenar_frase",
           "frase": "Un bloque de un material tiene masa de 480 g y volumen de 40 cm³. Su densidad es de ___ g/cm³.",
           "respuestaCorrecta": "12",
-          "retroalimentacion": "d = 480/40 = 12 g/cm³."
+          "retroalimentacion": "d = 480/40 = 12 g/cm³.",
+          "pistas": [
+            "Aplica d=m/V, el mismo procedimiento que usamos para la densidad de la carga de Yolanda.",
+            "d = 480/40 = 12 g/cm³."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -94,7 +102,11 @@
           "tipo": "llenar_frase",
           "frase": "El líquido P tiene masa de 300 g en 25 cm³ y el líquido Q tiene masa de 208 g en 16 cm³. La diferencia entre sus densidades es de ___ g/cm³.",
           "respuestaCorrecta": "1",
-          "retroalimentacion": "Líquido P: d = 300/25 = 12 g/cm³. Líquido Q: d = 208/16 = 13 g/cm³. Diferencia = 13-12 = 1 g/cm³."
+          "retroalimentacion": "Líquido P: d = 300/25 = 12 g/cm³. Líquido Q: d = 208/16 = 13 g/cm³. Diferencia = 13-12 = 1 g/cm³.",
+          "pistas": [
+            "Calcula la densidad de cada líquido por separado y después resta para comparar, el mismo tipo de comparación que hicimos entre el precio de Yolanda y su competencia.",
+            "Líquido P: d = 300/25 = 12 g/cm³. Líquido Q: d = 208/16 = 13 g/cm³. Diferencia = 13-12 = 1 g/cm³."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -117,7 +129,25 @@
           "retroalimentacion": "144/16=9 g/cm³. (80+40)/(2+2)=30 km/h. 360/9=$40/m²."
         }
       ],
-      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis"
+      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis",
+      "ejemploResuelto": {
+        "enunciado": "Yolanda entrega pedidos en Xalapa: recorrió 15 km en 50 minutos, su carga tiene masa 60 kg en 40 litros de espacio, y vende el agua a $180 los 12 litros, mientras su competencia cobra $140 los 10 litros.",
+        "pasos": [
+          {
+            "texto": "Convertimos los minutos a horas y calculamos la rapidez media.",
+            "operacion": "50min=50/60h≈0.8333h; rapidez=15÷0.8333≈18 km/h"
+          },
+          {
+            "texto": "Calculamos la densidad de su carga.",
+            "operacion": "densidad=60÷40=1.5 kg/L"
+          },
+          {
+            "texto": "Comparamos el precio por litro de Yolanda contra la competencia.",
+            "operacion": "Yolanda:180÷12=15; Competencia:140÷10=14"
+          }
+        ],
+        "respuestaFinal": "Yolanda recorrió a unos 18 km/h, su carga tiene densidad 1.5 kg/L, pero su precio ($15/L) es más caro que el de la competencia ($14/L), así que ella NO vende más barato."
+      }
     }
   ],
   "practicaExtra": [

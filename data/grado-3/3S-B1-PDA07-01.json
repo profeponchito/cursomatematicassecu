@@ -52,7 +52,11 @@
           "tipo": "llenar_frase",
           "frase": "La distancia constante del centro de una esfera a cualquier punto de su superficie se llama ___.",
           "respuestaCorrecta": "radio",
-          "retroalimentacion": "El radio es la distancia constante entre el centro y la superficie, tanto en la esfera como en el círculo."
+          "retroalimentacion": "El radio es la distancia constante entre el centro y la superficie, tanto en la esfera como en el círculo.",
+          "pistas": [
+            "Recuerda que el radio es la distancia constante entre el centro y la superficie, tanto en la pelota (esfera) como en su sombra (círculo), igual que distinguimos entre la pelota de básquetbol de Pamela y su sombra.",
+            "El radio es la distancia constante entre el centro y la superficie, tanto en la esfera como en el círculo."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -88,7 +92,11 @@
           "tipo": "llenar_frase",
           "frase": "El punto que está a la misma distancia de todos los puntos de la superficie de una esfera se llama ___.",
           "respuestaCorrecta": "centro",
-          "retroalimentacion": "El centro es el punto de referencia desde el cual se mide el radio hacia cualquier punto de la superficie."
+          "retroalimentacion": "El centro es el punto de referencia desde el cual se mide el radio hacia cualquier punto de la superficie.",
+          "pistas": [
+            "El centro es el punto de referencia desde el cual se mide el radio, el mismo concepto que usamos para distinguir la pelota de básquetbol de su sombra.",
+            "El centro es el punto de referencia desde el cual se mide el radio hacia cualquier punto de la superficie."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -114,10 +122,28 @@
             0,
             2
           ],
-          "retroalimentacion": "Radio = distancia constante del centro a la superficie. Centro = punto equidistante de toda la superficie. Círculo = sección plana de una esfera cortada por su centro."
+          "retroalimentacion": "Radio = distancia constante del centro a la superficie. Centro = punto equidistante de toda la superficie. Círculo = sección plana de una esfera cortada por su centro.",
+          "pistas": [
+            "Relaciona cada término con su definición, pensando en la diferencia entre la pelota de Pamela (3D) y su sombra (2D).",
+            "Radio = distancia constante del centro a la superficie. Centro = punto equidistante de toda la superficie. Círculo = sección plana de una esfera cortada por su centro."
+          ]
         }
       ],
-      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio"
+      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio",
+      "ejemploResuelto": {
+        "enunciado": "A Pamela también le muestran una pelota de básquetbol y su sombra circular proyectada en el piso, y le preguntan si son la misma figura.",
+        "pasos": [
+          {
+            "texto": "Identificamos cuántas dimensiones tiene cada una.",
+            "operacion": "pelota=3D (esfera), sombra=2D (círculo)"
+          },
+          {
+            "texto": "Comparamos: la sombra es solo una proyección plana, no contiene el volumen de la pelota.",
+            "operacion": "no son la misma figura"
+          }
+        ],
+        "respuestaFinal": "No son la misma figura: la pelota es un cuerpo sólido de 3 dimensiones, y su sombra es apenas una figura plana de 2 dimensiones."
+      }
     }
   ],
   "practicaExtra": [

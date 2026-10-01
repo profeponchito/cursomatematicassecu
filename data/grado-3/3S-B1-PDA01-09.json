@@ -41,7 +41,11 @@
           "tipo": "llenar_frase",
           "frase": "Un parque cuadrado tiene un área de 1,960,000 m². Su lado mide √1,960,000 = 1,400 m, que en notación científica es ___.",
           "respuestaCorrecta": "1.4 × 10³",
-          "retroalimentacion": "1,400 m se escribe en notación científica como 1.4 × 10³ m."
+          "retroalimentacion": "1,400 m se escribe en notación científica como 1.4 × 10³ m.",
+          "pistas": [
+            "Escribe el resultado en notación científica moviendo el punto decimal, igual que hicimos con los 8,500,000 señales del reportero (8.5×10⁶).",
+            "1,400 m se escribe en notación científica como 1.4×10³ m."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -65,7 +69,11 @@
           "tipo": "llenar_frase",
           "frase": "Una concentración de 8,100 mg/mL se diluye 1:10 dos veces. El resultado es 8,100 × 10⁻² = 81 mg/mL, que en notación científica es ___.",
           "respuestaCorrecta": "8.1 × 10¹",
-          "retroalimentacion": "81 mg/mL se escribe en notación científica como 8.1 × 10¹ mg/mL."
+          "retroalimentacion": "81 mg/mL se escribe en notación científica como 8.1 × 10¹ mg/mL.",
+          "pistas": [
+            "Después de calcular el resultado, exprésalo en notación científica, el mismo último paso que usamos con las señales del reportero.",
+            "81 mg/mL se escribe en notación científica como 8.1×10¹ mg/mL."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -109,7 +117,11 @@
           "tipo": "llenar_frase",
           "frase": "Una muestra de 38,000 organismos se reduce a la mitad cada semana. Después de 3 semanas quedan 38,000 × 2⁻³ = ___ organismos.",
           "respuestaCorrecta": "4,750",
-          "retroalimentacion": "38,000 × 2⁻³ = 38,000 ÷ 8 = 4,750."
+          "retroalimentacion": "38,000 × 2⁻³ = 38,000 ÷ 8 = 4,750.",
+          "pistas": [
+            "Recuerda que un exponente negativo significa dividir entre la base esa cantidad de veces, igual que calculamos 4⁻²=1/16 para el reportero.",
+            "38,000×2⁻³=38,000÷8=4,750."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -123,7 +135,25 @@
           "respuestaCorrecta": 1,
           "retroalimentacion": "1.44 × 10⁶ = 1,440,000, y √1,440,000 = 1,200 m."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El mismo reportero de la Ciudad de México también necesita calcular 4⁻² para otro dato, sacar la raíz cuadrada del área de un domo circular cuya base cuadrada mide 324 m² de área, y expresar en notación científica que ese domo capta 8,500,000 señales por segundo.",
+        "pasos": [
+          {
+            "texto": "Calculamos 4⁻² como recíproco.",
+            "operacion": "4⁻²=1/4²=1/16"
+          },
+          {
+            "texto": "Calculamos la raíz cuadrada de 324.",
+            "operacion": "√324=18, porque 18×18=324"
+          },
+          {
+            "texto": "Escribimos 8,500,000 en notación científica.",
+            "operacion": "8.5×10⁶"
+          }
+        ],
+        "respuestaFinal": "4⁻²=1/16; √324=18; 8,500,000=8.5×10⁶."
+      }
     }
   ],
   "practicaExtra": [

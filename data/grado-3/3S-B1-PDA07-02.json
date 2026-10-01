@@ -47,7 +47,11 @@
           "tipo": "llenar_frase",
           "frase": "El área de la superficie de una esfera con radio de 10 cm es ___ cm² (usa π≈3.14).",
           "respuestaCorrecta": "1256",
-          "retroalimentacion": "A = 4×3.14×10² = 4×3.14×100 = 1256 cm²."
+          "retroalimentacion": "A = 4×3.14×10² = 4×3.14×100 = 1256 cm².",
+          "pistas": [
+            "Aplica la fórmula A=4×π×r² sustituyendo el radio, igual que hicimos con la piñata más grande de Regina (radio20→5024 cm²).",
+            "A = 4×3.14×10² = 4×3.14×100 = 1256 cm²."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -71,7 +75,11 @@
           "tipo": "llenar_frase",
           "frase": "El área de la superficie de una esfera con radio de 6 cm es ___ cm² (usa π≈3.14).",
           "respuestaCorrecta": "452.16",
-          "retroalimentacion": "A = 4×3.14×6² = 4×3.14×36 = 452.16 cm²."
+          "retroalimentacion": "A = 4×3.14×6² = 4×3.14×36 = 452.16 cm².",
+          "pistas": [
+            "Eleva el radio al cuadrado, multiplica por π y por 4, el mismo procedimiento que usamos con la piñata más grande de Regina.",
+            "A = 4×3.14×6² = 4×3.14×36 = 452.16 cm²."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -95,7 +103,11 @@
           "tipo": "llenar_frase",
           "frase": "El área de la superficie de una esfera con radio de 2 cm es ___ cm² (usa π≈3.14).",
           "respuestaCorrecta": "50.24",
-          "retroalimentacion": "A = 4×3.14×2² = 4×3.14×4 = 50.24 cm²."
+          "retroalimentacion": "A = 4×3.14×2² = 4×3.14×4 = 50.24 cm².",
+          "pistas": [
+            "Sigue la fórmula A=4×π×r², igual que calculamos el área de la piñata más grande de Regina.",
+            "A = 4×3.14×2² = 4×3.14×4 = 50.24 cm²."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -118,7 +130,21 @@
           "retroalimentacion": "r=3: A=4×3.14×9=113.04 cm². r=6: A=4×3.14×36=452.16 cm². r=11: A=4×3.14×121=1519.76 cm²."
         }
       ],
-      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio"
+      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio",
+      "ejemploResuelto": {
+        "enunciado": "Regina también va a forrar otra piñata esférica más grande, con 20 cm de radio.",
+        "pasos": [
+          {
+            "texto": "Aplicamos la fórmula del área de la esfera.",
+            "operacion": "A=4×3.14×20²"
+          },
+          {
+            "texto": "Calculamos.",
+            "operacion": "A=4×3.14×400=5024"
+          }
+        ],
+        "respuestaFinal": "Regina necesita 5,024 cm² de papel china para la piñata más grande."
+      }
     }
   ],
   "practicaExtra": [

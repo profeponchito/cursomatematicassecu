@@ -48,7 +48,11 @@
           "tipo": "llenar_frase",
           "frase": "El techo piramidal del establo (base rectangular 12×8 m) tiene un apotema de 5 m para las caras del lado de 12 m, y un apotema de 6 m para las caras del lado de 8 m. El área lateral total del techo es ___ m².",
           "respuestaCorrecta": "108",
-          "retroalimentacion": "Caras grandes: 2×(12×5)÷2 = 60 m². Caras chicas: 2×(8×6)÷2 = 48 m². Total = 60+48 = 108 m²."
+          "retroalimentacion": "Caras grandes: 2×(12×5)÷2 = 60 m². Caras chicas: 2×(8×6)÷2 = 48 m². Total = 60+48 = 108 m².",
+          "pistas": [
+            "Calcula el área de cada par de caras laterales por separado (grandes y chicas) y después súmalas, igual que hicimos con el techo del quiosco pequeño de Monterrey (20+13.5=33.5).",
+            "Caras grandes: 2×(12×5)÷2 = 60 m². Caras chicas: 2×(8×6)÷2 = 48 m². Total = 60+48 = 108 m²."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -72,7 +76,11 @@
           "tipo": "llenar_frase",
           "frase": "Un tanque cilíndrico de radio 2.2 m y altura 6.5 m se pintará por completo (área total). Si 1 litro rinde 16 m² y cuesta $105, el costo total (redondeando los litros hacia arriba) es $___.",
           "respuestaCorrecta": "840",
-          "retroalimentacion": "Área total = 2×3.14×2.2²+2×3.14×2.2×6.5 = 120.2 m². 120.2÷16 = 7.51 → 8 litros × $105 = $840."
+          "retroalimentacion": "Área total = 2×3.14×2.2²+2×3.14×2.2×6.5 = 120.2 m². 120.2÷16 = 7.51 → 8 litros × $105 = $840.",
+          "pistas": [
+            "Calcula el área total, divide entre el rendimiento redondeando hacia arriba y multiplica por el precio, el mismo tipo de cálculo encadenado que usamos para el techo del quiosco de Monterrey.",
+            "Área total = 2×3.14×2.2²+2×3.14×2.2×6.5 = 120.2 m². 120.2÷16 = 7.51 → 8 litros × $105 = $840."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -104,7 +112,11 @@
             1,
             0
           ],
-          "retroalimentacion": "Volumen del cilindro = 137.38 m³. Área total de la pirámide = 169+208 = 377 m². Costo con descuento = 50×45×0.8 = $1800."
+          "retroalimentacion": "Volumen del cilindro = 137.38 m³. Área total de la pirámide = 169+208 = 377 m². Costo con descuento = 50×45×0.8 = $1800.",
+          "pistas": [
+            "Suma el área de cada par de caras laterales con apotemas distintos, igual que calculamos el área del techo del quiosco pequeño de Monterrey.",
+            "Volumen del cilindro = 137.38 m³. Área total de la pirámide = 169+208 = 377 m². Costo con descuento = 50×45×0.8 = $1800."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -124,7 +136,25 @@
           "respuestaCorrecta": 0,
           "retroalimentacion": "Volumen del soporte = 3.14×16×3 = 150.72 m³. Volumen del tanque = 3.14×4.84×5 = 75.99 m³. Total = 226.71 m³."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El mismo club de arquitectura de Monterrey también diseña el techo piramidal de un quiosco más pequeño, con base rectangular de 5 m de largo por 3 m de ancho: las caras sobre los lados largos tienen apotema de 4 m, y las caras sobre los lados cortos tienen apotema de 4.5 m.",
+        "pasos": [
+          {
+            "texto": "Calculamos el área de las dos caras grandes (sobre los lados largos).",
+            "operacion": "2×(5×4)÷2=20"
+          },
+          {
+            "texto": "Calculamos el área de las dos caras chicas (sobre los lados cortos).",
+            "operacion": "2×(3×4.5)÷2=13.5"
+          },
+          {
+            "texto": "Sumamos ambas áreas.",
+            "operacion": "20+13.5=33.5"
+          }
+        ],
+        "respuestaFinal": "El área lateral del techo del quiosco pequeño es 33.5 m²."
+      }
     }
   ],
   "practicaExtra": [

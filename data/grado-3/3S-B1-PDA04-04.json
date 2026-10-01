@@ -33,7 +33,11 @@
             "$112"
           ],
           "respuestaCorrecta": 3,
-          "retroalimentacion": "Suma=3. (2/3)×168 = $112."
+          "retroalimentacion": "Suma=3. (2/3)×168 = $112.",
+          "pistas": [
+            "Suma las aportaciones (o la razón) y reparte la utilidad en esa proporción, igual que hicimos con la segunda venta de la cooperativa de Oaxaca (suma=1500).",
+            "Suma=3. (2/3)×168 = $112."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -119,7 +123,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Se reparten $250 proporcionalmente entre dos personas con aportaciones en razón 3:2. A la de razón 3 le tocan $150.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: suma=5. (3/5)×250 = $150."
+          "retroalimentacion": "Correcto: suma=5. (3/5)×250 = $150.",
+          "pistas": [
+            "Sigue el mismo método del reparto proporcional que usamos con la segunda venta de los alumnos de Oaxaca: sumar la razón y multiplicar por la parte correspondiente.",
+            "Suma=5. (3/5)×250 = $150."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -137,7 +145,11 @@
             "$300"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Suma=6,000. (2000/6000)×1200 = $400."
+          "retroalimentacion": "Suma=6,000. (2000/6000)×1200 = $400.",
+          "pistas": [
+            "Suma todas las aportaciones y reparte la utilidad en esa misma proporción, el mismo procedimiento que usamos con la segunda venta de la cooperativa de Oaxaca.",
+            "Suma=6,000. (2000/6000)×1200 = $400."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -152,7 +164,21 @@
           "retroalimentacion": "Suma=16. (9/16)×416 = $234."
         }
       ],
-      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis"
+      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis",
+      "ejemploResuelto": {
+        "enunciado": "Los mismos tres alumnos de la cooperativa escolar de Oaxaca hacen otra venta: aportan $300, $500 y $700 para el material, y ganan $750 de utilidad.",
+        "pasos": [
+          {
+            "texto": "Sumamos las aportaciones.",
+            "operacion": "300+500+700=1500"
+          },
+          {
+            "texto": "Calculamos la parte de cada alumno.",
+            "operacion": "(300/1500)×750=150; (500/1500)×750=250; (700/1500)×750=350"
+          }
+        ],
+        "respuestaFinal": "Les corresponden $150, $250 y $350 respectivamente."
+      }
     }
   ],
   "practicaExtra": [

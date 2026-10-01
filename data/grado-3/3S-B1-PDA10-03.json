@@ -34,7 +34,11 @@
             "0-10"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "La mayor frecuencia es 10, en el intervalo 10-20."
+          "retroalimentacion": "La mayor frecuencia es 10, en el intervalo 10-20.",
+          "pistas": [
+            "Busca el intervalo con la frecuencia más alta de la tabla, igual que identificamos la clase modal del examen de Cuernavaca (80-90, con f=14).",
+            "La mayor frecuencia es 10, en el intervalo 10-20."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -64,7 +68,11 @@
           "tipo": "llenar_frase",
           "frase": "En la tabla 0-10: f=10, 10-20: f=3, 20-30: f=4, 30-40: f=6, 40-50: f=7 (n=30), la clase mediana es ___.",
           "respuestaCorrecta": "20-30",
-          "retroalimentacion": "Acumuladas: 10, 13, 17, 23, 30. n/2=15 se alcanza por primera vez en 17, en el intervalo 20-30. Nota que aquí la clase modal (0-10) y la clase mediana (20-30) son diferentes."
+          "retroalimentacion": "Acumuladas: 10, 13, 17, 23, 30. n/2=15 se alcanza por primera vez en 17, en el intervalo 20-30. Nota que aquí la clase modal (0-10) y la clase mediana (20-30) son diferentes.",
+          "pistas": [
+            "Suma las frecuencias acumuladas hasta llegar o pasar n/2, igual que hicimos para encontrar la clase mediana del examen de Cuernavaca.",
+            "Acumuladas: 10, 13, 17, 23, 30. n/2=15 se alcanza por primera vez en 17, en el intervalo 20-30. Nota que aquí la clase modal (0-10) y la clase mediana (20-30) son diferentes."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -82,7 +90,11 @@
             "40-50"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Acumuladas: 4, 10, 21, 28, 30. n/2=15 se alcanza por primera vez en 21, en el intervalo 30-40."
+          "retroalimentacion": "Acumuladas: 4, 10, 21, 28, 30. n/2=15 se alcanza por primera vez en 21, en el intervalo 30-40.",
+          "pistas": [
+            "Calcula las frecuencias acumuladas y busca dónde se alcanza n/2 por primera vez, el mismo procedimiento que usamos para el examen de Cuernavaca.",
+            "Acumuladas: 4, 10, 21, 28, 30. n/2=15 se alcanza por primera vez en 21, en el intervalo 30-40."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -117,7 +129,25 @@
           "retroalimentacion": "Tabla 1: mayor frecuencia 10, en 10-20. Tabla 2: mayor frecuencia 12, en 10-15. Tabla 3: mayor frecuencia 11, en 30-40."
         }
       ],
-      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado"
+      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado",
+      "ejemploResuelto": {
+        "enunciado": "La misma maestra de Cuernavaca agrupa las calificaciones de otro examen de 40 alumnos: 60-70 (f=5), 70-80 (f=9), 80-90 (f=14), 90-100 (f=12).",
+        "pasos": [
+          {
+            "texto": "Identificamos la clase modal: el intervalo con mayor frecuencia.",
+            "operacion": "mayor f=14, intervalo 80-90"
+          },
+          {
+            "texto": "Calculamos las frecuencias acumuladas.",
+            "operacion": "5,14,28,40"
+          },
+          {
+            "texto": "Buscamos dónde se alcanza n/2=20 por primera vez.",
+            "operacion": "n/2=40÷2=20; se alcanza en 28, intervalo 80-90"
+          }
+        ],
+        "respuestaFinal": "En este examen, la clase modal y la clase mediana coinciden: ambas son el intervalo 80-90."
+      }
     }
   ],
   "practicaExtra": [

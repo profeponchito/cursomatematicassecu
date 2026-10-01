@@ -34,7 +34,11 @@
             "No se puede saber sin ver los colores de las barras"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Al no empezar el eje en $0, cualquier diferencia entre las barras ocupa proporcionalmente mucho más espacio visual del que le corresponde, exagerando el aumento real."
+          "retroalimentacion": "Al no empezar el eje en $0, cualquier diferencia entre las barras ocupa proporcionalmente mucho más espacio visual del que le corresponde, exagerando el aumento real.",
+          "pistas": [
+            "Revisa si el eje vertical empieza en $0 o en un valor recortado, igual que identificamos el problema en la gráfica del ahorro de la cooperativa escolar.",
+            "Al no empezar el eje en $0, cualquier diferencia entre las barras ocupa proporcionalmente mucho más espacio visual del que le corresponde, exagerando el aumento real."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -64,7 +68,11 @@
             "Porque las ventas de A y B nunca deben compararse con imágenes"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Al crecer en alto y en ancho a la vez, el área visual del ícono crece al cuadrado: 2 veces más alto y 2 veces más ancho da 4 veces más área, aunque la cantidad real solo se duplicó."
+          "retroalimentacion": "Al crecer en alto y en ancho a la vez, el área visual del ícono crece al cuadrado: 2 veces más alto y 2 veces más ancho da 4 veces más área, aunque la cantidad real solo se duplicó.",
+          "pistas": [
+            "Recuerda que cuando una figura crece en alto y en ancho a la vez, su área visual crece al cuadrado, el mismo tipo de distorsión que discutimos al analizar gráficas engañosas.",
+            "Al crecer en alto y en ancho a la vez, el área visual del ícono crece al cuadrado: 2 veces más alto y 2 veces más ancho da 4 veces más área, aunque la cantidad real solo se duplicó."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -88,7 +96,11 @@
             "Las barras tienen colores distintos para cada categoría"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Un eje que no empieza en cero, combinado con intervalos desiguales, es una combinación típica de gráficas mal construidas."
+          "retroalimentacion": "Un eje que no empieza en cero, combinado con intervalos desiguales, es una combinación típica de gráficas mal construidas.",
+          "pistas": [
+            "Busca ejes que no empiecen en cero y escalas con intervalos desiguales, las mismas señales que identificamos en la gráfica del ahorro de la cooperativa escolar.",
+            "Un eje que no empieza en cero, combinado con intervalos desiguales, es una combinación típica de gráficas mal construidas."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -117,7 +129,22 @@
           "retroalimentacion": "Eje sin empezar en cero: exagera diferencias entre barras. Intervalos desiguales: distorsiona la forma de la tendencia. Íconos desproporcionados: exageran diferencias al comparar áreas."
         }
       ],
-      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado"
+      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado",
+      "ejemploResuelto": {
+        "enunciado": "En el mismo periódico mural, el comité prepara otra gráfica: el ahorro subió de $9,500 a $9,800 en un mes, y quieren usar un eje que empiece en $9,000 en vez de en $0.",
+        "pasos": [
+          {
+            "texto": "Observamos que el eje no empieza en $0, sino en $9,000."
+          },
+          {
+            "texto": "Esto hace que la diferencia entre las barras, que en realidad es pequeña, se vea visualmente mucho más grande de lo que es en términos reales."
+          },
+          {
+            "texto": "Concluimos que esta gráfica también sería engañosa, igual que la gráfica original de $8,200 a $8,900."
+          }
+        ],
+        "respuestaFinal": "Sí, esta gráfica también sería engañosa: el eje recortado en $9,000 exageraría visualmente un aumento real de solo $300 (de $9,500 a $9,800)."
+      }
     }
   ],
   "practicaExtra": [

@@ -47,7 +47,11 @@
           "tipo": "llenar_frase",
           "frase": "Un objeto tiene masa de 45 g y volumen de 5 cm³. Su densidad es ___ g/cm³.",
           "respuestaCorrecta": "9",
-          "retroalimentacion": "d = m/V = 45/5 = 9 g/cm³."
+          "retroalimentacion": "d = m/V = 45/5 = 9 g/cm³.",
+          "pistas": [
+            "Divide la masa entre el volumen para obtener la densidad, igual que hicimos para comparar las dos barras del taller de don Genaro (445÷50=8.9 y 130÷50=2.6).",
+            "d = m/V = 45/5 = 9 g/cm³."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -71,7 +75,11 @@
           "tipo": "llenar_frase",
           "frase": "Un objeto con densidad de 4 g/cm³ ocupa un volumen de 25 cm³. Su masa es ___ g.",
           "respuestaCorrecta": "100",
-          "retroalimentacion": "m = d×V = 4×25 = 100 g."
+          "retroalimentacion": "m = d×V = 4×25 = 100 g.",
+          "pistas": [
+            "Multiplica la densidad por el volumen para obtener la masa, el mismo tipo de despeje que usamos con la fórmula de densidad de las barras de Wendy.",
+            "m = d×V = 4×25 = 100 g."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -95,7 +103,11 @@
           "tipo": "llenar_frase",
           "frase": "Un líquido con densidad de 1.5 g/cm³ y volumen de 40 cm³ tiene una masa de ___ g.",
           "respuestaCorrecta": "60",
-          "retroalimentacion": "m = d×V = 1.5×40 = 60 g."
+          "retroalimentacion": "m = d×V = 1.5×40 = 60 g.",
+          "pistas": [
+            "Aplica m=d×V despejando la masa, igual que usamos la fórmula de densidad para las barras del taller de don Genaro.",
+            "m = d×V = 1.5×40 = 60 g."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -118,7 +130,25 @@
           "retroalimentacion": "120/15=8 g/cm³. 90/6=15 g/cm³. 56/8=7 g/cm³."
         }
       ],
-      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio"
+      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio",
+      "ejemploResuelto": {
+        "enunciado": "En el taller de don Genaro, las dos barras metálicas de Wendy tienen el mismo volumen de 50 cm³: una pesa 445 g y la otra 130 g.",
+        "pasos": [
+          {
+            "texto": "Calculamos la densidad de la primera barra.",
+            "operacion": "d1=445/50=8.9"
+          },
+          {
+            "texto": "Calculamos la densidad de la segunda barra.",
+            "operacion": "d2=130/50=2.6"
+          },
+          {
+            "texto": "Comparamos: la de mayor densidad es la de 445 g.",
+            "operacion": "8.9>2.6"
+          }
+        ],
+        "respuestaFinal": "La barra de 445 g es más densa (8.9 g/cm³) que la de 130 g (2.6 g/cm³), aunque ambas ocupan el mismo volumen."
+      }
     }
   ],
   "practicaExtra": [

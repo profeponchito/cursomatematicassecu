@@ -48,7 +48,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Un depósito tiene h=x+5. Si x=9 cm, su volumen es V=x²(x+5)=81×14=1134 cm³.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "h = 9+5 = 14; V = 9²×14 = 81×14 = 1134 cm³."
+          "retroalimentacion": "h = 9+5 = 14; V = 9²×14 = 81×14 = 1134 cm³.",
+          "pistas": [
+            "Primero calcula la altura sustituyendo x en la relación dada, y después usa V=x²×h, igual que hicimos con el tinaco de altura h=x+6 (h=13, V=637).",
+            "h=9+5=14; V=9²×14=81×14=1134."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -60,7 +64,11 @@
             "864 cm³"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "h = 2×6 = 12; V = 6²×12 = 36×12 = 432 cm³."
+          "retroalimentacion": "h = 2×6 = 12; V = 6²×12 = 36×12 = 432 cm³.",
+          "pistas": [
+            "Sustituye x en la relación para encontrar h, y después calcula el volumen, el mismo procedimiento que usamos con el tinaco de altura h=x+6.",
+            "h=2×6=12; V=6²×12=36×12=432."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -102,7 +110,11 @@
             "432 cm³"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "h = 12/2 = 6; V = 12²×6 = 144×6 = 864 cm³."
+          "retroalimentacion": "h = 12/2 = 6; V = 12²×6 = 144×6 = 864 cm³.",
+          "pistas": [
+            "Encuentra primero la altura con la relación dada y después aplica V=x²×h, igual que en el tinaco de altura h=x+6.",
+            "h=12÷2=6; V=12²×6=144×6=864."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -124,7 +136,21 @@
           ],
           "retroalimentacion": "h=x+2=8→V=36×8=288. h=2x=12→V=36×12=432. h=x-1=5→V=36×5=180."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El mismo fabricante de Celaya también diseña un tinaco donde la altura es siempre 6 cm más que el lado de la base (h=x+6). Si x=7 cm, ¿cuál es su volumen?",
+        "pasos": [
+          {
+            "texto": "Calculamos la altura usando la relación.",
+            "operacion": "h=x+6=7+6=13"
+          },
+          {
+            "texto": "Sustituimos en la fórmula del volumen.",
+            "operacion": "V=7²×13=49×13=637"
+          }
+        ],
+        "respuestaFinal": "El volumen de este tinaco es 637 cm³."
+      }
     }
   ],
   "practicaExtra": [

@@ -131,13 +131,21 @@
           "tipo": "verdadero_falso",
           "enunciado": "5⁻2 = 1/25.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "5⁻2 = 1/5² = 1/25."
+          "retroalimentacion": "5⁻2 = 1/5² = 1/25.",
+          "pistas": [
+            "Un exponente negativo siempre es el recíproco de la base elevada al exponente positivo, igual que calculamos 3⁻²=1/9 para Itzel.",
+            "5⁻2=1/5²=1/25."
+          ]
         },
         {
           "tipo": "llenar_frase",
           "frase": "La raíz cuadrada de 289 es ___.",
           "respuestaCorrecta": "17",
-          "retroalimentacion": "17 × 17 = 289."
+          "retroalimentacion": "17 × 17 = 289.",
+          "pistas": [
+            "Busca qué número multiplicado por sí mismo da 289, el mismo procedimiento que usamos para √196=14 en el reporte de Itzel.",
+            "17×17=289."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -169,10 +177,28 @@
             "32"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "31 × 31 = 961."
+          "retroalimentacion": "31 × 31 = 961.",
+          "pistas": [
+            "La raíz cuadrada es el número que multiplicado por sí mismo da el valor buscado, igual que con √196=14 para Itzel.",
+            "31×31=961."
+          ]
         }
       ],
-      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis"
+      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis",
+      "ejemploResuelto": {
+        "enunciado": "Itzel también debe anotar en su reporte de Guadalajara: el valor de 3⁻² para otra muestra, y la raíz cuadrada de 196 para el lado de otra charola.",
+        "pasos": [
+          {
+            "texto": "Calculamos 3⁻² como recíproco.",
+            "operacion": "3⁻²=1/3²=1/9"
+          },
+          {
+            "texto": "Calculamos la raíz cuadrada de 196.",
+            "operacion": "√196=14, porque 14×14=196"
+          }
+        ],
+        "respuestaFinal": "3⁻²=1/9; √196=14."
+      }
     }
   ],
   "practicaExtra": [

@@ -35,13 +35,21 @@
             "2904 cm³"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "x²=968÷8=121→x=11. Al duplicar x=22: V'=22²×8=484×8=3872 cm³ (4 veces el original)."
+          "retroalimentacion": "x²=968÷8=121→x=11. Al duplicar x=22: V'=22²×8=484×8=3872 cm³ (4 veces el original).",
+          "pistas": [
+            "Primero despeja x² dividiendo el volumen entre la altura y saca la raíz cuadrada, y después calcula el nuevo volumen al duplicar el lado, igual que hicimos para el tinaco de 1,445 cm³ (x=17, nuevo V=5,780, 4 veces más).",
+            "x²=968÷8=121→x=11; al duplicar x=22: V'=22²×8=3872 cm³, 4 veces el original."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "Un cubo tiene volumen 1728 cm³, con arista de 12 cm. Si la arista se redujera a la mitad (6 cm), el nuevo volumen sería 216 cm³.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "12³=1728 cm³ y 6³=216 cm³ (1728÷8=216, porque el factor de escala es 1/2 y (1/2)³=1/8)."
+          "retroalimentacion": "12³=1728 cm³ y 6³=216 cm³ (1728÷8=216, porque el factor de escala es 1/2 y (1/2)³=1/8).",
+          "pistas": [
+            "Cuando el lado de un cubo se multiplica por un factor k, el volumen se multiplica por k³, igual que razonamos con el tinaco que duplicó su lado (factor 2³=8).",
+            "12³=1728; si la arista se reduce a la mitad (6 cm), 6³=216, que es 1728÷8."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -65,7 +73,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Un tinaco con volumen V=1029 cm³ y altura h=21 cm tiene un lado de base x=7 cm.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "x² = 1029÷21 = 49; x = √49 = 7 cm."
+          "retroalimentacion": "x² = 1029÷21 = 49; x = √49 = 7 cm.",
+          "pistas": [
+            "Despeja x² dividiendo el volumen entre la altura y saca la raíz cuadrada, el mismo procedimiento que usamos para encontrar x=17 en el tinaco de 1,445 cm³.",
+            "x²=1029÷21=49→x=7."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -123,7 +135,25 @@
           ],
           "retroalimentacion": "x=15,h=8: V=225×8=1800. Cubo arista14: 14³=2744. x=9,h=15: V=81×15=1215."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Otro cliente de la ferretería de Irapuato tiene un tinaco con volumen V=1,445 cm³ y altura h=5 cm, y quiere saber cuánto mide el lado y cuánto cambiaría el volumen si se duplica el lado (misma altura).",
+        "pasos": [
+          {
+            "texto": "Despejamos x² dividiendo el volumen entre la altura.",
+            "operacion": "x²=1445÷5=289"
+          },
+          {
+            "texto": "Sacamos la raíz cuadrada.",
+            "operacion": "x=√289=17"
+          },
+          {
+            "texto": "Calculamos el nuevo volumen si el lado se duplica.",
+            "operacion": "V'=34²×5=1156×5=5780"
+          }
+        ],
+        "respuestaFinal": "El lado original mide 17 cm; si se duplica, el nuevo volumen es 5,780 cm³, es decir 4 veces el original (1,445×4=5,780)."
+      }
     }
   ],
   "practicaExtra": [

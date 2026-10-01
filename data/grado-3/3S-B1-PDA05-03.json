@@ -41,7 +41,11 @@
           "tipo": "llenar_frase",
           "frase": "En un triángulo rectángulo con hipotenusa de 10 cm y un ángulo agudo de 30°, el cateto adyacente a ese ángulo mide ___ cm.",
           "respuestaCorrecta": "8.7",
-          "retroalimentacion": "adyacente = cos(30°)×hipotenusa = 0.87×10 = 8.7 cm."
+          "retroalimentacion": "adyacente = cos(30°)×hipotenusa = 0.87×10 = 8.7 cm.",
+          "pistas": [
+            "Multiplica la hipotenusa por el coseno del ángulo para encontrar el cateto adyacente, igual que hicimos para la rampa del segundo skatepark de Querétaro (sen(60°)×14≈12.2).",
+            "adyacente = cos(30°)×hipotenusa = 0.87×10 = 8.7 cm."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -65,7 +69,11 @@
           "tipo": "llenar_frase",
           "frase": "En un triángulo rectángulo con hipotenusa de 8 cm y un ángulo agudo de 60°, el cateto opuesto a ese ángulo mide ___ cm.",
           "respuestaCorrecta": "7.0",
-          "retroalimentacion": "opuesto = sen(60°)×8 = 0.87×8 = 7.0 cm (redondeado)."
+          "retroalimentacion": "opuesto = sen(60°)×8 = 0.87×8 = 7.0 cm (redondeado).",
+          "pistas": [
+            "Multiplica la hipotenusa por el seno del ángulo para encontrar el cateto opuesto, el mismo procedimiento que usamos para la segunda rampa del skatepark.",
+            "opuesto = sen(60°)×8 = 0.87×8 = 7.0 cm (redondeado)."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -89,7 +97,11 @@
           "tipo": "llenar_frase",
           "frase": "Un cateto opuesto a un ángulo de 45° mide 7.1 cm. La hipotenusa de ese triángulo rectángulo mide ___ cm.",
           "respuestaCorrecta": "10.0",
-          "retroalimentacion": "hipotenusa = opuesto/sen(45°) = 7.1/0.71 = 10.0 cm."
+          "retroalimentacion": "hipotenusa = opuesto/sen(45°) = 7.1/0.71 = 10.0 cm.",
+          "pistas": [
+            "Divide el cateto opuesto entre el seno del ángulo para encontrar la hipotenusa, lo contrario de lo que hicimos para la segunda rampa del skatepark.",
+            "hipotenusa = opuesto/sen(45°) = 7.1/0.71 = 10.0 cm."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -118,7 +130,21 @@
           "retroalimentacion": "16×sen30°=16×0.50=8.0 cm. 6×sen45°=6×0.71=4.3 cm. 9×sen60°=9×0.87=7.8 cm."
         }
       ],
-      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado"
+      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado",
+      "ejemploResuelto": {
+        "enunciado": "En otro skatepark de Querétaro, una rampa forma un ángulo de 60° con el suelo y mide 14 metros de largo (hipotenusa).",
+        "pasos": [
+          {
+            "texto": "Identificamos que buscamos el cateto opuesto conociendo la hipotenusa y el ángulo.",
+            "operacion": "opuesto=sen(60°)×hipotenusa"
+          },
+          {
+            "texto": "Sustituimos los valores.",
+            "operacion": "opuesto=0.87×14=12.18"
+          }
+        ],
+        "respuestaFinal": "La rampa alcanza una altura de aproximadamente 12.2 metros."
+      }
     }
   ],
   "practicaExtra": [

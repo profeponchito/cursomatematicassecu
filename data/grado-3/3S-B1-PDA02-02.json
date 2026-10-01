@@ -34,7 +34,11 @@
           "tipo": "llenar_frase",
           "frase": "Si el volumen de un prisma es V=x²h, con V=576 y h=9, entonces x² = ___.",
           "respuestaCorrecta": "64",
-          "retroalimentacion": "x² = V/h = 576/9 = 64."
+          "retroalimentacion": "x² = V/h = 576/9 = 64.",
+          "pistas": [
+            "Despeja x² dividiendo el volumen entre la altura, igual que hicimos para el segundo molde de la fábrica de Guanajuato (648÷8=81).",
+            "576÷9=64."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -52,7 +56,11 @@
           "tipo": "llenar_frase",
           "frase": "Si el volumen de un prisma es V=x²h, con V=448 y h=7, entonces x² = ___.",
           "respuestaCorrecta": "64",
-          "retroalimentacion": "x² = V/h = 448/7 = 64."
+          "retroalimentacion": "x² = V/h = 448/7 = 64.",
+          "pistas": [
+            "Divide el volumen entre la altura para encontrar x², el mismo procedimiento que usamos para el segundo molde de Guanajuato.",
+            "448÷7=64."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -70,7 +78,11 @@
             "42"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "x² = V/h = 252/7 = 36."
+          "retroalimentacion": "x² = V/h = 252/7 = 36.",
+          "pistas": [
+            "Recuerda que x² se obtiene dividiendo el volumen entre la altura, igual que en el segundo molde de la fábrica de Guanajuato.",
+            "252÷7=36."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -105,7 +117,21 @@
           "retroalimentacion": "V=180,h=5: x²=36. V=245,h=5: x²=49. V=128,h=2: x²=64."
         }
       ],
-      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio"
+      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio",
+      "ejemploResuelto": {
+        "enunciado": "La misma fábrica de dulces de Guanajuato tiene otro molde con volumen V=648 cm³ y altura h=8 cm, y necesita despejar x².",
+        "pasos": [
+          {
+            "texto": "Despejamos x² dividiendo el volumen entre la altura.",
+            "operacion": "x²=V÷h"
+          },
+          {
+            "texto": "Sustituimos los valores.",
+            "operacion": "x²=648÷8=81"
+          }
+        ],
+        "respuestaFinal": "x²=81 cm² (por lo tanto x=9 cm)."
+      }
     }
   ],
   "practicaExtra": [

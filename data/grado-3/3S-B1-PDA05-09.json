@@ -47,7 +47,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Un edificio mide 22 m de altura. Un dron está a 17 m de distancia horizontal de la base del edificio, volando a la misma altura que la azotea; entonces la distancia en línea recta entre el dron y la base del edificio es de aproximadamente 27.8 m.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "distancia=√(22²+17²)=√(484+289)=√773≈27.8 m."
+          "retroalimentacion": "distancia=√(22²+17²)=√(484+289)=√773≈27.8 m.",
+          "pistas": [
+            "Aplica el Teorema de Pitágoras cuando tengas dos catetos directos, igual que en el cálculo de la altura total del edificio vecino de Mateo (34.7 m combinando dos razones trigonométricas).",
+            "distancia=√(22²+17²)=√(484+289)=√773≈27.8 m."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -65,7 +69,11 @@
           "tipo": "llenar_frase",
           "frase": "Desde la ventana de un edificio ves la azotea de un edificio vecino más alto con un ángulo de elevación de 30°, y ves la base de ese mismo edificio con un ángulo de depresión de 45°. La distancia horizontal entre los dos edificios es de 18 m. La altura total del edificio vecino es ___ m (1 decimal).",
           "respuestaCorrecta": "28.4",
-          "retroalimentacion": "altura hacia arriba=tan30°×18=10.44 m; altura hacia abajo=tan45°×18=18.0 m; total=10.44+18.0≈28.4 m."
+          "retroalimentacion": "altura hacia arriba=tan30°×18=10.44 m; altura hacia abajo=tan45°×18=18.0 m; total=10.44+18.0≈28.4 m.",
+          "pistas": [
+            "Suma la altura obtenida con el ángulo de elevación y la altura obtenida con el ángulo de depresión, igual que hicimos para el edificio vecino de Mateo (25.95+8.7≈34.7 m).",
+            "altura hacia arriba=tan30°×18=10.44 m; altura hacia abajo=tan45°×18=18.0 m; total=10.44+18.0≈28.4 m."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -89,7 +97,11 @@
           "tipo": "llenar_frase",
           "frase": "Desde la azotea de un edificio ves la punta de una torre vecina con un ángulo de elevación de 30°, y ves la base de esa misma torre con un ángulo de depresión de 45°. La distancia horizontal entre el edificio y la torre es de 12 m. La altura total de la torre es ___ m (1 decimal).",
           "respuestaCorrecta": "19.0",
-          "retroalimentacion": "altura hacia arriba=tan30°×12=6.96 m; altura hacia abajo=tan45°×12=12.0 m; total=6.96+12.0≈19.0 m."
+          "retroalimentacion": "altura hacia arriba=tan30°×12=6.96 m; altura hacia abajo=tan45°×12=12.0 m; total=6.96+12.0≈19.0 m.",
+          "pistas": [
+            "Calcula por separado la altura de la parte de elevación y la de depresión, y súmalas, el mismo procedimiento que usamos para el edificio vecino de Mateo.",
+            "altura hacia arriba=tan30°×12=6.96 m; altura hacia abajo=tan45°×12=12.0 m; total=6.96+12.0≈19.0 m."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -117,7 +129,25 @@
           ],
           "retroalimentacion": "Dron≈14.8 m. Excursionista≈22.3 m. Edificio vecino≈28.4 m."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Mateo también observa, desde otro departamento, la punta de un edificio vecino con un ángulo de elevación de 60° y la base del mismo edificio con un ángulo de depresión de 30°, estando a 15 metros de distancia horizontal.",
+        "pasos": [
+          {
+            "texto": "Calculamos la altura hacia arriba (parte de elevación).",
+            "operacion": "tan(60°)×15=1.73×15=25.95"
+          },
+          {
+            "texto": "Calculamos la altura hacia abajo (parte de depresión).",
+            "operacion": "tan(30°)×15=0.58×15=8.7"
+          },
+          {
+            "texto": "Sumamos ambas alturas.",
+            "operacion": "25.95+8.7=34.65"
+          }
+        ],
+        "respuestaFinal": "La altura total del edificio vecino es aproximadamente 34.7 metros."
+      }
     }
   ],
   "practicaExtra": [

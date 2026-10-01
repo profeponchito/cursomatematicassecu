@@ -42,7 +42,11 @@
             "$72"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "y = 9×8+15 = 72+15 = $87."
+          "retroalimentacion": "y = 9×8+15 = 72+15 = $87.",
+          "pistas": [
+            "Sustituye los valores de x, k y b en y=k×x+b, igual que hicimos con la segunda compañía de internet de Mérida (y=6×12+35=107).",
+            "y = 9×8+15 = 72+15 = $87."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -72,7 +76,11 @@
           "tipo": "llenar_frase",
           "frase": "Una tienda de renta de bicicletas cobra $50 fijos más $25 por hora. El costo de rentar 3 horas es $___.",
           "respuestaCorrecta": "125",
-          "retroalimentacion": "y = 25×3+50 = 75+50 = $125."
+          "retroalimentacion": "y = 25×3+50 = 75+50 = $125.",
+          "pistas": [
+            "Multiplica k por x y suma el cargo fijo b, el mismo procedimiento que usamos con la segunda compañía de internet de Mérida.",
+            "y = 25×3+50 = 75+50 = $125."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -109,7 +117,11 @@
             "6"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "x = (320-80)÷60 = 240÷60 = 4 horas."
+          "retroalimentacion": "x = (320-80)÷60 = 240÷60 = 4 horas.",
+          "pistas": [
+            "Resta el cargo fijo del total y divide entre k para despejar x, lo contrario de lo que hicimos al calcular el pago de 12 GB en la segunda compañía de internet.",
+            "x = (320-80)÷60 = 240÷60 = 4 horas."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -117,7 +129,21 @@
           "respuestaCorrecta": "167",
           "retroalimentacion": "y = 11×12+35 = 132+35 = $167."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Otra compañía de internet en Mérida cobra $35 fijos de instalación más $6 por cada gigabyte consumido. ¿Cuánto pagaría un cliente que consume 12 GB?",
+        "pasos": [
+          {
+            "texto": "Identificamos k (costo variable) y b (cargo fijo).",
+            "operacion": "k=6, b=35"
+          },
+          {
+            "texto": "Sustituimos en la ecuación y=k×x+b.",
+            "operacion": "y=6×12+35=72+35=107"
+          }
+        ],
+        "respuestaFinal": "El cliente pagaría $107."
+      }
     }
   ],
   "practicaExtra": [

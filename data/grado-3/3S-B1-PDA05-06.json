@@ -42,7 +42,11 @@
           "tipo": "llenar_frase",
           "frase": "Un techo tiene una inclinación de 35° y su base horizontal (adyacente) mide 6 m. Usando tan(35°)≈0.70, la altura del techo en su punto más alto es ___ m.",
           "respuestaCorrecta": "4.2",
-          "retroalimentacion": "altura = tan(35°)×6 = 0.70×6 = 4.2 m."
+          "retroalimentacion": "altura = tan(35°)×6 = 0.70×6 = 4.2 m.",
+          "pistas": [
+            "Multiplica la hipotenusa (o el cateto conocido) por el valor de la tabla correspondiente al ángulo, igual que hicimos con la rampa de acceso del arquitecto (sen(50°)×9≈6.9 m).",
+            "altura = tan(35°)×6 = 0.70×6 = 4.2 m."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -66,7 +70,11 @@
           "tipo": "llenar_frase",
           "frase": "Una tirolesa desciende con un ángulo de 20° respecto a la horizontal; el punto de llegada está a 30 m de distancia horizontal del punto de partida. Usando tan(20°)≈0.36, la altura del descenso es ___ m.",
           "respuestaCorrecta": "10.8",
-          "retroalimentacion": "altura = tan(20°)×30 = 0.36×30 = 10.8 m."
+          "retroalimentacion": "altura = tan(20°)×30 = 0.36×30 = 10.8 m.",
+          "pistas": [
+            "Usa el valor de la tabla para el ángulo dado y multiplica, el mismo procedimiento que usamos con la rampa de acceso del arquitecto de Puebla.",
+            "altura = tan(20°)×30 = 0.36×30 = 10.8 m."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -90,7 +98,11 @@
           "tipo": "llenar_frase",
           "frase": "Una antena está sujeta por un cable que forma un ángulo de 50° con el suelo; el cable mide 15 m. Usando cos(50°)≈0.64, la distancia del punto de anclaje del cable a la base de la antena es ___ m.",
           "respuestaCorrecta": "9.6",
-          "retroalimentacion": "distancia = cos(50°)×15 = 0.64×15 = 9.6 m."
+          "retroalimentacion": "distancia = cos(50°)×15 = 0.64×15 = 9.6 m.",
+          "pistas": [
+            "Multiplica el valor correspondiente de la tabla por la medida conocida, igual que hicimos para la rampa de acceso del arquitecto de Puebla.",
+            "distancia = cos(50°)×15 = 0.64×15 = 9.6 m."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -118,7 +130,21 @@
           ],
           "retroalimentacion": "Rampa: 0.34×8=2.7 m. Techo: 0.70×6=4.2 m. Tobogán: 6/0.94≈6.4 m."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El mismo arquitecto de Puebla también calcula una rampa de acceso con una inclinación de 50° y una longitud de 9 metros (hipotenusa).",
+        "pasos": [
+          {
+            "texto": "Identificamos que buscamos la altura (cateto opuesto) conociendo la hipotenusa y el ángulo.",
+            "operacion": "altura=sen(50°)×hipotenusa"
+          },
+          {
+            "texto": "Sustituimos usando sen(50°)≈0.77.",
+            "operacion": "altura=0.77×9=6.93"
+          }
+        ],
+        "respuestaFinal": "La rampa alcanza una altura aproximada de 6.9 metros."
+      }
     }
   ],
   "practicaExtra": [

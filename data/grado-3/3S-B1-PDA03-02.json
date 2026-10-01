@@ -34,7 +34,11 @@
           "tipo": "llenar_frase",
           "frase": "Factoriza y resuelve: x² + 10x + 16 = 0. La solución menor es x = ___.",
           "respuestaCorrecta": "-8",
-          "retroalimentacion": "Las soluciones son x=-8 y x=-2."
+          "retroalimentacion": "Las soluciones son x=-8 y x=-2.",
+          "pistas": [
+            "Aplica la fórmula general x=(−B±√(B²−4AC))/2A, igual que hicimos para la segunda parcela del agrónomo (2x²−11x+5=0 → x=5 o x=0.5).",
+            "Las soluciones son x=-8 y x=-2."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -64,7 +68,11 @@
             "x=15, x=-1"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "x=(-2±√(4+60))/2=(-2±8)/2 → x=3 o x=-5."
+          "retroalimentacion": "x=(-2±√(4+60))/2=(-2±8)/2 → x=3 o x=-5.",
+          "pistas": [
+            "Sigue los mismos pasos que usamos para la segunda parcela: identificar A, B, C, calcular el discriminante y aplicar la fórmula general.",
+            "x=(-2±√(4+60))/2=(-2±8)/2 → x=3 o x=-5."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -76,7 +84,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Usando la fórmula general, las soluciones de x² - 4x - 12 = 0 son x=6 y x=-2.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "x=(4±√(16+48))/2=(4±8)/2 → x=6 o x=-2."
+          "retroalimentacion": "x=(4±√(16+48))/2=(4±8)/2 → x=6 o x=-2.",
+          "pistas": [
+            "Calcula el discriminante y aplica la fórmula general, el mismo procedimiento que usamos para la segunda parcela del agrónomo de Sinaloa.",
+            "x=(4±√(16+48))/2=(4±8)/2 → x=6 o x=-2."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -105,7 +117,25 @@
           "retroalimentacion": "x²+6x+5=0 → x=-1,-5 (menor -5); x²-5x-14=0 → x=7,-2 (menor -2); x²+x-30=0 → x=5,-6 (menor -6)."
         }
       ],
-      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio"
+      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio",
+      "ejemploResuelto": {
+        "enunciado": "El mismo agrónomo de Sinaloa también modela la ganancia de otra parcela con la ecuación 2x²−11x+5=0, y tampoco logra factorizarla fácilmente.",
+        "pasos": [
+          {
+            "texto": "Identificamos A, B y C.",
+            "operacion": "A=2, B=-11, C=5"
+          },
+          {
+            "texto": "Calculamos el discriminante.",
+            "operacion": "Δ=(-11)²-4(2)(5)=121-40=81"
+          },
+          {
+            "texto": "Aplicamos la fórmula general.",
+            "operacion": "x=(11±√81)/4=(11±9)/4 → x=5 o x=0.5"
+          }
+        ],
+        "respuestaFinal": "Las soluciones son x=5 y x=0.5."
+      }
     }
   ],
   "practicaExtra": [

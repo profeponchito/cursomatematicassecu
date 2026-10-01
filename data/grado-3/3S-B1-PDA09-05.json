@@ -36,7 +36,11 @@
             "90 socios"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "63 ÷ 90 = 0.7 (70%). Estimación: 0.7 × 1,350 = 945 socios."
+          "retroalimentacion": "63 ÷ 90 = 0.7 (70%). Estimación: 0.7 × 1,350 = 945 socios.",
+          "pistas": [
+            "Divide la frecuencia de la muestra entre el tamaño de la muestra, y multiplica por el tamaño de la población, igual que hicimos para estimar cuántos alumnos traen lonchera en la secundaria de Tuxtla Gutiérrez.",
+            "63 ÷ 90 = 0.7 (70%). Estimación: 0.7 × 1,350 = 945 socios."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -60,7 +64,11 @@
             "736 pacientes"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "46 ÷ 200 = 0.23 (23%). Estimación: 0.23 × 1,600 = 368 pacientes."
+          "retroalimentacion": "46 ÷ 200 = 0.23 (23%). Estimación: 0.23 × 1,600 = 368 pacientes.",
+          "pistas": [
+            "Aplica la fórmula (frecuencia ÷ muestra) × población, el mismo procedimiento que usamos con la encuesta de la lonchera en Tuxtla Gutiérrez.",
+            "46 ÷ 200 = 0.23 (23%). Estimación: 0.23 × 1,600 = 368 pacientes."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -122,9 +130,27 @@
             "9,000 clientes"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "315 ÷ 450 = 0.7 (70%). Estimación: 0.7 × 18,000 = 12,600 clientes."
+          "retroalimentacion": "315 ÷ 450 = 0.7 (70%). Estimación: 0.7 × 18,000 = 12,600 clientes.",
+          "pistas": [
+            "Calcula primero la proporción en la muestra y multiplícala por el tamaño total de la población, igual que hicimos para estimar a los alumnos con lonchera en la secundaria de Tuxtla Gutiérrez.",
+            "315 ÷ 450 = 0.7 (70%). Estimación: 0.7 × 18,000 = 12,600 clientes."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El mismo director de la secundaria de Tuxtla Gutiérrez, con 1,200 alumnos en total, toma otra muestra de 150 alumnos y encuentra que 120 traen lonchera en vez de comprar en la cooperativa.",
+        "pasos": [
+          {
+            "texto": "Calculamos la proporción en la muestra.",
+            "operacion": "120÷150=0.8"
+          },
+          {
+            "texto": "Multiplicamos la proporción por el tamaño total de la población.",
+            "operacion": "0.8×1200=960"
+          }
+        ],
+        "respuestaFinal": "Se estima que 960 de los 1,200 alumnos de toda la escuela traen lonchera en vez de comprar en la cooperativa."
+      }
     }
   ],
   "practicaExtra": [

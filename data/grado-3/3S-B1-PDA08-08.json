@@ -48,7 +48,11 @@
           "tipo": "llenar_frase",
           "frase": "Un cilindro de metal tiene radio de 2 cm, altura de 7 cm (usa π≈3.14) y una masa de 351.68 g. Su densidad es de ___ g/cm³.",
           "respuestaCorrecta": "4",
-          "retroalimentacion": "V = π×r²×h = 3.14×4×7 = 87.92 cm³. d = 351.68/87.92 = 4 g/cm³."
+          "retroalimentacion": "V = π×r²×h = 3.14×4×7 = 87.92 cm³. d = 351.68/87.92 = 4 g/cm³.",
+          "pistas": [
+            "Calcula primero el volumen del cilindro con V=π×r²×h, y después divide la masa entre ese volumen, igual que hicimos con el cilindro metálico de Ximena (125.6 cm³ → 7.87 g/cm³).",
+            "V = π×r²×h = 3.14×4×7 = 87.92 cm³. d = 351.68/87.92 = 4 g/cm³."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -72,7 +76,11 @@
           "tipo": "llenar_frase",
           "frase": "Una caja rectangular de metal mide 10 cm de largo, 6 cm de ancho y 5 cm de alto, y su masa es de 2 106 g. Su densidad es de ___ g/cm³.",
           "respuestaCorrecta": "7.02",
-          "retroalimentacion": "V = 10×6×5 = 300 cm³. d = 2106/300 = 7.02 g/cm³."
+          "retroalimentacion": "V = 10×6×5 = 300 cm³. d = 2106/300 = 7.02 g/cm³.",
+          "pistas": [
+            "Calcula el volumen del bloque multiplicando sus tres dimensiones, y después divide la masa entre ese volumen, el mismo tipo de procedimiento que usamos con el cilindro de Ximena.",
+            "V = 10×6×5 = 300 cm³. d = 2106/300 = 7.02 g/cm³."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -84,7 +92,11 @@
             "8.1 g/cm³"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "V = 3.14×9×10 = 282.6 cm³. d = 2034.72/282.6 = 7.2 g/cm³."
+          "retroalimentacion": "V = 3.14×9×10 = 282.6 cm³. d = 2034.72/282.6 = 7.2 g/cm³.",
+          "pistas": [
+            "Calcula el volumen del cilindro con V=π×r²×h antes de dividir la masa entre el volumen, igual que hicimos con el cilindro metálico de química de Ximena.",
+            "V = 3.14×9×10 = 282.6 cm³. d = 2034.72/282.6 = 7.2 g/cm³."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -124,7 +136,21 @@
           "respuestaCorrecta": 0,
           "retroalimentacion": "d = (222.5+169.5)/(25+15) = 392/40 = 9.8 g/cm³."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "A Ximena le dan un cilindro metálico sólido de 2 cm de radio y 10 cm de altura, que marca 988 gramos en la báscula.",
+        "pasos": [
+          {
+            "texto": "Calculamos el volumen del cilindro.",
+            "operacion": "V=3.14×2²×10=3.14×4×10=125.6"
+          },
+          {
+            "texto": "Calculamos la densidad.",
+            "operacion": "d=988÷125.6≈7.87"
+          }
+        ],
+        "respuestaFinal": "La densidad del cilindro es aproximadamente 7.87 g/cm³, muy cercana a la del hierro (7.9 g/cm³)."
+      }
     }
   ],
   "practicaExtra": [

@@ -48,7 +48,11 @@
           "tipo": "llenar_frase",
           "frase": "Cubrir con lona la superficie de una esfera de radio 8.5 m cuesta $___ si la lona cuesta $35 por m² (usa π≈3.14).",
           "respuestaCorrecta": "31761.10",
-          "retroalimentacion": "A=4×3.14×8.5²=907.46 m². Costo=907.46×35=$31,761.10."
+          "retroalimentacion": "A=4×3.14×8.5²=907.46 m². Costo=907.46×35=$31,761.10.",
+          "pistas": [
+            "Calcula el área con A=4×π×r² y multiplica por el precio por m², igual que hicimos para pintar la maqueta de Saturno (50.24×70=3516.80).",
+            "A=4×3.14×8.5²=907.46 m². Costo=907.46×35=$31,761.10."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -66,7 +70,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Si el precio de la pintura baja de $60 a $50 por m² para pintar una esfera de radio 4.5 m, la empresa ahorra $2,543.40 en total.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: A=254.34 m². Ahorro=254.34×(60-50)=254.34×10=$2,543.40."
+          "retroalimentacion": "Correcto: A=254.34 m². Ahorro=254.34×(60-50)=254.34×10=$2,543.40.",
+          "pistas": [
+            "Multiplica el área por la diferencia de precio para encontrar el ahorro, el mismo tipo de cálculo que usamos para cotizar la maqueta de Saturno.",
+            "A=254.34 m². Ahorro=254.34×(60-50)=254.34×10=$2,543.40."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -84,7 +92,11 @@
             "$93,019.36"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "A=4×3.14×11.5²=1661.06 m². Costo=1661.06×28=$46,509.68."
+          "retroalimentacion": "A=4×3.14×11.5²=1661.06 m². Costo=1661.06×28=$46,509.68.",
+          "pistas": [
+            "Calcula el área con A=4×π×r² y multiplica por el precio por m², igual que calculamos el costo de pintura de la maqueta de Saturno.",
+            "A=4×3.14×11.5²=1661.06 m². Costo=1661.06×28=$46,509.68."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -124,7 +136,29 @@
           "respuestaCorrecta": 0,
           "retroalimentacion": "Pintura: A=1384.74 m²×22=$30,464.28. Agua: V=4846.59 m³×7=$33,926.13. Total=$30,464.28+$33,926.13=$64,390.41."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El mismo club de astronomía de Querétaro también cotiza una maqueta esférica de Saturno de 2 m de radio, para pintarla por fuera (a $70 el m²) y rellenarla de aserrín (a $15 el m³).",
+        "pasos": [
+          {
+            "texto": "Calculamos el área para la pintura.",
+            "operacion": "A=4×3.14×2²=50.24"
+          },
+          {
+            "texto": "Calculamos el costo de pintar.",
+            "operacion": "50.24×70=3516.80"
+          },
+          {
+            "texto": "Calculamos el volumen para el aserrín.",
+            "operacion": "V=(4/3)×3.14×2³=33.49"
+          },
+          {
+            "texto": "Calculamos el costo del aserrín y sumamos.",
+            "operacion": "33.49×15=502.35; total=3516.80+502.35=4019.15"
+          }
+        ],
+        "respuestaFinal": "La maqueta de Saturno costará $4,019.15 en total (pintura más aserrín)."
+      }
     }
   ],
   "practicaExtra": [

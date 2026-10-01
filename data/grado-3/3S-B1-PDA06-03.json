@@ -48,7 +48,11 @@
           "tipo": "llenar_frase",
           "frase": "El volumen de un prisma rectangular de 9×3×4 cm es ___ cm³.",
           "respuestaCorrecta": "108",
-          "retroalimentacion": "V = (9×3)×4 = 27×4 = 108 cm³."
+          "retroalimentacion": "V = (9×3)×4 = 27×4 = 108 cm³.",
+          "pistas": [
+            "Multiplica el área de la base por la altura para obtener el volumen del prisma, igual que hicimos con la maqueta del museo de Querétaro.",
+            "V = (9×3)×4 = 27×4 = 108 cm³."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -72,7 +76,11 @@
           "tipo": "llenar_frase",
           "frase": "El volumen de una pirámide de base rectangular de 6×3 cm y altura 4 cm es ___ cm³.",
           "respuestaCorrecta": "24",
-          "retroalimentacion": "Área de la base = 6×3 = 18 cm². V = (1/3)×18×4 = (1/3)×72 = 24 cm³."
+          "retroalimentacion": "Área de la base = 6×3 = 18 cm². V = (1/3)×18×4 = (1/3)×72 = 24 cm³.",
+          "pistas": [
+            "Para la pirámide, multiplica el área de la base por la altura y divide entre 3, el mismo procedimiento que usamos con la maqueta del museo de Querétaro.",
+            "Área de la base = 6×3 = 18 cm². V = (1/3)×18×4 = (1/3)×72 = 24 cm³."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -110,7 +118,11 @@
             2,
             0
           ],
-          "retroalimentacion": "Prisma: V=(7×4)×5=140 cm³. Pirámide: V=(1/3)×(3×3)×9=(1/3)×81=27 cm³. Cilindro: V=3.14×2²×5=62.8 cm³."
+          "retroalimentacion": "Prisma: V=(7×4)×5=140 cm³. Pirámide: V=(1/3)×(3×3)×9=(1/3)×81=27 cm³. Cilindro: V=3.14×2²×5=62.8 cm³.",
+          "pistas": [
+            "Usa la fórmula correspondiente según el cuerpo (prisma, pirámide o cilindro), igual que comparamos los volúmenes de la maqueta del museo de Querétaro.",
+            "Prisma: V=(7×4)×5=140 cm³. Pirámide: V=(1/3)×(3×3)×9=(1/3)×81=27 cm³. Cilindro: V=3.14×2²×5=62.8 cm³."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -125,7 +137,25 @@
           "retroalimentacion": "V = 3.14×7²×2 = 3.14×49×2 = 307.72 cm³."
         }
       ],
-      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado"
+      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado",
+      "ejemploResuelto": {
+        "enunciado": "En la misma maqueta del museo de Querétaro, el prisma tiene base cuadrada de lado 7 cm y altura 9 cm, con una pirámide de la misma base y altura.",
+        "pasos": [
+          {
+            "texto": "Calculamos el volumen del prisma.",
+            "operacion": "V_prisma=(7×7)×9=49×9=441"
+          },
+          {
+            "texto": "Calculamos el volumen de la pirámide.",
+            "operacion": "V_pirámide=(1/3)×49×9=(1/3)×441=147"
+          },
+          {
+            "texto": "Comparamos dividiendo.",
+            "operacion": "441÷147=3"
+          }
+        ],
+        "respuestaFinal": "El volumen de la pirámide cabe exactamente 3 veces dentro del volumen del prisma."
+      }
     }
   ],
   "practicaExtra": [

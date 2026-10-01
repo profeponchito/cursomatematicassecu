@@ -36,7 +36,11 @@
             "12 cm"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "x² = 968÷8 = 121; x = √121 = 11 cm."
+          "retroalimentacion": "x² = 968÷8 = 121; x = √121 = 11 cm.",
+          "pistas": [
+            "Primero divide el volumen entre la altura para obtener x², y después saca la raíz cuadrada, igual que hicimos para el tinaco de la cocina (1058÷2=529, √529=23).",
+            "968÷8=121, y √121=11."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -66,7 +70,11 @@
             "16 cm"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "x² = 392÷2 = 196; x = √196 = 14 cm."
+          "retroalimentacion": "x² = 392÷2 = 196; x = √196 = 14 cm.",
+          "pistas": [
+            "Sigue los dos mismos pasos que usamos para el tinaco de la cocina: dividir y luego sacar raíz cuadrada.",
+            "392÷2=196, y √196=14."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -84,7 +92,11 @@
             "17 cm"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "x² = 768÷3 = 256; x = √256 = 16 cm."
+          "retroalimentacion": "x² = 768÷3 = 256; x = √256 = 16 cm.",
+          "pistas": [
+            "Divide el volumen entre la altura y saca la raíz cuadrada del resultado, el mismo procedimiento que usamos para el tinaco de la cocina.",
+            "768÷3=256, y √256=16."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -118,7 +130,21 @@
           ],
           "retroalimentacion": "V=972,h=12: x²=81→x=9. V=1620,h=5: x²=324→x=18. V=882,h=2: x²=441→x=21."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El mismo plomero también necesita calcular el lado del tinaco de la cocina, cuyo volumen es V=1,058 cm³ y su altura es h=2 cm.",
+        "pasos": [
+          {
+            "texto": "Despejamos x² dividiendo el volumen entre la altura.",
+            "operacion": "x²=1058÷2=529"
+          },
+          {
+            "texto": "Sacamos la raíz cuadrada para obtener x.",
+            "operacion": "x=√529=23"
+          }
+        ],
+        "respuestaFinal": "El lado de la base del tinaco de la cocina mide 23 cm."
+      }
     }
   ],
   "practicaExtra": [

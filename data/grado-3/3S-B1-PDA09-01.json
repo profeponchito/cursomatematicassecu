@@ -34,7 +34,11 @@
             "El laboratorio que hizo el estudio"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "La muestra es el subconjunto realmente estudiado: los 150 empleados elegidos al azar. Los 3,000 empleados son la población completa."
+          "retroalimentacion": "La muestra es el subconjunto realmente estudiado: los 150 empleados elegidos al azar. Los 3,000 empleados son la población completa.",
+          "pistas": [
+            "Identifica primero el conjunto completo de interés (población) y luego el subconjunto que realmente se estudia (muestra), igual que hicimos con la encuesta sobre el sueño en la secundaria de Chihuahua (población=900, muestra=45).",
+            "La muestra es el subconjunto que efectivamente se analiza: los 150 empleados elegidos al azar."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -52,7 +56,11 @@
           "tipo": "llenar_frase",
           "frase": "Si un estudio busca conocer la opinión de los 40,000 habitantes de un municipio y para ello entrevista a 500 de ellos elegidos al azar, el conjunto de los 40,000 habitantes se llama ___.",
           "respuestaCorrecta": "población",
-          "retroalimentacion": "El conjunto completo de todos los elementos que interesa estudiar se llama población; los 500 entrevistados son la muestra."
+          "retroalimentacion": "El conjunto completo de todos los elementos que interesa estudiar se llama población; los 500 entrevistados son la muestra.",
+          "pistas": [
+            "Recuerda que el conjunto completo que interesa estudiar es la población, y el subconjunto que realmente se consulta es la muestra, igual que en el ejemplo de la secundaria de Chihuahua (población=900 alumnos, muestra=45 encuestados).",
+            "Los 500 entrevistados corresponden a la muestra; el término que falta es población."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -102,7 +110,11 @@
             "El padrón municipal como documento"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "La población es el conjunto completo de interés: los 60,000 habitantes del municipio. Las 400 personas entrevistadas son la muestra."
+          "retroalimentacion": "La población es el conjunto completo de interés: los 60,000 habitantes del municipio. Las 400 personas entrevistadas son la muestra.",
+          "pistas": [
+            "La población es siempre el conjunto completo de interés, no el subconjunto reducido que se entrevista, igual que identificamos a los 900 alumnos como población en el ejemplo de la secundaria de Chihuahua.",
+            "Población = 60,000 habitantes del municipio; muestra = 400 personas entrevistadas."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -117,7 +129,22 @@
           "retroalimentacion": "Esa igualdad de probabilidad es justo lo que hace que una muestra aleatoria tienda a representar bien a la población."
         }
       ],
-      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio"
+      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio",
+      "ejemploResuelto": {
+        "enunciado": "El mismo director de la secundaria de Chihuahua, ahora con 900 alumnos inscritos, quiere saber si los alumnos duermen lo suficiente. Pide que se encueste a 45 alumnos elegidos al azar de la lista completa de inscripción.",
+        "pasos": [
+          {
+            "texto": "Identificamos el conjunto completo de interés: los 900 alumnos inscritos en la secundaria."
+          },
+          {
+            "texto": "Identificamos el subconjunto que realmente se va a encuestar: los 45 alumnos elegidos al azar."
+          },
+          {
+            "texto": "Como cada alumno tiene la misma probabilidad de ser elegido, se trata de una muestra aleatoria."
+          }
+        ],
+        "respuestaFinal": "La población son los 900 alumnos inscritos; la muestra son los 45 alumnos elegidos al azar para la encuesta sobre el sueño."
+      }
     }
   ],
   "practicaExtra": [

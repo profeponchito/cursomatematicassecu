@@ -41,7 +41,11 @@
           "tipo": "llenar_frase",
           "frase": "Un poste de luz está sujeto por un cable tensor que llega al suelo a 21 m de la base; si el cable mide 29 m, la altura del poste es ___ m.",
           "respuestaCorrecta": "20",
-          "retroalimentacion": "altura² = 29²-21² = 841-441 = 400, entonces altura = √400 = 20 m."
+          "retroalimentacion": "altura² = 29²-21² = 841-441 = 400, entonces altura = √400 = 20 m.",
+          "pistas": [
+            "Aplica el Teorema de Pitágoras identificando cuál dato es la hipotenusa, igual que hicimos con el jardín de 9 m y 40 m de Saltillo (diagonal=41 m).",
+            "altura² = 29²-21² = 841-441 = 400, entonces altura = √400 = 20 m."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -65,7 +69,11 @@
           "tipo": "llenar_frase",
           "frase": "Un dron de reparto vuela en línea recta desde el punto de partida hasta el destino, cubriendo un desplazamiento horizontal de 45 m y una altura de 28 m. La distancia en línea recta que voló (hipotenusa) es ___ m.",
           "respuestaCorrecta": "53",
-          "retroalimentacion": "hipotenusa² = 45²+28² = 2025+784 = 2809, entonces hipotenusa = √2809 = 53 m."
+          "retroalimentacion": "hipotenusa² = 45²+28² = 2025+784 = 2809, entonces hipotenusa = √2809 = 53 m.",
+          "pistas": [
+            "Suma los cuadrados de los catetos y saca raíz cuadrada para encontrar la hipotenusa, el mismo procedimiento que usamos para la diagonal del jardín de Saltillo.",
+            "hipotenusa² = 45²+28² = 2025+784 = 2809, entonces hipotenusa = √2809 = 53 m."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -89,7 +97,11 @@
           "tipo": "llenar_frase",
           "frase": "Dos amigos parten del mismo punto; uno camina 33 m al norte y el otro 44 m al este. La distancia en línea recta entre ellos es ___ m.",
           "respuestaCorrecta": "55",
-          "retroalimentacion": "distancia² = 33²+44² = 1089+1936 = 3025, entonces distancia = √3025 = 55 m."
+          "retroalimentacion": "distancia² = 33²+44² = 1089+1936 = 3025, entonces distancia = √3025 = 55 m.",
+          "pistas": [
+            "Suma los cuadrados de los dos catetos y saca raíz cuadrada, igual que hicimos para calcular la diagonal del nuevo jardín de Saltillo.",
+            "distancia² = 33²+44² = 1089+1936 = 3025, entonces distancia = √3025 = 55 m."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -117,7 +129,25 @@
           ],
           "retroalimentacion": "Cable: √(29²-21²)=√400=20 m. Jardín: √(24²+18²)=√900=30 m. Dron: √(45²+28²)=√2809=53 m."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "En otro parque de Saltillo hay un jardín rectangular de 9 m de largo y 40 m de ancho, y la gente también corta camino por la diagonal.",
+        "pasos": [
+          {
+            "texto": "Calculamos la diagonal con el Teorema de Pitágoras.",
+            "operacion": "diagonal=√(9²+40²)=√(81+1600)=√1681=41"
+          },
+          {
+            "texto": "Calculamos la distancia bordeando los dos lados.",
+            "operacion": "9+40=49"
+          },
+          {
+            "texto": "Calculamos el ahorro restando.",
+            "operacion": "49-41=8"
+          }
+        ],
+        "respuestaFinal": "La diagonal mide 41 m, y una persona se ahorra 8 metros al cruzar por ahí en vez de bordear."
+      }
     }
   ],
   "practicaExtra": [

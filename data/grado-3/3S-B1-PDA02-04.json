@@ -33,7 +33,11 @@
             "298"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "V = 6²×8 = 288."
+          "retroalimentacion": "V = 6²×8 = 288.",
+          "pistas": [
+            "Aplica V=x²×h elevando el lado al cuadrado y multiplicando por la altura, igual que hicimos para el envase prisma del ingeniero de Toluca (10²×7=700).",
+            "6²=36, y 36×8=288."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -119,7 +123,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Una caja con x=7, h=4 tiene volumen V=x²h igual a 196.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "V = 7²×4 = 49×4 = 196."
+          "retroalimentacion": "V = 7²×4 = 49×4 = 196.",
+          "pistas": [
+            "Sigue el mismo procedimiento que usamos para el envase prisma de Toluca: elevar el lado al cuadrado y multiplicar por la altura.",
+            "7²=49, y 49×4=196."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -143,7 +151,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Un cubo con arista 7 cm tiene volumen 343 cm³.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "7³ = 343 cm³."
+          "retroalimentacion": "7³ = 343 cm³.",
+          "pistas": [
+            "El volumen de un cubo es la arista elevada al cubo, igual que calculamos para el envase cúbico del ingeniero de Toluca (6³=216).",
+            "7³=7×7×7=343."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -166,7 +178,21 @@
           "retroalimentacion": "x=3,h=8: V=9×8=72. x=8,h=3: V=64×3=192. x=5,h=9: V=25×9=225."
         }
       ],
-      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis"
+      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis",
+      "ejemploResuelto": {
+        "enunciado": "El mismo ingeniero de la embotelladora de Toluca también debe calcular el volumen de un envase con base cuadrada de lado x=10 cm y altura h=7 cm, y el volumen de un envase cúbico de arista 6 cm.",
+        "pasos": [
+          {
+            "texto": "Calculamos el volumen del envase prisma.",
+            "operacion": "V=10²×7=100×7=700"
+          },
+          {
+            "texto": "Calculamos el volumen del envase cúbico.",
+            "operacion": "V=6³=216"
+          }
+        ],
+        "respuestaFinal": "El envase prisma tiene 700 cm³ y el envase cúbico tiene 216 cm³."
+      }
     }
   ],
   "practicaExtra": [

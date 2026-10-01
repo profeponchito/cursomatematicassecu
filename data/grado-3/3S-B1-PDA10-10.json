@@ -30,7 +30,11 @@
           "tipo": "llenar_frase",
           "frase": "Escuela X registra las calificaciones (escala 5-10) de sus 50 alumnos: 5-6 (f=3), 6-7 (f=7), 7-8 (f=12), 8-9 (f=15), 9-10 (f=13). La media de estas calificaciones es ___.",
           "respuestaCorrecta": "8.06",
-          "retroalimentacion": "Marcas: 5.5,6.5,7.5,8.5,9.5. media=(3·5.5+7·6.5+12·7.5+15·8.5+13·9.5)/50=403/50=8.06."
+          "retroalimentacion": "Marcas: 5.5,6.5,7.5,8.5,9.5. media=(3·5.5+7·6.5+12·7.5+15·8.5+13·9.5)/50=403/50=8.06.",
+          "pistas": [
+            "Calcula la media multiplicando cada marca de clase por su frecuencia, sumando y dividiendo entre el total, igual que calculamos la media de sueldos sesgada por el gerente y el dueño en Guanajuato (13.87).",
+            "Marcas: 5.5,6.5,7.5,8.5,9.5. media=(3·5.5+7·6.5+12·7.5+15·8.5+13·9.5)/50=403/50=8.06."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -86,7 +90,11 @@
             "14.00"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Marcas: 6,10,14,18,22,42. media=(10·6+14·10+10·14+6·18+4·22+2·42)/46≈13.48."
+          "retroalimentacion": "Marcas: 6,10,14,18,22,42. media=(10·6+14·10+10·14+6·18+4·22+2·42)/46≈13.48.",
+          "pistas": [
+            "Calcula la media con las marcas de clase y sus frecuencias, el mismo procedimiento que usamos con los sueldos del otro departamento de la fábrica de dulces de Guanajuato.",
+            "Marcas: 6,10,14,18,22,42. media=(10·6+14·10+10·14+6·18+4·22+2·42)/46≈13.48."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -116,9 +124,31 @@
             "Ninguna medida sirve cuando los datos están agrupados en una tabla"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Correcto: ante valores atípicos (los sueldos de los gerentes), la mediana y la moda son más representativas del sueldo típico que la media, que se ve arrastrada por esos valores extremos."
+          "retroalimentacion": "Correcto: ante valores atípicos (los sueldos de los gerentes), la mediana y la moda son más representativas del sueldo típico que la media, que se ve arrastrada por esos valores extremos.",
+          "pistas": [
+            "Cuando hay valores atípicos muy altos que distorsionan la media, la mediana o la moda representan mejor el valor típico, igual que concluimos con los sueldos del gerente y el dueño en Guanajuato.",
+            "Correcto: ante valores atípicos (los sueldos de los gerentes), la mediana y la moda son más representativas del sueldo típico que la media, que se ve arrastrada por esos valores extremos."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "En la misma fábrica de dulces de Guanajuato, otro departamento con 30 trabajadores tiene sueldos por hora agrupados: 6-10 (f=8), 10-14 (f=12), 14-18 (f=6), 18-22 (f=2), 22-50 (f=2) —estos últimos 2 son del gerente y del dueño, mucho más altos que los demás—.",
+        "pasos": [
+          {
+            "texto": "Calculamos la media de estos sueldos agrupados.",
+            "operacion": "media=(8×8+12×12+6×16+2×20+2×36)÷30=416÷30≈13.87"
+          },
+          {
+            "texto": "Calculamos la mediana exacta.",
+            "operacion": "Me=10+[(15-8)/12]×4≈12.33"
+          },
+          {
+            "texto": "Calculamos la moda estimada.",
+            "operacion": "Mo=10+[(12-8)/((12-8)+(12-6))]×4=11.6"
+          }
+        ],
+        "respuestaFinal": "La media (13.87) es la mayor de las tres porque los 2 sueldos muy altos del gerente y el dueño la 'jalan' hacia arriba; la mediana (12.33) y la moda (11.6) son más representativas del sueldo típico de la mayoría de los trabajadores."
+      }
     }
   ],
   "practicaExtra": [

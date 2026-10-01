@@ -48,7 +48,11 @@
           "tipo": "llenar_frase",
           "frase": "Un objeto tiene masa de 45.2 g y volumen de 4 cm³. Su densidad es de ___ g/cm³, la cual corresponde a la densidad del plomo.",
           "respuestaCorrecta": "11.3",
-          "retroalimentacion": "d = 45.2/4 = 11.3 g/cm³, que es la densidad del plomo."
+          "retroalimentacion": "d = 45.2/4 = 11.3 g/cm³, que es la densidad del plomo.",
+          "pistas": [
+            "Divide la masa entre el volumen para obtener la densidad y compárala con la tabla de materiales, igual que hicimos para comprobar el anillo de Renata (38.6÷2=19.3, coincide con el oro).",
+            "d = 45.2/4 = 11.3 g/cm³, que es la densidad del plomo."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -72,7 +76,11 @@
           "tipo": "llenar_frase",
           "frase": "Una pieza de metal para reciclaje tiene masa de 142.2 g y volumen de 18 cm³. Su densidad es de ___ g/cm³ (usa un decimal), la cual corresponde a la del hierro.",
           "respuestaCorrecta": "7.9",
-          "retroalimentacion": "d = 142.2/18 = 7.9 g/cm³, que es la densidad del hierro."
+          "retroalimentacion": "d = 142.2/18 = 7.9 g/cm³, que es la densidad del hierro.",
+          "pistas": [
+            "Calcula la densidad con d=m/V y compara el resultado con la tabla de densidades conocidas, el mismo procedimiento que usamos para verificar el anillo de Renata.",
+            "d = 142.2/18 = 7.9 g/cm³, que es la densidad del hierro."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -122,9 +130,27 @@
             "0.03 cm³"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "V = m/d = 267/8.9 = 30 cm³."
+          "retroalimentacion": "V = m/d = 267/8.9 = 30 cm³.",
+          "pistas": [
+            "Despeja el volumen dividiendo la masa entre la densidad conocida, lo contrario de lo que hicimos para comprobar la densidad del anillo de Renata.",
+            "V = m/d = 267/8.9 = 30 cm³."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Renata sumerge el anillo de su tía en agua: desplaza 2 cm³ y pesa 38.6 gramos en la báscula de precisión.",
+        "pasos": [
+          {
+            "texto": "Calculamos la densidad del anillo.",
+            "operacion": "d=38.6÷2=19.3"
+          },
+          {
+            "texto": "Comparamos con la densidad del oro puro (19.3 g/cm³).",
+            "operacion": "19.3=19.3"
+          }
+        ],
+        "respuestaFinal": "La densidad del anillo (19.3 g/cm³) coincide exactamente con la del oro puro, así que sí es posible que el anillo sea de oro puro."
+      }
     }
   ],
   "practicaExtra": [

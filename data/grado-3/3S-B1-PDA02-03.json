@@ -46,7 +46,11 @@
             "125"
           ],
           "respuestaCorrecta": 3,
-          "retroalimentacion": "El volumen del cubo es la arista al cubo: 5³ = 125."
+          "retroalimentacion": "El volumen del cubo es la arista al cubo: 5³ = 125.",
+          "pistas": [
+            "El volumen de un cubo es la arista elevada al cubo, igual que calculamos para la nueva caja de Renata (7³=343).",
+            "5³=5×5×5=125."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -88,13 +92,21 @@
           "tipo": "verdadero_falso",
           "enunciado": "Un cubo con arista 8 cm tiene volumen 512 cm³.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "8³ = 512 cm³."
+          "retroalimentacion": "8³ = 512 cm³.",
+          "pistas": [
+            "Eleva la arista al cubo para obtener el volumen, el mismo procedimiento que usamos para la caja cúbica de Renata.",
+            "8³=8×8×8=512."
+          ]
         },
         {
           "tipo": "llenar_frase",
           "frase": "Un cubo tiene arista 9 cm. Su volumen es ___ cm³.",
           "respuestaCorrecta": "729",
-          "retroalimentacion": "9³ = 729 cm³."
+          "retroalimentacion": "9³ = 729 cm³.",
+          "pistas": [
+            "Recuerda que el volumen de un cubo es arista³, igual que con la caja cúbica de Renata (7³=343).",
+            "9³=9×9×9=729."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -135,7 +147,21 @@
           "retroalimentacion": "cubo arista6: 6³=216. x=2,h=9: V=4×9=36. x=8,h=2: V=64×2=128."
         }
       ],
-      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado"
+      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado",
+      "ejemploResuelto": {
+        "enunciado": "Renata, del bazar navideño en Querétaro, arma otra caja de regalo perfectamente cúbica con arista x=7 cm.",
+        "pasos": [
+          {
+            "texto": "Aplicamos la fórmula del volumen del cubo.",
+            "operacion": "V=x³"
+          },
+          {
+            "texto": "Sustituimos.",
+            "operacion": "V=7³=7×7×7=343"
+          }
+        ],
+        "respuestaFinal": "El volumen de la nueva caja cúbica es 343 cm³."
+      }
     }
   ],
   "practicaExtra": [

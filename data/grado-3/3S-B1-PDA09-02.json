@@ -34,7 +34,11 @@
             "El problema es que 900 alumnos es una población demasiado pequeña"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "La población objetivo son los 900 alumnos de todos los grados; encuestar solo a un grupo de 3° deja fuera a 1° y 2°, sesgando la muestra."
+          "retroalimentacion": "La población objetivo son los 900 alumnos de todos los grados; encuestar solo a un grupo de 3° deja fuera a 1° y 2°, sesgando la muestra.",
+          "pistas": [
+            "Revisa si la muestra incluye a todos los grados que forman la población objetivo, igual que corregimos la encuesta de Fernanda para que incluyera alumnos de todos los grados y no solo de teatro.",
+            "La población objetivo son los 900 alumnos de todos los grados; encuestar solo a un grupo de 3° deja fuera a 1° y 2°, sesgando la muestra."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -64,7 +68,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Si la variable de estudio es 'horas de sueño de los adolescentes de un país', encuestar solo a los alumnos de una sola escuela privada de una ciudad SÍ representa adecuadamente a todos los adolescentes del país.",
           "respuestaCorrecta": false,
-          "retroalimentacion": "Falso: una sola escuela, de un solo tipo y de una sola ciudad, no refleja la diversidad de todos los adolescentes del país; la muestra estaría sesgada."
+          "retroalimentacion": "Falso: una sola escuela, de un solo tipo y de una sola ciudad, no refleja la diversidad de todos los adolescentes del país; la muestra estaría sesgada.",
+          "pistas": [
+            "Pregúntate si la muestra representa la diversidad real de la población (distintas ciudades, edades o grupos), el mismo criterio que usamos para corregir la muestra de Fernanda.",
+            "Una sola escuela, de un solo tipo y de una sola ciudad, no refleja la diversidad de todos los adolescentes del país; la muestra estaría sesgada."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -108,7 +116,11 @@
           "tipo": "llenar_frase",
           "frase": "Encuestar solo a un grupo de una escuela para representar la opinión de toda la escuela produce una muestra ___ (no representativa).",
           "respuestaCorrecta": "sesgada",
-          "retroalimentacion": "Cuando la muestra deja fuera partes importantes de la población que dice representar, se le llama muestra sesgada."
+          "retroalimentacion": "Cuando la muestra deja fuera partes importantes de la población que dice representar, se le llama muestra sesgada.",
+          "pistas": [
+            "Cuando la muestra deja fuera partes importantes de la población que dice representar, se le llama muestra sesgada, justo lo que le pasaba a la encuesta original de Fernanda limitada a su grupo de teatro.",
+            "Cuando la muestra deja fuera partes importantes de la población que dice representar, se le llama muestra sesgada."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -123,7 +135,22 @@
           "retroalimentacion": "Si el estudio busca representar a toda la empresa, la población objetivo debe incluir a los empleados de las 5 sucursales, no solo a un subgrupo."
         }
       ],
-      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio"
+      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio",
+      "ejemploResuelto": {
+        "enunciado": "Fernanda decide corregir su encuesta: en vez de preguntar solo a sus 25 compañeros de teatro, ahora elige al azar a 60 alumnos de todos los grados y grupos de los 600 inscritos en la escuela.",
+        "pasos": [
+          {
+            "texto": "Identificamos la variable de estudio: si les gustaría tener más clases de arte."
+          },
+          {
+            "texto": "Identificamos la población objetivo: los 600 alumnos de toda la escuela."
+          },
+          {
+            "texto": "Verificamos cómo se eligió la muestra: 60 alumnos al azar de todos los grados y grupos, no solo del grupo de teatro."
+          }
+        ],
+        "respuestaFinal": "Esta nueva muestra sí es representativa, porque incluye alumnos de todos los grados y grupos, elegidos al azar, y ya no se limita solo al grupo de teatro de Fernanda."
+      }
     }
   ],
   "practicaExtra": [

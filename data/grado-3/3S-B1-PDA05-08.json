@@ -42,7 +42,11 @@
           "tipo": "llenar_frase",
           "frase": "Una vela triangular de un barco es un triángulo rectángulo con catetos de 14 m y 48 m. Su perímetro es ___ m.",
           "respuestaCorrecta": "112",
-          "retroalimentacion": "hipotenusa=√(14²+48²)=√2500=50 m; perímetro=14+48+50=112 m."
+          "retroalimentacion": "hipotenusa=√(14²+48²)=√2500=50 m; perímetro=14+48+50=112 m.",
+          "pistas": [
+            "Calcula la hipotenusa con Pitágoras y suma los tres lados, igual que hicimos con el nuevo terreno triangular de Tepic (33,44→55→perímetro132).",
+            "hipotenusa=√(14²+48²)=√2500=50 m; perímetro=14+48+50=112 m."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -66,7 +70,11 @@
           "tipo": "llenar_frase",
           "frase": "Un techo con forma de triángulo rectángulo tiene un ángulo de 60° en la base y una hipotenusa (faldón) de 16 m. Usando sen(60°)=0.87 y cos(60°)=0.50, su perímetro es ___ m (1 decimal).",
           "respuestaCorrecta": "37.9",
-          "retroalimentacion": "catetos: 0.87×16=13.92 m y 0.50×16=8.0 m; perímetro=16+13.92+8.0≈37.9 m."
+          "retroalimentacion": "catetos: 0.87×16=13.92 m y 0.50×16=8.0 m; perímetro=16+13.92+8.0≈37.9 m.",
+          "pistas": [
+            "Encuentra los dos catetos multiplicando la hipotenusa por seno y coseno del ángulo, y después suma los tres lados, el mismo método que usamos para el nuevo terreno de Tepic.",
+            "catetos: 0.87×16=13.92 m y 0.50×16=8.0 m; perímetro=16+13.92+8.0≈37.9 m."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -90,7 +98,11 @@
           "tipo": "llenar_frase",
           "frase": "Un letrero triangular rectángulo tiene un cateto de 20 m y su hipotenusa mide 52 m. Su perímetro es ___ m.",
           "respuestaCorrecta": "120",
-          "retroalimentacion": "otro cateto=√(52²-20²)=√2304=48 m; perímetro=20+48+52=120 m."
+          "retroalimentacion": "otro cateto=√(52²-20²)=√2304=48 m; perímetro=20+48+52=120 m.",
+          "pistas": [
+            "Calcula el cateto faltante con Pitágoras y suma los tres lados para el perímetro, igual que hicimos con el nuevo terreno triangular de Tepic.",
+            "otro cateto=√(52²-20²)=√2304=48 m; perímetro=20+48+52=120 m."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -118,7 +130,21 @@
           ],
           "retroalimentacion": "21+28+35=84 cm. 14+48+50=112 m. 10+24+26=60 m."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Otro terreno triangular rectángulo cerca de Tepic tiene catetos de 33 m y 44 m, y su dueño también quiere cercarlo por completo.",
+        "pasos": [
+          {
+            "texto": "Calculamos la hipotenusa con el Teorema de Pitágoras.",
+            "operacion": "hipotenusa=√(33²+44²)=√(1089+1936)=√3025=55"
+          },
+          {
+            "texto": "Sumamos los tres lados para obtener el perímetro.",
+            "operacion": "perímetro=33+44+55=132"
+          }
+        ],
+        "respuestaFinal": "El dueño necesita 132 metros de cerca."
+      }
     }
   ],
   "practicaExtra": [

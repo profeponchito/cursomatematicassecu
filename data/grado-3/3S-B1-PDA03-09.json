@@ -40,7 +40,11 @@
           "tipo": "llenar_frase",
           "frase": "Un terreno rectangular tiene el largo igual al doble del ancho más 3 metros, y su área es 90 m². El ancho mide ___ m.",
           "respuestaCorrecta": "6",
-          "retroalimentacion": "x(2x+3)=90 → 2x²+3x-90=0 → (2x+15)(x-6)=0 → x=6 (se descarta -7.5). Comprobación: 6×15=90."
+          "retroalimentacion": "x(2x+3)=90 → 2x²+3x-90=0 → (2x+15)(x-6)=0 → x=6 (se descarta -7.5). Comprobación: 6×15=90.",
+          "pistas": [
+            "Plantea la ecuación con x y factoriza, descartando la solución negativa, igual que hicimos para el letrero del taller mecánico de León (x²-13x+40=0 → x=8 o x=5).",
+            "x(2x+3)=90 → 2x²+3x-90=0 → (2x+15)(x-6)=0 → x=6 (se descarta -7.5)."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -58,7 +62,11 @@
             "No se puede saber sin resolver"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Δ=(-9)²-4(2)(15)=81-120=-39<0 → no hay solución real, el costo nunca llega exactamente a cero."
+          "retroalimentacion": "Δ=(-9)²-4(2)(15)=81-120=-39<0 → no hay solución real, el costo nunca llega exactamente a cero.",
+          "pistas": [
+            "Calcula el discriminante con Δ=B²−4AC antes de intentar resolver, el mismo primer paso que usamos para el letrero del taller mecánico de León.",
+            "Δ=(-9)²-4(2)(15)=81-120=-39<0 → no hay solución real, el costo nunca llega exactamente a cero."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -108,7 +116,11 @@
           "tipo": "llenar_frase",
           "frase": "Un salón rectangular tiene perímetro de 42 m y área de 108 m². El lado más corto mide ___ m.",
           "respuestaCorrecta": "9",
-          "retroalimentacion": "Semiperímetro=21. x²-21x+108=0 → (x-12)(x-9)=0 → dimensiones 12 m y 9 m. El más corto es 9."
+          "retroalimentacion": "Semiperímetro=21. x²-21x+108=0 → (x-12)(x-9)=0 → dimensiones 12 m y 9 m. El más corto es 9.",
+          "pistas": [
+            "Calcula el semiperímetro y plantea x²−s·x+A=0, igual que hicimos para el letrero del taller mecánico de León.",
+            "Semiperímetro=21. x²-21x+108=0 → (x-12)(x-9)=0 → dimensiones 12 m y 9 m."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -123,7 +135,25 @@
           "retroalimentacion": "-2x²+20x=0 → dividiendo entre -2: x²-10x=0 → x(x-10)=0 → x=0 o x=10."
         }
       ],
-      "nivelEtiqueta": "Nivel 9 de 10 · Integración"
+      "nivelEtiqueta": "Nivel 9 de 10 · Integración",
+      "ejemploResuelto": {
+        "enunciado": "El mismo taller mecánico de León también calcula las dimensiones de un letrero rectangular con perímetro 26 m y área 40 m², usando el discriminante para confirmar que sí existe solución.",
+        "pasos": [
+          {
+            "texto": "Calculamos el semiperímetro.",
+            "operacion": "s=26÷2=13"
+          },
+          {
+            "texto": "Planteamos la ecuación y calculamos el discriminante.",
+            "operacion": "x²-13x+40=0 → Δ=169-160=9"
+          },
+          {
+            "texto": "Como Δ>0, factorizamos y resolvemos.",
+            "operacion": "(x-8)(x-5)=0 → x=8 o x=5"
+          }
+        ],
+        "respuestaFinal": "Las dimensiones del letrero son 8 m y 5 m."
+      }
     }
   ],
   "practicaExtra": [

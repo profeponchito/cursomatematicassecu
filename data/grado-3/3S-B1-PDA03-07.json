@@ -35,7 +35,11 @@
             "Tres"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Δ=(-4)²-4(1)(4)=16-16=0 → una solución real doble (x=2)."
+          "retroalimentacion": "Δ=(-4)²-4(1)(4)=16-16=0 → una solución real doble (x=2).",
+          "pistas": [
+            "Calcula el discriminante con Δ=B²−4AC y observa su signo, igual que hicimos con el modelo financiero de la cooperativa de Sofía (Δ=-4, negativo).",
+            "Δ=(-4)²-4(1)(4)=16-16=0 → una solución real doble (x=2)."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -59,7 +63,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "La ecuación x² + 3x + 10 = 0 tiene dos soluciones reales.",
           "respuestaCorrecta": false,
-          "retroalimentacion": "Δ=3²-4(1)(10)=9-40=-31<0 → no tiene ninguna solución real."
+          "retroalimentacion": "Δ=3²-4(1)(10)=9-40=-31<0 → no tiene ninguna solución real.",
+          "pistas": [
+            "Sustituye A, B y C en Δ=B²−4AC, el mismo procedimiento que usamos para el modelo financiero de la cooperativa de Sofía.",
+            "Δ=3²-4(1)(10)=9-40=-31<0 → no tiene ninguna solución real."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -83,7 +91,11 @@
             "Infinitos precios"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Δ=(-12)²-4(1)(40)=144-160=-16<0 → no hay solución real, la ganancia nunca llega exactamente a cero."
+          "retroalimentacion": "Δ=(-12)²-4(1)(40)=144-160=-16<0 → no hay solución real, la ganancia nunca llega exactamente a cero.",
+          "pistas": [
+            "Calcula el discriminante y recuerda que si es negativo no hay solución real, igual que en el modelo financiero de la cooperativa de Sofía.",
+            "Δ=(-12)²-4(1)(40)=144-160=-16<0 → no hay solución real."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -124,7 +136,21 @@
           "retroalimentacion": "Cuando Δ=0, la fórmula general da un único valor de x, la raíz doble."
         }
       ],
-      "nivelEtiqueta": "Nivel 7 de 10 · Reto"
+      "nivelEtiqueta": "Nivel 7 de 10 · Reto",
+      "ejemploResuelto": {
+        "enunciado": "La misma cooperativa escolar de Sofía también quiere evaluar otro modelo financiero: x²−6x+10=0.",
+        "pasos": [
+          {
+            "texto": "Identificamos A, B y C.",
+            "operacion": "A=1, B=-6, C=10"
+          },
+          {
+            "texto": "Calculamos el discriminante.",
+            "operacion": "Δ=(-6)²-4(1)(10)=36-40=-4"
+          }
+        ],
+        "respuestaFinal": "Como Δ=-4 es negativo, esta ecuación no tiene ninguna solución real."
+      }
     }
   ],
   "practicaExtra": [

@@ -36,7 +36,11 @@
             "500"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "k = 4,500 ÷ 90 = 50; se inspecciona 1 de cada 50 piezas."
+          "retroalimentacion": "k = 4,500 ÷ 90 = 50; se inspecciona 1 de cada 50 piezas.",
+          "pistas": [
+            "Divide el tamaño de la población entre el tamaño de la muestra para obtener k, igual que calculamos el intervalo de muestreo de la otra línea de refrescos en Toluca (4,800÷96=50).",
+            "k = 4,500 ÷ 90 = 50; se inspecciona 1 de cada 50 piezas."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -60,7 +64,11 @@
             "100 tickets"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "6,300 ÷ 70 = 90 tickets en la muestra."
+          "retroalimentacion": "6,300 ÷ 70 = 90 tickets en la muestra.",
+          "pistas": [
+            "Divide el tamaño de la población entre k para obtener el tamaño de la muestra, el mismo tipo de relación que usamos con la línea de refrescos de Toluca.",
+            "6,300 ÷ 70 = 90 tickets en la muestra."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -84,7 +92,11 @@
             "La vivienda 46"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "k = 5,000 ÷ 100 = 50. La segunda vivienda seleccionada es 23 + 50 = 73."
+          "retroalimentacion": "k = 5,000 ÷ 100 = 50. La segunda vivienda seleccionada es 23 + 50 = 73.",
+          "pistas": [
+            "Calcula primero k con población÷muestra, y después suma k al punto de inicio para encontrar el siguiente elemento, igual que hicimos con la línea de refrescos de Toluca.",
+            "k = 5,000 ÷ 100 = 50. La segunda vivienda seleccionada es 23 + 50 = 73."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -124,7 +136,23 @@
           "respuestaCorrecta": 1,
           "retroalimentacion": "Aunque el punto de inicio se eligió al azar, coincide con el patrón de periodicidad (k=12 = tamaño del lote), así que la muestra caerá siempre en la charola más ligera: está sesgada."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El mismo inspector de la fábrica de refrescos en Toluca revisa ahora otra línea, que produce 4,800 botellas al día, y decide tomar una muestra sistemática de 96 botellas.",
+        "pasos": [
+          {
+            "texto": "Calculamos el intervalo de muestreo k.",
+            "operacion": "k=4800÷96=50"
+          },
+          {
+            "texto": "Esto significa que se inspecciona 1 de cada 50 botellas, empezando en un número aleatorio entre 1 y 50."
+          },
+          {
+            "texto": "Advertimos que si la máquina tiene una falla que se repite justo cada 50 botellas, la muestra podría salir sesgada, igual que en la línea original donde la falla coincidía con k=12."
+          }
+        ],
+        "respuestaFinal": "k = 50; se inspecciona 1 de cada 50 botellas, pero hay que verificar que ninguna falla de la máquina se repita justo cada 50 botellas, para evitar un sesgo oculto como el que vimos con k=12."
+      }
     }
   ],
   "practicaExtra": [

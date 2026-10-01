@@ -36,7 +36,11 @@
             "0.09 mg/mL"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "900 × 10⁻² = 900 × 0.01 = 9 mg/mL."
+          "retroalimentacion": "900 × 10⁻² = 900 × 0.01 = 9 mg/mL.",
+          "pistas": [
+            "Escribe la expresión como cantidad inicial multiplicada por la base elevada al número negativo de reducciones, igual que hicimos con la segunda lámina de la fábrica de Toluca (5×4⁻³).",
+            "900×10⁻²=9mg/mL."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -60,7 +64,11 @@
             "C₀ - bn"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Dividir n veces entre b equivale a multiplicar por b elevado al exponente negativo n: C₀ × bᐨⁿ."
+          "retroalimentacion": "Dividir n veces entre b equivale a multiplicar por b elevado al exponente negativo n: C₀ × bᐨⁿ.",
+          "pistas": [
+            "La expresión general es cantidad inicial × base elevada a menos el número de reducciones, el mismo patrón que usamos para la segunda lámina de Toluca (5×4⁻³).",
+            "Dividir n veces entre b equivale a multiplicar por b elevado al exponente negativo n: C₀ × bᐨⁿ."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -84,7 +92,11 @@
             "972 × 5⁻³"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Reducir a un tercio 5 veces seguidas equivale a multiplicar por 3⁻⁵."
+          "retroalimentacion": "Reducir a un tercio 5 veces seguidas equivale a multiplicar por 3⁻⁵.",
+          "pistas": [
+            "Identifica la base (el 'a cuántas partes se reduce') y el número de repeticiones, igual que hicimos con la segunda lámina de Toluca (base 4, 3 pasadas → 4⁻³).",
+            "Reducir a un tercio 5 veces seguidas equivale a multiplicar por 3⁻⁵."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -118,7 +130,21 @@
           "respuestaCorrecta": true,
           "retroalimentacion": "Correcto: cualquier número elevado a -1 es su recíproco, 50⁻¹ = 1/50."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "La misma fábrica de Toluca también procesa otra lámina, que reduce su grosor a la cuarta parte cada vez que pasa por otro rodillo. La lámina original mide 5 cm de grosor, y se quiere expresar en una sola potencia el grosor después de 3 pasadas.",
+        "pasos": [
+          {
+            "texto": "Identificamos cuántas veces se repite la reducción.",
+            "operacion": "n=3 pasadas, base=4 (se reduce a la cuarta parte)"
+          },
+          {
+            "texto": "Escribimos la expresión con exponente negativo.",
+            "operacion": "grosor final = 5 × 4⁻³"
+          }
+        ],
+        "respuestaFinal": "5 × 4⁻³ (que equivale a 5÷64 ≈ 0.078 cm)."
+      }
     }
   ],
   "practicaExtra": [

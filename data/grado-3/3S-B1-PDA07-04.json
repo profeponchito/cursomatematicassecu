@@ -47,7 +47,11 @@
           "tipo": "llenar_frase",
           "frase": "Una esfera de radio 3 cm tiene un área de superficie de ___ cm² (usa π≈3.14).",
           "respuestaCorrecta": "113.04",
-          "retroalimentacion": "A = 4×3.14×3² = 113.04 cm². (Curiosidad: con r=3, el área en cm² y el volumen en cm³ de esta esfera dan el mismo número, aunque miden cosas distintas)."
+          "retroalimentacion": "A = 4×3.14×3² = 113.04 cm². (Curiosidad: con r=3, el área en cm² y el volumen en cm³ de esta esfera dan el mismo número, aunque miden cosas distintas).",
+          "pistas": [
+            "Aplica la fórmula del área A=4×π×r², igual que comparamos las dos esferas decorativas de Emiliano (11 cm y 13 cm de radio).",
+            "A = 4×3.14×3² = 113.04 cm². (Curiosidad: con r=3, el área en cm² y el volumen en cm³ de esta esfera dan el mismo número, aunque miden cosas distintas)."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -71,7 +75,11 @@
           "tipo": "llenar_frase",
           "frase": "Un tinaco esférico con radio de 2 m tiene un volumen de ___ m³ (usa π≈3.14, redondea a 2 decimales).",
           "respuestaCorrecta": "33.49",
-          "retroalimentacion": "V = (4/3)×3.14×2³ = (4/3)×3.14×8 = 33.49 m³."
+          "retroalimentacion": "V = (4/3)×3.14×2³ = (4/3)×3.14×8 = 33.49 m³.",
+          "pistas": [
+            "Aplica la fórmula del volumen V=(4/3)×π×r³, el mismo procedimiento que usamos para comparar las dos esferas decorativas de Emiliano.",
+            "V = (4/3)×3.14×2³ = (4/3)×3.14×8 = 33.49 m³."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -95,7 +103,11 @@
           "tipo": "llenar_frase",
           "frase": "Una esfera de radio 7 cm tiene un área de superficie de ___ cm² (usa π≈3.14).",
           "respuestaCorrecta": "615.44",
-          "retroalimentacion": "A = 4×3.14×7² = 4×3.14×49 = 615.44 cm² (el mismo cálculo que el área de lona del globo aerostático del reto inicial)."
+          "retroalimentacion": "A = 4×3.14×7² = 4×3.14×49 = 615.44 cm² (el mismo cálculo que el área de lona del globo aerostático del reto inicial).",
+          "pistas": [
+            "Calcula el área con A=4×π×r², igual que al comparar el área y volumen de las esferas decorativas de Emiliano.",
+            "A = 4×3.14×7² = 4×3.14×49 = 615.44 cm² (el mismo cálculo que el área de lona del globo aerostático del reto inicial)."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -118,7 +130,25 @@
           "retroalimentacion": "r=5: V=523.33 cm³. r=9: V=3052.08 cm³. r=12: V=7234.56 cm³."
         }
       ],
-      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis"
+      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis",
+      "ejemploResuelto": {
+        "enunciado": "En la misma tienda de deportes, Emiliano también compara dos esferas decorativas de hule: una de 11 cm de radio y otra de 13 cm de radio, y quiere saber la diferencia de volumen entre ambas.",
+        "pasos": [
+          {
+            "texto": "Calculamos el volumen de la esfera chica.",
+            "operacion": "V(11)=(4/3)×3.14×11³=5572.45"
+          },
+          {
+            "texto": "Calculamos el volumen de la esfera grande.",
+            "operacion": "V(13)=(4/3)×3.14×13³=9198.11"
+          },
+          {
+            "texto": "Restamos para encontrar la diferencia.",
+            "operacion": "9198.11-5572.45=3625.66"
+          }
+        ],
+        "respuestaFinal": "La esfera de 13 cm tiene 3,625.66 cm³ más de volumen que la de 11 cm."
+      }
     }
   ],
   "practicaExtra": [

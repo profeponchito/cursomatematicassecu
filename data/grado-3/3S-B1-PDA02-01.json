@@ -34,7 +34,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Un prisma con base cuadrada de lado x=9 y altura h=8 tiene volumen 648.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "V = 9²×8 = 648."
+          "retroalimentacion": "V = 9²×8 = 648.",
+          "pistas": [
+            "Aplica la misma fórmula V=x²×h que usamos para la caja de don Emiliano (x=10, h=6 → 600 cm³), elevando primero el lado al cuadrado.",
+            "9²=81, y 81×8=648."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -52,7 +56,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Un prisma con base cuadrada de lado x=5 y altura h=6 tiene volumen 150.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "V = 5²×6 = 150."
+          "retroalimentacion": "V = 5²×6 = 150.",
+          "pistas": [
+            "Eleva el lado al cuadrado y multiplica por la altura, igual que hicimos para la caja de don Emiliano.",
+            "5²=25, y 25×6=150."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -76,7 +84,11 @@
             "318"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "V = 6²×9 = 36×9 = 324."
+          "retroalimentacion": "V = 6²×9 = 36×9 = 324.",
+          "pistas": [
+            "Sigue los mismos dos pasos que usamos para la caja de don Emiliano: elevar el lado al cuadrado y multiplicar por la altura.",
+            "6²=36, y 36×9=324."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -105,7 +117,21 @@
           "retroalimentacion": "x=3,h=6: V=9×6=54. x=6,h=3: V=36×3=108. x=4,h=4: V=16×4=64."
         }
       ],
-      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio"
+      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio",
+      "ejemploResuelto": {
+        "enunciado": "Don Emiliano, el carpintero de Oaxaca, también construye otra caja de madera con base cuadrada de lado x=10 cm y altura h=6 cm.",
+        "pasos": [
+          {
+            "texto": "Aplicamos la fórmula del volumen.",
+            "operacion": "V=x²×h"
+          },
+          {
+            "texto": "Sustituimos los valores.",
+            "operacion": "V=10²×6=100×6=600"
+          }
+        ],
+        "respuestaFinal": "El volumen de la nueva caja es 600 cm³."
+      }
     }
   ],
   "practicaExtra": [

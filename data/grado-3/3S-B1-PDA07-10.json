@@ -48,7 +48,11 @@
           "tipo": "llenar_frase",
           "frase": "Un domo hemisférico tiene un diámetro de 19 m; su volumen de aire es ___ m³ (usa π≈3.14).",
           "respuestaCorrecta": "1794.77",
-          "retroalimentacion": "r=19÷2=9.5 m. V_hemisferio=(2/3)×3.14×9.5³=1794.77 m³."
+          "retroalimentacion": "r=19÷2=9.5 m. V_hemisferio=(2/3)×3.14×9.5³=1794.77 m³.",
+          "pistas": [
+            "Divide el diámetro entre 2 para obtener el radio, y después aplica la fórmula correspondiente, igual que hicimos con el domo más grande de la constructora de León (d=16→r=8→A=401.92).",
+            "r=19÷2=9.5 m. V_hemisferio=(2/3)×3.14×9.5³=1794.77 m³."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -78,7 +82,11 @@
             "r=5.25 m, costo=$87,238.62"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "r=∛(4846.59÷4.1867)≈∛1157.53≈10.5 m. Costo=4846.59×9=$43,619.31."
+          "retroalimentacion": "r=∛(4846.59÷4.1867)≈∛1157.53≈10.5 m. Costo=4846.59×9=$43,619.31.",
+          "pistas": [
+            "Saca raíz cúbica para encontrar el radio a partir del volumen, y después multiplica por el precio, el mismo tipo de procedimiento encadenado que usamos para el domo más grande de León.",
+            "r=∛(4846.59÷4.1867)≈∛1157.53≈10.5 m. Costo=4846.59×9=$43,619.31."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -90,7 +98,11 @@
           "tipo": "llenar_frase",
           "frase": "Un domo esférico completo (toda la superficie de la esfera, no solo la mitad) con diámetro de 21 m se cubrirá con paneles solares que cuestan $30 por m². El costo total será $___ (usa π≈3.14).",
           "respuestaCorrecta": "41542.20",
-          "retroalimentacion": "r=21÷2=10.5 m. A=4×3.14×10.5²=1384.74 m². Costo=1384.74×30=$41,542.20."
+          "retroalimentacion": "r=21÷2=10.5 m. A=4×3.14×10.5²=1384.74 m². Costo=1384.74×30=$41,542.20.",
+          "pistas": [
+            "Divide el diámetro entre 2, calcula el área y multiplica por el precio, el mismo procedimiento que usamos para el domo más grande de la constructora de León.",
+            "r=21÷2=10.5 m. A=4×3.14×10.5²=1384.74 m². Costo=1384.74×30=$41,542.20."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -124,7 +136,29 @@
           ],
           "retroalimentacion": "d=34→r=17 m→V=20569.09 m³. d=32→r=16 m→V=17148.59 m³. d=23→r=11.5 m→V=6367.40 m³."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "La misma constructora de León también cotiza un domo hemisférico más grande, con 16 metros de diámetro, a $280 el m² de lámina curva, con 10% de descuento por compras mayores a 150 m².",
+        "pasos": [
+          {
+            "texto": "Calculamos el radio.",
+            "operacion": "r=16÷2=8"
+          },
+          {
+            "texto": "Calculamos el área curva del hemisferio.",
+            "operacion": "A=2×3.14×8²=401.92"
+          },
+          {
+            "texto": "Calculamos el costo sin descuento.",
+            "operacion": "401.92×280=112537.60"
+          },
+          {
+            "texto": "Aplicamos el descuento del 10% porque el área supera 150 m².",
+            "operacion": "112537.60-11253.76=101283.84"
+          }
+        ],
+        "respuestaFinal": "El costo final del domo más grande, con descuento, es $101,283.84."
+      }
     }
   ],
   "practicaExtra": [

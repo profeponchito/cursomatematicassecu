@@ -47,7 +47,11 @@
           "tipo": "llenar_frase",
           "frase": "Un camión recorre 90 km en 3 h y después 30 km en 1 h. Su rapidez media en todo el viaje es de ___ km/h.",
           "respuestaCorrecta": "30",
-          "retroalimentacion": "rapidez media = (90+30)/(3+1) = 120/4 = 30 km/h."
+          "retroalimentacion": "rapidez media = (90+30)/(3+1) = 120/4 = 30 km/h.",
+          "pistas": [
+            "Suma todas las distancias y todos los tiempos por separado antes de dividir, igual que hicimos para corregir el cálculo de Toño sobre el viaje de doña Alicia (200÷3≈66.67 km/h).",
+            "rapidez media = (90+30)/(3+1) = 120/4 = 30 km/h."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -71,7 +75,11 @@
           "tipo": "llenar_frase",
           "frase": "Un tren recorre 24 km en 2 h y después 36 km en 3 h. Su rapidez media en todo el viaje es de ___ km/h.",
           "respuestaCorrecta": "12",
-          "retroalimentacion": "rapidez media = (24+36)/(2+3) = 60/5 = 12 km/h."
+          "retroalimentacion": "rapidez media = (24+36)/(2+3) = 60/5 = 12 km/h.",
+          "pistas": [
+            "No promedies las rapideces de cada tramo; suma las distancias, suma los tiempos y después divide, el mismo error que corregimos en el cálculo de Toño.",
+            "rapidez media = (24+36)/(2+3) = 60/5 = 12 km/h."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -95,7 +103,11 @@
           "tipo": "llenar_frase",
           "frase": "Un viaje se hace en tres tramos: 12 km en 1 h, 18 km en 1 h y 30 km en 2 h. La rapidez media de todo el viaje es de ___ km/h.",
           "respuestaCorrecta": "15",
-          "retroalimentacion": "rapidez media = (12+18+30)/(1+1+2) = 60/4 = 15 km/h."
+          "retroalimentacion": "rapidez media = (12+18+30)/(1+1+2) = 60/4 = 15 km/h.",
+          "pistas": [
+            "Suma todas las distancias de los tramos y todos los tiempos, y divide al final, igual que hicimos para el viaje de doña Alicia de Puebla a Veracruz.",
+            "rapidez media = (12+18+30)/(1+1+2) = 60/4 = 15 km/h."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -118,7 +130,25 @@
           "retroalimentacion": "(40+20)/(2+2)=15 km/h. (60+30)/(3+1)=22.5 km/h. (50+40)/(1+2)=30 km/h."
         }
       ],
-      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio"
+      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio",
+      "ejemploResuelto": {
+        "enunciado": "Doña Alicia recorrió 180 km en carretera en 2 horas, y luego 20 km dentro de la ciudad de Veracruz en 1 hora.",
+        "pasos": [
+          {
+            "texto": "Sumamos las distancias de los dos tramos.",
+            "operacion": "180+20=200"
+          },
+          {
+            "texto": "Sumamos los tiempos de los dos tramos.",
+            "operacion": "2+1=3"
+          },
+          {
+            "texto": "Dividimos la distancia total entre el tiempo total.",
+            "operacion": "200÷3=66.67"
+          }
+        ],
+        "respuestaFinal": "La rapidez media correcta de todo el viaje es de aproximadamente 66.67 km/h, no el promedio simple de 90 y 20 que calculó Toño."
+      }
     }
   ],
   "practicaExtra": [

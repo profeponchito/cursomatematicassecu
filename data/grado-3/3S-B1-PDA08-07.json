@@ -48,7 +48,11 @@
           "tipo": "llenar_frase",
           "frase": "Una tienda tiene 20% de descuento en un paquete de 8 jabones cuyo precio normal es de $200. El precio final del paquete con descuento es de $___.",
           "respuestaCorrecta": "160",
-          "retroalimentacion": "Descuento = 0.20×200 = $40. Precio final = 200−40 = $160."
+          "retroalimentacion": "Descuento = 0.20×200 = $40. Precio final = 200−40 = $160.",
+          "pistas": [
+            "Calcula el descuento multiplicando el precio por el porcentaje, y réstalo del precio original, igual que comparamos las opciones de la papelería de Diego.",
+            "Descuento = 0.20×200 = $40. Precio final = 200−40 = $160."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -72,7 +76,11 @@
           "tipo": "llenar_frase",
           "frase": "Una ferretería vende un paquete de 10 tornillos en $50. Por la promoción 'lleva 4, paga 3', si compras 3 paquetes te regalan uno más. El precio real por paquete, aprovechando la promoción, es de $___.",
           "respuestaCorrecta": "37.5",
-          "retroalimentacion": "Pagas 3×50 = $150 por 4 paquetes. Precio real = 150/4 = $37.50 por paquete."
+          "retroalimentacion": "Pagas 3×50 = $150 por 4 paquetes. Precio real = 150/4 = $37.50 por paquete.",
+          "pistas": [
+            "Calcula cuánto realmente se paga con la promoción (las piezas pagadas, no las que te llevas gratis) y divide entre el total de piezas, el mismo tipo de cálculo que usamos para los cuadernos de Diego.",
+            "Pagas 3×50 = $150 por 4 paquetes. Precio real = 150/4 = $37.50 por paquete."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -110,7 +118,11 @@
             1,
             2
           ],
-          "retroalimentacion": "Velas: pagas 2×30=$60 por 3 = $20/vela. Focos: 200−40=$160÷4=$40/foco. Manzanas: pagas 4×12=$48 por 5 kg = $9.60/kg."
+          "retroalimentacion": "Velas: pagas 2×30=$60 por 3 = $20/vela. Focos: 200−40=$160÷4=$40/foco. Manzanas: pagas 4×12=$48 por 5 kg = $9.60/kg.",
+          "pistas": [
+            "Calcula el precio real con la promoción incluida y compáralo con el precio sin promoción, igual que decidimos qué papelería le convenía más a Diego.",
+            "Velas: pagas 2×30=$60 por 3 = $20/vela. Focos: 200−40=$160÷4=$40/foco. Manzanas: pagas 4×12=$48 por 5 kg = $9.60/kg."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -124,7 +136,25 @@
           "respuestaCorrecta": 0,
           "retroalimentacion": "Tienda A: pagas 2×100=$200 por 3 bolsas (15 kg) → 200/15 ≈ $13.33/kg. Tienda B: 90/5 = $18/kg. Conviene más la tienda A."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Diego necesita comprar 6 cuadernos. La papelería con promoción '3x2' los vende a $45 cada uno (lleva 3, paga 2), y la de al lado los vende a $34 cada uno sin promoción.",
+        "pasos": [
+          {
+            "texto": "Calculamos cuánto paga con la promoción por los 6 cuadernos (dos veces la promoción 3x2).",
+            "operacion": "2×(2×45)=2×90=180"
+          },
+          {
+            "texto": "Calculamos cuánto paga sin promoción.",
+            "operacion": "6×34=204"
+          },
+          {
+            "texto": "Comparamos ambos precios.",
+            "operacion": "180<204"
+          }
+        ],
+        "respuestaFinal": "Le conviene más la papelería con promoción: pagaría $180 en vez de $204."
+      }
     }
   ],
   "practicaExtra": [

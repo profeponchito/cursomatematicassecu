@@ -48,7 +48,11 @@
           "tipo": "llenar_frase",
           "frase": "Un camión hace un viaje en dos tramos: 180 km en 3 h y 120 km en 1 h. Su rapidez media en todo el viaje es de ___ km/h.",
           "respuestaCorrecta": "75",
-          "retroalimentacion": "rapidez media = (180+120)/(3+1) = 300/4 = 75 km/h."
+          "retroalimentacion": "rapidez media = (180+120)/(3+1) = 300/4 = 75 km/h.",
+          "pistas": [
+            "Suma las distancias y los tiempos de los tramos antes de dividir, igual que necesitaríamos para calcular la rapidez media del viaje de Cristian si viniera en tramos.",
+            "rapidez media = (180+120)/(3+1) = 300/4 = 75 km/h."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -72,7 +76,11 @@
           "tipo": "llenar_frase",
           "frase": "Un auto hace un viaje de 210 km. Si rinde 14 km por litro y la gasolina cuesta $24 por litro, el costo total de gasolina para el viaje es de $___.",
           "respuestaCorrecta": "360",
-          "retroalimentacion": "Litros = 210/14 = 15. Costo = 15×24 = $360."
+          "retroalimentacion": "Litros = 210/14 = 15. Costo = 15×24 = $360.",
+          "pistas": [
+            "Divide la distancia entre el rendimiento para obtener los litros, y multiplica por el precio, el mismo procedimiento que usamos para el viaje de Cristian a Acapulco (420÷14×23.80=714).",
+            "Litros = 210/14 = 15. Costo = 15×24 = $360."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -110,7 +118,11 @@
             1,
             2
           ],
-          "retroalimentacion": "240/12=20 L ×25 = $500. 350/14=25 L ×22 = $550. 180/9=20 L ×23 = $460."
+          "retroalimentacion": "240/12=20 L ×25 = $500. 350/14=25 L ×22 = $550. 180/9=20 L ×23 = $460.",
+          "pistas": [
+            "Divide la distancia entre el rendimiento y multiplica por el precio del litro, igual que calculamos el gasto de gasolina del viaje de Cristian.",
+            "240/12=20 L ×25 = $500. 350/14=25 L ×22 = $550. 180/9=20 L ×23 = $460."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -124,7 +136,25 @@
           "respuestaCorrecta": 0,
           "retroalimentacion": "Rendimiento = 252/18 = 14 km/L. Litros necesarios para 420 km = 420/14 = 30. Costo = 30×23.50 = $705."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "La familia de Cristian viajará de Morelia a Acapulco, 420 km en total. Su coche rinde 14 km por litro, y la gasolina cuesta $23.80 el litro.",
+        "pasos": [
+          {
+            "texto": "Calculamos los litros necesarios.",
+            "operacion": "420÷14=30"
+          },
+          {
+            "texto": "Calculamos el costo total.",
+            "operacion": "30×23.80=714"
+          },
+          {
+            "texto": "Calculamos el costo por kilómetro.",
+            "operacion": "714÷420=1.70"
+          }
+        ],
+        "respuestaFinal": "Gastarán $714 en gasolina para todo el viaje, es decir, $1.70 por kilómetro recorrido."
+      }
     }
   ],
   "practicaExtra": [

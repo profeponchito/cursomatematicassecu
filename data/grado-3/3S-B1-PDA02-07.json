@@ -42,7 +42,11 @@
             "792 cm³"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Nuevo volumen = 6²×11 = 36×11 = 396 cm³, es decir 4 veces 99 cm³."
+          "retroalimentacion": "Nuevo volumen = 6²×11 = 36×11 = 396 cm³, es decir 4 veces 99 cm³.",
+          "pistas": [
+            "Calcula el volumen original y el volumen con el lado multiplicado por el factor, y compara cuántas veces es mayor, igual que hicimos con el tinaco que triplicó su lado (144→1296, 9 veces más).",
+            "Original: 3²×11=99. Nuevo (x=6): 6²×11=396, que es 4 veces 99 (porque 2²=4)."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -84,7 +88,11 @@
             "7840 cm³"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "Nuevo volumen = 14²×20 = 196×20 = 3920 cm³, es decir 4 veces 980 cm³."
+          "retroalimentacion": "Nuevo volumen = 14²×20 = 196×20 = 3920 cm³, es decir 4 veces 980 cm³.",
+          "pistas": [
+            "Sigue el mismo procedimiento que usamos con el tinaco de lado triplicado: calcular ambos volúmenes y dividir para encontrar el factor.",
+            "Original: 7²×20=980. Nuevo (x=14): 14²×20=3920, que es 4 veces 980."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -102,7 +110,11 @@
             "8"
           ],
           "respuestaCorrecta": 3,
-          "retroalimentacion": "El lado se duplicó (k=2), así que el volumen se multiplica por 2³=8."
+          "retroalimentacion": "El lado se duplicó (k=2), así que el volumen se multiplica por 2³=8.",
+          "pistas": [
+            "Cuando todas las aristas de un cubo se multiplican por un factor k, el volumen se multiplica por k³, el mismo tipo de razonamiento que usamos para el tinaco de lado triplicado (factor 3²=9 porque solo cambia la base).",
+            "Si la arista se duplica (k=2), el volumen se multiplica por 2³=8."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -124,7 +136,25 @@
           ],
           "retroalimentacion": "Factor de volumen = k². k=2→4; k=3→9; k=4→16."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Tu papá también quiere verificar qué pasa si, en vez de duplicar, el plomero le ofrece un tinaco con el triple de lado en la base (misma altura). El tinaco original tiene x=4 cm y h=9 cm.",
+        "pasos": [
+          {
+            "texto": "Calculamos el volumen original.",
+            "operacion": "V=4²×9=16×9=144"
+          },
+          {
+            "texto": "Calculamos el volumen con el lado triplicado (misma altura).",
+            "operacion": "V'=12²×9=144×9=1296"
+          },
+          {
+            "texto": "Comparamos: 1296÷144=9, que es 3².",
+            "operacion": "factor=3²=9"
+          }
+        ],
+        "respuestaFinal": "El volumen no se triplica, se multiplica por 9 (3²), pasando de 144 cm³ a 1,296 cm³."
+      }
     }
   ],
   "practicaExtra": [

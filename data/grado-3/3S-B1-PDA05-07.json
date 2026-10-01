@@ -41,7 +41,11 @@
           "tipo": "llenar_frase",
           "frase": "Un poste vertical proyecta una sombra de 15 m cuando el ángulo de elevación del sol es de 60°. Usando tan(60°)≈1.73, la altura del poste es ___ m (1 decimal).",
           "respuestaCorrecta": "25.9",
-          "retroalimentacion": "altura = tan(60°)×15 = 1.73×15 = 25.9 m."
+          "retroalimentacion": "altura = tan(60°)×15 = 1.73×15 = 25.9 m.",
+          "pistas": [
+            "Decide si el problema te da dos lados (usa Pitágoras) o un ángulo con un lado (usa trigonometría), igual que decidimos para los nuevos postes de Zacatecas (Pitágoras: distancia=10 m).",
+            "altura = tan(60°)×15 = 1.73×15 = 25.9 m."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -65,7 +69,11 @@
           "tipo": "llenar_frase",
           "frase": "Un bote se encuentra a una distancia horizontal de 15 m de la base de un acantilado de 22 m de altura. La distancia en línea recta desde el bote hasta la punta del acantilado es ___ m (1 decimal).",
           "respuestaCorrecta": "26.6",
-          "retroalimentacion": "distancia = √(15²+22²) = √(225+484) = √709 ≈ 26.6 m."
+          "retroalimentacion": "distancia = √(15²+22²) = √(225+484) = √709 ≈ 26.6 m.",
+          "pistas": [
+            "Identifica los dos catetos a partir de la descripción del problema y aplica Pitágoras, el mismo razonamiento que usamos para los nuevos postes de Zacatecas.",
+            "distancia = √(15²+22²) = √(225+484) = √709 ≈ 26.6 m."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -89,7 +97,11 @@
           "tipo": "llenar_frase",
           "frase": "Una rampa de skate tiene un tramo con ángulo de 30° y una base horizontal de 17.4 m. Usando tan(30°)≈0.58, la altura de la rampa es ___ m (1 decimal).",
           "respuestaCorrecta": "10.1",
-          "retroalimentacion": "altura = tan(30°)×17.4 = 0.58×17.4 ≈ 10.1 m."
+          "retroalimentacion": "altura = tan(30°)×17.4 = 0.58×17.4 ≈ 10.1 m.",
+          "pistas": [
+            "Reconoce si conoces un ángulo con un lado (trigonometría) o dos lados (Pitágoras), igual que decidimos para los postes de Zacatecas.",
+            "altura = tan(30°)×17.4 = 0.58×17.4 ≈ 10.1 m."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -117,7 +129,21 @@
           ],
           "retroalimentacion": "Postes: √(20²+15²)=25 m (Pitágoras). Acantilado: √(15²+22²)≈26.6 m (Pitágoras). Dron: 7/cos(60°)=14.0 m (trigonometría)."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "En otra calle de Zacatecas hay dos postes de luz de 7 m y 15 m de altura, separados por una distancia horizontal de 6 metros.",
+        "pasos": [
+          {
+            "texto": "Calculamos la diferencia de altura entre los postes.",
+            "operacion": "15-7=8"
+          },
+          {
+            "texto": "Aplicamos el Teorema de Pitágoras con la diferencia de altura y la distancia horizontal como catetos.",
+            "operacion": "distancia=√(8²+6²)=√(64+36)=√100=10"
+          }
+        ],
+        "respuestaFinal": "La distancia entre las puntas de los dos postes es de 10 metros."
+      }
     }
   ],
   "practicaExtra": [

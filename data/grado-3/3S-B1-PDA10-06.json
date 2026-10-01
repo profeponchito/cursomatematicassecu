@@ -36,7 +36,11 @@
             "25"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "n=40, n/2=20. Acumuladas: 6,20,32,40. La clase mediana es 25-30 (Li=25, Fant=6, fme=14, A=5). Me=25+[(20−6)/14]×5=25+5=30."
+          "retroalimentacion": "n=40, n/2=20. Acumuladas: 6,20,32,40. La clase mediana es 25-30 (Li=25, Fant=6, fme=14, A=5). Me=25+[(20−6)/14]×5=25+5=30.",
+          "pistas": [
+            "Calcula las frecuencias acumuladas, encuentra la clase mediana y aplica la fórmula de interpolación, igual que calculamos la mediana de los sueldos del departamento de Reynosa (Me=1850).",
+            "n=40, n/2=20. Acumuladas: 6,20,32,40. La clase mediana es 25-30 (Li=25, Fant=6, fme=14, A=5). Me=25+[(20−6)/14]×5=25+5=30."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -60,7 +64,11 @@
             "8"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "n=30, n/2=15. Acumuladas: 5,21,30. Clase mediana 8-16 (Li=8, Fant=5, fme=16, A=8). Me=8+[(15−5)/16]×8=8+5=13."
+          "retroalimentacion": "n=30, n/2=15. Acumuladas: 5,21,30. Clase mediana 8-16 (Li=8, Fant=5, fme=16, A=8). Me=8+[(15−5)/16]×8=8+5=13.",
+          "pistas": [
+            "Encuentra la clase mediana con las frecuencias acumuladas y aplica Me=Li+[(n/2−Fant)/fme]×A, el mismo procedimiento que usamos con los sueldos de Reynosa.",
+            "n=30, n/2=15. Acumuladas: 5,21,30. Clase mediana 8-16 (Li=8, Fant=5, fme=16, A=8). Me=8+[(15−5)/16]×8=8+5=13."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -122,9 +130,31 @@
             "200.00"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "n=50, n/2=25. Acumuladas: 5,15,33,45,50. Clase mediana 200-250 (Li=200, Fant=15, fme=18, A=50). Me=200+[(25−15)/18]×50≈227.78."
+          "retroalimentacion": "n=50, n/2=25. Acumuladas: 5,15,33,45,50. Clase mediana 200-250 (Li=200, Fant=15, fme=18, A=50). Me=200+[(25−15)/18]×50≈227.78.",
+          "pistas": [
+            "Calcula n/2, encuentra la clase mediana con las acumuladas y aplica la fórmula de interpolación, igual que hicimos con los sueldos del departamento de Reynosa.",
+            "n=50, n/2=25. Acumuladas: 5,15,33,45,50. Clase mediana 200-250 (Li=200, Fant=15, fme=18, A=50). Me=200+[(25−15)/18]×50≈227.78."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "La misma gerente de recursos humanos de Reynosa agrupa los sueldos semanales de otro departamento con 40 empleados: $1,400-1,600 (f=6), $1,600-1,800 (f=10), $1,800-2,000 (f=16), $2,000-2,200 (f=8).",
+        "pasos": [
+          {
+            "texto": "Calculamos n/2 y las frecuencias acumuladas.",
+            "operacion": "n/2=40÷2=20; acumuladas=6,16,32,40"
+          },
+          {
+            "texto": "Identificamos la clase mediana: donde se alcanza 20 por primera vez.",
+            "operacion": "clase mediana=1800-2000 (Li=1800,Fant=16,fme=16,A=200)"
+          },
+          {
+            "texto": "Aplicamos la fórmula de interpolación.",
+            "operacion": "Me=1800+[(20-16)/16]×200=1800+50=1850"
+          }
+        ],
+        "respuestaFinal": "La mediana exacta de los sueldos de este departamento es $1,850."
+      }
     }
   ],
   "practicaExtra": [

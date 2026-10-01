@@ -78,7 +78,11 @@
             "140 cm²"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "AT = 2(7×3)+2(7×4)+2(3×4) = 42+56+24 = 122 cm²."
+          "retroalimentacion": "AT = 2(7×3)+2(7×4)+2(3×4) = 42+56+24 = 122 cm².",
+          "pistas": [
+            "Aplica la fórmula del área total de una caja sumando los tres pares de caras, igual que calculamos el área total del recipiente cilíndrico de Camila.",
+            "AT = 2(7×3)+2(7×4)+2(3×4) = 42+56+24 = 122 cm²."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -102,7 +106,11 @@
             "1256 litros"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "V = π×r²×h = 3.14×5²×8 = 3.14×25×8 = 628 dm³ = 628 litros."
+          "retroalimentacion": "V = π×r²×h = 3.14×5²×8 = 3.14×25×8 = 628 dm³ = 628 litros.",
+          "pistas": [
+            "Multiplica π por el radio al cuadrado y por la altura para obtener el volumen, el mismo procedimiento que usamos para el recipiente cilíndrico de Camila.",
+            "V = π×r²×h = 3.14×5²×8 = 3.14×25×8 = 628 dm³ = 628 litros."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -120,10 +128,28 @@
             "108 m³"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "V = (1/3)×(6×6)×6 = (1/3)×36×6 = (1/3)×216 = 72 m³."
+          "retroalimentacion": "V = (1/3)×(6×6)×6 = (1/3)×36×6 = (1/3)×216 = 72 m³.",
+          "pistas": [
+            "Multiplica el área de la base por la altura y divide entre 3 para obtener el volumen de una pirámide, igual que calculamos el volumen del recipiente de Camila (aunque ahí era un cilindro).",
+            "V = (1/3)×(6×6)×6 = (1/3)×36×6 = (1/3)×216 = 72 m³."
+          ]
         }
       ],
-      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis"
+      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis",
+      "ejemploResuelto": {
+        "enunciado": "A Camila también le dan, para la feria escolar de Toluca, un recipiente cilíndrico de radio 6 dm y altura 10 dm, y le piden su área total (para forrarlo) y su volumen (para llenarlo de dulces).",
+        "pasos": [
+          {
+            "texto": "Calculamos el área total del cilindro.",
+            "operacion": "AT=2×3.14×6²+2×3.14×6×10=226.08+376.8=602.88"
+          },
+          {
+            "texto": "Calculamos el volumen.",
+            "operacion": "V=3.14×6²×10=3.14×36×10=1130.4"
+          }
+        ],
+        "respuestaFinal": "El área total es 602.88 dm² y el volumen es 1,130.4 dm³."
+      }
     }
   ],
   "practicaExtra": [

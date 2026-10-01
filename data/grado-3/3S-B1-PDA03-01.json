@@ -33,7 +33,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Las soluciones de x² + 5x - 24 = 0 son x=4 y x=-8.",
           "respuestaCorrecta": false,
-          "retroalimentacion": "Las soluciones reales son x=3 y x=-8."
+          "retroalimentacion": "Las soluciones reales son x=3 y x=-8.",
+          "pistas": [
+            "Busca dos números que multiplicados den el término independiente y sumados den el coeficiente de x, igual que hicimos para factorizar x²−11x+18 (números -2 y -9).",
+            "Para x²+5x-24, buscamos dos números que multiplicados den -24 y sumados 5: son 8 y -3, así que las soluciones son x=3 y x=-8."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -63,7 +67,11 @@
             "x=15, x=1"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "(x-3)(x-5)=x²-8x+15=0, así que x=3 o x=5."
+          "retroalimentacion": "(x-3)(x-5)=x²-8x+15=0, así que x=3 o x=5.",
+          "pistas": [
+            "Sigue el mismo procedimiento que usamos para x²−11x+18: busca dos números que multiplicados den el término independiente y sumados el coeficiente de x.",
+            "Para x²-8x+15, buscamos dos números que multiplicados den 15 y sumados -8: son -3 y -5, así que x=3 o x=5."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -95,7 +103,11 @@
             2,
             0
           ],
-          "retroalimentacion": "x²-6x+5=0 → x=1,5; x²+4x-5=0 → x=-5,1; x²-x-20=0 → x=5,-4."
+          "retroalimentacion": "x²-6x+5=0 → x=1,5; x²+4x-5=0 → x=-5,1; x²-x-20=0 → x=5,-4.",
+          "pistas": [
+            "Aplica el mismo método de factorización que usamos con x²−11x+18: encontrar dos números con el producto y la suma correctos.",
+            "Para x²-6x+5, los números son -1 y -5, así que x=1 o x=5."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -104,7 +116,21 @@
           "retroalimentacion": "Correcto: (x-5)(x+3)=x²-2x-15=0, así que x=5 o x=-3."
         }
       ],
-      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio"
+      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio",
+      "ejemploResuelto": {
+        "enunciado": "El mismo entrenador del torneo en Toluca también quiere revisar la expresión x²−11x+18, para saber en qué partidos daría exactamente cero goles.",
+        "pasos": [
+          {
+            "texto": "Buscamos dos números que multiplicados den 18 y sumados den -11.",
+            "operacion": "factores: -2 y -9"
+          },
+          {
+            "texto": "Escribimos la factorización y resolvemos.",
+            "operacion": "(x-2)(x-9)=0 → x=2 o x=9"
+          }
+        ],
+        "respuestaFinal": "Las soluciones son x=2 y x=9."
+      }
     }
   ],
   "practicaExtra": [

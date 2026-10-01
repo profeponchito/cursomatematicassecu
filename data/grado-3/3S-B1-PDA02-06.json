@@ -48,7 +48,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Un tinaco con x=25 cm y h=16 cm tiene una capacidad de 10 litros.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "V = 25²×16 = 625×16 = 10,000 cm³ = 10 litros."
+          "retroalimentacion": "V = 25²×16 = 625×16 = 10,000 cm³ = 10 litros.",
+          "pistas": [
+            "Calcula el volumen con V=x²×h y después divide entre 1000 para obtener litros, igual que hicimos con el tinaco del patio de tu tía (6400 cm³=6.4 litros).",
+            "25²×16=625×16=10,000 cm³=10 litros."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -84,7 +88,11 @@
             "3 L"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "V = 12²×25 = 144×25 = 3600 cm³ = 3.6 litros."
+          "retroalimentacion": "V = 12²×25 = 144×25 = 3600 cm³ = 3.6 litros.",
+          "pistas": [
+            "Sigue los mismos pasos que usamos para el tinaco del patio: calcular el volumen y dividir entre 1000.",
+            "12²×25=144×25=3600 cm³=3.6 litros."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -102,7 +110,11 @@
             "$6"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "160 ÷ 40 = $4 por litro."
+          "retroalimentacion": "160 ÷ 40 = $4 por litro.",
+          "pistas": [
+            "Para encontrar el precio por litro, divide el costo total entre el número de litros, el mismo tipo de cálculo que usamos para el costo del tinaco del patio (6.4×$5=$32).",
+            "160÷40=$4 por litro."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -124,7 +136,25 @@
           ],
           "retroalimentacion": "x=20,h=15: V=400×15=6000cm³=6L. x=10,h=80: V=100×80=8000cm³=8L. x=50,h=4: V=2500×4=10000cm³=10L."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Tu tía también instala un tinaco más pequeño en el patio de su casa en Puebla, con x=16 cm y h=25 cm, y quiere saber cuántos litros son y cuánto costaría tratar esa agua a $5 pesos por litro.",
+        "pasos": [
+          {
+            "texto": "Calculamos el volumen en cm³.",
+            "operacion": "V=16²×25=256×25=6400"
+          },
+          {
+            "texto": "Convertimos a litros dividiendo entre 1000.",
+            "operacion": "6400÷1000=6.4 litros"
+          },
+          {
+            "texto": "Calculamos el costo de tratamiento.",
+            "operacion": "6.4×$5=$32"
+          }
+        ],
+        "respuestaFinal": "El tinaco del patio tiene 6.4 litros de capacidad, y tratar esa agua costaría $32 pesos."
+      }
     }
   ],
   "practicaExtra": [

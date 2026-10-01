@@ -30,7 +30,11 @@
           "tipo": "llenar_frase",
           "frase": "El tipo de cambio convierte dólares a pesos de forma proporcional: 20 dólares equivalen a $370 pesos. La ecuación que relaciona pesos (y) con dólares (x) es y = ___ × x.",
           "respuestaCorrecta": "18.5",
-          "retroalimentacion": "k = 370÷20 = 18.5."
+          "retroalimentacion": "k = 370÷20 = 18.5.",
+          "pistas": [
+            "Divide la cantidad en pesos entre la cantidad en dólares para encontrar k, igual que hicimos con la segunda casa de cambio de Fernanda (k=18.20).",
+            "k = 370÷20 = 18.5."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -60,7 +64,11 @@
             "y=81×x"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "k = 81÷6 = 13.5, así que y=13.5×x."
+          "retroalimentacion": "k = 81÷6 = 13.5, así que y=13.5×x.",
+          "pistas": [
+            "Calcula k dividiendo y entre x y escribe la ecuación y=k×x, el mismo procedimiento que usamos con el tipo de cambio de la segunda casa de cambio.",
+            "k = 81÷6 = 13.5, así que y=13.5×x."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -84,7 +92,11 @@
             "$2,862.50"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "k = 1050÷4 = 262.5. En 11 meses: 262.5×11 = $2,887.50."
+          "retroalimentacion": "k = 1050÷4 = 262.5. En 11 meses: 262.5×11 = $2,887.50.",
+          "pistas": [
+            "Encuentra k con el dato conocido y multiplícalo por el nuevo valor de x, igual que hicimos para calcular los pesos de 25 dólares en la segunda casa de cambio de Fernanda.",
+            "k = 1050÷4 = 262.5. En 11 meses: 262.5×11 = $2,887.50."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -124,7 +136,25 @@
           "respuestaCorrecta": 2,
           "retroalimentacion": "x = 337.5÷13.5 = 25 litros."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Fernanda también cambia dólares en otra casa de cambio de Tijuana, donde cada dólar equivale a 18.20 pesos. ¿Cuántos pesos recibiría por 25 dólares?",
+        "pasos": [
+          {
+            "texto": "Identificamos k (pesos por dólar).",
+            "operacion": "k=18.20"
+          },
+          {
+            "texto": "Escribimos la ecuación y=k×x.",
+            "operacion": "y=18.20×x"
+          },
+          {
+            "texto": "Sustituimos x=25.",
+            "operacion": "y=18.20×25=455"
+          }
+        ],
+        "respuestaFinal": "Fernanda recibiría $455 pesos por 25 dólares."
+      }
     }
   ],
   "practicaExtra": [

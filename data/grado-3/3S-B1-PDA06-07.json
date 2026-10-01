@@ -36,7 +36,11 @@
             "6 botes"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Perímetro de la base = 2×(6+4) = 20 m. Área lateral = 20×3 = 60 m². 60÷15 = 4, exactamente 4 botes."
+          "retroalimentacion": "Perímetro de la base = 2×(6+4) = 20 m. Área lateral = 20×3 = 60 m². 60÷15 = 4, exactamente 4 botes.",
+          "pistas": [
+            "Calcula el área que se va a cubrir y divide entre el rendimiento, redondeando hacia arriba, igual que hicimos con el segundo tinaco del papá de Karina (18.84÷8→3 litros).",
+            "Perímetro de la base = 2×(6+4) = 20 m. Área lateral = 20×3 = 60 m². 60÷15 = 4, exactamente 4 botes."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -60,7 +64,11 @@
             "2 pliegos"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Área total = 2(25×15)+2(25×10)+2(15×10) = 750+500+300 = 1550 cm². 1550÷500 = 3.1 → se redondea hacia arriba a 4 pliegos."
+          "retroalimentacion": "Área total = 2(25×15)+2(25×10)+2(15×10) = 750+500+300 = 1550 cm². 1550÷500 = 3.1 → se redondea hacia arriba a 4 pliegos.",
+          "pistas": [
+            "Calcula el área a cubrir, divide entre el rendimiento por unidad y redondea hacia arriba, el mismo procedimiento que usamos con el segundo tinaco de Karina.",
+            "Área total = 2(25×15)+2(25×10)+2(15×10) = 750+500+300 = 1550 cm². 1550÷500 = 3.1 → se redondea hacia arriba a 4 pliegos."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -84,7 +92,11 @@
             "No se puede saber sin más datos"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Área total de A = 2×3.14×9+2×3.14×3×5 = 150.72 m². Área total de B = 2×3.14×4+2×3.14×2×8 = 125.6 m². Como 150.72 > 125.6, el Tanque A necesita más pintura."
+          "retroalimentacion": "Área total de A = 2×3.14×9+2×3.14×3×5 = 150.72 m². Área total de B = 2×3.14×4+2×3.14×2×8 = 125.6 m². Como 150.72 > 125.6, el Tanque A necesita más pintura.",
+          "pistas": [
+            "Calcula el área total de cada cuerpo y compara, igual que decidimos cuántos litros necesitaba el segundo tinaco de Karina.",
+            "Área total de A = 2×3.14×9+2×3.14×3×5 = 150.72 m². Área total de B = 2×3.14×4+2×3.14×2×8 = 125.6 m². Como 150.72 > 125.6, el Tanque A necesita más pintura."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -124,7 +136,25 @@
           "respuestaCorrecta": 0,
           "retroalimentacion": "Área lateral = 2×3.14×2.5×10 = 157 m². 157÷18 = 8.72 → 9 litros × $95 = $855."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El mismo papá de Karina en Mérida también renta otro tinaco cilíndrico de 1 m de radio y 2 m de altura, que también hay que pintar por fuera. Cada litro de pintura rinde 8 m² y cuesta $95.",
+        "pasos": [
+          {
+            "texto": "Calculamos el área total del tinaco.",
+            "operacion": "AT=2×3.14×1²+2×3.14×1×2=6.28+12.56=18.84"
+          },
+          {
+            "texto": "Dividimos entre el rendimiento y redondeamos hacia arriba.",
+            "operacion": "18.84÷8=2.355 → 3 litros"
+          },
+          {
+            "texto": "Multiplicamos por el precio.",
+            "operacion": "3×95=285"
+          }
+        ],
+        "respuestaFinal": "Debe comprar 3 litros de pintura y gastará $285 en total."
+      }
     }
   ],
   "practicaExtra": [

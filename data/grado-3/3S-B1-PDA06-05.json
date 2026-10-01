@@ -48,7 +48,11 @@
           "tipo": "llenar_frase",
           "frase": "El área total de una pirámide de base cuadrada de lado 5 cm y apotema 6 cm es ___ cm².",
           "respuestaCorrecta": "85",
-          "retroalimentacion": "Área de la base = 25 cm². Perímetro = 20 cm. Área lateral = (20×6)÷2 = 60 cm². Área total = 25+60 = 85 cm²."
+          "retroalimentacion": "Área de la base = 25 cm². Perímetro = 20 cm. Área lateral = (20×6)÷2 = 60 cm². Área total = 25+60 = 85 cm².",
+          "pistas": [
+            "Calcula el área de la base, el perímetro y el área lateral por separado, y después súmalas, igual que hicimos con la nueva pirámide del artesano de Michoacán (324+432=756).",
+            "Área de la base = 25 cm². Perímetro = 20 cm. Área lateral = (20×6)÷2 = 60 cm². Área total = 25+60 = 85 cm²."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -84,7 +88,11 @@
             "66 cm²"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Área de la base = 16 cm². Perímetro = 16 cm. Área lateral = (16×5)÷2 = 40 cm². Área total = 16+40 = 56 cm²."
+          "retroalimentacion": "Área de la base = 16 cm². Perímetro = 16 cm. Área lateral = (16×5)÷2 = 40 cm². Área total = 16+40 = 56 cm².",
+          "pistas": [
+            "Sigue los mismos pasos que usamos para la nueva pirámide del artesano: área de la base, perímetro, área lateral y suma final.",
+            "Área de la base = 16 cm². Perímetro = 16 cm. Área lateral = (16×5)÷2 = 40 cm². Área total = 16+40 = 56 cm²."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -122,9 +130,35 @@
             "224 cm²"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Área de la base = 64 cm². Área lateral = (32×9)÷2 = 144 cm². Área total = 64+144 = 208 cm²."
+          "retroalimentacion": "Área de la base = 64 cm². Área lateral = (32×9)÷2 = 144 cm². Área total = 64+144 = 208 cm².",
+          "pistas": [
+            "Suma el área de la base más el área lateral para obtener el área total completa, igual que hicimos con la nueva pirámide del artesano de Michoacán.",
+            "Área de la base = 64 cm². Área lateral = (32×9)÷2 = 144 cm². Área total = 64+144 = 208 cm²."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El mismo artesano de Michoacán también construye otra pirámide de madera con base cuadrada de 18 m de lado, cuyas caras laterales tienen un apotema de 12 m.",
+        "pasos": [
+          {
+            "texto": "Calculamos el área de la base.",
+            "operacion": "18×18=324"
+          },
+          {
+            "texto": "Calculamos el perímetro de la base.",
+            "operacion": "4×18=72"
+          },
+          {
+            "texto": "Calculamos el área lateral.",
+            "operacion": "(72×12)÷2=432"
+          },
+          {
+            "texto": "Sumamos el área de la base y el área lateral.",
+            "operacion": "324+432=756"
+          }
+        ],
+        "respuestaFinal": "El área total de la pirámide es 756 m²."
+      }
     }
   ],
   "practicaExtra": [

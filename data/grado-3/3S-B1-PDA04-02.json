@@ -27,7 +27,11 @@
           "tipo": "llenar_frase",
           "frase": "Juan, Luis y Marco aportaron $3,000, $5,000 y $2,000 respectivamente y reparten $2,000 de utilidad proporcionalmente. A Luis le corresponden $___.",
           "respuestaCorrecta": "1000",
-          "retroalimentacion": "Suma=10,000. Luis: (5000/10000)×2000 = $1,000."
+          "retroalimentacion": "Suma=10,000. Luis: (5000/10000)×2000 = $1,000.",
+          "pistas": [
+            "Identifica si al cambiar una cantidad la otra cambia en la misma proporción, como en la tortillería de don Ramiro (al doblar los kilos, se dobla el precio).",
+            "Suma=10,000. Luis: (5000/10000)×2000 = $1,000."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -63,13 +67,21 @@
             "$120"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "Suma=7. (4/7)×280 = $160."
+          "retroalimentacion": "Suma=7. (4/7)×280 = $160.",
+          "pistas": [
+            "El reparto proporcional usa la misma idea de 'misma proporción' que la variación directa de la tortillería: dividir entre la suma y multiplicar por la parte correspondiente.",
+            "Suma=7. (4/7)×280 = $160."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "Se reparten $150 proporcionalmente entre dos personas con aportaciones de $30 y $70. A la de $70 le tocan $105.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: suma=100. (70/100)×150 = $105."
+          "retroalimentacion": "Correcto: suma=100. (70/100)×150 = $105.",
+          "pistas": [
+            "Suma las aportaciones y reparte en esa proporción, el mismo tipo de razonamiento proporcional que usamos con la tortillería de don Ramiro.",
+            "Suma=100. (70/100)×150 = $105."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -110,7 +122,21 @@
           "retroalimentacion": "$220 en razón 3:8 — parte de razón 3 = $60; $392 en razón 2:5 — parte de razón 2 = $112; $260 en razón 7:6 — parte de razón 7 = $140."
         }
       ],
-      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio"
+      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio",
+      "ejemploResuelto": {
+        "enunciado": "En la tortillería de don Ramiro, 3 kilos de tortillas cuestan $45. Si un cliente compra el doble de kilos (6 kg), ¿cuánto pagará?",
+        "pasos": [
+          {
+            "texto": "Identificamos que es una variación directa: si los kilos se duplican, el precio también se duplica.",
+            "operacion": "6 kg = 2×3 kg"
+          },
+          {
+            "texto": "Multiplicamos el precio original por el mismo factor.",
+            "operacion": "$45×2=$90"
+          }
+        ],
+        "respuestaFinal": "El cliente pagará $90 por 6 kg, el doble de $45."
+      }
     }
   ],
   "practicaExtra": [

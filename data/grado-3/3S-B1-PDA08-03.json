@@ -47,7 +47,11 @@
           "tipo": "llenar_frase",
           "frase": "Una lata de aceite cuesta $180 y contiene 6 litros. Su precio por litro es de ___ pesos.",
           "respuestaCorrecta": "30",
-          "retroalimentacion": "precio unitario = 180/6 = $30/litro."
+          "retroalimentacion": "precio unitario = 180/6 = $30/litro.",
+          "pistas": [
+            "Divide el precio total entre la cantidad para obtener el precio unitario, igual que hicimos para comparar las bolsas de frijol de Óscar (29 vs 26.4 pesos por kg).",
+            "precio unitario = 180/6 = $30/litro."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -71,7 +75,11 @@
           "tipo": "llenar_frase",
           "frase": "Un tinaco de 500 litros cuesta $2 500. Su costo por litro es de ___ pesos.",
           "respuestaCorrecta": "5",
-          "retroalimentacion": "precio unitario = 2500/500 = $5/litro."
+          "retroalimentacion": "precio unitario = 2500/500 = $5/litro.",
+          "pistas": [
+            "Divide el precio entre la cantidad total, el mismo procedimiento que usamos para decidir qué bolsa de frijol conviene más a Óscar.",
+            "precio unitario = 2500/500 = $5/litro."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -95,7 +103,11 @@
           "tipo": "llenar_frase",
           "frase": "Una caja de azulejo cubre 10 m² y cuesta $850. Su precio por m² es de ___ pesos.",
           "respuestaCorrecta": "85",
-          "retroalimentacion": "precio unitario = 850/10 = $85/m²."
+          "retroalimentacion": "precio unitario = 850/10 = $85/m².",
+          "pistas": [
+            "Sigue la fórmula precio unitario=precio total÷cantidad, igual que calculamos el precio por kg de las bolsas de frijol de Óscar.",
+            "precio unitario = 850/10 = $85/m²."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -118,7 +130,25 @@
           "retroalimentacion": "30/2=$15/L. 100/4=$25/L. 60/5=$12/L."
         }
       ],
-      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado"
+      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado",
+      "ejemploResuelto": {
+        "enunciado": "En el mercado de Tlaquepaque, Óscar compara una bolsa de frijol de 2 kg en $58 contra otra de 5 kg en $132.",
+        "pasos": [
+          {
+            "texto": "Calculamos el precio por kg de la bolsa chica.",
+            "operacion": "58÷2=29"
+          },
+          {
+            "texto": "Calculamos el precio por kg de la bolsa grande.",
+            "operacion": "132÷5=26.4"
+          },
+          {
+            "texto": "Comparamos: el precio más bajo conviene más.",
+            "operacion": "26.4<29"
+          }
+        ],
+        "respuestaFinal": "La bolsa de 5 kg conviene más, porque su precio por kilogramo ($26.40) es más bajo que el de la bolsa de 2 kg ($29)."
+      }
     }
   ],
   "practicaExtra": [

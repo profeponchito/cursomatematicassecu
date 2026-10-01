@@ -41,7 +41,11 @@
             "1360 cm³"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "V = 8.5²×20 = 72.25×20 = 1445 cm³."
+          "retroalimentacion": "V = 8.5²×20 = 72.25×20 = 1445 cm³.",
+          "pistas": [
+            "Eleva el lado decimal al cuadrado y multiplica por la altura, igual que hicimos para verificar el reporte del tinaco de 14.5 cm (210.25×8=1682).",
+            "8.5²=72.25, y 72.25×20=1445."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -71,7 +75,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Un tinaco tiene h=x+2.5. Si x=6 cm, su volumen es 36×8.5=306 cm³.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "h = 6+2.5 = 8.5; V = 6²×8.5 = 36×8.5 = 306 cm³."
+          "retroalimentacion": "h = 6+2.5 = 8.5; V = 6²×8.5 = 36×8.5 = 306 cm³.",
+          "pistas": [
+            "Primero calcula la altura sumando la relación decimal, y después aplica V=x²×h, el mismo procedimiento que usamos para el tinaco de 14.5 cm de Mateo.",
+            "h=6+2.5=8.5; V=6²×8.5=36×8.5=306."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -101,7 +109,11 @@
             "El volumen real es 1925 cm³"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "V real = 11²×15 = 121×15 = 1815 cm³. El reporte (1850) tiene un error de 1850-1815=35 cm³."
+          "retroalimentacion": "V real = 11²×15 = 121×15 = 1815 cm³. El reporte (1850) tiene un error de 1850-1815=35 cm³.",
+          "pistas": [
+            "Calcula el volumen real y réstalo del valor reportado para encontrar el error, igual que hicimos con el reporte del tinaco de 14.5 cm (1682-1680=2).",
+            "V real=11²×15=1815; error=1850-1815=35 cm³."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -123,7 +135,21 @@
           ],
           "retroalimentacion": "x=7.5,h=24: V=56.25×24=1350. V=2116,x=23: h=2116÷529=4. Cubo arista6.5: 6.5³=274.625."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El jefe le da a Mateo otro reporte: un compañero afirma que un tinaco con x=14.5 cm y h=8 cm tiene un volumen de 1,680 cm³. Mateo debe verificar si es correcto.",
+        "pasos": [
+          {
+            "texto": "Calculamos el volumen real.",
+            "operacion": "V=14.5²×8=210.25×8=1682"
+          },
+          {
+            "texto": "Comparamos con el valor reportado.",
+            "operacion": "1682-1680=2"
+          }
+        ],
+        "respuestaFinal": "El volumen real es 1,682 cm³; el reporte (1,680 cm³) tiene un error de 2 cm³."
+      }
     }
   ],
   "practicaExtra": [

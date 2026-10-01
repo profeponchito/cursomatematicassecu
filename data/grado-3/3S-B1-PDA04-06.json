@@ -42,7 +42,11 @@
             "9"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "k = 21÷3 = 7."
+          "retroalimentacion": "k = 21÷3 = 7.",
+          "pistas": [
+            "Calcula k dividiendo y entre x usando el punto dado, igual que hicimos con los puntos del gasto de gasolina de Andrés (k=14).",
+            "k = 21÷3 = 7."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -60,7 +64,11 @@
             "216 litros"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "k = 140÷5 = 28 litros/min. A los 8 min: 28×8 = 224 litros."
+          "retroalimentacion": "k = 140÷5 = 28 litros/min. A los 8 min: 28×8 = 224 litros.",
+          "pistas": [
+            "Encuentra k con el punto conocido y multiplícalo por el nuevo valor de x, el mismo procedimiento que usamos con los litros de gasolina de Andrés.",
+            "k = 140÷5 = 28 litros/min. A los 8 min: 28×8 = 224 litros."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -98,7 +106,11 @@
             0,
             2
           ],
-          "retroalimentacion": "(0,0),(4,34): k=34÷4=8.5. (0,0),(8,52): k=52÷8=6.5. (0,0),(5,37.5): k=37.5÷5=7.5."
+          "retroalimentacion": "(0,0),(4,34): k=34÷4=8.5. (0,0),(8,52): k=52÷8=6.5. (0,0),(5,37.5): k=37.5÷5=7.5.",
+          "pistas": [
+            "Calcula k para cada par de puntos dividiendo y entre x, igual que hicimos para verificar los puntos de gasolina de Andrés.",
+            "(0,0),(4,34): k=34÷4=8.5. (0,0),(8,52): k=52÷8=6.5. (0,0),(5,37.5): k=37.5÷5=7.5."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -124,7 +136,25 @@
           "respuestaCorrecta": 0,
           "retroalimentacion": "En (0,0),(2,10),(4,20): k=10÷2=5 y k=20÷4=5, es constante. En las otras opciones la razón cambia o no pasa por el origen."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Andrés también registra estos puntos de su gasto en gasolina: con 3 litros gastó $42, y con 7 litros gastó $98. Quiere saber si están alineados con el origen y cuánto gastaría con 10 litros.",
+        "pasos": [
+          {
+            "texto": "Calculamos k con cada punto.",
+            "operacion": "k=42÷3=14 y k=98÷7=14"
+          },
+          {
+            "texto": "Como ambas k coinciden, los puntos están sobre la misma recta que pasa por el origen.",
+            "operacion": "variación directa confirmada"
+          },
+          {
+            "texto": "Calculamos el gasto para 10 litros.",
+            "operacion": "y=14×10=140"
+          }
+        ],
+        "respuestaFinal": "Los puntos sí están alineados sobre una recta que pasa por el origen (k=14), y con 10 litros gastaría $140."
+      }
     }
   ],
   "practicaExtra": [

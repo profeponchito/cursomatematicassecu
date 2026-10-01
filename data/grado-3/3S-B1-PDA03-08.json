@@ -41,7 +41,11 @@
           "tipo": "llenar_frase",
           "frase": "Resuelve 2x² - 7x - 4 = 0. La solución positiva y entera es x = ___.",
           "respuestaCorrecta": "4",
-          "retroalimentacion": "(2x+1)(x-4)=2x²-7x-4=0 → x=4 o x=-0.5. La entera positiva es 4."
+          "retroalimentacion": "(2x+1)(x-4)=2x²-7x-4=0 → x=4 o x=-0.5. La entera positiva es 4.",
+          "pistas": [
+            "Busca dos binomios cuyo producto dé la ecuación original, tomando en cuenta el coeficiente A, igual que hicimos para el nuevo lote de la panadería (4x²+11x-3=0 → x=0.25 o x=-3).",
+            "(2x+1)(x-4)=2x²-7x-4=0 → x=4 o x=-0.5. La entera positiva es 4."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -65,7 +69,11 @@
             "6"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "2x²-5x-3=0 → (2x+1)(x-3)=0 → x=3 (se descarta -0.5)."
+          "retroalimentacion": "2x²-5x-3=0 → (2x+1)(x-3)=0 → x=3 (se descarta -0.5).",
+          "pistas": [
+            "Factoriza buscando binomios que reproduzcan A, B y C, el mismo procedimiento que usamos para el nuevo lote de la panadería.",
+            "2x²-5x-3=0 → (2x+1)(x-3)=0 → x=3 (se descarta -0.5)."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -83,7 +91,11 @@
           "tipo": "llenar_frase",
           "frase": "Resuelve 2x² + x - 15 = 0. La solución negativa es x = ___.",
           "respuestaCorrecta": "-3",
-          "retroalimentacion": "(2x-5)(x+3)=2x²+x-15=0 → x=2.5 o x=-3. La negativa es -3."
+          "retroalimentacion": "(2x-5)(x+3)=2x²+x-15=0 → x=2.5 o x=-3. La negativa es -3.",
+          "pistas": [
+            "Sigue el mismo método de factorización con A≠1 que usamos para el nuevo lote de la panadería de Puebla.",
+            "(2x-5)(x+3)=2x²+x-15=0 → x=2.5 o x=-3. La negativa es -3."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -124,7 +136,25 @@
           "retroalimentacion": "En Ax²+Bx+C=0, el coeficiente de x² es A=5, el de x es B=-2 y el término independiente es C=9."
         }
       ],
-      "nivelEtiqueta": "Nivel 8 de 10 · Reto avanzado"
+      "nivelEtiqueta": "Nivel 8 de 10 · Reto avanzado",
+      "ejemploResuelto": {
+        "enunciado": "La misma panadería de Puebla también produce otro lote cuyo costo se modela con 4x²+11x−3=0.",
+        "pasos": [
+          {
+            "texto": "Identificamos A, B y C.",
+            "operacion": "A=4, B=11, C=-3"
+          },
+          {
+            "texto": "Buscamos dos binomios cuyo producto reproduzca la ecuación.",
+            "operacion": "(4x-1)(x+3)=4x²+11x-3"
+          },
+          {
+            "texto": "Igualamos cada factor a cero.",
+            "operacion": "x=0.25 o x=-3"
+          }
+        ],
+        "respuestaFinal": "Las soluciones son x=0.25 y x=-3."
+      }
     }
   ],
   "practicaExtra": [

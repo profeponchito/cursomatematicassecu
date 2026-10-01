@@ -36,7 +36,11 @@
             "24 × 10⁸"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "6 × 4 = 24, y 10⁵⁺² = 10⁷, entonces 24 × 10⁷ = 2.4 × 10⁸."
+          "retroalimentacion": "6 × 4 = 24, y 10⁵⁺² = 10⁷, entonces 24 × 10⁷ = 2.4 × 10⁸.",
+          "pistas": [
+            "Multiplica los coeficientes y suma los exponentes por separado, igual que hicimos con los cables USB de Monterrey (3×2=6, 10³⁺⁵=10⁸).",
+            "6×4=24, 10⁵⁺²=10⁷, entonces 24×10⁷=2.4×10⁸."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -78,7 +82,11 @@
             "42 × 10¹¹"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "7 × 6 = 42, y 10⁶⁺⁴ = 10¹⁰, entonces 42 × 10¹⁰ = 4.2 × 10¹¹."
+          "retroalimentacion": "7 × 6 = 42, y 10⁶⁺⁴ = 10¹⁰, entonces 42 × 10¹⁰ = 4.2 × 10¹¹.",
+          "pistas": [
+            "Sigue los mismos dos pasos que con los cables USB de Monterrey: multiplicar coeficientes, sumar exponentes.",
+            "7×6=42, 10⁶⁺⁴=10¹⁰, entonces 42×10¹⁰=4.2×10¹¹."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -116,7 +124,11 @@
             "2 × 10⁸"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "4 × 2 = 8, y 10²⁺⁶ = 10⁸, entonces el total es 8 × 10⁸ bytes."
+          "retroalimentacion": "4 × 2 = 8, y 10²⁺⁶ = 10⁸, entonces el total es 8 × 10⁸ bytes.",
+          "pistas": [
+            "Multiplica los coeficientes y suma los exponentes, el mismo procedimiento que usamos para los cables USB de Monterrey.",
+            "4×2=8, 10²⁺⁶=10⁸, entonces el total es 8×10⁸ bytes."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -124,7 +136,21 @@
           "respuestaCorrecta": "2 × 10⁵",
           "retroalimentacion": "5 × 4 = 20, y 10³⁺¹ = 10⁴, entonces 20 × 10⁴ = 2 × 10⁵ piezas."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "La misma tienda en línea de Monterrey también vende paquetes de 3×10³ cables USB, cada uno capaz de transferir 2×10⁵ bytes por segundo.",
+        "pasos": [
+          {
+            "texto": "Multiplicamos los coeficientes.",
+            "operacion": "3×2=6"
+          },
+          {
+            "texto": "Sumamos los exponentes.",
+            "operacion": "10³⁺⁵=10⁸"
+          }
+        ],
+        "respuestaFinal": "6×10⁸ bytes por segundo en total."
+      }
     }
   ],
   "practicaExtra": [

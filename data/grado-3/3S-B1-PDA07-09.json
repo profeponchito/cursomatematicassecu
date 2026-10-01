@@ -48,7 +48,11 @@
           "tipo": "llenar_frase",
           "frase": "El área curva (sin contar la base circular) de un domo hemisférico de radio 8.5 m es ___ m² (usa π≈3.14).",
           "respuestaCorrecta": "453.73",
-          "retroalimentacion": "A_curva=2×3.14×8.5²=453.73 m²."
+          "retroalimentacion": "A_curva=2×3.14×8.5²=453.73 m².",
+          "pistas": [
+            "Aplica la fórmula del área curva de un hemisferio A=2×π×r², igual que usamos conceptos de esferas y hemisferios para el nuevo tanque cápsula de Tampico.",
+            "A_curva=2×3.14×8.5²=453.73 m²."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -72,7 +76,11 @@
           "tipo": "llenar_frase",
           "frase": "Un domo hemisférico de radio 6.5 m tiene un volumen de aire de ___ m³ (usa π≈3.14).",
           "respuestaCorrecta": "574.88",
-          "retroalimentacion": "V_hemisferio=(2/3)×3.14×6.5³=574.88 m³."
+          "retroalimentacion": "V_hemisferio=(2/3)×3.14×6.5³=574.88 m³.",
+          "pistas": [
+            "Aplica la fórmula del volumen de un hemisferio V=(2/3)×π×r³, el mismo tipo de cálculo que usamos para las semiesferas del nuevo tanque cápsula de Tampico.",
+            "V_hemisferio=(2/3)×3.14×6.5³=574.88 m³."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -102,7 +110,11 @@
             "$7,084.63"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "A_curva=2×3.14×9.5²=566.77 m². Costo=566.77×25=$14,169.25."
+          "retroalimentacion": "A_curva=2×3.14×9.5²=566.77 m². Costo=566.77×25=$14,169.25.",
+          "pistas": [
+            "Calcula el área curva del hemisferio y multiplica por el precio, igual que calcularíamos el costo de pintar el nuevo tanque cápsula de Tampico.",
+            "A_curva=2×3.14×9.5²=566.77 m². Costo=566.77×25=$14,169.25."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -124,7 +136,25 @@
           ],
           "retroalimentacion": "r=4.5→190.75 m³. r=7.5→883.12 m³. r=11.5→3183.70 m³."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "En la misma gasolinera de Tampico instalarán otro tanque en forma de cápsula: un cilindro de 2.5 m de radio y 8 m de largo, con una semiesfera del mismo radio en cada extremo.",
+        "pasos": [
+          {
+            "texto": "Calculamos el volumen del cilindro.",
+            "operacion": "V_cilindro=3.14×2.5²×8=157"
+          },
+          {
+            "texto": "Calculamos el volumen de una esfera completa (las dos semiesferas juntas).",
+            "operacion": "V_esfera=(4/3)×3.14×2.5³=65.42"
+          },
+          {
+            "texto": "Sumamos ambos volúmenes.",
+            "operacion": "157+65.42=222.42"
+          }
+        ],
+        "respuestaFinal": "El volumen total de este segundo tanque es 222.42 m³."
+      }
     }
   ],
   "practicaExtra": [

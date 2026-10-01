@@ -47,7 +47,11 @@
           "tipo": "llenar_frase",
           "frase": "El área total de una caja de 8×3×2 cm es ___ cm².",
           "respuestaCorrecta": "92",
-          "retroalimentacion": "AT = 2(8×3)+2(8×2)+2(3×2) = 48+32+12 = 92 cm²."
+          "retroalimentacion": "AT = 2(8×3)+2(8×2)+2(3×2) = 48+32+12 = 92 cm².",
+          "pistas": [
+            "Aplica la fórmula AT=2(l×a)+2(l×h)+2(a×h) sustituyendo las tres dimensiones, igual que hicimos con la nueva caja de la fábrica de Guadalajara (12×9×6→468 cm²).",
+            "AT = 2(8×3)+2(8×2)+2(3×2) = 48+32+12 = 92 cm²."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -71,7 +75,11 @@
           "tipo": "llenar_frase",
           "frase": "El área total de una caja de 10×3×3 cm es ___ cm².",
           "respuestaCorrecta": "138",
-          "retroalimentacion": "AT = 2(10×3)+2(10×3)+2(3×3) = 60+60+18 = 138 cm²."
+          "retroalimentacion": "AT = 2(10×3)+2(10×3)+2(3×3) = 60+60+18 = 138 cm².",
+          "pistas": [
+            "Sustituye las tres dimensiones en la fórmula del área total y suma los tres pares de caras, el mismo procedimiento que usamos con la nueva caja de la fábrica de Guadalajara.",
+            "AT = 2(10×3)+2(10×3)+2(3×3) = 60+60+18 = 138 cm²."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -115,10 +123,32 @@
           "tipo": "llenar_frase",
           "frase": "El área total de una caja de 6×5×4 cm es ___ cm².",
           "respuestaCorrecta": "148",
-          "retroalimentacion": "AT = 2(6×5)+2(6×4)+2(5×4) = 60+48+40 = 148 cm²."
+          "retroalimentacion": "AT = 2(6×5)+2(6×4)+2(5×4) = 60+48+40 = 148 cm².",
+          "pistas": [
+            "Calcula los tres productos por pares, multiplica cada uno por 2 y suma, igual que hicimos con la nueva caja de empaques de Guadalajara.",
+            "AT = 2(6×5)+2(6×4)+2(5×4) = 60+48+40 = 148 cm²."
+          ]
         }
       ],
-      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio"
+      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio",
+      "ejemploResuelto": {
+        "enunciado": "La misma fábrica de empaques en Guadalajara también produce cajas de 12 cm de largo, 9 cm de ancho y 6 cm de altura.",
+        "pasos": [
+          {
+            "texto": "Aplicamos la fórmula del área total.",
+            "operacion": "AT=2(12×9)+2(12×6)+2(9×6)"
+          },
+          {
+            "texto": "Calculamos cada término.",
+            "operacion": "AT=2(108)+2(72)+2(54)=216+144+108"
+          },
+          {
+            "texto": "Sumamos.",
+            "operacion": "AT=216+144+108=468"
+          }
+        ],
+        "respuestaFinal": "El área total de la caja es 468 cm²."
+      }
     }
   ],
   "practicaExtra": [

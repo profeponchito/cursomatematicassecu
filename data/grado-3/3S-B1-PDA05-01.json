@@ -47,7 +47,11 @@
           "tipo": "llenar_frase",
           "frase": "Un triángulo rectángulo tiene catetos de 5 cm y 12 cm. Su hipotenusa mide ___ cm.",
           "respuestaCorrecta": "13",
-          "retroalimentacion": "c² = 5²+12² = 25+144 = 169, entonces c = √169 = 13 cm."
+          "retroalimentacion": "c² = 5²+12² = 25+144 = 169, entonces c = √169 = 13 cm.",
+          "pistas": [
+            "Suma los cuadrados de los catetos y saca raíz cuadrada para encontrar la hipotenusa, igual que hicimos con la segunda escalera de bomberos de Guadalajara (altura=48 m).",
+            "c² = 5²+12² = 25+144 = 169, entonces c = √169 = 13 cm."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -71,7 +75,11 @@
           "tipo": "llenar_frase",
           "frase": "Un triángulo rectángulo tiene hipotenusa de 13 cm y un cateto de 5 cm. El otro cateto mide ___ cm.",
           "respuestaCorrecta": "12",
-          "retroalimentacion": "b² = 13²-5² = 169-25 = 144, entonces b = √144 = 12 cm."
+          "retroalimentacion": "b² = 13²-5² = 169-25 = 144, entonces b = √144 = 12 cm.",
+          "pistas": [
+            "Resta el cuadrado del cateto conocido al cuadrado de la hipotenusa y saca raíz cuadrada, el mismo procedimiento que usamos para la segunda escalera de Guadalajara.",
+            "b² = 13²-5² = 169-25 = 144, entonces b = √144 = 12 cm."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -95,7 +103,11 @@
           "tipo": "llenar_frase",
           "frase": "Un triángulo rectángulo tiene hipotenusa de 20 cm y un cateto de 12 cm. El otro cateto mide ___ cm.",
           "respuestaCorrecta": "16",
-          "retroalimentacion": "b² = 20²-12² = 400-144 = 256, entonces b = √256 = 16 cm."
+          "retroalimentacion": "b² = 20²-12² = 400-144 = 256, entonces b = √256 = 16 cm.",
+          "pistas": [
+            "Sigue el mismo método que usamos para encontrar la altura de la segunda escalera de bomberos: restar los cuadrados y sacar raíz cuadrada.",
+            "b² = 20²-12² = 400-144 = 256, entonces b = √256 = 16 cm."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -118,7 +130,21 @@
           "retroalimentacion": "9²+12²=81+144=225=15². 12²+16²=144+256=400=20². 9²+40²=81+1600=1681=41²."
         }
       ],
-      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio"
+      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio",
+      "ejemploResuelto": {
+        "enunciado": "En otro parque de Guadalajara, una escalera de bomberos de 52 metros de largo se recarga contra un edificio con la base a 20 metros de la pared.",
+        "pasos": [
+          {
+            "texto": "Aplicamos el Teorema de Pitágoras para encontrar el cateto faltante (altura).",
+            "operacion": "altura²=52²-20²"
+          },
+          {
+            "texto": "Sustituimos y resolvemos.",
+            "operacion": "altura²=2704-400=2304 → altura=√2304=48"
+          }
+        ],
+        "respuestaFinal": "La escalera llega a 48 metros de altura en el edificio."
+      }
     }
   ],
   "practicaExtra": [

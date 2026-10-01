@@ -48,7 +48,11 @@
           "tipo": "llenar_frase",
           "frase": "Si el volumen de una esfera se multiplicó por 27, el radio se multiplicó por ___.",
           "respuestaCorrecta": "3",
-          "retroalimentacion": "∛27=3, porque el volumen depende de r³."
+          "retroalimentacion": "∛27=3, porque el volumen depende de r³.",
+          "pistas": [
+            "Para encontrar el factor del radio a partir del factor de volumen, saca raíz cúbica, igual que razonamos con la canica mediana de Don Melquiades (factor de volumen 27 → factor de radio 3).",
+            "∛27=3, porque el volumen depende de r³."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -78,7 +82,11 @@
             "aproximadamente 575 cm³"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Al duplicar el radio, el volumen se multiplica por 2³=8: 1149.76×8≈9198 cm³ (el valor exacto es 9198.11 cm³)."
+          "retroalimentacion": "Al duplicar el radio, el volumen se multiplica por 2³=8: 1149.76×8≈9198 cm³ (el valor exacto es 9198.11 cm³).",
+          "pistas": [
+            "Multiplica el volumen original por el cubo del factor de cambio del radio, el mismo razonamiento que usamos con la canica mediana de Don Melquiades.",
+            "Al duplicar el radio, el volumen se multiplica por 2³=8: 1149.76×8≈9198 cm³ (el valor exacto es 9198.11 cm³)."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -102,7 +110,11 @@
           "tipo": "llenar_frase",
           "frase": "Si el radio de una esfera aumenta un 20% (se multiplica por 1.2), su volumen se multiplica aproximadamente por ___ (redondea a 2 decimales).",
           "respuestaCorrecta": "1.73",
-          "retroalimentacion": "1.2³=1.728, que redondeado a 2 decimales es 1.73."
+          "retroalimentacion": "1.2³=1.728, que redondeado a 2 decimales es 1.73.",
+          "pistas": [
+            "Eleva el factor de cambio del radio al cubo para encontrar el factor de volumen, igual que hicimos con la canica mediana de Don Melquiades (factor 3 → 27).",
+            "1.2³=1.728, que redondeado a 2 decimales es 1.73."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -124,7 +136,21 @@
           ],
           "retroalimentacion": "Radio×2→volumen×8. Radio×3→volumen×27. Radio×5→volumen×125."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Don Melquiades también fabrica una canica 'mediana', cuyo radio es el triple del de la canica normal.",
+        "pasos": [
+          {
+            "texto": "Identificamos el factor de cambio del radio.",
+            "operacion": "k=3"
+          },
+          {
+            "texto": "Elevamos el factor al cubo para encontrar el factor de volumen.",
+            "operacion": "k³=3³=27"
+          }
+        ],
+        "respuestaFinal": "La canica mediana necesita 27 veces más vidrio que la normal."
+      }
     }
   ],
   "practicaExtra": [

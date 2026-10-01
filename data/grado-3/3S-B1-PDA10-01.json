@@ -35,7 +35,11 @@
             "50"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "marca de clase = (20+30)/2 = 25."
+          "retroalimentacion": "marca de clase = (20+30)/2 = 25.",
+          "pistas": [
+            "Suma el límite inferior y el superior del intervalo, y divide entre 2, igual que calculamos la marca de clase del intervalo de salto de longitud de Tijuana (3 y 4 → 3.5).",
+            "marca de clase = (20+30)/2 = 25."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -59,7 +63,11 @@
             "120"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "marca de clase = (50+70)/2 = 60."
+          "retroalimentacion": "marca de clase = (50+70)/2 = 60.",
+          "pistas": [
+            "Aplica la fórmula marca de clase=(límite inferior+límite superior)/2, el mismo procedimiento que usamos con el intervalo de salto de longitud de Tijuana.",
+            "marca de clase = (50+70)/2 = 60."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -83,7 +91,11 @@
             "20"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "marca de clase = (5+15)/2 = 10."
+          "retroalimentacion": "marca de clase = (5+15)/2 = 10.",
+          "pistas": [
+            "Suma los dos límites del intervalo y divide entre 2, igual que hicimos para el intervalo de 3 a 4 metros del salto de longitud en Tijuana.",
+            "marca de clase = (5+15)/2 = 10."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -118,7 +130,21 @@
           "retroalimentacion": "(25+35)/2 = 30."
         }
       ],
-      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio"
+      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio",
+      "ejemploResuelto": {
+        "enunciado": "El mismo profesor de deportes de Tijuana también agrupó los saltos de longitud del mismo torneo, esta vez en el intervalo de 3 a 4 metros.",
+        "pasos": [
+          {
+            "texto": "Sumamos el límite inferior y el límite superior del intervalo.",
+            "operacion": "3+4=7"
+          },
+          {
+            "texto": "Dividimos esa suma entre 2 para obtener la marca de clase.",
+            "operacion": "7÷2=3.5"
+          }
+        ],
+        "respuestaFinal": "La marca de clase del intervalo de 3 a 4 metros es 3.5 metros."
+      }
     }
   ],
   "practicaExtra": [

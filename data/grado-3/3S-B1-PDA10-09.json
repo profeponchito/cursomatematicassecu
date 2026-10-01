@@ -42,7 +42,11 @@
             "60"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "n/2=30. Acumuladas: 6,20,40,55,60. Clase mediana 40-60 (Li=40, Fant=20, fme=20, A=20). Me=40+[(30−20)/20]×20=50."
+          "retroalimentacion": "n/2=30. Acumuladas: 6,20,40,55,60. Clase mediana 40-60 (Li=40, Fant=20, fme=20, A=20). Me=40+[(30−20)/20]×20=50.",
+          "pistas": [
+            "Encuentra la clase mediana con las frecuencias acumuladas y aplica la fórmula de interpolación, igual que calculamos la mediana del otro salón de la Feria de Ciencias (≈29.44).",
+            "n/2=30. Acumuladas: 6,20,40,55,60. Clase mediana 40-60 (Li=40, Fant=20, fme=20, A=20). Me=40+[(30−20)/20]×20=50."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -54,7 +58,11 @@
             "45.00"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Clase modal 40-60 (fmo=20, Li=40, fant=14, fpost=15, A=20). Mo=40+[(20−14)/((20−14)+(20−15))]×20≈50.91."
+          "retroalimentacion": "Clase modal 40-60 (fmo=20, Li=40, fant=14, fpost=15, A=20). Mo=40+[(20−14)/((20−14)+(20−15))]×20≈50.91.",
+          "pistas": [
+            "Identifica la clase modal y aplica la fórmula de la moda estimada, el mismo procedimiento que usamos con el otro salón de la Feria de Ciencias (≈28.33).",
+            "Clase modal 40-60 (fmo=20, Li=40, fant=14, fpost=15, A=20). Mo=40+[(20−14)/((20−14)+(20−15))]×20≈50.91."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -110,7 +118,11 @@
           "tipo": "llenar_frase",
           "frase": "Con la misma tabla de producción de la fábrica de zapatos, la desviación media de la producción diaria es ___ pares.",
           "respuestaCorrecta": "40.6",
-          "retroalimentacion": "DM=[5|125−220|+12|175−220|+20|225−220|+9|275−220|+4|325−220|]/50=2030/50=40.6."
+          "retroalimentacion": "DM=[5|125−220|+12|175−220|+20|225−220|+9|275−220|+4|325−220|]/50=2030/50=40.6.",
+          "pistas": [
+            "Calcula la media y después la desviación media con DM=Σ[f×|marca−media|]/n, igual que calculamos la DM del otro salón de la Feria de Ciencias (≈8.19).",
+            "DM=[5|125−220|+12|175−220|+20|225−220|+9|275−220|+4|325−220|]/50=2030/50=40.6."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -124,7 +136,29 @@
           "respuestaCorrecta": 0,
           "retroalimentacion": "Correcto: cuando media y mediana son muy parecidas, es señal de que la distribución no está sesgada por valores atípicos; en el subtema 10.10 verás qué pasa cuando sí los hay."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El mismo comité de la Feria de Ciencias arma el reporte de otro salón con 50 visitantes, agrupados en: 10-20 (f=8), 20-30 (f=18), 30-40 (f=16), 40-50 (f=8).",
+        "pasos": [
+          {
+            "texto": "Calculamos la media.",
+            "operacion": "media=(8×15+18×25+16×35+8×45)÷50=1490÷50=29.8"
+          },
+          {
+            "texto": "Calculamos la mediana exacta.",
+            "operacion": "Me=20+[(25-8)/18]×10≈29.44"
+          },
+          {
+            "texto": "Calculamos la moda estimada.",
+            "operacion": "Mo=20+[(18-8)/((18-8)+(18-16))]×10≈28.33"
+          },
+          {
+            "texto": "Calculamos la desviación media.",
+            "operacion": "DM=[8|15-29.8|+18|25-29.8|+16|35-29.8|+8|45-29.8|]÷50=409.6÷50=8.19"
+          }
+        ],
+        "respuestaFinal": "Media≈29.8, mediana≈29.44, moda≈28.33 y desviación media≈8.19: las tres medidas de tendencia central son muy parecidas, lo que indica una distribución bastante simétrica, aunque con una dispersión considerable respecto al promedio."
+      }
     }
   ],
   "practicaExtra": [

@@ -40,7 +40,11 @@
           "tipo": "llenar_frase",
           "frase": "Una empresa produce x cientos de playeras; su costo neto (miles de pesos) es 3x² - 20x + 12. Si el costo neto fue exactamente cero, la mayor cantidad de cientos de playeras producidas fue x = ___.",
           "respuestaCorrecta": "6",
-          "retroalimentacion": "3x²-20x+12=0 → (3x-2)(x-6)=0 → x=6 o x=2/3. La mayor es 6."
+          "retroalimentacion": "3x²-20x+12=0 → (3x-2)(x-6)=0 → x=6 o x=2/3. La mayor es 6.",
+          "pistas": [
+            "Factoriza buscando binomios que reproduzcan la ecuación, igual que hicimos con el reporte del segundo puesto de la feria de Diego (x²-18x+77=0 → x=7 o x=11).",
+            "3x²-20x+12=0 → (3x-2)(x-6)=0 → x=6 o x=2/3. La mayor es 6."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -64,7 +68,11 @@
           "tipo": "llenar_frase",
           "frase": "Un dron de exhibición sigue una trayectoria de altura h = -2x² + 22x (metros), con x en segundos. Aparte de x=0, el dron vuelve a estar a nivel del suelo en el segundo x = ___.",
           "respuestaCorrecta": "11",
-          "retroalimentacion": "-2x²+22x=0 → dividiendo entre -2: x²-11x=0 → x(x-11)=0 → x=0 o x=11."
+          "retroalimentacion": "-2x²+22x=0 → dividiendo entre -2: x²-11x=0 → x(x-11)=0 → x=0 o x=11.",
+          "pistas": [
+            "Divide entre el coeficiente negativo para simplificar antes de factorizar, el mismo primer paso que usamos con el reporte del segundo puesto de Diego.",
+            "-2x²+22x=0 → dividiendo entre -2: x²-11x=0 → x(x-11)=0 → x=0 o x=11."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -96,7 +104,11 @@
             "13"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "(x+4)(x+2)=143 → x²+6x-135=0 → (x-9)(x+15)=0 → x=9 (se descarta -15)."
+          "retroalimentacion": "(x+4)(x+2)=143 → x²+6x-135=0 → (x-9)(x+15)=0 → x=9 (se descarta -15).",
+          "pistas": [
+            "Desarrolla el producto de los binomios, pasa todo a un lado y factoriza, igual que hicimos con el reporte del segundo puesto de la feria de Diego.",
+            "(x+4)(x+2)=143 → x²+6x-135=0 → (x-9)(x+15)=0 → x=9 (se descarta -15)."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -123,7 +135,25 @@
           "retroalimentacion": "2x²-13x+15=0 → (2x-3)(x-5)=0 → x=1.5 o x=5."
         }
       ],
-      "nivelEtiqueta": "Nivel 10 de 10 · Dominio"
+      "nivelEtiqueta": "Nivel 10 de 10 · Dominio",
+      "ejemploResuelto": {
+        "enunciado": "Diego también revisa el reporte de otro puesto de la feria, cuya ganancia (miles de pesos) es -x²+18x−77, según los cientos de boletos x vendidos.",
+        "pasos": [
+          {
+            "texto": "Igualamos a cero y multiplicamos por -1 para simplificar.",
+            "operacion": "-x²+18x-77=0 → x²-18x+77=0"
+          },
+          {
+            "texto": "Factorizamos.",
+            "operacion": "(x-7)(x-11)=0 → x=7 o x=11"
+          },
+          {
+            "texto": "Comprobamos sustituyendo x=7 en la ecuación original.",
+            "operacion": "-(7)²+18(7)-77=-49+126-77=0"
+          }
+        ],
+        "respuestaFinal": "El puesto no pierde dinero vendiendo entre 7 y 11 cientos de boletos (700 a 1,100 boletos)."
+      }
     }
   ],
   "practicaExtra": [

@@ -36,7 +36,11 @@
             "0.3 × 10⁹"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "6 × 5 = 30 × 10⁷, y como 30 ≥ 10, se ajusta a 3 × 10⁸."
+          "retroalimentacion": "6 × 5 = 30 × 10⁷, y como 30 ≥ 10, se ajusta a 3 × 10⁸.",
+          "pistas": [
+            "Cuando el coeficiente resultante es 10 o más, corre el punto decimal y suma 1 al exponente, igual que hicimos con la segunda línea de producción de Querétaro (56×10⁶→5.6×10⁷).",
+            "6×5=30×10⁷, y como 30≥10, se ajusta a 3×10⁸."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -66,7 +70,11 @@
           "tipo": "llenar_frase",
           "frase": "(2 × 10⁴) ÷ (8 × 10⁷) normalizado es ___.",
           "respuestaCorrecta": "2.5 × 10⁻⁴",
-          "retroalimentacion": "2 ÷ 8 = 0.25 × 10⁻³, y al normalizar (0.25 < 1) queda 2.5 × 10⁻⁴."
+          "retroalimentacion": "2 ÷ 8 = 0.25 × 10⁻³, y al normalizar (0.25 < 1) queda 2.5 × 10⁻⁴.",
+          "pistas": [
+            "Cuando el coeficiente resultante es menor que 1, corre el punto decimal y resta 1 al exponente — el ajuste contrario al que hicimos para la línea de producción de Querétaro.",
+            "2÷8=0.25×10⁻³, y al normalizar (0.25<1) queda 2.5×10⁻⁴."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -84,7 +92,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "(3 × 10³) ÷ (5 × 10⁶) normalizado es 6 × 10⁻⁴.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "3 ÷ 5 = 0.6 × 10⁻³, y al normalizar (0.6 < 1) queda 6 × 10⁻⁴."
+          "retroalimentacion": "3 ÷ 5 = 0.6 × 10⁻³, y al normalizar (0.6 < 1) queda 6 × 10⁻⁴.",
+          "pistas": [
+            "Verifica si el coeficiente cumple 1≤a<10 y ajusta si hace falta, el mismo procedimiento que usamos con la segunda línea de producción de Querétaro.",
+            "3÷5=0.6×10⁻³, y al normalizar (0.6<1) queda 6×10⁻⁴."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -124,7 +136,21 @@
           "respuestaCorrecta": "2 × 10⁻⁶",
           "retroalimentacion": "6 ÷ 3 = 2 × 10⁻⁶, y como 2 ya está entre 1 y 10, no necesita más ajuste."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El mismo ingeniero de Querétaro también calcula el consumo de otra línea de producción y obtiene (7×10⁴)×(8×10²).",
+        "pasos": [
+          {
+            "texto": "Multiplicamos los coeficientes y sumamos los exponentes.",
+            "operacion": "7×8=56, 10⁴⁺²=10⁶ → 56×10⁶"
+          },
+          {
+            "texto": "Como 56≥10, normalizamos corriendo el punto decimal y ajustando el exponente.",
+            "operacion": "5.6×10⁷"
+          }
+        ],
+        "respuestaFinal": "5.6×10⁷."
+      }
     }
   ],
   "practicaExtra": [

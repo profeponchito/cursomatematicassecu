@@ -36,7 +36,11 @@
             "36"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Rango = 58 − 22 = 36. Amplitud = 36 ÷ 6 = 6."
+          "retroalimentacion": "Rango = 58 − 22 = 36. Amplitud = 36 ÷ 6 = 6.",
+          "pistas": [
+            "Resta el valor mínimo del máximo para obtener el rango, y divide entre el número de intervalos, igual que calculamos la amplitud de los tiempos de 200 m de Ensenada (60÷5=12).",
+            "Rango = 58 − 22 = 36. Amplitud = 36 ÷ 6 = 6."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -60,7 +64,11 @@
             "40-50"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Rango = 105 − 45 = 60. Amplitud = 60 ÷ 6 = 10. El primer intervalo va del mínimo (45) hasta 45+10 = 55."
+          "retroalimentacion": "Rango = 105 − 45 = 60. Amplitud = 60 ÷ 6 = 10. El primer intervalo va del mínimo (45) hasta 45+10 = 55.",
+          "pistas": [
+            "Calcula primero el rango (máximo menos mínimo) y después divide entre el número de intervalos, el mismo procedimiento que usamos con los tiempos de 200 m de Ensenada.",
+            "Rango = 105 − 45 = 60. Amplitud = 60 ÷ 6 = 10. El primer intervalo va del mínimo (45) hasta 45+10 = 55."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -84,7 +92,11 @@
             "36"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Rango = 194 − 158 = 36. Amplitud = 36 ÷ 6 = 6."
+          "retroalimentacion": "Rango = 194 − 158 = 36. Amplitud = 36 ÷ 6 = 6.",
+          "pistas": [
+            "Resta el valor mínimo del máximo y divide el resultado entre el número de intervalos, igual que hicimos con los tiempos de 200 m de Ensenada.",
+            "Rango = 194 − 158 = 36. Amplitud = 36 ÷ 6 = 6."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -124,7 +136,21 @@
           "respuestaCorrecta": 0,
           "retroalimentacion": "Cada intervalo suma la amplitud (12) al límite superior anterior: 42+12=54, entonces el segundo intervalo es 42-54."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El mismo entrenador de Ensenada tiene otra prueba, de 200 metros libres, con tiempos del más rápido en 130 segundos al más lento en 190 segundos, y quiere organizarlos en 5 intervalos del mismo tamaño.",
+        "pasos": [
+          {
+            "texto": "Calculamos el rango restando el tiempo mínimo del máximo.",
+            "operacion": "190-130=60"
+          },
+          {
+            "texto": "Dividimos el rango entre el número de intervalos deseado.",
+            "operacion": "60÷5=12"
+          }
+        ],
+        "respuestaFinal": "El rango es de 60 segundos y la amplitud de cada uno de los 5 intervalos debe ser 12 segundos."
+      }
     }
   ],
   "practicaExtra": [

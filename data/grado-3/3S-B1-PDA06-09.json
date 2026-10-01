@@ -48,7 +48,11 @@
           "tipo": "llenar_frase",
           "frase": "Si un litro de pintura rinde 20 m², se necesitan ___ litros para pintar el silo del reactivo anterior (redondea hacia arriba).",
           "respuestaCorrecta": "7",
-          "retroalimentacion": "125.6÷20 = 6.28 → se redondea hacia arriba a 7 litros."
+          "retroalimentacion": "125.6÷20 = 6.28 → se redondea hacia arriba a 7 litros.",
+          "pistas": [
+            "Divide el área entre el rendimiento por litro y redondea hacia arriba, igual que hicimos para el nuevo silo del rancho Domínguez (150.72÷7→22 litros).",
+            "125.6÷20 = 6.28 → se redondea hacia arriba a 7 litros."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -72,7 +76,11 @@
           "tipo": "llenar_frase",
           "frase": "Ese mismo invernadero (base cuadrada de 12 m de lado) tiene un apotema de la cara lateral de 11 m. Su área lateral (para forrar con plástico) es ___ m².",
           "respuestaCorrecta": "264",
-          "retroalimentacion": "Área lateral = (perímetro×apotema)÷2 = (48×11)÷2 = 264 m²."
+          "retroalimentacion": "Área lateral = (perímetro×apotema)÷2 = (48×11)÷2 = 264 m².",
+          "pistas": [
+            "Calcula el área lateral de la pirámide con (perímetro×apotema)÷2, el mismo tipo de cálculo de área que usamos para el nuevo silo del rancho Domínguez.",
+            "Área lateral = (perímetro×apotema)÷2 = (48×11)÷2 = 264 m²."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -116,7 +124,11 @@
             "165 días"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "V = 3.14×2.5²×4 = 3.14×6.25×4 = 78.5 m³. 78.5÷0.5 = 157 días exactos."
+          "retroalimentacion": "V = 3.14×2.5²×4 = 3.14×6.25×4 = 78.5 m³. 78.5÷0.5 = 157 días exactos.",
+          "pistas": [
+            "Calcula primero el volumen total y después divide entre el consumo diario, igual que calculamos el volumen del nuevo silo del rancho Domínguez.",
+            "V = 3.14×2.5²×4 = 3.14×6.25×4 = 78.5 m³. 78.5÷0.5 = 157 días exactos."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -124,7 +136,25 @@
           "respuestaCorrecta": true,
           "retroalimentacion": "Correcto: V = 3.14×3.5²×10 = 384.65 m³. AT = 2×3.14×3.5²+2×3.14×3.5×10 = 296.73 m². Volumen (m³) y área (m²) miden cosas distintas, pero aquí el valor numérico del volumen resulta mayor."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "En el mismo rancho de la familia Domínguez, otro silo cilíndrico tiene 2 m de radio y 12 m de altura. Necesitan saber su volumen, su área lateral y el costo de pintarlo si cada litro rinde 7 m² y cuesta $130.",
+        "pasos": [
+          {
+            "texto": "Calculamos el volumen.",
+            "operacion": "V=3.14×2²×12=3.14×4×12=150.72"
+          },
+          {
+            "texto": "Calculamos el área lateral.",
+            "operacion": "lateral=2×3.14×2×12=150.72"
+          },
+          {
+            "texto": "Dividimos entre el rendimiento, redondeamos hacia arriba y multiplicamos por el precio.",
+            "operacion": "150.72÷7=21.53 → 22 litros × $130 = $2,860"
+          }
+        ],
+        "respuestaFinal": "El volumen es 150.72 m³, y pintarlo cuesta $2,860."
+      }
     }
   ],
   "practicaExtra": [

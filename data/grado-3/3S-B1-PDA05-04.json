@@ -41,7 +41,11 @@
           "tipo": "llenar_frase",
           "frase": "Un dron sube en línea recta (hipotenusa) 25 m, y su sombra horizontal en el suelo es de 24 m. Usando el Teorema de Pitágoras, la altura del dron es ___ m.",
           "respuestaCorrecta": "7",
-          "retroalimentacion": "altura² = 25²-24² = 625-576 = 49, entonces altura = √49 = 7 m."
+          "retroalimentacion": "altura² = 25²-24² = 625-576 = 49, entonces altura = √49 = 7 m.",
+          "pistas": [
+            "Resta el cuadrado del cateto conocido al cuadrado de la hipotenusa y saca raíz cuadrada, igual que hicimos con la escalera de mantenimiento del faro (25²-7²=576 → 24 m).",
+            "altura² = 25²-24² = 625-576 = 49, entonces altura = √49 = 7 m."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -65,7 +69,11 @@
           "tipo": "llenar_frase",
           "frase": "Un dron vuela a 41 m de distancia en línea recta (hipotenusa) del observador, con un desplazamiento horizontal de 9 m. Usando Pitágoras, la altura del dron es ___ m.",
           "respuestaCorrecta": "40",
-          "retroalimentacion": "altura² = 41²-9² = 1681-81 = 1600, entonces altura = √1600 = 40 m."
+          "retroalimentacion": "altura² = 41²-9² = 1681-81 = 1600, entonces altura = √1600 = 40 m.",
+          "pistas": [
+            "Sigue el mismo procedimiento del Teorema de Pitágoras que usamos con la escalera de mantenimiento del faro: restar los cuadrados y sacar raíz cuadrada.",
+            "altura² = 41²-9² = 1681-81 = 1600, entonces altura = √1600 = 40 m."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -83,7 +91,11 @@
             "4 m"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "altura² = 20²-16² = 400-256 = 144, entonces altura = √144 = 12 m."
+          "retroalimentacion": "altura² = 20²-16² = 400-256 = 144, entonces altura = √144 = 12 m.",
+          "pistas": [
+            "Aplica el Teorema de Pitágoras restando los cuadrados de la hipotenusa y el cateto conocido, igual que con la escalera de mantenimiento del faro de Veracruz.",
+            "altura² = 20²-16² = 400-256 = 144, entonces altura = √144 = 12 m."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -118,7 +130,21 @@
           "retroalimentacion": "Escalera: √(20²-16²)=√144=12 m. Elevación 60°, hip=12: sen(60°)×12=0.87×12=10.4 m. Elevación 45°, horizontal=20: tan(45°)×20=1.00×20=20.0 m."
         }
       ],
-      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis"
+      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis",
+      "ejemploResuelto": {
+        "enunciado": "En el mismo faro de Veracruz hay una escalera de mantenimiento de 25 metros de largo, apoyada con la base a 7 metros de la pared.",
+        "pasos": [
+          {
+            "texto": "Aplicamos el Teorema de Pitágoras.",
+            "operacion": "altura²=25²-7²"
+          },
+          {
+            "texto": "Resolvemos.",
+            "operacion": "altura²=625-49=576 → altura=√576=24"
+          }
+        ],
+        "respuestaFinal": "La escalera de mantenimiento alcanza una altura de 24 metros."
+      }
     }
   ],
   "practicaExtra": [

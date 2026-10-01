@@ -34,7 +34,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Al repartir $217 en razón 4:3, a la parte de razón 4 le tocan $124.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "(4/7)×217 = $124."
+          "retroalimentacion": "(4/7)×217 = $124.",
+          "pistas": [
+            "Suma las partes de referencia y divide la cantidad entre esa suma para encontrar el valor de cada parte, igual que hicimos con la venta de llaveros de las cuatro amigas (suma=500).",
+            "Suma=7. (4/7)×217=$124."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -64,7 +68,11 @@
             "$120"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "Suma=120. (80/120)×360 = $240."
+          "retroalimentacion": "Suma=120. (80/120)×360 = $240.",
+          "pistas": [
+            "Suma las aportaciones, divide la cantidad a repartir entre esa suma, y multiplica por la aportación de cada quien, el mismo procedimiento que usamos con la venta de llaveros.",
+            "Suma=120. (80/120)×360=$240."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -76,7 +84,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Al repartir $180 en razón 5:1, a la parte de razón 5 le tocan $150.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: suma=6. (5/6)×180 = $150."
+          "retroalimentacion": "Correcto: suma=6. (5/6)×180 = $150.",
+          "pistas": [
+            "Sigue el mismo método del reparto proporcional que usamos con la venta de llaveros de las cuatro amigas: sumar las partes y repartir en esa proporción.",
+            "Suma=6. (5/6)×180=$150."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -105,7 +117,21 @@
           "retroalimentacion": "$100 en razón 1:4 — parte de razón 1 = $20; $300 en razón 2:3 — parte de razón 2 = $120; $210 en razón 3:4 — parte de razón 3 = $90."
         }
       ],
-      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio"
+      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio",
+      "ejemploResuelto": {
+        "enunciado": "Las mismas cuatro amigas de Xalapa hacen otra venta de llaveros: Ximena aporta $50, Valentina $100, Paola $150 y Fátima $200 para el material, y esta vez ganan $300 de utilidad.",
+        "pasos": [
+          {
+            "texto": "Sumamos todas las aportaciones.",
+            "operacion": "50+100+150+200=500"
+          },
+          {
+            "texto": "Calculamos la parte de cada una dividiendo su aportación entre la suma y multiplicando por la utilidad.",
+            "operacion": "Ximena: (50/500)×300=30; Valentina: (100/500)×300=60; Paola: (150/500)×300=90; Fátima: (200/500)×300=120"
+          }
+        ],
+        "respuestaFinal": "A Ximena le tocan $30, a Valentina $60, a Paola $90 y a Fátima $120."
+      }
     }
   ],
   "practicaExtra": [

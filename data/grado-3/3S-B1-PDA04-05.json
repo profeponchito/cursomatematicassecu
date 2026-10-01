@@ -42,7 +42,11 @@
           "tipo": "llenar_frase",
           "frase": "En una tabla de variación directa, x=6 corresponde a y=51. La constante de proporcionalidad es k=___.",
           "respuestaCorrecta": "8.5",
-          "retroalimentacion": "k = 51÷6 = 8.5."
+          "retroalimentacion": "k = 51÷6 = 8.5.",
+          "pistas": [
+            "Divide y entre x para encontrar la constante k, igual que hicimos con el segundo taxi de Iker (k=24÷3=8).",
+            "k = 51÷6 = 8.5."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -72,7 +76,11 @@
           "tipo": "llenar_frase",
           "frase": "Un ciclista recorre 60 km en 4 horas a velocidad constante (variación directa entre distancia y tiempo). La constante k (velocidad, en km/h) es ___.",
           "respuestaCorrecta": "15",
-          "retroalimentacion": "k = 60÷4 = 15 km/h."
+          "retroalimentacion": "k = 60÷4 = 15 km/h.",
+          "pistas": [
+            "Calcula k dividiendo el valor de y entre el valor de x correspondiente, el mismo procedimiento que usamos con el segundo taxi de Iker.",
+            "k = 60÷4 = 15 km/h."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -110,7 +118,11 @@
           "tipo": "llenar_frase",
           "frase": "En un taller mecánico, el costo de la mano de obra es proporcional a las horas trabajadas: 3 horas cuestan $255. El costo de 8 horas es $___.",
           "respuestaCorrecta": "680",
-          "retroalimentacion": "k = 255÷3 = 85. Costo de 8 horas: 85×8 = $680."
+          "retroalimentacion": "k = 255÷3 = 85. Costo de 8 horas: 85×8 = $680.",
+          "pistas": [
+            "Encuentra primero k dividiendo y entre x, y después multiplica k por el nuevo valor de x, igual que hicimos para encontrar el costo de 15 km en el segundo taxi de Iker.",
+            "k = 255÷3 = 85. Costo de 8 horas: 85×8 = $680."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -118,7 +130,25 @@
           "respuestaCorrecta": true,
           "retroalimentacion": "Correcto: 6.5×8 = 52."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Iker también anota los datos de otro taxi colectivo de su pueblo: 3 km cuestan $24 y 9 km cuestan $72. Quiere encontrar la constante k y usarla para calcular el costo de 15 km.",
+        "pasos": [
+          {
+            "texto": "Calculamos k dividiendo y entre x.",
+            "operacion": "k=24÷3=8"
+          },
+          {
+            "texto": "Comprobamos con el otro dato.",
+            "operacion": "72÷9=8"
+          },
+          {
+            "texto": "Usamos la regla y=k×x para 15 km.",
+            "operacion": "y=8×15=120"
+          }
+        ],
+        "respuestaFinal": "La constante es k=8 pesos por km, y 15 km costarían $120."
+      }
     }
   ],
   "practicaExtra": [

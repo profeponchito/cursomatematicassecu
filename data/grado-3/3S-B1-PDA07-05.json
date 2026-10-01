@@ -60,7 +60,11 @@
           "tipo": "llenar_frase",
           "frase": "Un tanque esférico tiene un diámetro de 38 m; su radio es ___ m.",
           "respuestaCorrecta": "19",
-          "retroalimentacion": "r = d÷2 = 38÷2 = 19 m."
+          "retroalimentacion": "r = d÷2 = 38÷2 = 19 m.",
+          "pistas": [
+            "Divide el diámetro entre 2 para obtener el radio, igual que hicimos con el domo de 50 metros de diámetro de Rodolfo (radio=25 m).",
+            "r = d÷2 = 38÷2 = 19 m."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -84,7 +88,11 @@
           "tipo": "llenar_frase",
           "frase": "El área de la superficie de una esfera con diámetro de 44 cm es ___ cm² (primero halla el radio, usa π≈3.14).",
           "respuestaCorrecta": "6079.04",
-          "retroalimentacion": "r=44÷2=22 cm. A=4×3.14×22²=6079.04 cm²."
+          "retroalimentacion": "r=44÷2=22 cm. A=4×3.14×22²=6079.04 cm².",
+          "pistas": [
+            "Primero encuentra el radio dividiendo el diámetro entre 2, y después aplica la fórmula correspondiente, el mismo procedimiento que usamos con el domo de Rodolfo.",
+            "r=44÷2=22 cm. A=4×3.14×22²=6079.04 cm²."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -122,9 +130,27 @@
             2,
             0
           ],
-          "retroalimentacion": "d=32→r=16 cm. d=17→r=8.5 cm. d=27→r=13.5 cm."
+          "retroalimentacion": "d=32→r=16 cm. d=17→r=8.5 cm. d=27→r=13.5 cm.",
+          "pistas": [
+            "Divide cada diámetro entre 2 para obtener su radio, igual que hicimos con el domo de 50 m de Rodolfo.",
+            "d=32→r=16 cm. d=17→r=8.5 cm. d=27→r=13.5 cm."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El mismo ingeniero Rodolfo también cotiza otro domo geodésico con 50 metros de diámetro, y necesita su radio y su volumen.",
+        "pasos": [
+          {
+            "texto": "Dividimos el diámetro entre 2 para obtener el radio.",
+            "operacion": "r=50÷2=25"
+          },
+          {
+            "texto": "Calculamos el volumen con el radio.",
+            "operacion": "V=(4/3)×3.14×25³=(4/3)×3.14×15625=65416.67"
+          }
+        ],
+        "respuestaFinal": "El radio real es 25 metros, y el volumen del domo es 65,416.67 m³ (usar 50 directamente en la fórmula habría dado un resultado 8 veces mayor al real)."
+      }
     }
   ],
   "practicaExtra": [

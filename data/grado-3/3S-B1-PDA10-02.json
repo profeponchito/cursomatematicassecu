@@ -35,7 +35,11 @@
             "35"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Marcas: 15,25,35,45. Σ(x·f) = 3(15)+7(25)+5(35)+5(45) = 45+175+175+225 = 620. Σf = 20. media = 620/20 = 31."
+          "retroalimentacion": "Marcas: 15,25,35,45. Σ(x·f) = 3(15)+7(25)+5(35)+5(45) = 45+175+175+225 = 620. Σf = 20. media = 620/20 = 31.",
+          "pistas": [
+            "Multiplica cada marca de clase por su frecuencia, suma esos productos y divide entre el total de frecuencias, igual que calculamos la media del salto de garrocha de Tijuana (530÷20=26.5).",
+            "Marcas: 15,25,35,45. Σ(x·f) = 3(15)+7(25)+5(35)+5(45) = 45+175+175+225 = 620. Σf = 20. media = 620/20 = 31."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -59,7 +63,11 @@
             "26"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Marcas: 15,25,35. Σ(x·f) = 2(15)+10(25)+8(35) = 30+250+280 = 560. Σf = 20. media = 560/20 = 28."
+          "retroalimentacion": "Marcas: 15,25,35. Σ(x·f) = 2(15)+10(25)+8(35) = 30+250+280 = 560. Σf = 20. media = 560/20 = 28.",
+          "pistas": [
+            "Aplica la fórmula media=Σ(marca de clase×frecuencia)/Σfrecuencias, el mismo procedimiento que usamos con la tabla de salto de garrocha de Tijuana.",
+            "Marcas: 15,25,35. Σ(x·f) = 2(15)+10(25)+8(35) = 30+250+280 = 560. Σf = 20. media = 560/20 = 28."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -83,7 +91,11 @@
             "60"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Marcas: 30,50,70. Σ(x·f) = 5(30)+10(50)+5(70) = 150+500+350 = 1000. Σf = 20. media = 1000/20 = 50."
+          "retroalimentacion": "Marcas: 30,50,70. Σ(x·f) = 5(30)+10(50)+5(70) = 150+500+350 = 1000. Σf = 20. media = 1000/20 = 50.",
+          "pistas": [
+            "Calcula las marcas de clase, multiplícalas por sus frecuencias, suma y divide entre el total, igual que hicimos con la tabla de salto de garrocha de Tijuana.",
+            "Marcas: 30,50,70. Σ(x·f) = 5(30)+10(50)+5(70) = 150+500+350 = 1000. Σf = 20. media = 1000/20 = 50."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -118,7 +130,25 @@
           "retroalimentacion": "Tabla 1: (5·5+10·15+5·25)/20=300/20=15. Tabla 2: (8·5+12·15)/20=220/20=11. Tabla 3: (5·15+15·25)/20=450/20=22.5."
         }
       ],
-      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio"
+      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio",
+      "ejemploResuelto": {
+        "enunciado": "El mismo profesor de deportes de Tijuana arma otra tabla de frecuencias, ahora con los tiempos (segundos) de salto de garrocha de 20 competidores: 10-20 (f=5), 20-30 (f=9), 30-40 (f=4), 40-50 (f=2).",
+        "pasos": [
+          {
+            "texto": "Calculamos las marcas de clase de cada intervalo.",
+            "operacion": "15,25,35,45"
+          },
+          {
+            "texto": "Multiplicamos cada marca de clase por su frecuencia y sumamos.",
+            "operacion": "5(15)+9(25)+4(35)+2(45)=75+225+140+90=530"
+          },
+          {
+            "texto": "Dividimos esa suma entre el total de frecuencias.",
+            "operacion": "530÷20=26.5"
+          }
+        ],
+        "respuestaFinal": "La media de estos tiempos agrupados es 26.5."
+      }
     }
   ],
   "practicaExtra": [

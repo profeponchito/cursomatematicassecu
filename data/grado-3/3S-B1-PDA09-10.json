@@ -36,7 +36,11 @@
             "Sí, porque cualquier número menor a 100 es aceptable"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "(12,000 ÷ 60,000) × 600 = 120 personas; la colonia aportó solo 90, así que está subrepresentada."
+          "retroalimentacion": "(12,000 ÷ 60,000) × 600 = 120 personas; la colonia aportó solo 90, así que está subrepresentada.",
+          "pistas": [
+            "Divide el tamaño del estrato entre la población total y multiplica por el tamaño de la muestra, igual que calculamos cuántos alumnos del turno sabatino debían entrar en la muestra de Mérida.",
+            "(12,000 ÷ 60,000) × 600 = 120 personas; la colonia aportó solo 90, así que está subrepresentada."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -66,7 +70,11 @@
             "2"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Factor = 42 ÷ (42 − 36) = 42 ÷ 6 = 7."
+          "retroalimentacion": "Factor = 42 ÷ (42 − 36) = 42 ÷ 6 = 7.",
+          "pistas": [
+            "Aplica la fórmula del factor de exageración con el valor inicial y el inicio del eje, igual que calculamos el factor de la gráfica del reglamento de uniformes en Mérida.",
+            "Factor = 42 ÷ (42 − 36) = 42 ÷ 6 = 7."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -122,7 +130,11 @@
             "El reporte no tiene ningún problema porque el 48% final es un dato real verificado"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Usar una técnica de muestreo por nombre no garantiza que se haya aplicado bien, y un dato final real no vuelve confiable a una gráfica que lo exagera; ambos problemas deben señalarse."
+          "retroalimentacion": "Usar una técnica de muestreo por nombre no garantiza que se haya aplicado bien, y un dato final real no vuelve confiable a una gráfica que lo exagera; ambos problemas deben señalarse.",
+          "pistas": [
+            "Revisa ambos problemas por separado: si la muestra está bien repartida entre los estratos Y si la gráfica exagera el resultado, igual que hicimos con el caso completo de la escuela de Mérida.",
+            "Usar una técnica de muestreo por nombre no garantiza que se haya aplicado bien, y un dato final real no vuelve confiable a una gráfica que lo exagera; ambos problemas deben señalarse."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -130,7 +142,24 @@
           "respuestaCorrecta": true,
           "retroalimentacion": "Correcto: esa revisión completa —población, muestra y gráfica— es exactamente lo que integra todo lo aprendido en este PDA."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "La misma organización estudiantil de Mérida, en otra escuela con 3,600 alumnos divididos en 4 turnos (1,500 matutino, 1,000 vespertino, 700 nocturno y 400 sabatino), toma una muestra estratificada de 180 alumnos para preguntar si quieren cambiar el reglamento de uniformes; el turno sabatino, que debía aportar 20 alumnos, solo aportó 8. El resultado total (que subió de 30% a 36% tras una campaña) se presenta en una gráfica con eje que empieza en 24%.",
+        "pasos": [
+          {
+            "texto": "Calculamos cuántos alumnos del turno sabatino debería aportar la muestra.",
+            "operacion": "(400÷3600)×180=20"
+          },
+          {
+            "texto": "Comparamos con los 8 alumnos realmente encuestados: el turno sabatino está subrepresentado."
+          },
+          {
+            "texto": "Calculamos el factor de exageración de la gráfica del resultado total.",
+            "operacion": "30÷(30-24)=5"
+          }
+        ],
+        "respuestaFinal": "El turno sabatino debía aportar 20 alumnos y solo aportó 8 (muestra subrepresentada), y la gráfica con eje desde 24% exagera el aumento real 5 veces."
+      }
     }
   ],
   "practicaExtra": [

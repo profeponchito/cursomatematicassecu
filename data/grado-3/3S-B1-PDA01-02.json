@@ -53,7 +53,11 @@
           "tipo": "llenar_frase",
           "frase": "La raíz cuadrada de 49 es ___.",
           "respuestaCorrecta": "7",
-          "retroalimentacion": "7 × 7 = 49."
+          "retroalimentacion": "7 × 7 = 49.",
+          "pistas": [
+            "La raíz cuadrada es el número que multiplicado por sí mismo da el área, igual que hicimos con el jardín de Ricardo (√121=11).",
+            "7×7=49."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -65,7 +69,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "La raíz cuadrada de 100 es 12.",
           "respuestaCorrecta": false,
-          "retroalimentacion": "10 × 10 = 100, no 12."
+          "retroalimentacion": "10 × 10 = 100, no 12.",
+          "pistas": [
+            "Verifica multiplicando el resultado por sí mismo para confirmar que da el área correcta, como hicimos con el jardín de Ricardo (11×11=121).",
+            "10×10=100, no 12."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -83,7 +91,11 @@
           "tipo": "llenar_frase",
           "frase": "La raíz cuadrada de 400 es ___.",
           "respuestaCorrecta": "20",
-          "retroalimentacion": "20 × 20 = 400."
+          "retroalimentacion": "20 × 20 = 400.",
+          "pistas": [
+            "Busca qué número multiplicado por sí mismo da el área, el mismo procedimiento que usamos para el jardín de Ricardo.",
+            "20×20=400."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -106,7 +118,21 @@
           "retroalimentacion": "√64 = 8; √144 = 12; √324 = 18."
         }
       ],
-      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio"
+      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio",
+      "ejemploResuelto": {
+        "enunciado": "El mismo terreno de Ricardo en Mérida también tiene un jardín cuadrado más pequeño, pegado a la casa, con un área de 121 m².",
+        "pasos": [
+          {
+            "texto": "Aplicamos la fórmula.",
+            "operacion": "lado=√Área"
+          },
+          {
+            "texto": "Sustituimos.",
+            "operacion": "√121=11"
+          }
+        ],
+        "respuestaFinal": "Cada lado del jardín mide 11 m."
+      }
     }
   ],
   "practicaExtra": [

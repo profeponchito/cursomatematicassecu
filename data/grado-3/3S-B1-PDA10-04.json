@@ -41,7 +41,11 @@
             "0.8"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "DM = 8/5 = 1.6."
+          "retroalimentacion": "DM = 8/5 = 1.6.",
+          "pistas": [
+            "Calcula el promedio, después la distancia absoluta de cada dato al promedio, suma y divide entre el número de datos, igual que calculamos la desviación media de los puntos de Emilio (DM=2.8).",
+            "DM = 8/5 = 1.6."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -65,7 +69,11 @@
             "0.8"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "DM = 8/5 = 1.6."
+          "retroalimentacion": "DM = 8/5 = 1.6.",
+          "pistas": [
+            "Aplica la fórmula DM=Σ|xi−media|/n, el mismo procedimiento que usamos con los puntos de Emilio en los 5 partidos.",
+            "DM = 8/5 = 1.6."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -101,7 +109,11 @@
             "No se puede saber con esos datos"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Entre mayor es la desviación media, más dispersos están los datos respecto a su media; 3.5 > 1.2, así que el conjunto B es más disperso."
+          "retroalimentacion": "Entre mayor es la desviación media, más dispersos están los datos respecto a su media; 3.5 > 1.2, así que el conjunto B es más disperso.",
+          "pistas": [
+            "Compara los valores de desviación media directamente: entre mayor sea el número, más dispersos están los datos, igual que interpretamos la DM=2.8 de Emilio.",
+            "Entre mayor es la desviación media, más dispersos están los datos respecto a su media; 3.5 > 1.2, así que el conjunto B es más disperso."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -124,7 +136,25 @@
           "retroalimentacion": "Calificaciones: DM=6/5=1.2. Edades: DM=8/5=1.6. Temperaturas: DM=12/5=2.4."
         }
       ],
-      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis"
+      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis",
+      "ejemploResuelto": {
+        "enunciado": "El mismo entrenador de Culiacán anota los puntos de otro jugador, Emilio, en sus últimos 5 partidos: 20, 22, 18, 25 y 15 puntos.",
+        "pasos": [
+          {
+            "texto": "Calculamos el promedio de los puntos de Emilio.",
+            "operacion": "(20+22+18+25+15)÷5=100÷5=20"
+          },
+          {
+            "texto": "Calculamos la distancia absoluta de cada partido al promedio.",
+            "operacion": "|20-20|+|22-20|+|18-20|+|25-20|+|15-20|=0+2+2+5+5=14"
+          },
+          {
+            "texto": "Dividimos la suma de distancias entre el número de partidos.",
+            "operacion": "14÷5=2.8"
+          }
+        ],
+        "respuestaFinal": "La desviación media de los puntos de Emilio en esos 5 partidos es 2.8: en promedio, cada partido se aleja 2.8 puntos de su promedio de 20."
+      }
     }
   ],
   "practicaExtra": [

@@ -48,7 +48,11 @@
           "tipo": "llenar_frase",
           "frase": "El área total de un cilindro de radio 10 cm y altura 3 cm es ___ cm².",
           "respuestaCorrecta": "816.4",
-          "retroalimentacion": "Lateral = 2×3.14×10×3 = 188.4 cm². Bases = 2×3.14×100 = 628 cm². Total = 816.4 cm²."
+          "retroalimentacion": "Lateral = 2×3.14×10×3 = 188.4 cm². Bases = 2×3.14×100 = 628 cm². Total = 816.4 cm².",
+          "pistas": [
+            "Calcula el área lateral y el área de las dos bases por separado, y después súmalas, igual que hicimos con el tambo pequeño de la fábrica de Guanajuato (1884+904.32=2788.32).",
+            "Lateral = 2×3.14×10×3 = 188.4 cm². Bases = 2×3.14×100 = 628 cm². Total = 816.4 cm²."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -72,7 +76,11 @@
           "tipo": "llenar_frase",
           "frase": "El área total de un disco cilíndrico de radio 6 cm y altura 1 cm es ___ cm².",
           "respuestaCorrecta": "263.76",
-          "retroalimentacion": "Lateral = 2×3.14×6×1 = 37.68 cm². Bases = 2×3.14×36 = 226.08 cm². Total = 263.76 cm²."
+          "retroalimentacion": "Lateral = 2×3.14×6×1 = 37.68 cm². Bases = 2×3.14×36 = 226.08 cm². Total = 263.76 cm².",
+          "pistas": [
+            "Sigue los mismos dos pasos que usamos con el tambo pequeño: área lateral más área de las dos bases.",
+            "Lateral = 2×3.14×6×1 = 37.68 cm². Bases = 2×3.14×36 = 226.08 cm². Total = 263.76 cm²."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -104,7 +112,11 @@
             0,
             1
           ],
-          "retroalimentacion": "A: 282.6 cm². B: 244.92 cm². C: 967.12 cm²."
+          "retroalimentacion": "A: 282.6 cm². B: 244.92 cm². C: 967.12 cm².",
+          "pistas": [
+            "Aplica la fórmula del área total del cilindro (lateral + 2 bases), el mismo procedimiento que usamos con el tambo pequeño de la fábrica de Guanajuato.",
+            "A: 282.6 cm². B: 244.92 cm². C: 967.12 cm²."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -124,7 +136,25 @@
           "respuestaCorrecta": 0,
           "retroalimentacion": "Lateral = 2×3.14×15×30 = 2826 cm². Bases = 2×3.14×225 = 1413 cm². Total = 4239 cm²."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "En la misma fábrica de conservas de Guanajuato hay otro tambo cilíndrico más pequeño, con radio de 12 cm y altura de 25 cm, que también hay que forrar por completo.",
+        "pasos": [
+          {
+            "texto": "Calculamos el área lateral.",
+            "operacion": "lateral=2×3.14×12×25=1884"
+          },
+          {
+            "texto": "Calculamos el área de las dos bases.",
+            "operacion": "bases=2×3.14×12²=2×3.14×144=904.32"
+          },
+          {
+            "texto": "Sumamos para obtener el área total.",
+            "operacion": "1884+904.32=2788.32"
+          }
+        ],
+        "respuestaFinal": "Se necesitan 2,788.32 cm² de lámina para forrar el tambo pequeño."
+      }
     }
   ],
   "practicaExtra": [

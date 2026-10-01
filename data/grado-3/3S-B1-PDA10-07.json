@@ -36,7 +36,11 @@
             "15"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Clase modal 10-15 (fmo=18, Li=10, fant=10, fpost=6, A=5). Mo=10+[(18−10)/((18−10)+(18−6))]×5=10+[8/20]×5=10+2=12."
+          "retroalimentacion": "Clase modal 10-15 (fmo=18, Li=10, fant=10, fpost=6, A=5). Mo=10+[(18−10)/((18−10)+(18−6))]×5=10+[8/20]×5=10+2=12.",
+          "pistas": [
+            "Identifica la clase modal y aplica la fórmula Mo=Li+[(fmo−fant)/((fmo−fant)+(fmo−fpost))]×A, igual que calculamos la moda estimada de las edades de la exposición de San Luis Potosí (23.13 años).",
+            "Clase modal 10-15 (fmo=18, Li=10, fant=10, fpost=6, A=5). Mo=10+[(18−10)/((18−10)+(18−6))]×5=10+[8/20]×5=10+2=12."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -60,7 +64,11 @@
             "40.00"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Clase modal 40-60 (fmo=22, Li=40, fant=15, fpost=10, A=20). Mo=40+[(22−15)/((22−15)+(22−10))]×20≈47.37."
+          "retroalimentacion": "Clase modal 40-60 (fmo=22, Li=40, fant=15, fpost=10, A=20). Mo=40+[(22−15)/((22−15)+(22−10))]×20≈47.37.",
+          "pistas": [
+            "Aplica la fórmula de la moda estimada usando la clase modal y sus intervalos vecinos, el mismo procedimiento que usamos con las edades de la exposición de San Luis Potosí.",
+            "Clase modal 40-60 (fmo=22, Li=40, fant=15, fpost=10, A=20). Mo=40+[(22−15)/((22−15)+(22−10))]×20≈47.37."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -84,7 +92,11 @@
             "300.00"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Clase modal 300-350 (fmo=19, Li=300, fant=11, fpost=15, A=50). Mo=300+[(19−11)/((19−11)+(19−15))]×50≈333.33."
+          "retroalimentacion": "Clase modal 300-350 (fmo=19, Li=300, fant=11, fpost=15, A=50). Mo=300+[(19−11)/((19−11)+(19−15))]×50≈333.33.",
+          "pistas": [
+            "Identifica la clase modal y compara sus frecuencias vecinas con la fórmula de interpolación, igual que calculamos la moda estimada de la exposición de San Luis Potosí.",
+            "Clase modal 300-350 (fmo=19, Li=300, fant=11, fpost=15, A=50). Mo=300+[(19−11)/((19−11)+(19−15))]×50≈333.33."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -118,7 +130,21 @@
           "respuestaCorrecta": false,
           "retroalimentacion": "Falso: solo coincide con la marca de clase cuando la frecuencia del intervalo anterior es igual a la del posterior; en general, la moda se recorre hacia el lado donde la frecuencia vecina es más parecida a la modal."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El mismo organizador de San Luis Potosí agrupa las edades de otra exposición con 50 visitantes: 15-20 (f=8), 20-25 (f=18), 25-30 (f=12), 30-35 (f=7).",
+        "pasos": [
+          {
+            "texto": "Identificamos la clase modal: el intervalo con mayor frecuencia.",
+            "operacion": "fmo=18, intervalo 20-25 (Li=20, fant=8, fpost=12, A=5)"
+          },
+          {
+            "texto": "Aplicamos la fórmula de la moda estimada.",
+            "operacion": "Mo=20+[(18-8)/((18-8)+(18-12))]×5=20+[10/16]×5=23.13"
+          }
+        ],
+        "respuestaFinal": "La moda estimada de las edades es aproximadamente 23.13 años."
+      }
     }
   ],
   "practicaExtra": [

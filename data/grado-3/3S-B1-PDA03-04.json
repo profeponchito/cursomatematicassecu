@@ -33,7 +33,11 @@
             "x=2, x=-7"
           ],
           "respuestaCorrecta": 3,
-          "retroalimentacion": "Las soluciones son x=2 y x=-7."
+          "retroalimentacion": "Las soluciones son x=2 y x=-7.",
+          "pistas": [
+            "Busca dos números que multiplicados den el término independiente y sumados el coeficiente de x, igual que hicimos para resolver x²+7x−60=0 en el examen de Camila (12 y -5).",
+            "Las soluciones son x=2 y x=-7."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -119,7 +123,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Las soluciones de x² - 3x - 40 = 0 son x=8 y x=-5.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: (x-8)(x+5)=x²-3x-40=0, así que x=8 o x=-5."
+          "retroalimentacion": "Correcto: (x-8)(x+5)=x²-3x-40=0, así que x=8 o x=-5.",
+          "pistas": [
+            "Aplica el mismo método de factorización que usamos para la ecuación del examen de Camila (x²+7x−60=0 → x=5 o x=-12).",
+            "(x-8)(x+5)=x²-3x-40=0, así que x=8 o x=-5."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -137,7 +145,11 @@
             "x=45, x=-1"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "(x-9)(x+5)=x²-4x-45=0, así que x=9 o x=-5."
+          "retroalimentacion": "(x-9)(x+5)=x²-4x-45=0, así que x=9 o x=-5.",
+          "pistas": [
+            "Sigue el mismo procedimiento que usamos para resolver x²+7x−60=0 en el examen de Camila: encontrar dos números con el producto y la suma correctos.",
+            "(x-9)(x+5)=x²-4x-45=0, así que x=9 o x=-5."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -166,7 +178,21 @@
           "retroalimentacion": "x(x+2)=120 → x²+2x−120=0 → x=(-2±22)/2 → x=10 (se descarta el valor negativo)."
         }
       ],
-      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis"
+      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis",
+      "ejemploResuelto": {
+        "enunciado": "Camila también debe resolver x²+7x−60=0 como parte de su examen.",
+        "pasos": [
+          {
+            "texto": "Buscamos dos números que multiplicados den -60 y sumados 7.",
+            "operacion": "factores: 12 y -5"
+          },
+          {
+            "texto": "Factorizamos y resolvemos.",
+            "operacion": "(x+12)(x-5)=0 → x=5 o x=-12"
+          }
+        ],
+        "respuestaFinal": "Las soluciones son x=5 y x=-12."
+      }
     }
   ],
   "practicaExtra": [

@@ -36,7 +36,11 @@
             "750 empleados"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "30 ÷ 40 = 0.75 (75%). Estimación: 0.75 × 1,600 = 1,200 empleados de planta."
+          "retroalimentacion": "30 ÷ 40 = 0.75 (75%). Estimación: 0.75 × 1,600 = 1,200 empleados de planta.",
+          "pistas": [
+            "Calcula la proporción en la muestra y multiplícala por el tamaño del estrato completo, igual que estimamos la satisfacción en la zona VIP subrepresentada del concierto.",
+            "30 ÷ 40 = 0.75 (75%). Estimación: 0.75 × 1,600 = 1,200 empleados de planta."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -60,7 +64,11 @@
             "4"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Factor = 32 ÷ (32 − 28) = 32 ÷ 4 = 8."
+          "retroalimentacion": "Factor = 32 ÷ (32 − 28) = 32 ÷ 4 = 8.",
+          "pistas": [
+            "Aplica la fórmula del factor de exageración con el valor inicial y el inicio del eje, igual que calculamos el factor de la gráfica de satisfacción del concierto.",
+            "Factor = 32 ÷ (32 − 28) = 32 ÷ 4 = 8."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -78,7 +86,11 @@
             "450 prendas"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "18 ÷ 144 = 0.125 (12.5%). Estimación: 0.125 × 7,200 = 900 prendas."
+          "retroalimentacion": "18 ÷ 144 = 0.125 (12.5%). Estimación: 0.125 × 7,200 = 900 prendas.",
+          "pistas": [
+            "Divide la frecuencia de la muestra entre el tamaño de la muestra, y multiplica por el tamaño de la población, igual que estimamos la satisfacción en el concierto.",
+            "18 ÷ 144 = 0.125 (12.5%). Estimación: 0.125 × 7,200 = 900 prendas."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -124,7 +136,24 @@
           "respuestaCorrecta": 0,
           "retroalimentacion": "La sucursal debía aportar 40 encuestados y solo aportó 10 (muestra subrepresentada). Además, factor de exageración = 55÷(55−50)=11."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "En otro concierto con 10,000 asistentes divididos en 3 zonas (6,000 general, 3,000 preferente y 1,000 VIP), la revista toma una muestra estratificada de 200 personas, pero en la zona VIP solo encuestó a 5 personas; además, el resultado de satisfacción (que subió de 55% a 62%) se presenta con un eje que empieza en 50%.",
+        "pasos": [
+          {
+            "texto": "Calculamos cuántas personas de la zona VIP debería aportar la muestra.",
+            "operacion": "(1000÷10000)×200=20"
+          },
+          {
+            "texto": "Comparamos con las 5 personas realmente encuestadas: la zona VIP está subrepresentada."
+          },
+          {
+            "texto": "Calculamos el factor de exageración de la gráfica.",
+            "operacion": "55÷(55-50)=11"
+          }
+        ],
+        "respuestaFinal": "La zona VIP debía aportar 20 personas y solo aportó 5 (muestra subrepresentada), y además la gráfica exagera el aumento real 11 veces."
+      }
     }
   ],
   "practicaExtra": [

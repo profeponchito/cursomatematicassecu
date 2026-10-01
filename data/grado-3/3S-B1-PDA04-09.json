@@ -41,7 +41,11 @@
           "tipo": "llenar_frase",
           "frase": "Un taller cobra $300 fijos de diagnóstico más $85 por hora de mano de obra (y=85×x+300). El costo de una reparación de 6 horas es $___.",
           "respuestaCorrecta": "810",
-          "retroalimentacion": "y = 85×6+300 = 510+300 = $810."
+          "retroalimentacion": "y = 85×6+300 = 510+300 = $810.",
+          "pistas": [
+            "Multiplica k por x y suma el cargo fijo, igual que hicimos para calcular el costo del mes del puesto de jugos (3.5×80+250=530).",
+            "y = 85×6+300 = 510+300 = $810."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -53,7 +57,11 @@
             "9"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "x = (184-40)÷18 = 144÷18 = 8 horas."
+          "retroalimentacion": "x = (184-40)÷18 = 144÷18 = 8 horas.",
+          "pistas": [
+            "Resta el cargo fijo del total pagado y divide entre k para encontrar x, lo contrario de lo que hicimos al calcular el costo del puesto de jugos.",
+            "x = (184-40)÷18 = 144÷18 = 8 horas."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -65,7 +73,11 @@
           "tipo": "llenar_frase",
           "frase": "Tres amigas aportaron $2,400, $3,600 y $6,000 para un negocio de repostería y ganaron $1,800 de utilidad. A la que aportó $6,000 le corresponden $___.",
           "respuestaCorrecta": "900",
-          "retroalimentacion": "Suma=$12,000. (6000÷12000)×1800 = $900."
+          "retroalimentacion": "Suma=$12,000. (6000÷12000)×1800 = $900.",
+          "pistas": [
+            "Suma las aportaciones y reparte la utilidad en esa proporción, el mismo procedimiento que usamos para repartir la utilidad entre los socios del puesto de jugos.",
+            "Suma=$12,000. (6000÷12000)×1800 = $900."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -123,7 +135,25 @@
           "respuestaCorrecta": "1240",
           "retroalimentacion": "y = 180×5.5+250 = 990+250 = $1,240."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Los mismos dos socios del puesto de jugos en Cuernavaca, otro mes, pagan $250 fijos de renta más $3.50 por litro de fruta; ese mes compraron 80 litros. Además deben repartir $900 de utilidad según sus aportaciones de $2,000 y $3,000.",
+        "pasos": [
+          {
+            "texto": "Calculamos el costo total del mes.",
+            "operacion": "y=3.5×80+250=280+250=530"
+          },
+          {
+            "texto": "Sumamos las aportaciones.",
+            "operacion": "2000+3000=5000"
+          },
+          {
+            "texto": "Repartimos la utilidad proporcionalmente.",
+            "operacion": "(2000/5000)×900=360; (3000/5000)×900=540"
+          }
+        ],
+        "respuestaFinal": "El costo del mes fue $530; de la utilidad, al socio de $2,000 le tocan $360 y al de $3,000 le tocan $540."
+      }
     }
   ],
   "practicaExtra": [

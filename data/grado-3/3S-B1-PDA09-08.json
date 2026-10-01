@@ -36,7 +36,11 @@
             "50"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Factor = 5.00 ÷ (5.00 − 4.50) = 5.00 ÷ 0.50 = 10; la gráfica exagera el aumento 10 veces."
+          "retroalimentacion": "Factor = 5.00 ÷ (5.00 − 4.50) = 5.00 ÷ 0.50 = 10; la gráfica exagera el aumento 10 veces.",
+          "pistas": [
+            "Aplica la fórmula valor inicial÷(valor inicial−inicio del eje), igual que calculamos el factor de exageración de la gráfica de los cruceros de Cancún.",
+            "Factor = 5.00 ÷ (5.00 − 4.50) = 5.00 ÷ 0.50 = 10; la gráfica exagera el aumento 10 veces."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -60,7 +64,11 @@
             "100"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Factor = 120,000 ÷ (120,000 − 114,000) = 120,000 ÷ 6,000 = 20."
+          "retroalimentacion": "Factor = 120,000 ÷ (120,000 − 114,000) = 120,000 ÷ 6,000 = 20.",
+          "pistas": [
+            "Usa la fórmula del factor de exageración con el valor inicial y el punto donde empieza el eje, el mismo procedimiento que usamos con la gráfica de los cruceros de Cancún.",
+            "Factor = 120,000 ÷ (120,000 − 114,000) = 120,000 ÷ 6,000 = 20."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -122,9 +130,27 @@
             "2"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Factor = 4.0 ÷ (4.0 − 3.8) = 4.0 ÷ 0.2 = 20; la gráfica hace ver el aumento 20 veces más grande de lo que realmente es."
+          "retroalimentacion": "Factor = 4.0 ÷ (4.0 − 3.8) = 4.0 ÷ 0.2 = 20; la gráfica hace ver el aumento 20 veces más grande de lo que realmente es.",
+          "pistas": [
+            "Divide el valor inicial entre la diferencia con el punto donde empieza el eje, igual que calculamos el factor de exageración de la gráfica de los cruceros de Cancún.",
+            "Factor = 4.0 ÷ (4.0 − 3.8) = 4.0 ÷ 0.2 = 20; la gráfica hace ver el aumento 20 veces más grande de lo que realmente es."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El mismo canal de noticias de Cancún presenta otro dato: el número de cruceros atracados subió de 40 a 46 en un mes (un aumento real del 15%), pero usa una gráfica con eje que empieza en 36 en vez de en 0.",
+        "pasos": [
+          {
+            "texto": "Calculamos el cambio real en porcentaje.",
+            "operacion": "(46-40)÷40×100=15"
+          },
+          {
+            "texto": "Calculamos el factor de exageración con el eje recortado en 36.",
+            "operacion": "40÷(40-36)=10"
+          }
+        ],
+        "respuestaFinal": "El aumento real es del 15%, pero la gráfica con eje desde 36 exagera visualmente la diferencia 10 veces."
+      }
     }
   ],
   "practicaExtra": [

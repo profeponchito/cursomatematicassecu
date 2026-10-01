@@ -36,7 +36,11 @@
             "8.25"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Marcas: 65,75,85,95. media=(4·65+10·75+14·85+2·95)/30≈79.67. DM=[4|65−79.67|+10|75−79.67|+14|85−79.67|+2|95−79.67|]/30≈7.02."
+          "retroalimentacion": "Marcas: 65,75,85,95. media=(4·65+10·75+14·85+2·95)/30≈79.67. DM=[4|65−79.67|+10|75−79.67|+14|85−79.67|+2|95−79.67|]/30≈7.02.",
+          "pistas": [
+            "Calcula primero la media, y después la distancia de cada marca de clase a la media multiplicada por su frecuencia, igual que calculamos la DM de las edades del otro salón de la Feria de Ciencias (7.95 años).",
+            "Marcas: 65,75,85,95. media=(4·65+10·75+14·85+2·95)/30≈79.67. DM=[4|65−79.67|+10|75−79.67|+14|85−79.67|+2|95−79.67|]/30≈7.02."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -60,7 +64,11 @@
             "20.0"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Marcas: 10,30,50,70. media=(7·10+13·30+16·50+4·70)/40=38.5. DM=[7|10−38.5|+13|30−38.5|+16|50−38.5|+4|70−38.5|]/40=15.5."
+          "retroalimentacion": "Marcas: 10,30,50,70. media=(7·10+13·30+16·50+4·70)/40=38.5. DM=[7|10−38.5|+13|30−38.5|+16|50−38.5|+4|70−38.5|]/40=15.5.",
+          "pistas": [
+            "Calcula la media con las marcas de clase, y después la desviación media sumando f×|marca−media|, el mismo procedimiento que usamos con las edades del salón de la Feria de Ciencias.",
+            "Marcas: 10,30,50,70. media=(7·10+13·30+16·50+4·70)/40=38.5. DM=[7|10−38.5|+13|30−38.5|+16|50−38.5|+4|70−38.5|]/40=15.5."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -116,7 +124,11 @@
             "20"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Marcas: 30,50,70,90. media=(6·30+14·50+10·70+5·90)/35=58. DM=[6|30−58|+14|50−58|+10|70−58|+5|90−58|]/35=16."
+          "retroalimentacion": "Marcas: 30,50,70,90. media=(6·30+14·50+10·70+5·90)/35=58. DM=[6|30−58|+14|50−58|+10|70−58|+5|90−58|]/35=16.",
+          "pistas": [
+            "Calcula la media y después la desviación media con la fórmula DM=Σ[f×|marca−media|]/n, igual que hicimos con las edades del salón de la Feria de Ciencias.",
+            "Marcas: 30,50,70,90. media=(6·30+14·50+10·70+5·90)/35=58. DM=[6|30−58|+14|50−58|+10|70−58|+5|90−58|]/35=16."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -124,7 +136,25 @@
           "respuestaCorrecta": false,
           "retroalimentacion": "Falso: cuando las medias son muy distintas, conviene comparar la desviación media relativa (DM entre la media, en porcentaje) para hacer una comparación justa; la comparación directa puede ser engañosa."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El mismo comité de la Feria de Ciencias, en otro salón, registra las edades de 40 visitantes agrupadas en: 10-20 (f=6), 20-30 (f=16), 30-40 (f=12), 40-50 (f=6).",
+        "pasos": [
+          {
+            "texto": "Calculamos las marcas de clase y la media.",
+            "operacion": "media=(6×15+16×25+12×35+6×45)÷40=1180÷40=29.5"
+          },
+          {
+            "texto": "Calculamos la distancia absoluta de cada marca de clase a la media, multiplicada por su frecuencia.",
+            "operacion": "6|15-29.5|+16|25-29.5|+12|35-29.5|+6|45-29.5|=87+72+66+93=318"
+          },
+          {
+            "texto": "Dividimos esa suma entre el total de datos.",
+            "operacion": "318÷40=7.95"
+          }
+        ],
+        "respuestaFinal": "La desviación media de las edades en este salón es 7.95 años."
+      }
     }
   ],
   "practicaExtra": [

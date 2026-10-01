@@ -48,7 +48,11 @@
           "tipo": "llenar_frase",
           "frase": "El radio de una esfera cuyo volumen es 6367.40 cm³ es ___ cm.",
           "respuestaCorrecta": "11.5",
-          "retroalimentacion": "r=∛(6367.40÷4.1867)≈∛1520.88≈11.5 cm."
+          "retroalimentacion": "r=∛(6367.40÷4.1867)≈∛1520.88≈11.5 cm.",
+          "pistas": [
+            "Divide el volumen entre (4/3)×π y saca raíz cúbica para encontrar el radio, igual que hicimos con el tanque de 2,826 m² de área del ingeniero Fabián (radio=15 m).",
+            "r=∛(6367.40÷4.1867)≈∛1520.88≈11.5 cm."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -72,7 +76,11 @@
           "tipo": "llenar_frase",
           "frase": "El radio de una esfera cuya área de superficie es 907.46 cm² es ___ cm.",
           "respuestaCorrecta": "8.5",
-          "retroalimentacion": "r=√(907.46÷12.56)=√72.25=8.5 cm."
+          "retroalimentacion": "r=√(907.46÷12.56)=√72.25=8.5 cm.",
+          "pistas": [
+            "Divide el área entre 4×π y saca raíz cuadrada para encontrar el radio, el mismo procedimiento que usamos con el tanque de Fabián.",
+            "r=√(907.46÷12.56)=√72.25=8.5 cm."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -102,7 +110,11 @@
             "69 m"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "r=∛(50939.17÷4.1867)≈∛12167=23 m."
+          "retroalimentacion": "r=∛(50939.17÷4.1867)≈∛12167=23 m.",
+          "pistas": [
+            "Divide el volumen entre (4/3)×π y saca raíz cúbica, igual que calculamos el radio del tanque de 2,826 m² de Fabián.",
+            "r=∛(50939.17÷4.1867)≈∛12167=23 m."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -124,7 +136,21 @@
           ],
           "retroalimentacion": "V=11488.21→r=14 m. V=20569.09→r=17 m. V=38772.72→r=21 m."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El mismo ingeniero Fabián también debe diseñar un tanque esférico con un área de superficie exacta de 2,826 m².",
+        "pasos": [
+          {
+            "texto": "Dividimos el área entre 4×π.",
+            "operacion": "2826÷12.56=225"
+          },
+          {
+            "texto": "Sacamos raíz cuadrada para obtener el radio.",
+            "operacion": "r=√225=15"
+          }
+        ],
+        "respuestaFinal": "El tanque debe tener un radio de 15 metros."
+      }
     }
   ],
   "practicaExtra": [

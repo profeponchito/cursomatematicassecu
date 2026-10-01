@@ -33,7 +33,11 @@
             "x=1, x=-6"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "x=(1±√(1+24))/2=(1±5)/2 → x=3 o x=-2."
+          "retroalimentacion": "x=(1±√(1+24))/2=(1±5)/2 → x=3 o x=-2.",
+          "pistas": [
+            "Plantea la ecuación con x como el ancho, factorízala y descarta la solución negativa, igual que hicimos con la nueva sección del jardín de Chiapas (x²+3x-70=0 → x=7).",
+            "x=(1±√(1+24))/2=(1±5)/2 → x=3 o x=-2."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -99,7 +103,11 @@
           "tipo": "llenar_frase",
           "frase": "Un jardín rectangular tiene área de 88 m² y su largo mide 3 metros más que su ancho. El ancho mide ___ m.",
           "respuestaCorrecta": "8",
-          "retroalimentacion": "x(x+3)=88 → x²+3x−88=0 → (x+11)(x−8)=0 → x=8 (se descarta el valor negativo)."
+          "retroalimentacion": "x(x+3)=88 → x²+3x−88=0 → (x+11)(x−8)=0 → x=8 (se descarta el valor negativo).",
+          "pistas": [
+            "Plantea x(x+ el número extra)=área, pasa todo a un lado y factoriza, el mismo procedimiento que usamos para la nueva sección del jardín de Chiapas.",
+            "x(x+3)=88 → x²+3x−88=0 → (x+11)(x−8)=0 → x=8 (se descarta el valor negativo)."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -117,7 +125,11 @@
             "x=35, x=-1"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "(x+7)(x-5)=x²+2x-35=0, así que x=5 o x=-7."
+          "retroalimentacion": "(x+7)(x-5)=x²+2x-35=0, así que x=5 o x=-7.",
+          "pistas": [
+            "Factoriza buscando dos números que multiplicados den el término independiente y sumados el coeficiente de x, igual que en la nueva sección del jardín de Chiapas.",
+            "(x+7)(x-5)=x²+2x-35=0, así que x=5 o x=-7."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -140,7 +152,25 @@
           "retroalimentacion": "√225=15 m; √256=16 m; √289=17 m."
         }
       ],
-      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado"
+      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado",
+      "ejemploResuelto": {
+        "enunciado": "El mismo jardín rectangular de la escuela en Chiapas también tiene otra sección con área de 70 m², donde el largo es 3 metros más que el ancho.",
+        "pasos": [
+          {
+            "texto": "Planteamos la ecuación con x como el ancho.",
+            "operacion": "x(x+3)=70 → x²+3x-70=0"
+          },
+          {
+            "texto": "Factorizamos y resolvemos.",
+            "operacion": "(x+10)(x-7)=0 → x=7 o x=-10"
+          },
+          {
+            "texto": "Descartamos la solución negativa porque una medida no puede ser negativa.",
+            "operacion": "x=7"
+          }
+        ],
+        "respuestaFinal": "El ancho es 7 m y el largo es 7+3=10 m."
+      }
     }
   ],
   "practicaExtra": [

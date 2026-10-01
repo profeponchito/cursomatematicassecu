@@ -58,7 +58,11 @@
             "3"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "2 triángulos (las bases) + 3 rectángulos (uno por cada lado del triángulo) = 5 figuras."
+          "retroalimentacion": "2 triángulos (las bases) + 3 rectángulos (uno por cada lado del triángulo) = 5 figuras.",
+          "pistas": [
+            "Cuenta las bases (siempre 2 en un prisma) y las caras laterales (una por cada lado del polígono de la base), igual que hicimos con el prisma pentagonal de Gael (2 pentágonos + 5 rectángulos = 7 figuras).",
+            "2 triángulos (las bases) + 3 rectángulos (uno por cada lado del triángulo) = 5 figuras."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -102,7 +106,11 @@
             "6"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "1 triángulo de base + 3 triángulos laterales (uno por cada lado de la base) = 4 caras triangulares."
+          "retroalimentacion": "1 triángulo de base + 3 triángulos laterales (uno por cada lado de la base) = 4 caras triangulares.",
+          "pistas": [
+            "Suma la cara de la base más una cara triangular lateral por cada lado de la base, el mismo razonamiento que usamos para contar las figuras del prisma pentagonal de Gael.",
+            "1 triángulo de base + 3 triángulos laterales (uno por cada lado de la base) = 4 caras triangulares."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -114,10 +122,28 @@
           "tipo": "llenar_frase",
           "frase": "El desarrollo plano de un prisma pentagonal (base con 5 lados) tiene 2 pentágonos y ___ rectángulos.",
           "respuestaCorrecta": "5",
-          "retroalimentacion": "Un rectángulo lateral por cada uno de los 5 lados del pentágono de la base."
+          "retroalimentacion": "Un rectángulo lateral por cada uno de los 5 lados del pentágono de la base.",
+          "pistas": [
+            "El número de caras laterales siempre coincide con el número de lados del polígono de la base, igual que con el pentágono del prisma de Gael (5 lados → 5 rectángulos).",
+            "Un rectángulo lateral por cada uno de los 5 lados del pentágono de la base."
+          ]
         }
       ],
-      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio"
+      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio",
+      "ejemploResuelto": {
+        "enunciado": "A Gael también le dan, en su clase de tecnología en Puebla, un prisma de base pentagonal para que dibuje su desarrollo plano.",
+        "pasos": [
+          {
+            "texto": "Identificamos las bases: un prisma tiene 2 bases iguales a su polígono.",
+            "operacion": "2 pentágonos"
+          },
+          {
+            "texto": "Identificamos las caras laterales: una por cada lado del polígono de la base.",
+            "operacion": "5 rectángulos (uno por cada lado del pentágono)"
+          }
+        ],
+        "respuestaFinal": "El desarrollo plano del prisma pentagonal de Gael está formado por 2 pentágonos y 5 rectángulos, 7 figuras en total."
+      }
     }
   ],
   "practicaExtra": [

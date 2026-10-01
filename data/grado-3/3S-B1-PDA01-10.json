@@ -35,7 +35,11 @@
             "0.27 × 10⁹"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "4.5 × 6 = 27, y 10⁵⁺² = 10⁷, entonces 27 × 10⁷ = 2.7 × 10⁸ pesos."
+          "retroalimentacion": "4.5 × 6 = 27, y 10⁵⁺² = 10⁷, entonces 27 × 10⁷ = 2.7 × 10⁸ pesos.",
+          "pistas": [
+            "Multiplica los coeficientes, suma los exponentes y normaliza si hace falta, igual que hicimos con la segunda red de Tijuana ((6×10⁴)×(5×10³)=3×10⁸).",
+            "4.5×6=27, 10⁵⁺²=10⁷, entonces 27×10⁷=2.7×10⁸ pesos."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -59,7 +63,11 @@
             "3.6 × 10⁵"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Dos reducciones de 10⁻² equivalen a 10⁻⁴: 3.6 × 10⁷ × 10⁻⁴ = 3.6 × 10³."
+          "retroalimentacion": "Dos reducciones de 10⁻² equivalen a 10⁻⁴: 3.6 × 10⁷ × 10⁻⁴ = 3.6 × 10³.",
+          "pistas": [
+            "Combina las reducciones repetidas en un solo exponente negativo, igual que calculamos 2⁻⁴=1/16 para la señal del radar de Tijuana.",
+            "Dos reducciones de 10⁻² equivalen a 10⁻⁴: 3.6×10⁷×10⁻⁴=3.6×10³."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -109,7 +117,11 @@
           "tipo": "llenar_frase",
           "frase": "Una reserva natural tiene 250,000 árboles. Una plaga reduce la cantidad a la mitad cada año. Después de 3 años, en notación científica, quedan ___ árboles.",
           "respuestaCorrecta": "3.125 × 10⁴",
-          "retroalimentacion": "250,000 × 2⁻³ = 250,000 ÷ 8 = 31,250 = 3.125 × 10⁴."
+          "retroalimentacion": "250,000 × 2⁻³ = 250,000 ÷ 8 = 31,250 = 3.125 × 10⁴.",
+          "pistas": [
+            "Aplica el exponente negativo como una división repetida y después exprésalo en notación científica, el mismo patrón que usamos para la señal del radar de Tijuana.",
+            "250,000×2⁻³=250,000÷8=31,250=3.125×10⁴."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -123,7 +135,25 @@
           "respuestaCorrecta": 0,
           "retroalimentacion": "1.69 × 10⁶ = 1,690,000, √1,690,000 = 1,300 m, y el perímetro es 4 × 1,300 = 5,200 = 5.2 × 10³ m."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "La misma empresa de telecomunicaciones de Tijuana también transmite 6×10⁴ megabytes por segundo en otra red, y quiere saber cuántos transmite en 5×10³ segundos. Además, en otro radar la señal se reduce a la mitad cada vez que choca con un obstáculo, y quiere saber qué fracción queda tras 4 rebotes.",
+        "pasos": [
+          {
+            "texto": "Multiplicamos las cantidades en notación científica.",
+            "operacion": "(6×10⁴)×(5×10³)=(6×5)×10⁴⁺³=30×10⁷"
+          },
+          {
+            "texto": "Normalizamos porque 30≥10.",
+            "operacion": "3×10⁸ megabytes"
+          },
+          {
+            "texto": "Calculamos la fracción de señal que queda tras 4 rebotes.",
+            "operacion": "2⁻⁴=1/16"
+          }
+        ],
+        "respuestaFinal": "3×10⁸ megabytes transmitidos; queda 1/16 de la señal original tras 4 rebotes."
+      }
     }
   ],
   "practicaExtra": [

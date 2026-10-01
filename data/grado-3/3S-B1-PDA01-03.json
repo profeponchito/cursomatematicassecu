@@ -35,7 +35,11 @@
             "0.45 × 10⁵"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "45,000 = 4.5 × 10,000 = 4.5 × 10⁴."
+          "retroalimentacion": "45,000 = 4.5 × 10,000 = 4.5 × 10⁴.",
+          "pistas": [
+            "Mueve el punto decimal hasta dejar un solo dígito antes de él, y cuenta cuántos lugares se movió, igual que hicimos con los 32,000,000 toneladas de maíz de Fernanda (3.2×10⁷).",
+            "45,000=4.5×10,000=4.5×10⁴."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -95,7 +99,11 @@
             "0.72×10⁶"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "720,000 = 7.2 × 100,000 = 7.2×10⁵."
+          "retroalimentacion": "720,000 = 7.2 × 100,000 = 7.2×10⁵.",
+          "pistas": [
+            "Sigue los mismos dos pasos que usamos para la cifra de maíz de Fernanda: mover el punto y contar los lugares.",
+            "720,000=7.2×100,000=7.2×10⁵."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -107,7 +115,11 @@
           "tipo": "llenar_frase",
           "frase": "930,000 escrito en notación científica es ___.",
           "respuestaCorrecta": "9.3 × 10⁵",
-          "retroalimentacion": "930,000 = 9.3 × 10⁵."
+          "retroalimentacion": "930,000 = 9.3 × 10⁵.",
+          "pistas": [
+            "Cuenta cuántos lugares mueves el punto decimal para dejar un solo dígito antes de él, el mismo procedimiento que usamos para el maíz de Fernanda.",
+            "930,000=9.3×10⁵."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -142,7 +154,21 @@
           "retroalimentacion": "67,000 = 6.7×10⁴; 0.0000038 = 3.8×10⁻⁶; √81 = 9."
         }
       ],
-      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado"
+      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado",
+      "ejemploResuelto": {
+        "enunciado": "Fernanda también anota en su cuaderno que en México se producen aproximadamente 32,000,000 toneladas de maíz al año.",
+        "pasos": [
+          {
+            "texto": "Movemos el punto decimal hasta que quede un solo dígito antes del punto.",
+            "operacion": "32,000,000 → 3.2"
+          },
+          {
+            "texto": "Contamos cuántos lugares se movió el punto: ese es el exponente.",
+            "operacion": "7 lugares"
+          }
+        ],
+        "respuestaFinal": "32,000,000 = 3.2×10⁷."
+      }
     }
   ],
   "practicaExtra": [

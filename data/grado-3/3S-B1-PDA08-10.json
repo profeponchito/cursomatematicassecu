@@ -47,7 +47,11 @@
           "tipo": "llenar_frase",
           "frase": "Un camión hace un viaje en tramos de 210 km en 3 h y 140 km en 2 h. Su rapidez media en todo el viaje es de ___ km/h.",
           "respuestaCorrecta": "70",
-          "retroalimentacion": "rapidez media = (210+140)/(3+2) = 350/5 = 70 km/h."
+          "retroalimentacion": "rapidez media = (210+140)/(3+2) = 350/5 = 70 km/h.",
+          "pistas": [
+            "Suma las distancias y los tiempos de los tramos antes de dividir, el mismo tipo de cálculo que usaríamos si el viaje de mudanzas se hiciera en tramos.",
+            "rapidez media = (210+140)/(3+2) = 350/5 = 70 km/h."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -71,7 +75,11 @@
           "tipo": "llenar_frase",
           "frase": "Una empresa transporta aceite con densidad de 0.92 kg/L. Si el tanque del camión tiene una capacidad de 800 litros, la masa total del cargamento lleno es de ___ kg.",
           "respuestaCorrecta": "736",
-          "retroalimentacion": "masa = 0.92×800 = 736 kg."
+          "retroalimentacion": "masa = 0.92×800 = 736 kg.",
+          "pistas": [
+            "Multiplica la densidad por el volumen para obtener la masa total, igual que calculamos la masa total de las 40 cajas de la mudanza (40×15=600 kg).",
+            "masa = 0.92×800 = 736 kg."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -83,7 +91,11 @@
             "$150"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Costo ruta 1 = 240×3.10 = $744. Costo ruta 2 = 280×3.10 = $868. Diferencia = 868−744 = $124."
+          "retroalimentacion": "Costo ruta 1 = 240×3.10 = $744. Costo ruta 2 = 280×3.10 = $868. Diferencia = 868−744 = $124.",
+          "pistas": [
+            "Multiplica el costo por kilómetro por la distancia de cada ruta y compara, el mismo tipo de comparación que haríamos entre los dos proveedores de diésel de la mudanza de Hermosillo.",
+            "Costo ruta 1 = 240×3.10 = $744. Costo ruta 2 = 280×3.10 = $868. Diferencia = 868−744 = $124."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -123,7 +135,21 @@
           "respuestaCorrecta": 0,
           "retroalimentacion": "Camión A: (300/10)×23 = 30×23 = $690. Camión B: (300/12)×25 = 25×25 = $625. El Camión B es más barato."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "La empresa de mudanzas de Hermosillo transporta 40 cajas, cada una con un volumen de 0.05 m³ y una masa de 15 kg, en un camión con límite de carga de 700 kg.",
+        "pasos": [
+          {
+            "texto": "Calculamos la masa total de las 40 cajas.",
+            "operacion": "40×15=600"
+          },
+          {
+            "texto": "Comparamos con el límite del camión.",
+            "operacion": "600<700"
+          }
+        ],
+        "respuestaFinal": "La carga de las 40 cajas (600 kg) sí cabe dentro del límite de 700 kg del camión."
+      }
     }
   ],
   "practicaExtra": [

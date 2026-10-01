@@ -47,7 +47,11 @@
           "tipo": "llenar_frase",
           "frase": "El volumen de una esfera con radio de 9 cm es ___ cm³ (usa π≈3.14, redondea a 2 decimales).",
           "respuestaCorrecta": "3052.08",
-          "retroalimentacion": "V = (4/3)×3.14×9³ = (4/3)×3.14×729 = 3052.08 cm³."
+          "retroalimentacion": "V = (4/3)×3.14×9³ = (4/3)×3.14×729 = 3052.08 cm³.",
+          "pistas": [
+            "Eleva el radio al cubo, multiplica por π y por 4/3, igual que hicimos con la bola de nieve grande de don Beto (7³→1436.03 cm³).",
+            "V = (4/3)×3.14×9³ = (4/3)×3.14×729 = 3052.08 cm³."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -71,7 +75,11 @@
           "tipo": "llenar_frase",
           "frase": "El volumen de una esfera con radio de 5 cm es ___ cm³ (usa π≈3.14, redondea a 2 decimales).",
           "respuestaCorrecta": "523.33",
-          "retroalimentacion": "V = (4/3)×3.14×5³ = (4/3)×3.14×125 = 523.33 cm³."
+          "retroalimentacion": "V = (4/3)×3.14×5³ = (4/3)×3.14×125 = 523.33 cm³.",
+          "pistas": [
+            "Aplica la fórmula V=(4/3)×π×r³ sustituyendo el radio, el mismo procedimiento que usamos con la bola de nieve grande de don Beto.",
+            "V = (4/3)×3.14×5³ = (4/3)×3.14×125 = 523.33 cm³."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -95,7 +103,11 @@
           "tipo": "llenar_frase",
           "frase": "El volumen de una esfera con radio de 1 cm es ___ cm³ (usa π≈3.14, redondea a 2 decimales).",
           "respuestaCorrecta": "4.19",
-          "retroalimentacion": "V = (4/3)×3.14×1³ = (4/3)×3.14×1 = 4.19 cm³ (redondeado)."
+          "retroalimentacion": "V = (4/3)×3.14×1³ = (4/3)×3.14×1 = 4.19 cm³ (redondeado).",
+          "pistas": [
+            "Sigue los mismos pasos que usamos con la bola de nieve grande de don Beto: cubo del radio, por π, por 4/3.",
+            "V = (4/3)×3.14×1³ = (4/3)×3.14×1 = 4.19 cm³ (redondeado)."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -118,7 +130,21 @@
           "retroalimentacion": "r=3: V=(4/3)×3.14×27=113.04 cm³. r=6: V=(4/3)×3.14×216=904.32 cm³. r=8: V=(4/3)×3.14×512=2143.57 cm³."
         }
       ],
-      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado"
+      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado",
+      "ejemploResuelto": {
+        "enunciado": "Don Beto también ofrece bolas de nieve más grandes, con un cucharón que forma esferas de 7 cm de radio.",
+        "pasos": [
+          {
+            "texto": "Aplicamos la fórmula del volumen de la esfera.",
+            "operacion": "V=(4/3)×3.14×7³"
+          },
+          {
+            "texto": "Calculamos 7³ y multiplicamos.",
+            "operacion": "7³=343; V=(4/3)×3.14×343=1436.03"
+          }
+        ],
+        "respuestaFinal": "Cada bola grande de nieve contiene 1,436.03 cm³."
+      }
     }
   ],
   "practicaExtra": [

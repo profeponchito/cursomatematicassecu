@@ -34,7 +34,11 @@
             "No, pero solo por el problema de la muestra; la gráfica sí es confiable"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Hay dos problemas independientes: la muestra solo incluye personas que ya hacen ejercicio al aire libre (sesgada), y la gráfica exagera el porcentaje al no empezar en 0%."
+          "retroalimentacion": "Hay dos problemas independientes: la muestra solo incluye personas que ya hacen ejercicio al aire libre (sesgada), y la gráfica exagera el porcentaje al no empezar en 0%.",
+          "pistas": [
+            "Revisa si la muestra incluye personas diversas y no solo a quienes ya tienen el hábito que se pregunta, igual que comparamos los dos anuncios de la marca de tenis.",
+            "Hay dos problemas independientes: la muestra solo incluye personas que ya hacen ejercicio al aire libre (sesgada), y la gráfica exagera el porcentaje al no empezar en 0%."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -64,7 +68,11 @@
             "Sí, pero solo porque la gráfica se ve bien, sin importar la muestra"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "En este caso ambas condiciones se cumplen: la muestra es amplia, diversa y aleatoria, y la gráfica respeta un eje desde 0% con intervalos iguales."
+          "retroalimentacion": "En este caso ambas condiciones se cumplen: la muestra es amplia, diversa y aleatoria, y la gráfica respeta un eje desde 0% con intervalos iguales.",
+          "pistas": [
+            "Verifica ambas condiciones por separado: que la muestra sea representativa Y que la gráfica esté bien construida, el mismo doble análisis que hicimos con los dos anuncios de la marca de tenis.",
+            "En este caso ambas condiciones se cumplen: la muestra es amplia, diversa y aleatoria, y la gráfica respeta un eje desde 0% con intervalos iguales."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -82,7 +90,11 @@
             "Solo tiene un problema: la muestra"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "La muestra es demasiado pequeña y local para representar a todo el país, y una gráfica de pastel que suma más de 100% tiene un error de construcción."
+          "retroalimentacion": "La muestra es demasiado pequeña y local para representar a todo el país, y una gráfica de pastel que suma más de 100% tiene un error de construcción.",
+          "pistas": [
+            "Revisa si la muestra representa de verdad a la población que dice estudiar y si la gráfica suma correctamente el 100%, igual que hicimos al comparar los dos anuncios de la marca de tenis.",
+            "La muestra es demasiado pequeña y local para representar a todo el país, y una gráfica de pastel que suma más de 100% tiene un error de construcción."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -117,7 +129,22 @@
           "retroalimentacion": "Cuando muestra y gráfica están bien construidas, la conclusión es confiable. Si solo falla la muestra (pero la gráfica está bien), el problema es la muestra. Si solo falla la gráfica (pero la muestra está bien), el problema es la gráfica."
         }
       ],
-      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis"
+      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis",
+      "ejemploResuelto": {
+        "enunciado": "La misma marca de tenis publica otro anuncio: 'el 88% de los jóvenes prefiere nuestra marca', esta vez basado en una encuesta a 3,000 jóvenes de diferentes ciudades, edades y redes sociales, con una gráfica de barras cuyo eje va de 0% a 100% en intervalos iguales de 10%.",
+        "pasos": [
+          {
+            "texto": "Revisamos la muestra: 3,000 jóvenes diversos, elegidos de distintas fuentes y no solo seguidores de una cuenta."
+          },
+          {
+            "texto": "Revisamos la gráfica: el eje empieza en 0% con intervalos iguales, sin exagerar la diferencia."
+          },
+          {
+            "texto": "Como ambas condiciones se cumplen, este segundo anuncio sí sería confiable."
+          }
+        ],
+        "respuestaFinal": "A diferencia del primer anuncio (muestra sesgada hacia seguidores de Instagram y gráfica con eje desde 80%), este segundo anuncio sí sería confiable, porque tanto la muestra como la gráfica están bien construidas."
+      }
     }
   ],
   "practicaExtra": [

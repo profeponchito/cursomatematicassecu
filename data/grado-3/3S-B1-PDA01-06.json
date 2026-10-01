@@ -36,7 +36,11 @@
             "34 m"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "33 × 33 = 1,089."
+          "retroalimentacion": "33 × 33 = 1,089.",
+          "pistas": [
+            "Busca el número que multiplicado por sí mismo da el área total, igual que hicimos para el pasillo de la papelería de Puebla (34×34=1,156).",
+            "33×33=1,089."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -60,7 +64,11 @@
             "47 cm"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "46 × 46 = 2,116."
+          "retroalimentacion": "46 × 46 = 2,116.",
+          "pistas": [
+            "El lado de un cuadrado es la raíz cuadrada de su área, el mismo procedimiento que usamos para el pasillo de la papelería.",
+            "46×46=2,116."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -110,7 +118,11 @@
           "tipo": "llenar_frase",
           "frase": "Una superficie cuadrada tiene un área de 3,025 cm². Su lado mide ___ cm.",
           "respuestaCorrecta": "55",
-          "retroalimentacion": "55 × 55 = 3,025."
+          "retroalimentacion": "55 × 55 = 3,025.",
+          "pistas": [
+            "Busca qué número multiplicado por sí mismo da exactamente el área, igual que con el pasillo de la papelería de Puebla.",
+            "55×55=3,025."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -124,7 +136,21 @@
           "respuestaCorrecta": 1,
           "retroalimentacion": "57 × 57 = 3,249."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "La misma papelería de Puebla de doña Carmen también quiere embaldosar un pasillo cuadrado que necesita 1,156 azulejos en total.",
+        "pasos": [
+          {
+            "texto": "Aplicamos la fórmula.",
+            "operacion": "lado=√Área"
+          },
+          {
+            "texto": "Buscamos qué número multiplicado por sí mismo da 1,156.",
+            "operacion": "34×34=1,156"
+          }
+        ],
+        "respuestaFinal": "34 azulejos por lado."
+      }
     }
   ],
   "practicaExtra": [

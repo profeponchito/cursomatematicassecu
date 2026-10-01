@@ -41,7 +41,11 @@
           "tipo": "llenar_frase",
           "frase": "Un patio rectangular tiene perímetro de 34 m y área de 70 m². El lado más largo mide ___ m.",
           "respuestaCorrecta": "10",
-          "retroalimentacion": "Semiperímetro=17. x²-17x+70=0 → (x-10)(x-7)=0 → dimensiones 10 m y 7 m. El más largo es 10."
+          "retroalimentacion": "Semiperímetro=17. x²-17x+70=0 → (x-10)(x-7)=0 → dimensiones 10 m y 7 m. El más largo es 10.",
+          "pistas": [
+            "Calcula el semiperímetro dividiendo el perímetro entre 2, plantea x²−s·x+A=0 y factoriza, igual que hicimos para el segundo corral del criador de Puebla (s=16 → 9 m y 7 m).",
+            "Semiperímetro=17. x²-17x+70=0 → (x-10)(x-7)=0 → dimensiones 10 m y 7 m."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -65,7 +69,11 @@
             "21 cm y 7 cm"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Semiperímetro=28. x²-28x+187=0 → (x-17)(x-11)=0 → 17 cm y 11 cm."
+          "retroalimentacion": "Semiperímetro=28. x²-28x+187=0 → (x-17)(x-11)=0 → 17 cm y 11 cm.",
+          "pistas": [
+            "Sigue el mismo procedimiento que usamos para el segundo corral de Puebla: calcular el semiperímetro y plantear x²−s·x+A=0.",
+            "Semiperímetro=28. x²-28x+187=0 → (x-17)(x-11)=0 → 17 cm y 11 cm."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -83,7 +91,11 @@
             "17 m y 17 m"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Semiperímetro=34. x²-34x+240=0 → (x-24)(x-10)=0 → 24 m y 10 m."
+          "retroalimentacion": "Semiperímetro=34. x²-34x+240=0 → (x-24)(x-10)=0 → 24 m y 10 m.",
+          "pistas": [
+            "Calcula el semiperímetro y plantea la ecuación x²−s·x+A=0, el mismo método que usamos para el segundo corral de conejos de Puebla.",
+            "Semiperímetro=34. x²-34x+240=0 → (x-24)(x-10)=0 → 24 m y 10 m."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -118,7 +130,25 @@
           "retroalimentacion": "Semiperímetro=32. x²-32x+252=0 → (x-18)(x-14)=0 → dimensiones 18 m y 14 m. El más corto es 14."
         }
       ],
-      "nivelEtiqueta": "Nivel 6 de 10 · Aplicación avanzada"
+      "nivelEtiqueta": "Nivel 6 de 10 · Aplicación avanzada",
+      "ejemploResuelto": {
+        "enunciado": "El mismo criador de conejos en Puebla también quiere cercar otro corral rectangular, esta vez con 32 metros de malla (perímetro) y un área de 63 m².",
+        "pasos": [
+          {
+            "texto": "Calculamos el semiperímetro.",
+            "operacion": "s=32÷2=16"
+          },
+          {
+            "texto": "Planteamos la ecuación x²−s·x+A=0.",
+            "operacion": "x²-16x+63=0"
+          },
+          {
+            "texto": "Factorizamos.",
+            "operacion": "(x-9)(x-7)=0 → x=9 o x=7"
+          }
+        ],
+        "respuestaFinal": "Las dimensiones del corral son 9 m y 7 m."
+      }
     }
   ],
   "practicaExtra": [
