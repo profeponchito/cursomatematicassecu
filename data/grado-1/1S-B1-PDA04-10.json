@@ -28,7 +28,11 @@
           "tipo": "llenar_frase",
           "frase": "El término 3 de una sucesión es 19 y el término 6 es 40. ¿Cuál es el valor del término 9? Respuesta: ___.",
           "respuestaCorrecta": "61",
-          "retroalimentacion": "d=(40-19)÷(6-3)=7. a=19-2×7=5. término_9=5+8×7=61."
+          "retroalimentacion": "d=(40-19)÷(6-3)=7. a=19-2×7=5. término_9=5+8×7=61.",
+          "pistas": [
+            "Primero calcula d y a con los dos términos conocidos, después aplica la fórmula para el término 9.",
+            "d=(40-19)÷(6-3)=7; a=19-2×7=5; término_9=5+8×7."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -40,7 +44,11 @@
             "150"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "d=(54-24)÷(5-2)=10. a=24-1×10=14. término_5=14+4×10=54. S₅=5×(14+54)÷2=170."
+          "retroalimentacion": "d=(54-24)÷(5-2)=10. a=24-1×10=14. término_5=14+4×10=54. S₅=5×(14+54)÷2=170.",
+          "pistas": [
+            "Primero reconstruye a y d, después calcula el último término y aplica la suma.",
+            "d=(54-24)÷(5-2)=10; a=24-1×10=14; término_5=54; S₅=5×(14+54)÷2."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -52,7 +60,11 @@
           "tipo": "llenar_frase",
           "frase": "El término 4 de una sucesión es -3 y el término 8 es 21. ¿Cuál es el primer término (a)? Respuesta: ___.",
           "respuestaCorrecta": "-21",
-          "retroalimentacion": "d=(21-(-3))÷(8-4)=6. a=-3-3×6=-21."
+          "retroalimentacion": "d=(21-(-3))÷(8-4)=6. a=-3-3×6=-21.",
+          "pistas": [
+            "Aplica d = (término_m − término_k) ÷ (m − k) y luego despeja a.",
+            "d=(21-(-3))÷(8-4)=6; a=-3-3×6."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -117,7 +129,29 @@
           "retroalimentacion": "d=(46-22)÷(9-5)=6. a=22-4×6=-2. término_5=-2+4×6=22 (consistente). S₅=5×(-2+22)÷2=50, no 80. Es falso."
         }
       ],
-      "nivelEtiqueta": "Nivel 10 de 10 · Dominio"
+      "nivelEtiqueta": "Nivel 10 de 10 · Dominio",
+      "ejemploResuelto": {
+        "enunciado": "Dos amigas ahorran: Camila no anotó su primer ahorro ni cuánto aumenta, solo que en el mes 2 llevaba $60 y en el mes 4 llevaba $100. ¿Cuánto llevará ahorrado en total hasta el mes 6?",
+        "pasos": [
+          {
+            "texto": "Calculamos d.",
+            "operacion": "d = (100-60)÷(4-2) = 40÷2 = 20"
+          },
+          {
+            "texto": "Calculamos a.",
+            "operacion": "a = 60-(2-1)×20 = 40"
+          },
+          {
+            "texto": "Calculamos el término 6.",
+            "operacion": "término_6 = 40+(6-1)×20 = 140"
+          },
+          {
+            "texto": "Calculamos la suma total.",
+            "operacion": "S₆ = 6×(40+140)÷2 = 540"
+          }
+        ],
+        "respuestaFinal": "Camila habrá ahorrado $540 en total hasta el mes 6."
+      }
     }
   ],
   "practicaExtra": [

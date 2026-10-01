@@ -35,7 +35,11 @@
             "126"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "término_7 = 11+(7-1)×3 = 29. S₇ = 7×(11+29)÷2 = 7×40÷2 = 140."
+          "retroalimentacion": "término_7 = 11+(7-1)×3 = 29. S₇ = 7×(11+29)÷2 = 7×40÷2 = 140.",
+          "pistas": [
+            "Primero calcula el último término (término_7), después aplica la fórmula de la suma.",
+            "término_7=11+(7-1)×3=29; S₇=7×(11+29)÷2."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -59,7 +63,11 @@
             "260"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "término_4 = 50+(4-1)×15 = 95. S₄ = 4×(50+95)÷2 = 290."
+          "retroalimentacion": "término_4 = 50+(4-1)×15 = 95. S₄ = 4×(50+95)÷2 = 290.",
+          "pistas": [
+            "Primero calcula término_4, después la suma.",
+            "término_4=50+(4-1)×15=95; S₄=4×(50+95)÷2."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -83,7 +91,11 @@
             "55"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "término_10 = 2+(10-1)×1 = 11. S₁₀ = 10×(2+11)÷2 = 65."
+          "retroalimentacion": "término_10 = 2+(10-1)×1 = 11. S₁₀ = 10×(2+11)÷2 = 65.",
+          "pistas": [
+            "Primero calcula término_10, después la suma.",
+            "término_10=2+(10-1)×1=11; S₁₀=10×(2+11)÷2."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -124,7 +136,25 @@
           "retroalimentacion": "término_7 = 20+(7-1)×8 = 68. S₇ = 7×(20+68)÷2 = 308."
         }
       ],
-      "nivelEtiqueta": "Nivel 6 de 10 · Aplicación avanzada"
+      "nivelEtiqueta": "Nivel 6 de 10 · Aplicación avanzada",
+      "ejemploResuelto": {
+        "enunciado": "Un florista vende 6 ramos el primer día y aumenta 4 ramos cada día. ¿Cuántos ramos en total vendió en 6 días?",
+        "pasos": [
+          {
+            "texto": "Calculamos el último término.",
+            "operacion": "término_6 = 6+(6-1)×4 = 26"
+          },
+          {
+            "texto": "Aplicamos la fórmula de la suma.",
+            "operacion": "S₆ = 6×(6+26)÷2"
+          },
+          {
+            "texto": "Calculamos.",
+            "operacion": "S₆ = 6×32÷2 = 96"
+          }
+        ],
+        "respuestaFinal": "El florista vendió 96 ramos en total en los 6 días."
+      }
     }
   ],
   "practicaExtra": [

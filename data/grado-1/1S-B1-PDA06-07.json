@@ -35,7 +35,11 @@
             "x=5"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "x/3=9-4=5 → x=3×5=15."
+          "retroalimentacion": "x/3=9-4=5 → x=3×5=15.",
+          "pistas": [
+            "Resta 4 de ambos lados, después multiplica por 3.",
+            "x/3 = 9 - 4 = 5; entonces x = 3 × 5."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -65,7 +69,11 @@
             "x=176"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "x/8=17-5=12 → x=8×12=96."
+          "retroalimentacion": "x/8=17-5=12 → x=8×12=96.",
+          "pistas": [
+            "Resta 5 de ambos lados, después multiplica por 8.",
+            "x/8 = 17 - 5 = 12; entonces x = 8 × 12."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -83,7 +91,11 @@
             "x=2"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "x/2=20-9=11 → x=2×11=22."
+          "retroalimentacion": "x/2=20-9=11 → x=2×11=22.",
+          "pistas": [
+            "Resta 9 de ambos lados, después multiplica por 2.",
+            "x/2 = 20 - 9 = 11; entonces x = 2 × 11."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -118,7 +130,25 @@
           "retroalimentacion": "x/3+5=12 → x=21; x/4-2=9 → x=44; x/10+7=15 → x=80."
         }
       ],
-      "nivelEtiqueta": "Nivel 7 de 10 · Reto"
+      "nivelEtiqueta": "Nivel 7 de 10 · Reto",
+      "ejemploResuelto": {
+        "enunciado": "Un lote de x metros cuadrados se repartió en partes iguales entre 6 vecinos, y después a cada uno le dieron 4 metros cuadrados extra de un callejón, quedando cada uno con 15 metros cuadrados. ¿Cuántos metros cuadrados medía el lote original?",
+        "pasos": [
+          {
+            "texto": "Planteamos la ecuación: el lote entre 6, más los 4 extra, da 15.",
+            "operacion": "x/6 + 4 = 15"
+          },
+          {
+            "texto": "Restamos 4 de ambos lados.",
+            "operacion": "x/6 = 11"
+          },
+          {
+            "texto": "Multiplicamos ambos lados por 6.",
+            "operacion": "x = 66"
+          }
+        ],
+        "respuestaFinal": "El lote original medía 66 metros cuadrados."
+      }
     }
   ],
   "practicaExtra": [

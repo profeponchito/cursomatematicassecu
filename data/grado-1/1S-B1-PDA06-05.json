@@ -35,7 +35,11 @@
             "x=6"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Se distribuye: 2x+10=24 → 2x=14 → x=14÷2=7."
+          "retroalimentacion": "Se distribuye: 2x+10=24 → 2x=14 → x=14÷2=7.",
+          "pistas": [
+            "Distribuye el 2 dentro del paréntesis.",
+            "2x + 10 = 24; entonces 2x = 14, x = 14 ÷ 2."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -65,7 +69,11 @@
           "tipo": "llenar_frase",
           "frase": "Resuelve: 6(x + 3) = 54. x = ___.",
           "respuestaCorrecta": "6",
-          "retroalimentacion": "6x+18=54 → 6x=36 → x=36÷6=6."
+          "retroalimentacion": "6x+18=54 → 6x=36 → x=36÷6=6.",
+          "pistas": [
+            "Distribuye el 6 dentro del paréntesis.",
+            "6x + 18 = 54; entonces 6x = 36, x = 36 ÷ 6."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -83,7 +91,11 @@
             "x=5"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "4x-24=20 → 4x=44 → x=44÷4=11."
+          "retroalimentacion": "4x-24=20 → 4x=44 → x=44÷4=11.",
+          "pistas": [
+            "Distribuye el 4 dentro del paréntesis.",
+            "4x - 24 = 20; entonces 4x = 44, x = 44 ÷ 4."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -118,7 +130,25 @@
           "retroalimentacion": "4(x+2)=32 → x=6; 5(x+1)=40 → x=7; 3(x-5)=18 → x=11."
         }
       ],
-      "nivelEtiqueta": "Nivel 5 de 10 · Aplicación"
+      "nivelEtiqueta": "Nivel 5 de 10 · Aplicación",
+      "ejemploResuelto": {
+        "enunciado": "Cuatro primos rentan una lancha y además cada uno paga $5 extra de chaleco salvavidas; entre los cuatro pagaron en total $56. ¿Cuánto costó la renta antes del cargo de chaleco?",
+        "pasos": [
+          {
+            "texto": "Planteamos la ecuación: 4 veces (renta más chaleco) es el total.",
+            "operacion": "4(x + 5) = 56"
+          },
+          {
+            "texto": "Distribuimos el 4 dentro del paréntesis.",
+            "operacion": "4x + 20 = 56"
+          },
+          {
+            "texto": "Restamos 20 y dividimos entre 4.",
+            "operacion": "4x = 36  →  x = 9"
+          }
+        ],
+        "respuestaFinal": "La renta costó $9 antes del cargo de chaleco."
+      }
     }
   ],
   "practicaExtra": [

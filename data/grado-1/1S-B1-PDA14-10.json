@@ -34,7 +34,11 @@
             "Las tres son iguales"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "P(A) = 23/92 = 0.25, P(B) = 15/75 = 0.2, P(C) = 21/84 = 0.25. La Ruta B tiene la menor probabilidad de tardanza."
+          "retroalimentacion": "P(A) = 23/92 = 0.25, P(B) = 15/75 = 0.2, P(C) = 21/84 = 0.25. La Ruta B tiene la menor probabilidad de tardanza.",
+          "pistas": [
+            "Calcula la probabilidad de cada ruta dividiendo los envíos tarde entre el total, y compáralas.",
+            "P(A) = 23/92 = 0.25, P(B) = 15/75 = 0.2, P(C) = 21/84 = 0.25. La Ruta B tiene la menor probabilidad de tardanza."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -58,7 +62,11 @@
             "18/20"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Sin efecto: 340 − 17 = 323 de 340. La fracción 323/340 se simplifica dividiendo entre 17: 19/20."
+          "retroalimentacion": "Sin efecto: 340 − 17 = 323 de 340. La fracción 323/340 se simplifica dividiendo entre 17: 19/20.",
+          "pistas": [
+            "Resta las defectuosas del total, divide entre el total y convierte a porcentaje.",
+            "Funcionan 138 − 9 = 129 piezas. P = 129/138 ≈ 0.9348, que redondeado a un decimal es 93.5%."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -82,7 +90,11 @@
             "No hay suficiente información"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Matutino: 14/175 = 0.08. Vespertino: 13/150 ≈ 0.0867. El turno vespertino tiene mayor probabilidad de defecto."
+          "retroalimentacion": "Matutino: 14/175 = 0.08. Vespertino: 13/150 ≈ 0.0867. El turno vespertino tiene mayor probabilidad de defecto.",
+          "pistas": [
+            "Calcula la probabilidad de defecto en cada turno y compáralas.",
+            "Matutino: 14/175 = 0.08. Vespertino: 13/150 ≈ 0.0867. El turno vespertino tiene mayor probabilidad de defecto."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -117,7 +129,23 @@
           "retroalimentacion": "Correcto: 96/640 = 0.15 = 15%, y 15% de 800 es 0.15 × 800 = 120."
         }
       ],
-      "nivelEtiqueta": "Nivel 10 de 10 · Dominio"
+      "nivelEtiqueta": "Nivel 10 de 10 · Dominio",
+      "ejemploResuelto": {
+        "enunciado": "El mismo comité también compara otros dos juegos: uno con una probabilidad de ganar del 12%, y otro donde de 60 intentos anteriores solo 9 personas ganaron. ¿Cuál de los dos juegos conviene más ofrecer, según cuál tiene mayor probabilidad de que alguien gane?",
+        "pasos": [
+          {
+            "texto": "Convertimos la probabilidad frecuencial del segundo juego.",
+            "operacion": "9÷60=0.15, es decir 15%"
+          },
+          {
+            "texto": "Comparamos con el 12% del primer juego."
+          },
+          {
+            "texto": "Concluimos cuál tiene mayor probabilidad de ganar."
+          }
+        ],
+        "respuestaFinal": "El segundo juego conviene más ofrecer, porque tiene mayor probabilidad de que alguien gane (15% contra 12% del primero)."
+      }
     }
   ],
   "practicaExtra": [

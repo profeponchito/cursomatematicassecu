@@ -60,7 +60,11 @@
             "10"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "|−12| = 12, que es mayor que |8| = 8, |−5| = 5 y |10| = 10."
+          "retroalimentacion": "|−12| = 12, que es mayor que |8| = 8, |−5| = 5 y |10| = 10.",
+          "pistas": [
+            "Calcula el valor absoluto de cada número: la distancia al cero, siempre positiva.",
+            "|−12| = 12, |8| = 8, |−5| = 5, |10| = 10 — ¿cuál es el mayor?"
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -84,7 +88,11 @@
           "tipo": "llenar_frase",
           "frase": "El número negativo cuyo valor absoluto es 14 es ___.",
           "respuestaCorrecta": "-14",
-          "retroalimentacion": "|−14| = 14, y -14 es el único número negativo con esa distancia al cero."
+          "retroalimentacion": "|−14| = 14, y -14 es el único número negativo con esa distancia al cero.",
+          "pistas": [
+            "Un valor absoluto de 14 puede venir de dos números: 14 o -14 — te piden el negativo.",
+            "El número negativo cuya distancia al cero es 14 es -14."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -116,9 +124,26 @@
             "Las tres tienen la misma desviación"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "|−0.9| = 0.9 es mayor que |−0.6| = 0.6 y |0.4| = 0.4, así que la pieza C tiene la mayor desviación."
+          "retroalimentacion": "|−0.9| = 0.9 es mayor que |−0.6| = 0.6 y |0.4| = 0.4, así que la pieza C tiene la mayor desviación.",
+          "pistas": [
+            "Calcula |valor| de cada pieza, ignorando el signo.",
+            "|−0.9| = 0.9 es la distancia más grande de las tres — esa pieza es la respuesta."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Un tercer excursionista camina hasta la posición -20, y un cuarto hasta la posición 16. ¿Quién se alejó más del campamento?",
+        "pasos": [
+          {
+            "texto": "Calculamos el valor absoluto de cada posición.",
+            "operacion": "|−20| = 20  |16| = 16"
+          },
+          {
+            "texto": "Comparamos las distancias: 20 es mayor que 16."
+          }
+        ],
+        "respuestaFinal": "El excursionista en -20 se alejó más (20 unidades) que el de 16 (16 unidades)."
+      }
     }
   ],
   "practicaExtra": [

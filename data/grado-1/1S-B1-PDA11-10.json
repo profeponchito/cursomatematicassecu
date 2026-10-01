@@ -35,7 +35,11 @@
             "136"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "9.36 kg = 9360 g. 9360 ÷ 65 = 144 vasitos."
+          "retroalimentacion": "9.36 kg = 9360 g. 9360 ÷ 65 = 144 vasitos.",
+          "pistas": [
+            "Convierte los kilogramos a gramos antes de dividir.",
+            "9.36 kg = 9360 g. 9360 ÷ 65 = 144 vasitos."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -47,7 +51,11 @@
           "tipo": "llenar_frase",
           "frase": "El comité de la kermés compró 14.7 m de tela para manteles, cortada en piezas de 210 cm cada una. Se obtuvieron ___ piezas completas.",
           "respuestaCorrecta": "7",
-          "retroalimentacion": "14.7 m = 1470 cm. 1470 ÷ 210 = 7 piezas."
+          "retroalimentacion": "14.7 m = 1470 cm. 1470 ÷ 210 = 7 piezas.",
+          "pistas": [
+            "Convierte los metros a centímetros antes de dividir.",
+            "14.7 m = 1470 cm. 1470 ÷ 210 = 7 piezas."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -83,7 +91,11 @@
             "1675"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "4.8 kg = 4800 g. 4800 − 3175 = 1625 g."
+          "retroalimentacion": "4.8 kg = 4800 g. 4800 − 3175 = 1625 g.",
+          "pistas": [
+            "Convierte los kilogramos a gramos antes de restar.",
+            "4.8 kg = 4800 g. 4800 − 3175 = 1625 g."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -118,7 +130,24 @@
           "retroalimentacion": "1250 cm + 840 cm + 630 cm = 2720 cm = 27.2 m."
         }
       ],
-      "nivelEtiqueta": "Nivel 10 de 10 · Dominio"
+      "nivelEtiqueta": "Nivel 10 de 10 · Dominio",
+      "ejemploResuelto": {
+        "enunciado": "Para la kermés, el comité de 2° necesita repartir 21.6 litros de agua de sandía en jarras de 1800 mililitros cada una. ¿Cuántas jarras completas se pueden llenar, y cuánto sobra?",
+        "pasos": [
+          {
+            "texto": "Convertimos los litros a mililitros.",
+            "operacion": "21.6 × 1000 = 21600 mL"
+          },
+          {
+            "texto": "Dividimos entre la capacidad de cada jarra.",
+            "operacion": "21600 ÷ 1800 = 12"
+          },
+          {
+            "texto": "Como el resultado es exacto, se llenan 12 jarras completas sin que sobre nada."
+          }
+        ],
+        "respuestaFinal": "Se llenan 12 jarras completas, sin que sobre nada."
+      }
     }
   ],
   "practicaExtra": [

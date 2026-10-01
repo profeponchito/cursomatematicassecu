@@ -34,7 +34,11 @@
             "Ninguna de las anteriores"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "El color de cabello describe una cualidad (una categoría), no se expresa como número: es una variable cualitativa."
+          "retroalimentacion": "El color de cabello describe una cualidad (una categoría), no se expresa como número: es una variable cualitativa.",
+          "pistas": [
+            "Pregúntate si la respuesta es una categoría o un número.",
+            "El color de cabello describe una cualidad (una categoría), no se expresa como número: es cualitativa."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -64,7 +68,11 @@
             "Tipo de mascota"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "El número de libros leídos es una cantidad que se puede contar: es cuantitativa. Las demás opciones son categorías."
+          "retroalimentacion": "El número de libros leídos es una cantidad que se puede contar: es cuantitativa. Las demás opciones son categorías.",
+          "pistas": [
+            "Busca la opción que se puede contar con números.",
+            "El número de libros leídos es una cantidad que se puede contar: es cuantitativa."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -88,7 +96,11 @@
           "tipo": "llenar_frase",
           "frase": "Registrar cuántas veces se repite cada color al girar una ruleta 20 veces es un método de ___.",
           "respuestaCorrecta": "conteo",
-          "retroalimentacion": "Cuando registras cuántas veces ocurre algo, estás usando el método de conteo."
+          "retroalimentacion": "Cuando registras cuántas veces ocurre algo, estás usando el método de conteo.",
+          "pistas": [
+            "Piensa en qué método usas cuando registras cuántas veces ocurre algo.",
+            "Cuando registras cuántas veces ocurre algo, estás usando el método de conteo."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -123,7 +135,22 @@
           "retroalimentacion": "El tipo de mascota es una categoría (perro, gato, pez), no un número: es cualitativa."
         }
       ],
-      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio"
+      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio",
+      "ejemploResuelto": {
+        "enunciado": "En el mismo salón, el profesor también pregunta a cada alumno su equipo de fútbol favorito y, por separado, cuántas horas duerme cada noche. ¿Cuál de esos dos datos es una variable cuantitativa?",
+        "pasos": [
+          {
+            "texto": "El equipo de fútbol favorito es una categoría (Águilas, Pumas, Tigres...), no un número."
+          },
+          {
+            "texto": "Las horas de sueño sí se pueden contar y medir con números."
+          },
+          {
+            "texto": "Concluimos cuál de las dos es cuantitativa."
+          }
+        ],
+        "respuestaFinal": "Las horas de sueño son la variable cuantitativa, porque es un número que se puede contar; el equipo favorito es cualitativa."
+      }
     }
   ],
   "practicaExtra": [

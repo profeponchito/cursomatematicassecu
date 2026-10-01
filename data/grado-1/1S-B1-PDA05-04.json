@@ -33,7 +33,11 @@
             "x/2+5"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "'la mitad de un número más 3' se traduce como x/2+3."
+          "retroalimentacion": "'la mitad de un número más 3' se traduce como x/2+3.",
+          "pistas": [
+            "'La mitad de un número' es x/2; 'más 3' se suma.",
+            "x/2 + 3."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -131,13 +135,21 @@
           "tipo": "llenar_frase",
           "frase": "'La mitad de un número menos 8' se escribe ___.",
           "respuestaCorrecta": "x/2-8",
-          "retroalimentacion": "'la mitad de un número' es x/2, y 'menos 8' se resta: x/2-8."
+          "retroalimentacion": "'la mitad de un número' es x/2, y 'menos 8' se resta: x/2-8.",
+          "pistas": [
+            "'La mitad de un número' es x/2; 'menos 8' se resta.",
+            "x/2 - 8."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "El perímetro de un cuadrado de lado x+5 es 4x+20.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "El cuadrado tiene 4 lados iguales de longitud x+5, entonces el perímetro es 4(x+5) = 4x+20."
+          "retroalimentacion": "El cuadrado tiene 4 lados iguales de longitud x+5, entonces el perímetro es 4(x+5) = 4x+20.",
+          "pistas": [
+            "Un cuadrado tiene 4 lados iguales de longitud x+5.",
+            "4(x+5) = 4x+20."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -172,7 +184,25 @@
           "retroalimentacion": "'El cuádruple más 7' es 4x+7; 'el doble menos 6' es 2x-6; 'la mitad más 12' es x/2+12."
         }
       ],
-      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis"
+      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis",
+      "ejemploResuelto": {
+        "enunciado": "Un papalote tiene marco con cuatro varillas: (x+2), (3x), (x+2) y (3x) centímetros. ¿Cuál es el perímetro simplificado?",
+        "pasos": [
+          {
+            "texto": "Sumamos las cuatro varillas.",
+            "operacion": "(x+2)+(3x)+(x+2)+(3x)"
+          },
+          {
+            "texto": "Agrupamos los términos con x.",
+            "operacion": "x+3x+x+3x = 8x"
+          },
+          {
+            "texto": "Agrupamos los números.",
+            "operacion": "2+2 = 4"
+          }
+        ],
+        "respuestaFinal": "El perímetro simplificado es 8x + 4."
+      }
     }
   ],
   "practicaExtra": [

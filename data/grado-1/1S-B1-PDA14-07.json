@@ -34,7 +34,11 @@
             "No se puede saber"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "P(A) = 6/24 = 0.25 y P(B) = 7/20 = 0.35. Como 0.35 > 0.25, la Bolsa B tiene mayor probabilidad."
+          "retroalimentacion": "P(A) = 6/24 = 0.25 y P(B) = 7/20 = 0.35. Como 0.35 > 0.25, la Bolsa B tiene mayor probabilidad.",
+          "pistas": [
+            "Convierte ambas fracciones a decimal para compararlas directamente.",
+            "P(A) = 6/24 = 0.25 y P(B) = 7/20 = 0.35. Como 0.35 > 0.25, la Bolsa B tiene mayor probabilidad."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -58,7 +62,11 @@
             "Z, X, Y"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "En decimal: X = 0.3, Z = 3/8 = 0.375, Y = 45% = 0.45. De menor a mayor: X, Z, Y."
+          "retroalimentacion": "En decimal: X = 0.3, Z = 3/8 = 0.375, Y = 45% = 0.45. De menor a mayor: X, Z, Y.",
+          "pistas": [
+            "Convierte todas las probabilidades a decimal antes de ordenarlas.",
+            "En decimal: X = 0.3, Z = 3/8 = 0.375, Y = 45% = 0.45. De menor a mayor: X, Z, Y."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -82,7 +90,11 @@
             "Falta información"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "P(A) = 21/30 = 0.7 y P(B) = 5/8 = 0.625. Como 0.7 > 0.625, el jugador A tiene mayor probabilidad."
+          "retroalimentacion": "P(A) = 21/30 = 0.7 y P(B) = 5/8 = 0.625. Como 0.7 > 0.625, el jugador A tiene mayor probabilidad.",
+          "pistas": [
+            "Convierte ambas fracciones a decimal para comparar.",
+            "P(A) = 21/30 = 0.7 y P(B) = 5/8 = 0.625. Como 0.7 > 0.625, el jugador A tiene mayor probabilidad."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -116,7 +128,24 @@
           "retroalimentacion": "Correcto: la primera ruleta tiene P = 3/12 = 0.25 y la segunda P = 5/18 ≈ 0.278, que es mayor."
         }
       ],
-      "nivelEtiqueta": "Nivel 7 de 10 · Reto"
+      "nivelEtiqueta": "Nivel 7 de 10 · Reto",
+      "ejemploResuelto": {
+        "enunciado": "Se comparan dos juegos más de la kermés: en el juego C ganas si sacas una canica azul de una bolsa con 9 azules de 20 canicas, y en el juego D ganas si sacas una ficha roja de una caja con 5 rojas de 25 fichas. ¿Cuál de los dos juegos tiene mayor probabilidad de ganar?",
+        "pasos": [
+          {
+            "texto": "Calculamos la probabilidad del juego C.",
+            "operacion": "9÷20=0.45"
+          },
+          {
+            "texto": "Calculamos la probabilidad del juego D.",
+            "operacion": "5÷25=0.2"
+          },
+          {
+            "texto": "Comparamos ambas probabilidades."
+          }
+        ],
+        "respuestaFinal": "El juego C tiene mayor probabilidad de ganar (45% contra 20% del juego D)."
+      }
     }
   ],
   "practicaExtra": [

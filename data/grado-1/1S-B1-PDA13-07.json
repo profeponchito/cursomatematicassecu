@@ -36,7 +36,11 @@
             "171"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Suma = 7×4+8×6+9×5+10×5 = 28+48+45+50 = 171. Media = 171÷20 = 8.55."
+          "retroalimentacion": "Suma = 7×4+8×6+9×5+10×5 = 28+48+45+50 = 171. Media = 171÷20 = 8.55.",
+          "pistas": [
+            "Multiplica cada valor por su frecuencia, suma, y divide entre el total.",
+            "Suma = 7×4+8×6+9×5+10×5 = 28+48+45+50 = 171. Media = 171÷20 = 8.55."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -60,7 +64,11 @@
             "25"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "El valor 13 años tiene la frecuencia más alta (12 alumnos), más que 12 años (5) o 14 años (8). La moda es 13."
+          "retroalimentacion": "El valor 13 años tiene la frecuencia más alta (12 alumnos), más que 12 años (5) o 14 años (8). La moda es 13.",
+          "pistas": [
+            "Busca el valor con la frecuencia más alta.",
+            "El valor 13 años tiene la frecuencia más alta (12 alumnos), más que 12 años (5) o 14 años (8). La moda es 13."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -84,7 +92,11 @@
             "23"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Suma = 0×2+1×5+2×6+3×2 = 0+5+12+6 = 23. Media = 23÷15 ≈ 1.53 hijos."
+          "retroalimentacion": "Suma = 0×2+1×5+2×6+3×2 = 0+5+12+6 = 23. Media = 23÷15 ≈ 1.53 hijos.",
+          "pistas": [
+            "Multiplica cada valor por su frecuencia, suma, y divide entre el total.",
+            "Suma = 0×2+1×5+2×6+3×2 = 0+5+12+6 = 23. Media = 23÷15 ≈ 1.53 hijos."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -118,7 +130,25 @@
           ],
           "retroalimentacion": "Primera: (5×2+6×3+7×5)÷10=63÷10=6.3. Segunda: (10×4+11×4+12×2)÷10=108÷10=10.8. Tercera: (2×6+3×2+4×2)÷10=26÷10=2.6."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "En otro torneo con 15 jugadores, 3 anotaron 1 gol, 6 anotaron 2 goles, 4 anotaron 3 goles y 2 anotaron 4 goles. ¿Cuál es el promedio de goles por jugador?",
+        "pasos": [
+          {
+            "texto": "Multiplicamos cada valor por su frecuencia.",
+            "operacion": "1×3+2×6+3×4+4×2=35"
+          },
+          {
+            "texto": "Sumamos las frecuencias para obtener el total de jugadores.",
+            "operacion": "3+6+4+2=15"
+          },
+          {
+            "texto": "Dividimos la suma entre el total.",
+            "operacion": "35 ÷ 15 ≈ 2.33"
+          }
+        ],
+        "respuestaFinal": "El promedio es aproximadamente 2.33 goles por jugador."
+      }
     }
   ],
   "practicaExtra": [

@@ -30,7 +30,11 @@
           "tipo": "llenar_frase",
           "frase": "¿Cuántos números enteros hay estrictamente entre -6 y 2? ___",
           "respuestaCorrecta": "7",
-          "retroalimentacion": "Los enteros son -5, -4, -3, -2, -1, 0, 1: son 7 en total."
+          "retroalimentacion": "Los enteros son -5, -4, -3, -2, -1, 0, 1: son 7 en total.",
+          "pistas": [
+            "Enumera uno por uno todos los enteros entre -6 y 2, sin incluirlos.",
+            "Son: -5, -4, -3, -2, -1, 0, 1 — cuenta cuántos hay."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -48,7 +52,11 @@
             "6"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Los enteros son -3, -2, -1, 0, 1, 2, 3: son 7 en total."
+          "retroalimentacion": "Los enteros son -3, -2, -1, 0, 1, 2, 3: son 7 en total.",
+          "pistas": [
+            "Enumera los enteros entre -4 y 4, sin contar los extremos.",
+            "Son: -3, -2, -1, 0, 1, 2, 3 — cuenta cuántos son."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -72,7 +80,11 @@
             "9"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Los niveles intermedios son -4, -3, -2, -1, 0, 1, 2: son 7 en total."
+          "retroalimentacion": "Los niveles intermedios son -4, -3, -2, -1, 0, 1, 2: son 7 en total.",
+          "pistas": [
+            "Enumera los niveles entre -5 y 3, sin incluir esos dos.",
+            "Son: -4, -3, -2, -1, 0, 1, 2 — cuenta cuántos hay."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -118,7 +130,25 @@
           "respuestaCorrecta": true,
           "retroalimentacion": "Correcto: el único entero estrictamente entre -1 y 1 es el 0."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Un elevador pasa del piso -2 al piso 5. ¿Cuántos pisos enteros hay estrictamente entre esos dos niveles?",
+        "pasos": [
+          {
+            "texto": "Contamos los niveles entre -2 y 5, sin incluirlos.",
+            "operacion": "-1, 0, 1, 2, 3, 4"
+          },
+          {
+            "texto": "Contamos cuántos son en total.",
+            "operacion": "6 niveles"
+          },
+          {
+            "texto": "Verificamos con la fórmula.",
+            "operacion": "5 − (−2) − 1 = 6"
+          }
+        ],
+        "respuestaFinal": "Hay 6 niveles enteros estrictamente entre -2 y 5."
+      }
     }
   ],
   "practicaExtra": [

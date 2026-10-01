@@ -42,7 +42,11 @@
           "tipo": "llenar_frase",
           "frase": "Aplica la propiedad distributiva: 6 × (-9 + 4) = 6×(-9) + 6×(4) = ___.",
           "respuestaCorrecta": "-30",
-          "retroalimentacion": "6×(-9)=-54 y 6×4=24; -54+24=-30, igual que 6×(-5)=-30."
+          "retroalimentacion": "6×(-9)=-54 y 6×4=24; -54+24=-30, igual que 6×(-5)=-30.",
+          "pistas": [
+            "Reparte la multiplicación: 6×(-9) + 6×4.",
+            "6×(-9)=-54 y 6×4=24; súmalos."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -66,13 +70,21 @@
             "-$36"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "(-3)×(12+5)=(-3)×17=-51. También se puede calcular como (-3)×12 + (-3)×5 = -36+(-15)=-51."
+          "retroalimentacion": "(-3)×(12+5)=(-3)×17=-51. También se puede calcular como (-3)×12 + (-3)×5 = -36+(-15)=-51.",
+          "pistas": [
+            "Reparte la multiplicación: (-3)×12 + (-3)×5.",
+            "(-3)×12=-36 y (-3)×5=-15; súmalos."
+          ]
         },
         {
           "tipo": "llenar_frase",
           "frase": "Usa la propiedad distributiva para calcular: (-7) × (10 + (-3)) = ___.",
           "respuestaCorrecta": "-49",
-          "retroalimentacion": "(-7)×10=-70 y (-7)×(-3)=21; -70+21=-49, igual que (-7)×7=-49."
+          "retroalimentacion": "(-7)×10=-70 y (-7)×(-3)=21; -70+21=-49, igual que (-7)×7=-49.",
+          "pistas": [
+            "Reparte la multiplicación: (-7)×10 + (-7)×(-3).",
+            "(-7)×10=-70 y (-7)×(-3)=21; súmalos."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -118,7 +130,25 @@
           "respuestaCorrecta": true,
           "retroalimentacion": "Correcto: (-2×5)×(-3)=(-10)×(-3)=30, y -2×(5×(-3))=-2×(-15)=30."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Para calcular el costo de 4 entradas al cine que cuestan $60 cada una más $15 de palomitas cada una, Ana escribe 4×(60+15). ¿Cómo lo resuelves con la propiedad distributiva?",
+        "pasos": [
+          {
+            "texto": "Repartimos la multiplicación sobre la suma.",
+            "operacion": "4×60 + 4×15"
+          },
+          {
+            "texto": "Calculamos cada parte.",
+            "operacion": "4×60=240   4×15=60"
+          },
+          {
+            "texto": "Sumamos los dos resultados.",
+            "operacion": "240+60=300"
+          }
+        ],
+        "respuestaFinal": "4×(60+15) = 300, el mismo resultado que sumar primero (60+15=75) y multiplicar: 4×75=300."
+      }
     }
   ],
   "practicaExtra": [

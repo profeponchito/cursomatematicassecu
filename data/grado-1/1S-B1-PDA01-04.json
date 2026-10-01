@@ -33,7 +33,11 @@
             "0.0625"
           ],
           "respuestaCorrecta": 3,
-          "retroalimentacion": "1 ÷ 16 = 0.0625."
+          "retroalimentacion": "1 ÷ 16 = 0.0625.",
+          "pistas": [
+            "Divide 1 entre 16 — vas a necesitar varias cifras decimales.",
+            "1 ÷ 16 = 0.0625."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -131,13 +135,21 @@
           "tipo": "llenar_frase",
           "frase": "5/16 escrito como decimal es ___.",
           "respuestaCorrecta": "0.3125",
-          "retroalimentacion": "5 ÷ 16 = 0.3125."
+          "retroalimentacion": "5 ÷ 16 = 0.3125.",
+          "pistas": [
+            "Mismo procedimiento que siempre: numerador entre denominador.",
+            "5 ÷ 16 = 0.3125."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "3/8 equivale a 0.375.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: 3 ÷ 8 = 0.375."
+          "retroalimentacion": "Correcto: 3 ÷ 8 = 0.375.",
+          "pistas": [
+            "3 ÷ 8 ya lo viste antes en este PDA — ¿cuánto daba 3/8?",
+            "3 ÷ 8 = 0.375, así que la afirmación es correcta."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -166,7 +178,20 @@
           "retroalimentacion": "7/20 = 0.35; 9/10 = 0.9; 1/8 = 0.125."
         }
       ],
-      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis"
+      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis",
+      "ejemploResuelto": {
+        "enunciado": "En la misma carrera, Emilio avanzó 5/8 km y quiere anotarlo en decimal para compararse con Sofía e Iván.",
+        "pasos": [
+          {
+            "texto": "Dividimos el numerador entre el denominador.",
+            "operacion": "5 ÷ 8 = 0.625"
+          },
+          {
+            "texto": "Comparamos con la distancia de Sofía (2.5 km): 0.625 km es mucho menos."
+          }
+        ],
+        "respuestaFinal": "5/8 = 0.625 km"
+      }
     }
   ],
   "practicaExtra": [

@@ -35,13 +35,21 @@
             "y=203x"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "k = 203÷7 = 29, así que la ecuación es y=29x."
+          "retroalimentacion": "k = 203÷7 = 29, así que la ecuación es y=29x.",
+          "pistas": [
+            "Calcula la constante k dividiendo el costo entre el número de piezas.",
+            "k = 203÷7 = 29, así que la ecuación es y=29x."
+          ]
         },
         {
           "tipo": "llenar_frase",
           "frase": "Usando la ecuación y=29x del taller de reparaciones, si reparan 12 piezas, el costo es $___.",
           "respuestaCorrecta": "348",
-          "retroalimentacion": "y = 29 × 12 = $348."
+          "retroalimentacion": "y = 29 × 12 = $348.",
+          "pistas": [
+            "Sustituye x=12 en la ecuación y=29x.",
+            "y = 29 × 12."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -77,7 +85,11 @@
             "k=10, y=10x"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "18÷2=9, 45÷5=9 y 81÷9=9: la constante es k=9 y la ecuación es y=9x."
+          "retroalimentacion": "18÷2=9, 45÷5=9 y 81÷9=9: la constante es k=9 y la ecuación es y=9x.",
+          "pistas": [
+            "Divide y entre x en cualquiera de los pares para encontrar k.",
+            "18÷2=9, 45÷5=9, 81÷9=9: la constante es k=9 y la ecuación es y=9x."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -123,7 +135,25 @@
           "respuestaCorrecta": "138",
           "retroalimentacion": "y = k × x = 23 × 6 = 138."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Un servicio de fotocopiado cobra, de forma proporcional, $84 por imprimir 12 hojas. ¿Cuál es la ecuación y=kx que representa esta relación, y cuánto costaría imprimir 20 hojas?",
+        "pasos": [
+          {
+            "texto": "Calculamos la constante de proporcionalidad.",
+            "operacion": "k = 84 ÷ 12 = 7"
+          },
+          {
+            "texto": "Escribimos la ecuación con esa constante.",
+            "operacion": "y = 7x"
+          },
+          {
+            "texto": "Sustituimos x=20 para encontrar el costo.",
+            "operacion": "y = 7 × 20 = 140"
+          }
+        ],
+        "respuestaFinal": "La ecuación es y=7x, e imprimir 20 hojas costaría $140."
+      }
     }
   ],
   "practicaExtra": [

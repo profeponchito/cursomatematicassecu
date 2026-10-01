@@ -42,7 +42,11 @@
           "tipo": "llenar_frase",
           "frase": "El perímetro de un rectángulo con ancho x y largo 3y es ___.",
           "respuestaCorrecta": "2x+6y",
-          "retroalimentacion": "2(x) + 2(3y) = 2x + 6y."
+          "retroalimentacion": "2(x) + 2(3y) = 2x + 6y.",
+          "pistas": [
+            "Aplica 2(x) + 2(3y).",
+            "2x + 6y."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -72,7 +76,11 @@
           "tipo": "llenar_frase",
           "frase": "Un cuadrilátero tiene lados x, y, x+2 y y+3. Su perímetro simplificado es ___.",
           "respuestaCorrecta": "2x+2y+5",
-          "retroalimentacion": "x + y + (x+2) + (y+3) = 2x+2y+5."
+          "retroalimentacion": "x + y + (x+2) + (y+3) = 2x+2y+5.",
+          "pistas": [
+            "Suma los cuatro lados y agrupa por separado los términos con x y los términos con y.",
+            "x+y+(x+2)+(y+3) = 2x+2y+5."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -122,9 +130,27 @@
           "tipo": "llenar_frase",
           "frase": "El perímetro de un pentágono con lados x, x, y, y y (x+y) es ___.",
           "respuestaCorrecta": "3x+3y",
-          "retroalimentacion": "x + x + y + y + (x+y) = 3x + 3y."
+          "retroalimentacion": "x + x + y + y + (x+y) = 3x + 3y.",
+          "pistas": [
+            "Suma los cinco lados y agrupa por separado x y y.",
+            "x+x+y+y+(x+y) = 3x+3y."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Un salón rectangular tiene largo x metros y ancho y metros, medidas independientes entre sí. ¿Cuál es la expresión de su perímetro?",
+        "pasos": [
+          {
+            "texto": "Aplicamos la fórmula con dos variables.",
+            "operacion": "2(largo) + 2(ancho)"
+          },
+          {
+            "texto": "Sustituimos.",
+            "operacion": "2x + 2y"
+          }
+        ],
+        "respuestaFinal": "El perímetro es 2x + 2y."
+      }
     }
   ],
   "practicaExtra": [

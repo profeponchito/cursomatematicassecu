@@ -42,7 +42,11 @@
           "tipo": "llenar_frase",
           "frase": "Una ventana semicircular tiene radio de 21 cm. Su área es ___ cm² (usa A = (π×r²)÷2).",
           "respuestaCorrecta": "692.37",
-          "retroalimentacion": "A = (3.14×21²)÷2 = 1384.74÷2 = 692.37 cm²."
+          "retroalimentacion": "A = (3.14×21²)÷2 = 1384.74÷2 = 692.37 cm².",
+          "pistas": [
+            "Usa la fórmula del área del semicírculo: la mitad del área del círculo completo.",
+            "A = (3.14×21²)÷2 = 1384.74÷2 = 692.37 cm²."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -60,7 +64,11 @@
             "84.78 cm²"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "A = (3.14×27²)÷2 = 2289.06÷2 = 1144.53 cm²."
+          "retroalimentacion": "A = (3.14×27²)÷2 = 2289.06÷2 = 1144.53 cm².",
+          "pistas": [
+            "Calcula el área del círculo completo y después divide entre 2.",
+            "A = (3.14×27²)÷2 = 2289.06÷2 = 1144.53 cm²."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -84,7 +92,11 @@
             "70 m"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "P = 3.14×35 + 2×35 = 109.9+70 = 179.9 m."
+          "retroalimentacion": "P = 3.14×35 + 2×35 = 109.9+70 = 179.9 m.",
+          "pistas": [
+            "Suma la media circunferencia más el diámetro.",
+            "P = 3.14×35 + 2×35 = 109.9+70 = 179.9 m."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -124,7 +136,25 @@
           ],
           "retroalimentacion": "r=21 cm: A=692.37 cm². r=27 cm: A=1144.53 cm². r=35 cm: A=1923.25 cm²."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El mismo carpintero construye otra ventana semicircular, esta con 18 cm de radio. ¿Cuál es su perímetro total?",
+        "pasos": [
+          {
+            "texto": "Calculamos la media circunferencia.",
+            "operacion": "3.14 × 18 = 56.52 cm"
+          },
+          {
+            "texto": "Sumamos el diámetro (el lado recto que cierra la figura).",
+            "operacion": "2 × 18 = 36 cm"
+          },
+          {
+            "texto": "Sumamos ambas partes.",
+            "operacion": "56.52 + 36 = 92.52 cm"
+          }
+        ],
+        "respuestaFinal": "El perímetro total de la ventana es 92.52 cm."
+      }
     }
   ],
   "practicaExtra": [

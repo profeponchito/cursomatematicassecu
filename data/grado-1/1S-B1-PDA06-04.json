@@ -33,7 +33,11 @@
             "x=9"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "6x = 48; x = 48÷6 = 8."
+          "retroalimentacion": "6x = 48; x = 48÷6 = 8.",
+          "pistas": [
+            "Resta 4 de ambos lados, después divide entre 6.",
+            "6x = 52 - 4 = 48; entonces x = 48 ÷ 6."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -125,7 +129,11 @@
             "x=49"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "7x = 43+6 = 49; x = 49÷7 = 7."
+          "retroalimentacion": "7x = 43+6 = 49; x = 49÷7 = 7.",
+          "pistas": [
+            "Suma 6 a ambos lados, después divide entre 7.",
+            "7x = 43 + 6 = 49; entonces x = 49 ÷ 7."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -143,7 +151,11 @@
           "tipo": "llenar_frase",
           "frase": "Resuelve: 9x + 4 = 40. x = ___.",
           "respuestaCorrecta": "4",
-          "retroalimentacion": "9x = 40-4 = 36; x = 36÷9 = 4."
+          "retroalimentacion": "9x = 40-4 = 36; x = 36÷9 = 4.",
+          "pistas": [
+            "Resta 4 de ambos lados, después divide entre 9.",
+            "9x = 40 - 4 = 36; entonces x = 36 ÷ 9."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -166,7 +178,25 @@
           "retroalimentacion": "6x-5=43 → x=8; x+65=200 → x=135; 4x+7=3x+20 → x=13."
         }
       ],
-      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis"
+      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis",
+      "ejemploResuelto": {
+        "enunciado": "Dos papelerías cobran distinto por copias: la primera cobra $20 de servicio más $2 por copia, y la segunda cobra $6 por copia sin servicio. ¿Después de cuántas copias cobran lo mismo?",
+        "pasos": [
+          {
+            "texto": "Igualamos las dos expresiones de costo.",
+            "operacion": "20 + 2x = 6x"
+          },
+          {
+            "texto": "Agrupamos los términos con x, restando 2x de ambos lados.",
+            "operacion": "20 = 6x - 2x = 4x"
+          },
+          {
+            "texto": "Dividimos entre 4.",
+            "operacion": "x = 5"
+          }
+        ],
+        "respuestaFinal": "Después de 5 copias, ambas papelerías cobran lo mismo."
+      }
     }
   ],
   "practicaExtra": [

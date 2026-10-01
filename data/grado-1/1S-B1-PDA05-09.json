@@ -35,7 +35,11 @@
             "15 m"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "4x+10=66 → 4x=56 → x=14 m."
+          "retroalimentacion": "4x+10=66 → 4x=56 → x=14 m.",
+          "pistas": [
+            "Plantea la ecuación con la fórmula ya simplificada: 4x+10=66.",
+            "4x=56; x=56÷4."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -59,7 +63,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Un terreno rectangular con ancho x y largo (2x+1) tiene perímetro 6x+2. Si el perímetro es 50 m, entonces x=8 m.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "6x+2=50 → 6x=48 → x=8 m."
+          "retroalimentacion": "6x+2=50 → 6x=48 → x=8 m.",
+          "pistas": [
+            "Plantea la ecuación 6x+2=50 y despeja x.",
+            "6x=48; x=48÷6."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -71,7 +79,11 @@
           "tipo": "llenar_frase",
           "frase": "El perímetro de un rectángulo con ancho x y largo 3x es 8x. Si el perímetro real mide 96 cm, entonces x = ___ cm.",
           "respuestaCorrecta": "12",
-          "retroalimentacion": "8x=96 → x=96÷8=12 cm."
+          "retroalimentacion": "8x=96 → x=96÷8=12 cm.",
+          "pistas": [
+            "Despeja x dividiendo entre 8.",
+            "x=96÷8."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -129,7 +141,29 @@
           "respuestaCorrecta": 0,
           "retroalimentacion": "x=2(6)+3=15. Perímetro = 4(15)+20 = 60+20 = 80 m."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Un estacionamiento rectangular tiene ancho x metros y largo 'el doble del ancho más 6 metros', es decir 2x+6. Su perímetro es 60 metros. ¿Cuánto miden el ancho y el largo?",
+        "pasos": [
+          {
+            "texto": "Escribimos el perímetro.",
+            "operacion": "2(x) + 2(2x+6) = 6x+12"
+          },
+          {
+            "texto": "Planteamos la ecuación.",
+            "operacion": "6x+12 = 60"
+          },
+          {
+            "texto": "Despejamos.",
+            "operacion": "6x = 48   x = 8"
+          },
+          {
+            "texto": "Calculamos el largo.",
+            "operacion": "2(8)+6 = 22"
+          }
+        ],
+        "respuestaFinal": "El ancho mide 8 m y el largo mide 22 m."
+      }
     }
   ],
   "practicaExtra": [

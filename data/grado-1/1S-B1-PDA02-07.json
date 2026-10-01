@@ -30,7 +30,11 @@
           "tipo": "llenar_frase",
           "frase": "La distancia entre -5 y 3 en la recta numérica es ___ unidades.",
           "respuestaCorrecta": "8",
-          "retroalimentacion": "-5 está a 5 unidades del cero y 3 está a 3 unidades, en lados opuestos: 5 + 3 = 8 unidades."
+          "retroalimentacion": "-5 está a 5 unidades del cero y 3 está a 3 unidades, en lados opuestos: 5 + 3 = 8 unidades.",
+          "pistas": [
+            "¿-5 y 3 están del mismo lado del cero, o en lados opuestos?",
+            "Están en lados opuestos: suma sus distancias al cero (5 + 3)."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -48,7 +52,11 @@
             "12 unidades"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "-12 está a 12 unidades del cero y 7 a 7 unidades, en lados opuestos: 12 + 7 = 19 unidades."
+          "retroalimentacion": "-12 está a 12 unidades del cero y 7 a 7 unidades, en lados opuestos: 12 + 7 = 19 unidades.",
+          "pistas": [
+            "-12 y 7 están en lados opuestos del cero — suma sus distancias.",
+            "-12 está a 12 unidades y 7 a 7 unidades: 12 + 7 = 19."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -78,7 +86,11 @@
           "tipo": "llenar_frase",
           "frase": "Dos ciudades registran temperaturas de -8°C y 15°C. La diferencia (distancia) entre ambas temperaturas es ___ °C.",
           "respuestaCorrecta": "23",
-          "retroalimentacion": "-8°C está a 8 unidades del cero y 15°C a 15 unidades, en lados opuestos: 8 + 15 = 23°C."
+          "retroalimentacion": "-8°C está a 8 unidades del cero y 15°C a 15 unidades, en lados opuestos: 8 + 15 = 23°C.",
+          "pistas": [
+            "-8°C y 15°C están en lados opuestos del cero.",
+            "Suma las distancias: 8 + 15 = 23°C."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -118,7 +130,20 @@
           "respuestaCorrecta": true,
           "retroalimentacion": "Correcto: distancia entre -20 y 5 es 25; distancia entre -20 y -5 es 15. 25 > 15."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El mismo elevador ahora baja desde el piso 5 hasta el sótano -6. ¿Cuántos pisos recorre?",
+        "pasos": [
+          {
+            "texto": "El piso 5 está a 5 unidades del cero, y el sótano -6 está a 6 unidades, en lados opuestos."
+          },
+          {
+            "texto": "Como están en lados opuestos, sumamos las distancias.",
+            "operacion": "5 + 6 = 11"
+          }
+        ],
+        "respuestaFinal": "El elevador recorre 11 pisos."
+      }
     }
   ],
   "practicaExtra": [

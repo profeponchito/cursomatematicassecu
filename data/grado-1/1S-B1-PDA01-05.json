@@ -36,7 +36,11 @@
             "0.9"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "9 ÷ 40 = 0.225."
+          "retroalimentacion": "9 ÷ 40 = 0.225.",
+          "pistas": [
+            "Divide 9 entre 40, igual que en el ejemplo del paquete de colores.",
+            "9 ÷ 40 = 0.225."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -66,7 +70,11 @@
           "tipo": "llenar_frase",
           "frase": "Un envase de yogur trae 27/40 de litro. Expresado en decimal, es ___ litros.",
           "respuestaCorrecta": "0.675",
-          "retroalimentacion": "27 ÷ 40 = 0.675."
+          "retroalimentacion": "27 ÷ 40 = 0.675.",
+          "pistas": [
+            "27 ÷ 40 — la división no es exacta de inmediato, sigue hasta 3 cifras decimales.",
+            "27 ÷ 40 = 0.675 litros."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -90,7 +98,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "31/50 equivale a 0.62.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: 31 ÷ 50 = 0.62."
+          "retroalimentacion": "Correcto: 31 ÷ 50 = 0.62.",
+          "pistas": [
+            "Divide 31 entre 50 para comprobar si la afirmación es cierta.",
+            "31 ÷ 50 = 0.62 — compáralo con lo que dice el reactivo."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -124,7 +136,24 @@
           ],
           "retroalimentacion": "29/40 = 0.725; 23/50 = 0.46; 37/50 = 0.74."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Además de la pluma, Emilio quiere comprar 3/8 de un paquete de colores que cuesta $80 en total. ¿Cuánto debe pagar?",
+        "pasos": [
+          {
+            "texto": "Convertimos la fracción a decimal.",
+            "operacion": "3 ÷ 8 = 0.375"
+          },
+          {
+            "texto": "Multiplicamos el decimal por el precio total del paquete.",
+            "operacion": "0.375 × $80 = $30"
+          },
+          {
+            "texto": "El resultado ya es un número exacto en pesos, así que no hace falta redondear."
+          }
+        ],
+        "respuestaFinal": "Emilio debe pagar $30."
+      }
     }
   ],
   "practicaExtra": [

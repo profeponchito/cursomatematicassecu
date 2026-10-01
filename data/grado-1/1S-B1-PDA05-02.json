@@ -29,7 +29,11 @@
           "tipo": "llenar_frase",
           "frase": "El perímetro de un rectángulo con ancho x y largo x+5 es ___.",
           "respuestaCorrecta": "4x+10",
-          "retroalimentacion": "2(x) + 2(x+5) = 2x + 2x + 10 = 4x+10."
+          "retroalimentacion": "2(x) + 2(x+5) = 2x + 2x + 10 = 4x+10.",
+          "pistas": [
+            "Perímetro = 2(ancho) + 2(largo).",
+            "2(x) + 2(x+5) = 2x+2x+10."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -65,7 +69,11 @@
             "3x+6"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "2(x) + 2(x+3) = 2x + 2x + 6 = 4x+6."
+          "retroalimentacion": "2(x) + 2(x+3) = 2x + 2x + 6 = 4x+6.",
+          "pistas": [
+            "Aplica la misma fórmula: 2(x) + 2(x+3).",
+            "2x + 2x + 6 = 4x+6."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -77,7 +85,11 @@
           "tipo": "llenar_frase",
           "frase": "El perímetro de un rectángulo con ancho x y largo 3x es ___.",
           "respuestaCorrecta": "8x",
-          "retroalimentacion": "2(x) + 2(3x) = 2x + 6x = 8x."
+          "retroalimentacion": "2(x) + 2(3x) = 2x + 6x = 8x.",
+          "pistas": [
+            "Aplica 2(x) + 2(3x).",
+            "2x + 6x = 8x."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -106,7 +118,25 @@
           "retroalimentacion": "'El triple más 1' es 3x+1; 'el doble menos 4' es 2x-4; 'el triple menos 3' es 3x-3."
         }
       ],
-      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio"
+      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio",
+      "ejemploResuelto": {
+        "enunciado": "Una cancha rectangular tiene largo x metros y ancho (x-4) metros. ¿Cuál es la expresión del perímetro?",
+        "pasos": [
+          {
+            "texto": "Aplicamos la fórmula del perímetro.",
+            "operacion": "2(largo) + 2(ancho)"
+          },
+          {
+            "texto": "Sustituimos.",
+            "operacion": "2(x) + 2(x-4)"
+          },
+          {
+            "texto": "Simplificamos.",
+            "operacion": "2x + 2x - 8 = 4x - 8"
+          }
+        ],
+        "respuestaFinal": "El perímetro es 4x - 8."
+      }
     }
   ],
   "practicaExtra": [

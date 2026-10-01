@@ -41,7 +41,11 @@
             "-20.4°C"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "-6.5+9.2-4.7=-2.0°C."
+          "retroalimentacion": "-6.5+9.2-4.7=-2.0°C.",
+          "pistas": [
+            "Suma y resta en el orden en que van ocurriendo los cambios, de izquierda a derecha.",
+            "-6.5+9.2=2.7; después 2.7-4.7."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -65,7 +69,11 @@
             "-35 cm"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "6×(-2.5)=-15; -15+20=5 cm."
+          "retroalimentacion": "6×(-2.5)=-15; -15+20=5 cm.",
+          "pistas": [
+            "Primero multiplica el cambio por hora por las 6 horas.",
+            "6×(-2.5)=-15; luego suma los 20 cm de la lluvia."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -109,7 +117,11 @@
           "tipo": "llenar_frase",
           "frase": "Una empresa repartió una ganancia entre 4 socios; a cada uno le tocaron $312.75. Si se resta un gasto de $50.25 por persona, ¿cuánto le queda a cada socio? $___.",
           "respuestaCorrecta": "262.5",
-          "retroalimentacion": "312.75-50.25=262.50."
+          "retroalimentacion": "312.75-50.25=262.50.",
+          "pistas": [
+            "Resta el gasto directamente de lo que le tocó a cada socio.",
+            "312.75 - 50.25 = ?"
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -117,7 +129,21 @@
           "respuestaCorrecta": true,
           "retroalimentacion": "Correcto: (-9.6)÷3=-3.2; (-2)×4.5=-9; -3.2+(-9)=-12.2."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Otro taller cobra $280.25 por un servicio; si el cliente paga con tarjeta se suma una comisión de $6.50, y si trae su propia pieza se resta $32.75. ¿Cuánto pagaría un cliente que hace ambas cosas?",
+        "pasos": [
+          {
+            "texto": "Sumamos la comisión por tarjeta.",
+            "operacion": "280.25 + 6.50 = 286.75"
+          },
+          {
+            "texto": "Restamos el descuento por traer su pieza.",
+            "operacion": "286.75 - 32.75 = 254.00"
+          }
+        ],
+        "respuestaFinal": "El cliente pagaría $254.00."
+      }
     }
   ],
   "practicaExtra": [

@@ -42,7 +42,11 @@
           "tipo": "llenar_frase",
           "frase": "Un auto recorre 168 km con 12 litros de gasolina, de forma constante. Su rendimiento es de ___ km por litro.",
           "respuestaCorrecta": "14",
-          "retroalimentacion": "168 ÷ 12 = 14 km por litro."
+          "retroalimentacion": "168 ÷ 12 = 14 km por litro.",
+          "pistas": [
+            "Divide los kilómetros recorridos entre los litros usados.",
+            "168 ÷ 12."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -66,7 +70,11 @@
           "tipo": "llenar_frase",
           "frase": "Una fábrica produce, de manera proporcional, 3.5 lotes en 7 horas. Su tasa de producción es de ___ lotes por hora.",
           "respuestaCorrecta": "0.5",
-          "retroalimentacion": "3.5 ÷ 7 = 0.5 lotes por hora."
+          "retroalimentacion": "3.5 ÷ 7 = 0.5 lotes por hora.",
+          "pistas": [
+            "Divide la cantidad producida entre las horas.",
+            "3.5 ÷ 7."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -116,7 +124,11 @@
             "17.5"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "52.5 ÷ 3.5 = 15 km/h."
+          "retroalimentacion": "52.5 ÷ 3.5 = 15 km/h.",
+          "pistas": [
+            "Divide la distancia entre el tiempo.",
+            "52.5 ÷ 3.5."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -124,7 +136,24 @@
           "respuestaCorrecta": "2.75",
           "retroalimentacion": "5.5 ÷ 2 = 2.75 hojas por segundo."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "En el mercado, una bolsa de 3 kg de frijol cuesta $54, y en otro puesto una bolsa de 4.5 kg del mismo frijol cuesta $85.50. ¿En cuál puesto conviene más comprar frijol, según el precio por kilogramo?",
+        "pasos": [
+          {
+            "texto": "Calculamos el precio por kg del primer puesto.",
+            "operacion": "54 ÷ 3 = 18"
+          },
+          {
+            "texto": "Calculamos el precio por kg del segundo puesto.",
+            "operacion": "85.50 ÷ 4.5 = 19"
+          },
+          {
+            "texto": "Comparamos ambos precios: como 18 < 19, el primer puesto es más barato."
+          }
+        ],
+        "respuestaFinal": "Conviene más comprar en el primer puesto, donde el kilogramo cuesta $18 contra $19 del segundo."
+      }
     }
   ],
   "practicaExtra": [

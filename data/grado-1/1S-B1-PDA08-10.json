@@ -34,13 +34,21 @@
             "65°, agudo"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "80+95+110=285°; 360−285=75°, que es agudo (menor a 90°)."
+          "retroalimentacion": "80+95+110=285°; 360−285=75°, que es agudo (menor a 90°).",
+          "pistas": [
+            "Suma los tres ángulos conocidos y réstalos de 360°; después clasifica el resultado.",
+            "80+95+110=285°; 360−285=75°, que es agudo."
+          ]
         },
         {
           "tipo": "llenar_frase",
           "frase": "En el techo de un puente, dos vigas paralelas son cortadas por un tirante transversal. Un ángulo mide 4x° y su correspondiente mide (2x+50)°. El valor de x es ___.",
           "respuestaCorrecta": "25",
-          "retroalimentacion": "4x=2x+50 → 2x=50 → x=25°."
+          "retroalimentacion": "4x=2x+50 → 2x=50 → x=25°.",
+          "pistas": [
+            "Los ángulos correspondientes son iguales; iguala ambas expresiones.",
+            "4x = 2x+50 → 2x=50 → x=25°."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -100,7 +108,11 @@
           "tipo": "llenar_frase",
           "frase": "Dos vigas paralelas de una bodega son cortadas por un tirante transversal. Un ángulo mide (7x−20)° y su colateral interno mide (5x+8)°. El valor de x es ___.",
           "respuestaCorrecta": "16",
-          "retroalimentacion": "(7x−20)+(5x+8)=180 → 12x−12=180 → 12x=192 → x=16°."
+          "retroalimentacion": "(7x−20)+(5x+8)=180 → 12x−12=180 → 12x=192 → x=16°.",
+          "pistas": [
+            "Los colaterales internos suman 180°; plantea la ecuación y agrupa términos semejantes.",
+            "(7x−20)+(5x+8)=180 → 12x−12=180 → 12x=192 → x=16°."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -126,7 +138,24 @@
           "retroalimentacion": "360−100−140=120°; 2x=x+30 → x=30°; adyacente de 55°=180−55=125°; (3x+10)+(x+30)=180 → 4x+40=180 → x=35°."
         }
       ],
-      "nivelEtiqueta": "Nivel 10 de 10 · Dominio"
+      "nivelEtiqueta": "Nivel 10 de 10 · Dominio",
+      "ejemploResuelto": {
+        "enunciado": "En la misma plaza de Pachuca, otro diseño tiene 3 andadores que llegan a un punto formando ángulos consecutivos de 142°, 110° y un tercero desconocido. ¿Cuánto mide el ángulo faltante y cómo se clasifica?",
+        "pasos": [
+          {
+            "texto": "Sumamos los ángulos conocidos.",
+            "operacion": "142 + 110 = 252°"
+          },
+          {
+            "texto": "Restamos de 360° para hallar el ángulo faltante.",
+            "operacion": "360 − 252 = 108°"
+          },
+          {
+            "texto": "Clasificamos 108°: está entre 90° y 180°, es obtuso."
+          }
+        ],
+        "respuestaFinal": "El ángulo faltante mide 108° y se clasifica como obtuso."
+      }
     }
   ],
   "practicaExtra": [

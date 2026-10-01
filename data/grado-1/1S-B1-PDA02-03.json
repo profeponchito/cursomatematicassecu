@@ -46,7 +46,11 @@
             "5, -10, -2, -7"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "De mayor a menor: 5 > -2 > -7 > -10."
+          "retroalimentacion": "De mayor a menor: 5 > -2 > -7 > -10.",
+          "pistas": [
+            "Ordena primero mentalmente de mayor a menor: el positivo va primero.",
+            "Entre 5, -2, -7, -10, el orden correcto de mayor a menor empieza con el positivo 5."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -100,13 +104,21 @@
           "tipo": "llenar_frase",
           "frase": "Ordenados de mayor a menor, el segundo número de la lista -3, 8, -10, 1 es ___.",
           "respuestaCorrecta": "1",
-          "retroalimentacion": "De mayor a menor: 8, 1, -3, -10. El segundo lugar es 1."
+          "retroalimentacion": "De mayor a menor: 8, 1, -3, -10. El segundo lugar es 1.",
+          "pistas": [
+            "Primero ordena TODA la lista de mayor a menor.",
+            "La lista -3, 8, -10, 1 ordenada de mayor a menor es: 8, 1, -3, -10 — fíjate en el segundo lugar."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "La lista -14, -9, -2, 6 está ordenada de menor a mayor.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: -14 < -9 < -2 < 6."
+          "retroalimentacion": "Correcto: -14 < -9 < -2 < 6.",
+          "pistas": [
+            "Revisa cada par consecutivo: ¿el siguiente número es mayor que el anterior?",
+            "-14 < -9 < -2 < 6 — verifica cada paso de la lista."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -135,7 +147,21 @@
           "retroalimentacion": "De menor a mayor: -11, -3, 4, 9. -11 es primero, -3 es segundo, 9 es cuarto."
         }
       ],
-      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado"
+      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado",
+      "ejemploResuelto": {
+        "enunciado": "En otro examen, tres alumnos obtuvieron estos ajustes a su calificación: -5, 4 y -1. ¿Cómo se ordenan de menor a mayor?",
+        "pasos": [
+          {
+            "texto": "Ubicamos primero los negativos, del más negativo al menos negativo.",
+            "operacion": "-5, -1"
+          },
+          {
+            "texto": "Después colocamos el positivo.",
+            "operacion": "-5, -1, 4"
+          }
+        ],
+        "respuestaFinal": "De menor a mayor: -5, -1, 4."
+      }
     }
   ],
   "practicaExtra": [

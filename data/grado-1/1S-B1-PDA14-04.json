@@ -33,7 +33,11 @@
             "3/10"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "P(azul) = 5/10, que simplificada es 1/2."
+          "retroalimentacion": "P(azul) = 5/10, que simplificada es 1/2.",
+          "pistas": [
+            "Divide los casos favorables entre el total, y simplifica la fracción.",
+            "P(azul) = 5/10, que simplificada es 1/2."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -57,7 +61,11 @@
             "0.2"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "P(roja) = 5/20 = 0.25."
+          "retroalimentacion": "P(roja) = 5/20 = 0.25.",
+          "pistas": [
+            "Divide los casos favorables entre el total.",
+            "P(roja) = 5/20 = 0.25."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -81,7 +89,11 @@
             "40%"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "P(figura) = 12/40 = 0.3, y 0.3 × 100 = 30%."
+          "retroalimentacion": "P(figura) = 12/40 = 0.3, y 0.3 × 100 = 30%.",
+          "pistas": [
+            "Divide los casos favorables entre el total y multiplica por 100.",
+            "P(figura) = 12/40 = 0.3, y 0.3 × 100 = 30%."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -116,7 +128,25 @@
           "retroalimentacion": "Verde: 2/10 = 1/5. Roja en ruleta: 5/20 = 25%. Oros: 10/40 = 0.25."
         }
       ],
-      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis"
+      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis",
+      "ejemploResuelto": {
+        "enunciado": "En el mismo experimento de ciencias, ahora el reto es sacar una ficha verde de esas mismas 20 fichas (8 rojas, 5 azules, 4 verdes, 3 amarillas). ¿Cuál es la probabilidad, expresada como fracción simplificada?",
+        "pasos": [
+          {
+            "texto": "Identificamos el espacio muestral.",
+            "operacion": "20 fichas en total"
+          },
+          {
+            "texto": "Contamos los casos favorables.",
+            "operacion": "4 fichas verdes"
+          },
+          {
+            "texto": "Calculamos la probabilidad y simplificamos.",
+            "operacion": "4/20 = 1/5"
+          }
+        ],
+        "respuestaFinal": "La probabilidad es 1/5."
+      }
     }
   ],
   "practicaExtra": [

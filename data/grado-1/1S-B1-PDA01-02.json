@@ -29,7 +29,11 @@
           "tipo": "llenar_frase",
           "frase": "0.35 escrito como fracción simplificada es ___.",
           "respuestaCorrecta": "7/20",
-          "retroalimentacion": "0.35 = 35/100, que simplificado entre 5 es 7/20."
+          "retroalimentacion": "0.35 = 35/100, que simplificado entre 5 es 7/20.",
+          "pistas": [
+            "Cuenta cuántas cifras tiene 0.35 después del punto — eso te dice el denominador (10, 100, 1000...).",
+            "0.35 tiene 2 cifras decimales, así que el denominador es 100: escribe 35/100 y simplifica entre 5."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -65,7 +69,11 @@
           "tipo": "llenar_frase",
           "frase": "9/16 escrito como decimal es ___.",
           "respuestaCorrecta": "0.5625",
-          "retroalimentacion": "9 ÷ 16 = 0.5625."
+          "retroalimentacion": "9 ÷ 16 = 0.5625.",
+          "pistas": [
+            "Aquí vas al revés: divide el numerador entre el denominador, como en la lección anterior.",
+            "9 ÷ 16 no es un decimal que termine rápido — sigue dividiendo hasta 4 cifras decimales."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -77,7 +85,11 @@
             "4/5"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "0.45 = 45/100, que simplificado entre 5 es 9/20."
+          "retroalimentacion": "0.45 = 45/100, que simplificado entre 5 es 9/20.",
+          "pistas": [
+            "0.45 tiene 2 cifras decimales, así que primero escríbelo como 45/100.",
+            "Simplifica 45/100 dividiendo numerador y denominador entre 5."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -106,7 +118,25 @@
           "retroalimentacion": "0.2 = 1/5; 0.8 = 4/5; 0.15 = 3/20."
         }
       ],
-      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio"
+      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio",
+      "ejemploResuelto": {
+        "enunciado": "Doña Carmen también vendió 0.28 kilogramos de jamón a otro cliente que quiere anotarlo como fracción en su libreta.",
+        "pasos": [
+          {
+            "texto": "Contamos las cifras decimales: 0.28 tiene 2, así que el denominador es 100.",
+            "operacion": "0.28 → 28/100"
+          },
+          {
+            "texto": "Buscamos el máximo común divisor de 28 y 100 para simplificar.",
+            "operacion": "MCD(28, 100) = 4"
+          },
+          {
+            "texto": "Dividimos numerador y denominador entre 4.",
+            "operacion": "28/100 = 7/25"
+          }
+        ],
+        "respuestaFinal": "0.28 = 7/25"
+      }
     }
   ],
   "practicaExtra": [

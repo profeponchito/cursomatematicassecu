@@ -33,7 +33,11 @@
             "18, 5, -5, -7"
           ],
           "respuestaCorrecta": 3,
-          "retroalimentacion": "De mayor a menor: 18 > 5 > -5 > -7."
+          "retroalimentacion": "De mayor a menor: 18 > 5 > -5 > -7.",
+          "pistas": [
+            "Empieza por el número positivo más grande y termina con el más negativo.",
+            "Entre 18, 5, -5, -7, el orden de mayor a menor es: 18, 5, -5, -7."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -131,7 +135,11 @@
           "tipo": "llenar_frase",
           "frase": "El número menor entre -16, 9, -3, 12 es ___.",
           "respuestaCorrecta": "-16",
-          "retroalimentacion": "-16 está más a la izquierda en la recta numérica, así que es el menor."
+          "retroalimentacion": "-16 está más a la izquierda en la recta numérica, así que es el menor.",
+          "pistas": [
+            "Busca el más negativo de la lista.",
+            "-16 es más negativo que -3, así que -16 es el menor."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -143,7 +151,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Un buzo a -40 m está menos profundo que uno a -25 m.",
           "respuestaCorrecta": false,
-          "retroalimentacion": "Falso: -40 está más lejos del 0 hacia abajo que -25, así que el buzo a -40 m está MÁS profundo, no menos."
+          "retroalimentacion": "Falso: -40 está más lejos del 0 hacia abajo que -25, así que el buzo a -40 m está MÁS profundo, no menos.",
+          "pistas": [
+            "Recuerda: entre dos profundidades negativas, la que está más lejos del 0 es la MÁS profunda.",
+            "-40 está más lejos del 0 que -25, así que -40 m SÍ es más profundo, no menos — la afirmación es falsa."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -166,7 +178,23 @@
           "retroalimentacion": "De más baja a más alta: -14 m < -6 m < 3 m."
         }
       ],
-      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis"
+      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis",
+      "ejemploResuelto": {
+        "enunciado": "En otra ronda del mismo juego, los puntajes fueron: Lupe -6, Carlos 3, Tere -2 y Beto 0. ¿Quién ganó y quién quedó en último lugar?",
+        "pasos": [
+          {
+            "texto": "Ordenamos los puntajes de mayor a menor.",
+            "operacion": "3, 0, -2, -6"
+          },
+          {
+            "texto": "El mayor puntaje es el ganador."
+          },
+          {
+            "texto": "El menor puntaje es el último lugar."
+          }
+        ],
+        "respuestaFinal": "Carlos ganó con 3 puntos; Lupe quedó última con -6."
+      }
     }
   ],
   "practicaExtra": [

@@ -30,7 +30,11 @@
           "tipo": "llenar_frase",
           "frase": "3 21/50 expresado como decimal es ___.",
           "respuestaCorrecta": "3.42",
-          "retroalimentacion": "21 ÷ 50 = 0.42, entonces 3 21/50 = 3 + 0.42 = 3.42."
+          "retroalimentacion": "21 ÷ 50 = 0.42, entonces 3 21/50 = 3 + 0.42 = 3.42.",
+          "pistas": [
+            "Primero convierte solo la parte fraccionaria: 21/50.",
+            "21 ÷ 50 = 0.42, y ese resultado se le suma a la parte entera 3."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -66,7 +70,11 @@
             "2.95"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "19 ÷ 40 = 0.475, entonces 2 19/40 = 2 + 0.475 = 2.475."
+          "retroalimentacion": "19 ÷ 40 = 0.475, entonces 2 19/40 = 2 + 0.475 = 2.475.",
+          "pistas": [
+            "Convierte 19/40 a decimal, como en el ejemplo del carpintero.",
+            "19 ÷ 40 = 0.475, y se suma a la parte entera 2."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -96,7 +104,11 @@
           "tipo": "llenar_frase",
           "frase": "6 13/40 expresado como decimal es ___.",
           "respuestaCorrecta": "6.325",
-          "retroalimentacion": "13 ÷ 40 = 0.325, entonces 6 13/40 = 6 + 0.325 = 6.325."
+          "retroalimentacion": "13 ÷ 40 = 0.325, entonces 6 13/40 = 6 + 0.325 = 6.325.",
+          "pistas": [
+            "Convierte 13/40 a decimal primero.",
+            "13 ÷ 40 = 0.325, y se suma a la parte entera 6."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -118,7 +130,21 @@
           ],
           "retroalimentacion": "3 9/40 = 3.225; 2 33/40 = 2.825; 5 21/50 = 5.42."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El mismo carpintero necesita otra tabla de 3 17/40 metros de largo. ¿Cuántos metros en decimal debe medir en su cinta?",
+        "pasos": [
+          {
+            "texto": "Convertimos solo la parte fraccionaria a decimal.",
+            "operacion": "17 ÷ 40 = 0.425"
+          },
+          {
+            "texto": "Sumamos ese resultado a la parte entera.",
+            "operacion": "3 + 0.425 = 3.425"
+          }
+        ],
+        "respuestaFinal": "3 17/40 = 3.425 metros."
+      }
     }
   ],
   "practicaExtra": [

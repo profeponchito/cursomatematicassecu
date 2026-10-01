@@ -33,7 +33,11 @@
             "El costo de plumas a $16 c/u"
           ],
           "respuestaCorrecta": 3,
-          "retroalimentacion": "El costo de plumas es y=16x: si compras 0, pagas $0, es proporcional. Las demás tienen un cargo o descuento fijo."
+          "retroalimentacion": "El costo de plumas es y=16x: si compras 0, pagas $0, es proporcional. Las demás tienen un cargo o descuento fijo.",
+          "pistas": [
+            "Busca la opción donde, si compras 0 artículos, pagas $0.",
+            "El costo de plumas es y=16x: sin cargo fijo, así que es la proporcional."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -125,7 +129,11 @@
             "El costo de refrescos a $30 c/u"
           ],
           "respuestaCorrecta": 3,
-          "retroalimentacion": "El costo de refrescos es y=30x: si compras 0, pagas $0, es proporcional. Las demás tienen un cargo o descuento fijo."
+          "retroalimentacion": "El costo de refrescos es y=30x: si compras 0, pagas $0, es proporcional. Las demás tienen un cargo o descuento fijo.",
+          "pistas": [
+            "Busca la opción sin ningún cargo fijo adicional.",
+            "El costo de refrescos es y=30x: si compras 0, pagas $0."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -137,7 +145,11 @@
           "tipo": "llenar_frase",
           "frase": "El costo de camisetas a $45 cada una es una relación proporcional porque si compras 0 camisetas, pagas $___.",
           "respuestaCorrecta": "0",
-          "retroalimentacion": "Como no hay ningún cargo fijo, si compras 0 camisetas pagas $0, por eso es proporcional (y=45x)."
+          "retroalimentacion": "Como no hay ningún cargo fijo, si compras 0 camisetas pagas $0, por eso es proporcional (y=45x).",
+          "pistas": [
+            "Piensa si existe algún cargo fijo que se pague aunque no compres nada.",
+            "Como no hay cargo fijo, si compras 0 camisetas pagas $0."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -172,7 +184,24 @@
           "retroalimentacion": "La renta de lancha tiene un cargo fijo de $45 que se paga aunque no se use ninguna hora, así que no es proporcional."
         }
       ],
-      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis"
+      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis",
+      "ejemploResuelto": {
+        "enunciado": "En la tienda de telas, el listón cuesta siempre $3 por metro sin importar cuánto se compre, mientras que el servicio de planchado cobra $15 fijos más $2 por prenda. ¿Cuál de las dos relaciones es proporcional?",
+        "pasos": [
+          {
+            "texto": "Analizamos el listón: si compras 0 metros, pagas $0.",
+            "operacion": "Listón: y = 3x, pasa por el origen"
+          },
+          {
+            "texto": "Analizamos el planchado: si planchas 0 prendas, igual pagas los $15 fijos.",
+            "operacion": "Planchado: y = 15 + 2x, no pasa por el origen"
+          },
+          {
+            "texto": "Concluimos cuál de las dos es proporcional."
+          }
+        ],
+        "respuestaFinal": "El costo del listón es proporcional (y=3x); el costo del planchado no lo es, porque tiene un cargo fijo de $15."
+      }
     }
   ],
   "practicaExtra": [

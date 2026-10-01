@@ -35,7 +35,11 @@
             "9"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Verano aparece 7 veces. Verifica: verano=7, invierno=4, primavera=3, otoño=2; 7+4+3+2=16."
+          "retroalimentacion": "Verano aparece 7 veces. Verifica: verano=7, invierno=4, primavera=3, otoño=2; 7+4+3+2=16.",
+          "pistas": [
+            "Cuenta cuántas veces aparece 'verano' en la lista de respuestas.",
+            "Verano aparece 7 veces. Verifica: verano=7, invierno=4, primavera=3, otoño=2; 7+4+3+2=16."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -71,7 +75,11 @@
             "11"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "Contando: 0 viajes=3, 1 viaje=7. Frecuencia acumulada hasta 1 viaje: 3+7=10."
+          "retroalimentacion": "Contando: 0 viajes=3, 1 viaje=7. Frecuencia acumulada hasta 1 viaje: 3+7=10.",
+          "pistas": [
+            "Suma las frecuencias de 0 y 1 viaje.",
+            "Contando: 0 viajes=3, 1 viaje=7. Frecuencia acumulada hasta 1 viaje: 3+7=10."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -89,7 +97,11 @@
             "43.75%"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "2 viajes + 3 viajes = 4+2=6 alumnos. 6÷16=0.375, es decir 37.5%."
+          "retroalimentacion": "2 viajes + 3 viajes = 4+2=6 alumnos. 6÷16=0.375, es decir 37.5%.",
+          "pistas": [
+            "Suma las frecuencias de 2 y 3 viajes, y divide entre el total.",
+            "2 viajes + 3 viajes = 4+2=6 alumnos. 6÷16=0.375, es decir 37.5%."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -130,7 +142,25 @@
           "respuestaCorrecta": true,
           "retroalimentacion": "Correcto: 43.75%+25%+18.75%+12.5%=100%, sin importar que algunos porcentajes tengan decimales."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Paola también le preguntó a esos mismos 25 compañeros su color de mochila favorito (cualitativa) y anotó las respuestas revueltas: obtuvo azul=9, negro=10, rojo=6. ¿Cuál es el porcentaje de alumnos que prefiere negro?",
+        "pasos": [
+          {
+            "texto": "Verificamos que la suma coincida con el total.",
+            "operacion": "9+10+6=25"
+          },
+          {
+            "texto": "Usamos la fórmula del porcentaje.",
+            "operacion": "frecuencia ÷ total × 100"
+          },
+          {
+            "texto": "Sustituimos y calculamos.",
+            "operacion": "(10÷25)×100=40%"
+          }
+        ],
+        "respuestaFinal": "El 40% de los alumnos prefiere el color negro."
+      }
     }
   ],
   "practicaExtra": [

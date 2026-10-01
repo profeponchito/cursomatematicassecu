@@ -34,7 +34,11 @@
           "tipo": "llenar_frase",
           "frase": "Si k=5 y x=11, entonces y = ___.",
           "respuestaCorrecta": "55",
-          "retroalimentacion": "y = kx = 5 × 11 = 55."
+          "retroalimentacion": "y = kx = 5 × 11 = 55.",
+          "pistas": [
+            "Multiplica la constante k por el valor de x para obtener y.",
+            "y = k × x = 5 × 11."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -52,7 +56,11 @@
           "tipo": "llenar_frase",
           "frase": "Si k=14 y x=6, entonces y = ___.",
           "respuestaCorrecta": "84",
-          "retroalimentacion": "y = kx = 14 × 6 = 84."
+          "retroalimentacion": "y = kx = 14 × 6 = 84.",
+          "pistas": [
+            "Multiplica la constante k por el valor de x para obtener y.",
+            "y = k × x = 14 × 6."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -76,7 +84,11 @@
           "tipo": "llenar_frase",
           "frase": "Si k=6 y x=13, entonces y = ___.",
           "respuestaCorrecta": "78",
-          "retroalimentacion": "y = kx = 6 × 13 = 78."
+          "retroalimentacion": "y = kx = 6 × 13 = 78.",
+          "pistas": [
+            "Multiplica la constante k por el valor de x para obtener y.",
+            "y = k × x = 6 × 13."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -105,7 +117,24 @@
           "retroalimentacion": "Correcto: cualquier valor fijo sumado hace que, aunque x=0, y no sea 0, por lo que la relación no es proporcional."
         }
       ],
-      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio"
+      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio",
+      "ejemploResuelto": {
+        "enunciado": "Una combi cobra un pasaje fijo de $9, sin importar la distancia que recorras dentro de la ruta. ¿Es proporcional la relación entre los kilómetros recorridos y el costo del pasaje?",
+        "pasos": [
+          {
+            "texto": "Analizamos qué vale y para distintos valores de x (kilómetros recorridos).",
+            "operacion": "y = 9 (siempre, sin importar x)"
+          },
+          {
+            "texto": "Como y siempre vale 9 sin importar el valor de x, no depende de x.",
+            "operacion": "No es de la forma y = kx"
+          },
+          {
+            "texto": "Concluimos que la relación no es proporcional."
+          }
+        ],
+        "respuestaFinal": "No es proporcional: el pasaje siempre cuesta $9, sin importar los kilómetros, así que no depende de x."
+      }
     }
   ],
   "practicaExtra": [

@@ -35,7 +35,11 @@
             "$22,200"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Suma = 2400+2650+2300+2550+2500+9800 = 22,200. Media = 22,200÷6 = $3,700."
+          "retroalimentacion": "Suma = 2400+2650+2300+2550+2500+9800 = 22,200. Media = 22,200÷6 = $3,700.",
+          "pistas": [
+            "Suma las ventas de los 6 días y divide entre 6.",
+            "Suma = 2400+2650+2300+2550+2500+9800 = 22,200. Media = 22,200÷6 = $3,700."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -59,7 +63,11 @@
             "48"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "Suma total necesaria = 46×5 = 230. Suma conocida = 45+47+44 = 136. Suma de los dos faltantes = 230−136 = 94. Cada uno = 94÷2 = 47 segundos."
+          "retroalimentacion": "Suma total necesaria = 46×5 = 230. Suma conocida = 45+47+44 = 136. Suma de los dos faltantes = 230−136 = 94. Cada uno = 94÷2 = 47 segundos.",
+          "pistas": [
+            "Multiplica la media deseada por el número de corredores, resta lo conocido, y divide entre los que faltan.",
+            "Suma total necesaria = 46×5 = 230. Suma conocida = 45+47+44 = 136. Suma de los dos faltantes = 230−136 = 94. Cada uno = 94÷2 = 47 segundos."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -83,7 +91,11 @@
             "No tiene moda"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "El valor 90 tiene la frecuencia más alta (4 partidos), más que 80 (3) o 100 (3). La moda es 90."
+          "retroalimentacion": "El valor 90 tiene la frecuencia más alta (4 partidos), más que 80 (3) o 100 (3). La moda es 90.",
+          "pistas": [
+            "Busca el valor con la frecuencia más alta en la tabla.",
+            "El valor 90 tiene la frecuencia más alta (4 partidos), más que 80 (3) o 100 (3). La moda es 90."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -117,7 +129,25 @@
           ],
           "retroalimentacion": "Ventas: usar la mediana ($2,525). Corredores: despejar de la media (47 segundos cada uno). Básquetbol: usar la moda (90 puntos)."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Otro negocio de elotes registró ventas diarias durante 6 días: $1800, $1950, $1700, $1900, $1850 y $7200 (el último día hubo un partido de fútbol cerca). ¿Cuál es la mediana de esas ventas, y por qué representa mejor las ventas normales que la media?",
+        "pasos": [
+          {
+            "texto": "Ordenamos las ventas de menor a mayor.",
+            "operacion": "1700, 1800, 1850, 1900, 1950, 7200"
+          },
+          {
+            "texto": "Identificamos los dos valores centrales y promediamos.",
+            "operacion": "(1850+1900)÷2"
+          },
+          {
+            "texto": "Calculamos la mediana y concluimos.",
+            "operacion": "$1875"
+          }
+        ],
+        "respuestaFinal": "La mediana es $1875, y representa mejor las ventas normales porque el día del partido (valor atípico) no la afecta como sí afecta a la media."
+      }
     }
   ],
   "practicaExtra": [

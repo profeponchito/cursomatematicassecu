@@ -29,7 +29,11 @@
           "tipo": "llenar_frase",
           "frase": "En la sucesión 5, 8, 11, 14..., el término 10 es ___.",
           "respuestaCorrecta": "32",
-          "retroalimentacion": "a=5, d=3. término_10 = 5 + (10-1)×3 = 5+27 = 32."
+          "retroalimentacion": "a=5, d=3. término_10 = 5 + (10-1)×3 = 5+27 = 32.",
+          "pistas": [
+            "Aplica término_n = a + (n-1)×d con a=5, d=3, n=10.",
+            "5 + (10-1)×3 = 5+27."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -65,7 +69,11 @@
             "26"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "término_7 = 6 + (7-1)×4 = 6+24 = 30."
+          "retroalimentacion": "término_7 = 6 + (7-1)×4 = 6+24 = 30.",
+          "pistas": [
+            "Aplica la fórmula con a=6, d=4, n=7.",
+            "6 + (7-1)×4 = 6+24."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -103,10 +111,31 @@
           "tipo": "llenar_frase",
           "frase": "Con a=10 y d=-5, el término 4 de la sucesión es ___.",
           "respuestaCorrecta": "-5",
-          "retroalimentacion": "término_4 = 10 + (4-1)×(-5) = 10-15 = -5."
+          "retroalimentacion": "término_4 = 10 + (4-1)×(-5) = 10-15 = -5.",
+          "pistas": [
+            "Aplica la fórmula con a=10, d=-5, n=4.",
+            "10 + (4-1)×(-5) = 10-15."
+          ]
         }
       ],
-      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio"
+      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio",
+      "ejemploResuelto": {
+        "enunciado": "Un club de manualidades empieza con 6 miembros el primer mes y crece 2 miembros cada mes. ¿Cuántos miembros tendrá en el mes 9?",
+        "pasos": [
+          {
+            "texto": "Identificamos a=6, d=2, n=9."
+          },
+          {
+            "texto": "Aplicamos la fórmula del término n.",
+            "operacion": "término_9 = 6 + (9-1)×2"
+          },
+          {
+            "texto": "Calculamos.",
+            "operacion": "6 + 16 = 22"
+          }
+        ],
+        "respuestaFinal": "El club tendrá 22 miembros en el mes 9."
+      }
     }
   ],
   "practicaExtra": [

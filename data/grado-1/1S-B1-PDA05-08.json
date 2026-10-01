@@ -42,7 +42,11 @@
           "tipo": "llenar_frase",
           "frase": "Si el perímetro de un cuadrado de lado x es 96 cm, entonces x = ___ cm.",
           "respuestaCorrecta": "24",
-          "retroalimentacion": "4x=96 → x=96÷4=24."
+          "retroalimentacion": "4x=96 → x=96÷4=24.",
+          "pistas": [
+            "Despeja x dividiendo ambos lados entre 4.",
+            "x = 96÷4."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -72,7 +76,11 @@
           "tipo": "llenar_frase",
           "frase": "Si 3x+9=42, entonces x = ___.",
           "respuestaCorrecta": "11",
-          "retroalimentacion": "3x+9=42 → 3x=33 → x=11."
+          "retroalimentacion": "3x+9=42 → 3x=33 → x=11.",
+          "pistas": [
+            "Primero resta 9 de ambos lados, después divide entre 3.",
+            "3x=42-9=33; x=33÷3."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -116,7 +124,11 @@
             2,
             0
           ],
-          "retroalimentacion": "4x=72 → x=18. 3x+9=48 → 3x=39 → x=13. 6x-4=56 → 6x=60 → x=10."
+          "retroalimentacion": "4x=72 → x=18. 3x+9=48 → 3x=39 → x=13. 6x-4=56 → 6x=60 → x=10.",
+          "pistas": [
+            "En cada ecuación, primero deshaz la suma o resta, después la multiplicación.",
+            "Por ejemplo: 4x=72 → x=72÷4=18; aplica el mismo método a las otras dos."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -130,7 +142,24 @@
           "respuestaCorrecta": 0,
           "retroalimentacion": "6x=90 → x=90÷6=15 m."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El perímetro de un cuadrado de lado x es 52 cm. ¿Cuánto mide x?",
+        "pasos": [
+          {
+            "texto": "Planteamos la ecuación.",
+            "operacion": "4x = 52"
+          },
+          {
+            "texto": "Despejamos x dividiendo ambos lados entre 4."
+          },
+          {
+            "texto": "Calculamos.",
+            "operacion": "x = 52÷4 = 13"
+          }
+        ],
+        "respuestaFinal": "x = 13 cm."
+      }
     }
   ],
   "practicaExtra": [

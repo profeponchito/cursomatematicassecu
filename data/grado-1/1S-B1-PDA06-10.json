@@ -35,7 +35,11 @@
             "x=12"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Pagó 100-18=82 pesos: 6x+4=82 → 6x=78 → x=13."
+          "retroalimentacion": "Pagó 100-18=82 pesos: 6x+4=82 → 6x=78 → x=13.",
+          "pistas": [
+            "Primero calcula cuánto pagó en total: 100 menos el cambio que recibió.",
+            "Pagó 100 - 18 = 82; plantea 6x + 4 = 82 y despeja x."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -59,7 +63,11 @@
             "x=120"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "La mitad de la mesada es x/2 = 35+15 = 50 → x = 100."
+          "retroalimentacion": "La mitad de la mesada es x/2 = 35+15 = 50 → x = 100.",
+          "pistas": [
+            "La mitad de la mesada debe alcanzar para el boleto más lo que le sobró.",
+            "x/2 = 35 + 15 = 50; multiplica ambos lados por 2."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -71,7 +79,11 @@
           "tipo": "llenar_frase",
           "frase": "Una tienda hace un descuento: el precio con descuento es 4 veces (el precio original menos $30), y resultó ser $200. Si x es el precio original, 4(x − 30) = 200. El precio original era x = ___ pesos.",
           "respuestaCorrecta": "80",
-          "retroalimentacion": "4x-120=200 → 4x=320 → x=80."
+          "retroalimentacion": "4x-120=200 → 4x=320 → x=80.",
+          "pistas": [
+            "Distribuye el paréntesis.",
+            "4x - 120 = 200; entonces 4x = 320, x = 320 ÷ 4."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -118,7 +130,29 @@
           "retroalimentacion": "Plomero: x+24=53 → x=29. Edad de Mario: 2x-10=x+15 → x=25. Alberca: 6x=180 → x=30."
         }
       ],
-      "nivelEtiqueta": "Nivel 10 de 10 · Dominio"
+      "nivelEtiqueta": "Nivel 10 de 10 · Dominio",
+      "ejemploResuelto": {
+        "enunciado": "Camila vende llaveros: gastó $80 en material y planea vender cada llavero en $15. ¿Cuántos llaveros debe vender para recuperar exactamente su inversión y además ganar $70 extra?",
+        "pasos": [
+          {
+            "texto": "Definimos x como el número de llaveros que debe vender.",
+            "operacion": "x = llaveros"
+          },
+          {
+            "texto": "Traducimos el problema: necesita reunir la inversión más la ganancia.",
+            "operacion": "80 + 70 = 150"
+          },
+          {
+            "texto": "Planteamos la ecuación con el precio de venta.",
+            "operacion": "15x = 150"
+          },
+          {
+            "texto": "Dividimos entre 15.",
+            "operacion": "x = 10"
+          }
+        ],
+        "respuestaFinal": "Camila debe vender 10 llaveros."
+      }
     }
   ],
   "practicaExtra": [

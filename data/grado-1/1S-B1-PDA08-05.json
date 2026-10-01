@@ -35,13 +35,21 @@
             "180°"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Los ángulos opuestos por el vértice son iguales, así que también mide 64°."
+          "retroalimentacion": "Los ángulos opuestos por el vértice son iguales, así que también mide 64°.",
+          "pistas": [
+            "Los ángulos opuestos por el vértice son iguales.",
+            "El opuesto por el vértice también mide 64°."
+          ]
         },
         {
           "tipo": "llenar_frase",
           "frase": "En el cruce de dos avenidas se forman cuatro ángulos. Uno de ellos mide 47°. Su ángulo adyacente (el que forma par lineal con él) mide ___°.",
           "respuestaCorrecta": "133",
-          "retroalimentacion": "Los ángulos adyacentes son suplementarios: 180−47=133°."
+          "retroalimentacion": "Los ángulos adyacentes son suplementarios: 180−47=133°.",
+          "pistas": [
+            "Los ángulos adyacentes suman 180°.",
+            "180 − 47 = 133°."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -94,7 +102,11 @@
             "180°"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Los opuestos por el vértice son iguales: 26°."
+          "retroalimentacion": "Los opuestos por el vértice son iguales: 26°.",
+          "pistas": [
+            "Los ángulos opuestos por el vértice son iguales.",
+            "El opuesto por el vértice también mide 26°."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -127,7 +139,23 @@
           "retroalimentacion": "Correcto: si un ángulo es 90°, su adyacente es 180−90=90°, y los opuestos por el vértice igualan a cada uno, así los 4 ángulos miden 90°."
         }
       ],
-      "nivelEtiqueta": "Nivel 5 de 10 · Aplicación"
+      "nivelEtiqueta": "Nivel 5 de 10 · Aplicación",
+      "ejemploResuelto": {
+        "enunciado": "Doña Carmen también corta con unas tijeras de sastre más grandes, formando un ángulo de 37° entre las hojas. ¿Cuánto mide el ángulo adyacente, formado entre una hoja y un mango?",
+        "pasos": [
+          {
+            "texto": "Identificamos que se trata de ángulos adyacentes (par lineal)."
+          },
+          {
+            "texto": "Recordamos que los ángulos adyacentes suman 180°."
+          },
+          {
+            "texto": "Calculamos el resultado.",
+            "operacion": "180 − 37 = 143°"
+          }
+        ],
+        "respuestaFinal": "El ángulo adyacente mide 143°."
+      }
     }
   ],
   "practicaExtra": [

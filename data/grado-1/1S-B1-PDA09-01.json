@@ -34,7 +34,11 @@
             "Rectángulo"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Sus 3 lados miden lo mismo (5 cm), así que es equilátero."
+          "retroalimentacion": "Sus 3 lados miden lo mismo (5 cm), así que es equilátero.",
+          "pistas": [
+            "Compara las tres medidas de los lados: si las tres son iguales, es equilátero.",
+            "Los tres lados miden 5 cm, así que es equilátero."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -52,7 +56,11 @@
             "Obtusángulo"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "Sus tres lados (4 cm, 6 cm y 9 cm) son todos diferentes, así que es escaleno."
+          "retroalimentacion": "Sus tres lados (4 cm, 6 cm y 9 cm) son todos diferentes, así que es escaleno.",
+          "pistas": [
+            "Revisa si algún par de lados se repite.",
+            "Los tres lados (4, 6 y 9) son distintos, así que es escaleno."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -76,7 +84,11 @@
             "Equilátero"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "20°+40°+120°=180°. Como tiene un ángulo mayor a 90° (120°), es obtusángulo."
+          "retroalimentacion": "20°+40°+120°=180°. Como tiene un ángulo mayor a 90° (120°), es obtusángulo.",
+          "pistas": [
+            "Busca si hay algún ángulo mayor a 90°.",
+            "120° es mayor a 90°, así que es obtusángulo."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -123,7 +135,23 @@
           "retroalimentacion": "Tener dos lados iguales lo hace isósceles, y tener un ángulo de 90° lo hace también rectángulo: es isósceles y rectángulo."
         }
       ],
-      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio"
+      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio",
+      "ejemploResuelto": {
+        "enunciado": "Fernanda corta otra pieza triangular y mide sus ángulos: 90°, 55° y 35°. ¿Cómo se clasifica ese triángulo según sus ángulos?",
+        "pasos": [
+          {
+            "texto": "Verificamos que los tres ángulos sumen 180°.",
+            "operacion": "90 + 55 + 35 = 180"
+          },
+          {
+            "texto": "Buscamos si hay algún ángulo de 90°."
+          },
+          {
+            "texto": "Como tiene un ángulo recto, se clasifica como rectángulo."
+          }
+        ],
+        "respuestaFinal": "Es un triángulo rectángulo, porque tiene un ángulo de 90°."
+      }
     }
   ],
   "practicaExtra": [

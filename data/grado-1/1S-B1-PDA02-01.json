@@ -34,7 +34,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "-4 es mayor que 6.",
           "respuestaCorrecta": false,
-          "retroalimentacion": "-4 < 6 en la recta numérica."
+          "retroalimentacion": "-4 < 6 en la recta numérica.",
+          "pistas": [
+            "Dibuja mentalmente la recta numérica: los negativos están a la izquierda del cero.",
+            "-4 está a la izquierda de 6, así que -4 es menor, no mayor."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -46,7 +50,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "-8 es mayor que -10.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "-8 > -10 en la recta numérica."
+          "retroalimentacion": "-8 > -10 en la recta numérica.",
+          "pistas": [
+            "Entre dos negativos, el que está más cerca del cero es el mayor.",
+            "-8 está más a la derecha que -10 en la recta numérica, así que -8 > -10."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -82,7 +90,11 @@
             "No se puede saber"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "La cima está a 300 m del 0 y la mina a 150 m; 300 es mayor que 150, así que la cima está más lejos."
+          "retroalimentacion": "La cima está a 300 m del 0 y la mina a 150 m; 300 es mayor que 150, así que la cima está más lejos.",
+          "pistas": [
+            "No importa si es positivo o negativo — mide qué tan lejos está cada uno del cero.",
+            "La cima está a 300 unidades del 0 y la mina a 150 — compara esas dos distancias."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -105,7 +117,22 @@
           "retroalimentacion": "-8 está a la izquierda del cero; 0 es el cero mismo; 6 está a la derecha del cero."
         }
       ],
-      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio"
+      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio",
+      "ejemploResuelto": {
+        "enunciado": "Un edificio de departamentos tiene su planta baja en el nivel 0: el estacionamiento está en el nivel -2 y la azotea está en el nivel 5. ¿Qué nivel está más lejos de la planta baja?",
+        "pasos": [
+          {
+            "texto": "Ubicamos los dos niveles en la recta numérica respecto al 0."
+          },
+          {
+            "texto": "Comparamos qué tan lejos está cada uno del 0: el estacionamiento está 2 niveles abajo, la azotea 5 niveles arriba."
+          },
+          {
+            "texto": "Comparamos las distancias: 5 es mayor que 2."
+          }
+        ],
+        "respuestaFinal": "La azotea (nivel 5) está más lejos de la planta baja que el estacionamiento (nivel -2)."
+      }
     }
   ],
   "practicaExtra": [

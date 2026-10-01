@@ -34,7 +34,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "En la expresión 5 + 3 × (-8), el resultado es -17.",
           "respuestaCorrecta": false,
-          "retroalimentacion": "Primero la multiplicación: 3×(-8)=-24; luego 5+(-24)=-19."
+          "retroalimentacion": "Primero la multiplicación: 3×(-8)=-24; luego 5+(-24)=-19.",
+          "pistas": [
+            "Resuelve primero la multiplicación, antes que la suma.",
+            "3×(-8)=-24, y luego 5+(-24), ¿cuánto es?"
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -52,7 +56,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "En la expresión 9 - 5 × (-5), el resultado es 32.",
           "respuestaCorrecta": false,
-          "retroalimentacion": "Primero la multiplicación: -5×(-5)=25; luego 9+(25)=34."
+          "retroalimentacion": "Primero la multiplicación: -5×(-5)=25; luego 9+(25)=34.",
+          "pistas": [
+            "Primero la multiplicación: -5×(-5) — recuerda que signos iguales dan positivo.",
+            "-5×(-5)=25, y luego 9+25 (no 9-25, porque menos por menos es más)."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -76,7 +84,11 @@
           "tipo": "llenar_frase",
           "frase": "8 - 6 × (-2) = ___.",
           "respuestaCorrecta": "20",
-          "retroalimentacion": "Primero la multiplicación: 6×(-2)=-12; luego 8-(-12)=20."
+          "retroalimentacion": "Primero la multiplicación: 6×(-2)=-12; luego 8-(-12)=20.",
+          "pistas": [
+            "Resuelve primero 6×(-2).",
+            "6×(-2)=-12, y luego 8-(-12) es lo mismo que 8+12."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -105,7 +117,24 @@
           "retroalimentacion": "Primero la multiplicación: 5×(-2)=-10; luego -9+(-10)=-19."
         }
       ],
-      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio"
+      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio",
+      "ejemploResuelto": {
+        "enunciado": "En otra ronda, Valentina empieza con 0 puntos, pierde 6 puntos y luego gana 9 puntos. ¿Cuántos puntos tiene al final?",
+        "pasos": [
+          {
+            "texto": "Restamos los 6 puntos perdidos.",
+            "operacion": "0 - 6 = -6"
+          },
+          {
+            "texto": "Sumamos los 9 puntos ganados.",
+            "operacion": "-6 + 9"
+          },
+          {
+            "texto": "Como tienen signos diferentes, restamos los valores absolutos (9-6=3) y conservamos el signo del mayor (positivo)."
+          }
+        ],
+        "respuestaFinal": "Valentina termina con 3 puntos."
+      }
     }
   ],
   "practicaExtra": [

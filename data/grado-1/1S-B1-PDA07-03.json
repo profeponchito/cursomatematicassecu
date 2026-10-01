@@ -46,7 +46,11 @@
             "14"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "k = y/x = 21/3 = 7 (se confirma con 42/6 = 7)."
+          "retroalimentacion": "k = y/x = 21/3 = 7 (se confirma con 42/6 = 7).",
+          "pistas": [
+            "Divide y entre x usando cualquiera de los dos pares de valores.",
+            "k = 21 ÷ 3 = 7 (se confirma con 42 ÷ 6)."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -88,7 +92,11 @@
           "tipo": "llenar_frase",
           "frase": "En una tabla, x=5 → y=40. La constante de proporcionalidad k = ___.",
           "respuestaCorrecta": "8",
-          "retroalimentacion": "k = y/x = 40/5 = 8."
+          "retroalimentacion": "k = y/x = 40/5 = 8.",
+          "pistas": [
+            "Divide y entre x.",
+            "k = 40 ÷ 5."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -106,7 +114,11 @@
             "33"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "k = y/x = 33/3 = 11 (se confirma con 66/6 = 11)."
+          "retroalimentacion": "k = y/x = 33/3 = 11 (se confirma con 66/6 = 11).",
+          "pistas": [
+            "Divide y entre x usando cualquiera de los dos pares.",
+            "k = 33 ÷ 3 = 11 (se confirma con 66 ÷ 6)."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -141,7 +153,24 @@
           "retroalimentacion": "El costo de dulces es y=10x: si compras 0, pagas $0, es proporcional. Las demás tienen un cargo o descuento fijo."
         }
       ],
-      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado"
+      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado",
+      "ejemploResuelto": {
+        "enunciado": "En una tienda, 3 kilogramos de café cuestan $141 y 7 kilogramos cuestan $329. ¿Cuál es la constante de proporcionalidad k de esta relación, y qué tipo de gráfica tendría?",
+        "pasos": [
+          {
+            "texto": "Calculamos k con el primer par de valores.",
+            "operacion": "k = 141 ÷ 3 = 47"
+          },
+          {
+            "texto": "Confirmamos con el segundo par de valores.",
+            "operacion": "k = 329 ÷ 7 = 47"
+          },
+          {
+            "texto": "Como la razón es constante, concluimos que su gráfica es una recta que pasa por el origen."
+          }
+        ],
+        "respuestaFinal": "k = 47; la gráfica es una recta que pasa por el origen (0,0)."
+      }
     }
   ],
   "practicaExtra": [

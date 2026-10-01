@@ -36,7 +36,11 @@
             "42"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "k = 42 ÷ 6 = 7."
+          "retroalimentacion": "k = 42 ÷ 6 = 7.",
+          "pistas": [
+            "Divide la coordenada y entre la coordenada x del punto dado.",
+            "k = 42 ÷ 6."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -60,7 +64,11 @@
           "tipo": "llenar_frase",
           "frase": "Una recta proporcional pasa por (0,0) y (9,63). Su constante de proporcionalidad es k=___.",
           "respuestaCorrecta": "7",
-          "retroalimentacion": "k = 63 ÷ 9 = 7."
+          "retroalimentacion": "k = 63 ÷ 9 = 7.",
+          "pistas": [
+            "Divide y entre x.",
+            "k = 63 ÷ 9."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -116,7 +124,11 @@
           "tipo": "llenar_frase",
           "frase": "Una recta proporcional pasa por el punto (12,84). Su constante de proporcionalidad es k=___.",
           "respuestaCorrecta": "7",
-          "retroalimentacion": "k = 84 ÷ 12 = 7."
+          "retroalimentacion": "k = 84 ÷ 12 = 7.",
+          "pistas": [
+            "Divide y entre x.",
+            "k = 84 ÷ 12."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -124,7 +136,24 @@
           "respuestaCorrecta": true,
           "retroalimentacion": "Correcto: k = 10 ÷ 10 = 1."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Dos corredoras entrenan en la pista: la gráfica de distancia contra tiempo de Fernanda pasa por el punto (5,40) y la de su amiga Paola pasa por el punto (5,30), ambas rectas pasando por el origen. ¿Cuál corredora tiene mayor rapidez (mayor constante k)?",
+        "pasos": [
+          {
+            "texto": "Calculamos la constante de Fernanda.",
+            "operacion": "kF = 40 ÷ 5 = 8"
+          },
+          {
+            "texto": "Calculamos la constante de Paola.",
+            "operacion": "kP = 30 ÷ 5 = 6"
+          },
+          {
+            "texto": "Comparamos ambas constantes: como 8>6, la recta de Fernanda es más inclinada."
+          }
+        ],
+        "respuestaFinal": "Fernanda tiene mayor rapidez, con k=8 contra k=6 de Paola."
+      }
     }
   ],
   "practicaExtra": [

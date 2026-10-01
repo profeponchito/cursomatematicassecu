@@ -48,7 +48,11 @@
             "9 × (-5)"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "La resta no es conmutativa: (-5)-9=-14, pero 9-(-5)=14, resultados distintos."
+          "retroalimentacion": "La resta no es conmutativa: (-5)-9=-14, pero 9-(-5)=14, resultados distintos.",
+          "pistas": [
+            "Prueba cambiar el orden en cada operación y compara los resultados.",
+            "La resta cambia de resultado al cambiar el orden — pruébalo con números chicos como 9-5 y 5-9."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -80,7 +84,11 @@
             1,
             0
           ],
-          "retroalimentacion": "(-8)+20=12=20+(-8); 6×(-11)=-66=(-11)×6; (-15)+(-4)=-19=(-4)+(-15)."
+          "retroalimentacion": "(-8)+20=12=20+(-8); 6×(-11)=-66=(-11)×6; (-15)+(-4)=-19=(-4)+(-15).",
+          "pistas": [
+            "En cada pareja, calcula ambas operaciones y compara si dan el mismo resultado.",
+            "Recuerda: sumas y multiplicaciones sí se pueden reordenar sin cambiar el resultado."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -104,7 +112,11 @@
           "tipo": "llenar_frase",
           "frase": "3 ÷ (-15) NO da el mismo resultado que (-15) ÷ 3, por lo tanto la división ___ conmutativa.",
           "respuestaCorrecta": "no es",
-          "retroalimentacion": "3÷(-15)=-0.2 mientras que (-15)÷3=-5: son distintos, así que la división no es conmutativa."
+          "retroalimentacion": "3÷(-15)=-0.2 mientras que (-15)÷3=-5: son distintos, así que la división no es conmutativa.",
+          "pistas": [
+            "Calcula ambas divisiones por separado y compáralas.",
+            "3÷(-15)=-0.2, pero (-15)÷3=-5 — son distintas, así que la división no es conmutativa."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -118,7 +130,24 @@
           "respuestaCorrecta": 0,
           "retroalimentacion": "(-9)+23=14 y 23+(-9)=14: cambiar el orden de una suma no altera el resultado."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Dos amigas discuten si da lo mismo calcular (-7) × 4 que 4 × (-7). ¿Es lo mismo?",
+        "pasos": [
+          {
+            "texto": "Calculamos (-7) × 4: signos diferentes, resultado negativo.",
+            "operacion": "7×4=28 → -28"
+          },
+          {
+            "texto": "Calculamos 4 × (-7): mismo resultado.",
+            "operacion": "-28"
+          },
+          {
+            "texto": "Como ambas dan el mismo resultado, la multiplicación SÍ es conmutativa."
+          }
+        ],
+        "respuestaFinal": "Sí es lo mismo: (-7)×4 = 4×(-7) = -28, por la propiedad conmutativa de la multiplicación."
+      }
     }
   ],
   "practicaExtra": [

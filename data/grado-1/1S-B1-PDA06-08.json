@@ -35,7 +35,11 @@
             "x=2"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "2x+6=x+10 → 2x-x=10-6 → x=4."
+          "retroalimentacion": "2x+6=x+10 → 2x-x=10-6 → x=4.",
+          "pistas": [
+            "Distribuye el paréntesis.",
+            "2x + 6 = x + 10; entonces 2x - x = 10 - 6, x = 4."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -71,7 +75,11 @@
           "tipo": "llenar_frase",
           "frase": "Resuelve: 6(x + 1) = 4(x + 4). x = ___.",
           "respuestaCorrecta": "5",
-          "retroalimentacion": "6x+6=4x+16 → 6x-4x=16-6 → 2x=10 → x=5."
+          "retroalimentacion": "6x+6=4x+16 → 6x-4x=16-6 → 2x=10 → x=5.",
+          "pistas": [
+            "Distribuye ambos paréntesis.",
+            "6x + 6 = 4x + 16; entonces 6x - 4x = 16 - 6, 2x = 10, x = 10 ÷ 2."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -83,7 +91,11 @@
             "x=2"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "3x-12=x+2 → 3x-x=2+12 → 2x=14 → x=7."
+          "retroalimentacion": "3x-12=x+2 → 3x-x=2+12 → 2x=14 → x=7.",
+          "pistas": [
+            "Distribuye el paréntesis.",
+            "3x - 12 = x + 2; entonces 3x - x = 2 + 12, 2x = 14, x = 14 ÷ 2."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -118,7 +130,25 @@
           "retroalimentacion": "3(x+1)=2(x+6) → x=9; 5(x-2)=3(x+4) → x=11; 2(x+7)=x+20 → x=6."
         }
       ],
-      "nivelEtiqueta": "Nivel 8 de 10 · Reto avanzado"
+      "nivelEtiqueta": "Nivel 8 de 10 · Reto avanzado",
+      "ejemploResuelto": {
+        "enunciado": "Dos puestos de esquites anuncian promociones: el primero cobra el doble de (x+3) pesos y el segundo cobra el triple de (x-1) pesos por el mismo combo, y ambos terminan cobrando exactamente igual. ¿Cuál es el valor de x?",
+        "pasos": [
+          {
+            "texto": "Distribuimos cada paréntesis.",
+            "operacion": "2(x+3) = 3(x-1)  →  2x+6 = 3x-3"
+          },
+          {
+            "texto": "Agrupamos los números de un lado y las x del otro.",
+            "operacion": "6 + 3 = 3x - 2x"
+          },
+          {
+            "texto": "Calculamos el resultado.",
+            "operacion": "x = 9"
+          }
+        ],
+        "respuestaFinal": "x = 9."
+      }
     }
   ],
   "practicaExtra": [

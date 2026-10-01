@@ -30,7 +30,11 @@
           "tipo": "llenar_frase",
           "frase": "Si x + (-18) = -30, entonces x = ___.",
           "respuestaCorrecta": "-12",
-          "retroalimentacion": "x = -30 - (-18) = -30 + 18 = -12."
+          "retroalimentacion": "x = -30 - (-18) = -30 + 18 = -12.",
+          "pistas": [
+            "La operación inversa de sumar -18 es restar -18 (o sumar 18).",
+            "x = -30 - (-18) = -30 + 18."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -48,7 +52,11 @@
             "32 m"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "x = -20 - 12 = -32 m."
+          "retroalimentacion": "x = -20 - 12 = -32 m.",
+          "pistas": [
+            "La operación inversa de sumar 12 es restar 12.",
+            "x = -20 - 12."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -78,7 +86,11 @@
             "-8"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "x = 11 - (-3) = 14."
+          "retroalimentacion": "x = 11 - (-3) = 14.",
+          "pistas": [
+            "La operación inversa de sumar -3 es restar -3 (o sumar 3).",
+            "x = 11 - (-3) = 11 + 3."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -112,7 +124,20 @@
           "respuestaCorrecta": true,
           "retroalimentacion": "Correcto: x = -12 × (-5) = 60."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Otro puesto sabe que, después de sumar $18 de propinas, su ganancia quedó en $95, pero no anotó cuánto tenía antes: x + 18 = 95. ¿Cuánto tenía antes de las propinas?",
+        "pasos": [
+          {
+            "texto": "Para despejar x, hacemos la operación inversa de sumar 18: restar 18."
+          },
+          {
+            "texto": "Calculamos x.",
+            "operacion": "x = 95 - 18 = 77"
+          }
+        ],
+        "respuestaFinal": "El puesto tenía $77 antes de las propinas."
+      }
     }
   ],
   "practicaExtra": [

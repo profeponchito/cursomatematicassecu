@@ -33,7 +33,11 @@
             "-26"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "(-4) × (6) = -24. Signos diferentes dan negativo."
+          "retroalimentacion": "(-4) × (6) = -24. Signos diferentes dan negativo.",
+          "pistas": [
+            "Signos diferentes (negativo por positivo) dan resultado negativo.",
+            "4×6=24, con signo negativo: -24."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -125,7 +129,11 @@
           "tipo": "llenar_frase",
           "frase": "(-9) × (5) = ___.",
           "respuestaCorrecta": "-45",
-          "retroalimentacion": "Signos diferentes dan negativo: (-9)×5=-45."
+          "retroalimentacion": "Signos diferentes dan negativo: (-9)×5=-45.",
+          "pistas": [
+            "Signos diferentes dan resultado negativo.",
+            "9×5=45, con signo negativo: -45."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -137,7 +145,11 @@
             "-8"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "(-36) ÷ (-4) = 9. Signos iguales dan positivo."
+          "retroalimentacion": "(-36) ÷ (-4) = 9. Signos iguales dan positivo.",
+          "pistas": [
+            "Signos iguales (negativo entre negativo) dan resultado positivo.",
+            "36÷4=9, con signo positivo: 9."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -166,7 +178,25 @@
           "retroalimentacion": "Signos iguales dan resultado positivo: (-6)×(-8)=48."
         }
       ],
-      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis"
+      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis",
+      "ejemploResuelto": {
+        "enunciado": "En otro torneo, Marco suma 2 partidas ganadas que valen 7 puntos cada una, resta 3 partidas perdidas que valen 3 puntos cada una, y recibe un bono de 4 puntos. ¿Cuántos puntos totales acumula?",
+        "pasos": [
+          {
+            "texto": "Calculamos lo ganado.",
+            "operacion": "2 × 7 = 14"
+          },
+          {
+            "texto": "Calculamos lo perdido.",
+            "operacion": "3 × 3 = 9"
+          },
+          {
+            "texto": "Sumamos y restamos todo, más el bono.",
+            "operacion": "14 - 9 + 4 = 9"
+          }
+        ],
+        "respuestaFinal": "Marco acumula 9 puntos en total."
+      }
     }
   ],
   "practicaExtra": [

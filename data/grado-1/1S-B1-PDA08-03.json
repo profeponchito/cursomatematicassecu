@@ -29,7 +29,11 @@
           "tipo": "llenar_frase",
           "frase": "Dos rectas paralelas son cortadas por una transversal. Un ángulo mide 65°. Su ángulo correspondiente mide ___°.",
           "respuestaCorrecta": "65",
-          "retroalimentacion": "Los ángulos correspondientes son iguales, así que también mide 65°."
+          "retroalimentacion": "Los ángulos correspondientes son iguales, así que también mide 65°.",
+          "pistas": [
+            "Recuerda que los ángulos correspondientes entre paralelas son iguales.",
+            "El correspondiente también mide 65°."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -47,7 +51,11 @@
             "180°"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Los colaterales internos son suplementarios: 180−72=108°."
+          "retroalimentacion": "Los colaterales internos son suplementarios: 180−72=108°.",
+          "pistas": [
+            "Los colaterales internos son suplementarios: suman 180°.",
+            "180 − 72 = 108°."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -83,7 +91,11 @@
           "tipo": "llenar_frase",
           "frase": "Dos rectas paralelas son cortadas por una transversal. Un ángulo mide 95°. Su ángulo colateral interno mide ___°.",
           "respuestaCorrecta": "85",
-          "retroalimentacion": "180−95=85°."
+          "retroalimentacion": "180−95=85°.",
+          "pistas": [
+            "Los colaterales internos suman 180°.",
+            "180 − 95 = 85°."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -121,7 +133,22 @@
           "retroalimentacion": "50° dado: correspondiente igual = 50°. 72° dado: colateral interno = 180−72=108°. 95° dado: alterno interno igual = 95°. 118° dado: colateral interno = 180−118=62°."
         }
       ],
-      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado"
+      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado",
+      "ejemploResuelto": {
+        "enunciado": "En otro cruce de Mérida, dos calles paralelas, Montejo e Itzáes, son cortadas por una avenida diagonal. Un ángulo con la calle Montejo mide 58°. Si el ángulo que se forma con Itzáes, en la misma posición relativa, es correspondiente al primero, ¿cuánto mide?",
+        "pasos": [
+          {
+            "texto": "Identificamos que se trata de ángulos correspondientes."
+          },
+          {
+            "texto": "Recordamos que los ángulos correspondientes entre paralelas son iguales."
+          },
+          {
+            "texto": "Concluimos que el ángulo con Itzáes también mide 58°."
+          }
+        ],
+        "respuestaFinal": "El ángulo correspondiente también mide 58°, porque los ángulos correspondientes entre paralelas son iguales."
+      }
     }
   ],
   "practicaExtra": [

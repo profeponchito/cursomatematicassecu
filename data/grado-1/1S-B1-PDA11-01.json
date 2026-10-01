@@ -35,7 +35,11 @@
             "8"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "1 cm = 10 mm, entonces 8 cm × 10 = 80 mm."
+          "retroalimentacion": "1 cm = 10 mm, entonces 8 cm × 10 = 80 mm.",
+          "pistas": [
+            "Multiplica por 10 para pasar de centímetros a milímetros.",
+            "8 cm × 10 = 80 mm."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -59,7 +63,11 @@
             "0.45"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "1 m = 1000 mm, entonces 4500 ÷ 1000 = 4.5 m."
+          "retroalimentacion": "1 m = 1000 mm, entonces 4500 ÷ 1000 = 4.5 m.",
+          "pistas": [
+            "Divide entre 1000 para pasar de milímetros a metros.",
+            "4500 ÷ 1000 = 4.5 m."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -95,7 +103,11 @@
           "tipo": "llenar_frase",
           "frase": "650 cm equivalen a ___ m.",
           "respuestaCorrecta": "6.5",
-          "retroalimentacion": "1 m = 100 cm, entonces 650 ÷ 100 = 6.5 m."
+          "retroalimentacion": "1 m = 100 cm, entonces 650 ÷ 100 = 6.5 m.",
+          "pistas": [
+            "Divide entre 100 para pasar de centímetros a metros.",
+            "650 ÷ 100 = 6.5 m."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -118,7 +130,24 @@
           "retroalimentacion": "4 m = 400 cm. 250 cm = 2.5 m. 6000 mm = 600 cm = 6 m."
         }
       ],
-      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio"
+      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio",
+      "ejemploResuelto": {
+        "enunciado": "Emiliano también mide el largo de su cama y obtiene 190 centímetros. ¿A cuántos metros equivale?",
+        "pasos": [
+          {
+            "texto": "Usamos que 1 m = 100 cm."
+          },
+          {
+            "texto": "Dividimos entre 100.",
+            "operacion": "190 ÷ 100"
+          },
+          {
+            "texto": "Calculamos el resultado.",
+            "operacion": "1.9 m"
+          }
+        ],
+        "respuestaFinal": "El largo de la cama equivale a 1.9 metros."
+      }
     }
   ],
   "practicaExtra": [

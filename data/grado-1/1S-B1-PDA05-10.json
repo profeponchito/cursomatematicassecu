@@ -41,7 +41,11 @@
           "tipo": "llenar_frase",
           "frase": "El perímetro de un cuadrado de lado x es 4x. Si el perímetro mide 53 cm, entonces x = ___ cm (usa decimal).",
           "respuestaCorrecta": "13.25",
-          "retroalimentacion": "4x=53 → x=53÷4=13.25 cm."
+          "retroalimentacion": "4x=53 → x=53÷4=13.25 cm.",
+          "pistas": [
+            "Despeja x dividiendo entre 4 — el resultado no será un número entero.",
+            "x = 53÷4."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -65,7 +69,11 @@
           "tipo": "llenar_frase",
           "frase": "Un huerto rectangular tiene ancho x y largo (x+3.5). Su perímetro simplificado es ___.",
           "respuestaCorrecta": "4x+7",
-          "retroalimentacion": "2(x) + 2(x+3.5) = 2x+2x+7 = 4x+7."
+          "retroalimentacion": "2(x) + 2(x+3.5) = 2x+2x+7 = 4x+7.",
+          "pistas": [
+            "Aplica 2(x) + 2(x+3.5).",
+            "2x+2x+7 = 4x+7."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -109,7 +117,11 @@
             2,
             0
           ],
-          "retroalimentacion": "2.5x=45→x=18. 1.5x+9=39→1.5x=30→x=20. 4x-3.5=32.5→4x=36→x=9."
+          "retroalimentacion": "2.5x=45→x=18. 1.5x+9=39→1.5x=30→x=20. 4x-3.5=32.5→4x=36→x=9.",
+          "pistas": [
+            "En cada ecuación, primero deshaz la suma o resta, después divide entre el coeficiente de x.",
+            "Por ejemplo: 2.5x=45 → x=45÷2.5=18; aplica el mismo método a las otras dos."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -129,7 +141,25 @@
           "respuestaCorrecta": 0,
           "retroalimentacion": "6x+10=79 → 6x=69 → x=11.5 m."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Un terreno rectangular tiene ancho x metros y largo (1.5x+3) metros. Su perímetro es 2(x)+2(1.5x+3) = 5x+6. Si el perímetro mide 56 metros, ¿cuánto mide x?",
+        "pasos": [
+          {
+            "texto": "Planteamos la ecuación.",
+            "operacion": "5x+6 = 56"
+          },
+          {
+            "texto": "Despejamos.",
+            "operacion": "5x = 50"
+          },
+          {
+            "texto": "Calculamos.",
+            "operacion": "x = 50÷5 = 10"
+          }
+        ],
+        "respuestaFinal": "x = 10 m."
+      }
     }
   ],
   "practicaExtra": [

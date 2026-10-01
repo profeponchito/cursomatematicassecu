@@ -36,7 +36,11 @@
             "$325.86"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "P = 2 × 3.14 × 21 = 131.88 cm; Costo = 131.88 × 2 = $263.76."
+          "retroalimentacion": "P = 2 × 3.14 × 21 = 131.88 cm; Costo = 131.88 × 2 = $263.76.",
+          "pistas": [
+            "Primero calcula el perímetro con P=2×π×r, después multiplícalo por el precio.",
+            "P = 2×3.14×21 = 131.88 cm; Costo = 131.88×2 = $263.76."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -60,7 +64,11 @@
             "$7,221.60"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "P = 2 × 3.14 × 23 = 144.44 m; Costo = 144.44 × 40 = $5,777.60."
+          "retroalimentacion": "P = 2 × 3.14 × 23 = 144.44 m; Costo = 144.44 × 40 = $5,777.60.",
+          "pistas": [
+            "Calcula el perímetro y multiplícalo por el precio por metro.",
+            "P = 2×3.14×23 = 144.44 m; Costo = 144.44×40 = $5,777.60."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -84,7 +92,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Un cable con luces LED para decorar el borde de una fuente circular de radio 35 cm cuesta $4 por centímetro. El costo total es de $879.20.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "P = 2 × 3.14 × 35 = 219.8 cm; Costo = 219.8 × 4 = $879.20."
+          "retroalimentacion": "P = 2 × 3.14 × 35 = 219.8 cm; Costo = 219.8 × 4 = $879.20.",
+          "pistas": [
+            "Calcula el perímetro y multiplícalo por el precio.",
+            "P = 2×3.14×35 = 219.8 cm; Costo = 219.8×4 = $879.20."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -124,7 +136,25 @@
           ],
           "retroalimentacion": "r=21 cm: A=3.14×21²=1384.74 cm². r=27 cm: A=3.14×27²=2289.06 cm². r=33 cm: A=3.14×33²=3419.46 cm²."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "La mamá de Lucía también va a pintar el contorno (borde) de esa misma tapa circular de 2 metros de radio con pintura para metal que cuesta $15 por metro de borde. ¿Cuánto gastará en pintar todo el borde?",
+        "pasos": [
+          {
+            "texto": "Calculamos el perímetro.",
+            "operacion": "P = 2 × 3.14 × 2 = 12.56 m"
+          },
+          {
+            "texto": "Multiplicamos por el precio por metro.",
+            "operacion": "12.56 × 15"
+          },
+          {
+            "texto": "Calculamos el costo total.",
+            "operacion": "$188.40"
+          }
+        ],
+        "respuestaFinal": "Gastará $188.40 en pintar todo el borde."
+      }
     }
   ],
   "practicaExtra": [

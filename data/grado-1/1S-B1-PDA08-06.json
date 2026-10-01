@@ -35,7 +35,11 @@
             "x=22°"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "2x+3x=90 → 5x=90 → x=18°."
+          "retroalimentacion": "2x+3x=90 → 5x=90 → x=18°.",
+          "pistas": [
+            "Plantea la ecuación sumando ambas expresiones e igualando a 90°.",
+            "2x + 3x = 90 → 5x = 90 → x = 18°."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -53,7 +57,11 @@
             "x=25°"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "(x+10)+(x+20)=90 → 2x+30=90 → 2x=60 → x=30°."
+          "retroalimentacion": "(x+10)+(x+20)=90 → 2x+30=90 → 2x=60 → x=30°.",
+          "pistas": [
+            "Suma ambas expresiones e iguala a 90°, después agrupa los términos semejantes.",
+            "(x+10)+(x+20)=90 → 2x+30=90 → 2x=60 → x=30°."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -89,7 +97,11 @@
             "x=30°"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "(2x+5)+(x+10)=90 → 3x+15=90 → 3x=75 → x=25°."
+          "retroalimentacion": "(2x+5)+(x+10)=90 → 3x+15=90 → 3x=75 → x=25°.",
+          "pistas": [
+            "Suma ambas expresiones e iguala a 90°.",
+            "(2x+5)+(x+10)=90 → 3x+15=90 → 3x=75 → x=25°."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -133,7 +145,25 @@
           "retroalimentacion": "x+2x=90 → x=30°; x+4x=90 → x=18°; 2x+7x=90 → x=10°; x+5x=90 → x=15°."
         }
       ],
-      "nivelEtiqueta": "Nivel 6 de 10 · Aplicación avanzada"
+      "nivelEtiqueta": "Nivel 6 de 10 · Aplicación avanzada",
+      "ejemploResuelto": {
+        "enunciado": "En el mismo plano, otros dos ángulos de una puerta se marcaron como 'x' y '5x', y se sabe que son complementarios. ¿Cuál es el valor de x, y cuánto mide cada ángulo?",
+        "pasos": [
+          {
+            "texto": "Planteamos la ecuación usando que son complementarios.",
+            "operacion": "x + 5x = 90"
+          },
+          {
+            "texto": "Sumamos los términos semejantes.",
+            "operacion": "6x = 90"
+          },
+          {
+            "texto": "Despejamos x y calculamos el otro ángulo.",
+            "operacion": "x = 15°; 5(15) = 75°"
+          }
+        ],
+        "respuestaFinal": "x = 15°; los ángulos miden 15° y 75°."
+      }
     }
   ],
   "practicaExtra": [

@@ -29,7 +29,11 @@
           "tipo": "llenar_frase",
           "frase": "El kilo de tortillas ahora cuesta $18.50. Si Marta pagó $138.75, compró ___ kg.",
           "respuestaCorrecta": "7.5",
-          "retroalimentacion": "x = y ÷ k = 138.75 ÷ 18.50 = 7.5 kg."
+          "retroalimentacion": "x = y ÷ k = 138.75 ÷ 18.50 = 7.5 kg.",
+          "pistas": [
+            "Divide lo que pagó entre el precio por kilo.",
+            "x = 138.75 ÷ 18.50."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -65,7 +69,11 @@
             "33.5"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "k = 214.50 ÷ 6.5 = 33."
+          "retroalimentacion": "k = 214.50 ÷ 6.5 = 33.",
+          "pistas": [
+            "Divide el costo total entre el número de bicicletas.",
+            "k = 214.50 ÷ 6.5."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -109,7 +117,11 @@
             "216"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "k = 156 ÷ 9.75 = 16 piezas por hora. En 14 horas: y = 16 × 14 = 224 piezas."
+          "retroalimentacion": "k = 156 ÷ 9.75 = 16 piezas por hora. En 14 horas: y = 16 × 14 = 224 piezas.",
+          "pistas": [
+            "Primero calcula la tasa por hora dividiendo piezas entre horas, después multiplica por las nuevas horas.",
+            "k = 156 ÷ 9.75 = 16 piezas por hora; en 14 horas: y = 16 × 14."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -123,7 +135,24 @@
           "respuestaCorrecta": 1,
           "retroalimentacion": "El taxi (B) tiene un cargo fijo de $18, así que nunca es proporcional. En cambio, con un solo par de valores (A) no hay suficiente información para saber si toda la relación cumple y=kx."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Una nevería vende cada paleta a $12, de forma proporcional al número vendido, pero también paga una renta fija de $80 al día. Si en un día vendieron 65 paletas, ¿cuál fue su ganancia neta ese día?",
+        "pasos": [
+          {
+            "texto": "Calculamos el ingreso por ventas (relación proporcional).",
+            "operacion": "12 × 65 = 780"
+          },
+          {
+            "texto": "Restamos la renta fija (que no es proporcional).",
+            "operacion": "780 - 80 = 700"
+          },
+          {
+            "texto": "Concluimos cuál fue la ganancia neta."
+          }
+        ],
+        "respuestaFinal": "La ganancia neta de ese día fue de $700."
+      }
     }
   ],
   "practicaExtra": [

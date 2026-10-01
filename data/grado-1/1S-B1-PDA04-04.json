@@ -33,7 +33,11 @@
             "16"
           ],
           "respuestaCorrecta": 3,
-          "retroalimentacion": "término_8 = 2 + (8-1)×2 = 16."
+          "retroalimentacion": "término_8 = 2 + (8-1)×2 = 16.",
+          "pistas": [
+            "Aplica la fórmula con a=2, d=2, n=8.",
+            "2+(8-1)×2 = 2+14."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -125,7 +129,11 @@
           "tipo": "llenar_frase",
           "frase": "Con a=1 y d=6, el término 5 de la sucesión es ___.",
           "respuestaCorrecta": "25",
-          "retroalimentacion": "término_5 = 1 + (5-1)×6 = 1+24 = 25."
+          "retroalimentacion": "término_5 = 1 + (5-1)×6 = 1+24 = 25.",
+          "pistas": [
+            "Aplica la fórmula con a=1, d=6, n=5.",
+            "1+(5-1)×6 = 1+24."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -137,7 +145,11 @@
             "7"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "término_5 = 9 + (5-1)×(-4) = 9-16 = -7."
+          "retroalimentacion": "término_5 = 9 + (5-1)×(-4) = 9-16 = -7.",
+          "pistas": [
+            "Aplica la fórmula con a=9, d=-4, n=5 — recuerda que d es negativo.",
+            "9+(5-1)×(-4) = 9-16."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -166,7 +178,24 @@
           "retroalimentacion": "Falso: término_4 = 3 + (4-1)×4 = 3+12 = 15, no 16."
         }
       ],
-      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis"
+      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis",
+      "ejemploResuelto": {
+        "enunciado": "Un panadero acomoda charolas: la primera tiene 9 piezas y cada charola siguiente tiene 5 piezas más. ¿Cuántas piezas tendrá la charola número 6?",
+        "pasos": [
+          {
+            "texto": "Identificamos a=9, d=5, n=6."
+          },
+          {
+            "texto": "Aplicamos la fórmula.",
+            "operacion": "término_6 = 9+(6-1)×5"
+          },
+          {
+            "texto": "Calculamos.",
+            "operacion": "9+25 = 34"
+          }
+        ],
+        "respuestaFinal": "La charola 6 tendrá 34 piezas."
+      }
     }
   ],
   "practicaExtra": [

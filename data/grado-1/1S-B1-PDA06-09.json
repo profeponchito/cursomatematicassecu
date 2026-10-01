@@ -46,7 +46,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "La solución de 2.5(x + 4) = 3x + 9 es x = 2.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: 2.5x+10=3x+9 → 1=0.5x → x=2."
+          "retroalimentacion": "Correcto: 2.5x+10=3x+9 → 1=0.5x → x=2.",
+          "pistas": [
+            "Distribuye el paréntesis.",
+            "2.5x + 10 = 3x + 9; entonces 10 - 9 = 3x - 2.5x, 1 = 0.5x, x = 1 ÷ 0.5."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -82,13 +86,21 @@
             "x=8.67"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "1.5x-0.5x=19-7 → x=12."
+          "retroalimentacion": "1.5x-0.5x=19-7 → x=12.",
+          "pistas": [
+            "Agrupa los términos con x restando 0.5x de ambos lados.",
+            "1.5x - 0.5x = 19 - 7; entonces x = 12."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "La solución de x/5 + 1.5 = 5.5 es x = 20.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: x/5=5.5-1.5=4 → x=5×4=20."
+          "retroalimentacion": "Correcto: x/5=5.5-1.5=4 → x=5×4=20.",
+          "pistas": [
+            "Resta 1.5 de ambos lados, después multiplica por 5.",
+            "x/5 = 5.5 - 1.5 = 4; entonces x = 5 × 4."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -117,7 +129,25 @@
           "retroalimentacion": "3(x-2)=x+8 → x=7; x/3+5=2x-10 → x=9; 5(x+1)=2x+20 → x=5."
         }
       ],
-      "nivelEtiqueta": "Nivel 9 de 10 · Integración"
+      "nivelEtiqueta": "Nivel 9 de 10 · Integración",
+      "ejemploResuelto": {
+        "enunciado": "Una tienda de bicicletas ofrece dos paquetes según el precio del casco x: el paquete A cuesta 3(x-2) pesos y el paquete B cuesta 2x+6 pesos. ¿Para qué precio ambos paquetes cuestan lo mismo?",
+        "pasos": [
+          {
+            "texto": "Distribuimos el paréntesis del paquete A.",
+            "operacion": "3(x-2) = 2x+6  →  3x-6 = 2x+6"
+          },
+          {
+            "texto": "Agrupamos las x de un lado y los números del otro.",
+            "operacion": "3x - 2x = 6 + 6"
+          },
+          {
+            "texto": "Calculamos el resultado.",
+            "operacion": "x = 12"
+          }
+        ],
+        "respuestaFinal": "x = 12."
+      }
     }
   ],
   "practicaExtra": [

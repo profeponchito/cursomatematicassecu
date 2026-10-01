@@ -30,7 +30,11 @@
           "tipo": "llenar_frase",
           "frase": "El kilo de tortillas cuesta $18. Si Ana compra 2.5 kg, paga $___.",
           "respuestaCorrecta": "45",
-          "retroalimentacion": "y = k × x = 18 × 2.5 = $45."
+          "retroalimentacion": "y = k × x = 18 × 2.5 = $45.",
+          "pistas": [
+            "Multiplica el precio por kilo (k) por la cantidad comprada (x).",
+            "y = k × x = 18 × 2.5."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -48,7 +52,11 @@
             "9"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "y = k × x = 7 × 1.5 = 10.5."
+          "retroalimentacion": "y = k × x = 7 × 1.5 = 10.5.",
+          "pistas": [
+            "Multiplica k por x.",
+            "y = 7 × 1.5."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -78,7 +86,11 @@
           "tipo": "llenar_frase",
           "frase": "La gasolina cuesta $24 por litro. Si Pedro cargó 12.5 litros, pagó $___.",
           "respuestaCorrecta": "300",
-          "retroalimentacion": "y = k × x = 24 × 12.5 = $300."
+          "retroalimentacion": "y = k × x = 24 × 12.5 = $300.",
+          "pistas": [
+            "Multiplica el precio por litro (k) por los litros cargados (x).",
+            "y = 24 × 12.5."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -118,7 +130,25 @@
           "respuestaCorrecta": "63",
           "retroalimentacion": "k = 27÷3 = 9, entonces y = 9 × 7 = 63."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "En una tortillería, la constante de proporcionalidad entre kilos comprados y su costo es k=16.50 pesos por kilo. ¿Cuánto costarán 4.5 kilogramos de tortillas?",
+        "pasos": [
+          {
+            "texto": "Usamos la fórmula y = k × x.",
+            "operacion": "y = k × x"
+          },
+          {
+            "texto": "Sustituimos los valores conocidos.",
+            "operacion": "y = 16.50 × 4.5"
+          },
+          {
+            "texto": "Calculamos el resultado.",
+            "operacion": "y = 74.25"
+          }
+        ],
+        "respuestaFinal": "4.5 kilogramos de tortillas costarán $74.25."
+      }
     }
   ],
   "practicaExtra": [

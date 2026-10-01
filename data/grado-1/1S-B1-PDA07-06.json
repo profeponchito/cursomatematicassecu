@@ -48,7 +48,11 @@
             "No se puede saber sin una gráfica"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Sí es función: lo que importa es que cada x tenga una sola salida; que dos x distintas compartan la misma y sí está permitido."
+          "retroalimentacion": "Sí es función: lo que importa es que cada x tenga una sola salida; que dos x distintas compartan la misma y sí está permitido.",
+          "pistas": [
+            "Revisa si alguna entrada (x) tiene más de una flecha de salida, no si dos salidas se repiten.",
+            "Cada x (3, 4 y 5) tiene una sola salida, aunque dos de ellas compartan el mismo valor de y=9: sí es función."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -66,7 +70,11 @@
           "tipo": "llenar_frase",
           "frase": "En un diagrama sagital, x=7 tiene una sola flecha hacia y=42. Si esta relación fuera proporcional, su constante sería k=___.",
           "respuestaCorrecta": "6",
-          "retroalimentacion": "k = y ÷ x = 42 ÷ 7 = 6."
+          "retroalimentacion": "k = y ÷ x = 42 ÷ 7 = 6.",
+          "pistas": [
+            "Divide y entre x para encontrar la constante.",
+            "k = 42 ÷ 7."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -110,7 +118,11 @@
           "tipo": "llenar_frase",
           "frase": "Un diagrama sagital es función y además proporcional. Si x=8 apunta a y=56, entonces k = ___.",
           "respuestaCorrecta": "7",
-          "retroalimentacion": "k = y ÷ x = 56 ÷ 8 = 7."
+          "retroalimentacion": "k = y ÷ x = 56 ÷ 8 = 7.",
+          "pistas": [
+            "Divide y entre x.",
+            "k = 56 ÷ 8."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -118,7 +130,22 @@
           "respuestaCorrecta": false,
           "retroalimentacion": "Falso: ser función significa que cada entrada tiene una sola salida, sin importar si la relación es proporcional o no."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "En un diagrama de flechas de una rifa, el boleto número 9 aparece conectado únicamente con el nombre de Valeria, y el boleto número 20 aparece conectado únicamente con el nombre de Iván. ¿Esta relación entre boletos y ganadores es una función?",
+        "pasos": [
+          {
+            "texto": "Revisamos si cada boleto (entrada) tiene una sola flecha de salida."
+          },
+          {
+            "texto": "El boleto 9 tiene una sola flecha (a Valeria) y el boleto 20 tiene una sola flecha (a Iván)."
+          },
+          {
+            "texto": "Como cada entrada tiene únicamente una salida, concluimos que sí es función."
+          }
+        ],
+        "respuestaFinal": "Sí, es una función, porque cada boleto (entrada) tiene una sola persona ganadora (salida) asociada."
+      }
     }
   ],
   "practicaExtra": [

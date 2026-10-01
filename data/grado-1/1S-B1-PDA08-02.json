@@ -29,7 +29,11 @@
           "tipo": "llenar_frase",
           "frase": "Si un ángulo mide 35°, su complementario mide ___°.",
           "respuestaCorrecta": "55",
-          "retroalimentacion": "90−35=55°, ya que 35°+55°=90°."
+          "retroalimentacion": "90−35=55°, ya que 35°+55°=90°.",
+          "pistas": [
+            "Resta la medida del ángulo a 90°.",
+            "90 − 35 = 55°."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -47,7 +51,11 @@
             "50°"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "90−20=70°."
+          "retroalimentacion": "90−20=70°.",
+          "pistas": [
+            "Resta el ángulo a 90°.",
+            "90 − 20 = 70°."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -101,7 +109,11 @@
           "tipo": "llenar_frase",
           "frase": "Si un ángulo mide 82°, su complementario mide ___°.",
           "respuestaCorrecta": "8",
-          "retroalimentacion": "90−82=8°."
+          "retroalimentacion": "90−82=8°.",
+          "pistas": [
+            "Resta el ángulo a 90°.",
+            "90 − 82 = 8°."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -127,7 +139,25 @@
           "retroalimentacion": "30°→60° (90−30); 55°→35° (90−55); 10°→80° (90−10); 75°→15° (90−75)."
         }
       ],
-      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio"
+      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio",
+      "ejemploResuelto": {
+        "enunciado": "Al doblar otra esquina de su grulla, Valeria forma un ángulo de 73° con el borde de la hoja. ¿Cuánto mide su ángulo suplementario?",
+        "pasos": [
+          {
+            "texto": "Usamos la fórmula del suplemento.",
+            "operacion": "suplemento = 180° − ángulo"
+          },
+          {
+            "texto": "Sustituimos el valor conocido.",
+            "operacion": "180 − 73"
+          },
+          {
+            "texto": "Calculamos el resultado.",
+            "operacion": "107°"
+          }
+        ],
+        "respuestaFinal": "Su ángulo suplementario mide 107°."
+      }
     }
   ],
   "practicaExtra": [

@@ -36,7 +36,11 @@
             "11/24"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "40 = 2³ × 5 (solo factores 2 y 5) → finito. Los denominadores 12, 15 y 24 tienen el factor 3, así que dan decimales periódicos."
+          "retroalimentacion": "40 = 2³ × 5 (solo factores 2 y 5) → finito. Los denominadores 12, 15 y 24 tienen el factor 3, así que dan decimales periódicos.",
+          "pistas": [
+            "Factoriza cada denominador: si solo tiene 2 y/o 5, el decimal es finito.",
+            "Busca cuál denominador NO tiene el factor 3 (ni ningún otro primo distinto de 2 y 5)."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -48,7 +52,11 @@
           "tipo": "llenar_frase",
           "frase": "7/12 escrito como decimal, redondeado a milésimos (3 cifras), es ___.",
           "respuestaCorrecta": "0.583",
-          "retroalimentacion": "7 ÷ 12 = 0.58333..., que redondeado a milésimos es 0.583."
+          "retroalimentacion": "7 ÷ 12 = 0.58333..., que redondeado a milésimos es 0.583.",
+          "pistas": [
+            "12 = 2² × 3, así que el decimal de 7/12 es periódico, igual que en el ejemplo de Karina.",
+            "7 ÷ 12 = 0.58333..., redondea a 3 cifras decimales (milésimos)."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -72,7 +80,11 @@
           "tipo": "llenar_frase",
           "frase": "11/12 escrito como decimal, redondeado a milésimos, es ___.",
           "respuestaCorrecta": "0.917",
-          "retroalimentacion": "11 ÷ 12 = 0.91666..., que redondeado a milésimos es 0.917."
+          "retroalimentacion": "11 ÷ 12 = 0.91666..., que redondeado a milésimos es 0.917.",
+          "pistas": [
+            "11 ÷ 12 también es periódico, por el mismo factor 3 en el denominador.",
+            "11 ÷ 12 = 0.91666..., redondea a milésimos."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -119,7 +131,24 @@
           ],
           "retroalimentacion": "9/40 (2³×5) y 11/50 (2×5²) son finitos; 7/12 (2²×3) y 5/6 (2×3) son periódicos por el factor 3."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "En el mismo torneo, otro jugador, Beto, ganó 4 de cada 9 sets que jugó. ¿Qué tipo de decimal resulta de 4/9, y cómo se redondea a dos cifras?",
+        "pasos": [
+          {
+            "texto": "Factorizamos el denominador ya simplificado.",
+            "operacion": "9 = 3²"
+          },
+          {
+            "texto": "Como aparece el factor 3 (distinto de 2 y 5), el decimal es periódico."
+          },
+          {
+            "texto": "Dividimos y redondeamos a centésimos.",
+            "operacion": "4 ÷ 9 = 0.4444... ≈ 0.44"
+          }
+        ],
+        "respuestaFinal": "4/9 = 0.444... (periódico) ≈ 0.44."
+      }
     }
   ],
   "practicaExtra": [

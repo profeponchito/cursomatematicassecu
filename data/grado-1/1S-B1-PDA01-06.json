@@ -36,7 +36,11 @@
             "Las tres son iguales"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "7/12 ≈ 0.583; 0.5; 19/40 = 0.475. La mayor es 7/12."
+          "retroalimentacion": "7/12 ≈ 0.583; 0.5; 19/40 = 0.475. La mayor es 7/12.",
+          "pistas": [
+            "Convierte las tres cantidades a decimal antes de comparar, igual que en el ejemplo.",
+            "7/12 ≈ 0.583 y 19/40 = 0.475 — ¿cuál de las tres opciones es la más grande?"
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -60,7 +64,11 @@
           "tipo": "llenar_frase",
           "frase": "23/40 escrito como decimal es ___.",
           "respuestaCorrecta": "0.575",
-          "retroalimentacion": "23 ÷ 40 = 0.575."
+          "retroalimentacion": "23 ÷ 40 = 0.575.",
+          "pistas": [
+            "Divide 23 entre 40.",
+            "23 ÷ 40 = 0.575."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -84,7 +92,11 @@
           "tipo": "llenar_frase",
           "frase": "29/40 escrito como decimal es ___.",
           "respuestaCorrecta": "0.725",
-          "retroalimentacion": "29 ÷ 40 = 0.725."
+          "retroalimentacion": "29 ÷ 40 = 0.725.",
+          "pistas": [
+            "Divide 29 entre 40.",
+            "29 ÷ 40 = 0.725."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -124,7 +136,24 @@
           ],
           "retroalimentacion": "7/24 ≈ 0.2917...; 11/24 ≈ 0.4583...; 19/24 ≈ 0.7917..."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "En otra carrera, dos corredores avanzaron distintas fracciones de la pista: uno llegó a 11/12 y otro a 0.89. ¿Cuál de los dos avanzó más?",
+        "pasos": [
+          {
+            "texto": "Convertimos la fracción a decimal.",
+            "operacion": "11 ÷ 12 = 0.9166..."
+          },
+          {
+            "texto": "Redondeamos a centésimos para poder comparar con comodidad.",
+            "operacion": "0.9166... ≈ 0.92"
+          },
+          {
+            "texto": "Comparamos: 0.92 es mayor que 0.89."
+          }
+        ],
+        "respuestaFinal": "11/12 ≈ 0.92, que es mayor que 0.89 — ese corredor avanzó más."
+      }
     }
   ],
   "practicaExtra": [

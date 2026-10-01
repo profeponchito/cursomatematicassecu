@@ -35,7 +35,11 @@
             "5°C"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "La más fría es -18°C y la más caliente es 6°C; la diferencia es |−18 − 6| = 24°C."
+          "retroalimentacion": "La más fría es -18°C y la más caliente es 6°C; la diferencia es |−18 − 6| = 24°C.",
+          "pistas": [
+            "La diferencia entre la más fría y la más caliente es la distancia entre esos dos valores.",
+            "La más fría es -18°C y la más caliente 6°C: calcula |−18 − 6|."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -59,7 +63,11 @@
             "Jugador B"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "-7 es el menor de los cuatro resultados, así que el Jugador C ganó."
+          "retroalimentacion": "-7 es el menor de los cuatro resultados, así que el Jugador C ganó.",
+          "pistas": [
+            "En este juego gana quien tiene el MENOR resultado, no el mayor.",
+            "Compara -4, 2, -7, 0 — el menor de los cuatro es -7."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -112,7 +120,11 @@
           "tipo": "llenar_frase",
           "frase": "La distancia entre el submarino más profundo (-310 m) y el más cercano a la superficie (-85 m) es ___ m.",
           "respuestaCorrecta": "225",
-          "retroalimentacion": "La distancia es |−310 − (−85)| = 225 m."
+          "retroalimentacion": "La distancia es |−310 − (−85)| = 225 m.",
+          "pistas": [
+            "Calcula la distancia entre el más profundo y el más cercano a la superficie.",
+            "|−310 − (−85)| = distancia en metros."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -126,7 +138,24 @@
           "respuestaCorrecta": 0,
           "retroalimentacion": "40 es mayor que todos los demás valores (-310, -220, -150, -85), así que queda en la última posición: 5ta."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "En otra competencia de clavados, dos participantes obtuvieron -3.5 y +2 respecto al puntaje esperado. ¿Quién se alejó más del puntaje esperado, y qué distancia hay entre ambos resultados?",
+        "pasos": [
+          {
+            "texto": "Calculamos el valor absoluto de cada uno.",
+            "operacion": "|−3.5| = 3.5  |2| = 2"
+          },
+          {
+            "texto": "Comparamos: 3.5 es mayor, así que ese participante se alejó más."
+          },
+          {
+            "texto": "Calculamos la distancia entre ambos resultados.",
+            "operacion": "|−3.5 − 2| = 5.5"
+          }
+        ],
+        "respuestaFinal": "El de -3.5 se alejó más del puntaje esperado; la distancia entre ambos resultados es 5.5."
+      }
     }
   ],
   "practicaExtra": [

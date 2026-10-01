@@ -36,7 +36,11 @@
             "0.95 > 33/40 > 37/40"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "37/40 = 0.925 y 33/40 = 0.825, así que el orden de mayor a menor es 0.95 > 0.925 > 0.825."
+          "retroalimentacion": "37/40 = 0.925 y 33/40 = 0.825, así que el orden de mayor a menor es 0.95 > 0.925 > 0.825.",
+          "pistas": [
+            "Convierte las tres cantidades a decimal antes de ordenarlas.",
+            "37/40 = 0.925 y 33/40 = 0.825 — ahora ordénalas junto con 0.95."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -60,7 +64,11 @@
             "0.58"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "21 ÷ 50 = 0.42; 0.42 + 0.3 = 0.72; 1 − 0.72 = 0.28 para operación."
+          "retroalimentacion": "21 ÷ 50 = 0.42; 0.42 + 0.3 = 0.72; 1 − 0.72 = 0.28 para operación.",
+          "pistas": [
+            "Primero suma lo que ya sabes que se gastó (producción + marketing).",
+            "21/50 = 0.42; 0.42 + 0.3 = 0.72; lo que falta hasta 1 es para operación."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -96,7 +104,11 @@
             "Los tres turnos cumplieron igual"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "13 ÷ 15 ≈ 0.867, que es mayor que 0.68 y que 29/40 = 0.725."
+          "retroalimentacion": "13 ÷ 15 ≈ 0.867, que es mayor que 0.68 y que 29/40 = 0.725.",
+          "pistas": [
+            "Convierte 13/15 a decimal para comparar con los otros dos turnos.",
+            "13 ÷ 15 ≈ 0.867 — compáralo con 0.68 y con 29/40 (0.725)."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -124,7 +136,24 @@
           ],
           "retroalimentacion": "7/12 ≈ 0.5833...; 0.62 se queda igual; 19/40 = 0.475."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El mismo boletín reporta que el equipo de beisbol ganó 5/9 de sus partidos y el de tenis ganó 0.7 (ya redondeado). ¿Cuál de los dos tuvo mejor resultado?",
+        "pasos": [
+          {
+            "texto": "Convertimos 5/9 a decimal.",
+            "operacion": "5 ÷ 9 = 0.5555..."
+          },
+          {
+            "texto": "Redondeamos a centésimos para comparar.",
+            "operacion": "0.5555... ≈ 0.56"
+          },
+          {
+            "texto": "Comparamos: 0.7 es mayor que 0.56."
+          }
+        ],
+        "respuestaFinal": "Tenis (0.7) tuvo mejor resultado que beisbol (5/9 ≈ 0.56)."
+      }
     }
   ],
   "practicaExtra": [

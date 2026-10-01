@@ -34,7 +34,11 @@
             "Llano"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Un ángulo de 35° es agudo porque es menor que 90°."
+          "retroalimentacion": "Un ángulo de 35° es agudo porque es menor que 90°.",
+          "pistas": [
+            "Compara la medida del ángulo con 90°: si es menor, es agudo.",
+            "35° es menor que 90°, así que es agudo."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -52,7 +56,11 @@
             "Llano"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "Un ángulo de 120° es obtuso porque está entre 90° y 180°."
+          "retroalimentacion": "Un ángulo de 120° es obtuso porque está entre 90° y 180°.",
+          "pistas": [
+            "Revisa si la medida está entre 90° y 180°.",
+            "120° está entre 90° y 180°, así que es obtuso."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -88,7 +96,11 @@
           "tipo": "llenar_frase",
           "frase": "Un ángulo que mide 150° se clasifica como ___.",
           "respuestaCorrecta": "obtuso",
-          "retroalimentacion": "150° está entre 90° y 180°, por lo tanto es obtuso."
+          "retroalimentacion": "150° está entre 90° y 180°, por lo tanto es obtuso.",
+          "pistas": [
+            "Revisa si la medida está entre 90° y 180°.",
+            "150° está entre 90° y 180°, así que es obtuso."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -126,7 +138,22 @@
           "retroalimentacion": "40°→agudo (menor a 90°); 90°→recto; 125°→obtuso (entre 90° y 180°); 180°→llano."
         }
       ],
-      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio"
+      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio",
+      "ejemploResuelto": {
+        "enunciado": "En la misma clase, el profesor traza otra línea para el área de tiro libre de básquetbol y forma un ángulo de 162° en una de las esquinas. ¿Qué tipo de ángulo es?",
+        "pasos": [
+          {
+            "texto": "Comparamos 162° con los rangos de cada tipo de ángulo."
+          },
+          {
+            "texto": "Como 162° está entre 90° y 180°, no es agudo ni recto."
+          },
+          {
+            "texto": "Concluimos que es obtuso, porque mide más de 90° pero menos de 180°."
+          }
+        ],
+        "respuestaFinal": "Es un ángulo obtuso, porque mide más de 90° pero menos de 180°."
+      }
     }
   ],
   "practicaExtra": [

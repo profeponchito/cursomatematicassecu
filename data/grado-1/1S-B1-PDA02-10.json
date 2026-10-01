@@ -41,7 +41,11 @@
             "La de 3.2"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "-20.4 es el número más negativo de la lista, así que representa la mayor deuda."
+          "retroalimentacion": "-20.4 es el número más negativo de la lista, así que representa la mayor deuda.",
+          "pistas": [
+            "La mayor deuda es el número MÁS negativo de la lista.",
+            "Compara -12.75, -12.5, -20.4: ¿cuál está más a la izquierda en la recta numérica?"
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -71,7 +75,11 @@
           "tipo": "llenar_frase",
           "frase": "¿Cuántos números enteros hay estrictamente entre -13 y -7? ___",
           "respuestaCorrecta": "5",
-          "retroalimentacion": "Los enteros son -12, -11, -10, -9, -8: son 5 en total."
+          "retroalimentacion": "Los enteros son -12, -11, -10, -9, -8: son 5 en total.",
+          "pistas": [
+            "Enumera los enteros entre -13 y -7, sin incluir esos dos extremos.",
+            "Son: -12, -11, -10, -9, -8 — cuenta cuántos hay."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -83,7 +91,11 @@
             "90.35 m"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "La más profunda es -52.1 m y la menos profunda es -38.25 m; la diferencia es |−52.1 − (−38.25)| = 13.85 m."
+          "retroalimentacion": "La más profunda es -52.1 m y la menos profunda es -38.25 m; la diferencia es |−52.1 − (−38.25)| = 13.85 m.",
+          "pistas": [
+            "La diferencia entre dos profundidades es la distancia entre ellas.",
+            "|−52.1 − (−38.25)| = distancia en metros entre las dos inmersiones."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -126,7 +138,21 @@
           "respuestaCorrecta": 0,
           "retroalimentacion": "|−31.2| = 31.2 es mayor que |−15.6| = 15.6 y |8.4| = 8.4, así que el submarino está más lejos del nivel del mar."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "En otro reporte, dos sucursales cambiaron -5.6% y 2.3% respecto al mes anterior. ¿Qué sucursal tuvo el peor desempeño, y qué distancia hay entre ambos porcentajes?",
+        "pasos": [
+          {
+            "texto": "El peor desempeño es el número menor.",
+            "operacion": "-5.6% < 2.3%"
+          },
+          {
+            "texto": "Calculamos la distancia entre ambos porcentajes.",
+            "operacion": "|−5.6 − 2.3| = |−7.9| = 7.9"
+          }
+        ],
+        "respuestaFinal": "La sucursal de -5.6% tuvo el peor desempeño; la distancia entre ambas es de 7.9 puntos porcentuales."
+      }
     }
   ],
   "practicaExtra": [

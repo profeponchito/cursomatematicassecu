@@ -35,13 +35,21 @@
             "100°"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "130+150=280°; 360−280=80°."
+          "retroalimentacion": "130+150=280°; 360−280=80°.",
+          "pistas": [
+            "Suma los ángulos conocidos y réstalos de 360°.",
+            "130 + 150 = 280°; 360 − 280 = 80°."
+          ]
         },
         {
           "tipo": "llenar_frase",
           "frase": "En una rotonda (glorieta) llegan 4 calles que forman ángulos consecutivos de 80°, 95°, 100° y uno desconocido alrededor del centro. El ángulo faltante mide ___°.",
           "respuestaCorrecta": "85",
-          "retroalimentacion": "80+95+100=275°; 360−275=85°."
+          "retroalimentacion": "80+95+100=275°; 360−275=85°.",
+          "pistas": [
+            "Suma los ángulos conocidos y réstalos de 360°.",
+            "80 + 95 + 100 = 275°; 360 − 275 = 85°."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -101,7 +109,11 @@
           "tipo": "llenar_frase",
           "frase": "En una rotonda llegan 5 calles que forman ángulos consecutivos de 60°, 75°, 68°, 82° y uno desconocido. El ángulo faltante mide ___°.",
           "respuestaCorrecta": "75",
-          "retroalimentacion": "60+75+68+82=285°; 360−285=75°."
+          "retroalimentacion": "60+75+68+82=285°; 360−285=75°.",
+          "pistas": [
+            "Suma los cuatro ángulos conocidos y réstalos de 360°.",
+            "60 + 75 + 68 + 82 = 285°; 360 − 285 = 75°."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -127,7 +139,24 @@
           "retroalimentacion": "360−120−100=140°; 360−90×3=90°; 360−150−80−70=60°; 360−60×4=120°."
         }
       ],
-      "nivelEtiqueta": "Nivel 7 de 10 · Reto"
+      "nivelEtiqueta": "Nivel 7 de 10 · Reto",
+      "ejemploResuelto": {
+        "enunciado": "En la misma feria, arman un carrusel con 5 caballos repartidos de manera desigual alrededor del centro. Ya se sabe que 4 de los ángulos entre caballos consecutivos suman 275°. ¿Cuánto debe medir el ángulo que falta?",
+        "pasos": [
+          {
+            "texto": "Recordamos que los ángulos alrededor de un punto suman 360°."
+          },
+          {
+            "texto": "Restamos la suma conocida.",
+            "operacion": "360 − 275"
+          },
+          {
+            "texto": "Obtenemos el ángulo faltante.",
+            "operacion": "85°"
+          }
+        ],
+        "respuestaFinal": "El ángulo que falta mide 85°."
+      }
     }
   ],
   "practicaExtra": [

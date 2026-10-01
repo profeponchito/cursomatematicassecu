@@ -34,7 +34,11 @@
             "98°, agudo"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Colateral interno: 180−112=68°, y 68° es agudo porque es menor que 90°."
+          "retroalimentacion": "Colateral interno: 180−112=68°, y 68° es agudo porque es menor que 90°.",
+          "pistas": [
+            "Resta el ángulo a 180° para obtener el colateral interno, y clasifícalo comparándolo con 90°.",
+            "Colateral interno: 180 − 112 = 68°, que es agudo porque es menor que 90°."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -64,7 +68,11 @@
           "tipo": "llenar_frase",
           "frase": "Un poste de luz tiene dos cables que se cruzan formando un ángulo de 27°. Su opuesto por el vértice mide 27°, y el complemento de ese ángulo de 27° mide ___°.",
           "respuestaCorrecta": "63",
-          "retroalimentacion": "El complemento de 27° es 90−27=63°."
+          "retroalimentacion": "El complemento de 27° es 90−27=63°.",
+          "pistas": [
+            "El opuesto por el vértice es igual al original; después resta ese valor a 90° para el complemento.",
+            "El opuesto por el vértice mide 27°; su complemento es 90 − 27 = 63°."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -100,7 +108,11 @@
           "tipo": "llenar_frase",
           "frase": "Dos calles paralelas son cortadas por una avenida transversal. Un ángulo mide (4x+5)° y su correspondiente mide (2x+45)°. El valor de x es ___.",
           "respuestaCorrecta": "20",
-          "retroalimentacion": "4x+5=2x+45 → 2x=40 → x=20°."
+          "retroalimentacion": "4x+5=2x+45 → 2x=40 → x=20°.",
+          "pistas": [
+            "Los ángulos correspondientes son iguales; iguala ambas expresiones.",
+            "4x+5 = 2x+45 → 2x=40 → x=20°."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -126,7 +138,24 @@
           "retroalimentacion": "Opuesto de 42°=42°; adyacente de 42°=180−42=138°; colateral interno de 65°=180−65=115°; complemento de 65°=90−65=25°."
         }
       ],
-      "nivelEtiqueta": "Nivel 9 de 10 · Integración"
+      "nivelEtiqueta": "Nivel 9 de 10 · Integración",
+      "ejemploResuelto": {
+        "enunciado": "En otro cruce, Diego observa que dos avenidas paralelas son cortadas por una calle transversal, y uno de los ángulos formados mide 132°. ¿Cómo se clasifica, cuánto mide su ángulo colateral interno, y cuánto mide el ángulo opuesto por el vértice de este último?",
+        "pasos": [
+          {
+            "texto": "Clasificamos 132°: está entre 90° y 180°, así que es obtuso."
+          },
+          {
+            "texto": "Calculamos su colateral interno.",
+            "operacion": "180 − 132 = 48°"
+          },
+          {
+            "texto": "El ángulo opuesto por el vértice del colateral interno es igual a él mismo.",
+            "operacion": "48°"
+          }
+        ],
+        "respuestaFinal": "132° es obtuso; su colateral interno mide 48° (agudo), y el opuesto por el vértice de ese colateral interno también mide 48°."
+      }
     }
   ],
   "practicaExtra": [

@@ -41,7 +41,11 @@
           "tipo": "llenar_frase",
           "frase": "Un jarro contiene 9/40 de litro de leche y se le agregan 0.4 litros más. En total, expresado en decimal, tiene ___ litros.",
           "respuestaCorrecta": "0.625",
-          "retroalimentacion": "9 ÷ 40 = 0.225, y 0.225 + 0.4 = 0.625 litros."
+          "retroalimentacion": "9 ÷ 40 = 0.225, y 0.225 + 0.4 = 0.625 litros.",
+          "pistas": [
+            "Primero convierte 9/40 a decimal, después suma.",
+            "9 ÷ 40 = 0.225, y 0.225 + 0.4 = 0.625."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -65,7 +69,11 @@
           "tipo": "llenar_frase",
           "frase": "En una tienda, dos descuentos sucesivos representan 21/50 y 0.15 del precio original. Sumados, representan ___ del precio (en decimal).",
           "respuestaCorrecta": "0.57",
-          "retroalimentacion": "21 ÷ 50 = 0.42, y 0.42 + 0.15 = 0.57."
+          "retroalimentacion": "21 ÷ 50 = 0.42, y 0.42 + 0.15 = 0.57.",
+          "pistas": [
+            "Convierte 21/50 a decimal antes de sumar.",
+            "21 ÷ 50 = 0.42, y 0.42 + 0.15 = 0.57."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -89,7 +97,11 @@
           "tipo": "llenar_frase",
           "frase": "Un albañil avanzó 37/40 de un muro el lunes y avanzó 0.03 más el martes para casi terminarlo. En total avanzó ___ del muro (en decimal).",
           "respuestaCorrecta": "0.955",
-          "retroalimentacion": "37 ÷ 40 = 0.925, y 0.925 + 0.03 = 0.955."
+          "retroalimentacion": "37 ÷ 40 = 0.925, y 0.925 + 0.03 = 0.955.",
+          "pistas": [
+            "Convierte 37/40 primero, igual que en el ejemplo del puesto.",
+            "37 ÷ 40 = 0.925, y 0.925 + 0.03 = 0.955."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -123,7 +135,25 @@
           ],
           "retroalimentacion": "9/40 + 0.2 = 0.225 + 0.2 = 0.425; 21/50 + 0.3 = 0.42 + 0.3 = 0.72; 13/40 + 0.35 = 0.325 + 0.35 = 0.675."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "En el mismo puesto, otro producto se vendió 11/40 de la mercancía en la mañana y 0.25 más en la tarde. ¿Qué fracción del total le queda sin vender?",
+        "pasos": [
+          {
+            "texto": "Convertimos la fracción de la mañana a decimal.",
+            "operacion": "11 ÷ 40 = 0.275"
+          },
+          {
+            "texto": "Sumamos lo vendido en la mañana y en la tarde.",
+            "operacion": "0.275 + 0.25 = 0.525"
+          },
+          {
+            "texto": "Restamos del total (1 entero) para saber lo que queda sin vender.",
+            "operacion": "1 − 0.525 = 0.475"
+          }
+        ],
+        "respuestaFinal": "Le queda 0.475 = 19/40 sin vender."
+      }
     }
   ],
   "practicaExtra": [

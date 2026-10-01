@@ -29,7 +29,11 @@
           "tipo": "llenar_frase",
           "frase": "Un triángulo tiene ángulos de 50° y 70°. El tercer ángulo mide ___°.",
           "respuestaCorrecta": "60",
-          "retroalimentacion": "180°-50°-70°=60°."
+          "retroalimentacion": "180°-50°-70°=60°.",
+          "pistas": [
+            "Suma los dos ángulos conocidos y resta el resultado de 180°.",
+            "180 - 50 - 70 = 60°."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -53,7 +57,11 @@
           "tipo": "llenar_frase",
           "frase": "Un triángulo tiene ángulos de 65° y 65°. El tercer ángulo mide ___°.",
           "respuestaCorrecta": "50",
-          "retroalimentacion": "180°-65°-65°=50°."
+          "retroalimentacion": "180°-65°-65°=50°.",
+          "pistas": [
+            "Suma los dos ángulos conocidos y resta de 180°.",
+            "180 - 65 - 65 = 50°."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -77,7 +85,11 @@
           "tipo": "llenar_frase",
           "frase": "Un triángulo tiene un ángulo de 90° y otro de 25°. El tercer ángulo mide ___°.",
           "respuestaCorrecta": "65",
-          "retroalimentacion": "180°-90°-25°=65°."
+          "retroalimentacion": "180°-90°-25°=65°.",
+          "pistas": [
+            "Suma los dos ángulos conocidos y resta de 180°.",
+            "180 - 90 - 25 = 65°."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -118,7 +130,24 @@
           "retroalimentacion": "Correcto: 45°+45°+90°=180°. Tiene un ángulo de 90° (rectángulo) y dos ángulos iguales, lo que corresponde a dos lados iguales (isósceles)."
         }
       ],
-      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio"
+      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio",
+      "ejemploResuelto": {
+        "enunciado": "Doña Lupita corta otra pieza triangular donde dos ángulos miden 48° y 97°. ¿Cuánto mide el tercer ángulo?",
+        "pasos": [
+          {
+            "texto": "Usamos que la suma de los ángulos internos es 180°."
+          },
+          {
+            "texto": "Sumamos los dos ángulos conocidos.",
+            "operacion": "48 + 97 = 145"
+          },
+          {
+            "texto": "Restamos de 180°.",
+            "operacion": "180 - 145 = 35°"
+          }
+        ],
+        "respuestaFinal": "El tercer ángulo mide 35°."
+      }
     }
   ],
   "practicaExtra": [

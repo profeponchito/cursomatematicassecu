@@ -58,7 +58,11 @@
             "0.22"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "3 ÷ 25 = 0.12."
+          "retroalimentacion": "3 ÷ 25 = 0.12.",
+          "pistas": [
+            "Divide numerador entre denominador, igual que en el ejemplo resuelto.",
+            "3 ÷ 25 — piensa en 3/25 como una fracción equivalente con denominador 100 (multiplica ambos por 4)."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -100,7 +104,11 @@
           "tipo": "llenar_frase",
           "frase": "Una botella contiene 3/4 de litro de agua. Expresado en decimal, es ___ litros.",
           "respuestaCorrecta": "0.75",
-          "retroalimentacion": "3 ÷ 4 = 0.75."
+          "retroalimentacion": "3 ÷ 4 = 0.75.",
+          "pistas": [
+            "3/4 es una fracción muy común en la vida diaria — ¿ya la habías convertido antes?",
+            "3 ÷ 4 = 0.75."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -118,7 +126,11 @@
             "4.5"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "9 ÷ 20 = 0.45."
+          "retroalimentacion": "9 ÷ 20 = 0.45.",
+          "pistas": [
+            "9 ÷ 20 — puedes multiplicar numerador y denominador por 5 para tener denominador 100.",
+            "9×5=45 y 20×5=100, entonces 9/20 = 45/100 = 0.45."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -141,7 +153,24 @@
           "retroalimentacion": "0.5 = 1/2; 0.2 = 1/5; 0.75 = 3/4."
         }
       ],
-      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado"
+      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado",
+      "ejemploResuelto": {
+        "enunciado": "En el mismo mercado, un puesto de almendras anuncia '7/20 de kilo' a 50 pesos, y otro puesto anuncia '0.35 kilogramos' al mismo precio. Los clientes se preguntan si es la misma cantidad.",
+        "pasos": [
+          {
+            "texto": "Convertimos la fracción a decimal dividiendo numerador entre denominador.",
+            "operacion": "7 ÷ 20 = 0.35"
+          },
+          {
+            "texto": "Comparamos el resultado con el decimal anunciado en el otro puesto.",
+            "operacion": "0.35 = 0.35"
+          },
+          {
+            "texto": "Como ambos números son iguales, es la misma cantidad de almendras, solo escrita de dos formas distintas."
+          }
+        ],
+        "respuestaFinal": "7/20 = 0.35, así que sí es la misma cantidad."
+      }
     }
   ],
   "practicaExtra": [

@@ -35,7 +35,11 @@
             "20.8%"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "7÷36=0.19444..., que redondeado a un decimal es 19.4%."
+          "retroalimentacion": "7÷36=0.19444..., que redondeado a un decimal es 19.4%.",
+          "pistas": [
+            "Divide la frecuencia entre el total y multiplica por 100.",
+            "7÷36=0.19444..., que redondeado a un decimal es 19.4%."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -59,7 +63,11 @@
             "50%"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "17÷36=0.4722..., que redondeado a un decimal es 47.2%. Verifica: 14+17+5=36."
+          "retroalimentacion": "17÷36=0.4722..., que redondeado a un decimal es 47.2%. Verifica: 14+17+5=36.",
+          "pistas": [
+            "Divide la frecuencia del intervalo entre el total.",
+            "17÷36=0.4722..., que redondeado a un decimal es 47.2%. Verifica: 14+17+5=36."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -118,7 +126,11 @@
             0,
             1
           ],
-          "retroalimentacion": "Fútbol=15÷36=41.7%; básquetbol=9÷36=25%; voleibol=7÷36=19.4%; atletismo=5÷36=13.9%."
+          "retroalimentacion": "Fútbol=15÷36=41.7%; básquetbol=9÷36=25%; voleibol=7÷36=19.4%; atletismo=5÷36=13.9%.",
+          "pistas": [
+            "Divide cada frecuencia entre el total y multiplica por 100, redondeando a un decimal.",
+            "Fútbol=15÷36=41.7%; básquetbol=9÷36=25%; voleibol=7÷36=19.4%; atletismo=5÷36=13.9%."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -132,7 +144,25 @@
           "respuestaCorrecta": 1,
           "retroalimentacion": "Agrupar en intervalos sigue siendo una variable cuantitativa; solo cambia cómo se organiza. Sin importar el tamaño de los intervalos, la suma de sus frecuencias siempre debe coincidir con el total de datos recolectados."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Para el mismo torneo, se encuestó a 30 alumnos de 2° sobre su deporte favorito entre natación, ciclismo y atletismo: natación=14, ciclismo=10, atletismo=6. ¿Qué porcentaje exacto (con un decimal) prefiere ciclismo?",
+        "pasos": [
+          {
+            "texto": "Verificamos que la suma coincida con el total.",
+            "operacion": "14+10+6=30"
+          },
+          {
+            "texto": "Dividimos la frecuencia de ciclismo entre el total.",
+            "operacion": "10 ÷ 30"
+          },
+          {
+            "texto": "Convertimos a porcentaje y redondeamos.",
+            "operacion": "33.3%"
+          }
+        ],
+        "respuestaFinal": "El 33.3% de los alumnos prefiere ciclismo."
+      }
     }
   ],
   "practicaExtra": [

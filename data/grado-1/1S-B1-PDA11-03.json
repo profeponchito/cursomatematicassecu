@@ -34,7 +34,11 @@
             "0.075"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "750 ÷ 1000 = 0.75 L."
+          "retroalimentacion": "750 ÷ 1000 = 0.75 L.",
+          "pistas": [
+            "Identifica que tienes mililitros y necesitas litros; divide entre 1000.",
+            "750 ÷ 1000 = 0.75 L."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -58,7 +62,11 @@
             "3.5"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "3.5 m × 100 = 350 cm."
+          "retroalimentacion": "3.5 m × 100 = 350 cm.",
+          "pistas": [
+            "Identifica que tienes metros y necesitas centímetros; multiplica por 100.",
+            "3.5 m × 100 = 350 cm."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -82,7 +90,11 @@
             "20"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "2 kg × 1000 = 2000 g."
+          "retroalimentacion": "2 kg × 1000 = 2000 g.",
+          "pistas": [
+            "Identifica que tienes kilogramos y necesitas gramos; multiplica por 1000.",
+            "2 kg × 1000 = 2000 g."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -117,7 +129,24 @@
           "retroalimentacion": "500 mL = 0.5 L. 10 kg = 10000 g. 2.5 km = 2500 m."
         }
       ],
-      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado"
+      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado",
+      "ejemploResuelto": {
+        "enunciado": "El abuelo de Renata va a preparar un jarabe y la receta pide 1200 gramos de azúcar, pero la báscula de la cocina solo marca kilogramos. ¿A cuántos kilogramos equivalen esos 1200 gramos?",
+        "pasos": [
+          {
+            "texto": "Identificamos que tenemos gramos y necesitamos kilogramos."
+          },
+          {
+            "texto": "Usamos que 1 kg = 1000 g, así que dividimos.",
+            "operacion": "1200 ÷ 1000"
+          },
+          {
+            "texto": "Calculamos el resultado.",
+            "operacion": "1.2 kg"
+          }
+        ],
+        "respuestaFinal": "Los 1200 gramos equivalen a 1.2 kilogramos."
+      }
     }
   ],
   "practicaExtra": [

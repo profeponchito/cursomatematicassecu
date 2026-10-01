@@ -28,7 +28,11 @@
           "tipo": "llenar_frase",
           "frase": "Un club de lectura empieza con 14 libros leídos el primer mes y aumenta 3 libros cada mes (a=14, d=3). ¿Cuántos libros en total ha leído hasta el mes en que llega a leer 35 libros en un mes? Respuesta: ___ libros en total.",
           "respuestaCorrecta": "196",
-          "retroalimentacion": "n = (35-14)÷3+1 = 8. S₈ = 8×(14+35)÷2 = 196."
+          "retroalimentacion": "n = (35-14)÷3+1 = 8. S₈ = 8×(14+35)÷2 = 196.",
+          "pistas": [
+            "Primero encuentra en qué mes se llega a 35 libros, después suma todo con la fórmula de Sₙ.",
+            "n=(35-14)÷3+1=8; S₈=8×(14+35)÷2."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -52,7 +56,11 @@
           "tipo": "llenar_frase",
           "frase": "Un gimnasio tiene 30 inscritos el primer mes y aumenta 12 cada mes (a=30, d=12). ¿En qué mes llega a 114 inscritos? Respuesta: mes ___.",
           "respuestaCorrecta": "8",
-          "retroalimentacion": "n = (114-30)÷12+1 = 8."
+          "retroalimentacion": "n = (114-30)÷12+1 = 8.",
+          "pistas": [
+            "Encuentra primero la posición n.",
+            "n=(114-30)÷12+1 = 84÷12+1."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -76,7 +84,11 @@
           "tipo": "llenar_frase",
           "frase": "Un cine ha vendido 25 boletos el día 1 y aumenta 9 cada día (a=25, d=9). ¿En qué día se han vendido 97 boletos ese día? Respuesta: día ___.",
           "respuestaCorrecta": "9",
-          "retroalimentacion": "n = (97-25)÷9+1 = 9."
+          "retroalimentacion": "n = (97-25)÷9+1 = 9.",
+          "pistas": [
+            "Encuentra primero la posición n.",
+            "n=(97-25)÷9+1 = 72÷9+1."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -117,7 +129,25 @@
           "retroalimentacion": "término_5 = 45+4×15=105. S₅ = 5×(45+105)÷2 = 375, no $400. Es falso."
         }
       ],
-      "nivelEtiqueta": "Nivel 9 de 10 · Integración"
+      "nivelEtiqueta": "Nivel 9 de 10 · Integración",
+      "ejemploResuelto": {
+        "enunciado": "Un panadero vende 10 pasteles el primer día y aumenta 8 cada día. ¿En qué día vende 58 pasteles, y cuántos ha vendido en total hasta ese día?",
+        "pasos": [
+          {
+            "texto": "Encontramos la posición n.",
+            "operacion": "n = (58-10)÷8+1 = 6+1 = 7"
+          },
+          {
+            "texto": "Calculamos el total acumulado.",
+            "operacion": "S₇ = 7×(10+58)÷2"
+          },
+          {
+            "texto": "Calculamos.",
+            "operacion": "S₇ = 7×68÷2 = 238"
+          }
+        ],
+        "respuestaFinal": "Vende 58 pasteles el día 7, y en total ha vendido 238 pasteles hasta ese día."
+      }
     }
   ],
   "practicaExtra": [

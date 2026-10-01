@@ -41,7 +41,11 @@
           "tipo": "llenar_frase",
           "frase": "(-15) - (11) = ___.",
           "respuestaCorrecta": "-26",
-          "retroalimentacion": "(-15) - (11) = -26."
+          "retroalimentacion": "(-15) - (11) = -26.",
+          "pistas": [
+            "Restar un número positivo es seguir bajando en la recta numérica.",
+            "(-15) - 11 = -15 + (-11) = -26."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -71,7 +75,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "(-24) ÷ 4 = -6.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Signos diferentes dan resultado negativo: (-24)÷4=-6."
+          "retroalimentacion": "Signos diferentes dan resultado negativo: (-24)÷4=-6.",
+          "pistas": [
+            "Divide 24 entre 4: signos diferentes dan resultado negativo.",
+            "24÷4=6, con signo negativo: -6."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -103,10 +111,31 @@
           "tipo": "llenar_frase",
           "frase": "Un buzo desciende 15 m, luego sube 6 m, desciende otros 9 m y sube 4 m. Su posición final respecto al punto de partida es ___ m.",
           "respuestaCorrecta": "-14",
-          "retroalimentacion": "-15 + 6 - 9 + 4 = -14."
+          "retroalimentacion": "-15 + 6 - 9 + 4 = -14.",
+          "pistas": [
+            "Suma y resta en el orden en que van pasando las cosas, de izquierda a derecha.",
+            "-15 + 6 = -9; -9 - 9 = -18; -18 + 4 = -14."
+          ]
         }
       ],
-      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio"
+      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio",
+      "ejemploResuelto": {
+        "enunciado": "Otra tienda reduce el precio de un pantalón $12 cada semana durante 5 semanas seguidas. ¿Cuánto ha bajado en total el precio?",
+        "pasos": [
+          {
+            "texto": "Escribimos la operación.",
+            "operacion": "(-12) × 5"
+          },
+          {
+            "texto": "Signos diferentes (negativo por positivo) dan resultado negativo."
+          },
+          {
+            "texto": "Multiplicamos los valores absolutos y ponemos el signo negativo.",
+            "operacion": "12×5=60 → -60"
+          }
+        ],
+        "respuestaFinal": "El precio ha bajado $60 en total."
+      }
     }
   ],
   "practicaExtra": [

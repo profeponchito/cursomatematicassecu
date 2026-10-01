@@ -35,7 +35,11 @@
             "-41"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "(-12+27)=15; 15÷3=5; -5×5=-25; -25+(-8)=-33."
+          "retroalimentacion": "(-12+27)=15; 15÷3=5; -5×5=-25; -25+(-8)=-33.",
+          "pistas": [
+            "Resuelve primero el paréntesis, luego el corchete, y al final lo de afuera.",
+            "(-12+27)=15; 15÷3=5; -5×5=-25; y al final súmale -8."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -65,7 +69,11 @@
           "tipo": "llenar_frase",
           "frase": "Aplica la propiedad distributiva y luego la jerarquía: (-7) × [8 + (-3)] ÷ (-5) = ___.",
           "respuestaCorrecta": "7",
-          "retroalimentacion": "8+(-3)=5; (-7)×5=-35; -35÷(-5)=7."
+          "retroalimentacion": "8+(-3)=5; (-7)×5=-35; -35÷(-5)=7.",
+          "pistas": [
+            "Resuelve primero el paréntesis: 8+(-3).",
+            "8+(-3)=5; (-7)×5=-35; y al final divide entre -5."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -91,7 +99,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Si x × (-4) + 10 = -22, entonces x = 8.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: x×(-4)=-22-10=-32; x=-32÷(-4)=8."
+          "retroalimentacion": "Correcto: x×(-4)=-22-10=-32; x=-32÷(-4)=8.",
+          "pistas": [
+            "Despeja paso a paso: primero deshaz el +10, después el ×(-4).",
+            "x×(-4) = -22-10 = -32; entonces x = -32÷(-4)."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -117,7 +129,29 @@
           "respuestaCorrecta": true,
           "retroalimentacion": "Correcto: (-9+4)=-5; -5×3=-15; -2×(-15)=30; 30-6=24."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Una tienda de ropa reporta: obtuvo ventas de 3×(85.5-20.25) pesos, restó un gasto de envío de $22.50, y aplicó una promoción que resta $12.40 por cada uno de 2 pedidos cancelados. ¿Cuál es el balance final?",
+        "pasos": [
+          {
+            "texto": "Resolvemos el paréntesis.",
+            "operacion": "85.5-20.25=65.25"
+          },
+          {
+            "texto": "Multiplicamos.",
+            "operacion": "3×65.25=195.75"
+          },
+          {
+            "texto": "Restamos el envío.",
+            "operacion": "195.75-22.50=173.25"
+          },
+          {
+            "texto": "Restamos la promoción de los pedidos cancelados.",
+            "operacion": "2×12.40=24.80   173.25-24.80=148.45"
+          }
+        ],
+        "respuestaFinal": "El balance final es $148.45."
+      }
     }
   ],
   "practicaExtra": [

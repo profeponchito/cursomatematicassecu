@@ -36,7 +36,11 @@
             "No se puede saber"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "-45.80 < -45.30, así que Luis tiene el saldo más negativo y debe más dinero."
+          "retroalimentacion": "-45.80 < -45.30, así que Luis tiene el saldo más negativo y debe más dinero.",
+          "pistas": [
+            "Ambos saldos tienen la misma parte entera (-45); compara las cifras decimales.",
+            "-45.80 está más a la izquierda que -45.30, así que Luis debe más."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -54,7 +58,11 @@
           "tipo": "llenar_frase",
           "frase": "El número menor entre -3.2, -3.25 y -3.1 es ___.",
           "respuestaCorrecta": "-3.25",
-          "retroalimentacion": "-3.25 está más a la izquierda que -3.2 y -3.1, así que es el menor."
+          "retroalimentacion": "-3.25 está más a la izquierda que -3.2 y -3.1, así que es el menor.",
+          "pistas": [
+            "Los tres números tienen la misma parte entera (-3); compara las centésimas.",
+            "-3.25 está más a la izquierda que -3.2 y -3.1, así que es el menor."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -110,7 +118,11 @@
             "0, -20.15, -85.40, 32.60"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "De menor a mayor: -85.40 < -20.15 < 0 < 32.60."
+          "retroalimentacion": "De menor a mayor: -85.40 < -20.15 < 0 < 32.60.",
+          "pistas": [
+            "Ordena primero los negativos (el más negativo va primero), luego el cero, luego los positivos.",
+            "-85.40 es el más negativo, y 32.60 es el único positivo — va al final."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -118,7 +130,23 @@
           "respuestaCorrecta": "-0.03",
           "retroalimentacion": "-0.03 es el que está más cerca del cero (más a la derecha), así que es el mayor de los tres."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "En la misma cooperativa, el saldo de Pablo marca -8.25 pesos y el de Diana marca -8.4 pesos. ¿Cuál de los dos debe más?",
+        "pasos": [
+          {
+            "texto": "Ambos saldos tienen la misma parte entera (-8), así que comparamos las cifras decimales."
+          },
+          {
+            "texto": "Comparamos: -8.40 está más a la izquierda que -8.25.",
+            "operacion": "-8.40 < -8.25"
+          },
+          {
+            "texto": "El más a la izquierda es el menor: representa la deuda más grande."
+          }
+        ],
+        "respuestaFinal": "Diana (-8.4) debe más que Pablo (-8.25)."
+      }
     }
   ],
   "practicaExtra": [

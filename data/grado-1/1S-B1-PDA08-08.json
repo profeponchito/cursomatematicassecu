@@ -35,13 +35,21 @@
             "x=40°"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Los correspondientes son iguales: 2x=x+30 → x=30°."
+          "retroalimentacion": "Los correspondientes son iguales: 2x=x+30 → x=30°.",
+          "pistas": [
+            "Los ángulos correspondientes son iguales; iguala ambas expresiones.",
+            "2x = x+30 → x = 30°."
+          ]
         },
         {
           "tipo": "llenar_frase",
           "frase": "Dos rectas paralelas son cortadas por una transversal. Un ángulo mide 5x° y su alterno interno mide (3x+20)°. El valor de x es ___.",
           "respuestaCorrecta": "10",
-          "retroalimentacion": "Los alternos internos son iguales: 5x=3x+20 → 2x=20 → x=10°."
+          "retroalimentacion": "Los alternos internos son iguales: 5x=3x+20 → 2x=20 → x=10°.",
+          "pistas": [
+            "Los ángulos alternos internos son iguales; iguala ambas expresiones.",
+            "5x = 3x+20 → 2x=20 → x=10°."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -77,7 +85,11 @@
           "tipo": "llenar_frase",
           "frase": "Dos rectas paralelas son cortadas por una transversal. Un ángulo mide 7x° y su alterno externo mide (5x+16)°. El valor de x es ___.",
           "respuestaCorrecta": "8",
-          "retroalimentacion": "Los alternos externos son iguales: 7x=5x+16 → 2x=16 → x=8°."
+          "retroalimentacion": "Los alternos externos son iguales: 7x=5x+16 → 2x=16 → x=8°.",
+          "pistas": [
+            "Los ángulos alternos externos son iguales; iguala ambas expresiones.",
+            "7x = 5x+16 → 2x=16 → x=8°."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -133,7 +145,25 @@
           "retroalimentacion": "2x=x+50 → x=50°; 3x+x+20=180 → x=40°; 4x=2x+36 → x=18°; 5x−10+3x+30=180 → x=20°."
         }
       ],
-      "nivelEtiqueta": "Nivel 8 de 10 · Reto avanzado"
+      "nivelEtiqueta": "Nivel 8 de 10 · Reto avanzado",
+      "ejemploResuelto": {
+        "enunciado": "En otra avenida de Monterrey, dos calles paralelas son cruzadas por una diagonal. Un ángulo mide 3x° y su colateral interno mide (2x+30)°. ¿Cuál es el valor de x, y cuánto mide cada ángulo?",
+        "pasos": [
+          {
+            "texto": "Como son colaterales internos, planteamos que su suma es 180°.",
+            "operacion": "3x + (2x+30) = 180"
+          },
+          {
+            "texto": "Simplificamos agrupando términos semejantes.",
+            "operacion": "5x + 30 = 180 → 5x = 150"
+          },
+          {
+            "texto": "Despejamos x y calculamos ambos ángulos.",
+            "operacion": "x = 30°; 3(30)=90° y 2(30)+30=90°"
+          }
+        ],
+        "respuestaFinal": "x = 30°; ambos ángulos miden 90°."
+      }
     }
   ],
   "practicaExtra": [

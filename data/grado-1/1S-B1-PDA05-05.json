@@ -42,7 +42,11 @@
           "tipo": "llenar_frase",
           "frase": "Si x=12, el valor de la expresión 3x+7 es ___.",
           "respuestaCorrecta": "43",
-          "retroalimentacion": "3(12)+7 = 36+7 = 43."
+          "retroalimentacion": "3(12)+7 = 36+7 = 43.",
+          "pistas": [
+            "Sustituye x=12 en la expresión y multiplica primero.",
+            "3(12)+7 = 36+7."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -66,7 +70,11 @@
           "tipo": "llenar_frase",
           "frase": "El perímetro de un rectángulo con ancho x y largo x+11 es 4x+22. Si x=8 cm, el perímetro mide ___ cm.",
           "respuestaCorrecta": "54",
-          "retroalimentacion": "4(8)+22 = 32+22 = 54 cm."
+          "retroalimentacion": "4(8)+22 = 32+22 = 54 cm.",
+          "pistas": [
+            "Sustituye x=8 en 4x+22.",
+            "4(8)+22 = 32+22."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -116,7 +124,11 @@
           "tipo": "llenar_frase",
           "frase": "Si x=15, el valor de la expresión 5x+9 es ___.",
           "respuestaCorrecta": "84",
-          "retroalimentacion": "5(15)+9 = 75+9 = 84."
+          "retroalimentacion": "5(15)+9 = 75+9 = 84.",
+          "pistas": [
+            "Sustituye x=15 en 5x+9.",
+            "5(15)+9 = 75+9."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -124,7 +136,25 @@
           "respuestaCorrecta": false,
           "retroalimentacion": "4(9) = 36 cm, no 32 cm."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Un puesto de tacos usa la expresión 4x + 20 para calcular su ganancia del día, donde x es el número de tacos vendidos. ¿Cuál fue la ganancia si vendieron 35 tacos?",
+        "pasos": [
+          {
+            "texto": "Sustituimos x por 35.",
+            "operacion": "4(35) + 20"
+          },
+          {
+            "texto": "Multiplicamos primero.",
+            "operacion": "4×35 = 140"
+          },
+          {
+            "texto": "Sumamos al final.",
+            "operacion": "140+20 = 160"
+          }
+        ],
+        "respuestaFinal": "La ganancia fue de $160."
+      }
     }
   ],
   "practicaExtra": [

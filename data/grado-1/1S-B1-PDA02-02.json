@@ -29,7 +29,11 @@
           "tipo": "llenar_frase",
           "frase": "El número menor entre -7, -2, 5, -10 es ___.",
           "respuestaCorrecta": "-10",
-          "retroalimentacion": "-10 está más a la izquierda que -7, -2 y 5, así que es el menor."
+          "retroalimentacion": "-10 está más a la izquierda que -7, -2 y 5, así que es el menor.",
+          "pistas": [
+            "El menor número es el que está más a la izquierda en la recta numérica.",
+            "Entre los negativos de la lista, -10 es el más a la izquierda de todos."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -53,7 +57,11 @@
           "tipo": "llenar_frase",
           "frase": "El número menor entre 17, 13, -18, 14 es ___.",
           "respuestaCorrecta": "-18",
-          "retroalimentacion": "-18 está más a la izquierda en la recta numérica, así que es el menor."
+          "retroalimentacion": "-18 está más a la izquierda en la recta numérica, así que es el menor.",
+          "pistas": [
+            "El menor número es el que está más a la izquierda en la recta numérica.",
+            "-18 es el único negativo de la lista — automáticamente es menor que cualquier número positivo."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -83,7 +91,11 @@
             "-8"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "-3 es el menos negativo de la lista, así que es el mayor."
+          "retroalimentacion": "-3 es el menos negativo de la lista, así que es el mayor.",
+          "pistas": [
+            "El mayor es el MENOS negativo, el más cercano al cero por la derecha.",
+            "Entre -20, -3, -15, -8, el que está más cerca del cero (por la derecha) es -3."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -106,7 +118,22 @@
           "retroalimentacion": "-7 < -2; 4 > -4; -9 = -9."
         }
       ],
-      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio"
+      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio",
+      "ejemploResuelto": {
+        "enunciado": "Dos alpinistas llegaron a distintas alturas: Tomás llegó al nivel -5 (aún no alcanza el campamento base) y Lupita llegó al nivel -1. ¿Quién está más arriba?",
+        "pasos": [
+          {
+            "texto": "Ubicamos -5 y -1 en la recta numérica."
+          },
+          {
+            "texto": "-1 está más a la derecha que -5."
+          },
+          {
+            "texto": "El que está más a la derecha es el mayor."
+          }
+        ],
+        "respuestaFinal": "Lupita (-1) está más arriba que Tomás (-5)."
+      }
     }
   ],
   "practicaExtra": [

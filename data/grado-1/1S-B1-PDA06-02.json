@@ -35,7 +35,11 @@
           "tipo": "llenar_frase",
           "frase": "Resuelve: 9x + 7 = 16. x = ___.",
           "respuestaCorrecta": "1",
-          "retroalimentacion": "9x = 16-7 = 9; x = 9÷9 = 1."
+          "retroalimentacion": "9x = 16-7 = 9; x = 9÷9 = 1.",
+          "pistas": [
+            "Resta 7 de ambos lados, después divide entre 9.",
+            "9x = 16 - 7 = 9; entonces x = 9 ÷ 9."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -53,7 +57,11 @@
           "tipo": "llenar_frase",
           "frase": "Resuelve: 7x + 4 = 53. x = ___.",
           "respuestaCorrecta": "7",
-          "retroalimentacion": "7x = 53-4 = 49; x = 49÷7 = 7."
+          "retroalimentacion": "7x = 53-4 = 49; x = 49÷7 = 7.",
+          "pistas": [
+            "Resta 4 de ambos lados, después divide entre 7.",
+            "7x = 53 - 4 = 49; entonces x = 49 ÷ 7."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -77,7 +85,11 @@
           "tipo": "llenar_frase",
           "frase": "Resuelve: 4x + 9 = 37. x = ___.",
           "respuestaCorrecta": "7",
-          "retroalimentacion": "4x = 37-9 = 28; x = 28÷4 = 7."
+          "retroalimentacion": "4x = 37-9 = 28; x = 28÷4 = 7.",
+          "pistas": [
+            "Resta 9 de ambos lados, después divide entre 4.",
+            "4x = 37 - 9 = 28; entonces x = 28 ÷ 4."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -106,7 +118,25 @@
           "retroalimentacion": "2x+7=19 → x=6; 5x-7=33 → x=8; 3x+8=x+16 → x=4."
         }
       ],
-      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio"
+      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio",
+      "ejemploResuelto": {
+        "enunciado": "Un mototaxi cobra una tarifa fija de $10 más $6 por cada kilómetro recorrido, y un pasajero pagó en total $58. ¿Cuántos kilómetros recorrió?",
+        "pasos": [
+          {
+            "texto": "Planteamos la ecuación con la tarifa fija más el costo por kilómetro.",
+            "operacion": "6x + 10 = 58"
+          },
+          {
+            "texto": "Restamos 10 de ambos lados.",
+            "operacion": "6x = 48"
+          },
+          {
+            "texto": "Dividimos entre 6.",
+            "operacion": "x = 8"
+          }
+        ],
+        "respuestaFinal": "Recorrió 8 kilómetros."
+      }
     }
   ],
   "practicaExtra": [

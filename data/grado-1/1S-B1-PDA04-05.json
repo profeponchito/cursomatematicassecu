@@ -35,7 +35,11 @@
             "5"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "n = (26−8)÷3+1 = 18÷3+1 = 6+1 = 7. En el partido 7 anota 26 puntos."
+          "retroalimentacion": "n = (26−8)÷3+1 = 18÷3+1 = 6+1 = 7. En el partido 7 anota 26 puntos.",
+          "pistas": [
+            "Aplica n = (término_n − a) ÷ d + 1 con a=8, d=3, término_n=26.",
+            "n = (26−8)÷3+1 = 18÷3+1."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -59,7 +63,11 @@
             "7"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "n = (60−12)÷6+1 = 48÷6+1 = 8+1 = 9."
+          "retroalimentacion": "n = (60−12)÷6+1 = 48÷6+1 = 8+1 = 9.",
+          "pistas": [
+            "Aplica la fórmula con a=12, d=6, término_n=60.",
+            "n = (60−12)÷6+1 = 48÷6+1."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -83,7 +91,11 @@
             "8"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "n = (45−9)÷4+1 = 36÷4+1 = 9+1 = 10."
+          "retroalimentacion": "n = (45−9)÷4+1 = 36÷4+1 = 9+1 = 10.",
+          "pistas": [
+            "Aplica la fórmula con a=9, d=4, término_n=45.",
+            "n = (45−9)÷4+1 = 36÷4+1."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -124,7 +136,24 @@
           "retroalimentacion": "n = (305−80)÷25+1 = 225÷25+1 = 9+1 = 10."
         }
       ],
-      "nivelEtiqueta": "Nivel 5 de 10 · Aplicación"
+      "nivelEtiqueta": "Nivel 5 de 10 · Aplicación",
+      "ejemploResuelto": {
+        "enunciado": "Un agricultor cosecha 25 kg de tomate el primer día y aumenta 10 kg cada día. ¿En qué día cosechará 95 kg?",
+        "pasos": [
+          {
+            "texto": "Identificamos a=25, d=10, término_n=95."
+          },
+          {
+            "texto": "Aplicamos la fórmula despejada.",
+            "operacion": "n = (95-25)÷10+1"
+          },
+          {
+            "texto": "Calculamos.",
+            "operacion": "n = 70÷10+1 = 8"
+          }
+        ],
+        "respuestaFinal": "Cosechará 95 kg en el día 8."
+      }
     }
   ],
   "practicaExtra": [

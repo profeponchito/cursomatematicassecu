@@ -35,7 +35,11 @@
             "15"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "(25×40)÷100 = 1000÷100 = 10 alumnos."
+          "retroalimentacion": "(25×40)÷100 = 1000÷100 = 10 alumnos.",
+          "pistas": [
+            "Usa la fórmula casos = (porcentaje × total) ÷ 100.",
+            "(25×40)÷100 = 1000÷100 = 10 alumnos."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -59,7 +63,11 @@
             "30"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "(30×80)÷100 = 2400÷100 = 24 alumnos."
+          "retroalimentacion": "(30×80)÷100 = 2400÷100 = 24 alumnos.",
+          "pistas": [
+            "Usa la fórmula casos = (porcentaje × total) ÷ 100.",
+            "(30×80)÷100 = 2400÷100 = 24 alumnos."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -83,7 +91,11 @@
             "45%"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "20 de 50 es (20÷50)×100 = 40%."
+          "retroalimentacion": "20 de 50 es (20÷50)×100 = 40%.",
+          "pistas": [
+            "Divide la frecuencia entre el total y multiplica por 100.",
+            "20 de 50 es (20÷50)×100 = 40%."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -124,7 +136,25 @@
           "retroalimentacion": "40-20-10=10 alumnos prefieren naranja, lo que equivale a (10÷40)×100=25%."
         }
       ],
-      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis"
+      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis",
+      "ejemploResuelto": {
+        "enunciado": "En la misma gráfica circular de los 40 alumnos, la porción de Historia ocupa el 20% del círculo. ¿A cuántos alumnos representa esa porción?",
+        "pasos": [
+          {
+            "texto": "Usamos la fórmula.",
+            "operacion": "casos = (porcentaje × total) ÷ 100"
+          },
+          {
+            "texto": "Sustituimos los valores.",
+            "operacion": "(20×40)÷100"
+          },
+          {
+            "texto": "Calculamos el resultado.",
+            "operacion": "8 alumnos"
+          }
+        ],
+        "respuestaFinal": "La porción de Historia representa a 8 alumnos."
+      }
     }
   ],
   "practicaExtra": [

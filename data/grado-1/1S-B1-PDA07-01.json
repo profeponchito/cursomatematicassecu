@@ -28,7 +28,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "La tarifa de taxi con $12 fijos más $2 por km es una relación proporcional.",
           "respuestaCorrecta": false,
-          "retroalimentacion": "Falso: tiene un cargo fijo ($12) que se paga aunque no se recorra ningún km, así que no es proporcional."
+          "retroalimentacion": "Falso: tiene un cargo fijo ($12) que se paga aunque no se recorra ningún km, así que no es proporcional.",
+          "pistas": [
+            "Revisa si hay algún cargo fijo que se pague aunque no se recorra ningún kilómetro.",
+            "El taxi cobra $12 aunque x=0 (no viajes), así que y no es 0 cuando x=0: no es proporcional."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -46,7 +50,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "El área de un cuadrado en función de su lado es una relación proporcional.",
           "respuestaCorrecta": false,
-          "retroalimentacion": "Una relación es proporcional solo si es de la forma y=kx (pasa por el origen); el área de un cuadrado es y=x², una relación cuadrática, no proporcional."
+          "retroalimentacion": "Una relación es proporcional solo si es de la forma y=kx (pasa por el origen); el área de un cuadrado es y=x², una relación cuadrática, no proporcional.",
+          "pistas": [
+            "Piensa en la fórmula del área de un cuadrado en términos de su lado.",
+            "El área es y=x² (lado al cuadrado), no y=kx (multiplicación simple), así que no es proporcional."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -64,7 +72,11 @@
             "Tiene un valor fijo que se suma"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Toda relación proporcional es de la forma y=kx, cuya gráfica es una recta que pasa por el origen (0,0)."
+          "retroalimentacion": "Toda relación proporcional es de la forma y=kx, cuya gráfica es una recta que pasa por el origen (0,0).",
+          "pistas": [
+            "Recuerda la forma general de una relación proporcional: y=kx.",
+            "Busca la opción que menciona que la gráfica es una recta que pasa por el origen (0,0)."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -105,7 +117,24 @@
           "retroalimentacion": "Correcto: es y=4x, sin ningún cargo fijo, así que pasa por el origen y es proporcional."
         }
       ],
-      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio"
+      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio",
+      "ejemploResuelto": {
+        "enunciado": "En la misma papelería, las gomas cuestan $4 cada una. ¿Es proporcional la relación entre el número de gomas compradas y el precio a pagar?",
+        "pasos": [
+          {
+            "texto": "Revisamos qué pasa si x=0: si no compras ninguna goma, pagas $0.",
+            "operacion": "x=0 → y=0"
+          },
+          {
+            "texto": "Revisamos si la razón entre precio y cantidad siempre es la misma.",
+            "operacion": "y = 4x (constante siempre)"
+          },
+          {
+            "texto": "Concluimos que, como no hay cargo fijo y pasa por el origen, la relación es proporcional."
+          }
+        ],
+        "respuestaFinal": "Sí, es proporcional: y = 4x."
+      }
     }
   ],
   "practicaExtra": [

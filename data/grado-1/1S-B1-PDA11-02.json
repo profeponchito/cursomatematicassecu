@@ -47,7 +47,11 @@
           "tipo": "llenar_frase",
           "frase": "6 kg equivalen a ___ g.",
           "respuestaCorrecta": "6000",
-          "retroalimentacion": "1 kg = 1000 g, entonces 6 kg × 1000 = 6000 g."
+          "retroalimentacion": "1 kg = 1000 g, entonces 6 kg × 1000 = 6000 g.",
+          "pistas": [
+            "Multiplica por 1000 para pasar de kilogramos a gramos.",
+            "6 kg × 1000 = 6000 g."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -71,7 +75,11 @@
           "tipo": "llenar_frase",
           "frase": "1250 mL equivalen a ___ L.",
           "respuestaCorrecta": "1.25",
-          "retroalimentacion": "1 L = 1000 mL, entonces 1250 ÷ 1000 = 1.25 L."
+          "retroalimentacion": "1 L = 1000 mL, entonces 1250 ÷ 1000 = 1.25 L.",
+          "pistas": [
+            "Divide entre 1000 para pasar de mililitros a litros.",
+            "1250 ÷ 1000 = 1.25 L."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -95,7 +103,11 @@
           "tipo": "llenar_frase",
           "frase": "7200 g equivalen a ___ kg.",
           "respuestaCorrecta": "7.2",
-          "retroalimentacion": "1 kg = 1000 g, entonces 7200 ÷ 1000 = 7.2 kg."
+          "retroalimentacion": "1 kg = 1000 g, entonces 7200 ÷ 1000 = 7.2 kg.",
+          "pistas": [
+            "Divide entre 1000 para pasar de gramos a kilogramos.",
+            "7200 ÷ 1000 = 7.2 kg."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -118,7 +130,24 @@
           "retroalimentacion": "1.5 L = 1500 mL. 3000 mL = 3 L. 0.25 kg = 250 g."
         }
       ],
-      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio"
+      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio",
+      "ejemploResuelto": {
+        "enunciado": "Don Pancho también pesa una bolsa de azúcar que marca 1.8 kilogramos. ¿A cuántos gramos equivale?",
+        "pasos": [
+          {
+            "texto": "Usamos que 1 kg = 1000 g."
+          },
+          {
+            "texto": "Multiplicamos por 1000.",
+            "operacion": "1.8 × 1000"
+          },
+          {
+            "texto": "Calculamos el resultado.",
+            "operacion": "1800 g"
+          }
+        ],
+        "respuestaFinal": "La bolsa de azúcar equivale a 1800 gramos."
+      }
     }
   ],
   "practicaExtra": [

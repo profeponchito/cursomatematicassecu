@@ -42,7 +42,11 @@
           "tipo": "llenar_frase",
           "frase": "La expresión 3(x+4), simplificada aplicando la propiedad distributiva, es ___.",
           "respuestaCorrecta": "3x+12",
-          "retroalimentacion": "3(x+4) = 3(x) + 3(4) = 3x+12."
+          "retroalimentacion": "3(x+4) = 3(x) + 3(4) = 3x+12.",
+          "pistas": [
+            "Aplica la propiedad distributiva: 3(x) + 3(4).",
+            "3x + 12."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -60,7 +64,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "La expresión 4(x-3) simplificada es 4x-12.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "4(x-3) = 4x - 12."
+          "retroalimentacion": "4(x-3) = 4x - 12.",
+          "pistas": [
+            "Aplica la distributiva: 4(x) - 4(3).",
+            "4x - 12."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -96,7 +104,11 @@
             "2x+10"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "2(x-5) = 2x - 10."
+          "retroalimentacion": "2(x-5) = 2x - 10.",
+          "pistas": [
+            "Aplica la distributiva: 2(x) - 2(5).",
+            "2x - 10."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -130,7 +142,21 @@
           "respuestaCorrecta": 0,
           "retroalimentacion": "2(x+4) = 2x+8."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Un pasillo tiene una medida que es 'el triple de la suma de un número y 5', es decir 3(x+5). ¿Cuál es la expresión simplificada, sin paréntesis?",
+        "pasos": [
+          {
+            "texto": "Aplicamos la propiedad distributiva.",
+            "operacion": "3(x) + 3(5)"
+          },
+          {
+            "texto": "Calculamos.",
+            "operacion": "3x + 15"
+          }
+        ],
+        "respuestaFinal": "3(x+5) = 3x + 15."
+      }
     }
   ],
   "practicaExtra": [

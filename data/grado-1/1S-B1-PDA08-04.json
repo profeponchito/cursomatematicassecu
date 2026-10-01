@@ -34,7 +34,11 @@
             "Recto; complementario 62°"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "28° es agudo (menor a 90°); su complementario es 90−28=62°."
+          "retroalimentacion": "28° es agudo (menor a 90°); su complementario es 90−28=62°.",
+          "pistas": [
+            "Primero clasifica el ángulo comparándolo con 90°, después calcula 90 menos el ángulo.",
+            "28° es agudo (menor a 90°); su complementario es 90 − 28 = 62°."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -64,7 +68,11 @@
           "tipo": "llenar_frase",
           "frase": "Un ángulo mide 63°. Su suplementario mide ___°.",
           "respuestaCorrecta": "117",
-          "retroalimentacion": "180−63=117°."
+          "retroalimentacion": "180−63=117°.",
+          "pistas": [
+            "Resta el ángulo a 180°.",
+            "180 − 63 = 117°."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -94,7 +102,11 @@
             "12°"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "180−12=168°."
+          "retroalimentacion": "180−12=168°.",
+          "pistas": [
+            "Resta el ángulo a 180°.",
+            "180 − 12 = 168°."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -126,7 +138,24 @@
           "retroalimentacion": "34°: complementario=90−34=56°, suplementario=180−34=146°. 52° (paralelas/transversal): correspondiente igual=52°, colateral interno=180−52=128°."
         }
       ],
-      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis"
+      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis",
+      "ejemploResuelto": {
+        "enunciado": "Iván también ayuda a instalar un segundo tramo de tubos, donde otro ángulo formado mide 34°. ¿Cómo se clasifica ese ángulo, y cuánto mide su ángulo suplementario?",
+        "pasos": [
+          {
+            "texto": "Clasificamos 34°: como es menor que 90°, es agudo."
+          },
+          {
+            "texto": "Calculamos su suplementario.",
+            "operacion": "180 − 34"
+          },
+          {
+            "texto": "Obtenemos el resultado.",
+            "operacion": "146°"
+          }
+        ],
+        "respuestaFinal": "El ángulo de 34° es agudo, y su suplementario mide 146°."
+      }
     }
   ],
   "practicaExtra": [
