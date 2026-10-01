@@ -68,6 +68,29 @@
           },
           "puntosPorReactivo": { "type": "integer", "description": "Puntos otorgados por cada reactivo correcto de ESTE subtema (mini-actividad independiente)." },
           "estrellasMax": { "type": "integer", "default": 3, "description": "Estrellas máximas de ESTE subtema (mini-actividad independiente)." },
+          "ejemploResuelto": {
+            "type": "object",
+            "description": "OPCIONAL (Paso 34). Un problema representativo de este subtema, YA resuelto paso a paso, mostrado como un paso intermedio entre la teoría (explicacion/ejemplos) y la actividad calificada (reactivos) — reduce la carga cognitiva porque el alumno ve el procedimiento COMPLETO antes de tener que aplicarlo solo en los reactivos. Si el subtema no trae este campo, el paso simplemente no aparece (compatible hacia atrás, sin cambiar nada del comportamiento existente).",
+            "required": ["enunciado", "pasos"],
+            "properties": {
+              "enunciado": { "type": "string", "description": "El problema a resolver, en el mismo tono situacional de la NEM que la problematización — puede ser el mismo tipo de situación que luego aparece en los reactivos, o uno nuevo representativo." },
+              "pasos": {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 6,
+                "description": "El procedimiento explicado paso a paso, en el orden en que se resuelve.",
+                "items": {
+                  "type": "object",
+                  "required": ["texto"],
+                  "properties": {
+                    "texto": { "type": "string", "description": "Qué se hace en este paso y por qué (una o dos oraciones)." },
+                    "operacion": { "type": "string", "description": "Opcional: el cálculo de este paso, mostrado en fuente monoespaciada aparte del texto (ej. '18 ÷ 2 = 9')." }
+                  }
+                }
+              },
+              "respuestaFinal": { "type": "string", "description": "Opcional: la respuesta final del ejemplo, resaltada al cierre del procedimiento." }
+            }
+          },
           "reactivos": {
             "type": "array",
             "minItems": 5,
@@ -97,6 +120,13 @@
           "enum": ["opcion_multiple", "verdadero_falso", "llenar_frase", "relacionar_columnas", "algoritmo_columnas"]
         },
         "retroalimentacion": { "type": "string", "description": "Explicación mostrada después de responder, sea correcta o incorrecta." },
+        "pistas": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 3,
+          "items": { "type": "string" },
+          "description": "OPCIONAL (Paso 34). Pistas progresivas, de la más general a la más específica (normalmente: 1) una pista conceptual, 2) un paso del procedimiento, 3) casi la respuesta). El alumno las pide una por una con un botón 'Necesito una pista' durante la actividad calificada, sin que esto afecte su calificación. Si el reactivo no trae este campo, no se muestra ningún botón de pista (compatible hacia atrás)."
+        },
 
         "pregunta": { "type": "string", "description": "[opcion_multiple] El enunciado de la pregunta." },
         "opciones": { "type": "array", "items": { "type": "string" }, "description": "[opcion_multiple] Lista de opciones." },
