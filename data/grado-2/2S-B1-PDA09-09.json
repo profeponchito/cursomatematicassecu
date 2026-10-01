@@ -36,13 +36,21 @@
             "20 segundos"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "El ángulo entre cabinas es 360°÷8=45°, es decir 1/8 de vuelta. Tiempo=4 min÷8=0.5 min=30 s."
+          "retroalimentacion": "El ángulo entre cabinas es 360°÷8=45°, es decir 1/8 de vuelta. Tiempo=4 min÷8=0.5 min=30 s.",
+          "pistas": [
+            "Primero calcula el ángulo entre cabinas dividiendo 360° entre el número de cabinas, igual que hicimos para la otra rueda de León (360÷10=36°).",
+            "ángulo=360°÷8=45°; tiempo=4min÷8=0.5min=30s."
+          ]
         },
         {
           "tipo": "llenar_frase",
           "frase": "Para esa misma rueda (8 cabinas, radio 14 m), la distancia curva (arco) que recorre una cabina al pasar a la posición de la siguiente es de ___ m.",
           "respuestaCorrecta": "10.99",
-          "retroalimentacion": "arco=(45/360)×2×3.14×14=10.99 m."
+          "retroalimentacion": "arco=(45/360)×2×3.14×14=10.99 m.",
+          "pistas": [
+            "Usa la fórmula del arco con el ángulo entre cabinas que ya calculaste, igual que hicimos para la otra rueda (7.54 m).",
+            "arco=(45/360)×2×3.14×14=10.99m."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -66,7 +74,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Una rueda de la fortuna con 15 cabinas uniformes y radio de 10 m da una vuelta completa en 6 minutos (360 segundos). El ángulo entre cabinas consecutivas es de 24°, y cada cabina tarda 24 segundos en llegar a la posición de la siguiente.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "360°÷15=24°=1/15 de vuelta. 360 s÷15=24 s. Correcto."
+          "retroalimentacion": "360°÷15=24°=1/15 de vuelta. 360 s÷15=24 s. Correcto.",
+          "pistas": [
+            "El tiempo entre cabinas siempre es el tiempo total de la vuelta dividido entre el número de cabinas, igual que hicimos con 4min÷10=24 segundos en la otra rueda.",
+            "360°÷15=24°; 360s÷15=24s."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -127,7 +139,25 @@
           "respuestaCorrecta": 0,
           "retroalimentacion": "tiempo=distancia÷velocidad=37.68÷15=2.51 segundos."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Ese mismo día, subes a otra rueda de la fortuna en la feria de León con 10 cabinas uniformes, radio de 12 m, que da una vuelta completa en 4 minutos.",
+        "pasos": [
+          {
+            "texto": "Calculamos el ángulo entre cabinas.",
+            "operacion": "360° ÷ 10 = 36°"
+          },
+          {
+            "texto": "Calculamos el arco que recorre una cabina.",
+            "operacion": "(36÷360)×2×3.14×12 = 7.54 m"
+          },
+          {
+            "texto": "Calculamos el tiempo entre una cabina y la siguiente.",
+            "operacion": "4 min÷10 = 0.4 min = 24 segundos"
+          }
+        ],
+        "respuestaFinal": "Cada cabina recorre 7.54 m y tarda 24 segundos en llegar a la posición de la siguiente."
+      }
     }
   ],
   "practicaExtra": [

@@ -35,7 +35,11 @@
             "$10,200"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "12000×0.85×1.16 = $11,832."
+          "retroalimentacion": "12000×0.85×1.16 = $11,832.",
+          "pistas": [
+            "Aplica primero el descuento y luego el IVA sobre el precio ya rebajado, igual que hiciste con la pantalla en el ejemplo resuelto.",
+            "12000×0.85=10200, y luego ×1.16."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -65,7 +69,11 @@
             "$104"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "80×1.50×0.80 = $96."
+          "retroalimentacion": "80×1.50×0.80 = $96.",
+          "pistas": [
+            "Aplica cada cambio porcentual en orden, sobre el resultado del anterior, igual que hiciste con la pantalla en el ejemplo resuelto.",
+            "80×1.50=120, y luego ×0.80."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -109,7 +117,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Un producto de $250 recibe un descuento del 10% y luego otro 10% adicional sobre el nuevo precio. Esto equivale a un descuento total del 20%, así que el precio final es $200.",
           "respuestaCorrecta": false,
-          "retroalimentacion": "250×0.90×0.90 = $202.50, no $200: dos descuentos del 10% seguidos NO equivalen a un descuento del 20%."
+          "retroalimentacion": "250×0.90×0.90 = $202.50, no $200: dos descuentos del 10% seguidos NO equivalen a un descuento del 20%.",
+          "pistas": [
+            "Aplica cada descuento por separado sobre el resultado anterior, nunca sumes los porcentajes directamente.",
+            "250×0.90=225, y luego ×0.90: ¿da $200?"
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -118,7 +130,21 @@
           "retroalimentacion": "150000×1.08×1.08 = $174,960."
         }
       ],
-      "nivelEtiqueta": "Nivel 7 de 10 · Reto"
+      "nivelEtiqueta": "Nivel 7 de 10 · Reto",
+      "ejemploResuelto": {
+        "enunciado": "Otra tienda aplica primero 20% de descuento a una pantalla de $8,000 y luego 16% de IVA sobre el precio ya rebajado.",
+        "pasos": [
+          {
+            "texto": "Aplicamos primero el descuento sobre el precio original.",
+            "operacion": "8000 × 0.80 = 6400"
+          },
+          {
+            "texto": "Aplicamos el IVA sobre el precio ya rebajado, no sobre el original.",
+            "operacion": "6400 × 1.16 = 7424"
+          }
+        ],
+        "respuestaFinal": "El precio final de la pantalla es $7,424."
+      }
     }
   ],
   "practicaExtra": [

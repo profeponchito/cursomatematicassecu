@@ -36,7 +36,11 @@
             "15.72 m"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "arco=(100/360)×2×3.14×5=8.72 m; perímetro=8.72+2×5=8.72+10=18.72 m."
+          "retroalimentacion": "arco=(100/360)×2×3.14×5=8.72 m; perímetro=8.72+2×5=8.72+10=18.72 m.",
+          "pistas": [
+            "Primero calcula el arco y luego súmale los dos radios, igual que hicimos para el otro jardín de Aguascalientes (17.79+24=41.79 m).",
+            "arco=8.72m; perímetro=8.72+10=18.72m."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -60,7 +64,11 @@
             "50.7 m"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "arco=(36/360)×2×3.14×25=15.7 m; perímetro=15.7+2×25=15.7+50=65.7 m."
+          "retroalimentacion": "arco=(36/360)×2×3.14×25=15.7 m; perímetro=15.7+2×25=15.7+50=65.7 m.",
+          "pistas": [
+            "El perímetro del sector siempre es arco + 2×radio, como con el jardín de Aguascalientes.",
+            "arco=15.7m; perímetro=15.7+50=65.7m."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -125,9 +133,27 @@
             "47.83 m"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "arco=(95/360)×2×3.14×18=29.83 m; perímetro=29.83+2×18=29.83+36=65.83 m."
+          "retroalimentacion": "arco=(95/360)×2×3.14×18=29.83 m; perímetro=29.83+2×18=29.83+36=65.83 m.",
+          "pistas": [
+            "Sigue los mismos dos pasos que con el jardín de Aguascalientes: calcula el arco, luego súmale 2 veces el radio.",
+            "arco=29.83m; perímetro=29.83+36=65.83m."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El mismo parque de Aguascalientes también quiere cercar otro jardín con forma de sector de radio 12 m y ángulo central de 85°.",
+        "pasos": [
+          {
+            "texto": "Calculamos el arco.",
+            "operacion": "(85÷360)×2×3.14×12 = 17.79 m"
+          },
+          {
+            "texto": "Sumamos los dos radios para el perímetro completo.",
+            "operacion": "17.79 + 2×12 = 17.79 + 24 = 41.79 m"
+          }
+        ],
+        "respuestaFinal": "Necesitan 41.79 m de reja."
+      }
     }
   ],
   "practicaExtra": [

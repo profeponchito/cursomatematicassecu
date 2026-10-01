@@ -34,7 +34,11 @@
             "$18"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "3y + y = 96 → 4y = 96 → y = 24 (el menor); el mayor recibe 3×24 = $72."
+          "retroalimentacion": "3y + y = 96 → 4y = 96 → y = 24 (el menor); el mayor recibe 3×24 = $72.",
+          "pistas": [
+            "Plantea la ecuación del reparto con x = lo que recibe el que tiene menos, igual que hiciste con las primas y la tablet en el ejemplo resuelto.",
+            "3y+y=96 → 4y=96: ¿cuánto vale y?"
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -58,7 +62,11 @@
             "$600"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "120+0.10x=40+0.20x → 80=0.10x → x=$800."
+          "retroalimentacion": "120+0.10x=40+0.20x → 80=0.10x → x=$800.",
+          "pistas": [
+            "Iguala ambas expresiones y despeja x, igual que planteaste la ecuación de las primas en el ejemplo resuelto.",
+            "120+0.10x=40+0.20x → 80=0.10x: ¿cuánto vale x?"
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -108,7 +116,11 @@
           "tipo": "llenar_frase",
           "frase": "En una cooperativa se reparten $2,400 de ganancias entre 2 socios: al socio A le toca el doble que a B, pero antes se descontó un 5% de esos $2,400 para gastos administrativos. Si x es lo que recibe B, la ecuación es 2x + x = 2,400 × 0.95. x = ___.",
           "respuestaCorrecta": "760",
-          "retroalimentacion": "2400×0.95 = 2,280; 3x = 2,280 → x = 760."
+          "retroalimentacion": "2400×0.95 = 2,280; 3x = 2,280 → x = 760.",
+          "pistas": [
+            "Primero aplica el descuento al total, y luego plantea la ecuación del reparto, igual que hiciste con la tablet de las primas en el ejemplo resuelto.",
+            "2400×0.95=2280, y luego 3x=2280."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -123,7 +135,21 @@
           "retroalimentacion": "1.25 × 0.80 = 1.00, así que x = 3,000: un aumento del 25% seguido de una baja del 20% regresa al valor original."
         }
       ],
-      "nivelEtiqueta": "Nivel 9 de 10 · Integración"
+      "nivelEtiqueta": "Nivel 9 de 10 · Integración",
+      "ejemploResuelto": {
+        "enunciado": "En la misma librería, dos primas compran una tablet de $1,200 con 25% de descuento, y acuerdan pagarla de forma que una aporte el triple que la otra.",
+        "pasos": [
+          {
+            "texto": "Calculamos el precio de la tablet con el descuento.",
+            "operacion": "1200 × (1 − 0.25) = 1200 × 0.75 = 900"
+          },
+          {
+            "texto": "Planteamos la ecuación del reparto, con x = lo que aporta la prima que paga menos.",
+            "operacion": "x + 3x = 900 → 4x = 900 → x = 225"
+          }
+        ],
+        "respuestaFinal": "La tablet costará $900; una prima aportará $225 y la otra el triple: $675."
+      }
     }
   ],
   "practicaExtra": [

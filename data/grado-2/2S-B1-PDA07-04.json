@@ -34,7 +34,11 @@
             "150°"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Suma = (8−2)×180°=1080°; cada ángulo = 1080°÷8 = 135°."
+          "retroalimentacion": "Suma = (8−2)×180°=1080°; cada ángulo = 1080°÷8 = 135°.",
+          "pistas": [
+            "Este es exactamente el cálculo que hiciste en el ejemplo resuelto con el domo octagonal.",
+            "(8−2)×180°÷8: ¿cuánto da?"
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -58,7 +62,11 @@
             "No se puede determinar"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "Dos lados y el ángulo comprendido entre ellos: criterio LAL."
+          "retroalimentacion": "Dos lados y el ángulo comprendido entre ellos: criterio LAL.",
+          "pistas": [
+            "Este es el mismo criterio que usaste para los triángulos del domo en el ejemplo resuelto.",
+            "Cuando se conocen dos lados y el ángulo entre ellos, ¿qué criterio se cumple?"
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -120,10 +128,27 @@
             "2160°"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "(12−2)×180° = 1800°."
+          "retroalimentacion": "(12−2)×180° = 1800°.",
+          "pistas": [
+            "Aplica (n−2)×180°, igual que calculaste el ángulo del octágono en el ejemplo resuelto.",
+            "(12−2)×180°: ¿cuánto da?"
+          ]
         }
       ],
-      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis"
+      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis",
+      "ejemploResuelto": {
+        "enunciado": "El mismo grupo también decora un domo con forma de octágono regular hecho de triángulos que comparten el mismo radio y el mismo ángulo central.",
+        "pasos": [
+          {
+            "texto": "Calculamos el ángulo interior del octágono regular.",
+            "operacion": "(8−2)×180°÷8 = 1080°÷8 = 135°"
+          },
+          {
+            "texto": "Los triángulos del diseño comparten dos radios iguales y el ángulo central entre ellos, así que son congruentes por LAL."
+          }
+        ],
+        "respuestaFinal": "Cada ángulo interior del octágono mide 135°, y los triángulos son congruentes por el criterio LAL."
+      }
     }
   ],
   "practicaExtra": [

@@ -35,7 +35,11 @@
             "800 g"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "k = 450 ÷ 6 = 75 g por persona. 10 × 75 = 750 g."
+          "retroalimentacion": "k = 450 ÷ 6 = 75 g por persona. 10 × 75 = 750 g.",
+          "pistas": [
+            "Calcula k = 450÷6 (gramos por persona), igual que hiciste con la harina por pieza en el ejemplo resuelto.",
+            "Multiplica k por 10."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -53,7 +57,11 @@
             "$154"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "k = 84 ÷ 4 = $21 por hora. 7 × 21 = $147."
+          "retroalimentacion": "k = 84 ÷ 4 = $21 por hora. 7 × 21 = $147.",
+          "pistas": [
+            "Calcula k = 84÷4 (pago por hora).",
+            "Multiplica k por 7, igual que aplicaste la constante en el ejemplo resuelto."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -115,7 +123,11 @@
             "2,100 kcal"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "Distancia = 20 × 3 = 60 km. k = 150÷5 = 30 kcal por km. 60 × 30 = 1,800 kcal."
+          "retroalimentacion": "Distancia = 20 × 3 = 60 km. k = 150÷5 = 30 kcal por km. 60 × 30 = 1,800 kcal.",
+          "pistas": [
+            "Primero calcula la distancia total (velocidad × tiempo), después las kcal por km, igual que encadenaste dos constantes en el ejemplo resuelto.",
+            "Distancia = 20×3 = 60 km. kcal por km = 150÷5 = 30."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -123,7 +135,25 @@
           "respuestaCorrecta": "37.5",
           "retroalimentacion": "Piezas en 5 h: 240÷8=30 piezas por hora; 5×30=150 piezas. Plástico: 150×250 g = 37,500 g = 37.5 kg."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Rosalinda también quiere calcular el costo de la harina para hacer 18 piezas de pan de muerto, con la misma receta y el mismo precio de harina.",
+        "pasos": [
+          {
+            "texto": "Calculamos cuántos gramos de harina se necesitan por pieza.",
+            "operacion": "k = 250 ÷ 6 g por pieza"
+          },
+          {
+            "texto": "Multiplicamos por 18 piezas.",
+            "operacion": "18 × (250÷6) = 750 g"
+          },
+          {
+            "texto": "Convertimos a costo, sabiendo que cada 100 g cuestan $3.50.",
+            "operacion": "750 ÷ 100 = 7.5 → 7.5 × 3.50 = $26.25"
+          }
+        ],
+        "respuestaFinal": "La harina para 18 piezas de pan de muerto costará $26.25."
+      }
     }
   ],
   "practicaExtra": [

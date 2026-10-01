@@ -35,7 +35,11 @@
             "-13/8, -0.4, -0.65, 5/8"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "-13/8 = -1.625 y 5/8 = 0.625. De menor a mayor: -1.625 < -0.65 < -0.4 < 0.625."
+          "retroalimentacion": "-13/8 = -1.625 y 5/8 = 0.625. De menor a mayor: -1.625 < -0.65 < -0.4 < 0.625.",
+          "pistas": [
+            "Convierte 5/8 y -13/8 a decimal, igual que hiciste con -9/16 en el ejemplo resuelto: 5/8 = 0.625, -13/8 = -1.625.",
+            "Ordena los cuatro valores de menor a mayor (del xG más negativo al más positivo)."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -79,7 +83,11 @@
             "-2.38"
           ],
           "respuestaCorrecta": 3,
-          "retroalimentacion": "-2.38 está entre -2.4 y -2.35, ya que -2.4 < -2.38 < -2.35."
+          "retroalimentacion": "-2.38 está entre -2.4 y -2.35, ya que -2.4 < -2.38 < -2.35.",
+          "pistas": [
+            "Busca un valor entre -2.4 y -2.35, igual que hiciste entre -0.6 y -0.5625 en el ejemplo resuelto.",
+            "-2.38 debe cumplir -2.4 < -2.38 < -2.35: compruébalo."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -103,7 +111,11 @@
             "Santos"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "-3/4 = -0.75, el valor más bajo de los cuatro: -0.75 < -0.6 < -0.55 < 0.4."
+          "retroalimentacion": "-3/4 = -0.75, el valor más bajo de los cuatro: -0.75 < -0.6 < -0.55 < 0.4.",
+          "pistas": [
+            "Convierte -3/4 y 2/5 a decimal: -3/4 = -0.75, 2/5 = 0.4.",
+            "El promedio más bajo es el valor más negativo: compara los cuatro."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -132,7 +144,25 @@
           "retroalimentacion": "Equipo A: el menor es -0.62. Equipo B: -31/16 = -1.9375 es el menor. Equipo C: -33/16 = -2.0625 es el menor."
         }
       ],
-      "nivelEtiqueta": "Nivel 8 de 10 · Reto avanzado"
+      "nivelEtiqueta": "Nivel 8 de 10 · Reto avanzado",
+      "ejemploResuelto": {
+        "enunciado": "El analista revisa también a Xolos y Mazatlán: Xolos tiene -9/16 y Mazatlán -0.6. ¿Cuál jugó peor de lo esperado?",
+        "pasos": [
+          {
+            "texto": "Convertimos -9/16 a decimal.",
+            "operacion": "-9/16 = -0.5625"
+          },
+          {
+            "texto": "Comparamos -0.5625 con -0.6.",
+            "operacion": "-0.6 < -0.5625"
+          },
+          {
+            "texto": "Como -0.6 es más negativo, Mazatlán tuvo el peor diferencial de xG de los dos.",
+            "operacion": "-0.6 < -0.58 < -0.5625"
+          }
+        ],
+        "respuestaFinal": "Mazatlán jugó peor de lo esperado (-0.6), y sí existe un diferencial posible entre ambos, por ejemplo -0.58."
+      }
     }
   ],
   "practicaExtra": [

@@ -34,7 +34,11 @@
             "2x⁷"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Al multiplicar potencias de la misma base se suman los exponentes: 3+4=7."
+          "retroalimentacion": "Al multiplicar potencias de la misma base se suman los exponentes: 3+4=7.",
+          "pistas": [
+            "Cuando se multiplican potencias de la misma base se suman los exponentes, a diferencia de (x⁴)⁶ del ejemplo resuelto donde se multiplican.",
+            "3+4: ¿cuánto da?"
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -70,7 +74,11 @@
             "x^10"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Se multiplican los exponentes: 4×2=8."
+          "retroalimentacion": "Se multiplican los exponentes: 4×2=8.",
+          "pistas": [
+            "Multiplica los exponentes, igual que hiciste con (x⁴)⁶ en el ejemplo resuelto.",
+            "4×2: ¿cuánto da?"
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -100,7 +108,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "(x+8)² = x² + 16x + 64.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: 2(8)=16 y 8²=64, entonces (x+8)² = x²+16x+64."
+          "retroalimentacion": "Correcto: 2(8)=16 y 8²=64, entonces (x+8)² = x²+16x+64.",
+          "pistas": [
+            "Aplica la fórmula (x+a)²=x²+2ax+a².",
+            "2(8)=16 y 8²=64: ¿coincide con lo que dice el enunciado?"
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -135,7 +147,21 @@
           "retroalimentacion": "Se multiplican los exponentes: 2×6=12."
         }
       ],
-      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado"
+      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado",
+      "ejemploResuelto": {
+        "enunciado": "Diego también debe simplificar (x⁴)⁶, que representa otra potencia dentro de su modelo geométrico.",
+        "pasos": [
+          {
+            "texto": "Conservamos la base y multiplicamos los exponentes.",
+            "operacion": "(x⁴)⁶ = x^(4×6)"
+          },
+          {
+            "texto": "Multiplicamos los exponentes.",
+            "operacion": "4×6 = 24"
+          }
+        ],
+        "respuestaFinal": "(x⁴)⁶ = x²⁴."
+      }
     }
   ],
   "practicaExtra": [

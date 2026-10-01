@@ -34,7 +34,11 @@
             "2, -4 5/8, -9/2, -4.7"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "-4 5/8 = -4.625 y -9/2 = -4.5. De menor a mayor: -4.7 < -4.625 < -4.5 < 2."
+          "retroalimentacion": "-4 5/8 = -4.625 y -9/2 = -4.5. De menor a mayor: -4.7 < -4.625 < -4.5 < 2.",
+          "pistas": [
+            "Convierte -4 5/8 y -9/2 a decimal, igual que hiciste con -9/8 en el ejemplo resuelto: -4 5/8 = -4.625, -9/2 = -4.5.",
+            "Ordena los cuatro valores de menor a mayor."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -78,7 +82,11 @@
             2,
             0
           ],
-          "retroalimentacion": "-1/16 = -0.0625; -5/16 = -0.3125; -13/16 = -0.8125."
+          "retroalimentacion": "-1/16 = -0.0625; -5/16 = -0.3125; -13/16 = -0.8125.",
+          "pistas": [
+            "Convierte cada fracción a decimal igual que hiciste con -9/8 en el ejemplo resuelto: divide el numerador entre el denominador.",
+            "Recuerda que 1/16 = 0.0625, así que puedes usarlo como referencia para las demás."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -102,7 +110,11 @@
             "-5/32, -0.17, -0.18, -3/16"
           ],
           "respuestaCorrecta": 3,
-          "retroalimentacion": "-3/16 = -0.1875 y -5/32 = -0.15625. De mayor a menor: -0.15625 > -0.17 > -0.18 > -0.1875."
+          "retroalimentacion": "-3/16 = -0.1875 y -5/32 = -0.15625. De mayor a menor: -0.15625 > -0.17 > -0.18 > -0.1875.",
+          "pistas": [
+            "Convierte -3/16 y -5/32 a decimal: -3/16 = -0.1875, -5/32 = -0.15625.",
+            "Ordena de mayor a menor (de la menos negativa a la más negativa), igual que en el ejemplo resuelto."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -131,7 +143,25 @@
           "retroalimentacion": "Etapa 1: el más negativo es -2.4. Etapa 2: -9/16 = -0.5625 es el más negativo. Etapa 3: -7.2 es el más negativo."
         }
       ],
-      "nivelEtiqueta": "Nivel 9 de 10 · Integración"
+      "nivelEtiqueta": "Nivel 9 de 10 · Integración",
+      "ejemploResuelto": {
+        "enunciado": "Emilio agrega un cuarto ensayo con un cambio de -9/8 atm y otro de -1.15 atm. Quiere saber cuál cambio fue más negativo y si existe un valor intermedio entre ambos.",
+        "pasos": [
+          {
+            "texto": "Convertimos -9/8 a decimal para comparar en la misma forma.",
+            "operacion": "-9/8 = -1.125"
+          },
+          {
+            "texto": "Comparamos -1.125 atm con -1.15 atm.",
+            "operacion": "-1.15 < -1.125"
+          },
+          {
+            "texto": "Por densidad, buscamos un valor posible entre ambos.",
+            "operacion": "-1.15 < -1.14 < -1.125"
+          }
+        ],
+        "respuestaFinal": "El segundo ensayo (-1.15 atm) fue más negativo que -9/8 atm (-1.125 atm), y sí existe un valor intermedio, por ejemplo -1.14 atm."
+      }
     }
   ],
   "practicaExtra": [

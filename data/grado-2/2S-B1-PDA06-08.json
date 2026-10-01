@@ -35,7 +35,11 @@
             "$840"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "8000×0.05×2 = $800."
+          "retroalimentacion": "8000×0.05×2 = $800.",
+          "pistas": [
+            "Aplica la fórmula I=C×(r÷100)×t, igual que hiciste con el depósito de la mamá de Itzel en el ejemplo resuelto.",
+            "8000×0.05×2: ¿cuánto da?"
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -53,7 +57,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Un préstamo de $1,500 al 10% de interés simple anual durante 2 años genera un interés de $450.",
           "respuestaCorrecta": false,
-          "retroalimentacion": "I=1500×0.10×2 = $300, no $450."
+          "retroalimentacion": "I=1500×0.10×2 = $300, no $450.",
+          "pistas": [
+            "Aplica la fórmula I=C×(r÷100)×t.",
+            "1500×0.10×2: ¿cuánto da realmente?"
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -103,7 +111,11 @@
             "8 años"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "800 = 5000×0.04×t = 200t → t = 4 años."
+          "retroalimentacion": "800 = 5000×0.04×t = 200t → t = 4 años.",
+          "pistas": [
+            "Usa la fórmula I=C×(r÷100)×t y despeja t, igual que calculaste el interés en el ejemplo resuelto pero al revés.",
+            "800=5000×0.04×t=200t: ¿cuánto vale t?"
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -118,7 +130,21 @@
           "retroalimentacion": "900 = 7500×r×2 = 15000r → r = 900÷15000 = 0.06 = 6%."
         }
       ],
-      "nivelEtiqueta": "Nivel 8 de 10 · Reto avanzado"
+      "nivelEtiqueta": "Nivel 8 de 10 · Reto avanzado",
+      "ejemploResuelto": {
+        "enunciado": "La mamá de Itzel deposita $6,000 a una tasa del 4% anual durante 5 años.",
+        "pasos": [
+          {
+            "texto": "Aplicamos la fórmula de interés simple.",
+            "operacion": "I = 6000 × 0.04 × 5"
+          },
+          {
+            "texto": "Multiplicamos los tres factores.",
+            "operacion": "I = 1200"
+          }
+        ],
+        "respuestaFinal": "El depósito de la mamá de Itzel generará $1,200 de interés después de 5 años."
+      }
     }
   ],
   "practicaExtra": [

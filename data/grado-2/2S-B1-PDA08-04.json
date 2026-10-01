@@ -35,7 +35,11 @@
             "Pirámide cuadrangular"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Tiene dos bases (no una) y caras laterales rectangulares (no triangulares): es un prisma triangular."
+          "retroalimentacion": "Tiene dos bases (no una) y caras laterales rectangulares (no triangulares): es un prisma triangular.",
+          "pistas": [
+            "Fíjate si el cuerpo tiene una sola base con caras triangulares que convergen en un punto (como la pirámide hexagonal de Iker) o dos bases con caras rectangulares (como un prisma).",
+            "Dos bases + caras laterales rectangulares = prisma triangular."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -47,7 +51,11 @@
           "tipo": "llenar_frase",
           "frase": "Una pirámide pentagonal tiene 6 caras y 6 vértices. Según la relación de Euler (C+V=A+2), tiene ___ aristas.",
           "respuestaCorrecta": "10",
-          "retroalimentacion": "C+V=6+6=12=A+2, entonces A=12−2=10."
+          "retroalimentacion": "C+V=6+6=12=A+2, entonces A=12−2=10.",
+          "pistas": [
+            "Aplica la relación de Euler C+V=A+2, igual que hicimos con la pirámide hexagonal de Iker: 7+7=14=A+2, A=12.",
+            "C+V=6+6=12=A+2, entonces A=12−2=10."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -121,10 +129,27 @@
             "22"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "C+V=8+12=20=A+2 → A=20−2=18."
+          "retroalimentacion": "C+V=8+12=20=A+2 → A=20−2=18.",
+          "pistas": [
+            "Usa Euler igual que con el cuerpo de Iker: suma caras y vértices, y réstale 2 para obtener las aristas.",
+            "C+V=8+12=20=A+2 → A=20−2=18."
+          ]
         }
       ],
-      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis"
+      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis",
+      "ejemploResuelto": {
+        "enunciado": "En su siguiente proyecto de la clase de Tecnología, Iker arma un cuerpo con una sola base hexagonal y 6 caras laterales triangulares que convergen en un único vértice arriba.",
+        "pasos": [
+          {
+            "texto": "Identificamos el cuerpo: una sola base con caras laterales triangulares que convergen en un ápice es una pirámide hexagonal, con 7 caras (6 triangulares + 1 base) y 7 vértices (6 de la base + el ápice)."
+          },
+          {
+            "texto": "Aplicamos la relación de Euler para encontrar las aristas.",
+            "operacion": "C + V = A + 2 → 7 + 7 = A + 2 → A = 12"
+          }
+        ],
+        "respuestaFinal": "La pirámide hexagonal de Iker tiene 12 aristas, y sí cumple la relación de Euler."
+      }
     }
   ],
   "practicaExtra": [

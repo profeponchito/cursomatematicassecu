@@ -29,7 +29,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "La suma de los ángulos internos de un octágono (8 lados) es 1080°.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: (8−2)×180° = 6×180° = 1080°."
+          "retroalimentacion": "Correcto: (8−2)×180° = 6×180° = 1080°.",
+          "pistas": [
+            "Aplica (n−2)×180°, igual que calculaste la suma del eneágono en el ejemplo resuelto.",
+            "(8−2)×180°: ¿cuánto da?"
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -47,7 +51,11 @@
           "tipo": "llenar_frase",
           "frase": "La suma de los ángulos internos de un eneágono (9 lados) es ___°.",
           "respuestaCorrecta": "1260",
-          "retroalimentacion": "(9−2)×180° = 7×180° = 1260°."
+          "retroalimentacion": "(9−2)×180° = 7×180° = 1260°.",
+          "pistas": [
+            "Este es el mismo cálculo que hiciste en el ejemplo resuelto: (9−2)×180°.",
+            "7×180°: ¿cuánto da?"
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -83,7 +91,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "En un pentágono regular, cada ángulo interior mide 108°.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: (5−2)×180°÷5 = 540°÷5 = 108°."
+          "retroalimentacion": "Correcto: (5−2)×180°÷5 = 540°÷5 = 108°.",
+          "pistas": [
+            "Calcula la suma con (n−2)×180° y divide entre 5.",
+            "540°÷5: ¿cuánto da?"
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -118,7 +130,21 @@
           "retroalimentacion": "Pentágono: 540°÷5=108°. Octágono: 1080°÷8=135°. Decágono: 1440°÷10=144°."
         }
       ],
-      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio"
+      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio",
+      "ejemploResuelto": {
+        "enunciado": "El mismo equipo de Artes también diseña un marco con forma de eneágono regular (9 lados) para otro mural.",
+        "pasos": [
+          {
+            "texto": "Calculamos la suma de los ángulos internos con (n−2)×180°.",
+            "operacion": "(9−2)×180° = 7×180° = 1260°"
+          },
+          {
+            "texto": "Dividimos entre los 9 lados, porque es regular.",
+            "operacion": "1260° ÷ 9 = 140°"
+          }
+        ],
+        "respuestaFinal": "Cada ángulo interior del eneágono regular mide 140°."
+      }
     }
   ],
   "practicaExtra": [

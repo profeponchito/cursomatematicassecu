@@ -34,7 +34,11 @@
             "-2.5"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "-1.5 está entre -2 y -1, ya que -2 < -1.5 < -1."
+          "retroalimentacion": "-1.5 está entre -2 y -1, ya que -2 < -1.5 < -1.",
+          "pistas": [
+            "Piensa en el punto medio entre -2 y -1, como hiciste con el ejemplo resuelto.",
+            "Prueba con -1.5: ¿queda entre -2 y -1?"
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -100,7 +104,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Entre -3 y -2.5 existe al menos un número, por ejemplo -2.8.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: -3 < -2.8 < -2.5, así que sí existe un número entre ellos."
+          "retroalimentacion": "Correcto: -3 < -2.8 < -2.5, así que sí existe un número entre ellos.",
+          "pistas": [
+            "Recuerda la propiedad de densidad que usamos en el ejemplo resuelto: siempre hay un número entre dos números con signo distintos.",
+            "Verifica: ¿-3 < -2.8 < -2.5?"
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -138,10 +146,31 @@
             "1/2, -0.3, -4, 2"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "1/2 = 0.5. De menor a mayor: -4 < -0.3 < 0.5 < 2."
+          "retroalimentacion": "1/2 = 0.5. De menor a mayor: -4 < -0.3 < 0.5 < 2.",
+          "pistas": [
+            "Convierte 1/2 a decimal: 1/2 = 0.5.",
+            "Ubica los cuatro valores en la recta numérica y ordénalos de izquierda a derecha, igual que en los ejercicios anteriores."
+          ]
         }
       ],
-      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado"
+      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado",
+      "ejemploResuelto": {
+        "enunciado": "Esa misma noche, el hermano menor quiere jugar: apuesta a que existe una temperatura posible entre -0.9°C y -0.95°C.",
+        "pasos": [
+          {
+            "texto": "Por la propiedad de densidad, entre dos números con signo distintos siempre existe al menos otro número."
+          },
+          {
+            "texto": "Buscamos un valor intermedio, por ejemplo el punto medio entre -0.95 y -0.9.",
+            "operacion": "-0.95 y -0.9 → -0.925"
+          },
+          {
+            "texto": "Comprobamos que -0.925 queda entre los dos.",
+            "operacion": "-0.95 < -0.925 < -0.9"
+          }
+        ],
+        "respuestaFinal": "Sí existe: por ejemplo -0.925°C (y hay infinitos valores más entre -0.95°C y -0.9°C)."
+      }
     }
   ],
   "practicaExtra": [

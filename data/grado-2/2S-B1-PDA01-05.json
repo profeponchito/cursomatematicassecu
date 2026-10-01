@@ -34,7 +34,11 @@
             "Torreón"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Chihuahua tuvo -6.4 °C, la temperatura más baja de las cuatro: -6.4 < -3.9 < -1.6 < -0.75."
+          "retroalimentacion": "Chihuahua tuvo -6.4 °C, la temperatura más baja de las cuatro: -6.4 < -3.9 < -1.6 < -0.75.",
+          "pistas": [
+            "Recuerda: la ciudad más fría tiene la temperatura más negativa, igual que Camargo en el ejemplo resuelto.",
+            "Compara los cuatro valores: -1.6, -6.4, -3.9, -0.75. ¿Cuál está más a la izquierda en la recta numérica?"
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -78,7 +82,11 @@
             "-8.35, -8.03, -8.3, -7.9"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "De más fría a menos fría (de menor a mayor): -8.35 < -8.3 < -8.03 < -7.9."
+          "retroalimentacion": "De más fría a menos fría (de menor a mayor): -8.35 < -8.3 < -8.03 < -7.9.",
+          "pistas": [
+            "Ordena los cuatro valores de menor a mayor, igual que hiciste con las temperaturas del ejemplo resuelto.",
+            "El más negativo siempre es el más frío."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -102,7 +110,11 @@
             "-5.55 °C"
           ],
           "respuestaCorrecta": 3,
-          "retroalimentacion": "-5.55 °C está entre -5.6 °C y -5.5 °C, ya que -5.6 < -5.55 < -5.5."
+          "retroalimentacion": "-5.55 °C está entre -5.6 °C y -5.5 °C, ya que -5.6 < -5.55 < -5.5.",
+          "pistas": [
+            "Busca un valor entre -5.6 y -5.5, como hiciste al comparar a Camargo con las otras ciudades.",
+            "-5.55 está justo a la mitad entre -5.6 y -5.5: compruébalo."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -131,7 +143,24 @@
           "retroalimentacion": "Estación A: la más baja es -5.5. Estación B: la más baja es -2.7. Estación C: la más baja es -4."
         }
       ],
-      "nivelEtiqueta": "Nivel 5 de 10 · Aplicación"
+      "nivelEtiqueta": "Nivel 5 de 10 · Aplicación",
+      "ejemploResuelto": {
+        "enunciado": "El locutor recibe también el reporte de Camargo: -24/5 °C. Quiere saber si es más fría que Chihuahua y Ciudad Juárez, que esa madrugada registraron -4.75°C.",
+        "pasos": [
+          {
+            "texto": "Convertimos -24/5 a decimal para comparar en la misma forma.",
+            "operacion": "-24/5 = -4.8"
+          },
+          {
+            "texto": "Comparamos -4.8°C con -4.75°C en la recta numérica.",
+            "operacion": "-4.8 < -4.75"
+          },
+          {
+            "texto": "Como -4.8 está más a la izquierda (es más negativo), Camargo tuvo la temperatura más baja."
+          }
+        ],
+        "respuestaFinal": "Camargo amaneció más fría: -24/5°C = -4.8°C, menor que los -4.75°C de Chihuahua y Ciudad Juárez."
+      }
     }
   ],
   "practicaExtra": [

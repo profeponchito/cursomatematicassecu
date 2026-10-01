@@ -34,7 +34,11 @@
             "$600"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Total antes del descuento: 13,110÷0.95=$13,800. Restando la tarifa base: 13,800−3,000=$10,800 para 20 mesas → 10,800÷20=$540=x+60 → x=$480."
+          "retroalimentacion": "Total antes del descuento: 13,110÷0.95=$13,800. Restando la tarifa base: 13,800−3,000=$10,800 para 20 mesas → 10,800÷20=$540=x+60 → x=$480.",
+          "pistas": [
+            "Trabaja en el mismo orden que el ejemplo resuelto: primero deshaz el descuento dividiendo, luego resta la tarifa base y divide entre las unidades.",
+            "13,110÷0.95=13,800; 13,800−3,000=10,800; 10,800÷20=540=x+60."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -64,7 +68,11 @@
             "$20,000"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "5,000+0.08x = 2,000+0.20x → 3,000 = 0.12x → x = $25,000."
+          "retroalimentacion": "5,000+0.08x = 2,000+0.20x → 3,000 = 0.12x → x = $25,000.",
+          "pistas": [
+            "Iguala ambas expresiones y despeja x, igual que aplicaste los pasos en orden en el ejemplo resuelto.",
+            "5000+0.08x=2000+0.20x → 3000=0.12x: ¿cuánto vale x?"
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -114,10 +122,32 @@
             "40"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "5(x+12)=3x+130 → 5x+60=3x+130 → 2x=70 → x=35."
+          "retroalimentacion": "5(x+12)=3x+130 → 5x+60=3x+130 → 2x=70 → x=35.",
+          "pistas": [
+            "Distribuye el 5 en el paréntesis y reúne los términos con x de un lado, igual que combinaste los pasos en el ejemplo resuelto.",
+            "5x+60=3x+130 → 2x=70: ¿cuánto vale x?"
+          ]
         }
       ],
-      "nivelEtiqueta": "Nivel 10 de 10 · Dominio"
+      "nivelEtiqueta": "Nivel 10 de 10 · Dominio",
+      "ejemploResuelto": {
+        "enunciado": "El otro grupo de 3° cotiza un autobús con un costo base de $3,600 más un cargo del 10% por servicio, y luego consigue un descuento adicional del 4% sobre el total a pagar de contado; deben repartir el costo final entre 24 estudiantes.",
+        "pasos": [
+          {
+            "texto": "Aplicamos primero el cargo por servicio del 10%.",
+            "operacion": "3600 × 1.10 = 3960"
+          },
+          {
+            "texto": "Aplicamos el descuento adicional del 4% sobre ese resultado.",
+            "operacion": "3960 × 0.96 = 3801.6"
+          },
+          {
+            "texto": "Repartimos el costo final entre los 24 estudiantes.",
+            "operacion": "3801.6 ÷ 24 = 158.4"
+          }
+        ],
+        "respuestaFinal": "Cada uno de los 24 estudiantes deberá aportar $158.40."
+      }
     }
   ],
   "practicaExtra": [

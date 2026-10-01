@@ -34,7 +34,11 @@
             "-95/8, -227/16, -14.09, -13.6, 3.5"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "-227/16 = -14.1875 y -95/8 = -11.875. De menor a mayor: -14.1875 < -14.09 < -13.6 < -11.875 < 3.5."
+          "retroalimentacion": "-227/16 = -14.1875 y -95/8 = -11.875. De menor a mayor: -14.1875 < -14.09 < -13.6 < -11.875 < 3.5.",
+          "pistas": [
+            "Convierte -227/16 y -95/8 a decimal, igual que hiciste con -11/16 en el ejemplo resuelto: -227/16 = -14.1875, -95/8 = -11.875.",
+            "Ordena los cinco balances de menor a mayor (de la mayor pérdida a la mayor ganancia)."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -78,7 +82,11 @@
             "-14.19"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "-14.12 está entre -14.1875 y -14.09, ya que -14.1875 < -14.12 < -14.09. Nota: -14.19 no sirve porque es menor que -14.1875."
+          "retroalimentacion": "-14.12 está entre -14.1875 y -14.09, ya que -14.1875 < -14.12 < -14.09. Nota: -14.19 no sirve porque es menor que -14.1875.",
+          "pistas": [
+            "Busca un valor entre -14.1875 y -14.09, igual que entre -0.7 y -0.6875 en el ejemplo resuelto.",
+            "-14.12 debe cumplir -14.1875 < -14.12 < -14.09: compruébalo."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -102,7 +110,11 @@
             "-227/16, -283/20, -14.09, -13.6"
           ],
           "respuestaCorrecta": 3,
-          "retroalimentacion": "-227/16 = -14.1875 y -283/20 = -14.15. De menor a mayor: -14.1875 < -14.15 < -14.09 < -13.6."
+          "retroalimentacion": "-227/16 = -14.1875 y -283/20 = -14.15. De menor a mayor: -14.1875 < -14.15 < -14.09 < -13.6.",
+          "pistas": [
+            "Convierte -227/16 y -283/20 a decimal: -227/16 = -14.1875, -283/20 = -14.15.",
+            "Ordena los cuatro balances de menor a mayor."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -131,7 +143,25 @@
           "retroalimentacion": "Departamento X: el menor es -9.4. Departamento Y: -6.5 es el menor. Departamento Z: -167/16 = -10.4375 es el menor."
         }
       ],
-      "nivelEtiqueta": "Nivel 10 de 10 · Dominio"
+      "nivelEtiqueta": "Nivel 10 de 10 · Dominio",
+      "ejemploResuelto": {
+        "enunciado": "El tesorero revisa dos meses más: uno con -11/16 y otro con -0.7. ¿Cuál tuvo mayor pérdida, y existe un balance posible entre ambos?",
+        "pasos": [
+          {
+            "texto": "Convertimos -11/16 a decimal para comparar.",
+            "operacion": "-11/16 = -0.6875"
+          },
+          {
+            "texto": "Comparamos -0.6875 con -0.7.",
+            "operacion": "-0.7 < -0.6875"
+          },
+          {
+            "texto": "Por densidad, buscamos un balance posible entre ambos.",
+            "operacion": "-0.7 < -0.69 < -0.6875"
+          }
+        ],
+        "respuestaFinal": "El mes con -0.7 tuvo mayor pérdida que -11/16 (-0.6875), y sí existe un balance intermedio, por ejemplo -0.69."
+      }
     }
   ],
   "practicaExtra": [

@@ -28,7 +28,11 @@
           "tipo": "llenar_frase",
           "frase": "Simplifica: (x²)⁵ = x elevado a la ___.",
           "respuestaCorrecta": "10",
-          "retroalimentacion": "Al elevar una potencia a otra potencia se multiplican los exponentes: 2×5=10."
+          "retroalimentacion": "Al elevar una potencia a otra potencia se multiplican los exponentes: 2×5=10.",
+          "pistas": [
+            "Cuando una potencia se eleva a otra potencia, se multiplican los exponentes, no se suman, a diferencia de lo que hiciste con x⁶×x⁵ en el ejemplo resuelto.",
+            "2×5: ¿cuánto da?"
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -52,7 +56,11 @@
           "tipo": "llenar_frase",
           "frase": "El desarrollo de (x+4)² es x² + 8x + ___.",
           "respuestaCorrecta": "16",
-          "retroalimentacion": "El tercer término es el cuadrado del segundo: 4² = 16."
+          "retroalimentacion": "El tercer término es el cuadrado del segundo: 4² = 16.",
+          "pistas": [
+            "El tercer término del cuadrado de un binomio es el cuadrado del segundo número.",
+            "4²: ¿cuánto da?"
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -70,7 +78,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "x^10 × x^3 es igual a x^13.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Se suman los exponentes: 10+3=13."
+          "retroalimentacion": "Se suman los exponentes: 10+3=13.",
+          "pistas": [
+            "Suma los exponentes, igual que hiciste con x⁶×x⁵ en el ejemplo resuelto.",
+            "10+3: ¿cuánto da?"
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -105,7 +117,21 @@
           "retroalimentacion": "x^2×x^7=x^9; (x^3)^4=x^12; (x+6)²=x²+12x+36."
         }
       ],
-      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio"
+      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio",
+      "ejemploResuelto": {
+        "enunciado": "Valeria también debe simplificar x⁶ × x⁵, que representa otro producto de mediciones en el experimento.",
+        "pasos": [
+          {
+            "texto": "Como las bases son iguales, sumamos los exponentes.",
+            "operacion": "x⁶ × x⁵ = x^(6+5)"
+          },
+          {
+            "texto": "Sumamos los exponentes.",
+            "operacion": "6+5 = 11"
+          }
+        ],
+        "respuestaFinal": "x⁶ × x⁵ = x¹¹."
+      }
     }
   ],
   "practicaExtra": [

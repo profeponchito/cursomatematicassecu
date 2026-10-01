@@ -34,7 +34,11 @@
             "2x²+6x+91"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "(x+10)(x-10)=x²-100; (x+3)²=x²+6x+9; sumando ambos: 2x²+6x-91."
+          "retroalimentacion": "(x+10)(x-10)=x²-100; (x+3)²=x²+6x+9; sumando ambos: 2x²+6x-91.",
+          "pistas": [
+            "Resuelve cada parte por separado (diferencia de cuadrados y cuadrado de binomio) antes de sumar, igual que hiciste en el ejemplo resuelto.",
+            "(x+10)(x-10)=x²-100 y (x+3)²=x²+6x+9: suma ambos resultados."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -64,7 +68,11 @@
           "tipo": "llenar_frase",
           "frase": "Simplifica: (x⁵×x³) ÷ (x²×x⁴). El resultado es x elevado a la ___.",
           "respuestaCorrecta": "2",
-          "retroalimentacion": "Numerador: x⁵×x³=x⁸. Denominador: x²×x⁴=x⁶. Dividiendo: x⁸÷x⁶=x²."
+          "retroalimentacion": "Numerador: x⁵×x³=x⁸. Denominador: x²×x⁴=x⁶. Dividiendo: x⁸÷x⁶=x².",
+          "pistas": [
+            "Simplifica primero numerador y denominador por separado, igual que resolviste las dos partes del ejemplo resuelto.",
+            "x⁵×x³=x⁸ y x²×x⁴=x⁶: resta los exponentes al dividir."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -100,7 +108,11 @@
           "tipo": "llenar_frase",
           "frase": "Simplifica: (x+4)² - (x+2)(x-2). El resultado es 8x + ___.",
           "respuestaCorrecta": "20",
-          "retroalimentacion": "(x+4)²=x²+8x+16; (x+2)(x-2)=x²-4; restando: (x²+8x+16)-(x²-4)=8x+20."
+          "retroalimentacion": "(x+4)²=x²+8x+16; (x+2)(x-2)=x²-4; restando: (x²+8x+16)-(x²-4)=8x+20.",
+          "pistas": [
+            "Resuelve cada parte por separado antes de restar, igual que hiciste en el ejemplo resuelto.",
+            "(x+4)²=x²+8x+16 y (x+2)(x-2)=x²-4: resta el segundo del primero."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -123,7 +135,25 @@
           "retroalimentacion": "(x+6)(x+4)=x²+10x+24; x^9÷x^4=x^5; (x^2)^3×x=x^6×x=x^7."
         }
       ],
-      "nivelEtiqueta": "Nivel 10 de 10 · Dominio"
+      "nivelEtiqueta": "Nivel 10 de 10 · Dominio",
+      "ejemploResuelto": {
+        "enunciado": "A Rodrigo también le piden simplificar (x+5)² + x⁴×x².",
+        "pasos": [
+          {
+            "texto": "Desarrollamos el cuadrado del binomio.",
+            "operacion": "(x+5)² = x² + 10x + 25"
+          },
+          {
+            "texto": "Simplificamos el producto de potencias.",
+            "operacion": "x⁴ × x² = x⁶"
+          },
+          {
+            "texto": "Sumamos ambos resultados.",
+            "operacion": "x⁶ + x² + 10x + 25"
+          }
+        ],
+        "respuestaFinal": "(x+5)² + x⁴×x² = x⁶ + x² + 10x + 25."
+      }
     }
   ],
   "practicaExtra": [

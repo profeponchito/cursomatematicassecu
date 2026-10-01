@@ -35,7 +35,11 @@
             "100 km/h"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Distancia total = 180+120 = 300 km. Tiempo total = 3+1+2 = 6 h. v = 300÷6 = 50 km/h."
+          "retroalimentacion": "Distancia total = 180+120 = 300 km. Tiempo total = 3+1+2 = 6 h. v = 300÷6 = 50 km/h.",
+          "pistas": [
+            "Suma toda la distancia y todo el tiempo (incluyendo paradas) antes de dividir, igual que hicimos en el otro viaje de la familia de Emiliano (180÷4=45km/h).",
+            "Distancia total=300km. Tiempo total=6h. v=50km/h."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -77,7 +81,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Un motociclista recorre 80 km en 1 hora, descansa 1 hora, y luego recorre 40 km en 1 hora. Su velocidad promedio total es 60 km/h.",
           "respuestaCorrecta": false,
-          "retroalimentacion": "Falso: distancia total = 120 km, tiempo total = 1+1+1 = 3 h. v = 120÷3 = 40 km/h, no 60."
+          "retroalimentacion": "Falso: distancia total = 120 km, tiempo total = 1+1+1 = 3 h. v = 120÷3 = 40 km/h, no 60.",
+          "pistas": [
+            "No olvides sumar el tiempo de descanso al tiempo total, igual que hicimos en el otro viaje de la familia de Emiliano (2+1+1=4h).",
+            "Distancia total=120km. Tiempo total=3h. v=40km/h."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -95,7 +103,11 @@
           "tipo": "llenar_frase",
           "frase": "Un viajero recorre 350 km en 5 horas en total, incluyendo una parada de 1 hora. Su velocidad promedio es ___ km/h.",
           "respuestaCorrecta": "70",
-          "retroalimentacion": "v = 350 ÷ 5 = 70 km/h."
+          "retroalimentacion": "v = 350 ÷ 5 = 70 km/h.",
+          "pistas": [
+            "La velocidad promedio siempre es distancia total entre tiempo total, el mismo procedimiento que usamos en el otro viaje de la familia de Emiliano.",
+            "v=350÷5=70km/h."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -118,7 +130,25 @@
           "retroalimentacion": "180 km ÷ 4 h = 45 km/h. 300 km ÷ 4 h = 75 km/h. 180 km ÷ 3 h = 60 km/h."
         }
       ],
-      "nivelEtiqueta": "Nivel 7 de 10 · Reto"
+      "nivelEtiqueta": "Nivel 7 de 10 · Reto",
+      "ejemploResuelto": {
+        "enunciado": "En otro viaje, la familia de Emiliano recorre 100 km en 2 horas, para 1 hora a comer, y recorre 80 km más en 1 hora.",
+        "pasos": [
+          {
+            "texto": "Sumamos la distancia total.",
+            "operacion": "100 + 80 = 180 km"
+          },
+          {
+            "texto": "Sumamos el tiempo total, incluyendo la parada.",
+            "operacion": "2 + 1 + 1 = 4 horas"
+          },
+          {
+            "texto": "Calculamos la velocidad promedio.",
+            "operacion": "180 ÷ 4 = 45 km/h"
+          }
+        ],
+        "respuestaFinal": "La velocidad promedio de ese viaje fue 45 km/h."
+      }
     }
   ],
   "practicaExtra": [

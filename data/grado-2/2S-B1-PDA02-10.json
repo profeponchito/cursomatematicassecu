@@ -34,7 +34,11 @@
             "6"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "108=2²×3³, 144=2⁴×3². MCD(108,144)=2²×3²=36 sets: 108÷36=3 balones por set."
+          "retroalimentacion": "108=2²×3³, 144=2⁴×3². MCD(108,144)=2²×3²=36 sets: 108÷36=3 balones por set.",
+          "pistas": [
+            "Descompón 108 y 144 en factores primos, igual que hiciste con 72 y 120 en el ejemplo resuelto: 108=2²×3³, 144=2⁴×3².",
+            "El MCD toma el menor exponente de cada factor común: 2² y 3²."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -58,7 +62,11 @@
             "1:00 p.m."
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "15=3×5, 18=2×3², 27=3³. mcm(15,18,27)=2×3³×5=270 minutos (4 h 30 min). 7:00 + 4:30 = 11:30 a.m."
+          "retroalimentacion": "15=3×5, 18=2×3², 27=3³. mcm(15,18,27)=2×3³×5=270 minutos (4 h 30 min). 7:00 + 4:30 = 11:30 a.m.",
+          "pistas": [
+            "Descompón 15, 18 y 27: 15=3×5, 18=2×3², 27=3³.",
+            "Calcula el mcm y súmalo a la hora de salida, igual que hiciste con las alarmas en el ejemplo resuelto."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -102,7 +110,11 @@
             "12"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "168=2³×3×7, 252=2²×3²×7. MCD(168,252)=2²×3×7=84."
+          "retroalimentacion": "168=2³×3×7, 252=2²×3²×7. MCD(168,252)=2²×3×7=84.",
+          "pistas": [
+            "Descompón 168 y 252: 168=2³×3×7, 252=2²×3²×7.",
+            "El MCD toma el menor exponente de cada factor común: 2², 3¹ y 7¹."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -117,7 +129,29 @@
           "retroalimentacion": "9=3², 15=3×5, 20=2²×5. mcm(9,15,20)=2²×3²×5=180 minutos."
         }
       ],
-      "nivelEtiqueta": "Nivel 10 de 10 · Dominio"
+      "nivelEtiqueta": "Nivel 10 de 10 · Dominio",
+      "ejemploResuelto": {
+        "enunciado": "El comité también organiza una kermés con 72 boletos de comida y 120 boletos de juegos para repartir en el mayor número de paquetes iguales, y dos alarmas de cierre suenan cada 12 y 18 minutos. Además, quieren saber si 72 es divisible entre 4 y entre 9.",
+        "pasos": [
+          {
+            "texto": "Para los paquetes, calculamos el MCD de 72 y 120.",
+            "operacion": "72=2³×3², 120=2³×3×5 → MCD=2³×3=24"
+          },
+          {
+            "texto": "Dividimos cada cantidad entre el MCD.",
+            "operacion": "72÷24=3 boletos de comida, 120÷24=5 boletos de juegos"
+          },
+          {
+            "texto": "Para las alarmas, calculamos el mcm de 12 y 18.",
+            "operacion": "12=2²×3, 18=2×3² → mcm=2²×3²=36"
+          },
+          {
+            "texto": "Para la divisibilidad de 72, revisamos los criterios entre 4 (últimos dos dígitos) y entre 9 (suma de dígitos).",
+            "operacion": "72÷4=18 exacto; 7+2=9, múltiplo de 9"
+          }
+        ],
+        "respuestaFinal": "Se arman 24 paquetes iguales (3 boletos de comida y 5 de juegos cada uno), las alarmas coinciden cada 36 minutos, y 72 es divisible tanto entre 4 como entre 9."
+      }
     }
   ],
   "practicaExtra": [

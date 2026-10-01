@@ -33,7 +33,11 @@
             "$324"
           ],
           "respuestaCorrecta": 3,
-          "retroalimentacion": "360 × (1 − 0.10) = $324."
+          "retroalimentacion": "360 × (1 − 0.10) = $324.",
+          "pistas": [
+            "Multiplica por (1−0.10), igual que calculaste el precio de la mochila en el ejemplo resuelto.",
+            "360 × 0.90: ¿cuánto da?"
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -131,7 +135,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "La solución de 5x + 15 = 45 es x = 6.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "5x = 30; x = 6."
+          "retroalimentacion": "5x = 30; x = 6.",
+          "pistas": [
+            "Resta 15 de ambos lados y divide entre 5, igual que despejaste x en el reparto del primo y la tía.",
+            "5x=30: ¿cuánto vale x?"
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -143,7 +151,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Un producto de $140 con 15% de descuento cuesta $130.",
           "respuestaCorrecta": false,
-          "retroalimentacion": "140 × (1 − 0.15) = $119, no $130."
+          "retroalimentacion": "140 × (1 − 0.15) = $119, no $130.",
+          "pistas": [
+            "Multiplica 140 por (1−0.15), igual que en el ejemplo resuelto.",
+            "140 × 0.85: ¿cuánto da realmente?"
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -166,7 +178,21 @@
           "retroalimentacion": "3x-4=17 → x=7; 7x+3=45 → x=6; x+6x=56 → x=8."
         }
       ],
-      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis"
+      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis",
+      "ejemploResuelto": {
+        "enunciado": "En la misma papelería, el hermano de Ana compra una mochila de $480 con 25% de descuento, y su tía le da el triple de lo que le da su primo, sumando entre los dos $320.",
+        "pasos": [
+          {
+            "texto": "Calculamos el precio de la mochila con el descuento.",
+            "operacion": "480 × (1 − 0.25) = 480 × 0.75 = 360"
+          },
+          {
+            "texto": "Planteamos la ecuación del reparto, con x = lo que da el primo.",
+            "operacion": "x + 3x = 320 → 4x = 320 → x = 80"
+          }
+        ],
+        "respuestaFinal": "La mochila costará $360, el primo dio $80 y la tía dio el triple: $240."
+      }
     }
   ],
   "practicaExtra": [

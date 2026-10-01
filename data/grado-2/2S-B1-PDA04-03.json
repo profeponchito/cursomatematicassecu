@@ -33,7 +33,11 @@
             "2n²"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "Cada término es el cuadrado de su posición: 1²=1, 2²=4, 3²=9, 4²=16."
+          "retroalimentacion": "Cada término es el cuadrado de su posición: 1²=1, 2²=4, 3²=9, 4²=16.",
+          "pistas": [
+            "Compara cada término con el cuadrado de su posición, igual que hiciste con la sucesión de Emiliano en el ejemplo resuelto.",
+            "1÷1=1, 4÷4=1... ¿qué factor se repite?"
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -69,7 +73,11 @@
             "25"
           ],
           "respuestaCorrecta": 3,
-          "retroalimentacion": "n² en n=5: 1×5² = 25."
+          "retroalimentacion": "n² en n=5: 1×5² = 25.",
+          "pistas": [
+            "Eleva 5 al cuadrado.",
+            "5×5: ¿cuánto da?"
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -117,7 +125,11 @@
             "n²"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "4n²: 4(1)²=4, 4(2)²=16, 4(3)²=36, 4(4)²=64."
+          "retroalimentacion": "4n²: 4(1)²=4, 4(2)²=16, 4(3)²=36, 4(4)²=64.",
+          "pistas": [
+            "Divide cada término entre el cuadrado de su posición, igual que hiciste en el ejemplo resuelto.",
+            "4÷1=4, 16÷4=4... ¿qué factor se repite?"
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -132,7 +144,20 @@
           "retroalimentacion": "2n² en n=7: 2×49 = 98."
         }
       ],
-      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado"
+      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado",
+      "ejemploResuelto": {
+        "enunciado": "En el mismo concurso, a Emiliano le muestran ahora la sucesión 7, 28, 63, 112 y le piden encontrar su expresión algebraica.",
+        "pasos": [
+          {
+            "texto": "Comparamos cada término con el cuadrado de su posición (1, 4, 9, 16...).",
+            "operacion": "7÷1=7, 28÷4=7, 63÷9=7, 112÷16=7"
+          },
+          {
+            "texto": "Como el factor es siempre 7, la expresión es 7n²."
+          }
+        ],
+        "respuestaFinal": "La expresión algebraica de la sucesión 7, 28, 63, 112 es 7n²."
+      }
     }
   ],
   "practicaExtra": [

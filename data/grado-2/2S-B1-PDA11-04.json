@@ -63,13 +63,21 @@
           "tipo": "llenar_frase",
           "frase": "De 40 alumnos, 6 prefieren la gráfica circular para representar datos categóricos. La frecuencia porcentual de esa preferencia es ___%.",
           "respuestaCorrecta": "15",
-          "retroalimentacion": "6÷40 = 0.15, y 0.15×100 = 15%."
+          "retroalimentacion": "6÷40 = 0.15, y 0.15×100 = 15%.",
+          "pistas": [
+            "Divide la frecuencia entre el total y multiplica por 100, igual que hicimos para el dato de estudiar en equipo (9÷45=0.2→20%).",
+            "6÷40=0.15→15%."
+          ]
         },
         {
           "tipo": "llenar_frase",
           "frase": "En una encuesta a 50 personas sobre su gráfica favorita, 20 dijeron gráfica de barras. La frecuencia relativa de esa respuesta es ___.",
           "respuestaCorrecta": "0.4",
-          "retroalimentacion": "20÷50 = 0.4."
+          "retroalimentacion": "20÷50 = 0.4.",
+          "pistas": [
+            "La frecuencia relativa es frecuencia÷total, el mismo procedimiento que usamos para el equipo de Monterrey.",
+            "20÷50=0.4."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -81,7 +89,11 @@
             "70%"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "12÷40 = 0.3, y 0.3×100 = 30%."
+          "retroalimentacion": "12÷40 = 0.3, y 0.3×100 = 30%.",
+          "pistas": [
+            "Primero identifica si el dato es categórico, numérico agrupado o cambia con el tiempo, y después calcula la frecuencia porcentual como hicimos para el equipo de Monterrey.",
+            "12÷40=0.3→30%."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -122,7 +134,24 @@
           "retroalimentacion": "5÷25 = 0.2."
         }
       ],
-      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis"
+      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis",
+      "ejemploResuelto": {
+        "enunciado": "El mismo equipo de Monterrey también recolectó un cuarto conjunto de datos: de 45 compañeros, 9 prefieren estudiar en equipo.",
+        "pasos": [
+          {
+            "texto": "Identificamos el tipo de dato: es categórico (estudiar en equipo o no), así que conviene una gráfica de barras o circular."
+          },
+          {
+            "texto": "Calculamos la frecuencia relativa.",
+            "operacion": "9 ÷ 45 = 0.2"
+          },
+          {
+            "texto": "Calculamos la frecuencia porcentual.",
+            "operacion": "0.2 × 100 = 20%"
+          }
+        ],
+        "respuestaFinal": "Usarían una gráfica de barras o circular; la frecuencia porcentual es 20%."
+      }
     }
   ],
   "practicaExtra": [

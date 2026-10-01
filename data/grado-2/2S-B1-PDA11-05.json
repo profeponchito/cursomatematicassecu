@@ -34,7 +34,11 @@
             "10"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Contando las repeticiones en la lista: 'perro' aparece 5 veces."
+          "retroalimentacion": "Contando las repeticiones en la lista: 'perro' aparece 5 veces.",
+          "pistas": [
+            "Cuenta cuántas veces se repite cada valor en la lista original, igual que hicimos con las tallas de zapato de don Aurelio (26 apareció 4 veces).",
+            "'perro' aparece 5 veces."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -58,7 +62,11 @@
             "16"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "'cola' se repite 8 veces de las 16 ventas registradas."
+          "retroalimentacion": "'cola' se repite 8 veces de las 16 ventas registradas.",
+          "pistas": [
+            "Recorre la lista y cuenta las repeticiones de cada categoría, el mismo procedimiento que usamos con las tallas de zapato.",
+            "'cola' se repite 8 veces."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -94,7 +102,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Antes de calcular la frecuencia relativa de datos sin agrupar, siempre debes contar cuántas veces se repite cada valor o categoría en la lista original.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: ese conteo es el primer paso para construir cualquier tabla de frecuencias a partir de datos crudos."
+          "retroalimentacion": "Correcto: ese conteo es el primer paso para construir cualquier tabla de frecuencias a partir de datos crudos.",
+          "pistas": [
+            "Antes de calcular cualquier frecuencia relativa, siempre hay que contar las repeticiones primero, como hicimos con las tallas de zapato de don Aurelio.",
+            "Contar las repeticiones es siempre el primer paso para construir una tabla de frecuencias."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -117,7 +129,21 @@
           "retroalimentacion": "perro: 5÷10=0.5. gato: 3÷10=0.3. pez: 2÷10=0.2."
         }
       ],
-      "nivelEtiqueta": "Nivel 5 de 10 · Aplicación"
+      "nivelEtiqueta": "Nivel 5 de 10 · Aplicación",
+      "ejemploResuelto": {
+        "enunciado": "Don Aurelio también anotó las tallas de zapato vendidas al día siguiente: 26, 27, 26, 28, 26, 27, 26 y 28.",
+        "pasos": [
+          {
+            "texto": "Contamos cuántas veces se repite cada talla en la lista.",
+            "operacion": "26: 4 veces, 27: 2 veces, 28: 2 veces (4+2+2=8, coincide con el total)"
+          },
+          {
+            "texto": "Calculamos la frecuencia relativa de la talla 26.",
+            "operacion": "4 ÷ 8 = 0.5"
+          }
+        ],
+        "respuestaFinal": "La talla 26 tiene una frecuencia relativa de 0.5 (la mitad de las ventas del día)."
+      }
     }
   ],
   "practicaExtra": [

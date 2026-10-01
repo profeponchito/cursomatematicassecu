@@ -33,7 +33,11 @@
             "$675"
           ],
           "respuestaCorrecta": 3,
-          "retroalimentacion": "k = 540÷12 = 45. 15×45 = $675."
+          "retroalimentacion": "k = 540÷12 = 45. 15×45 = $675.",
+          "pistas": [
+            "Calcula k = 540÷12, igual que hiciste con los helados en el ejemplo resuelto.",
+            "Multiplica k por 15."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -131,7 +135,11 @@
           "tipo": "llenar_frase",
           "frase": "Si 7 boletos de autobús cuestan $98, entonces 12 boletos cuestan $___.",
           "respuestaCorrecta": "168",
-          "retroalimentacion": "k = 98÷7 = 14 por boleto. 12×14 = $168."
+          "retroalimentacion": "k = 98÷7 = 14 por boleto. 12×14 = $168.",
+          "pistas": [
+            "Calcula k = 98÷7.",
+            "Multiplica k por 12, igual que hiciste con los helados en el ejemplo resuelto."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -149,7 +157,11 @@
             "$270"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "y = k × x = 27 × 8 = $216."
+          "retroalimentacion": "y = k × x = 27 × 8 = $216.",
+          "pistas": [
+            "Cuando ya conoces k, solo multiplícalo por la cantidad, igual que hiciste con los helados en el ejemplo resuelto.",
+            "27 × 8: ¿cuánto da?"
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -172,7 +184,21 @@
           "retroalimentacion": "7 kg de café cuestan $329 → $47 por kg; 4 boletos de tren cuestan $148 → $37 por boleto; 9 litros de aceite cuestan $306 → $34 por litro."
         }
       ],
-      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis"
+      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis",
+      "ejemploResuelto": {
+        "enunciado": "El dueño también quiere saber cuánto costarían 11 helados con la misma constante de proporcionalidad de los 3 helados en $54.",
+        "pasos": [
+          {
+            "texto": "Calculamos k dividiendo el costo entre la cantidad.",
+            "operacion": "k = 54 ÷ 3 = 18"
+          },
+          {
+            "texto": "Multiplicamos k por la nueva cantidad de helados.",
+            "operacion": "11 × 18 = 198"
+          }
+        ],
+        "respuestaFinal": "11 helados costarían $198."
+      }
     }
   ],
   "practicaExtra": [

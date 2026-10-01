@@ -35,7 +35,11 @@
             "4.71 cm"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "arco=(30/360)×2×3.14×6 = 0.0833×37.68 = 3.14 cm."
+          "retroalimentacion": "arco=(30/360)×2×3.14×6 = 0.0833×37.68 = 3.14 cm.",
+          "pistas": [
+            "Sigue los mismos pasos que con la fuente de Campeche: fracción del círculo × circunferencia completa (2×π×r).",
+            "arco=(30/360)×2×3.14×6=3.14cm."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -65,7 +69,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Un sector con ángulo central de 90° y radio 8 cm tiene un arco de 12.56 cm.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "arco=(90/360)×2×3.14×8 = 0.25×50.24 = 12.56 cm. Correcto."
+          "retroalimentacion": "arco=(90/360)×2×3.14×8 = 0.25×50.24 = 12.56 cm. Correcto.",
+          "pistas": [
+            "Multiplica la fracción del ángulo por la circunferencia completa, igual que hicimos para la fuente de Campeche (0.4167×37.68=15.7 m).",
+            "arco=(90/360)×2×3.14×8=12.56cm."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -83,7 +91,11 @@
             "20.93 cm"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "arco=(180/360)×2×3.14×10 = 0.5×62.8 = 31.4 cm."
+          "retroalimentacion": "arco=(180/360)×2×3.14×10 = 0.5×62.8 = 31.4 cm.",
+          "pistas": [
+            "180° siempre es la mitad de la circunferencia completa, igual que usamos la fracción 150/360 para la fuente de Campeche.",
+            "arco=(180/360)×2×3.14×10=31.4cm."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -121,7 +133,25 @@
           "retroalimentacion": "45°,r=3: arco=2.35 cm. 30°,r=10: arco=5.23 cm. 120°,r=4: arco=8.37 cm. 60°,r=4: arco=4.19 cm."
         }
       ],
-      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio"
+      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio",
+      "ejemploResuelto": {
+        "enunciado": "La misma fuente circular del zócalo de Campeche (radio 6 m) también quiere una franja de azulejos en el arco correspondiente a un ángulo central de 150°.",
+        "pasos": [
+          {
+            "texto": "Calculamos la fracción del círculo.",
+            "operacion": "150 ÷ 360 = 0.4167"
+          },
+          {
+            "texto": "Calculamos la circunferencia completa.",
+            "operacion": "2 × 3.14 × 6 = 37.68 m"
+          },
+          {
+            "texto": "Multiplicamos la fracción por la circunferencia.",
+            "operacion": "0.4167 × 37.68 = 15.7 m"
+          }
+        ],
+        "respuestaFinal": "Necesitan 15.7 m de azulejos."
+      }
     }
   ],
   "practicaExtra": [

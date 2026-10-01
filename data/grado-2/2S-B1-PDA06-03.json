@@ -34,7 +34,11 @@
             "$97"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "88 = x×1.10 → x = 88÷1.10 = 80."
+          "retroalimentacion": "88 = x×1.10 → x = 88÷1.10 = 80.",
+          "pistas": [
+            "Divide el precio final entre el factor (1+aumento/100), igual que despejaste el precio de la chamarra en el ejemplo resuelto.",
+            "88 ÷ 1.10: ¿cuánto da?"
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -70,7 +74,11 @@
             "$168"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "210 × (1 − 0.15) = $178.5."
+          "retroalimentacion": "210 × (1 − 0.15) = $178.5.",
+          "pistas": [
+            "Multiplica el precio original por (1−0.15).",
+            "210 × 0.85: ¿cuánto da?"
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -94,7 +102,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Un artículo de $400 con 25% de descuento cuesta $300.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: 400 × (1 − 0.25) = $300."
+          "retroalimentacion": "Correcto: 400 × (1 − 0.25) = $300.",
+          "pistas": [
+            "Multiplica por (1−0.25), igual que hiciste en el ejemplo resuelto.",
+            "400 × 0.75: ¿cuánto da?"
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -135,7 +147,21 @@
           "retroalimentacion": "150×0.80=120; 60×1.50=90; 154÷1.10=140."
         }
       ],
-      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado"
+      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado",
+      "ejemploResuelto": {
+        "enunciado": "Otro cliente compró una chamarra con 20% de descuento y pagó $960. ¿Cuál era su precio original?",
+        "pasos": [
+          {
+            "texto": "El precio final es el original por el factor (1−descuento/100); despejamos dividiendo.",
+            "operacion": "960 = x × 0.80"
+          },
+          {
+            "texto": "Dividimos ambos lados entre 0.80.",
+            "operacion": "x = 960 ÷ 0.80 = 1200"
+          }
+        ],
+        "respuestaFinal": "El precio original de la chamarra era $1,200."
+      }
     }
   ],
   "practicaExtra": [

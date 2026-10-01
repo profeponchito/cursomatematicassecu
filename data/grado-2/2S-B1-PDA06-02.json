@@ -28,7 +28,11 @@
           "tipo": "llenar_frase",
           "frase": "Una playera con 20% de descuento quedó en $240. Su precio original era $___.",
           "respuestaCorrecta": "300",
-          "retroalimentacion": "240 = x(1 − 0.20) = 0.80x → x = 240 ÷ 0.80 = $300."
+          "retroalimentacion": "240 = x(1 − 0.20) = 0.80x → x = 240 ÷ 0.80 = $300.",
+          "pistas": [
+            "El precio final es el original por (1−descuento/100); despeja dividiendo, igual que calculaste el descuento de los tenis en el ejemplo resuelto pero al revés.",
+            "240 ÷ 0.80: ¿cuánto da?"
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -64,13 +68,21 @@
             "$230"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "200 × (1 − 0.30) = $140."
+          "retroalimentacion": "200 × (1 − 0.30) = $140.",
+          "pistas": [
+            "Multiplica el precio original por (1−0.30), igual que hiciste con los tenis en el ejemplo resuelto.",
+            "200 × 0.70: ¿cuánto da?"
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "Una laptop de $500 con 10% de descuento cuesta $450.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: 500 × (1 − 0.10) = $450."
+          "retroalimentacion": "Correcto: 500 × (1 − 0.10) = $450.",
+          "pistas": [
+            "Multiplica por (1−0.10), igual que en el ejemplo resuelto.",
+            "500 × 0.90: ¿cuánto da?"
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -105,7 +117,21 @@
           "retroalimentacion": "120×0.75=90; 2x+6=20 → x=7; 80×1.15=92."
         }
       ],
-      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio"
+      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio",
+      "ejemploResuelto": {
+        "enunciado": "En la misma tienda, unos tenis de $650 tienen 30% de descuento.",
+        "pasos": [
+          {
+            "texto": "El precio final es el original multiplicado por (1 − descuento/100).",
+            "operacion": "650 × (1 − 0.30)"
+          },
+          {
+            "texto": "Calculamos el factor y multiplicamos.",
+            "operacion": "650 × 0.70 = 455"
+          }
+        ],
+        "respuestaFinal": "Los tenis costarán $455 con el 30% de descuento."
+      }
     }
   ],
   "practicaExtra": [

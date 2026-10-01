@@ -35,7 +35,11 @@
             "20"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "n = 360° ÷ 24° = 15 lados."
+          "retroalimentacion": "n = 360° ÷ 24° = 15 lados.",
+          "pistas": [
+            "Usa n=360°÷ángulo exterior, igual que hiciste con la reja en el ejemplo resuelto.",
+            "360°÷24°: ¿cuánto da?"
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -59,7 +63,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Un polígono regular con ángulo exterior de 15° tiene 24 lados.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: 360° ÷ 15° = 24 lados."
+          "retroalimentacion": "Correcto: 360° ÷ 15° = 24 lados.",
+          "pistas": [
+            "Aplica n=360°÷ángulo exterior, igual que en el ejemplo resuelto.",
+            "360°÷15°: ¿cuánto da?"
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -83,7 +91,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Si el ángulo interior de un polígono regular es 174°, el polígono tiene 60 lados.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: exterior = 180°−174°=6°; n = 360°÷6° = 60 lados."
+          "retroalimentacion": "Correcto: exterior = 180°−174°=6°; n = 360°÷6° = 60 lados.",
+          "pistas": [
+            "Primero resta de 180° para obtener el exterior, luego aplica n=360°÷exterior.",
+            "180°−174°=6°, y 360°÷6°: ¿cuánto da?"
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -130,7 +142,21 @@
           "retroalimentacion": "Exterior = 180°−176°=4°; n = 360°÷4° = 90 lados."
         }
       ],
-      "nivelEtiqueta": "Nivel 6 de 10 · Aplicación avanzada"
+      "nivelEtiqueta": "Nivel 6 de 10 · Aplicación avanzada",
+      "ejemploResuelto": {
+        "enunciado": "El mismo herrero suelda otra reja donde cada pieza forma un ángulo exterior de 45°.",
+        "pasos": [
+          {
+            "texto": "Usamos la fórmula n = 360° ÷ ángulo exterior.",
+            "operacion": "n = 360° ÷ 45°"
+          },
+          {
+            "texto": "Dividimos.",
+            "operacion": "n = 8"
+          }
+        ],
+        "respuestaFinal": "Don Refugio necesita 8 piezas triangulares para cerrar esa reja."
+      }
     }
   ],
   "practicaExtra": [

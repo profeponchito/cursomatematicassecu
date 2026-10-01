@@ -34,7 +34,11 @@
             "1 hora"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Distancia real = 4×50 = 200 km. Tiempo = 200 ÷ 100 = 2 horas."
+          "retroalimentacion": "Distancia real = 4×50 = 200 km. Tiempo = 200 ÷ 100 = 2 horas.",
+          "pistas": [
+            "Primero convierte la distancia del mapa a km reales, y después divide entre la velocidad, igual que hicimos para el viaje a Torreón de la familia de Ana Paula (220÷88=2.5h).",
+            "Distancia=4×50=200km. Tiempo=200÷100=2h."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -58,7 +62,11 @@
             "240 km"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "d = 70 × 3 = 210 km."
+          "retroalimentacion": "d = 70 × 3 = 210 km.",
+          "pistas": [
+            "Usa d=v×t cuando lo que buscas es la distancia máxima, en vez de convertir un mapa como hicimos para Torreón.",
+            "d=70×3=210km."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -82,7 +90,11 @@
             "6 horas"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Distancia = 5×60 = 300 km. Tiempo = 300 ÷ 75 = 4 horas."
+          "retroalimentacion": "Distancia = 5×60 = 300 km. Tiempo = 300 ÷ 75 = 4 horas.",
+          "pistas": [
+            "Sigue los mismos dos pasos que con el viaje a Torreón: primero la distancia real, después el tiempo dividiendo entre la velocidad.",
+            "Distancia=5×60=300km. Tiempo=300÷75=4h."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -117,7 +129,21 @@
           "retroalimentacion": "3×50=150 km, 150÷75=2 h. 6×40=240 km, 240÷60=4 h. 8×30=240 km, 240÷80=3 h."
         }
       ],
-      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis"
+      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis",
+      "ejemploResuelto": {
+        "enunciado": "La misma familia de Ana Paula también consulta la distancia a Torreón en el mismo mapa (1 cm = 40 km): miden 5.5 cm, y planean ir a 88 km/h.",
+        "pasos": [
+          {
+            "texto": "Convertimos la distancia del mapa a km reales.",
+            "operacion": "5.5 × 40 = 220 km"
+          },
+          {
+            "texto": "Calculamos el tiempo de viaje.",
+            "operacion": "220 ÷ 88 = 2.5 horas"
+          }
+        ],
+        "respuestaFinal": "Tardarán 2.5 horas en llegar a Torreón."
+      }
     }
   ],
   "practicaExtra": [

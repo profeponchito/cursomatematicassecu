@@ -35,7 +35,11 @@
             "600 m²"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Largo real = 3 m, ancho real = 2 m. Área = 3 × 2 = 6 m²."
+          "retroalimentacion": "Largo real = 3 m, ancho real = 2 m. Área = 3 × 2 = 6 m².",
+          "pistas": [
+            "Convierte el largo y el ancho por separado a metros reales, y después multiplícalos, igual que hicimos para la cocina de la casa Reyes (3×2.5=7.5m²).",
+            "Largo real=3m, ancho=2m. Área=6m²."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -59,7 +63,11 @@
             "120 m²"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Largo real = 10 m, ancho real = 6 m. Área = 10 × 6 = 60 m²."
+          "retroalimentacion": "Largo real = 10 m, ancho real = 6 m. Área = 10 × 6 = 60 m².",
+          "pistas": [
+            "Recuerda: primero convierte cada medida por separado con la escala, después multiplica — el mismo procedimiento que usamos para la cocina de la casa Reyes.",
+            "Largo real=10m, ancho=6m. Área=60m²."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -89,7 +97,11 @@
           "tipo": "llenar_frase",
           "frase": "Escala 1:25. Una terraza en el plano mide 8 cm × 6 cm. Su área real es ___ m².",
           "respuestaCorrecta": "3",
-          "retroalimentacion": "Largo real = 8×25=200 cm=2 m. Ancho real = 6×25=150 cm=1.5 m. Área = 2 × 1.5 = 3 m²."
+          "retroalimentacion": "Largo real = 8×25=200 cm=2 m. Ancho real = 6×25=150 cm=1.5 m. Área = 2 × 1.5 = 3 m².",
+          "pistas": [
+            "Sigue los 3 pasos del ejemplo de la cocina: largo real, ancho real, y su producto.",
+            "Largo real=2m, ancho=1.5m. Área=3m²."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -118,7 +130,25 @@
           "retroalimentacion": "1:100, 3×2 cm: 3 m × 2 m = 6 m². 1:50, 4×4 cm: 2 m × 2 m = 4 m². 1:20, 5×3 cm: 1 m × 0.6 m = 0.6 m²."
         }
       ],
-      "nivelEtiqueta": "Nivel 6 de 10 · Aplicación avanzada"
+      "nivelEtiqueta": "Nivel 6 de 10 · Aplicación avanzada",
+      "ejemploResuelto": {
+        "enunciado": "El mismo plano de la casa de la familia Reyes en Puebla (escala 1:100) también muestra la cocina, que mide 3 cm × 2.5 cm.",
+        "pasos": [
+          {
+            "texto": "Convertimos el largo a medida real.",
+            "operacion": "3 × 100 = 300 cm = 3 m"
+          },
+          {
+            "texto": "Convertimos el ancho a medida real.",
+            "operacion": "2.5 × 100 = 250 cm = 2.5 m"
+          },
+          {
+            "texto": "Calculamos el área real.",
+            "operacion": "3 × 2.5 = 7.5 m²"
+          }
+        ],
+        "respuestaFinal": "La cocina tendrá un área real de 7.5 m²."
+      }
     }
   ],
   "practicaExtra": [

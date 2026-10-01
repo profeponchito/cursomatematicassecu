@@ -35,7 +35,11 @@
             "24"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Área = (8×5)÷2 = 20 cm²."
+          "retroalimentacion": "Área = (8×5)÷2 = 20 cm².",
+          "pistas": [
+            "Recuerda que el área del triángulo es (base×altura)÷2, igual que usamos para el triángulo del pasillo de Ximena: (6×2.5)÷2=7.5 m².",
+            "Área = (8×5)÷2 = 20 cm²."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -59,7 +63,11 @@
             "91"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "Área = 12×7 = 84 cm²."
+          "retroalimentacion": "Área = 12×7 = 84 cm².",
+          "pistas": [
+            "Área del rectángulo = base×altura, igual que el rectángulo del pasillo de Ximena (6×2=12 m²).",
+            "Área = 12×7 = 84 cm²."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -109,7 +117,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Una figura compuesta por un rectángulo de 8 cm × 5 cm y un triángulo de base 8 cm y altura 3 cm sobre uno de sus lados tiene un área total de 52 cm².",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Rectángulo: 8×5=40 cm². Triángulo: (8×3)÷2=12 cm². Total: 40+12=52 cm²."
+          "retroalimentacion": "Rectángulo: 8×5=40 cm². Triángulo: (8×3)÷2=12 cm². Total: 40+12=52 cm².",
+          "pistas": [
+            "Suma el área del rectángulo más la del triángulo, tal como hicimos para el pasillo de Ximena: rectángulo 6×2=12 m² + triángulo (6×2.5)÷2=7.5 m².",
+            "Rectángulo: 8×5=40 cm². Triángulo: (8×3)÷2=12 cm². Total: 40+12=52 cm²."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -124,7 +136,25 @@
           "retroalimentacion": "Área = ((15+9)×6)÷2 = 72 cm²."
         }
       ],
-      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado"
+      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado",
+      "ejemploResuelto": {
+        "enunciado": "La familia de Ximena también quiere calcular el área de un pasillo lateral con forma de rectángulo de 6 m de largo por 2 m de ancho, al que se une un triángulo de base 6 m y altura 2.5 m en uno de los extremos.",
+        "pasos": [
+          {
+            "texto": "Calculamos el área del rectángulo.",
+            "operacion": "6 × 2 = 12 m²"
+          },
+          {
+            "texto": "Calculamos el área del triángulo.",
+            "operacion": "(6 × 2.5) ÷ 2 = 7.5 m²"
+          },
+          {
+            "texto": "Sumamos ambas áreas.",
+            "operacion": "12 + 7.5 = 19.5 m²"
+          }
+        ],
+        "respuestaFinal": "El pasillo tiene un área de 19.5 m²."
+      }
     }
   ],
   "practicaExtra": [

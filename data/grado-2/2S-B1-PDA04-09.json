@@ -34,7 +34,11 @@
             "30"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "Figura 5: 3×25=75. Figura 4: 3×16=48. Diferencia: 75-48=27."
+          "retroalimentacion": "Figura 5: 3×25=75. Figura 4: 3×16=48. Diferencia: 75-48=27.",
+          "pistas": [
+            "Calcula primero cada término por separado (figura 5 y figura 4), igual que hiciste con el término 9 en el ejemplo resuelto.",
+            "3×25=75 y 3×16=48: resta ambos resultados."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -64,7 +68,11 @@
           "tipo": "llenar_frase",
           "frase": "Un mosaico cuadrado creciente llega a 361 baldosas (n²=361). Calcula en qué fila está y luego suma 3 a ese número. El resultado es ___.",
           "respuestaCorrecta": "22",
-          "retroalimentacion": "n=√361=19. 19+3=22."
+          "retroalimentacion": "n=√361=19. 19+3=22.",
+          "pistas": [
+            "Saca raíz cuadrada de 361 para encontrar la fila, igual que probaste valores de n en el ejemplo resuelto.",
+            "√361=19, y luego súmale 3."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -82,7 +90,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Si 4n²=576, entonces la mitad de esa posición n es 6.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "576÷4=144, n=√144=12. La mitad de 12 es 6."
+          "retroalimentacion": "576÷4=144, n=√144=12. La mitad de 12 es 6.",
+          "pistas": [
+            "Divide 576 entre 4 y saca raíz cuadrada para encontrar n, igual que hiciste en el ejemplo resuelto.",
+            "576÷4=144, √144=12. ¿Cuál es la mitad de 12?"
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -123,7 +135,21 @@
           "retroalimentacion": "Probando n=8: 8²+4×8=64+32=96. ✓"
         }
       ],
-      "nivelEtiqueta": "Nivel 9 de 10 · Integración"
+      "nivelEtiqueta": "Nivel 9 de 10 · Integración",
+      "ejemploResuelto": {
+        "enunciado": "En el mismo rally, al equipo le dan ahora la sucesión 2n²+3n. ¿Cuánto vale el término 9, y en qué posición n el término vale exactamente 65?",
+        "pasos": [
+          {
+            "texto": "Para el término 9, sustituimos n=9 en la expresión.",
+            "operacion": "2×9²+3×9 = 162+27 = 189"
+          },
+          {
+            "texto": "Para encontrar en qué posición el término vale 65, probamos valores de n.",
+            "operacion": "n=5: 2×25+15 = 50+15 = 65 ✓"
+          }
+        ],
+        "respuestaFinal": "El término 9 vale 189, y el término que vale exactamente 65 está en la posición n=5."
+      }
     }
   ],
   "practicaExtra": [

@@ -47,7 +47,11 @@
           "tipo": "llenar_frase",
           "frase": "Para que una relación entre x y y sea directamente proporcional, cuando x vale 0, y debe valer ___.",
           "respuestaCorrecta": "0",
-          "retroalimentacion": "En y = k·x, si x = 0 entonces y = k·0 = 0. Si hay un cargo fijo, y no será 0 aunque x sí lo sea."
+          "retroalimentacion": "En y = k·x, si x = 0 entonces y = k·0 = 0. Si hay un cargo fijo, y no será 0 aunque x sí lo sea.",
+          "pistas": [
+            "En una relación proporcional, y = k·x. ¿Qué pasa cuando x=0?",
+            "Piensa en el taxi del ejemplo resuelto: aunque no hubiera cargo fijo, ¿cuánto se pagaría por 0 km recorridos?"
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -65,7 +69,11 @@
             "La renta fija de un salón, sin importar el número de eventos realizados"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "El precio de la gasolina sin cargos fijos cumple y = k·x: al doble de litros, doble de precio, y 0 litros cuestan $0."
+          "retroalimentacion": "El precio de la gasolina sin cargos fijos cumple y = k·x: al doble de litros, doble de precio, y 0 litros cuestan $0.",
+          "pistas": [
+            "Busca la opción donde no haya ningún cargo fijo ni inicial, igual que analizaste en el ejemplo resuelto.",
+            "Si al comprar 0 unidades el costo ya no es $0, esa relación no es proporcional."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -96,7 +104,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "En una alberca, la cantidad de cloro necesaria es proporcional al volumen de agua: 200 litros necesitan 40 ml de cloro, y 500 litros necesitan 100 ml. Esta relación es directamente proporcional.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "k₁ = 40÷200 = 0.2 y k₂ = 100÷500 = 0.2. Ambas razones son iguales, así que sí es proporcional."
+          "retroalimentacion": "k₁ = 40÷200 = 0.2 y k₂ = 100÷500 = 0.2. Ambas razones son iguales, así que sí es proporcional.",
+          "pistas": [
+            "Calcula la razón en ambos casos, igual que hiciste con el taxi en el ejemplo resuelto: 40÷200 y 100÷500.",
+            "Si ambas razones son iguales, sí es proporcional."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -116,7 +128,20 @@
           "respuestaCorrecta": "0",
           "retroalimentacion": "En proporcionalidad directa, si x=0 entonces y=0. Aquí, incluso con 0 usos planeados el costo de renta ya está fijado, lo cual rompe la condición."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "En la misma ciudad, otro taxi cobra $10 fijos más $3 por km. Un pasajero paga $25 por 5 km y $40 por 10 km. ¿Es esta relación directamente proporcional?",
+        "pasos": [
+          {
+            "texto": "Calculamos la razón costo÷km para los dos viajes.",
+            "operacion": "25÷5 = 5 y 40÷10 = 4"
+          },
+          {
+            "texto": "Como las razones son distintas, la relación NO es directamente proporcional: hay un cargo fijo de $10."
+          }
+        ],
+        "respuestaFinal": "No es directamente proporcional: las razones (5 y 4) son distintas por el banderazo fijo de $10."
+      }
     }
   ],
   "practicaExtra": [

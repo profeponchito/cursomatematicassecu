@@ -29,7 +29,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "x^6 ÷ x^6 es igual a x^0, y x^0 = 1.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Cualquier potencia dividida entre sí misma da exponente 0 (6-6=0), y x⁰=1 para x≠0."
+          "retroalimentacion": "Cualquier potencia dividida entre sí misma da exponente 0 (6-6=0), y x⁰=1 para x≠0.",
+          "pistas": [
+            "Resta los exponentes, igual que hiciste con x³÷x³ en el ejemplo resuelto.",
+            "6-6: ¿cuánto da? ¿Y cuánto vale x elevado a eso?"
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -47,7 +51,11 @@
             "x^7"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "2-5=-3, entonces x²÷x⁵=x⁻³=1/x³."
+          "retroalimentacion": "2-5=-3, entonces x²÷x⁵=x⁻³=1/x³.",
+          "pistas": [
+            "Resta los exponentes: si el resultado es negativo, se escribe como fracción, igual que hiciste con x²÷x⁷ en el ejemplo resuelto.",
+            "2-5: ¿cuánto da?"
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -103,7 +111,11 @@
           "tipo": "llenar_frase",
           "frase": "Al simplificar x^3 ÷ x^5 se obtiene x elevado a la ___ (usa el signo negativo).",
           "respuestaCorrecta": "-2",
-          "retroalimentacion": "3-5=-2, entonces x^3÷x^5=x^-2=1/x²."
+          "retroalimentacion": "3-5=-2, entonces x^3÷x^5=x^-2=1/x².",
+          "pistas": [
+            "Resta los exponentes, igual que hiciste con x²÷x⁷ en el ejemplo resuelto.",
+            "3-5: ¿cuánto da?"
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -118,7 +130,21 @@
           "retroalimentacion": "Primero x²×x³=x⁵ (se suman exponentes); luego x⁵÷x⁸=x^(5-8)=x⁻³=1/x³ (se restan exponentes)."
         }
       ],
-      "nivelEtiqueta": "Nivel 9 de 10 · Integración"
+      "nivelEtiqueta": "Nivel 9 de 10 · Integración",
+      "ejemploResuelto": {
+        "enunciado": "La maestra también pregunta por x³÷x³ y por x²÷x⁷.",
+        "pasos": [
+          {
+            "texto": "x³÷x³: restamos los exponentes.",
+            "operacion": "3-3=0, entonces x³÷x³=x⁰=1"
+          },
+          {
+            "texto": "x²÷x⁷: restamos los exponentes (el resultado es negativo).",
+            "operacion": "2-7=-5, entonces x²÷x⁷=x⁻⁵=1/x⁵"
+          }
+        ],
+        "respuestaFinal": "x³÷x³ = 1, y x²÷x⁷ = 1/x⁵."
+      }
     }
   ],
   "practicaExtra": [

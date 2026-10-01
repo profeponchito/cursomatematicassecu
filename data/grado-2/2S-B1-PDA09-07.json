@@ -36,7 +36,11 @@
             "39.25 cm"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "En 35 min el minutero gira 35×6°=210°. arco=(210/360)×2×3.14×15=54.95 cm."
+          "retroalimentacion": "En 35 min el minutero gira 35×6°=210°. arco=(210/360)×2×3.14×15=54.95 cm.",
+          "pistas": [
+            "Primero convierte los minutos a grados (6° por minuto), igual que hicimos para los 20 minutos que esperó Renata (20×6=120°).",
+            "35min×6°=210°; arco=(210/360)×2×3.14×15=54.95cm."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -78,7 +82,11 @@
             "37.68 cm"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "15 min×6°=90°. arco=(90/360)×2×3.14×12=18.84 cm."
+          "retroalimentacion": "15 min×6°=90°. arco=(90/360)×2×3.14×12=18.84 cm.",
+          "pistas": [
+            "Convierte primero el tiempo a grados, y después usa la fórmula del arco — el mismo procedimiento que usamos con los 20 minutos de espera de Renata.",
+            "15min×6°=90°; arco=(90/360)×2×3.14×12=18.84cm."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -102,7 +110,11 @@
             "44.27 cm"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "27 min×6°=162°. arco=(162/360)×2×3.14×18=50.87 cm."
+          "retroalimentacion": "27 min×6°=162°. arco=(162/360)×2×3.14×18=50.87 cm.",
+          "pistas": [
+            "Sigue los dos pasos del ejemplo de Renata: minutos×6° para el ángulo, luego la fórmula del arco.",
+            "27min×6°=162°; arco=(162/360)×2×3.14×18=50.87cm."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -127,7 +139,21 @@
           ],
           "retroalimentacion": "15 min=90°, 40 min=240°, 10 min=60°, 50 min=300° (cada minuto son 6°)."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Mientras Renata sigue esperando el camión en Puebla, se da cuenta de que han pasado 20 minutos desde que empezó a fijarse en el minutero de 8 cm.",
+        "pasos": [
+          {
+            "texto": "Convertimos el tiempo a grados.",
+            "operacion": "20 min × 6°/min = 120°"
+          },
+          {
+            "texto": "Calculamos el arco recorrido por la punta.",
+            "operacion": "(120÷360)×2×3.14×8 = 16.75 cm"
+          }
+        ],
+        "respuestaFinal": "La punta del minutero recorrió 16.75 cm en esos 20 minutos."
+      }
     }
   ],
   "practicaExtra": [

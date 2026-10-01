@@ -33,13 +33,21 @@
             "50.24 cm²"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "sector=(45/360)×3.14×12² = 0.125×452.16 = 56.52 cm²."
+          "retroalimentacion": "sector=(45/360)×3.14×12² = 0.125×452.16 = 56.52 cm².",
+          "pistas": [
+            "Para el área usa (ángulo÷360)×π×r², igual que calculamos el área de la tela del paraguas (392.5 cm²).",
+            "sector=(45/360)×3.14×12²=56.52cm²."
+          ]
         },
         {
           "tipo": "llenar_frase",
           "frase": "El borde curvo (arco) de una de esas rebanadas de pizza (radio 12 cm, ángulo 45°) mide ___ cm.",
           "respuestaCorrecta": "9.42",
-          "retroalimentacion": "arco=(45/360)×2×3.14×12 = 0.125×75.36 = 9.42 cm."
+          "retroalimentacion": "arco=(45/360)×2×3.14×12 = 0.125×75.36 = 9.42 cm.",
+          "pistas": [
+            "Para el arco usa (ángulo÷360)×2×π×r, igual que calculamos el borde curvo del paraguas (31.4 cm).",
+            "arco=(45/360)×2×3.14×12=9.42cm."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -75,7 +83,11 @@
             "94.2 m²"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "sector=(72/360)×3.14×15² = 0.2×706.5 = 141.3 m²."
+          "retroalimentacion": "sector=(72/360)×3.14×15² = 0.2×706.5 = 141.3 m².",
+          "pistas": [
+            "Identifica si te piden una longitud (arco) o una superficie (área) antes de elegir la fórmula, igual que con el paraguas del maestro.",
+            "sector=(72/360)×3.14×15²=141.3m²."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -125,7 +137,21 @@
           "retroalimentacion": "sector=(60/360)×3.14×20² = 0.1667×1256 = 209.33 m²."
         }
       ],
-      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis"
+      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis",
+      "ejemploResuelto": {
+        "enunciado": "El mismo maestro de Hermosillo también lleva un paraguas circular (visto desde arriba) con radio de 25 cm; cuando lo abre solo una fracción, forma un sector con ángulo central de 72°.",
+        "pasos": [
+          {
+            "texto": "Calculamos el arco, el borde curvo.",
+            "operacion": "(72÷360)×2×3.14×25 = 0.2×157 = 31.4 cm"
+          },
+          {
+            "texto": "Calculamos el área del sector, la tela.",
+            "operacion": "(72÷360)×3.14×25² = 0.2×1,962.5 = 392.5 cm²"
+          }
+        ],
+        "respuestaFinal": "El borde curvo mide 31.4 cm y la tela cubre 392.5 cm²."
+      }
     }
   ],
   "practicaExtra": [

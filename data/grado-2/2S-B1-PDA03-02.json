@@ -29,7 +29,11 @@
           "tipo": "llenar_frase",
           "frase": "Si 5 cuadernos cuestan $75, entonces 8 cuadernos cuestan $___.",
           "respuestaCorrecta": "120",
-          "retroalimentacion": "k = 75 ÷ 5 = 15 por cuaderno. Entonces 8 × 15 = $120."
+          "retroalimentacion": "k = 75 ÷ 5 = 15 por cuaderno. Entonces 8 × 15 = $120.",
+          "pistas": [
+            "Calcula k = 75÷5, igual que hiciste con las plumas de Rodrigo en el ejemplo resuelto.",
+            "Multiplica k por 8 para obtener el precio de 8 cuadernos."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -71,7 +75,11 @@
             "$23"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "k = 152÷8 = 19 por litro."
+          "retroalimentacion": "k = 152÷8 = 19 por litro.",
+          "pistas": [
+            "k es el precio total entre la cantidad, igual que calculaste con las plumas de Rodrigo.",
+            "152÷8: ¿cuánto da?"
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -95,10 +103,31 @@
           "tipo": "verdadero_falso",
           "enunciado": "Si 12 cuadernos cuestan $300, entonces k = $20 por cuaderno.",
           "respuestaCorrecta": false,
-          "retroalimentacion": "k = 300÷12 = 25 por cuaderno, no $20."
+          "retroalimentacion": "k = 300÷12 = 25 por cuaderno, no $20.",
+          "pistas": [
+            "Calcula k = 300÷12, igual que hiciste con las plumas de Rodrigo en el ejemplo resuelto.",
+            "¿300÷12 da realmente 20?"
+          ]
         }
       ],
-      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio"
+      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio",
+      "ejemploResuelto": {
+        "enunciado": "Rodrigo también compró 6 plumas y pagó $114. Quiere saber el precio de una sola pluma, y cuánto costarían 9 plumas más con esa misma constante.",
+        "pasos": [
+          {
+            "texto": "Calculamos k dividiendo el total entre la cantidad.",
+            "operacion": "k = 114 ÷ 6 = 19"
+          },
+          {
+            "texto": "Entonces cada pluma cuesta $19."
+          },
+          {
+            "texto": "Con esa constante, 9 plumas costarían:",
+            "operacion": "9 × 19 = $171"
+          }
+        ],
+        "respuestaFinal": "El precio de una pluma es $19 (la constante k), y 9 plumas costarían $171."
+      }
     }
   ],
   "practicaExtra": [

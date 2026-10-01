@@ -35,7 +35,11 @@
             "x²+24x+10"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Suma de ampliaciones: 4+6=10; producto: 4×6=24, entonces (x+4)(x+6)=x²+10x+24."
+          "retroalimentacion": "Suma de ampliaciones: 4+6=10; producto: 4×6=24, entonces (x+4)(x+6)=x²+10x+24.",
+          "pistas": [
+            "Suma las dos ampliaciones para el coeficiente de x, y multiplícalas para el término independiente, igual que hiciste con 5 y 9 en el ejemplo resuelto.",
+            "4+6=10 y 4×6=24."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -59,7 +63,11 @@
             "x²+6x+6"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "(x+5)(x+1) = x² + (5+1)x + (5×1) = x²+6x+5."
+          "retroalimentacion": "(x+5)(x+1) = x² + (5+1)x + (5×1) = x²+6x+5.",
+          "pistas": [
+            "Suma 5+1 para el coeficiente de x, y multiplica 5×1 para el término independiente.",
+            "Igual que hiciste con las ampliaciones de 5 y 9 en el ejemplo resuelto."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -103,7 +111,11 @@
             "x²+45"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "9+5=14 y 9×5=45, entonces (x+9)(x+5)=x²+14x+45."
+          "retroalimentacion": "9+5=14 y 9×5=45, entonces (x+9)(x+5)=x²+14x+45.",
+          "pistas": [
+            "Este es exactamente el mismo cálculo que hiciste en el ejemplo resuelto: suma y multiplica las dos ampliaciones.",
+            "9+5=14 y 9×5=45."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -124,7 +136,21 @@
           "retroalimentacion": "8+4=12 y 8×4=32, entonces (x+8)(x+4)=x²+12x+32."
         }
       ],
-      "nivelEtiqueta": "Nivel 5 de 10 · Aplicación"
+      "nivelEtiqueta": "Nivel 5 de 10 · Aplicación",
+      "ejemploResuelto": {
+        "enunciado": "La familia de Mariana también amplía otro terreno: 5 metros de un lado y 9 metros del lado adyacente.",
+        "pasos": [
+          {
+            "texto": "Sumamos las dos ampliaciones para el coeficiente de x.",
+            "operacion": "5+9 = 14"
+          },
+          {
+            "texto": "Multiplicamos las dos ampliaciones para el término independiente.",
+            "operacion": "5×9 = 45"
+          }
+        ],
+        "respuestaFinal": "(x+5)(x+9) = x² + 14x + 45."
+      }
     }
   ],
   "practicaExtra": [

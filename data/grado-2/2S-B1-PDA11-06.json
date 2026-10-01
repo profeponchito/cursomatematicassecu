@@ -47,7 +47,11 @@
           "tipo": "llenar_frase",
           "frase": "Las estaturas de un grupo van de 140 a 176 cm y se quieren 6 intervalos. La amplitud de clase es ___ cm.",
           "respuestaCorrecta": "6",
-          "retroalimentacion": "(176−140)÷6 = 36÷6 = 6 cm."
+          "retroalimentacion": "(176−140)÷6 = 36÷6 = 6 cm.",
+          "pistas": [
+            "Primero calcula el rango (máximo menos mínimo), después divide entre el número de intervalos, igual que hicimos para el peso de los alumnos de Chihuahua (36÷5=7.2→8kg).",
+            "(176−140)÷6 = 6 cm."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -65,7 +69,11 @@
             "5"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "Como 8.6 no es un número entero, se redondea hacia arriba a 9 para cubrir todo el rango sin dejar datos fuera."
+          "retroalimentacion": "Como 8.6 no es un número entero, se redondea hacia arriba a 9 para cubrir todo el rango sin dejar datos fuera.",
+          "pistas": [
+            "Si al dividir el rango entre el número de intervalos no da un número entero, redondea hacia arriba, igual que hicimos con 36÷5=7.2→8kg para el peso de los alumnos.",
+            "Como 8.6 no es un número entero, se redondea hacia arriba a 9."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -121,10 +129,32 @@
             0,
             2
           ],
-          "retroalimentacion": "36÷4=9. 48÷6=8. 40÷5=8."
+          "retroalimentacion": "36÷4=9. 48÷6=8. 40÷5=8.",
+          "pistas": [
+            "Cada amplitud se obtiene dividiendo el rango entre el número de intervalos, el mismo procedimiento que usamos para el peso de los alumnos de Chihuahua.",
+            "36÷4=9. 48÷6=8. 40÷5=8."
+          ]
         }
       ],
-      "nivelEtiqueta": "Nivel 6 de 10 · Aplicación avanzada"
+      "nivelEtiqueta": "Nivel 6 de 10 · Aplicación avanzada",
+      "ejemploResuelto": {
+        "enunciado": "El mismo profesor de Chihuahua también midió el peso, en kg, de otro grupo de 28 alumnos: el más ligero pesa 38 kg y el más pesado 74 kg; quiere organizar estos datos en 5 intervalos.",
+        "pasos": [
+          {
+            "texto": "Calculamos el rango.",
+            "operacion": "74 − 38 = 36 kg"
+          },
+          {
+            "texto": "Dividimos entre el número de intervalos.",
+            "operacion": "36 ÷ 5 = 7.2"
+          },
+          {
+            "texto": "Redondeamos hacia arriba porque no es un número entero.",
+            "operacion": "8 kg"
+          }
+        ],
+        "respuestaFinal": "El rango es 36 kg y la amplitud de clase es 8 kg."
+      }
     }
   ],
   "practicaExtra": [

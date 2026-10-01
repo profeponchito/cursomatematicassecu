@@ -36,13 +36,21 @@
             "32 m"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "Altura del poste = 1.5 × 20 ÷ 1 = 30 m."
+          "retroalimentacion": "Altura del poste = 1.5 × 20 ÷ 1 = 30 m.",
+          "pistas": [
+            "Usa la misma proporción que con el poste de luz que midió Naomi: altura de la persona÷distancia al espejo = altura del objeto÷distancia del espejo al objeto.",
+            "Altura del poste = 1.5×20÷1 = 30 m."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "Un árbol proyecta una sombra de 9 m mientras una estaca de 1.2 m de altura proyecta una sombra de 1.5 m a la misma hora. Con el método de la sombra, la altura del árbol es 7.2 m.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Altura del árbol = 1.2 × 9 ÷ 1.5 = 7.2 m. Correcto."
+          "retroalimentacion": "Altura del árbol = 1.2 × 9 ÷ 1.5 = 7.2 m. Correcto.",
+          "pistas": [
+            "Con el método de la sombra la proporción es la misma idea que con el espejo de Naomi, pero usando las sombras en vez de las distancias al espejo.",
+            "Altura del árbol = 1.2×9÷1.5 = 7.2 m."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -84,7 +92,11 @@
             "25.2 m"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "Altura del edificio = 1.62 × 45 ÷ 3 = 24.3 m."
+          "retroalimentacion": "Altura del edificio = 1.62 × 45 ÷ 3 = 24.3 m.",
+          "pistas": [
+            "Aplica la misma proporción del método del espejo que usó Naomi: altura de la persona÷su distancia al espejo = altura del objeto÷distancia del espejo al objeto.",
+            "Altura del edificio = 1.62×45÷3 = 24.3 m."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -124,7 +136,25 @@
           "respuestaCorrecta": 2,
           "retroalimentacion": "Altura de la bodega = 2 × 9.6 ÷ 1.2 = 16 m."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Naomi repite el método del espejo al día siguiente para medir un poste de luz del patio: se coloca a 4 m del espejo, el espejo está a 40 m de la base del poste, y ella mide 1.6 m hasta los ojos.",
+        "pasos": [
+          {
+            "texto": "Planteamos la proporción de los triángulos semejantes del método del espejo.",
+            "operacion": "altura de Naomi ÷ distancia al espejo = altura del poste ÷ distancia del espejo al poste"
+          },
+          {
+            "texto": "Sustituimos los datos.",
+            "operacion": "1.6 ÷ 4 = altura del poste ÷ 40"
+          },
+          {
+            "texto": "Despejamos la altura del poste.",
+            "operacion": "1.6 × 40 ÷ 4 = 16 m"
+          }
+        ],
+        "respuestaFinal": "El poste mide 16 m de altura."
+      }
     }
   ],
   "practicaExtra": [

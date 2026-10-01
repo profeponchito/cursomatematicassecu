@@ -35,7 +35,11 @@
             "$72"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Costo por kg = 216÷12 = $18. Ganancia por kg = 23−18 = $5. Ganancia total = 12×5 = $60."
+          "retroalimentacion": "Costo por kg = 216÷12 = $18. Ganancia por kg = 23−18 = $5. Ganancia total = 12×5 = $60.",
+          "pistas": [
+            "Calcula el costo por kg (216÷12) y la ganancia por kg (precio de venta menos costo), igual que hiciste con los palitos de queso en el ejemplo resuelto.",
+            "Multiplica la ganancia por kg por los 12 kg vendidos."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -59,7 +63,11 @@
             "$400"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "Costo = 150 + 6×40 = 150 + 240 = $390."
+          "retroalimentacion": "Costo = 150 + 6×40 = 150 + 240 = $390.",
+          "pistas": [
+            "El costo total es la renta fija más el costo variable por refresco, igual que sumaste el costo de los palitos y las papas en el ejemplo resuelto.",
+            "150 + 6×40: ¿cuánto da?"
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -127,9 +135,31 @@
             "$4,200"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Costo = 800 + 15×10 = $950. Ingreso = 120×35 = $4,200. Ganancia = 4,200−950 = $3,250."
+          "retroalimentacion": "Costo = 800 + 15×10 = $950. Ingreso = 120×35 = $4,200. Ganancia = 4,200−950 = $3,250.",
+          "pistas": [
+            "Calcula primero el costo total (fijo + variable) y el ingreso total, igual que hiciste con los palitos y las papas en el ejemplo resuelto.",
+            "Costo = 800+15×10; Ingreso=120×35; Ganancia=Ingreso−Costo."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Si además venden 80 bolsas de papas que compran en paquete de 10 por $60 y revenden a $8.50 cada una, ¿cuál sería la ganancia total de ambos productos (palitos de queso y papas), incluyendo la renta fija de $200?",
+        "pasos": [
+          {
+            "texto": "Calculamos la ganancia por palito de queso (precio de venta menos costo por unidad).",
+            "operacion": "84÷12=$7 costo; 9−7=$2 de ganancia por palito"
+          },
+          {
+            "texto": "Calculamos la ganancia por bolsa de papas de la misma forma.",
+            "operacion": "60÷10=$6 costo; 8.50−6=$2.50 de ganancia por bolsa"
+          },
+          {
+            "texto": "Sumamos las ganancias de los 150 palitos y las 80 bolsas, y restamos la renta fija de $200.",
+            "operacion": "150×2=$300; 80×2.50=$200; 300+200−200=$300"
+          }
+        ],
+        "respuestaFinal": "La ganancia neta total, considerando ambos productos y la renta fija, sería de $300."
+      }
     }
   ],
   "practicaExtra": [

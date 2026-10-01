@@ -35,7 +35,11 @@
             "105°"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Suma de un pentágono = 540°. Conocidos: 100+110+95+120=425°. Faltante = 540−425 = 115°."
+          "retroalimentacion": "Suma de un pentágono = 540°. Conocidos: 100+110+95+120=425°. Faltante = 540−425 = 115°.",
+          "pistas": [
+            "Calcula la suma total del pentágono y réstale los ángulos conocidos, igual que hiciste con el terreno hexagonal en el ejemplo resuelto.",
+            "540°−(100+110+95+120): ¿cuánto da?"
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -59,7 +63,11 @@
             "18"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "5x+70=180 → 5x=110 → x=22."
+          "retroalimentacion": "5x+70=180 → 5x=110 → x=22.",
+          "pistas": [
+            "Plantea la ecuación: la suma de los tres ángulos de un triángulo es 180°.",
+            "5x+70=180: ¿cuánto vale x?"
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -101,7 +109,11 @@
           "tipo": "llenar_frase",
           "frase": "En un triángulo, los ángulos son x, x+10° y x+20°. Si x+(x+10)+(x+20)=180, x = ___.",
           "respuestaCorrecta": "50",
-          "retroalimentacion": "3x+30=180 → 3x=150 → x=50."
+          "retroalimentacion": "3x+30=180 → 3x=150 → x=50.",
+          "pistas": [
+            "Suma las tres expresiones e iguala a 180°, igual que resolviste el ángulo faltante en el ejemplo resuelto.",
+            "3x+30=180: ¿cuánto vale x?"
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -124,7 +136,25 @@
           "retroalimentacion": "Cuadrilátero: 360−280=80°. Pentágono: 540−430=110°. Hexágono: 720−600=120°."
         }
       ],
-      "nivelEtiqueta": "Nivel 7 de 10 · Reto"
+      "nivelEtiqueta": "Nivel 7 de 10 · Reto",
+      "ejemploResuelto": {
+        "enunciado": "El mismo ingeniero mide otro terreno hexagonal irregular con cinco ángulos de 115°, 122°, 98°, 135° y 140°.",
+        "pasos": [
+          {
+            "texto": "Calculamos la suma total de ángulos internos del hexágono.",
+            "operacion": "(6−2)×180° = 720°"
+          },
+          {
+            "texto": "Sumamos los cinco ángulos conocidos.",
+            "operacion": "115+122+98+135+140 = 610°"
+          },
+          {
+            "texto": "Restamos para encontrar el ángulo faltante.",
+            "operacion": "720° − 610° = 110°"
+          }
+        ],
+        "respuestaFinal": "El sexto ángulo del terreno mide 110°."
+      }
     }
   ],
   "practicaExtra": [

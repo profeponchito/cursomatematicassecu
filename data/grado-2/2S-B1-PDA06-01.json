@@ -27,7 +27,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Un número más el triple de sí mismo es 32 (x + 3x = 32) implica que x = 8.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: 4x=32 → x=8."
+          "retroalimentacion": "Correcto: 4x=32 → x=8.",
+          "pistas": [
+            "Suma los términos semejantes (x+3x=4x), igual que hiciste con la ecuación de la abuela y el tío en el ejemplo resuelto.",
+            "4x=32: ¿cuánto vale x?"
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -45,7 +49,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "La solución de 7x + 12 = 47 es x = 4.",
           "respuestaCorrecta": false,
-          "retroalimentacion": "7x = 35; x = 5."
+          "retroalimentacion": "7x = 35; x = 5.",
+          "pistas": [
+            "Primero resta 12 de ambos lados, luego divide entre 7, igual que despejaste x en el ejemplo resuelto.",
+            "7x=35: ¿cuánto vale x?"
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -81,7 +89,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "La solución de 3x + 7 = 19 es x = 3.",
           "respuestaCorrecta": false,
-          "retroalimentacion": "3x = 12; x = 4."
+          "retroalimentacion": "3x = 12; x = 4.",
+          "pistas": [
+            "Resta 7 de ambos lados y luego divide entre 3.",
+            "3x=12: ¿cuánto vale x?"
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -104,7 +116,21 @@
           "retroalimentacion": "4x-5=19 → x=6; x+5x=42 → x=7; 9x+3=39 → x=4."
         }
       ],
-      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio"
+      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio",
+      "ejemploResuelto": {
+        "enunciado": "El hermano de Renata también recibe dinero: su tío le da el doble de lo que le da su abuela, y entre los dos juntan $270.",
+        "pasos": [
+          {
+            "texto": "Planteamos la ecuación con x = lo que da la abuela.",
+            "operacion": "x + 2x = 270"
+          },
+          {
+            "texto": "Sumamos los términos semejantes y despejamos x.",
+            "operacion": "3x = 270 → x = 90"
+          }
+        ],
+        "respuestaFinal": "La abuela le dio $90, y el tío le dio el doble: $180."
+      }
     }
   ],
   "practicaExtra": [

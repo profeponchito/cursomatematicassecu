@@ -34,7 +34,11 @@
             "-25.6, -12.375, -18.4, -9.5"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "-12 3/8 = -12.375 m. De más profunda a menos profunda: -25.6 < -18.4 < -12.375 < -9.5."
+          "retroalimentacion": "-12 3/8 = -12.375 m. De más profunda a menos profunda: -25.6 < -18.4 < -12.375 < -9.5.",
+          "pistas": [
+            "Convierte -12 3/8 a decimal, igual que hiciste en el ejemplo resuelto: 3/8 = 0.375.",
+            "Ordena las cuatro profundidades de la más profunda (más negativa) a la menos profunda."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -78,7 +82,11 @@
             "-18 m"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "-20.1 m está entre -20.5 m y -19.8 m, ya que -20.5 < -20.1 < -19.8."
+          "retroalimentacion": "-20.1 m está entre -20.5 m y -19.8 m, ya que -20.5 < -20.1 < -19.8.",
+          "pistas": [
+            "Busca un valor entre -20.5 y -19.8, igual que comparaste -17.375 y -17.4 en el ejemplo resuelto.",
+            "-20.1 debe cumplir -20.5 < -20.1 < -19.8: compruébalo."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -102,7 +110,11 @@
             "-11.6 m y -11 3/5 m"
           ],
           "respuestaCorrecta": 3,
-          "retroalimentacion": "-11 3/5 = -11.6, así que -11.6 m y -11 3/5 m son la misma profundidad escrita de dos formas distintas."
+          "retroalimentacion": "-11 3/5 = -11.6, así que -11.6 m y -11 3/5 m son la misma profundidad escrita de dos formas distintas.",
+          "pistas": [
+            "Convierte -11 3/5 a decimal como hiciste con -17 3/8 en el ejemplo resuelto: 3/5 = 0.6.",
+            "Busca qué dos valores de la lista, ya convertidos, dan exactamente el mismo número."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -131,7 +143,24 @@
           "retroalimentacion": "Equipo 1: el punto más profundo es -14.75 (-14 3/4). Equipo 2: -19.4. Equipo 3: -24."
         }
       ],
-      "nivelEtiqueta": "Nivel 6 de 10 · Aplicación avanzada"
+      "nivelEtiqueta": "Nivel 6 de 10 · Aplicación avanzada",
+      "ejemploResuelto": {
+        "enunciado": "El instructor marca la pared del arrecife a -17 3/8 m, pero la computadora de otro buzo muestra -17.4 m. ¿Es el mismo punto?",
+        "pasos": [
+          {
+            "texto": "Convertimos -17 3/8 a decimal para comparar en la misma forma.",
+            "operacion": "-17 3/8 = -17.375"
+          },
+          {
+            "texto": "Comparamos -17.375 m con -17.4 m.",
+            "operacion": "-17.4 < -17.375"
+          },
+          {
+            "texto": "Como son distintos, el buzo está un poco más profundo que la marca del instructor, no en el mismo punto."
+          }
+        ],
+        "respuestaFinal": "No es el mismo punto: -17 3/8 m = -17.375 m, y el buzo está a -17.4 m, un poco más profundo."
+      }
     }
   ],
   "practicaExtra": [

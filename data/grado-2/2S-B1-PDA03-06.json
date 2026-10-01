@@ -36,7 +36,11 @@
             "180 km"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "k = 100 ÷ 4 = 25 km por cm. 9 × 25 = 225 km."
+          "retroalimentacion": "k = 100 ÷ 4 = 25 km por cm. 9 × 25 = 225 km.",
+          "pistas": [
+            "Calcula k = 100÷4, igual que hiciste en el ejemplo resuelto.",
+            "Multiplica k por 9 para obtener los km reales."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -66,7 +70,11 @@
           "tipo": "llenar_frase",
           "frase": "En un mapa de carreteras, 2.5 cm representan 75 km. Dos pueblos están a 6 cm en el mapa. La distancia real entre ellos es ___ km.",
           "respuestaCorrecta": "180",
-          "retroalimentacion": "k = 75 ÷ 2.5 = 30 km por cm. 6 × 30 = 180 km."
+          "retroalimentacion": "k = 75 ÷ 2.5 = 30 km por cm. 6 × 30 = 180 km.",
+          "pistas": [
+            "Calcula k = 75÷2.5.",
+            "Multiplica k por 6, igual que hiciste con el jardín en el ejemplo resuelto."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -122,9 +130,27 @@
             "40 m"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "k = 14 ÷ 3.5 = 4 m por cm. 9 × 4 = 36 m."
+          "retroalimentacion": "k = 14 ÷ 3.5 = 4 m por cm. 9 × 4 = 36 m.",
+          "pistas": [
+            "Calcula k = 14÷3.5.",
+            "Multiplica k por 9 para obtener los metros reales."
+          ]
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "En otro plano de la misma zona, 3 cm representan 90 metros reales. Sofía quiere saber cuántos cm mide en el plano un jardín de 240 metros reales.",
+        "pasos": [
+          {
+            "texto": "Calculamos k (metros reales por cm).",
+            "operacion": "k = 90 ÷ 3 = 30"
+          },
+          {
+            "texto": "Como esta vez conocemos la medida real y buscamos la del plano, dividimos entre k en lugar de multiplicar.",
+            "operacion": "240 ÷ 30 = 8"
+          }
+        ],
+        "respuestaFinal": "El jardín de 240 metros reales debe medir 8 cm en el plano."
+      }
     }
   ],
   "practicaExtra": [

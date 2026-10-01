@@ -35,7 +35,11 @@
             "64 m²"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "5×(5+3) = 5×8 = 40 m²."
+          "retroalimentacion": "5×(5+3) = 5×8 = 40 m².",
+          "pistas": [
+            "Sustituye n=5 en n×(n+3), igual que hiciste con los asientos del auditorio en el ejemplo resuelto.",
+            "5×8: ¿cuánto da?"
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -65,7 +69,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Una cancha temporal mide n por (n+1) metros. Para n=9, su área es 90 m².",
           "respuestaCorrecta": true,
-          "retroalimentacion": "9×(9+1) = 9×10 = 90 m²."
+          "retroalimentacion": "9×(9+1) = 9×10 = 90 m².",
+          "pistas": [
+            "Sustituye n=9 en n×(n+1), igual que hiciste en el ejemplo resuelto.",
+            "9×10: ¿cuánto da?"
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -109,7 +117,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Una plaza rectangular mide n por (n+2) metros. Para n=12, su área es 168 m².",
           "respuestaCorrecta": true,
-          "retroalimentacion": "12×(12+2) = 12×14 = 168 m²."
+          "retroalimentacion": "12×(12+2) = 12×14 = 168 m².",
+          "pistas": [
+            "Sustituye n=12 en n×(n+2).",
+            "12×14: ¿cuánto da?"
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -118,7 +130,21 @@
           "retroalimentacion": "9×(9+3) = 9×12 = 108 m²."
         }
       ],
-      "nivelEtiqueta": "Nivel 5 de 10 · Aplicación"
+      "nivelEtiqueta": "Nivel 5 de 10 · Aplicación",
+      "ejemploResuelto": {
+        "enunciado": "En el mismo auditorio, otra sección tiene un patrón distinto: la fila n tiene n(n+5) asientos. ¿Cuántos asientos tendrá la fila 6?",
+        "pasos": [
+          {
+            "texto": "Sustituimos n=6 en la expresión n(n+5).",
+            "operacion": "6×(6+5) = 6×11"
+          },
+          {
+            "texto": "Multiplicamos para obtener el total.",
+            "operacion": "6×11 = 66"
+          }
+        ],
+        "respuestaFinal": "La fila 6 de esa sección tendrá 66 asientos."
+      }
     }
   ],
   "practicaExtra": [

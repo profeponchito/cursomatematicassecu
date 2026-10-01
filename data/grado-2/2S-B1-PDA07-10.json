@@ -34,7 +34,11 @@
             "6"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "3x−5 = x+11 → 2x=16 → x=8."
+          "retroalimentacion": "3x−5 = x+11 → 2x=16 → x=8.",
+          "pistas": [
+            "Iguala las dos expresiones, igual que hiciste con el ángulo del puente en el ejemplo resuelto.",
+            "3x−5=x+11 → 2x=16: ¿cuánto vale x?"
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -52,7 +56,11 @@
             "160°"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Suma del heptágono = 900°. Conocidos suman 747°. Faltante = 900−747 = 153°."
+          "retroalimentacion": "Suma del heptágono = 900°. Conocidos suman 747°. Faltante = 900−747 = 153°.",
+          "pistas": [
+            "Calcula la suma total del heptágono y réstale los ángulos conocidos, igual que hiciste con la plazoleta decagonal en el ejemplo resuelto.",
+            "(7−2)×180°=900°; 900°−747°: ¿cuánto da?"
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -94,7 +102,11 @@
             "36"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "n = 360° ÷ 7.5° = 48 lados."
+          "retroalimentacion": "n = 360° ÷ 7.5° = 48 lados.",
+          "pistas": [
+            "Usa n=360°÷ángulo exterior.",
+            "360°÷7.5°: ¿cuánto da?"
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -126,7 +138,25 @@
           "retroalimentacion": "Ángulo interior regular: [(n−2)×180°]÷n. Congruencia con tres lados: LLL. Bisectriz: ángulo÷2. Lados a partir del exterior: 360°÷ángulo exterior."
         }
       ],
-      "nivelEtiqueta": "Nivel 10 de 10 · Dominio"
+      "nivelEtiqueta": "Nivel 10 de 10 · Dominio",
+      "ejemploResuelto": {
+        "enunciado": "El mismo equipo revisa otro puente con dos triángulos congruentes por ALA: un ángulo mide (4x−6)° y el otro (2x+18)°. Además, deben verificar una plazoleta con forma de decágono irregular donde nueve ángulos conocidos suman 1300°.",
+        "pasos": [
+          {
+            "texto": "Igualamos las expresiones del ángulo del puente y despejamos x.",
+            "operacion": "4x−6 = 2x+18 → 2x=24 → x=12"
+          },
+          {
+            "texto": "Sustituimos para conocer el ángulo real.",
+            "operacion": "4(12)−6 = 42°"
+          },
+          {
+            "texto": "Para la plazoleta decagonal, calculamos la suma total y restamos los ángulos conocidos.",
+            "operacion": "(10−2)×180° = 1440°; 1440°−1300° = 140°"
+          }
+        ],
+        "respuestaFinal": "El ángulo del puente mide 42° (x=12), y el ángulo faltante de la plazoleta decagonal mide 140°."
+      }
     }
   ],
   "practicaExtra": [

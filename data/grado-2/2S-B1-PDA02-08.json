@@ -35,7 +35,11 @@
             "44"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "20=2²×5, 28=2²×7, 44=2²×11. El único factor común a los tres es 2², así que MCD=4."
+          "retroalimentacion": "20=2²×5, 28=2²×7, 44=2²×11. El único factor común a los tres es 2², así que MCD=4.",
+          "pistas": [
+            "Descompón los tres números en factores primos, igual que hiciste con 45, 60 y 75 en el ejemplo resuelto: 20=2²×5, 28=2²×7, 44=2²×11.",
+            "El único factor común a los tres es 2²: ese es el MCD."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -71,7 +75,11 @@
           "tipo": "llenar_frase",
           "frase": "Tres alarmas suenan cada 10, 14 y 21 minutos. Si sonaron juntas a las 8:00 a.m., volverán a sonar juntas después de ___ minutos.",
           "respuestaCorrecta": "210",
-          "retroalimentacion": "10=2×5, 14=2×7, 21=3×7. mcm=2×3×5×7=210 minutos."
+          "retroalimentacion": "10=2×5, 14=2×7, 21=3×7. mcm=2×3×5×7=210 minutos.",
+          "pistas": [
+            "Descompón 10, 14 y 21 en factores primos: 10=2×5, 14=2×7, 21=3×7.",
+            "El mcm toma cada factor con su mayor exponente, igual que harías para sincronizar tres eventos."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -103,7 +111,11 @@
             "360"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "15=3×5, 20=2²×5, 24=2³×3. mcm=2³×3×5=120."
+          "retroalimentacion": "15=3×5, 20=2²×5, 24=2³×3. mcm=2³×3×5=120.",
+          "pistas": [
+            "Descompón 15, 20 y 24: 15=3×5, 20=2²×5, 24=2³×3.",
+            "El mcm toma cada factor con su mayor exponente: multiplica 2³×3×5."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -118,7 +130,25 @@
           "retroalimentacion": "12=2²×3, 16=2⁴, 20=2²×5. mcm=2⁴×3×5=240 días."
         }
       ],
-      "nivelEtiqueta": "Nivel 8 de 10 · Reto avanzado"
+      "nivelEtiqueta": "Nivel 8 de 10 · Reto avanzado",
+      "ejemploResuelto": {
+        "enunciado": "El dueño también tiene 45 cuadernos, 60 carpetas y 75 reglas y quiere armar paquetes iguales para tres escuelas más, usando el mayor número posible sin que sobre material.",
+        "pasos": [
+          {
+            "texto": "Descomponemos los tres números en factores primos.",
+            "operacion": "45=3²×5, 60=2²×3×5, 75=3×5²"
+          },
+          {
+            "texto": "Tomamos los factores comunes a los tres con el menor exponente.",
+            "operacion": "MCD = 3×5 = 15"
+          },
+          {
+            "texto": "Dividimos cada cantidad entre el MCD.",
+            "operacion": "45÷15=3, 60÷15=4, 75÷15=5"
+          }
+        ],
+        "respuestaFinal": "Se pueden armar 15 paquetes iguales, cada uno con 3 cuadernos, 4 carpetas y 5 reglas."
+      }
     }
   ],
   "practicaExtra": [

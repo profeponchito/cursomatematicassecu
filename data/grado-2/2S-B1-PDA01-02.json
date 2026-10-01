@@ -63,7 +63,11 @@
             "1/4, -0.8, -5, 3"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "1/4 = 0.25. De menor a mayor: -5 < -0.8 < 0.25 < 3."
+          "retroalimentacion": "1/4 = 0.25. De menor a mayor: -5 < -0.8 < 0.25 < 3.",
+          "pistas": [
+            "Convierte 1/4 a decimal como en el ejemplo resuelto: 1/4 = 0.25.",
+            "Ubica los cuatro valores en la recta numérica, como hiciste en el ejemplo resuelto: el más negativo va primero."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -75,7 +79,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "En la recta numérica, -4.5 se ubica a la izquierda de -4.05.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: -4.5 < -4.05, así que -4.5 queda a la izquierda."
+          "retroalimentacion": "Correcto: -4.5 < -4.05, así que -4.5 queda a la izquierda.",
+          "pistas": [
+            "Recuerda: entre dos negativos, el que tiene mayor valor absoluto (sin signo) es el menor y queda más a la izquierda.",
+            "Compara -4.5 y -4.05 como en el ejemplo resuelto: ¿cuál está más lejos del cero?"
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -107,10 +115,31 @@
             "-5/8"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "-3/5 = -0.6."
+          "retroalimentacion": "-3/5 = -0.6.",
+          "pistas": [
+            "Convierte cada opción a decimal, igual que hiciste con los valores del ejemplo resuelto.",
+            "Recuerda que -3/5 significa -3 entre 5."
+          ]
         }
       ],
-      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio"
+      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio",
+      "ejemploResuelto": {
+        "enunciado": "En la misma carrera, el entrenador registra el diferencial de otro grupo de 4 velocistas: 0.6, -1.4, -0.2 y 2.1 segundos respecto a la marca esperada. Quiere ordenarlos del mayor retraso al mejor tiempo.",
+        "pasos": [
+          {
+            "texto": "El mayor retraso es el número más negativo (más alejado del cero hacia la izquierda), y el mejor tiempo es el número mayor (más a la derecha en la recta numérica)."
+          },
+          {
+            "texto": "Ubicamos los cuatro valores en la recta numérica y los comparamos de izquierda a derecha.",
+            "operacion": "-1.4 < -0.2 < 0.6 < 2.1"
+          },
+          {
+            "texto": "Del mayor retraso al mejor tiempo, el orden queda igual que de menor a mayor.",
+            "operacion": "-1.4, -0.2, 0.6, 2.1"
+          }
+        ],
+        "respuestaFinal": "Del mayor retraso al mejor tiempo: -1.4 s, -0.2 s, 0.6 s, 2.1 s."
+      }
     }
   ],
   "practicaExtra": [

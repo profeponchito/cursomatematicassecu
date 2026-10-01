@@ -33,7 +33,11 @@
             "6, 3/5, 8, -1.1"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "De mayor a menor: 8 > 6 > 3/5 > -1.1."
+          "retroalimentacion": "De mayor a menor: 8 > 6 > 3/5 > -1.1.",
+          "pistas": [
+            "Convierte 3/5 a decimal: 3/5 = 0.6.",
+            "Ordena de mayor a menor como en el ejemplo resuelto: primero los positivos, del más grande al más chico, luego los negativos."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -131,7 +135,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "-5/8 es menor que -0.5.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: -5/8 = -0.625, y -0.625 < -0.5."
+          "retroalimentacion": "Correcto: -5/8 = -0.625, y -0.625 < -0.5.",
+          "pistas": [
+            "Convierte -5/8 a decimal, igual que hiciste en el ejemplo resuelto: -5/8 = -0.625.",
+            "Compara -0.625 con -0.5: ¿cuál está más a la izquierda?"
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -169,10 +177,32 @@
             "0 < -0.01"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "-1/2 (-0.5) es mayor que -0.8, ya que está más a la derecha en la recta numérica."
+          "retroalimentacion": "-1/2 (-0.5) es mayor que -0.8, ya que está más a la derecha en la recta numérica.",
+          "pistas": [
+            "Convierte -1/2 a decimal: -1/2 = -0.5.",
+            "Compara -0.5 con -0.8: el que tiene menor valor absoluto es el mayor."
+          ]
         }
       ],
-      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis"
+      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis",
+      "ejemploResuelto": {
+        "enunciado": "El encargado revisa dos casetas más: la caseta D tiene -5/8 m y la caseta E tiene -0.7 m. ¿Cuál tiene mayor faltante de agua, y existe algún nivel posible entre ambas?",
+        "pasos": [
+          {
+            "texto": "Convertimos -5/8 a decimal para comparar en la misma forma.",
+            "operacion": "-5/8 = -0.625"
+          },
+          {
+            "texto": "Comparamos -0.625 m con -0.7 m.",
+            "operacion": "-0.7 < -0.625"
+          },
+          {
+            "texto": "Buscamos un nivel posible entre ambos, por la propiedad de densidad.",
+            "operacion": "-0.7 < -0.66 < -0.625"
+          }
+        ],
+        "respuestaFinal": "La caseta E tiene mayor faltante (-0.7 m es menor que -0.625 m), y sí existe un nivel intermedio, por ejemplo -0.66 m."
+      }
     }
   ],
   "practicaExtra": [

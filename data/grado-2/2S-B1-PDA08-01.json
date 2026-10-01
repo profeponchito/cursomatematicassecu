@@ -35,7 +35,11 @@
             "k=3"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "k = DE÷AB = 6÷3 = 2. Se confirma con EF÷BC=8÷4=2 y FD÷CA=10÷5=2."
+          "retroalimentacion": "k = DE÷AB = 6÷3 = 2. Se confirma con EF÷BC=8÷4=2 y FD÷CA=10÷5=2.",
+          "pistas": [
+            "Así como en el molde de la mariposa calculamos k dividiendo el lado del triángulo grande entre su lado correspondiente del chico (20÷5=4), aquí divide DE entre AB.",
+            "k = DE÷AB = 6÷3 = 2."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -59,7 +63,11 @@
             "10"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "El lado chico = 12 ÷ 1.5 = 8 cm."
+          "retroalimentacion": "El lado chico = 12 ÷ 1.5 = 8 cm.",
+          "pistas": [
+            "La razón de semejanza multiplica del triángulo chico al grande; para regresar del grande al chico hay que dividir entre k, al revés de cuando multiplicamos 5×4=20 en el ejemplo de la mariposa.",
+            "Lado chico = 12 ÷ 1.5 = 8 cm."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -83,7 +91,11 @@
             "21"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "k = 18÷6 = 3. B'C' = 9 × 3 = 27 cm."
+          "retroalimentacion": "k = 18÷6 = 3. B'C' = 9 × 3 = 27 cm.",
+          "pistas": [
+            "Primero obtén k dividiendo un par de lados correspondientes conocidos, igual que hicimos con 20÷5=4 en el ejemplo de la mariposa.",
+            "k = 18÷6 = 3, después B'C' = 9×3 = 27 cm."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -124,7 +136,25 @@
           "retroalimentacion": "k = 27÷9 = 3."
         }
       ],
-      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio"
+      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio",
+      "ejemploResuelto": {
+        "enunciado": "En la misma fábrica de piñatas de Acolman, un molde triangular para las alas de una piñata en forma de mariposa tiene lados de 5 cm, 7 cm y 9 cm. El molde grande semejante tiene el lado correspondiente al de 5 cm midiendo 20 cm.",
+        "pasos": [
+          {
+            "texto": "Calculamos la razón de semejanza con el par de lados conocidos.",
+            "operacion": "k = 20 ÷ 5 = 4"
+          },
+          {
+            "texto": "Aplicamos k al lado de 7 cm.",
+            "operacion": "7 × 4 = 28 cm"
+          },
+          {
+            "texto": "Aplicamos k al lado de 9 cm.",
+            "operacion": "9 × 4 = 36 cm"
+          }
+        ],
+        "respuestaFinal": "k=4; el molde grande mide 20 cm, 28 cm y 36 cm."
+      }
     }
   ],
   "practicaExtra": [

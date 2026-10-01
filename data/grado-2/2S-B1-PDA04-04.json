@@ -33,7 +33,11 @@
             "72"
           ],
           "respuestaCorrecta": 3,
-          "retroalimentacion": "2n² en n=6: 2×6² = 72."
+          "retroalimentacion": "2n² en n=6: 2×6² = 72.",
+          "pistas": [
+            "Sustituye n=6 en la expresión 2n², igual que hiciste con las gomitas en el ejemplo resuelto.",
+            "2×36: ¿cuánto da?"
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -125,7 +129,11 @@
             "90"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "3n² en n=5: 3×25 = 75."
+          "retroalimentacion": "3n² en n=5: 3×25 = 75.",
+          "pistas": [
+            "Sustituye n=5 en 3n², igual que calculaste 4n² en el ejemplo resuelto.",
+            "3×25: ¿cuánto da?"
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -137,7 +145,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "En la sucesión 2n²+3, el término 4 es 35.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "2n²+3 en n=4: 2×16+3 = 35."
+          "retroalimentacion": "2n²+3 en n=4: 2×16+3 = 35.",
+          "pistas": [
+            "Calcula 2n²+3 con n=4: primero 2×16, luego suma 3.",
+            "¿El resultado es realmente 35?"
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -166,7 +178,21 @@
           "retroalimentacion": "n²-1 en n=3: 9-1=8. 3n² en n=3: 3×9=27. n²+4 en n=3: 9+4=13."
         }
       ],
-      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis"
+      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis",
+      "ejemploResuelto": {
+        "enunciado": "El mismo encargado organiza otra pirámide, esta vez de gomitas, con la sucesión 4, 16, 36, 64. ¿Cuántas gomitas llevará el nivel 7?",
+        "pasos": [
+          {
+            "texto": "Comparamos los términos con el cuadrado de su posición para hallar el factor.",
+            "operacion": "4÷1=4, 16÷4=4, así que la expresión es 4n²"
+          },
+          {
+            "texto": "Calculamos el nivel 7 sustituyendo n=7.",
+            "operacion": "4×7² = 4×49 = 196"
+          }
+        ],
+        "respuestaFinal": "El nivel 7 de la pirámide de gomitas llevará 196 gomitas."
+      }
     }
   ],
   "practicaExtra": [

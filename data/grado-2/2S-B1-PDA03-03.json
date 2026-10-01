@@ -34,7 +34,11 @@
             "$162"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "La constante k = 54 ÷ 3 = 18 por kg. Entonces 7 × 18 = $126."
+          "retroalimentacion": "La constante k = 54 ÷ 3 = 18 por kg. Entonces 7 × 18 = $126.",
+          "pistas": [
+            "Calcula k = 54÷3, igual que hiciste con la tortilla de doña Beatriz en el ejemplo resuelto.",
+            "Multiplica k por 7 para obtener el precio de 7 kg."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -106,13 +110,21 @@
           "tipo": "llenar_frase",
           "frase": "Si 10 horas de trabajo pagan $350, entonces 6 horas pagan $___.",
           "respuestaCorrecta": "210",
-          "retroalimentacion": "k = 350÷10 = 35 por hora. 6×35 = $210."
+          "retroalimentacion": "k = 350÷10 = 35 por hora. 6×35 = $210.",
+          "pistas": [
+            "Calcula k = 350÷10.",
+            "Multiplica k por 6, igual que hiciste con los kilos de tortilla en el ejemplo resuelto."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "Si 7 kg de café cuestan $567, entonces 4 kg cuestan $324.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "k = 567÷7 = 81 por kg. 4×81 = $324."
+          "retroalimentacion": "k = 567÷7 = 81 por kg. 4×81 = $324.",
+          "pistas": [
+            "Calcula k = 567÷7, igual que en el ejemplo resuelto.",
+            "Multiplica k por 4: ¿el resultado es $324?"
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -135,7 +147,21 @@
           "retroalimentacion": "4 kg de arroz cuestan $92 → k=$23 por kg; 7×23=$161. 3 horas pagan $141 → k=$47 por hora; 8×47=$376. 6 litros cuestan $114 → k=$19 por litro; 9×19=$171."
         }
       ],
-      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado"
+      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado",
+      "ejemploResuelto": {
+        "enunciado": "Doña Beatriz también quiere saber cuánto pagaría por 12 kg de tortilla para un evento más grande, usando la misma constante de proporcionalidad.",
+        "pasos": [
+          {
+            "texto": "Calculamos la constante k dividiendo el costo entre los kilos.",
+            "operacion": "k = 95 ÷ 5 = 19"
+          },
+          {
+            "texto": "Multiplicamos k por la nueva cantidad.",
+            "operacion": "12 × 19 = 228"
+          }
+        ],
+        "respuestaFinal": "Doña Beatriz pagaría $228 por 12 kg de tortilla."
+      }
     }
   ],
   "practicaExtra": [

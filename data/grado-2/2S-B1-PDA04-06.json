@@ -35,7 +35,11 @@
             "880 pesos"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "40×16+20×4+80 = 640+80+80 = 800 pesos."
+          "retroalimentacion": "40×16+20×4+80 = 640+80+80 = 800 pesos.",
+          "pistas": [
+            "Calcula cada término por separado con n=4, igual que hiciste con la fórmula de bodas en el ejemplo resuelto.",
+            "40×16=640; 20×4=80; suma también 80."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -59,7 +63,11 @@
             "273 pesos"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "2×49+15×7+50 = 98+105+50 = 253 pesos."
+          "retroalimentacion": "2×49+15×7+50 = 98+105+50 = 253 pesos.",
+          "pistas": [
+            "Calcula los tres términos por separado con n=7.",
+            "2×49=98; 15×7=105; suma también 50."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -109,7 +117,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "El costo de producción es C(n)=10n²-3n+7 pesos en la unidad n. Para n=2, el costo es 41 pesos.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "10×4-6+7 = 40-6+7 = 41 pesos."
+          "retroalimentacion": "10×4-6+7 = 40-6+7 = 41 pesos.",
+          "pistas": [
+            "Calcula cada término por separado con n=2, respetando los signos.",
+            "10×4=40; -3×2=-6; +7. Suma los tres."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -118,7 +130,21 @@
           "retroalimentacion": "7×9+3-20 = 63+3-20 = 46 pesos."
         }
       ],
-      "nivelEtiqueta": "Nivel 6 de 10 · Aplicación avanzada"
+      "nivelEtiqueta": "Nivel 6 de 10 · Aplicación avanzada",
+      "ejemploResuelto": {
+        "enunciado": "La misma empresa también cobra por bodas con la fórmula 3n²+10n+200. ¿Cuál sería el costo para 8 mesas?",
+        "pasos": [
+          {
+            "texto": "Calculamos cada término por separado con n=8.",
+            "operacion": "3×8²=192, 10×8=80, +200"
+          },
+          {
+            "texto": "Sumamos los tres resultados.",
+            "operacion": "192+80+200 = 472"
+          }
+        ],
+        "respuestaFinal": "El costo para 8 mesas sería de $472."
+      }
     }
   ],
   "practicaExtra": [

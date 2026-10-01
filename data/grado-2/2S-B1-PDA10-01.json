@@ -35,7 +35,11 @@
             "14 m"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Medida real = 4 cm × 100 = 400 cm = 4 m."
+          "retroalimentacion": "Medida real = 4 cm × 100 = 400 cm = 4 m.",
+          "pistas": [
+            "Multiplica la medida del plano por la escala n, igual que hicimos con la cancha de basquetbol de la escuela de Fernando (6×500=3,000cm=30m).",
+            "Medida real=4×100=400cm=4m."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -59,7 +63,11 @@
             "32 cm"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "160 cm ÷ 20 = 8 cm."
+          "retroalimentacion": "160 cm ÷ 20 = 8 cm.",
+          "pistas": [
+            "Para ir de la medida real al plano, divide entre n — al revés de cuando multiplicamos 6×500 para la cancha de Fernando.",
+            "160cm÷20=8cm."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -95,7 +103,11 @@
           "tipo": "llenar_frase",
           "frase": "Escala 1:100. Una alberca real mide 800 cm de largo. En el plano medirá ___ cm.",
           "respuestaCorrecta": "8",
-          "retroalimentacion": "800 cm ÷ 100 = 8 cm."
+          "retroalimentacion": "800 cm ÷ 100 = 8 cm.",
+          "pistas": [
+            "Divide la medida real entre la escala n para obtener la medida en el plano.",
+            "800cm÷100=8cm."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -118,7 +130,25 @@
           "retroalimentacion": "1:100, 3 cm: 3×100=300 cm. 1:50, 4 cm: 4×50=200 cm. 1:20, 5 cm: 5×20=100 cm."
         }
       ],
-      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio"
+      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio",
+      "ejemploResuelto": {
+        "enunciado": "El mismo plano de la escuela de Fernando en Mérida también muestra la cancha de basquetbol, que mide 6 cm de largo (escala 1:500).",
+        "pasos": [
+          {
+            "texto": "Aplicamos la fórmula de escala.",
+            "operacion": "medida real = medida en el plano × n"
+          },
+          {
+            "texto": "Sustituimos y calculamos.",
+            "operacion": "6 cm × 500 = 3,000 cm"
+          },
+          {
+            "texto": "Convertimos a metros.",
+            "operacion": "3,000 cm = 30 m"
+          }
+        ],
+        "respuestaFinal": "La cancha mide 30 m de largo en la realidad."
+      }
     }
   ],
   "practicaExtra": [

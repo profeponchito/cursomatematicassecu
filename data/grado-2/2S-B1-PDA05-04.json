@@ -33,7 +33,11 @@
             "x²+4x+16"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "(x+4)² = x² + 2(4)x + 4² = x²+8x+16."
+          "retroalimentacion": "(x+4)² = x² + 2(4)x + 4² = x²+8x+16.",
+          "pistas": [
+            "Aplica la fórmula (x+a)²=x²+2ax+a², igual que hiciste con el terreno de 6 metros en el ejemplo resuelto.",
+            "2(4)=8 y 4²=16."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -131,7 +135,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "x^3 × x^6 es igual a x^9.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Se suman los exponentes: 3+6=9."
+          "retroalimentacion": "Se suman los exponentes: 3+6=9.",
+          "pistas": [
+            "Suma los exponentes al multiplicar potencias de la misma base.",
+            "3+6: ¿cuánto da?"
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -143,7 +151,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "(x+10)² = x² + 20x + 100.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: 2(10)=20 y 10²=100, entonces (x+10)² = x²+20x+100."
+          "retroalimentacion": "Correcto: 2(10)=20 y 10²=100, entonces (x+10)² = x²+20x+100.",
+          "pistas": [
+            "Aplica la fórmula del cuadrado de binomio, igual que hiciste con (x+6)² en el ejemplo resuelto.",
+            "2(10)=20 y 10²=100."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -166,7 +178,25 @@
           "retroalimentacion": "(x+11)²=x²+22x+121; x^3×x^5=x^8; (x^3)^5=x^15."
         }
       ],
-      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis"
+      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis",
+      "ejemploResuelto": {
+        "enunciado": "Camila también debe resolver un segundo terreno de lado (x+6)², y simplificar (x³)² × x².",
+        "pasos": [
+          {
+            "texto": "Desarrollamos el cuadrado del binomio.",
+            "operacion": "(x+6)² = x² + 2(6)x + 6² = x² + 12x + 36"
+          },
+          {
+            "texto": "Simplificamos (x³)² aplicando potencia de potencia.",
+            "operacion": "(x³)² = x^(3×2) = x⁶"
+          },
+          {
+            "texto": "Multiplicamos por x², sumando exponentes.",
+            "operacion": "x⁶ × x² = x⁸"
+          }
+        ],
+        "respuestaFinal": "El área del segundo terreno es x²+12x+36, y (x³)²×x² se simplifica como x⁸."
+      }
     }
   ],
   "practicaExtra": [

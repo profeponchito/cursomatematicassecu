@@ -29,7 +29,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "En un grupo de 20 alumnos, 4 sacaron la calificación más alta. La frecuencia relativa de esa calificación es 0.2.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: frecuencia relativa = 4÷20 = 0.2."
+          "retroalimentacion": "Correcto: frecuencia relativa = 4÷20 = 0.2.",
+          "pistas": [
+            "Divide la frecuencia entre el total para obtener la frecuencia relativa, igual que hicimos con la materia favorita (14÷35=0.4).",
+            "frecuencia relativa=4÷20=0.2."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -59,7 +63,11 @@
             "2.0"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "6÷30 = 0.2."
+          "retroalimentacion": "6÷30 = 0.2.",
+          "pistas": [
+            "La frecuencia relativa siempre es frecuencia÷total, el mismo procedimiento que usamos para la materia favorita de la encuesta.",
+            "6÷30=0.2."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -83,7 +91,11 @@
             "50%"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "35÷50 = 0.7, y 0.7×100 = 70%."
+          "retroalimentacion": "35÷50 = 0.7, y 0.7×100 = 70%.",
+          "pistas": [
+            "Después de dividir, multiplica por 100 para obtener el porcentaje, igual que hicimos con la materia favorita (0.4×100=40%).",
+            "35÷50=0.7 → 70%."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -112,7 +124,21 @@
           "retroalimentacion": "Falso: la frecuencia relativa es 3÷10 = 0.3, no 3.0 (esa cifra sería la frecuencia porcentual dividida entre 100, no el resultado directo)."
         }
       ],
-      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio"
+      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio",
+      "ejemploResuelto": {
+        "enunciado": "La misma encuesta escolar de Mérida también preguntó por la materia favorita de 35 alumnos, y 14 dijeron que era Ciencias Naturales.",
+        "pasos": [
+          {
+            "texto": "Calculamos la frecuencia relativa.",
+            "operacion": "14 ÷ 35 = 0.4"
+          },
+          {
+            "texto": "Calculamos la frecuencia porcentual.",
+            "operacion": "0.4 × 100 = 40%"
+          }
+        ],
+        "respuestaFinal": "La frecuencia porcentual de Ciencias Naturales es 40%."
+      }
     }
   ],
   "practicaExtra": [

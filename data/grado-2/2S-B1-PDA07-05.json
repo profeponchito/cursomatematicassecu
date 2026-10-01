@@ -35,7 +35,11 @@
             "60°"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "El giro en cada vértice es el ángulo exterior: 360°÷9 = 40°."
+          "retroalimentacion": "El giro en cada vértice es el ángulo exterior: 360°÷9 = 40°.",
+          "pistas": [
+            "Calcula 360° entre el número de lados, igual que hiciste con el dodecágono en el ejemplo resuelto.",
+            "360°÷9: ¿cuánto da?"
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -59,7 +63,11 @@
             "72°"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Interior y exterior son suplementarios: 180°−120° = 60°."
+          "retroalimentacion": "Interior y exterior son suplementarios: 180°−120° = 60°.",
+          "pistas": [
+            "El ángulo interior y el exterior son suplementarios: suman 180°.",
+            "180°−120°: ¿cuánto da?"
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -83,7 +91,11 @@
             "40°"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "360° ÷ 12 = 30°."
+          "retroalimentacion": "360° ÷ 12 = 30°.",
+          "pistas": [
+            "Este es exactamente el mismo cálculo del ejemplo resuelto.",
+            "360°÷12: ¿cuánto da?"
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -124,7 +136,21 @@
           "retroalimentacion": "El ángulo interior del octágono regular es 135°, así que el exterior mide 180°−135°=45°."
         }
       ],
-      "nivelEtiqueta": "Nivel 5 de 10 · Aplicación"
+      "nivelEtiqueta": "Nivel 5 de 10 · Aplicación",
+      "ejemploResuelto": {
+        "enunciado": "El mismo ciclista también da la vuelta a una plaza con forma de dodecágono regular (12 lados).",
+        "pasos": [
+          {
+            "texto": "El ángulo que gira en cada esquina es el ángulo exterior.",
+            "operacion": "360° ÷ 12"
+          },
+          {
+            "texto": "Dividimos.",
+            "operacion": "360° ÷ 12 = 30°"
+          }
+        ],
+        "respuestaFinal": "El ciclista gira 30° en cada una de las 12 esquinas del dodecágono."
+      }
     }
   ],
   "practicaExtra": [

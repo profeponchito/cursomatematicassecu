@@ -35,7 +35,11 @@
             "$140"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "4(x+80)=560 → 4x+320=560 → 4x=240 → x=60."
+          "retroalimentacion": "4(x+80)=560 → 4x+320=560 → 4x=240 → x=60.",
+          "pistas": [
+            "Distribuye el número fuera del paréntesis y despeja x, igual que hiciste con el salón de fiestas en el ejemplo resuelto.",
+            "4x+320=560: resta 320 y divide entre 4."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -53,7 +57,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Un vivero vende macetas: cada una cuesta (x + 18) pesos, pues $18 es el costo de la tierra incluida. Si 3 macetas costaron $90 en total, entonces el precio base x de la maceta es $10.",
           "respuestaCorrecta": false,
-          "retroalimentacion": "3(x+18)=90 → 3x+54=90 → 3x=36 → x=12, no $10."
+          "retroalimentacion": "3(x+18)=90 → 3x+54=90 → 3x=36 → x=12, no $10.",
+          "pistas": [
+            "Distribuye el 3 y despeja x, igual que en el ejemplo resuelto.",
+            "3x+54=90: ¿qué valor de x resulta realmente?"
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -109,7 +117,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "El doble de (x + 13) es igual a 50. Entonces x = 12.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "2(x+13)=50 → 2x+26=50 → 2x=24 → x=12. Correcto."
+          "retroalimentacion": "2(x+13)=50 → 2x+26=50 → 2x=24 → x=12. Correcto.",
+          "pistas": [
+            "Distribuye el 2, igual que hiciste con 3(x+50) en el ejemplo resuelto.",
+            "2x+26=50: ¿cuánto vale x?"
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -118,7 +130,21 @@
           "retroalimentacion": "12(x+2)=180 → 12x+24=180 → 12x=156 → x=13."
         }
       ],
-      "nivelEtiqueta": "Nivel 5 de 10 · Aplicación"
+      "nivelEtiqueta": "Nivel 5 de 10 · Aplicación",
+      "ejemploResuelto": {
+        "enunciado": "Otro salón cobra con la ecuación 3(x + 50) = 900, donde x es el costo por invitado.",
+        "pasos": [
+          {
+            "texto": "Distribuimos el 3 entre los dos términos del paréntesis.",
+            "operacion": "3(x+50) = 3x + 150"
+          },
+          {
+            "texto": "Sustituimos en la ecuación y despejamos x.",
+            "operacion": "3x + 150 = 900 → 3x = 750 → x = 250"
+          }
+        ],
+        "respuestaFinal": "Ese salón cobra $250 por cada invitado."
+      }
     }
   ],
   "practicaExtra": [

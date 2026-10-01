@@ -34,7 +34,11 @@
             "1:30 p.m."
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Distancia = 6×65 = 390 km. Tiempo = 390÷78 = 5 h. 7:30 a.m. + 5 h = 12:30 p.m."
+          "retroalimentacion": "Distancia = 6×65 = 390 km. Tiempo = 390÷78 = 5 h. 7:30 a.m. + 5 h = 12:30 p.m.",
+          "pistas": [
+            "Primero convierte la distancia del mapa a km reales, luego calcula el tiempo dividiendo entre la velocidad, y por último súmalo a la hora de salida — igual que hicimos para la otra opción de ruta de tu familia (216÷54=4h; 9:00am+4h=1:00pm).",
+            "Distancia=390km. Tiempo=5h. 7:30am+5h=12:30pm."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -70,7 +74,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "En un mapa con escala 1 cm = 55 km, una distancia de 8 cm equivale a 440 km reales. Si sales a las 6:00 a.m. y viajas a 88 km/h sin descansos, llegas a las 11:00 a.m.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: distancia = 8×55 = 440 km. Tiempo = 440÷88 = 5 h. 6:00 a.m. + 5 h = 11:00 a.m."
+          "retroalimentacion": "Correcto: distancia = 8×55 = 440 km. Tiempo = 440÷88 = 5 h. 6:00 a.m. + 5 h = 11:00 a.m.",
+          "pistas": [
+            "Sigue los mismos 3 pasos que con la otra opción de ruta: distancia real, tiempo, y sumarlo a la hora de salida.",
+            "Distancia=440km. Tiempo=5h. 6:00am+5h=11:00am."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -82,7 +90,11 @@
           "tipo": "llenar_frase",
           "frase": "En un mapa con escala 1 cm = 42 km, la distancia entre dos ciudades es de 5 cm. Sales a las 8:45 a.m. y viajas a 70 km/h. Llegas a las ___.",
           "respuestaCorrecta": "11:45 a.m.",
-          "retroalimentacion": "Distancia = 5×42 = 210 km. Tiempo = 210÷70 = 3 h. 8:45 a.m. + 3 h = 11:45 a.m."
+          "retroalimentacion": "Distancia = 5×42 = 210 km. Tiempo = 210÷70 = 3 h. 8:45 a.m. + 3 h = 11:45 a.m.",
+          "pistas": [
+            "Usa el mismo procedimiento de 3 pasos que con la otra opción de ruta de tu familia.",
+            "Distancia=210km. Tiempo=3h. 8:45am+3h=11:45am."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -117,7 +129,25 @@
           "retroalimentacion": "Mapa: distancia=350 km, t=5 h, llega 2:00 p.m. Velocidad promedio: 180 km÷4 h=45 km/h. 36÷3.6=10 m/s."
         }
       ],
-      "nivelEtiqueta": "Nivel 10 de 10 · Dominio"
+      "nivelEtiqueta": "Nivel 10 de 10 · Dominio",
+      "ejemploResuelto": {
+        "enunciado": "Tu familia también calcula otra opción de ruta hacia Tampico-CDMX: un mapa con escala 1 cm = 36 km muestra una distancia de 6 cm hasta una ciudad intermedia. Si salen a las 9:00 a.m. y manejan a 54 km/h sin paradas,",
+        "pasos": [
+          {
+            "texto": "Convertimos la distancia del mapa a km reales.",
+            "operacion": "6 × 36 = 216 km"
+          },
+          {
+            "texto": "Calculamos el tiempo de viaje.",
+            "operacion": "216 ÷ 54 = 4 horas"
+          },
+          {
+            "texto": "Sumamos el tiempo a la hora de salida.",
+            "operacion": "9:00 a.m. + 4 h = 1:00 p.m."
+          }
+        ],
+        "respuestaFinal": "Llegan a la ciudad intermedia a la 1:00 p.m."
+      }
     }
   ],
   "practicaExtra": [

@@ -34,7 +34,11 @@
             "1/6"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "90° ÷ 360° = 1/4. El ángulo central de 90° representa una cuarta parte del círculo."
+          "retroalimentacion": "90° ÷ 360° = 1/4. El ángulo central de 90° representa una cuarta parte del círculo.",
+          "pistas": [
+            "Para encontrar la fracción, divide el ángulo entre 360°, igual que hicimos con las secciones de la cinta de la piñata (36÷360=1/10).",
+            "90°÷360°=1/4."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -64,7 +68,11 @@
             "100%"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "180° ÷ 360° = 0.5 = 50%. Un ángulo de 180° divide al círculo justo a la mitad."
+          "retroalimentacion": "180° ÷ 360° = 0.5 = 50%. Un ángulo de 180° divide al círculo justo a la mitad.",
+          "pistas": [
+            "Convierte la fracción a porcentaje multiplicando por 100, como harías con 36÷360=0.10=10% en el ejemplo de la cinta.",
+            "180°÷360°=0.5=50%."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -88,7 +96,11 @@
             "1/6"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "30° ÷ 360° = 1/12."
+          "retroalimentacion": "30° ÷ 360° = 1/12.",
+          "pistas": [
+            "Divide el ángulo entre 360° para obtener la fracción, igual que con las 10 secciones de la cinta de la piñata.",
+            "30°÷360°=1/12."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -120,7 +132,21 @@
           "retroalimentacion": "Correcto: 45° ÷ 360° = 1/8."
         }
       ],
-      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio"
+      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio",
+      "ejemploResuelto": {
+        "enunciado": "La misma piñata de la posada de Toluca también lleva una cinta decorativa repartida en 10 secciones iguales alrededor del círculo.",
+        "pasos": [
+          {
+            "texto": "Calculamos el ángulo entre secciones.",
+            "operacion": "360° ÷ 10 = 36°"
+          },
+          {
+            "texto": "Calculamos la fracción del círculo que representa.",
+            "operacion": "36 ÷ 360 = 1/10"
+          }
+        ],
+        "respuestaFinal": "Cada sección mide 36°, es decir 1/10 del círculo (10%)."
+      }
     }
   ],
   "practicaExtra": [

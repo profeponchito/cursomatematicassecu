@@ -35,7 +35,11 @@
             "$650"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Distancia = 6×50 = 300 km. Litros = 300÷12 = 25. Costo = 25×24 = $600."
+          "retroalimentacion": "Distancia = 6×50 = 300 km. Litros = 300÷12 = 25. Costo = 25×24 = $600.",
+          "pistas": [
+            "Primero calcula los litros dividiendo distancia entre rendimiento, y después multiplica por el precio, igual que hicimos para la ruta C de don Nicolás (270÷9=30L, 30×24=$720).",
+            "Distancia=300km. Litros=25. Costo=$600."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -83,7 +87,11 @@
           "tipo": "llenar_frase",
           "frase": "En un mapa con escala 1 cm = 45 km, una ruta mide 8 cm. Si el auto rinde 15 km/l y la gasolina cuesta $23 por litro, el costo total del viaje es $___.",
           "respuestaCorrecta": "552",
-          "retroalimentacion": "Distancia = 8×45 = 360 km. Litros = 360÷15 = 24. Costo = 24×23 = $552."
+          "retroalimentacion": "Distancia = 8×45 = 360 km. Litros = 360÷15 = 24. Costo = 24×23 = $552.",
+          "pistas": [
+            "Sigue los mismos dos pasos que con la ruta C de don Nicolás: litros=distancia÷rendimiento, costo=litros×precio.",
+            "Distancia=360km. Litros=24. Costo=$552."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -95,7 +103,11 @@
           "tipo": "llenar_frase",
           "frase": "En un mapa con escala 1 cm = 55 km, una ruta mide 4 cm. El auto rinde 11 km/l y la gasolina cuesta $25 por litro. El costo total es $___.",
           "respuestaCorrecta": "500",
-          "retroalimentacion": "Distancia = 4×55 = 220 km. Litros = 220÷11 = 20. Costo = 20×25 = $500."
+          "retroalimentacion": "Distancia = 4×55 = 220 km. Litros = 220÷11 = 20. Costo = 20×25 = $500.",
+          "pistas": [
+            "Usa litros=distancia÷rendimiento y costo=litros×precio, el mismo procedimiento que con la ruta C de don Nicolás.",
+            "Distancia=220km. Litros=20. Costo=$500."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -118,7 +130,21 @@
           "retroalimentacion": "200 km, 20 l, $400. 240 km, 20 l, $480. 300 km, 20 l, $440."
         }
       ],
-      "nivelEtiqueta": "Nivel 9 de 10 · Integración"
+      "nivelEtiqueta": "Nivel 9 de 10 · Integración",
+      "ejemploResuelto": {
+        "enunciado": "Don Nicolás también compara una tercera opción, la ruta C: 270 km, con un rendimiento de 9 km por litro, y gasolina a $24 por litro.",
+        "pasos": [
+          {
+            "texto": "Calculamos los litros necesarios.",
+            "operacion": "270 ÷ 9 = 30 litros"
+          },
+          {
+            "texto": "Calculamos el costo total.",
+            "operacion": "30 × 24 = $720"
+          }
+        ],
+        "respuestaFinal": "La ruta C costaría $720 en gasolina."
+      }
     }
   ],
   "practicaExtra": [

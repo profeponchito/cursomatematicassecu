@@ -35,7 +35,11 @@
             "4x²+10x+25"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "(2x+5)² = 2²x² + 2(2)(5)x + 5² = 4x²+20x+25."
+          "retroalimentacion": "(2x+5)² = 2²x² + 2(2)(5)x + 5² = 4x²+20x+25.",
+          "pistas": [
+            "Aplica (ax+b)²=a²x²+2abx+b², igual que hiciste con (4x+3)² en el ejemplo resuelto.",
+            "2²=4, 2(2)(5)=20, 5²=25."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -47,7 +51,11 @@
           "tipo": "llenar_frase",
           "frase": "El desarrollo de (4x+1)² es 16x² + 8x + ___.",
           "respuestaCorrecta": "1",
-          "retroalimentacion": "El último término es b²=1²=1."
+          "retroalimentacion": "El último término es b²=1²=1.",
+          "pistas": [
+            "El último término es b², igual que calculaste 3² en el ejemplo resuelto.",
+            "1²: ¿cuánto da?"
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -109,7 +117,11 @@
             "9x²+1"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "(3x+1)² = 3²x² + 2(3)(1)x + 1² = 9x²+6x+1."
+          "retroalimentacion": "(3x+1)² = 3²x² + 2(3)(1)x + 1² = 9x²+6x+1.",
+          "pistas": [
+            "Aplica (ax+b)²=a²x²+2abx+b², igual que hiciste con (4x+3)² en el ejemplo resuelto.",
+            "3²=9, 2(3)(1)=6, 1²=1."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -124,7 +136,21 @@
           "retroalimentacion": "(5x+2)² = 5²x² + 2(5)(2)x + 2² = 25x²+20x+4."
         }
       ],
-      "nivelEtiqueta": "Nivel 8 de 10 · Reto avanzado"
+      "nivelEtiqueta": "Nivel 8 de 10 · Reto avanzado",
+      "ejemploResuelto": {
+        "enunciado": "El mismo arquitecto diseña otra habitación con lado (4x+3) metros.",
+        "pasos": [
+          {
+            "texto": "Aplicamos la fórmula (ax+b)²=a²x²+2abx+b².",
+            "operacion": "(4x+3)² = 4²x² + 2(4)(3)x + 3²"
+          },
+          {
+            "texto": "Calculamos cada parte.",
+            "operacion": "4²=16, 2(4)(3)=24, 3²=9"
+          }
+        ],
+        "respuestaFinal": "(4x+3)² = 16x² + 24x + 9."
+      }
     }
   ],
   "practicaExtra": [

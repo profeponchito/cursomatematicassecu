@@ -36,13 +36,21 @@
             "15 m"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "r=√(141.51÷((96/360)×3.14))=√(141.51÷0.8373)≈√169=13 m."
+          "retroalimentacion": "r=√(141.51÷((96/360)×3.14))=√(141.51÷0.8373)≈√169=13 m.",
+          "pistas": [
+            "Primero despeja el radio con raíz cuadrada, igual que hicimos para el otro sector del club deportivo de Culiacán (√100=10 m).",
+            "r=√(141.51÷((96/360)×3.14))=√169=13m."
+          ]
         },
         {
           "tipo": "llenar_frase",
           "frase": "Un jardín en forma de sector tiene radio 14 m y ángulo central de 85°. Sembrar pasto cuesta $60 por m² y poner cerco alrededor de todo el contorno (arco + 2 radios) cuesta $95 por metro. El costo TOTAL (pasto + cerco) es de $___.",
           "respuestaCorrecta": "13350.8",
-          "retroalimentacion": "área=(85/360)×3.14×14²=145.31 m² → 145.31×60=$8,718.60. arco=20.76 m, perímetro=20.76+28=48.76 m → 48.76×95=$4,632.20. Total=8,718.60+4,632.20=$13,350.80."
+          "retroalimentacion": "área=(85/360)×3.14×14²=145.31 m² → 145.31×60=$8,718.60. arco=20.76 m, perímetro=20.76+28=48.76 m → 48.76×95=$4,632.20. Total=8,718.60+4,632.20=$13,350.80.",
+          "pistas": [
+            "Calcula por separado el costo del pasto (área×precio) y el costo del cerco (perímetro×precio), y después suma ambos — igual que hicimos para el otro sector del club de Culiacán ($4,317.50+$2,677.50=$6,995.00).",
+            "costo pasto=145.31×60=$8,718.60; costo cerco=48.76×95=$4,632.20; total=$13,350.80."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -107,7 +115,11 @@
             "17 cm"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "r=√(340.06÷((108/360)×3.14))=√(340.06÷0.942)≈√361=19 cm."
+          "retroalimentacion": "r=√(340.06÷((108/360)×3.14))=√(340.06÷0.942)≈√361=19 cm.",
+          "pistas": [
+            "Usa la misma fórmula de raíz cuadrada que usamos para encontrar el radio del sector del club de Culiacán.",
+            "r=√(340.06÷((108/360)×3.14))=√361=19cm."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -127,7 +139,29 @@
           "respuestaCorrecta": 0,
           "retroalimentacion": "arco exterior=(225/360)×2×3.14×10=39.25 cm; arco interior=(225/360)×2×3.14×6=23.55 cm; cada lado recto mide R−r=10−6=4 cm (hay dos). Total=39.25+23.55+2×4=39.25+23.55+8=70.8 cm."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El mismo club deportivo de Culiacán también quiere instalar pasto en otro sector, del que solo saben que su área es de 78.5 m² y su ángulo central es de 90°. Sembrar pasto cuesta $55 por m² y poner cerco alrededor de todo el contorno cuesta $75 por metro.",
+        "pasos": [
+          {
+            "texto": "Despejamos el radio con raíz cuadrada.",
+            "operacion": "r=√(78.5÷((90÷360)×3.14))=√100=10 m"
+          },
+          {
+            "texto": "Calculamos el arco y el perímetro completo.",
+            "operacion": "arco=(90÷360)×2×3.14×10=15.7 m; perímetro=15.7+20=35.7 m"
+          },
+          {
+            "texto": "Calculamos el costo del pasto y del cerco por separado.",
+            "operacion": "pasto=78.5×55=$4,317.50; cerco=35.7×75=$2,677.50"
+          },
+          {
+            "texto": "Sumamos para obtener el costo total.",
+            "operacion": "4,317.50+2,677.50=$6,995.00"
+          }
+        ],
+        "respuestaFinal": "El sector tiene un radio de 10 m, necesita 35.7 m de cinta, y el costo total es $6,995.00."
+      }
     }
   ],
   "practicaExtra": [

@@ -36,7 +36,11 @@
             "100°"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "ángulo=(12.56×360)÷(2×3.14×9)=4521.6÷56.52=80°."
+          "retroalimentacion": "ángulo=(12.56×360)÷(2×3.14×9)=4521.6÷56.52=80°.",
+          "pistas": [
+            "Usa la fórmula ángulo=(arco×360)÷(2×π×r), igual que hicimos para encontrar el ángulo perdido del otro vitral (120°).",
+            "ángulo=(12.56×360)÷(2×3.14×9)=80°."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -60,7 +64,11 @@
           "tipo": "llenar_frase",
           "frase": "Un sector con ángulo central de 40° tiene un área de 139.56 cm². Su radio mide ___ cm.",
           "respuestaCorrecta": "20",
-          "retroalimentacion": "r=√(139.56÷((40/360)×3.14))=√(139.56÷0.3489)=√400=20 cm."
+          "retroalimentacion": "r=√(139.56÷((40/360)×3.14))=√(139.56÷0.3489)=√400=20 cm.",
+          "pistas": [
+            "Cuando lo que falta es el radio (no el ángulo), despeja usando raíz cuadrada en vez de multiplicar directamente.",
+            "r=√(139.56÷((40/360)×3.14))=√400=20cm."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -90,7 +98,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Un sector con ángulo central de 36° tiene un área de 282.6 cm². Su radio mide 25 cm.",
           "respuestaCorrecta": false,
-          "retroalimentacion": "Falso: r=√(282.6÷((36/360)×3.14))=√(282.6÷0.314)=√900=30 cm, no 25 cm."
+          "retroalimentacion": "Falso: r=√(282.6÷((36/360)×3.14))=√(282.6÷0.314)=√900=30 cm, no 25 cm.",
+          "pistas": [
+            "Sustituye los datos con cuidado en la fórmula del radio y verifica el resultado antes de decidir si el enunciado es verdadero o falso.",
+            "r=√(282.6÷((36/360)×3.14))=√900=30cm."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -127,7 +139,21 @@
           ],
           "retroalimentacion": "13.43 cm y r=7: ángulo=110°. 11.34 cm y r=5: ángulo=130°. 13.08 cm y r=3: ángulo=250°. 13.26 cm y r=8: ángulo=95°."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "En el mismo taller de vitrales de Puebla, otro vitral circular tiene un arco de 25.12 cm y un radio de 12 cm, pero también se perdió el dato del ángulo central.",
+        "pasos": [
+          {
+            "texto": "Aplicamos la fórmula para encontrar el ángulo a partir del arco.",
+            "operacion": "ángulo = (arco×360)÷(2×π×r)"
+          },
+          {
+            "texto": "Sustituimos los datos y calculamos.",
+            "operacion": "(25.12×360)÷(2×3.14×12) = 9,043.2÷75.36 = 120°"
+          }
+        ],
+        "respuestaFinal": "El ángulo central es 120°."
+      }
     }
   ],
   "practicaExtra": [

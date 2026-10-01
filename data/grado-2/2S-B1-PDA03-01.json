@@ -29,7 +29,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Si 6 boletos de autobús cuestan $90, entonces 10 boletos cuestan $150.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: k = 90÷6 = 15 por boleto; 10×15 = $150."
+          "retroalimentacion": "Correcto: k = 90÷6 = 15 por boleto; 10×15 = $150.",
+          "pistas": [
+            "Calcula primero la constante k = precio ÷ cantidad, igual que hiciste con los boletos de rifa en el ejemplo resuelto.",
+            "k = 90÷6 = 15. Multiplica k por 10 para comprobar."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -65,7 +69,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Si 7 kg de naranjas cuestan $161, entonces 12 kg cuestan $270.",
           "respuestaCorrecta": false,
-          "retroalimentacion": "k = 161÷7 = 23. 12×23 = $276, no $270."
+          "retroalimentacion": "k = 161÷7 = 23. 12×23 = $276, no $270.",
+          "pistas": [
+            "Calcula k = 161÷7, igual que en el ejemplo resuelto.",
+            "Multiplica k por 12: ¿el resultado es realmente $270?"
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -89,10 +97,30 @@
             "$260"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "k = 175÷5 = 35 por cuaderno. 8×35 = $280."
+          "retroalimentacion": "k = 175÷5 = 35 por cuaderno. 8×35 = $280.",
+          "pistas": [
+            "Calcula la constante k = 175÷5, igual que hiciste con los boletos de rifa.",
+            "Multiplica k por 8 para obtener el precio de 8 cuadernos."
+          ]
         }
       ],
-      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio"
+      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio",
+      "ejemploResuelto": {
+        "enunciado": "En la misma tiendita, los boletos para la rifa cuestan $8 cada uno, pero el mantenimiento del refrigerador cuesta $120 fijos al mes, sin importar cuántos refrescos se vendan. ¿Cuánto pagarías por 6 boletos de rifa?",
+        "pasos": [
+          {
+            "texto": "Los boletos de rifa sí son proporcionalidad directa: el precio total crece en la misma proporción que la cantidad de boletos."
+          },
+          {
+            "texto": "Calculamos el costo de 6 boletos multiplicando por el precio unitario.",
+            "operacion": "6 × $8 = $48"
+          },
+          {
+            "texto": "En cambio, el mantenimiento del refrigerador ($120) no cambia aunque cambie el número de refrescos vendidos, así que no es proporcional."
+          }
+        ],
+        "respuestaFinal": "6 boletos de rifa cuestan $48 (proporcionalidad directa), pero el mantenimiento del refrigerador sigue costando $120 sin importar las ventas (no es proporcional)."
+      }
     }
   ],
   "practicaExtra": [

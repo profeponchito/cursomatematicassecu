@@ -30,7 +30,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "756 es divisible entre 9 porque la suma de sus dígitos (7+5+6=18) es múltiplo de 9.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: 18 es múltiplo de 9, y en efecto 756÷9=84 exacto."
+          "retroalimentacion": "Correcto: 18 es múltiplo de 9, y en efecto 756÷9=84 exacto.",
+          "pistas": [
+            "Suma los dígitos de 756: 7+5+6, igual que hiciste con 4,536 en el ejemplo resuelto.",
+            "Si la suma de dígitos es múltiplo de 9, el número es divisible entre 9."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -54,7 +58,11 @@
           "tipo": "llenar_frase",
           "frase": "El número 4,950 es divisible entre 11 porque la diferencia entre la suma de dígitos en posición impar y en posición par (desde la derecha) es ___.",
           "respuestaCorrecta": "0",
-          "retroalimentacion": "Desde la derecha, los dígitos son 0,5,9,4: posiciones impares (0 y 9) suman 9; posiciones pares (5 y 4) suman 9. La diferencia es 9−9=0, múltiplo de 11 (4,950÷11=450)."
+          "retroalimentacion": "Desde la derecha, los dígitos son 0,5,9,4: posiciones impares (0 y 9) suman 9; posiciones pares (5 y 4) suman 9. La diferencia es 9−9=0, múltiplo de 11 (4,950÷11=450).",
+          "pistas": [
+            "Numera los dígitos desde la derecha y separa los de posición impar y posición par, igual que hiciste con 4,536 en el ejemplo resuelto.",
+            "Resta la suma de posición impar menos la de posición par: si el resultado es 0 o múltiplo de 11, el número es divisible entre 11."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -116,10 +124,32 @@
             "No, porque la suma de dígitos no es múltiplo de 8"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Los últimos tres dígitos son 304, y 304÷8=38 exacto, así que 2,304 sí es divisible entre 8."
+          "retroalimentacion": "Los últimos tres dígitos son 304, y 304÷8=38 exacto, así que 2,304 sí es divisible entre 8.",
+          "pistas": [
+            "Revisa solo los últimos tres dígitos del número, igual que hiciste con 536 en el ejemplo resuelto.",
+            "304 ÷ 8: ¿da un resultado exacto?"
+          ]
         }
       ],
-      "nivelEtiqueta": "Nivel 7 de 10 · Reto"
+      "nivelEtiqueta": "Nivel 7 de 10 · Reto",
+      "ejemploResuelto": {
+        "enunciado": "Iker también quiere saber si 4,536 es divisible entre 4, entre 8 y entre 11, sin hacer la división completa.",
+        "pasos": [
+          {
+            "texto": "Para entre 4, revisamos si los últimos dos dígitos forman un múltiplo de 4.",
+            "operacion": "36 ÷ 4 = 9 exacto → sí es divisible entre 4"
+          },
+          {
+            "texto": "Para entre 8, revisamos si los últimos tres dígitos forman un múltiplo de 8.",
+            "operacion": "536 ÷ 8 = 67 exacto → sí es divisible entre 8"
+          },
+          {
+            "texto": "Para entre 11, restamos la suma de dígitos en posición impar menos la de posición par (contando desde la derecha).",
+            "operacion": "(6+5) − (3+4) = 11 − 7 = 4, no es múltiplo de 11 → no es divisible entre 11"
+          }
+        ],
+        "respuestaFinal": "4,536 es divisible entre 4 y entre 8, pero no entre 11."
+      }
     }
   ],
   "practicaExtra": [

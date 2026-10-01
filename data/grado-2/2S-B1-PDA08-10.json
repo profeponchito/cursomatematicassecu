@@ -36,7 +36,11 @@
             "7,750 m³"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "Altura = 1×30÷0.4 = 75 m. Área de la base = 10×10 = 100 m². Volumen = 100×75 = 7,500 m³."
+          "retroalimentacion": "Altura = 1×30÷0.4 = 75 m. Área de la base = 10×10 = 100 m². Volumen = 100×75 = 7,500 m³.",
+          "pistas": [
+            "Primero usa el método de la sombra para la altura (regla de tres simple), luego calcula el área de la base y multiplícala por la altura — igual que hicimos con el asta bandera del equipo de Mexicali.",
+            "Altura=1×30÷0.4=75m. Volumen=100×75=7,500m³."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -72,7 +76,11 @@
           "tipo": "llenar_frase",
           "frase": "Un poste de bandera proyecta una sombra de 3.6 m mientras una estaca de 1.2 m de altura proyecta una sombra de 1.8 m, a la misma hora. La base del poste es cuadrada, con 0.5 m de lado. ¿Cuál es el volumen del poste (como prisma), en m³? ___",
           "respuestaCorrecta": "0.6",
-          "retroalimentacion": "Altura del poste = 1.2×3.6÷1.8 = 2.4 m. Área de la base = 0.5×0.5 = 0.25 m². Volumen = 0.25×2.4 = 0.6 m³."
+          "retroalimentacion": "Altura del poste = 1.2×3.6÷1.8 = 2.4 m. Área de la base = 0.5×0.5 = 0.25 m². Volumen = 0.25×2.4 = 0.6 m³.",
+          "pistas": [
+            "Sigue los mismos 3 pasos que con el asta bandera: sombra→altura, base→área, área×altura→volumen.",
+            "Altura=1.2×3.6÷1.8=2.4m. Área base=0.25m². Volumen=0.6m³."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -90,7 +98,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Una empresa embotelladora usa envases con forma de prisma rectangular de base 5 cm×4 cm y altura 12 cm. Si el costo de material es de $0.02 por cm³ de capacidad, cada envase cuesta $4.80 en material.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Volumen = 5×4×12 = 240 cm³. Costo = 240×0.02 = $4.80. Correcto."
+          "retroalimentacion": "Volumen = 5×4×12 = 240 cm³. Costo = 240×0.02 = $4.80. Correcto.",
+          "pistas": [
+            "Primero calcula el volumen (como con el asta: área de la base×altura) y luego multiplica por el costo unitario.",
+            "Volumen=5×4×12=240cm³. Costo=240×0.02=$4.80."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -124,7 +136,25 @@
           "respuestaCorrecta": 1,
           "retroalimentacion": "Altura del domo = 1.68×25÷2 = 21 m. Área de la base = 16×16 = 256 m². Volumen = (256×21)÷3 = 1,792 m³."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Antes de construir su maqueta, el mismo equipo de Mexicali mide la altura del asta bandera de su escuela con el método de la sombra para calibrar sus cálculos: una estaca de 1 m proyecta una sombra de 0.5 m, mientras el asta proyecta una sombra de 7 m a la misma hora. El asta se modela como un prisma con base cuadrada de 0.3 m de lado.",
+        "pasos": [
+          {
+            "texto": "Calculamos la altura del asta con el método de la sombra.",
+            "operacion": "1 × 7 ÷ 0.5 = 14 m"
+          },
+          {
+            "texto": "Calculamos el área de la base cuadrada.",
+            "operacion": "0.3 × 0.3 = 0.09 m²"
+          },
+          {
+            "texto": "Calculamos el volumen del asta (como prisma).",
+            "operacion": "0.09 × 14 = 1.26 m³"
+          }
+        ],
+        "respuestaFinal": "El asta mide 14 m de altura y tiene un volumen de 1.26 m³."
+      }
     }
   ],
   "practicaExtra": [

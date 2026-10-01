@@ -36,7 +36,11 @@
             "310 cm³"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "Área de la base = 6×5 = 30 cm². Volumen = 30×10 = 300 cm³."
+          "retroalimentacion": "Área de la base = 6×5 = 30 cm². Volumen = 30×10 = 300 cm³.",
+          "pistas": [
+            "El volumen del prisma es Área de la base×altura, igual que con el molde de las velas (49×9=441 cm³).",
+            "Área de la base=6×5=30cm². Volumen=30×10=300cm³."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -60,13 +64,21 @@
             "95 cm³"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "Área de la base = 5×6 = 30 cm². Volumen = (30×9)÷3 = 90 cm³."
+          "retroalimentacion": "Área de la base = 5×6 = 30 cm². Volumen = (30×9)÷3 = 90 cm³.",
+          "pistas": [
+            "El volumen de la pirámide es (Área de la base×altura)÷3, igual que calculamos (49×9)÷3=147cm³ para el molde de las velas.",
+            "Área de la base=5×6=30cm². Volumen=(30×9)÷3=90cm³."
+          ]
         },
         {
           "tipo": "verdadero_falso",
           "enunciado": "El volumen de una pirámide siempre es el doble del volumen de un prisma con la misma base y la misma altura.",
           "respuestaCorrecta": false,
-          "retroalimentacion": "Falso: el volumen de la pirámide es la tercera parte (no el doble) del volumen de un prisma con la misma base y altura."
+          "retroalimentacion": "Falso: el volumen de la pirámide es la tercera parte (no el doble) del volumen de un prisma con la misma base y altura.",
+          "pistas": [
+            "Recuerda la comparación del molde de las velas: el prisma (441 cm³) usa exactamente 3 veces más que la pirámide (147 cm³) con la misma base y altura — es un tercio, no el doble.",
+            "El volumen de la pirámide es (Área×altura)÷3, la tercera parte del prisma, no el doble."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -124,7 +136,29 @@
           "respuestaCorrecta": 2,
           "retroalimentacion": "Área de la base = 25 cm². Volumen = (25×9)÷3 = 75 cm³."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "La misma fábrica de velas de San Miguel de Allende prueba un nuevo molde piramidal con base cuadrada de 7 cm de lado y altura de 9 cm, y lo compara con un molde prismático de la misma base y la misma altura.",
+        "pasos": [
+          {
+            "texto": "Calculamos el área de la base cuadrada.",
+            "operacion": "7 × 7 = 49 cm²"
+          },
+          {
+            "texto": "Calculamos el volumen del prisma.",
+            "operacion": "49 × 9 = 441 cm³"
+          },
+          {
+            "texto": "Calculamos el volumen de la pirámide.",
+            "operacion": "(49 × 9) ÷ 3 = 147 cm³"
+          },
+          {
+            "texto": "Comparamos ambos volúmenes.",
+            "operacion": "441 ÷ 147 = 3"
+          }
+        ],
+        "respuestaFinal": "El molde prismático usa 441 cm³ de cera, el piramidal usa 147 cm³: el prisma usa exactamente 3 veces más."
+      }
     }
   ],
   "practicaExtra": [

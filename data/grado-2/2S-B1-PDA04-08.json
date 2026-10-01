@@ -35,7 +35,11 @@
             "9"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Diferencias: 5,9,13,17. Segundas diferencias: 4,4,4."
+          "retroalimentacion": "Diferencias: 5,9,13,17. Segundas diferencias: 4,4,4.",
+          "pistas": [
+            "Calcula las primeras diferencias y luego las diferencias de esas diferencias, igual que hiciste con la sucesión de Ximena en el ejemplo resuelto.",
+            "Primeras diferencias: 5,9,13,17. ¿Cuál es la diferencia entre esas?"
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -47,7 +51,11 @@
           "tipo": "llenar_frase",
           "frase": "La sucesión 6, 13, 24, 39, 58 tiene segundas diferencias constantes. El coeficiente a de su expresión cuadrática es ___.",
           "respuestaCorrecta": "2",
-          "retroalimentacion": "Diferencias: 7,11,15,19. Segundas diferencias: 4,4,4 → 2a=4, a=2."
+          "retroalimentacion": "Diferencias: 7,11,15,19. Segundas diferencias: 4,4,4 → 2a=4, a=2.",
+          "pistas": [
+            "Calcula las segundas diferencias, igual que en el ejemplo resuelto.",
+            "Si la segunda diferencia es 4, entonces 2a=4: ¿cuánto vale a?"
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -95,7 +103,11 @@
           "tipo": "llenar_frase",
           "frase": "La sucesión 4, 15, 32, 55, 84 tiene segundas diferencias constantes iguales a 6. El coeficiente a de su expresión cuadrática es ___.",
           "respuestaCorrecta": "3",
-          "retroalimentacion": "2a=6 → a=3."
+          "retroalimentacion": "2a=6 → a=3.",
+          "pistas": [
+            "Si la segunda diferencia constante es 6, usa 2a=6 para encontrar a, igual que en el ejemplo resuelto.",
+            "6÷2: ¿cuánto da?"
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -118,7 +130,25 @@
           "retroalimentacion": "2a=2→a=1; 2a=6→a=3; 2a=8→a=4."
         }
       ],
-      "nivelEtiqueta": "Nivel 8 de 10 · Reto avanzado"
+      "nivelEtiqueta": "Nivel 8 de 10 · Reto avanzado",
+      "ejemploResuelto": {
+        "enunciado": "Ximena anota otra sucesión: 1, 7, 17, 31, 49. Le piden usar el método de diferencias para encontrar su expresión algebraica.",
+        "pasos": [
+          {
+            "texto": "Calculamos las primeras diferencias entre términos consecutivos.",
+            "operacion": "7-1=6, 17-7=10, 31-17=14, 49-31=18"
+          },
+          {
+            "texto": "Calculamos las segundas diferencias: como son constantes, la sucesión es cuadrática.",
+            "operacion": "10-6=4, 14-10=4, 18-14=4 → 2a=4, a=2"
+          },
+          {
+            "texto": "Sustituimos los primeros términos para hallar b y c, y comprobamos.",
+            "operacion": "con b=0, c=-1: expresión 2n²-1, y 2(1)²-1=1 ✓"
+          }
+        ],
+        "respuestaFinal": "La sucesión 1, 7, 17, 31, 49 es cuadrática, con expresión 2n²-1."
+      }
     }
   ],
   "practicaExtra": [

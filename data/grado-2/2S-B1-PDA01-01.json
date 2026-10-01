@@ -24,12 +24,25 @@
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
+      "ejemploResuelto": {
+        "enunciado": "Iván anotó en su bitácora dos medidas de temperatura de un mismo día: 0.8°C y 0.81°C. Quiere saber si existe alguna otra temperatura posible entre esas dos.",
+        "pasos": [
+          { "texto": "Los números con signo (decimales, fracciones, enteros) cumplen la propiedad de densidad: entre dos números distintos siempre hay otro número más." },
+          { "texto": "Para encontrar uno, basta con agregar una cifra decimal más 'a la mitad' de las dos.", "operacion": "0.8 y 0.81 → 0.805" },
+          { "texto": "Comprobamos: 0.805 queda justo entre los dos, así que sí existe — y en realidad existen infinitos, no solo uno.", "operacion": "0.8 < 0.805 < 0.81" }
+        ],
+        "respuestaFinal": "Sí existe: por ejemplo 0.805 (y hay infinitos números más entre 0.8 y 0.81)."
+      },
       "reactivos": [
         {
           "tipo": "verdadero_falso",
           "enunciado": "Entre 0.2 y 0.3 no existe ningún otro número.",
           "respuestaCorrecta": false,
-          "retroalimentacion": "Falso: por la propiedad de densidad, entre 0.2 y 0.3 existen infinitos números, por ejemplo 0.25."
+          "retroalimentacion": "Falso: por la propiedad de densidad, entre 0.2 y 0.3 existen infinitos números, por ejemplo 0.25.",
+          "pistas": [
+            "Piensa en la propiedad de densidad que viste en el ejemplo resuelto: ¿siempre hay un número entre dos números con signo distintos?",
+            "Prueba con 0.25: ¿está entre 0.2 y 0.3?"
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -65,7 +78,11 @@
             "Solamente diez"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "Por la propiedad de densidad, entre dos números con signo distintos siempre hay infinitos números, por ejemplo -0.395."
+          "retroalimentacion": "Por la propiedad de densidad, entre dos números con signo distintos siempre hay infinitos números, por ejemplo -0.395.",
+          "pistas": [
+            "Recuerda la propiedad de densidad del ejemplo resuelto de arriba.",
+            "Entre dos números con signo distintos, nunca hay solo uno ni diez — siempre hay más de los que puedas contar."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -77,7 +94,11 @@
           "tipo": "llenar_frase",
           "frase": "La propiedad que asegura que entre dos números con signo distintos siempre hay otro número se llama propiedad de ___.",
           "respuestaCorrecta": "densidad",
-          "retroalimentacion": "Se llama propiedad de densidad."
+          "retroalimentacion": "Se llama propiedad de densidad.",
+          "pistas": [
+            "Es el mismo nombre que usamos en el ejemplo resuelto de arriba.",
+            "Empieza con 'd' y tiene que ver con qué tan 'juntos' están los números."
+          ]
         },
         {
           "tipo": "relacionar_columnas",

@@ -36,7 +36,11 @@
             "50 km/h"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "v = 240 ÷ 4 = 60 km/h."
+          "retroalimentacion": "v = 240 ÷ 4 = 60 km/h.",
+          "pistas": [
+            "Divide la distancia entre el tiempo para obtener la velocidad, igual que hicimos con el segundo recorrido de Beto (21÷0.5833=36km/h).",
+            "v=240÷4=60km/h."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -66,7 +70,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Un avión recorre 900 km en 2 horas; su velocidad es 400 km/h.",
           "respuestaCorrecta": false,
-          "retroalimentacion": "Falso: v = 900 ÷ 2 = 450 km/h, no 400."
+          "retroalimentacion": "Falso: v = 900 ÷ 2 = 450 km/h, no 400.",
+          "pistas": [
+            "Divide con cuidado la distancia entre el tiempo, como hicimos para verificar la velocidad del segundo recorrido de Beto.",
+            "v=900÷2=450km/h."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -84,7 +92,11 @@
             "9 km/h"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "v = 42 ÷ 6 = 7 km/h."
+          "retroalimentacion": "v = 42 ÷ 6 = 7 km/h.",
+          "pistas": [
+            "Usa la fórmula v=d÷t, igual que con el segundo recorrido de Beto (21÷0.5833=36km/h).",
+            "v=42÷6=7km/h."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -119,7 +131,21 @@
           "retroalimentacion": "150÷3=50 km/h. 400÷5=80 km/h. 90÷3=30 km/h."
         }
       ],
-      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio"
+      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio",
+      "ejemploResuelto": {
+        "enunciado": "Al día siguiente, Beto el ciclista de reparto en Guadalajara recorrió 21 km en 35 minutos llevando otro pedido.",
+        "pasos": [
+          {
+            "texto": "Convertimos los minutos a horas.",
+            "operacion": "35 min = 35÷60 = 0.5833 h"
+          },
+          {
+            "texto": "Aplicamos v=d÷t.",
+            "operacion": "21 ÷ 0.5833 = 36 km/h"
+          }
+        ],
+        "respuestaFinal": "La velocidad promedio de Beto fue 36 km/h."
+      }
     }
   ],
   "practicaExtra": [

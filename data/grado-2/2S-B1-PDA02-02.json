@@ -28,7 +28,11 @@
           "tipo": "llenar_frase",
           "frase": "El MCD de 18 y 30 es ___.",
           "respuestaCorrecta": "6",
-          "retroalimentacion": "18=2×3², 30=2×3×5. MCD = 2×3 = 6."
+          "retroalimentacion": "18=2×3², 30=2×3×5. MCD = 2×3 = 6.",
+          "pistas": [
+            "Descompón 18 y 30 en factores primos, igual que hiciste con 27 y 36 en el ejemplo resuelto.",
+            "18=2×3² y 30=2×3×5: toma los factores comunes con el menor exponente."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -64,7 +68,11 @@
             "15"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "mcm(9,15) = 45."
+          "retroalimentacion": "mcm(9,15) = 45.",
+          "pistas": [
+            "Descompón 9 y 15 en factores primos como en el ejemplo resuelto: 9=3², 15=3×5.",
+            "El mcm toma cada factor con su mayor exponente: ¿qué exponente de 3 es mayor, el de 9 o el de 15?"
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -76,7 +84,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "El mcm de 8 y 20 es 80.",
           "respuestaCorrecta": false,
-          "retroalimentacion": "Falso: mcm(8,20) = 40, no 80."
+          "retroalimentacion": "Falso: mcm(8,20) = 40, no 80.",
+          "pistas": [
+            "Descompón 8 y 20: 8=2³, 20=2²×5, igual que hiciste en el ejemplo resuelto.",
+            "El mcm toma el mayor exponente de cada factor: 2³ (no 2²) y 5¹. Multiplica esos."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -105,7 +117,25 @@
           "retroalimentacion": "MCD de 24 y 36 = 12; mcm de 4 y 10 = 20; MCD de 15 y 22 = 1."
         }
       ],
-      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio"
+      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio",
+      "ejemploResuelto": {
+        "enunciado": "Un tercer camión, de básquetbol, pasa cada 27 minutos y otro, de tenis, cada 36 minutos, y ambos salieron juntos a las 7:00 a.m. ¿Cuándo volverán a salir juntos?",
+        "pasos": [
+          {
+            "texto": "Descomponemos 27 y 36 en factores primos.",
+            "operacion": "27 = 3³, 36 = 2²×3²"
+          },
+          {
+            "texto": "El mcm toma cada factor con su mayor exponente.",
+            "operacion": "mcm = 2²×3³ = 108"
+          },
+          {
+            "texto": "Convertimos 108 minutos a horas y minutos.",
+            "operacion": "108 min = 1 h 48 min"
+          }
+        ],
+        "respuestaFinal": "Volverán a salir juntos 108 minutos (1 h 48 min) después, es decir a las 8:48 a.m."
+      }
     }
   ],
   "practicaExtra": [

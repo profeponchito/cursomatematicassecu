@@ -34,7 +34,11 @@
             "6"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "11+6=17 alumnos."
+          "retroalimentacion": "11+6=17 alumnos.",
+          "pistas": [
+            "Suma las frecuencias de los intervalos que cumplen la condición, igual que hicimos con las brazadas de los nadadores de Tijuana (9+4=13).",
+            "11+6=17 alumnos."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -64,7 +68,11 @@
             "20"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "5+8=13 personas."
+          "retroalimentacion": "5+8=13 personas.",
+          "pistas": [
+            "Suma las frecuencias de los intervalos que te piden, el mismo procedimiento que usamos para las brazadas de los nadadores.",
+            "5+8=13 personas."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -114,10 +122,28 @@
           "tipo": "llenar_frase",
           "frase": "Con el histograma de pesos ([50-55):5, [55-60):8, [60-65):7, [65-70):5), ¿cuántas personas en total se registraron? ___",
           "respuestaCorrecta": "25",
-          "retroalimentacion": "5+8+7+5 = 25 personas."
+          "retroalimentacion": "5+8+7+5 = 25 personas.",
+          "pistas": [
+            "Suma TODAS las frecuencias para obtener el total de datos, igual que hicimos para contar a los 27 nadadores de Tijuana.",
+            "5+8+7+5=25 personas."
+          ]
         }
       ],
-      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio"
+      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio",
+      "ejemploResuelto": {
+        "enunciado": "La misma entrenadora de Tijuana también agrupó las brazadas por minuto de sus nadadores en un histograma con los intervalos [50-55): 3, [55-60): 11, [60-65): 9, [65-70): 4.",
+        "pasos": [
+          {
+            "texto": "Sumamos todas las frecuencias para el total.",
+            "operacion": "3+11+9+4=27 nadadores"
+          },
+          {
+            "texto": "Sumamos los intervalos de 60 brazadas o más.",
+            "operacion": "9+4=13"
+          }
+        ],
+        "respuestaFinal": "Hay 27 nadadores en total; 13 nadaron a 60 brazadas por minuto o más."
+      }
     }
   ],
   "practicaExtra": [

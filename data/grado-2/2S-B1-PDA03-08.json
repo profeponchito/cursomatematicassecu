@@ -36,7 +36,11 @@
             "3 h"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "x = 37.5 ÷ 15 = 2.5 horas."
+          "retroalimentacion": "x = 37.5 ÷ 15 = 2.5 horas.",
+          "pistas": [
+            "Como conoces la velocidad y la distancia, despeja el tiempo dividiendo, igual que convertiste minutos a frascos en el ejemplo resuelto (pero al revés).",
+            "37.5 ÷ 15: ¿cuánto da?"
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -66,7 +70,11 @@
           "tipo": "llenar_frase",
           "frase": "Un nadador mantiene una velocidad constante de 1.2 m/s. ¿Cuántos metros recorre en 45 segundos? Respuesta: ___ m",
           "respuestaCorrecta": "54",
-          "retroalimentacion": "y = 1.2 × 45 = 54 m."
+          "retroalimentacion": "y = 1.2 × 45 = 54 m.",
+          "pistas": [
+            "Multiplica la velocidad por el tiempo, igual que hiciste con los frascos por minuto en el ejemplo resuelto.",
+            "1.2 × 45: ¿cuánto da?"
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -110,7 +118,11 @@
           "tipo": "llenar_frase",
           "frase": "Un atleta corre a una velocidad constante de 18 km/h. ¿Cuántos minutos tarda en recorrer 4.5 km? (Primero calcula las horas y luego conviértelas a minutos). Respuesta: ___ minutos",
           "respuestaCorrecta": "15",
-          "retroalimentacion": "Horas = 4.5 ÷ 18 = 0.25 h. En minutos: 0.25 × 60 = 15 minutos."
+          "retroalimentacion": "Horas = 4.5 ÷ 18 = 0.25 h. En minutos: 0.25 × 60 = 15 minutos.",
+          "pistas": [
+            "Primero calcula las horas dividiendo distancia entre velocidad, y después conviértelas a minutos, igual que convertiste horas a minutos en el ejemplo resuelto.",
+            "4.5÷18 da las horas; multiplica por 60 para pasar a minutos."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -124,7 +136,25 @@
           "respuestaCorrecta": 2,
           "retroalimentacion": "k = 320 ÷ 40 = 8 litros por minuto. 75 × 8 = 600 litros."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El supervisor también quiere saber cuántos frascos se producen en un turno de 3 horas y media (210 minutos), al mismo ritmo de 60 frascos cada 15 minutos.",
+        "pasos": [
+          {
+            "texto": "Calculamos k: frascos por minuto.",
+            "operacion": "k = 60 ÷ 15 = 4 frascos por minuto"
+          },
+          {
+            "texto": "Convertimos 3 horas y media a minutos.",
+            "operacion": "3.5 h = 210 min"
+          },
+          {
+            "texto": "Multiplicamos k por los minutos del turno.",
+            "operacion": "210 × 4 = 840"
+          }
+        ],
+        "respuestaFinal": "En un turno de 3 horas y media se producen 840 frascos de mermelada."
+      }
     }
   ],
   "practicaExtra": [

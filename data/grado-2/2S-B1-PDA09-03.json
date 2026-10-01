@@ -35,7 +35,11 @@
             "18.84 cm²"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "sector=(90/360)×3.14×6² = 0.25×113.04 = 28.26 cm²."
+          "retroalimentacion": "sector=(90/360)×3.14×6² = 0.25×113.04 = 28.26 cm².",
+          "pistas": [
+            "Multiplica la fracción del ángulo por el área del círculo completo (π×r²), igual que con la rebanada de pizza mediana de Cuernavaca.",
+            "sector=(90/360)×3.14×6²=28.26cm²."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -59,7 +63,11 @@
             "4.19 cm²"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "sector=(30/360)×3.14×8² = 0.0833×200.96 = 16.75 cm²."
+          "retroalimentacion": "sector=(30/360)×3.14×8² = 0.0833×200.96 = 16.75 cm².",
+          "pistas": [
+            "Primero calcula el área completa del círculo con π×r², luego multiplícala por la fracción del ángulo, como hicimos con la pizza mediana.",
+            "sector=(30/360)×3.14×8²=16.75cm²."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -95,7 +103,11 @@
           "tipo": "llenar_frase",
           "frase": "Un sector con ángulo central de 60° y radio 10 cm tiene un área de ___ cm².",
           "respuestaCorrecta": "52.33",
-          "retroalimentacion": "sector=(60/360)×3.14×10² = 0.1667×314 = 52.33 cm²."
+          "retroalimentacion": "sector=(60/360)×3.14×10² = 0.1667×314 = 52.33 cm².",
+          "pistas": [
+            "Sigue los mismos 3 pasos que con la pizza mediana: fracción, área completa, y su producto.",
+            "sector=(60/360)×3.14×10²=52.33cm²."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -121,7 +133,25 @@
           "retroalimentacion": "45°,r=10: sector=39.25 cm². 30°,r=12: sector=37.68 cm². 72°,r=10: sector=62.8 cm². 180°,r=6: sector=56.52 cm²."
         }
       ],
-      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado"
+      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado",
+      "ejemploResuelto": {
+        "enunciado": "La misma pizzería de Cuernavaca también vende una pizza mediana de 18 cm de radio, y reparten una rebanada con ángulo central de 80°.",
+        "pasos": [
+          {
+            "texto": "Calculamos la fracción del círculo.",
+            "operacion": "80 ÷ 360 = 0.2222"
+          },
+          {
+            "texto": "Calculamos el área del círculo completo.",
+            "operacion": "3.14 × 18² = 1,017.36 cm²"
+          },
+          {
+            "texto": "Multiplicamos la fracción por el área completa.",
+            "operacion": "0.2222 × 1,017.36 = 226.08 cm²"
+          }
+        ],
+        "respuestaFinal": "El área de la rebanada es 226.08 cm²."
+      }
     }
   ],
   "practicaExtra": [

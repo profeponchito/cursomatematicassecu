@@ -35,7 +35,11 @@
             "1200"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "40=2³×5, 30=2×3×5. mcm(40,30)=2³×3×5=120 segundos."
+          "retroalimentacion": "40=2³×5, 30=2×3×5. mcm(40,30)=2³×3×5=120 segundos.",
+          "pistas": [
+            "Descompón 40 y 30 en factores primos, igual que hiciste con 15, 20 y 25 en el ejemplo resuelto: 40=2³×5, 30=2×3×5.",
+            "El mcm toma cada factor con su mayor exponente."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -65,7 +69,11 @@
             "12:20"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "20=2²×5, 28=2²×7. mcm(20,28)=2²×5×7=140 minutos. 9:00 + 140 min (2 h 20 min) = 11:20."
+          "retroalimentacion": "20=2²×5, 28=2²×7. mcm(20,28)=2²×5×7=140 minutos. 9:00 + 140 min (2 h 20 min) = 11:20.",
+          "pistas": [
+            "Calcula el mcm de 20 y 28: 20=2²×5, 28=2²×7.",
+            "Suma los minutos del mcm a la hora de inicio (9:00), igual que hiciste con las tres máquinas en el ejemplo resuelto."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -103,7 +111,11 @@
             "2835"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "45=3²×5, 63=3²×7. mcm(45,63)=3²×5×7=315 minutos."
+          "retroalimentacion": "45=3²×5, 63=3²×7. mcm(45,63)=3²×5×7=315 minutos.",
+          "pistas": [
+            "Descompón 45 y 63: 45=3²×5, 63=3²×7.",
+            "El mcm toma cada factor con su mayor exponente: multiplica 3²×5×7."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -118,7 +130,25 @@
           "retroalimentacion": "22=2×11, 33=3×11. mcm(22,33)=2×3×11=66 minutos."
         }
       ],
-      "nivelEtiqueta": "Nivel 6 de 10 · Aplicación avanzada"
+      "nivelEtiqueta": "Nivel 6 de 10 · Aplicación avanzada",
+      "ejemploResuelto": {
+        "enunciado": "Una tercera máquina, de pegado, hace su pausa cada 25 minutos y también inició a las 8:00. ¿Cada cuánto coincidirán las tres máquinas (15, 20 y 25 minutos)?",
+        "pasos": [
+          {
+            "texto": "Descomponemos 15, 20 y 25 en factores primos.",
+            "operacion": "15=3×5, 20=2²×5, 25=5²"
+          },
+          {
+            "texto": "El mcm toma cada factor con su mayor exponente.",
+            "operacion": "mcm = 2²×3×5² = 300"
+          },
+          {
+            "texto": "Convertimos 300 minutos a horas.",
+            "operacion": "300 min = 5 h"
+          }
+        ],
+        "respuestaFinal": "Las tres máquinas volverán a pausar juntas cada 300 minutos (5 horas), es decir a la 1:00 p.m."
+      }
     }
   ],
   "practicaExtra": [

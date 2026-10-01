@@ -35,7 +35,11 @@
             "12 minutos"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "150+2x=90+5x → 60=3x → x=20."
+          "retroalimentacion": "150+2x=90+5x → 60=3x → x=20.",
+          "pistas": [
+            "Iguala ambas expresiones y reúne los términos con x de un lado, igual que hiciste con las compañías de streaming en el ejemplo resuelto.",
+            "150+2x=90+5x → 60=3x: ¿cuánto vale x?"
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -53,7 +57,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Resolver la ecuación 9x − 5 = 3x + 37 da x = 6.",
           "respuestaCorrecta": false,
-          "retroalimentacion": "9x−3x=37+5 → 6x=42 → x=7, no 6."
+          "retroalimentacion": "9x−3x=37+5 → 6x=42 → x=7, no 6.",
+          "pistas": [
+            "Reúne los términos con x de un lado y los números del otro, igual que en el ejemplo resuelto.",
+            "6x=42: ¿cuánto vale x realmente?"
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -103,7 +111,11 @@
             "12 posesiones"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "34+4x=10+7x → 24=3x → x=8."
+          "retroalimentacion": "34+4x=10+7x → 24=3x → x=8.",
+          "pistas": [
+            "Iguala ambas expresiones, igual que hiciste con las compañías de streaming en el ejemplo resuelto.",
+            "34+4x=10+7x → 24=3x: ¿cuánto vale x?"
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -118,7 +130,21 @@
           "retroalimentacion": "45+10=9x−4x → 55=5x → x=11."
         }
       ],
-      "nivelEtiqueta": "Nivel 6 de 10 · Aplicación avanzada"
+      "nivelEtiqueta": "Nivel 6 de 10 · Aplicación avanzada",
+      "ejemploResuelto": {
+        "enunciado": "Otras dos compañías de streaming: la compañía X cobra $100 fijos más $15 por mes anticipado, la compañía Y cobra $160 fijos más $5 por mes anticipado. ¿Después de cuántos meses cuestan lo mismo?",
+        "pasos": [
+          {
+            "texto": "Igualamos ambas expresiones y reunimos los términos con x de un lado.",
+            "operacion": "100+15x = 160+5x → 15x-5x = 160-100"
+          },
+          {
+            "texto": "Resolvemos la ecuación resultante.",
+            "operacion": "10x = 60 → x = 6"
+          }
+        ],
+        "respuestaFinal": "Después de 6 meses, ambas compañías de streaming cuestan lo mismo."
+      }
     }
   ],
   "practicaExtra": [

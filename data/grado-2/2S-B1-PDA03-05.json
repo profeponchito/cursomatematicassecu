@@ -36,7 +36,11 @@
             "$115.00"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "k = 198.00 ÷ 4 = $49.50 por kg. 2.5 × 49.50 = $123.75."
+          "retroalimentacion": "k = 198.00 ÷ 4 = $49.50 por kg. 2.5 × 49.50 = $123.75.",
+          "pistas": [
+            "Calcula k = 198÷4, igual que hiciste con los nopales en el ejemplo resuelto.",
+            "Multiplica k por 2.5 para obtener el precio de 2.5 kg."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -66,7 +70,11 @@
           "tipo": "llenar_frase",
           "frase": "Si 5.5 kg de naranjas cuestan $82.50, entonces 4 kg cuestan $___.",
           "respuestaCorrecta": "60",
-          "retroalimentacion": "k = 82.50 ÷ 5.5 = $15 por kg. 4 × 15 = $60."
+          "retroalimentacion": "k = 82.50 ÷ 5.5 = $15 por kg. 4 × 15 = $60.",
+          "pistas": [
+            "Calcula k = 82.50÷5.5.",
+            "Multiplica k por 4, igual que hiciste con los nopales en el ejemplo resuelto."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -84,7 +92,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Si 2 kg de manzanas orgánicas cuestan $63.80, entonces 3.5 kg cuestan $111.65.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "k = 63.80 ÷ 2 = $31.90 por kg. 3.5 × 31.90 = $111.65."
+          "retroalimentacion": "k = 63.80 ÷ 2 = $31.90 por kg. 3.5 × 31.90 = $111.65.",
+          "pistas": [
+            "Calcula k = 63.80÷2, igual que en el ejemplo resuelto.",
+            "Multiplica k por 3.5: ¿da $111.65?"
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -124,7 +136,21 @@
           "respuestaCorrecta": 1,
           "retroalimentacion": "k = 146.30 ÷ 5.5 = $26.60 por metro."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "Doña Herminia también quiere saber cuánto pagaría por 1.8 kg de nopales, usando la misma constante de proporcionalidad.",
+        "pasos": [
+          {
+            "texto": "Calculamos k dividiendo el total entre los kilos.",
+            "operacion": "k = 31.25 ÷ 2.5 = 12.5"
+          },
+          {
+            "texto": "Multiplicamos k por la nueva cantidad.",
+            "operacion": "1.8 × 12.5 = 22.5"
+          }
+        ],
+        "respuestaFinal": "Doña Herminia pagaría $22.50 por 1.8 kg de nopales."
+      }
     }
   ],
   "practicaExtra": [

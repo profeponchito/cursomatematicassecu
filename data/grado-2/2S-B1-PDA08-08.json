@@ -36,7 +36,11 @@
             "163 cm²"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "Bases: 2×(5×3)=30 cm². Perímetro=2×(5+3)=16 cm. Lateral=16×8=128 cm². Total=30+128=158 cm²."
+          "retroalimentacion": "Bases: 2×(5×3)=30 cm². Perímetro=2×(5+3)=16 cm. Lateral=16×8=128 cm². Total=30+128=158 cm².",
+          "pistas": [
+            "Sigue los mismos 3 pasos que usamos para la otra caja del taller de León: área de las 2 bases, luego perímetro×altura para el área lateral, y suma ambas.",
+            "Bases: 2×(5×3)=30cm². Perímetro=2×(5+3)=16cm. Lateral=16×8=128cm². Total=30+128=158cm²."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -60,7 +64,11 @@
             "1,350 cm²"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "Bases: 2×(20×15)=600 cm². Perímetro=2×(20+15)=70 cm. Lateral=70×10=700 cm². Total=600+700=1,300 cm²."
+          "retroalimentacion": "Bases: 2×(20×15)=600 cm². Perímetro=2×(20+15)=70 cm. Lateral=70×10=700 cm². Total=600+700=1,300 cm².",
+          "pistas": [
+            "Es el mismo procedimiento que usamos para la otra caja del taller de León (18×10 de base y 12 de altura): bases + perímetro×altura.",
+            "Bases: 2×(20×15)=600cm². Perímetro=2×(20+15)=70cm. Lateral=70×10=700cm². Total=600+700=1,300cm²."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -84,7 +92,11 @@
             "370 cm²"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "Base=100 cm². Lateral=4×((10×13)÷2)=260 cm². Total=100+260=360 cm²."
+          "retroalimentacion": "Base=100 cm². Lateral=4×((10×13)÷2)=260 cm². Total=100+260=360 cm².",
+          "pistas": [
+            "Para la pirámide, suma el área de la base más el área de las 4 caras triangulares — un procedimiento distinto al de las cajas (prismas) del taller de León.",
+            "Base=100cm². Lateral=4×((10×13)÷2)=260cm². Total=100+260=360cm²."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -124,7 +136,29 @@
           "respuestaCorrecta": 2,
           "retroalimentacion": "Bases: 2×(30×20)=1,200 cm². Perímetro=2×(30+20)=100 cm. Lateral=100×12=1,200 cm². Total=1,200+1,200=2,400 cm²."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "El mismo taller de cartonería de León también forra con papel decorado otra caja de regalo, de 18 cm de largo, 10 cm de ancho y 12 cm de alto.",
+        "pasos": [
+          {
+            "texto": "Calculamos el área de las 2 bases.",
+            "operacion": "2 × (18 × 10) = 360 cm²"
+          },
+          {
+            "texto": "Calculamos el perímetro de la base.",
+            "operacion": "2 × (18 + 10) = 56 cm"
+          },
+          {
+            "texto": "Calculamos el área lateral.",
+            "operacion": "56 × 12 = 672 cm²"
+          },
+          {
+            "texto": "Sumamos para obtener el área total.",
+            "operacion": "360 + 672 = 1,032 cm²"
+          }
+        ],
+        "respuestaFinal": "El taller necesita 1,032 cm² de papel decorado."
+      }
     }
   ],
   "practicaExtra": [

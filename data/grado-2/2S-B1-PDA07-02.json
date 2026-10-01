@@ -35,7 +35,11 @@
             "Altura"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Esa es la definición exacta de la mediana."
+          "retroalimentacion": "Esa es la definición exacta de la mediana.",
+          "pistas": [
+            "Recuerda las definiciones: la mediana va de un vértice al punto medio del lado opuesto, como viste en el ejemplo resuelto sobre la bisectriz.",
+            "¿Cuál de las cuatro rectas notables encaja exactamente con esa descripción?"
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -59,7 +63,11 @@
             "Bisectriz"
           ],
           "respuestaCorrecta": 3,
-          "retroalimentacion": "La bisectriz divide el ángulo del vértice del que parte en dos partes iguales."
+          "retroalimentacion": "La bisectriz divide el ángulo del vértice del que parte en dos partes iguales.",
+          "pistas": [
+            "Esta es exactamente la definición de la bisectriz que usaste en el ejemplo resuelto.",
+            "¿Qué recta notable divide un ángulo en dos partes iguales?"
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -83,7 +91,11 @@
           "tipo": "llenar_frase",
           "frase": "Una bisectriz divide un ángulo de 70° en dos partes iguales; cada parte mide ___°.",
           "respuestaCorrecta": "35",
-          "retroalimentacion": "70 ÷ 2 = 35° cada parte."
+          "retroalimentacion": "70 ÷ 2 = 35° cada parte.",
+          "pistas": [
+            "Divide el ángulo entre 2, igual que hiciste con los 130° en el ejemplo resuelto.",
+            "70°÷2: ¿cuánto da?"
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -127,7 +139,21 @@
           "retroalimentacion": "Vértice a punto medio opuesto: Mediana. Perpendicular por el punto medio de un lado: Mediatriz. Divide el ángulo: Bisectriz. Perpendicular al lado opuesto desde el vértice: Altura."
         }
       ],
-      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio"
+      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio",
+      "ejemploResuelto": {
+        "enunciado": "El mismo profesor traza la bisectriz de un ángulo de 130° en otro triángulo.",
+        "pasos": [
+          {
+            "texto": "La bisectriz divide el ángulo en dos partes iguales.",
+            "operacion": "130° ÷ 2"
+          },
+          {
+            "texto": "Calculamos la mitad.",
+            "operacion": "130° ÷ 2 = 65°"
+          }
+        ],
+        "respuestaFinal": "Cada una de las dos partes mide 65°."
+      }
     }
   ],
   "practicaExtra": [

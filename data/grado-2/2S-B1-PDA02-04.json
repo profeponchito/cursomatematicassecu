@@ -33,7 +33,11 @@
             "233"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "mcm(33,21) = 231."
+          "retroalimentacion": "mcm(33,21) = 231.",
+          "pistas": [
+            "Descompón 33 y 21 en factores primos: 33=3×11, 21=3×7.",
+            "El mcm toma cada factor con su mayor exponente: multiplica 3×7×11."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -125,7 +129,11 @@
             "225"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "45=3²×5, 75=3×5². MCD = 3×5 = 15."
+          "retroalimentacion": "45=3²×5, 75=3×5². MCD = 3×5 = 15.",
+          "pistas": [
+            "Descompón 45 y 75: 45=3²×5, 75=3×5².",
+            "El MCD toma el menor exponente de cada factor común: 3¹ y 5¹."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -137,7 +145,11 @@
           "tipo": "llenar_frase",
           "frase": "El mcm de 10 y 12 es ___.",
           "respuestaCorrecta": "60",
-          "retroalimentacion": "10=2×5, 12=2²×3. mcm = 2²×3×5 = 60."
+          "retroalimentacion": "10=2×5, 12=2²×3. mcm = 2²×3×5 = 60.",
+          "pistas": [
+            "Descompón 10 y 12: 10=2×5, 12=2²×3.",
+            "El mcm toma cada factor con su mayor exponente, igual que hiciste con 12, 18 y 20 en el ejemplo resuelto."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -180,7 +192,28 @@
           "retroalimentacion": "El primero es distributiva, el segundo conmutativa, el tercero asociativa."
         }
       ],
-      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis"
+      "nivelEtiqueta": "Nivel 4 de 10 · Síntesis",
+      "ejemploResuelto": {
+        "enunciado": "El club también organiza una reunión extra cada 20 días. ¿Cada cuántos días coincidirán las tres reuniones (12, 18 y 20 días)? Y si además tiene 24 cables y 40 conectores para armar kits iguales, ¿cuántos kits puede armar y cuántos cables llevará cada uno?",
+        "pasos": [
+          {
+            "texto": "Para las reuniones, calculamos el mcm de 12, 18 y 20 descomponiendo en factores primos.",
+            "operacion": "12=2²×3, 18=2×3², 20=2²×5 → mcm=2²×3²×5=180"
+          },
+          {
+            "texto": "Las tres reuniones coincidirán cada 180 días."
+          },
+          {
+            "texto": "Para los kits, calculamos el MCD de 24 cables y 40 conectores.",
+            "operacion": "24=2³×3, 40=2³×5 → MCD=2³=8"
+          },
+          {
+            "texto": "Dividimos cada material entre el MCD para saber cuánto lleva cada kit.",
+            "operacion": "24÷8=3 cables, 40÷8=5 conectores"
+          }
+        ],
+        "respuestaFinal": "Las tres reuniones coincidirán cada 180 días, y el club puede armar 8 kits iguales, cada uno con 3 cables y 5 conectores."
+      }
     }
   ],
   "practicaExtra": [

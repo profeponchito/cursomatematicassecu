@@ -35,7 +35,11 @@
             "x²-14"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "(x+7)(x-7)=x²-7²=x²-49; los términos con x se cancelan."
+          "retroalimentacion": "(x+7)(x-7)=x²-7²=x²-49; los términos con x se cancelan.",
+          "pistas": [
+            "Aplica la fórmula (x+a)(x-a)=x²-a², igual que hiciste con el terreno de 10 metros en el ejemplo resuelto.",
+            "7²: ¿cuánto da?"
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -53,7 +57,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "(x+5)(x-5) = x² - 10.",
           "respuestaCorrecta": false,
-          "retroalimentacion": "Falso: (x+5)(x-5)=x²-5²=x²-25, no x²-10."
+          "retroalimentacion": "Falso: (x+5)(x-5)=x²-5²=x²-25, no x²-10.",
+          "pistas": [
+            "El resultado es x² menos el CUADRADO del número, no el número mismo.",
+            "5²: ¿cuánto da realmente?"
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -91,7 +99,11 @@
           "tipo": "llenar_frase",
           "frase": "Un campo cuadrado de lado x se alarga 2 m de un lado y se acorta 2 m del opuesto: (x+2)(x-2) = x² - ___.",
           "respuestaCorrecta": "4",
-          "retroalimentacion": "2²=4, entonces (x+2)(x-2)=x²-4."
+          "retroalimentacion": "2²=4, entonces (x+2)(x-2)=x²-4.",
+          "pistas": [
+            "Aplica la fórmula (x+a)(x-a)=x²-a², igual que en el ejemplo resuelto.",
+            "2²: ¿cuánto da?"
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -124,7 +136,21 @@
           "retroalimentacion": "(x+12)(x-12)=x²-12²=x²-144."
         }
       ],
-      "nivelEtiqueta": "Nivel 7 de 10 · Reto"
+      "nivelEtiqueta": "Nivel 7 de 10 · Reto",
+      "ejemploResuelto": {
+        "enunciado": "Otro terreno cerca de Durango se alarga 10 metros de un lado y se acorta 10 metros del opuesto.",
+        "pasos": [
+          {
+            "texto": "Aplicamos la fórmula de diferencia de cuadrados: los términos con x se cancelan.",
+            "operacion": "(x+10)(x-10) = x² - 10²"
+          },
+          {
+            "texto": "Calculamos el cuadrado de 10.",
+            "operacion": "10² = 100"
+          }
+        ],
+        "respuestaFinal": "(x+10)(x-10) = x² - 100."
+      }
     }
   ],
   "practicaExtra": [

@@ -34,7 +34,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "(x+9)² = x² + 18x + 82.",
           "respuestaCorrecta": false,
-          "retroalimentacion": "(x+9)² = x²+18x+81."
+          "retroalimentacion": "(x+9)² = x²+18x+81.",
+          "pistas": [
+            "Aplica la fórmula (x+a)²=x²+2ax+a², igual que hiciste con la mesa de 8 metros en el ejemplo resuelto.",
+            "9²: ¿cuánto da realmente? ¿Es 82?"
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -52,7 +56,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "(x^4)^5 es igual a x^22.",
           "respuestaCorrecta": false,
-          "retroalimentacion": "Se multiplican los exponentes: 4×5=20."
+          "retroalimentacion": "Se multiplican los exponentes: 4×5=20.",
+          "pistas": [
+            "Cuando una potencia se eleva a otra potencia, se multiplican los exponentes, no se suman.",
+            "4×5: ¿cuánto da?"
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -102,10 +110,28 @@
           "tipo": "verdadero_falso",
           "enunciado": "x^6 × x^3 es igual a x^9.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Se suman los exponentes: 6+3=9."
+          "retroalimentacion": "Se suman los exponentes: 6+3=9.",
+          "pistas": [
+            "Al multiplicar potencias de la misma base, se suman los exponentes.",
+            "6+3: ¿cuánto da?"
+          ]
         }
       ],
-      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio"
+      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio",
+      "ejemploResuelto": {
+        "enunciado": "El mismo artesano construye otra mesa, ampliando el lado x en 8 metros: (x+8)².",
+        "pasos": [
+          {
+            "texto": "Aplicamos la fórmula del cuadrado de un binomio.",
+            "operacion": "(x+8)² = x² + 2(8)x + 8²"
+          },
+          {
+            "texto": "Calculamos cada parte: el doble producto y el cuadrado del segundo término.",
+            "operacion": "2(8)=16, 8²=64"
+          }
+        ],
+        "respuestaFinal": "(x+8)² = x² + 16x + 64."
+      }
     }
   ],
   "practicaExtra": [

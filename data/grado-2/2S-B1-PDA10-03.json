@@ -34,7 +34,11 @@
             "280 km"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "6 cm × 50 km = 300 km."
+          "retroalimentacion": "6 cm × 50 km = 300 km.",
+          "pistas": [
+            "Multiplica los cm del mapa por los km que representa cada cm, igual que hicimos para la distancia entre Tepic y Guadalajara (4.5×45=202.5km).",
+            "6×50=300km."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -58,7 +62,11 @@
             "9 cm"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "420 km ÷ 60 km = 7 cm."
+          "retroalimentacion": "420 km ÷ 60 km = 7 cm.",
+          "pistas": [
+            "Para ir de km reales a cm en el mapa, divide entre el valor de la escala, al revés de cuando multiplicamos 4.5×45 para Tepic-Guadalajara.",
+            "420÷60=7cm."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -94,7 +102,11 @@
           "tipo": "llenar_frase",
           "frase": "Con escala 1 cm = 20 km, una distancia de 9 cm en el mapa equivale a ___ km reales.",
           "respuestaCorrecta": "180",
-          "retroalimentacion": "9 cm × 20 km = 180 km."
+          "retroalimentacion": "9 cm × 20 km = 180 km.",
+          "pistas": [
+            "Multiplica los cm por el valor de cada cm en la escala, igual que con la distancia entre Tepic y Guadalajara.",
+            "9×20=180km."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -117,7 +129,21 @@
           "retroalimentacion": "3×50=150 km. 4×40=160 km. 7×30=210 km."
         }
       ],
-      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado"
+      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado",
+      "ejemploResuelto": {
+        "enunciado": "Daniela también mide, en el mismo mapa de carreteras (1 cm = 45 km), la distancia entre Tepic y Guadalajara: 4.5 cm.",
+        "pasos": [
+          {
+            "texto": "Aplicamos la escala del mapa.",
+            "operacion": "distancia real = cm en el mapa × km por cm"
+          },
+          {
+            "texto": "Sustituimos y calculamos.",
+            "operacion": "4.5 × 45 = 202.5 km"
+          }
+        ],
+        "respuestaFinal": "Hay 202.5 km entre Tepic y Guadalajara."
+      }
     }
   ],
   "practicaExtra": [

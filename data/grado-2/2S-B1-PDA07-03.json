@@ -35,7 +35,11 @@
             "No se puede determinar"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "Tres lados iguales en ambos triángulos: se cumple el criterio LLL."
+          "retroalimentacion": "Tres lados iguales en ambos triángulos: se cumple el criterio LLL.",
+          "pistas": [
+            "Este es el mismo caso que analizaste con los triángulos de 25, 35 y 45 cm en el ejemplo resuelto.",
+            "Cuando se conocen los tres lados de ambos triángulos, ¿qué criterio se cumple?"
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -65,7 +69,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Si dos triángulos tienen los tres ángulos iguales (pero no se sabe nada de sus lados), se puede asegurar que son congruentes.",
           "respuestaCorrecta": false,
-          "retroalimentacion": "Falso: tener los tres ángulos iguales solo garantiza que los triángulos son semejantes (misma forma), no que sean congruentes (mismo tamaño)."
+          "retroalimentacion": "Falso: tener los tres ángulos iguales solo garantiza que los triángulos son semejantes (misma forma), no que sean congruentes (mismo tamaño).",
+          "pistas": [
+            "Tener solo los ángulos iguales garantiza que los triángulos tienen la misma forma, pero no necesariamente el mismo tamaño.",
+            "¿Qué haría falta saber, además de los ángulos, para garantizar congruencia?"
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -127,10 +135,27 @@
             "No se puede determinar"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "Los tres lados coinciden en ambas piezas: criterio LLL."
+          "retroalimentacion": "Los tres lados coinciden en ambas piezas: criterio LLL.",
+          "pistas": [
+            "Este es el mismo tipo de caso que resolviste en el ejemplo resuelto con los triángulos de 25, 35 y 45 cm.",
+            "Si se conocen los tres lados de ambas piezas y coinciden, ¿qué criterio aplica?"
+          ]
         }
       ],
-      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado"
+      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado",
+      "ejemploResuelto": {
+        "enunciado": "Otro taller corta dos triángulos con lados de 25 cm, 35 cm y 45 cm cada uno.",
+        "pasos": [
+          {
+            "texto": "Comparamos los datos disponibles con los tres criterios de congruencia."
+          },
+          {
+            "texto": "Como se conocen los tres lados de ambos triángulos y coinciden, se cumple el criterio LLL.",
+            "operacion": "25 cm, 35 cm, 45 cm en ambos triángulos"
+          }
+        ],
+        "respuestaFinal": "Los dos triángulos son congruentes por el criterio LLL, porque sus tres lados son iguales."
+      }
     }
   ],
   "practicaExtra": [

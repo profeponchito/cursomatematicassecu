@@ -39,7 +39,11 @@
           "tipo": "llenar_frase",
           "frase": "Con los mismos datos de temperatura, la diferencia entre la temperatura del viernes y la del sábado es ___°C.",
           "respuestaCorrecta": "4",
-          "retroalimentacion": "Viernes 25°C - Sábado 21°C = 4°C."
+          "retroalimentacion": "Viernes 25°C - Sábado 21°C = 4°C.",
+          "pistas": [
+            "Resta el valor más reciente menos el anterior para ver el cambio, igual que hicimos con las ventas de sábado y domingo del puesto de aguas frescas (480−390=90).",
+            "Viernes 25°C - Sábado 21°C = 4°C."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -69,7 +73,11 @@
           "tipo": "llenar_frase",
           "frase": "Las ventas (en cientos de pesos) de la semana fueron: lunes 8, martes 12, miércoles 10, jueves 15, viernes 18. El aumento de ventas entre jueves y viernes fue de ___ (cientos de pesos).",
           "respuestaCorrecta": "3",
-          "retroalimentacion": "18-15 = 3 (cientos de pesos)."
+          "retroalimentacion": "18-15 = 3 (cientos de pesos).",
+          "pistas": [
+            "Resta los dos valores consecutivos, el mismo procedimiento que usamos para las ventas de fin de semana del puesto de aguas.",
+            "18-15 = 3 (cientos de pesos)."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -87,7 +95,11 @@
           "tipo": "llenar_frase",
           "frase": "Según la gráfica de ventas, el total vendido en la semana (sumando los 5 días) fue ___ (cientos de pesos).",
           "respuestaCorrecta": "63",
-          "retroalimentacion": "8+12+10+15+18 = 63 (cientos de pesos)."
+          "retroalimentacion": "8+12+10+15+18 = 63 (cientos de pesos).",
+          "pistas": [
+            "Suma todos los valores de la semana para obtener el total, un paso distinto al de comparar solo dos días como hicimos con sábado y domingo.",
+            "8+12+10+15+18 = 63 (cientos de pesos)."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -116,7 +128,21 @@
           "retroalimentacion": "Falso: el doble de las ventas del lunes (8) sería 16, y el viernes se vendieron 18, no 16."
         }
       ],
-      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado"
+      "nivelEtiqueta": "Nivel 3 de 10 · Avanzado",
+      "ejemploResuelto": {
+        "enunciado": "El mismo puesto de aguas frescas de Mérida también anotó sus ventas del fin de semana: sábado 480 pesos y domingo 390 pesos.",
+        "pasos": [
+          {
+            "texto": "Identificamos los dos valores a comparar.",
+            "operacion": "sábado=480, domingo=390"
+          },
+          {
+            "texto": "Calculamos la diferencia.",
+            "operacion": "480−390=90 pesos"
+          }
+        ],
+        "respuestaFinal": "Las ventas bajaron 90 pesos de sábado a domingo."
+      }
     }
   ],
   "practicaExtra": [

@@ -40,7 +40,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "-91.6 es menor que -365/4.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: -365/4 = -91.25, y -91.6 está más a la izquierda: -91.6 < -91.25."
+          "retroalimentacion": "Correcto: -365/4 = -91.25, y -91.6 está más a la izquierda: -91.6 < -91.25.",
+          "pistas": [
+            "Convierte -365/4 a decimal, igual que hiciste con -7/8 en el ejemplo resuelto: -365/4 = -91.25.",
+            "Compara -91.6 con -91.25: ¿cuál está más a la izquierda?"
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -78,7 +82,11 @@
             "-215.5"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "-215.15 está entre -215.4 y -214.9, ya que -215.4 < -215.15 < -214.9."
+          "retroalimentacion": "-215.15 está entre -215.4 y -214.9, ya que -215.4 < -215.15 < -214.9.",
+          "pistas": [
+            "Busca un valor entre -215.4 y -214.9, igual que hiciste entre -0.875 y -0.8 en el ejemplo resuelto.",
+            "-215.15 debe cumplir -215.4 < -215.15 < -214.9: compruébalo."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -102,7 +110,11 @@
             "-46.9"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "-237/5 = -47.4. Comparando los cinco balances, -48.1 es el menor (la pérdida más grande)."
+          "retroalimentacion": "-237/5 = -47.4. Comparando los cinco balances, -48.1 es el menor (la pérdida más grande).",
+          "pistas": [
+            "Convierte -237/5 a decimal: -237/5 = -47.4.",
+            "El balance con mayor pérdida es el número más negativo de la lista: compara los cinco valores."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -131,7 +143,25 @@
           "retroalimentacion": "Puesto 1: el menor es -72.3. Puesto 2: -523/4 = -130.75 es el menor. Puesto 3: -90 es el menor."
         }
       ],
-      "nivelEtiqueta": "Nivel 7 de 10 · Reto"
+      "nivelEtiqueta": "Nivel 7 de 10 · Reto",
+      "ejemploResuelto": {
+        "enunciado": "Doña Marisol también anota el balance de dos comerciantes nuevos: uno tuvo -7/8 (en miles de pesos) y otro -0.8. ¿Quién tuvo peor semana, y existe un balance posible entre los dos?",
+        "pasos": [
+          {
+            "texto": "Convertimos -7/8 a decimal para comparar en la misma forma.",
+            "operacion": "-7/8 = -0.875"
+          },
+          {
+            "texto": "Comparamos -0.875 con -0.8.",
+            "operacion": "-0.875 < -0.8"
+          },
+          {
+            "texto": "Por la propiedad de densidad, buscamos un balance posible entre ambos.",
+            "operacion": "-0.875 < -0.84 < -0.8"
+          }
+        ],
+        "respuestaFinal": "El comerciante con -7/8 (-0.875) tuvo la peor semana, y sí existe un balance intermedio posible, por ejemplo -0.84."
+      }
     }
   ],
   "practicaExtra": [

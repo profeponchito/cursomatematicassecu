@@ -29,7 +29,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "El término 7 de la sucesión n² es 49.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: 7² = 49."
+          "retroalimentacion": "Correcto: 7² = 49.",
+          "pistas": [
+            "Eleva 7 al cuadrado, igual que hiciste con el nivel 6 en el ejemplo resuelto.",
+            "7×7: ¿cuánto da?"
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -65,7 +69,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "El término 5 de la sucesión 2n²+3 es 55.",
           "respuestaCorrecta": false,
-          "retroalimentacion": "2n²+3 en n=5: 2×25+3 = 53, no 55."
+          "retroalimentacion": "2n²+3 en n=5: 2×25+3 = 53, no 55.",
+          "pistas": [
+            "Primero calcula 5², luego multiplica por 2 y suma 3, igual que evaluaste n² en el ejemplo resuelto pero con un coeficiente y una constante extra.",
+            "2×25+3: ¿cuánto da realmente?"
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -89,10 +97,28 @@
             "120"
           ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "10² = 100."
+          "retroalimentacion": "10² = 100.",
+          "pistas": [
+            "Eleva 10 al cuadrado, igual que hiciste con el nivel 6 en el ejemplo resuelto.",
+            "10×10: ¿cuánto da?"
+          ]
         }
       ],
-      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio"
+      "nivelEtiqueta": "Nivel 1 de 10 · Introductorio",
+      "ejemploResuelto": {
+        "enunciado": "La maestra Beatriz también arma una decoración de flores de papel: nivel 1 usa 1 flor, nivel 2 usa 4, nivel 3 usa 9. ¿Cuántas flores usará el nivel 6?",
+        "pasos": [
+          {
+            "texto": "Reconocemos que la sucesión sigue el patrón n² (cuadrado de la posición).",
+            "operacion": "1²=1, 2²=4, 3²=9"
+          },
+          {
+            "texto": "Calculamos el término 6 elevando 6 al cuadrado.",
+            "operacion": "6² = 36"
+          }
+        ],
+        "respuestaFinal": "El nivel 6 de la decoración de flores usará 36 flores."
+      }
     }
   ],
   "practicaExtra": [

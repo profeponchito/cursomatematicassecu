@@ -29,7 +29,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Si x=5, entonces 3×(x+7)=3×x+3×7 se cumple, porque ambos lados dan 36.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: 3×(5+7)=3×12=36, y 3×5+3×7=15+21=36."
+          "retroalimentacion": "Correcto: 3×(5+7)=3×12=36, y 3×5+3×7=15+21=36.",
+          "pistas": [
+            "Sustituye x=5 en ambos lados, igual que hiciste con x=4 en el ejemplo resuelto.",
+            "3×(5+7) y 3×5+3×7: calcula ambos y compara."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -47,7 +51,11 @@
             "8 × (4 + 5)"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "MCD(24,32)=8, y 24÷8=3, 32÷8=4, así que 24+32=8×(3+4)=56. Las otras opciones usan un factor que no es el MCD o dan una suma incorrecta."
+          "retroalimentacion": "MCD(24,32)=8, y 24÷8=3, 32÷8=4, así que 24+32=8×(3+4)=56. Las otras opciones usan un factor que no es el MCD o dan una suma incorrecta.",
+          "pistas": [
+            "Calcula el MCD de 24 y 32, igual que hiciste con 10 y 25 en el ejemplo resuelto.",
+            "Divide cada número entre el MCD para saber qué va dentro del paréntesis."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -109,7 +117,11 @@
             "p+15 no tiene propiedad conmutativa"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "La propiedad conmutativa dice que el orden no altera el resultado: p+15=15+p; con p=12, ambos dan 27."
+          "retroalimentacion": "La propiedad conmutativa dice que el orden no altera el resultado: p+15=15+p; con p=12, ambos dan 27.",
+          "pistas": [
+            "La propiedad conmutativa solo cambia el orden de la suma, no el resultado.",
+            "p+15 y 15+p: sustituye p=12 en ambos y compara, igual que en el ejemplo resuelto."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -118,7 +130,25 @@
           "retroalimentacion": "63=3²×7, 99=3²×11. MCD(63,99)=3²=9, y 63÷9=7, 99÷9=11, así que 63+99=9×(7+11)=162."
         }
       ],
-      "nivelEtiqueta": "Nivel 9 de 10 · Integración"
+      "nivelEtiqueta": "Nivel 9 de 10 · Integración",
+      "ejemploResuelto": {
+        "enunciado": "Un compañero le propone factorizar 10x + 25 usando el MCD de 10 y 25, y comprobar si x×(y+3) da el mismo resultado que xy+3x cuando x=4, y=2.",
+        "pasos": [
+          {
+            "texto": "Calculamos el MCD de 10 y 25 para factorizar.",
+            "operacion": "10=2×5, 25=5² → MCD=5"
+          },
+          {
+            "texto": "Dividimos cada término entre el MCD y lo escribimos como producto.",
+            "operacion": "10x+25 = 5×(2x+5)"
+          },
+          {
+            "texto": "Comprobamos la propiedad distributiva con x=4, y=2: x×(y+3) contra xy+3x.",
+            "operacion": "4×(2+3)=20, y 4×2+3×4=8+12=20"
+          }
+        ],
+        "respuestaFinal": "10x+25 se factoriza como 5×(2x+5), y la igualdad x×(y+3)=xy+3x se cumple: ambos lados dan 20 cuando x=4, y=2."
+      }
     }
   ],
   "practicaExtra": [

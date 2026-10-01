@@ -36,7 +36,11 @@
             "88.32 m²"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "área=(45/360)×3.14×(30²−25²)=(45/360)×3.14×275=107.94 m²."
+          "retroalimentacion": "área=(45/360)×3.14×(30²−25²)=(45/360)×3.14×275=107.94 m².",
+          "pistas": [
+            "Primero calcula R²−r², multiplícalo por π, y después por la fracción del ángulo — igual que hicimos con la otra sección de la alberca de Veracruz (50.24 m²).",
+            "área=(45/360)×3.14×(900−625)=107.94m²."
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -66,7 +70,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Una alberca en forma de anillo tiene un radio exterior de 6 m y una isla circular central de radio 2 m. El área de un sector de esa alberca con ángulo central de 270° es de 75.36 m².",
           "respuestaCorrecta": true,
-          "retroalimentacion": "área=(270/360)×3.14×(6²−2²)=(270/360)×3.14×32=75.36 m². Correcto."
+          "retroalimentacion": "área=(270/360)×3.14×(6²−2²)=(270/360)×3.14×32=75.36 m². Correcto.",
+          "pistas": [
+            "Sigue los mismos 3 pasos que usamos para la otra sección de la alberca de Veracruz: diferencia de cuadrados, ×π, ×fracción del ángulo.",
+            "área=(270/360)×3.14×(36−4)=75.36m²."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -102,7 +110,11 @@
           "tipo": "verdadero_falso",
           "enunciado": "Si el ángulo central de un sector de corona circular es de 360° (la corona completa), su área es igual a la diferencia entre el área del círculo grande y el área del círculo pequeño. Para R=10 cm y r=6 cm, esa área completa es de 200.96 cm².",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: con 360° la fracción es 1, así que área=π×(R²−r²)=3.14×(100−36)=3.14×64=200.96 cm², igual a restar las áreas de los dos círculos completos (314−113.04=200.96)."
+          "retroalimentacion": "Correcto: con 360° la fracción es 1, así que área=π×(R²−r²)=3.14×(100−36)=3.14×64=200.96 cm², igual a restar las áreas de los dos círculos completos (314−113.04=200.96).",
+          "pistas": [
+            "Cuando el ángulo es 360° (la corona completa), la fracción es 1, así que solo multiplicas π por R²−r² sin dividir entre 360, a diferencia del sector de 60° de la alberca de Veracruz.",
+            "área completa=3.14×(10²−6²)=3.14×64=200.96cm²."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -127,7 +139,25 @@
           ],
           "retroalimentacion": "R=11,r=7,50°: área=31.4 cm². R=16,r=12,63°: área=61.54 cm². R=9,r=5,140°: área=68.38 cm². R=18,r=15,200°: área=172.7 cm²."
         }
-      ]
+      ],
+      "ejemploResuelto": {
+        "enunciado": "La misma alberca de Veracruz, en otra sección, tiene un sector de corona circular con radio mayor R=11 m, radio menor r=5 m y ángulo central de 60°.",
+        "pasos": [
+          {
+            "texto": "Calculamos la diferencia de los cuadrados de los radios.",
+            "operacion": "11² − 5² = 121 − 25 = 96"
+          },
+          {
+            "texto": "Multiplicamos por π.",
+            "operacion": "3.14 × 96 = 301.44"
+          },
+          {
+            "texto": "Multiplicamos por la fracción del ángulo.",
+            "operacion": "(60÷360) × 301.44 = 50.24 m²"
+          }
+        ],
+        "respuestaFinal": "El área de ese sector de la alberca es 50.24 m²."
+      }
     }
   ],
   "practicaExtra": [

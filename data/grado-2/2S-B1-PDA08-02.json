@@ -35,7 +35,11 @@
             "12"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "AB/BC = A'B'/B'C' → 3/5 = 6/B'C' → B'C' = (5×6)÷3 = 10 cm."
+          "retroalimentacion": "AB/BC = A'B'/B'C' → 3/5 = 6/B'C' → B'C' = (5×6)÷3 = 10 cm.",
+          "pistas": [
+            "Plantea la proporción AB/BC = A'B'/B'C', igual que hicimos para el segundo tramo del río de don Efrén (7/11 = A'B'/33).",
+            "B'C' = (5×6)÷3 = 10 cm."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -59,7 +63,11 @@
             "14"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "B'C' = (9×8)÷6 = 12 cm."
+          "retroalimentacion": "B'C' = (9×8)÷6 = 12 cm.",
+          "pistas": [
+            "Usa la misma proporción de Thales que en el ejemplo del río: AB/BC = A'B'/B'C'.",
+            "B'C' = (9×8)÷6 = 12 cm."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -121,10 +129,32 @@
             "18"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "B'C' = (10×6)÷4 = 15 cm."
+          "retroalimentacion": "B'C' = (10×6)÷4 = 15 cm.",
+          "pistas": [
+            "Aplica la proporción de Thales igual que con los tramos del río de don Efrén: AB/BC = A'B'/B'C'.",
+            "B'C' = (10×6)÷4 = 15 cm."
+          ]
         }
       ],
-      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio"
+      "nivelEtiqueta": "Nivel 2 de 10 · Intermedio",
+      "ejemploResuelto": {
+        "enunciado": "Don Efrén también quiere medir el ancho de otro tramo del mismo río. Traza dos rectas paralelas cortadas por dos transversales: en la primera transversal mide AB=7 m y BC=11 m; en la segunda, el segmento correspondiente a BC, es decir B'C', mide 33 m. ¿Cuánto mide A'B'?",
+        "pasos": [
+          {
+            "texto": "Planteamos la proporción de Thales.",
+            "operacion": "AB/BC = A'B'/B'C'"
+          },
+          {
+            "texto": "Sustituimos los datos conocidos.",
+            "operacion": "7/11 = A'B'/33"
+          },
+          {
+            "texto": "Despejamos A'B'.",
+            "operacion": "A'B' = (7×33)÷11 = 21"
+          }
+        ],
+        "respuestaFinal": "A'B' mide 21 m."
+      }
     }
   ],
   "practicaExtra": [

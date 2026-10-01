@@ -35,7 +35,11 @@
             "Empresa B, con 270 pesos"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "C_A(5)=6×25+80=230. C_B(5)=10×25+20=270. La Empresa A cobra menos."
+          "retroalimentacion": "C_A(5)=6×25+80=230. C_B(5)=10×25+20=270. La Empresa A cobra menos.",
+          "pistas": [
+            "Evalúa ambas expresiones en n=5 por separado, igual que comparaste las opciones de cableado en el ejemplo resuelto.",
+            "6×25+80 y 10×25+20: calcula ambos y compara."
+          ]
         },
         {
           "tipo": "verdadero_falso",
@@ -47,7 +51,11 @@
           "tipo": "llenar_frase",
           "frase": "El área de un terreno es A(n)=1.5n²+4n (en hectáreas). Para n=6, el área es ___ hectáreas.",
           "respuestaCorrecta": "78",
-          "retroalimentacion": "1.5×36+4×6 = 54+24 = 78."
+          "retroalimentacion": "1.5×36+4×6 = 54+24 = 78.",
+          "pistas": [
+            "Sustituye n=6 en la expresión, igual que evaluaste las opciones de cableado en el ejemplo resuelto.",
+            "1.5×36=54, y luego suma 4×6."
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -83,7 +91,11 @@
             "57 m³"
           ],
           "respuestaCorrecta": 2,
-          "retroalimentacion": "2.5×16+3×4+1 = 40+12+1 = 53 m³."
+          "retroalimentacion": "2.5×16+3×4+1 = 40+12+1 = 53 m³.",
+          "pistas": [
+            "Calcula cada término por separado con n=4, igual que hiciste en el ejemplo resuelto.",
+            "2.5×16=40; 3×4=12; suma también 1."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -118,7 +130,24 @@
           "retroalimentacion": "3×25-4×5+2 = 75-20+2 = 57."
         }
       ],
-      "nivelEtiqueta": "Nivel 10 de 10 · Dominio"
+      "nivelEtiqueta": "Nivel 10 de 10 · Dominio",
+      "ejemploResuelto": {
+        "enunciado": "Las mismas ingenieras comparan otras dos opciones de cableado: la opción X cuesta 2n²+10 (miles de pesos) y la opción Y cuesta 1.5n²+5n (miles de pesos), con n=número de postes. ¿Cuál conviene más para 6 postes?",
+        "pasos": [
+          {
+            "texto": "Evaluamos la opción X en n=6.",
+            "operacion": "2×6²+10 = 72+10 = 82"
+          },
+          {
+            "texto": "Evaluamos la opción Y en n=6.",
+            "operacion": "1.5×6²+5×6 = 54+30 = 84"
+          },
+          {
+            "texto": "Comparamos ambos resultados: 82 es menor que 84."
+          }
+        ],
+        "respuestaFinal": "Para 6 postes, conviene más la opción X, con un costo de 82 mil pesos frente a los 84 mil de la opción Y."
+      }
     }
   ],
   "practicaExtra": [

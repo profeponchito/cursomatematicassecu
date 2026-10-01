@@ -35,7 +35,11 @@
             "30°"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Ángulo central = 360°÷10 = 36°."
+          "retroalimentacion": "Ángulo central = 360°÷10 = 36°.",
+          "pistas": [
+            "Calcula 360° entre el número de lados, igual que hiciste con el dodecágono en el ejemplo resuelto.",
+            "360°÷10: ¿cuánto da?"
+          ]
         },
         {
           "tipo": "llenar_frase",
@@ -65,7 +69,11 @@
           "tipo": "llenar_frase",
           "frase": "Un kiosco con forma de octágono regular se divide en 8 triángulos iguales desde el centro. El ángulo central de cada triángulo mide ___°.",
           "respuestaCorrecta": "45",
-          "retroalimentacion": "360°÷8 = 45°."
+          "retroalimentacion": "360°÷8 = 45°.",
+          "pistas": [
+            "Este es el mismo cálculo que hiciste con el dodecágono en el ejemplo resuelto.",
+            "360°÷8: ¿cuánto da?"
+          ]
         },
         {
           "tipo": "opcion_multiple",
@@ -101,7 +109,11 @@
           "tipo": "llenar_frase",
           "frase": "Un vitral con forma de dodecágono regular (12 lados) se divide en 12 triángulos congruentes desde el centro. Cada ángulo de la base de esos triángulos isósceles mide ___°.",
           "respuestaCorrecta": "75",
-          "retroalimentacion": "Ángulo central = 360°÷12=30°; base = (180°−30°)÷2 = 75°."
+          "retroalimentacion": "Ángulo central = 360°÷12=30°; base = (180°−30°)÷2 = 75°.",
+          "pistas": [
+            "Este es exactamente el mismo cálculo del ejemplo resuelto.",
+            "Ángulo central=360°÷12=30°; base=(180°−30°)÷2."
+          ]
         },
         {
           "tipo": "relacionar_columnas",
@@ -124,7 +136,21 @@
           "retroalimentacion": "Hexágono: central 60°, base (180−60)÷2=60°. Decágono: central 36°, base (180−36)÷2=72°. Dodecágono: central 30°, base (180−30)÷2=75°."
         }
       ],
-      "nivelEtiqueta": "Nivel 9 de 10 · Integración"
+      "nivelEtiqueta": "Nivel 9 de 10 · Integración",
+      "ejemploResuelto": {
+        "enunciado": "El mismo kiosco tiene un segundo diseño con forma de dodecágono regular dividido en 12 triángulos desde el centro.",
+        "pasos": [
+          {
+            "texto": "Calculamos el ángulo central de cada triángulo.",
+            "operacion": "360° ÷ 12 = 30°"
+          },
+          {
+            "texto": "Calculamos el ángulo de la base restando del total y dividiendo entre 2.",
+            "operacion": "(180° − 30°) ÷ 2 = 75°"
+          }
+        ],
+        "respuestaFinal": "El ángulo central mide 30°, y cada ángulo de la base de esos triángulos isósceles mide 75°."
+      }
     }
   ],
   "practicaExtra": [
